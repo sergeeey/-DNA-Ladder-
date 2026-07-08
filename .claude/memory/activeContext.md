@@ -118,6 +118,7 @@ reverse-strand off-by-one bug.
 **C (new research direction) — not started yet, next up.**
 
 ## Auto-commit log
+- [2026-07-08 17:27] `df68a42`: feat: HepG2 replication (PARTIAL) + permanent interval-math test suite
 - [2026-07-08 17:21] `cb58ec8`: docs: final auto-log sync
 - [2026-07-08 17:20] `3beebbe`: docs: auto-log update 4
 - [2026-07-08 17:20] `dda0641`: docs: auto-log update 3
