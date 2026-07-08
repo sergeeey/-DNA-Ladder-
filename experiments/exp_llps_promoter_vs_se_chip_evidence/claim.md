@@ -3,7 +3,7 @@ experiment: exp_llps_promoter_vs_se_chip_evidence
 date: 2026-07-08
 ladder_tier: Standard
 question_type: Descriptive
-status: DESIGN -- L0/Novelty done, K562 ChIP-seq data CONFIRMED available (BRD4/MED1/POLR2A/POLR2A-phosphoS5); super-enhancer call set not yet sourced
+status: COMPLETE -- SE-favoring result (BRD4 ratio=0.414, MED1 ratio=0.523, both <=0.67 MCID), robust to 5kb sensitivity check; see decision.md
 ---
 
 # Claim: ChIP-seq occupancy patterns of condensate-associated factors are more consistent with a promoter-centric than a super-enhancer-centric model of Pol II condensation
@@ -66,12 +66,25 @@ not falsify the imaging-based papers (different methodology, different claim res
 - **Comparator:** Relative enrichment of BRD4/MED1 signal at promoter-proximal vs.
   SE-associated vs. neither-class regions; Pol II occupancy/signal as the readout variable.
 - **Endpoint:** Peak co-occupancy and signal-intensity patterns by region class.
-- **Summary measure:** Not yet finalized -- pending data availability check (candidates:
-  odds ratio of co-occupancy by class, or a rank-based comparison of signal intensity
-  distributions, matching this project's from-scratch stats conventions from ARCHCODE
-  (Mann-Whitney U, Cliff's delta, BH correction)).
-- **MCID:** Not yet set -- to be pre-registered once the summary measure is finalized, before
-  any data is pulled.
+- **Summary measure (finalized 2026-07-08, BEFORE running the analysis script):** for BRD4 and
+  MED1 separately (the two coactivator/condensate-associated factors; POLR2A is reported as
+  a broad-binding sanity baseline, not a primary test, since Pol II occupies gene bodies far
+  more broadly than promoters/SEs specifically), classify each peak's midpoint as
+  promoter-proximal (within 2kb of the nearest GENCODE GRCh38 TSS), SE-associated (falls
+  within a lifted-to-GRCh38 dbSUPER K562 super-enhancer interval), both, or neither. Compute
+  **peak density** (peaks per kb of accessible region) separately for the promoter-only-class
+  region-space and the SE-only-class region-space (accounts for the fact these two region
+  classes cover very different total genomic bp -- raw peak counts alone would be misleading).
+  Primary summary measure: **promoter/SE density ratio** = density_promoter_only /
+  density_SE_only.
+- **MCID (finalized 2026-07-08, BEFORE running the analysis script):** density ratio >= 1.5
+  -> promoter-favoring (supports the reformulated question's promoter-centric direction);
+  density ratio <= 0.67 -> SE-favoring; between 0.67 and 1.5 -> no clear preference / mixed.
+  Chosen as a symmetric log-scale threshold (1.5x / (1/1.5)x) rather than a p-value, matching
+  this project's "effect size over p-value" discipline from ARCHCODE's Hypothesis C
+  (`ARCHCODE/null_results/20260707-synonymous-codon-optimality.md` -- a p<1e-6 result with a
+  sub-threshold effect size was correctly REJECTed there; the same practical-significance bar
+  applies here).
 - **ICE:** None anticipated (complete-case peak-calling data).
 
 ## What This Does NOT Mean
@@ -99,11 +112,20 @@ real released ChIP-seq experiments exist in K562 for all core factors:
 - POLR2A-phosphoS5 (bonus): `ENCSR000BKR` -- directly relevant to the CTD-phosphorylation-switch
   mechanism in `Research Library/evidence_matrices/llps-pol2-condensates.md`
 
-**Not yet sourced:** a super-enhancer call set for K562 (candidates: dbSUPER, or derive via
-ROSE from the H3K27ac data ARCHCODE already has cached for K562 --
-`ARCHCODE/data/encode_cache/ENCFF252DWA_H3K27ac_K562_hg19.bed.gz` -- reusing ARCHCODE data
-would need a genome-build check, hg19 vs whatever build these new accessions use, before any
-reuse, per the hg19/hg38 lesson from ARCHCODE's own bug history).
+**Genome build decision (2026-07-08, `[VERIFIED-bash]` via ENCODE REST API, BEFORE any peak
+data fetched):** checked file-level assembly availability, not just experiment-level -- MED1
+(`ENCSR269BSA`) has no hg19 files at all, only GRCh38 released status; BRD4 (`ENCSR583ACG`) has
+hg19 files but they are archived (superseded), with GRCh38 released current; POLR2A
+(`ENCSR031TFS`/`ENCSR388QZF`) has released files in both builds. **Decision: standardize on
+GRCh38** for all ChIP-seq peaks (matches what's actually current/released for all 3 factors)
+rather than hg19 (which would force using an archived BRD4 file and finding a non-ENCODE MED1
+source). dbSUPER's K562 super-enhancer call set is hg19-only (confirmed --
+`asntech.org/dbsuper/data/bed/hg38/K562.bed` and `.../GRCh38/K562.bed` both 404) -- will be
+lifted to GRCh38 via the standard UCSC `hg19ToHg38.over.chain.gz` chain file, not re-derived or
+approximated. GENCODE TSS annotations will be fetched directly in GRCh38. Recorded BEFORE
+fetching any peak file, specifically to avoid the hg19/hg38 mismatch bug class ARCHCODE hit
+multiple times this same session.
 
-Next step: source/derive the SE call set, finalize summary measure + MCID, then fetch peak
-files and run the analysis. Not yet done -- no results exist.
+Next step: implement the liftover, fetch the GRCh38 peak files for BRD4/MED1/POLR2A, fetch
+GRCh38 GENCODE TSS annotations, finalize summary measure + MCID, then run the analysis. Not
+yet done -- no results exist.

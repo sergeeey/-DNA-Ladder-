@@ -1,0 +1,4436 @@
+{
+  "source": "dbSUPER K562 (hg19): https://asntech.org/dbsuper/data/bed/hg19/K562.bed, lifted to GRCh38 via UCSC chain file: https://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.chain.gz",
+  "n_hg19": 742,
+  "n_grch38_lifted": 738,
+  "n_failed_to_lift": 4,
+  "super_enhancers": [
+    {
+      "chrom": "chr18",
+      "start": 3584887,
+      "end": 3627830,
+      "name": "SE_39841"
+    },
+    {
+      "chrom": "chr20",
+      "start": 47298697,
+      "end": 47393272,
+      "name": "SE_39842"
+    },
+    {
+      "chrom": "chr4",
+      "start": 10167725,
+      "end": 10205225,
+      "name": "SE_39843"
+    },
+    {
+      "chrom": "chr2",
+      "start": 87453540,
+      "end": 87545096,
+      "name": "SE_39844"
+    },
+    {
+      "chrom": "chr10",
+      "start": 72243741,
+      "end": 72328614,
+      "name": "SE_39845"
+    },
+    {
+      "chrom": "chr16",
+      "start": 85522701,
+      "end": 85621297,
+      "name": "SE_39846"
+    },
+    {
+      "chrom": "chr11",
+      "start": 65470321,
+      "end": 65509076,
+      "name": "SE_39847"
+    },
+    {
+      "chrom": "chr17",
+      "start": 42265271,
+      "end": 42324008,
+      "name": "SE_39848"
+    },
+    {
+      "chrom": "chr6",
+      "start": 43623602,
+      "end": 43640932,
+      "name": "SE_39849"
+    },
+    {
+      "chrom": "chr2",
+      "start": 111430941,
+      "end": 111496800,
+      "name": "SE_39850"
+    },
+    {
+      "chrom": "chr1",
+      "start": 36371425,
+      "end": 36402164,
+      "name": "SE_39851"
+    },
+    {
+      "chrom": "chr6",
+      "start": 146855131,
+      "end": 146917172,
+      "name": "SE_39852"
+    },
+    {
+      "chrom": "chr20",
+      "start": 31661216,
+      "end": 31724512,
+      "name": "SE_39853"
+    },
+    {
+      "chrom": "chr7",
+      "start": 155204480,
+      "end": 155209279,
+      "name": "SE_39854"
+    },
+    {
+      "chrom": "chr6",
+      "start": 31733140,
+      "end": 31741551,
+      "name": "SE_39855"
+    },
+    {
+      "chrom": "chr6",
+      "start": 26282954,
+      "end": 26352945,
+      "name": "SE_39857"
+    },
+    {
+      "chrom": "chrX",
+      "start": 65985625,
+      "end": 66031848,
+      "name": "SE_39858"
+    },
+    {
+      "chrom": "chr3",
+      "start": 45041096,
+      "end": 45144912,
+      "name": "SE_39859"
+    },
+    {
+      "chrom": "chr19",
+      "start": 51540816,
+      "end": 51573916,
+      "name": "SE_39860"
+    },
+    {
+      "chrom": "chr1",
+      "start": 44801730,
+      "end": 44831810,
+      "name": "SE_39861"
+    },
+    {
+      "chrom": "chr1",
+      "start": 11786079,
+      "end": 11809786,
+      "name": "SE_39862"
+    },
+    {
+      "chrom": "chr3",
+      "start": 4975762,
+      "end": 5024488,
+      "name": "SE_39863"
+    },
+    {
+      "chrom": "chr6",
+      "start": 67880900,
+      "end": 67899435,
+      "name": "SE_39864"
+    },
+    {
+      "chrom": "chr20",
+      "start": 346144,
+      "end": 385954,
+      "name": "SE_39865"
+    },
+    {
+      "chrom": "chr7",
+      "start": 105009908,
+      "end": 105016180,
+      "name": "SE_39866"
+    },
+    {
+      "chrom": "chr17",
+      "start": 58327925,
+      "end": 58340911,
+      "name": "SE_39867"
+    },
+    {
+      "chrom": "chr11",
+      "start": 65403347,
+      "end": 65430668,
+      "name": "SE_39868"
+    },
+    {
+      "chrom": "chr18",
+      "start": 9866681,
+      "end": 9927019,
+      "name": "SE_39869"
+    },
+    {
+      "chrom": "chr6",
+      "start": 7105465,
+      "end": 7174679,
+      "name": "SE_39870"
+    },
+    {
+      "chrom": "chrX",
+      "start": 11334013,
+      "end": 11438624,
+      "name": "SE_39871"
+    },
+    {
+      "chrom": "chr1",
+      "start": 37997283,
+      "end": 38016686,
+      "name": "SE_39872"
+    },
+    {
+      "chrom": "chr16",
+      "start": 70400744,
+      "end": 70438975,
+      "name": "SE_39873"
+    },
+    {
+      "chrom": "chr21",
+      "start": 29634471,
+      "end": 29660631,
+      "name": "SE_39874"
+    },
+    {
+      "chrom": "chr9",
+      "start": 120860261,
+      "end": 120879766,
+      "name": "SE_39875"
+    },
+    {
+      "chrom": "chr6",
+      "start": 44040290,
+      "end": 44078420,
+      "name": "SE_39876"
+    },
+    {
+      "chrom": "chr22",
+      "start": 19477181,
+      "end": 19481342,
+      "name": "SE_39877"
+    },
+    {
+      "chrom": "chr2",
+      "start": 157256567,
+      "end": 157266784,
+      "name": "SE_39878"
+    },
+    {
+      "chrom": "chr11",
+      "start": 86133666,
+      "end": 86203222,
+      "name": "SE_39879"
+    },
+    {
+      "chrom": "chr6",
+      "start": 28939495,
+      "end": 28997688,
+      "name": "SE_39880"
+    },
+    {
+      "chrom": "chr10",
+      "start": 69308555,
+      "end": 69336071,
+      "name": "SE_39881"
+    },
+    {
+      "chrom": "chr1",
+      "start": 12427997,
+      "end": 12512080,
+      "name": "SE_39882"
+    },
+    {
+      "chrom": "chr1",
+      "start": 42922738,
+      "end": 42968030,
+      "name": "SE_39883"
+    },
+    {
+      "chrom": "chr6",
+      "start": 32966470,
+      "end": 32974186,
+      "name": "SE_39884"
+    },
+    {
+      "chrom": "chr8",
+      "start": 38079811,
+      "end": 38109127,
+      "name": "SE_39885"
+    },
+    {
+      "chrom": "chr1",
+      "start": 30759728,
+      "end": 30784018,
+      "name": "SE_39886"
+    },
+    {
+      "chrom": "chr9",
+      "start": 129855304,
+      "end": 129889078,
+      "name": "SE_39887"
+    },
+    {
+      "chrom": "chr11",
+      "start": 59536627,
+      "end": 59566673,
+      "name": "SE_39888"
+    },
+    {
+      "chrom": "chr8",
+      "start": 41787472,
+      "end": 41829607,
+      "name": "SE_39889"
+    },
+    {
+      "chrom": "chr9",
+      "start": 97919761,
+      "end": 97963118,
+      "name": "SE_39890"
+    },
+    {
+      "chrom": "chr6",
+      "start": 43903856,
+      "end": 43991267,
+      "name": "SE_39891"
+    },
+    {
+      "chrom": "chr6",
+      "start": 14693498,
+      "end": 14744512,
+      "name": "SE_39892"
+    },
+    {
+      "chrom": "chr10",
+      "start": 48455815,
+      "end": 48482892,
+      "name": "SE_39893"
+    },
+    {
+      "chrom": "chr18",
+      "start": 3649172,
+      "end": 3666651,
+      "name": "SE_39894"
+    },
+    {
+      "chrom": "chr11",
+      "start": 61947347,
+      "end": 61974655,
+      "name": "SE_39895"
+    },
+    {
+      "chrom": "chr1",
+      "start": 27503767,
+      "end": 27573583,
+      "name": "SE_39896"
+    },
+    {
+      "chrom": "chr2",
+      "start": 55087411,
+      "end": 55142614,
+      "name": "SE_39897"
+    },
+    {
+      "chrom": "chr14",
+      "start": 101706397,
+      "end": 101733937,
+      "name": "SE_39898"
+    },
+    {
+      "chrom": "chr7",
+      "start": 150951964,
+      "end": 150975968,
+      "name": "SE_39899"
+    },
+    {
+      "chrom": "chr22",
+      "start": 22546262,
+      "end": 22560609,
+      "name": "SE_39900"
+    },
+    {
+      "chrom": "chr12",
+      "start": 57514685,
+      "end": 57525178,
+      "name": "SE_39901"
+    },
+    {
+      "chrom": "chr17",
+      "start": 33870390,
+      "end": 33932565,
+      "name": "SE_39902"
+    },
+    {
+      "chrom": "chr3",
+      "start": 14402570,
+      "end": 14415604,
+      "name": "SE_39903"
+    },
+    {
+      "chrom": "chr5",
+      "start": 173838919,
+      "end": 173891194,
+      "name": "SE_39904"
+    },
+    {
+      "chrom": "chr1",
+      "start": 207624912,
+      "end": 207651125,
+      "name": "SE_39905"
+    },
+    {
+      "chrom": "chr1",
+      "start": 28881968,
+      "end": 28903124,
+      "name": "SE_39906"
+    },
+    {
+      "chrom": "chr7",
+      "start": 106552659,
+      "end": 106572186,
+      "name": "SE_39907"
+    },
+    {
+      "chrom": "chr10",
+      "start": 79146009,
+      "end": 79189750,
+      "name": "SE_39908"
+    },
+    {
+      "chrom": "chr19",
+      "start": 18362847,
+      "end": 18388869,
+      "name": "SE_39909"
+    },
+    {
+      "chrom": "chr8",
+      "start": 128034191,
+      "end": 128078895,
+      "name": "SE_39910"
+    },
+    {
+      "chrom": "chr6",
+      "start": 37170083,
+      "end": 37211201,
+      "name": "SE_39911"
+    },
+    {
+      "chrom": "chr1",
+      "start": 202158067,
+      "end": 202167396,
+      "name": "SE_39912"
+    },
+    {
+      "chrom": "chr7",
+      "start": 12713063,
+      "end": 12748693,
+      "name": "SE_39913"
+    },
+    {
+      "chrom": "chr5",
+      "start": 119319059,
+      "end": 119341166,
+      "name": "SE_39914"
+    },
+    {
+      "chrom": "chr18",
+      "start": 3245161,
+      "end": 3264012,
+      "name": "SE_39915"
+    },
+    {
+      "chrom": "chr2",
+      "start": 70084718,
+      "end": 70090529,
+      "name": "SE_39916"
+    },
+    {
+      "chrom": "chr12",
+      "start": 124904395,
+      "end": 124941614,
+      "name": "SE_39917"
+    },
+    {
+      "chrom": "chr20",
+      "start": 23135327,
+      "end": 23162059,
+      "name": "SE_39918"
+    },
+    {
+      "chrom": "chrX",
+      "start": 154783489,
+      "end": 154822784,
+      "name": "SE_39919"
+    },
+    {
+      "chrom": "chr1",
+      "start": 116497336,
+      "end": 116509854,
+      "name": "SE_39920"
+    },
+    {
+      "chrom": "chr19",
+      "start": 43752808,
+      "end": 43785566,
+      "name": "SE_39921"
+    },
+    {
+      "chrom": "chr19",
+      "start": 45422792,
+      "end": 45486476,
+      "name": "SE_39922"
+    },
+    {
+      "chrom": "chr1",
+      "start": 25266224,
+      "end": 25286159,
+      "name": "SE_39923"
+    },
+    {
+      "chrom": "chr3",
+      "start": 196107693,
+      "end": 196146749,
+      "name": "SE_39924"
+    },
+    {
+      "chrom": "chr1",
+      "start": 47211316,
+      "end": 47242433,
+      "name": "SE_39925"
+    },
+    {
+      "chrom": "chr19",
+      "start": 28601403,
+      "end": 28615798,
+      "name": "SE_39926"
+    },
+    {
+      "chrom": "chr18",
+      "start": 8993942,
+      "end": 9023256,
+      "name": "SE_39927"
+    },
+    {
+      "chrom": "chr17",
+      "start": 17820205,
+      "end": 17850496,
+      "name": "SE_39928"
+    },
+    {
+      "chrom": "chr16",
+      "start": 88971694,
+      "end": 89004813,
+      "name": "SE_39929"
+    },
+    {
+      "chrom": "chr1",
+      "start": 207019327,
+      "end": 207026819,
+      "name": "SE_39930"
+    },
+    {
+      "chrom": "chr10",
+      "start": 50544575,
+      "end": 50594512,
+      "name": "SE_39931"
+    },
+    {
+      "chrom": "chr6",
+      "start": 28332870,
+      "end": 28357949,
+      "name": "SE_39932"
+    },
+    {
+      "chrom": "chr10",
+      "start": 35368699,
+      "end": 35415180,
+      "name": "SE_39933"
+    },
+    {
+      "chrom": "chr8",
+      "start": 123148339,
+      "end": 123191642,
+      "name": "SE_39934"
+    },
+    {
+      "chrom": "chr15",
+      "start": 66613179,
+      "end": 66700956,
+      "name": "SE_39935"
+    },
+    {
+      "chrom": "chr3",
+      "start": 195109274,
+      "end": 195205941,
+      "name": "SE_39936"
+    },
+    {
+      "chrom": "chr1",
+      "start": 161529472,
+      "end": 161567008,
+      "name": "SE_39937"
+    },
+    {
+      "chrom": "chr1",
+      "start": 161611112,
+      "end": 161648401,
+      "name": "SE_39938"
+    },
+    {
+      "chrom": "chrX",
+      "start": 48770552,
+      "end": 48803397,
+      "name": "SE_39939"
+    },
+    {
+      "chrom": "chr11",
+      "start": 46235838,
+      "end": 46257217,
+      "name": "SE_39940"
+    },
+    {
+      "chrom": "chr9",
+      "start": 131269861,
+      "end": 131279939,
+      "name": "SE_39941"
+    },
+    {
+      "chrom": "chr6",
+      "start": 42016504,
+      "end": 42040154,
+      "name": "SE_39942"
+    },
+    {
+      "chrom": "chr19",
+      "start": 2034439,
+      "end": 2062938,
+      "name": "SE_39943"
+    },
+    {
+      "chrom": "chr1",
+      "start": 156104593,
+      "end": 156130743,
+      "name": "SE_39944"
+    },
+    {
+      "chrom": "chr11",
+      "start": 3824565,
+      "end": 3879031,
+      "name": "SE_39945"
+    },
+    {
+      "chrom": "chr4",
+      "start": 49184,
+      "end": 59607,
+      "name": "SE_39946"
+    },
+    {
+      "chrom": "chr1",
+      "start": 21886300,
+      "end": 21937248,
+      "name": "SE_39947"
+    },
+    {
+      "chrom": "chr3",
+      "start": 177338670,
+      "end": 177362189,
+      "name": "SE_39948"
+    },
+    {
+      "chrom": "chr17",
+      "start": 48618747,
+      "end": 48648059,
+      "name": "SE_39949"
+    },
+    {
+      "chrom": "chr19",
+      "start": 48949954,
+      "end": 48976721,
+      "name": "SE_39950"
+    },
+    {
+      "chrom": "chr16",
+      "start": 89993287,
+      "end": 89997142,
+      "name": "SE_39951"
+    },
+    {
+      "chrom": "chr10",
+      "start": 5447479,
+      "end": 5488713,
+      "name": "SE_39952"
+    },
+    {
+      "chrom": "chr22",
+      "start": 19940250,
+      "end": 19960195,
+      "name": "SE_39953"
+    },
+    {
+      "chrom": "chr3",
+      "start": 73110307,
+      "end": 73111355,
+      "name": "SE_39954"
+    },
+    {
+      "chrom": "chr6",
+      "start": 27834798,
+      "end": 27840390,
+      "name": "SE_39955"
+    },
+    {
+      "chrom": "chr1",
+      "start": 156657433,
+      "end": 156664168,
+      "name": "SE_39956"
+    },
+    {
+      "chrom": "chr5",
+      "start": 139635856,
+      "end": 139673515,
+      "name": "SE_39957"
+    },
+    {
+      "chrom": "chrX",
+      "start": 40147502,
+      "end": 40177787,
+      "name": "SE_39958"
+    },
+    {
+      "chrom": "chr14",
+      "start": 73712109,
+      "end": 73788518,
+      "name": "SE_39959"
+    },
+    {
+      "chrom": "chr1",
+      "start": 31927138,
+      "end": 31958218,
+      "name": "SE_39960"
+    },
+    {
+      "chrom": "chr22",
+      "start": 16599277,
+      "end": 16605302,
+      "name": "SE_39961"
+    },
+    {
+      "chrom": "chr17",
+      "start": 27565876,
+      "end": 27604146,
+      "name": "SE_39962"
+    },
+    {
+      "chrom": "chr10",
+      "start": 50312547,
+      "end": 50335922,
+      "name": "SE_39963"
+    },
+    {
+      "chrom": "chr8",
+      "start": 23492914,
+      "end": 23549006,
+      "name": "SE_39964"
+    },
+    {
+      "chrom": "chr1",
+      "start": 167616521,
+      "end": 167642499,
+      "name": "SE_39965"
+    },
+    {
+      "chrom": "chr8",
+      "start": 127889654,
+      "end": 127929206,
+      "name": "SE_39966"
+    },
+    {
+      "chrom": "chr9",
+      "start": 129476547,
+      "end": 129497061,
+      "name": "SE_39967"
+    },
+    {
+      "chrom": "chr1",
+      "start": 25407269,
+      "end": 25430836,
+      "name": "SE_39968"
+    },
+    {
+      "chrom": "chr6",
+      "start": 15061947,
+      "end": 15108069,
+      "name": "SE_39969"
+    },
+    {
+      "chrom": "chr15",
+      "start": 92797138,
+      "end": 92833062,
+      "name": "SE_39970"
+    },
+    {
+      "chrom": "chr6",
+      "start": 30612668,
+      "end": 30619108,
+      "name": "SE_39971"
+    },
+    {
+      "chrom": "chr1",
+      "start": 28500754,
+      "end": 28522293,
+      "name": "SE_39972"
+    },
+    {
+      "chrom": "chr8",
+      "start": 129552190,
+      "end": 129592067,
+      "name": "SE_39973"
+    },
+    {
+      "chrom": "chr10",
+      "start": 43389750,
+      "end": 43423880,
+      "name": "SE_39974"
+    },
+    {
+      "chrom": "chr11",
+      "start": 33926620,
+      "end": 33953390,
+      "name": "SE_39975"
+    },
+    {
+      "chrom": "chr7",
+      "start": 152424054,
+      "end": 152438755,
+      "name": "SE_39976"
+    },
+    {
+      "chrom": "chr1",
+      "start": 26113361,
+      "end": 26139763,
+      "name": "SE_39977"
+    },
+    {
+      "chrom": "chr1",
+      "start": 16642062,
+      "end": 16667509,
+      "name": "SE_39978"
+    },
+    {
+      "chrom": "chr17",
+      "start": 28857861,
+      "end": 28881212,
+      "name": "SE_39979"
+    },
+    {
+      "chrom": "chr1",
+      "start": 234865116,
+      "end": 234877779,
+      "name": "SE_39980"
+    },
+    {
+      "chrom": "chr12",
+      "start": 108686598,
+      "end": 108702565,
+      "name": "SE_39981"
+    },
+    {
+      "chrom": "chr1",
+      "start": 21768117,
+      "end": 21795039,
+      "name": "SE_39982"
+    },
+    {
+      "chrom": "chr5",
+      "start": 172768899,
+      "end": 172808308,
+      "name": "SE_39983"
+    },
+    {
+      "chrom": "chr10",
+      "start": 70649238,
+      "end": 70686316,
+      "name": "SE_39984"
+    },
+    {
+      "chrom": "chr17",
+      "start": 75776286,
+      "end": 75787518,
+      "name": "SE_39985"
+    },
+    {
+      "chrom": "chr16",
+      "start": 81445112,
+      "end": 81527620,
+      "name": "SE_39986"
+    },
+    {
+      "chrom": "chr1",
+      "start": 26770895,
+      "end": 26805939,
+      "name": "SE_39987"
+    },
+    {
+      "chrom": "chr18",
+      "start": 807551,
+      "end": 842677,
+      "name": "SE_39988"
+    },
+    {
+      "chrom": "chr16",
+      "start": 9066594,
+      "end": 9093931,
+      "name": "SE_39989"
+    },
+    {
+      "chrom": "chr7",
+      "start": 137932364,
+      "end": 138009025,
+      "name": "SE_39990"
+    },
+    {
+      "chrom": "chr5",
+      "start": 43063480,
+      "end": 43076849,
+      "name": "SE_39991"
+    },
+    {
+      "chrom": "chr7",
+      "start": 76356753,
+      "end": 76398276,
+      "name": "SE_39992"
+    },
+    {
+      "chrom": "chr10",
+      "start": 11874326,
+      "end": 11902634,
+      "name": "SE_39993"
+    },
+    {
+      "chrom": "chr1",
+      "start": 40036202,
+      "end": 40061090,
+      "name": "SE_39994"
+    },
+    {
+      "chrom": "chr1",
+      "start": 15831368,
+      "end": 15857407,
+      "name": "SE_39995"
+    },
+    {
+      "chrom": "chr6",
+      "start": 26024166,
+      "end": 26030647,
+      "name": "SE_39996"
+    },
+    {
+      "chrom": "chr1",
+      "start": 44721566,
+      "end": 44743608,
+      "name": "SE_39997"
+    },
+    {
+      "chrom": "chr12",
+      "start": 54278737,
+      "end": 54284022,
+      "name": "SE_39998"
+    },
+    {
+      "chrom": "chr1",
+      "start": 26682403,
+      "end": 26702566,
+      "name": "SE_39999"
+    },
+    {
+      "chrom": "chr1",
+      "start": 223770090,
+      "end": 223796663,
+      "name": "SE_40000"
+    },
+    {
+      "chrom": "chr18",
+      "start": 3444553,
+      "end": 3454463,
+      "name": "SE_40001"
+    },
+    {
+      "chrom": "chr6",
+      "start": 157501853,
+      "end": 157522150,
+      "name": "SE_40002"
+    },
+    {
+      "chrom": "chr1",
+      "start": 112697749,
+      "end": 112707768,
+      "name": "SE_40003"
+    },
+    {
+      "chrom": "chr10",
+      "start": 17415041,
+      "end": 17457765,
+      "name": "SE_40004"
+    },
+    {
+      "chrom": "chr20",
+      "start": 53578490,
+      "end": 53624568,
+      "name": "SE_40005"
+    },
+    {
+      "chrom": "chr17",
+      "start": 40067959,
+      "end": 40124798,
+      "name": "SE_40006"
+    },
+    {
+      "chrom": "chr3",
+      "start": 46964976,
+      "end": 46990141,
+      "name": "SE_40007"
+    },
+    {
+      "chrom": "chr19",
+      "start": 49869681,
+      "end": 49890603,
+      "name": "SE_40008"
+    },
+    {
+      "chrom": "chr11",
+      "start": 62877081,
+      "end": 62890413,
+      "name": "SE_40009"
+    },
+    {
+      "chrom": "chr7",
+      "start": 583112,
+      "end": 611885,
+      "name": "SE_40010"
+    },
+    {
+      "chrom": "chr6",
+      "start": 31661589,
+      "end": 31667280,
+      "name": "SE_40011"
+    },
+    {
+      "chrom": "chr1",
+      "start": 89878154,
+      "end": 89909453,
+      "name": "SE_40012"
+    },
+    {
+      "chrom": "chr9",
+      "start": 97978483,
+      "end": 97990912,
+      "name": "SE_40013"
+    },
+    {
+      "chrom": "chr11",
+      "start": 12148158,
+      "end": 12202691,
+      "name": "SE_40014"
+    },
+    {
+      "chrom": "chrX",
+      "start": 48935994,
+      "end": 48962891,
+      "name": "SE_40015"
+    },
+    {
+      "chrom": "chr1",
+      "start": 149848257,
+      "end": 149857303,
+      "name": "SE_40016"
+    },
+    {
+      "chrom": "chr5",
+      "start": 181159251,
+      "end": 181193105,
+      "name": "SE_40017"
+    },
+    {
+      "chrom": "chr19",
+      "start": 38637036,
+      "end": 38689876,
+      "name": "SE_40018"
+    },
+    {
+      "chrom": "chr1",
+      "start": 16895304,
+      "end": 16906759,
+      "name": "SE_40019"
+    },
+    {
+      "chrom": "chr6",
+      "start": 34223167,
+      "end": 34249132,
+      "name": "SE_40020"
+    },
+    {
+      "chrom": "chr7",
+      "start": 139912866,
+      "end": 139920309,
+      "name": "SE_40021"
+    },
+    {
+      "chrom": "chr1",
+      "start": 149836516,
+      "end": 149844390,
+      "name": "SE_40022"
+    },
+    {
+      "chrom": "chr15",
+      "start": 57310821,
+      "end": 57328964,
+      "name": "SE_40023"
+    },
+    {
+      "chrom": "chr6",
+      "start": 37029261,
+      "end": 37062139,
+      "name": "SE_40024"
+    },
+    {
+      "chrom": "chr11",
+      "start": 61831874,
+      "end": 61845489,
+      "name": "SE_40025"
+    },
+    {
+      "chrom": "chr1",
+      "start": 225917325,
+      "end": 225932211,
+      "name": "SE_40026"
+    },
+    {
+      "chrom": "chr6",
+      "start": 31686034,
+      "end": 31704379,
+      "name": "SE_40027"
+    },
+    {
+      "chrom": "chr3",
+      "start": 50588297,
+      "end": 50614306,
+      "name": "SE_40028"
+    },
+    {
+      "chrom": "chr11",
+      "start": 119084249,
+      "end": 119096288,
+      "name": "SE_40029"
+    },
+    {
+      "chrom": "chr6",
+      "start": 2986966,
+      "end": 3004649,
+      "name": "SE_40030"
+    },
+    {
+      "chrom": "chr1",
+      "start": 45685285,
+      "end": 45689533,
+      "name": "SE_40031"
+    },
+    {
+      "chrom": "chr3",
+      "start": 196336318,
+      "end": 196341639,
+      "name": "SE_40032"
+    },
+    {
+      "chrom": "chr15",
+      "start": 67063709,
+      "end": 67099362,
+      "name": "SE_40033"
+    },
+    {
+      "chrom": "chr7",
+      "start": 20199112,
+      "end": 20222911,
+      "name": "SE_40034"
+    },
+    {
+      "chrom": "chr3",
+      "start": 9395173,
+      "end": 9403766,
+      "name": "SE_40035"
+    },
+    {
+      "chrom": "chr19",
+      "start": 46782210,
+      "end": 46789364,
+      "name": "SE_40036"
+    },
+    {
+      "chrom": "chr19",
+      "start": 40801763,
+      "end": 40844373,
+      "name": "SE_40037"
+    },
+    {
+      "chrom": "chr22",
+      "start": 39944317,
+      "end": 39967601,
+      "name": "SE_40038"
+    },
+    {
+      "chrom": "chr9",
+      "start": 135944268,
+      "end": 135961427,
+      "name": "SE_40039"
+    },
+    {
+      "chrom": "chr22",
+      "start": 20506474,
+      "end": 20558154,
+      "name": "SE_40040"
+    },
+    {
+      "chrom": "chr12",
+      "start": 111396636,
+      "end": 111443881,
+      "name": "SE_40041"
+    },
+    {
+      "chrom": "chr8",
+      "start": 129678569,
+      "end": 129711248,
+      "name": "SE_40042"
+    },
+    {
+      "chrom": "chr12",
+      "start": 54291826,
+      "end": 54303031,
+      "name": "SE_40043"
+    },
+    {
+      "chrom": "chr19",
+      "start": 35296605,
+      "end": 35319687,
+      "name": "SE_40044"
+    },
+    {
+      "chrom": "chr12",
+      "start": 31714227,
+      "end": 31751182,
+      "name": "SE_40045"
+    },
+    {
+      "chrom": "chr3",
+      "start": 128402390,
+      "end": 128427249,
+      "name": "SE_40046"
+    },
+    {
+      "chrom": "chr1",
+      "start": 225995727,
+      "end": 226004447,
+      "name": "SE_40047"
+    },
+    {
+      "chrom": "chr3",
+      "start": 43631877,
+      "end": 43694910,
+      "name": "SE_40048"
+    },
+    {
+      "chrom": "chr6",
+      "start": 32030128,
+      "end": 32047972,
+      "name": "SE_40049"
+    },
+    {
+      "chrom": "chr1",
+      "start": 160538340,
+      "end": 160551154,
+      "name": "SE_40050"
+    },
+    {
+      "chrom": "chr1",
+      "start": 6599069,
+      "end": 6616214,
+      "name": "SE_40051"
+    },
+    {
+      "chrom": "chr12",
+      "start": 121796109,
+      "end": 121807354,
+      "name": "SE_40052"
+    },
+    {
+      "chrom": "chr18",
+      "start": 9802145,
+      "end": 9829827,
+      "name": "SE_40053"
+    },
+    {
+      "chrom": "chr6",
+      "start": 136287361,
+      "end": 136291333,
+      "name": "SE_40054"
+    },
+    {
+      "chrom": "chr5",
+      "start": 181241126,
+      "end": 181249579,
+      "name": "SE_40055"
+    },
+    {
+      "chrom": "chr5",
+      "start": 10288610,
+      "end": 10320579,
+      "name": "SE_40056"
+    },
+    {
+      "chrom": "chr12",
+      "start": 120290573,
+      "end": 120293899,
+      "name": "SE_40057"
+    },
+    {
+      "chrom": "chr1",
+      "start": 58880815,
+      "end": 58904337,
+      "name": "SE_40058"
+    },
+    {
+      "chrom": "chr3",
+      "start": 49688052,
+      "end": 49692213,
+      "name": "SE_40059"
+    },
+    {
+      "chrom": "chr7",
+      "start": 150295540,
+      "end": 150325754,
+      "name": "SE_40060"
+    },
+    {
+      "chrom": "chr13",
+      "start": 97254504,
+      "end": 97262680,
+      "name": "SE_40061"
+    },
+    {
+      "chrom": "chr1",
+      "start": 151051171,
+      "end": 151065267,
+      "name": "SE_40062"
+    },
+    {
+      "chrom": "chr6",
+      "start": 57045333,
+      "end": 57049174,
+      "name": "SE_40063"
+    },
+    {
+      "chrom": "chr19",
+      "start": 4369033,
+      "end": 4383194,
+      "name": "SE_40064"
+    },
+    {
+      "chrom": "chr13",
+      "start": 110943963,
+      "end": 110981875,
+      "name": "SE_40065"
+    },
+    {
+      "chrom": "chr2",
+      "start": 43168611,
+      "end": 43196280,
+      "name": "SE_40066"
+    },
+    {
+      "chrom": "chr3",
+      "start": 5427569,
+      "end": 5442901,
+      "name": "SE_40067"
+    },
+    {
+      "chrom": "chr19",
+      "start": 11085051,
+      "end": 11096915,
+      "name": "SE_40068"
+    },
+    {
+      "chrom": "chr1",
+      "start": 110337225,
+      "end": 110342543,
+      "name": "SE_40069"
+    },
+    {
+      "chrom": "chr6",
+      "start": 158849435,
+      "end": 158855542,
+      "name": "SE_40070"
+    },
+    {
+      "chrom": "chr1",
+      "start": 174997810,
+      "end": 175002877,
+      "name": "SE_40071"
+    },
+    {
+      "chrom": "chr19",
+      "start": 47099316,
+      "end": 47114624,
+      "name": "SE_40072"
+    },
+    {
+      "chrom": "chr2",
+      "start": 112640067,
+      "end": 112728750,
+      "name": "SE_40073"
+    },
+    {
+      "chrom": "chr11",
+      "start": 9549606,
+      "end": 9578043,
+      "name": "SE_40074"
+    },
+    {
+      "chrom": "chr7",
+      "start": 107005540,
+      "end": 107057736,
+      "name": "SE_40075"
+    },
+    {
+      "chrom": "chr1",
+      "start": 155686300,
+      "end": 155699741,
+      "name": "SE_40076"
+    },
+    {
+      "chrom": "chr3",
+      "start": 33899725,
+      "end": 33915857,
+      "name": "SE_40077"
+    },
+    {
+      "chrom": "chr6",
+      "start": 26120553,
+      "end": 26128827,
+      "name": "SE_40078"
+    },
+    {
+      "chrom": "chr2",
+      "start": 126643427,
+      "end": 126677745,
+      "name": "SE_40079"
+    },
+    {
+      "chrom": "chr1",
+      "start": 15948164,
+      "end": 15956729,
+      "name": "SE_40080"
+    },
+    {
+      "chrom": "chr11",
+      "start": 5272049,
+      "end": 5290385,
+      "name": "SE_40081"
+    },
+    {
+      "chrom": "chr11",
+      "start": 76698125,
+      "end": 76704728,
+      "name": "SE_40082"
+    },
+    {
+      "chrom": "chr5",
+      "start": 95705937,
+      "end": 95732885,
+      "name": "SE_40083"
+    },
+    {
+      "chrom": "chr6",
+      "start": 57089152,
+      "end": 57092493,
+      "name": "SE_40084"
+    },
+    {
+      "chrom": "chr1",
+      "start": 8870753,
+      "end": 8881067,
+      "name": "SE_40085"
+    },
+    {
+      "chrom": "chr21",
+      "start": 33540762,
+      "end": 33545039,
+      "name": "SE_40086"
+    },
+    {
+      "chrom": "chr11",
+      "start": 64842034,
+      "end": 64890014,
+      "name": "SE_40087"
+    },
+    {
+      "chrom": "chr16",
+      "start": 81614465,
+      "end": 81653098,
+      "name": "SE_40088"
+    },
+    {
+      "chrom": "chr1",
+      "start": 67682517,
+      "end": 67714013,
+      "name": "SE_40089"
+    },
+    {
+      "chrom": "chr2",
+      "start": 111405716,
+      "end": 111418434,
+      "name": "SE_40090"
+    },
+    {
+      "chrom": "chr3",
+      "start": 128482036,
+      "end": 128505771,
+      "name": "SE_40091"
+    },
+    {
+      "chrom": "chr17",
+      "start": 48537157,
+      "end": 48556455,
+      "name": "SE_40092"
+    },
+    {
+      "chrom": "chr6",
+      "start": 30715590,
+      "end": 30723083,
+      "name": "SE_40093"
+    },
+    {
+      "chrom": "chr2",
+      "start": 62287293,
+      "end": 62314075,
+      "name": "SE_40094"
+    },
+    {
+      "chrom": "chr5",
+      "start": 138573133,
+      "end": 138576751,
+      "name": "SE_40095"
+    },
+    {
+      "chrom": "chr1",
+      "start": 234722311,
+      "end": 234727756,
+      "name": "SE_40096"
+    },
+    {
+      "chrom": "chr5",
+      "start": 132292347,
+      "end": 132319189,
+      "name": "SE_40097"
+    },
+    {
+      "chrom": "chr11",
+      "start": 65856049,
+      "end": 65867764,
+      "name": "SE_40098"
+    },
+    {
+      "chrom": "chr10",
+      "start": 13390444,
+      "end": 13418519,
+      "name": "SE_40099"
+    },
+    {
+      "chrom": "chr14",
+      "start": 23005765,
+      "end": 23036142,
+      "name": "SE_40100"
+    },
+    {
+      "chrom": "chr10",
+      "start": 73989136,
+      "end": 74029801,
+      "name": "SE_40101"
+    },
+    {
+      "chrom": "chr2",
+      "start": 177241468,
+      "end": 177265995,
+      "name": "SE_40102"
+    },
+    {
+      "chrom": "chr19",
+      "start": 10285211,
+      "end": 10305770,
+      "name": "SE_40103"
+    },
+    {
+      "chrom": "chr19",
+      "start": 13151857,
+      "end": 13168374,
+      "name": "SE_40104"
+    },
+    {
+      "chrom": "chr12",
+      "start": 56682024,
+      "end": 56699724,
+      "name": "SE_40105"
+    },
+    {
+      "chrom": "chr5",
+      "start": 68415167,
+      "end": 68435380,
+      "name": "SE_40106"
+    },
+    {
+      "chrom": "chr6",
+      "start": 28725204,
+      "end": 28817562,
+      "name": "SE_40107"
+    },
+    {
+      "chrom": "chr8",
+      "start": 27353172,
+      "end": 27367295,
+      "name": "SE_40108"
+    },
+    {
+      "chrom": "chr1",
+      "start": 14774829,
+      "end": 14786198,
+      "name": "SE_40109"
+    },
+    {
+      "chrom": "chr11",
+      "start": 64205435,
+      "end": 64209686,
+      "name": "SE_40110"
+    },
+    {
+      "chrom": "chrX",
+      "start": 12946768,
+      "end": 12971392,
+      "name": "SE_40111"
+    },
+    {
+      "chrom": "chr19",
+      "start": 40741364,
+      "end": 40755145,
+      "name": "SE_40112"
+    },
+    {
+      "chrom": "chr14",
+      "start": 54751701,
+      "end": 54774118,
+      "name": "SE_40113"
+    },
+    {
+      "chrom": "chr12",
+      "start": 6604486,
+      "end": 6640828,
+      "name": "SE_40114"
+    },
+    {
+      "chrom": "chr6",
+      "start": 27127786,
+      "end": 27135663,
+      "name": "SE_40115"
+    },
+    {
+      "chrom": "chr17",
+      "start": 75832988,
+      "end": 75871189,
+      "name": "SE_40116"
+    },
+    {
+      "chrom": "chr12",
+      "start": 123363031,
+      "end": 123390637,
+      "name": "SE_40117"
+    },
+    {
+      "chrom": "chr1",
+      "start": 234599188,
+      "end": 234613853,
+      "name": "SE_40118"
+    },
+    {
+      "chrom": "chr1",
+      "start": 116678773,
+      "end": 116697449,
+      "name": "SE_40119"
+    },
+    {
+      "chrom": "chr19",
+      "start": 50356998,
+      "end": 50379245,
+      "name": "SE_40120"
+    },
+    {
+      "chrom": "chr2",
+      "start": 100278451,
+      "end": 100294022,
+      "name": "SE_40121"
+    },
+    {
+      "chrom": "chr1",
+      "start": 23776057,
+      "end": 23795490,
+      "name": "SE_40122"
+    },
+    {
+      "chrom": "chr15",
+      "start": 90834636,
+      "end": 90874784,
+      "name": "SE_40123"
+    },
+    {
+      "chrom": "chr22",
+      "start": 20856465,
+      "end": 20869813,
+      "name": "SE_40124"
+    },
+    {
+      "chrom": "chr19",
+      "start": 42267412,
+      "end": 42283817,
+      "name": "SE_40125"
+    },
+    {
+      "chrom": "chr20",
+      "start": 645589,
+      "end": 673504,
+      "name": "SE_40126"
+    },
+    {
+      "chrom": "chr20",
+      "start": 32621236,
+      "end": 32650515,
+      "name": "SE_40127"
+    },
+    {
+      "chrom": "chr15",
+      "start": 63891126,
+      "end": 63899722,
+      "name": "SE_40128"
+    },
+    {
+      "chrom": "chr7",
+      "start": 151007448,
+      "end": 151040694,
+      "name": "SE_40129"
+    },
+    {
+      "chrom": "chr2",
+      "start": 15553722,
+      "end": 15563705,
+      "name": "SE_40130"
+    },
+    {
+      "chrom": "chr10",
+      "start": 49160743,
+      "end": 49188838,
+      "name": "SE_40131"
+    },
+    {
+      "chrom": "chr1",
+      "start": 40377107,
+      "end": 40400680,
+      "name": "SE_40132"
+    },
+    {
+      "chrom": "chr2",
+      "start": 86188909,
+      "end": 86217681,
+      "name": "SE_40133"
+    },
+    {
+      "chrom": "chr19",
+      "start": 12777876,
+      "end": 12802187,
+      "name": "SE_40134"
+    },
+    {
+      "chrom": "chr7",
+      "start": 158855312,
+      "end": 158871701,
+      "name": "SE_40135"
+    },
+    {
+      "chrom": "chr2",
+      "start": 201115367,
+      "end": 201131988,
+      "name": "SE_40136"
+    },
+    {
+      "chrom": "chr6",
+      "start": 158868463,
+      "end": 158871166,
+      "name": "SE_40137"
+    },
+    {
+      "chrom": "chr6",
+      "start": 43769255,
+      "end": 43777664,
+      "name": "SE_40138"
+    },
+    {
+      "chrom": "chr1",
+      "start": 65410525,
+      "end": 65438172,
+      "name": "SE_40139"
+    },
+    {
+      "chrom": "chr6",
+      "start": 27889505,
+      "end": 27896784,
+      "name": "SE_40140"
+    },
+    {
+      "chrom": "chr15",
+      "start": 30624079,
+      "end": 30628725,
+      "name": "SE_40141"
+    },
+    {
+      "chrom": "chr6",
+      "start": 150267522,
+      "end": 150277570,
+      "name": "SE_40142"
+    },
+    {
+      "chrom": "chr11",
+      "start": 75533480,
+      "end": 75540000,
+      "name": "SE_40143"
+    },
+    {
+      "chrom": "chr15",
+      "start": 32613474,
+      "end": 32618119,
+      "name": "SE_40144"
+    },
+    {
+      "chrom": "chr16",
+      "start": 85045528,
+      "end": 85056362,
+      "name": "SE_40145"
+    },
+    {
+      "chrom": "chr1",
+      "start": 204505802,
+      "end": 204519547,
+      "name": "SE_40146"
+    },
+    {
+      "chrom": "chr6",
+      "start": 7195367,
+      "end": 7203632,
+      "name": "SE_40147"
+    },
+    {
+      "chrom": "chr1",
+      "start": 112617378,
+      "end": 112626400,
+      "name": "SE_40148"
+    },
+    {
+      "chrom": "chr10",
+      "start": 73243693,
+      "end": 73261946,
+      "name": "SE_40149"
+    },
+    {
+      "chrom": "chr1",
+      "start": 155560363,
+      "end": 155564953,
+      "name": "SE_40150"
+    },
+    {
+      "chrom": "chr2",
+      "start": 24008744,
+      "end": 24016760,
+      "name": "SE_40151"
+    },
+    {
+      "chrom": "chr6",
+      "start": 26202753,
+      "end": 26206900,
+      "name": "SE_40152"
+    },
+    {
+      "chrom": "chr16",
+      "start": 2750700,
+      "end": 2754983,
+      "name": "SE_40153"
+    },
+    {
+      "chrom": "chr1",
+      "start": 26618918,
+      "end": 26622294,
+      "name": "SE_40154"
+    },
+    {
+      "chrom": "chr6",
+      "start": 31968733,
+      "end": 31974195,
+      "name": "SE_40155"
+    },
+    {
+      "chrom": "chr17",
+      "start": 41665463,
+      "end": 41691623,
+      "name": "SE_40156"
+    },
+    {
+      "chrom": "chr16",
+      "start": 68071904,
+      "end": 68092274,
+      "name": "SE_40157"
+    },
+    {
+      "chrom": "chr16",
+      "start": 15562811,
+      "end": 15593979,
+      "name": "SE_40158"
+    },
+    {
+      "chrom": "chr22",
+      "start": 20009185,
+      "end": 20030267,
+      "name": "SE_40159"
+    },
+    {
+      "chrom": "chr5",
+      "start": 10248249,
+      "end": 10252495,
+      "name": "SE_40160"
+    },
+    {
+      "chrom": "chr3",
+      "start": 12983793,
+      "end": 13008763,
+      "name": "SE_40161"
+    },
+    {
+      "chrom": "chr11",
+      "start": 10894357,
+      "end": 10901512,
+      "name": "SE_40162"
+    },
+    {
+      "chrom": "chr17",
+      "start": 78246887,
+      "end": 78301852,
+      "name": "SE_40163"
+    },
+    {
+      "chrom": "chr1",
+      "start": 155969804,
+      "end": 155984733,
+      "name": "SE_40164"
+    },
+    {
+      "chrom": "chr22",
+      "start": 38177654,
+      "end": 38182525,
+      "name": "SE_40165"
+    },
+    {
+      "chrom": "chr22",
+      "start": 20079265,
+      "end": 20086342,
+      "name": "SE_40166"
+    },
+    {
+      "chrom": "chr1",
+      "start": 28246324,
+      "end": 28279587,
+      "name": "SE_40167"
+    },
+    {
+      "chrom": "chr7",
+      "start": 32657997,
+      "end": 32681660,
+      "name": "SE_40168"
+    },
+    {
+      "chrom": "chr1",
+      "start": 246140059,
+      "end": 246194081,
+      "name": "SE_40169"
+    },
+    {
+      "chrom": "chr5",
+      "start": 54308235,
+      "end": 54328102,
+      "name": "SE_40170"
+    },
+    {
+      "chrom": "chr9",
+      "start": 123296231,
+      "end": 123346065,
+      "name": "SE_40171"
+    },
+    {
+      "chrom": "chr8",
+      "start": 1744970,
+      "end": 1761255,
+      "name": "SE_40172"
+    },
+    {
+      "chrom": "chr3",
+      "start": 4812822,
+      "end": 4832045,
+      "name": "SE_40173"
+    },
+    {
+      "chrom": "chr1",
+      "start": 46284550,
+      "end": 46308052,
+      "name": "SE_40174"
+    },
+    {
+      "chrom": "chr10",
+      "start": 49297893,
+      "end": 49302208,
+      "name": "SE_40175"
+    },
+    {
+      "chrom": "chr2",
+      "start": 26342408,
+      "end": 26358044,
+      "name": "SE_40176"
+    },
+    {
+      "chrom": "chr1",
+      "start": 230119133,
+      "end": 230161979,
+      "name": "SE_40177"
+    },
+    {
+      "chrom": "chr1",
+      "start": 50967062,
+      "end": 50979659,
+      "name": "SE_40178"
+    },
+    {
+      "chrom": "chr19",
+      "start": 18407907,
+      "end": 18442822,
+      "name": "SE_40179"
+    },
+    {
+      "chrom": "chr1",
+      "start": 32813327,
+      "end": 32819430,
+      "name": "SE_40180"
+    },
+    {
+      "chrom": "chr12",
+      "start": 54338710,
+      "end": 54394316,
+      "name": "SE_40181"
+    },
+    {
+      "chrom": "chr12",
+      "start": 57537747,
+      "end": 57554527,
+      "name": "SE_40182"
+    },
+    {
+      "chrom": "chr16",
+      "start": 23897025,
+      "end": 23910602,
+      "name": "SE_40183"
+    },
+    {
+      "chrom": "chr8",
+      "start": 67054646,
+      "end": 67066709,
+      "name": "SE_40184"
+    },
+    {
+      "chrom": "chr22",
+      "start": 20916060,
+      "end": 20922531,
+      "name": "SE_40185"
+    },
+    {
+      "chrom": "chr1",
+      "start": 51874006,
+      "end": 51880179,
+      "name": "SE_40186"
+    },
+    {
+      "chrom": "chr1",
+      "start": 154998753,
+      "end": 155018273,
+      "name": "SE_40187"
+    },
+    {
+      "chrom": "chr6",
+      "start": 11917668,
+      "end": 11939023,
+      "name": "SE_40188"
+    },
+    {
+      "chrom": "chrX",
+      "start": 40092440,
+      "end": 40118966,
+      "name": "SE_40189"
+    },
+    {
+      "chrom": "chr1",
+      "start": 149883485,
+      "end": 149889724,
+      "name": "SE_40190"
+    },
+    {
+      "chrom": "chr7",
+      "start": 102970978,
+      "end": 102993961,
+      "name": "SE_40191"
+    },
+    {
+      "chrom": "chr19",
+      "start": 16886249,
+      "end": 16898143,
+      "name": "SE_40192"
+    },
+    {
+      "chrom": "chr12",
+      "start": 108619846,
+      "end": 108632637,
+      "name": "SE_40193"
+    },
+    {
+      "chrom": "chr11",
+      "start": 61797473,
+      "end": 61818525,
+      "name": "SE_40194"
+    },
+    {
+      "chrom": "chr10",
+      "start": 125813906,
+      "end": 125829502,
+      "name": "SE_40195"
+    },
+    {
+      "chrom": "chr12",
+      "start": 93370628,
+      "end": 93395053,
+      "name": "SE_40196"
+    },
+    {
+      "chrom": "chr6",
+      "start": 137860073,
+      "end": 137868269,
+      "name": "SE_40197"
+    },
+    {
+      "chrom": "chr5",
+      "start": 163458442,
+      "end": 163463351,
+      "name": "SE_40198"
+    },
+    {
+      "chrom": "chr1",
+      "start": 21606686,
+      "end": 21640914,
+      "name": "SE_40199"
+    },
+    {
+      "chrom": "chr17",
+      "start": 7834861,
+      "end": 7845620,
+      "name": "SE_40200"
+    },
+    {
+      "chrom": "chr2",
+      "start": 85537056,
+      "end": 85540931,
+      "name": "SE_40201"
+    },
+    {
+      "chrom": "chr7",
+      "start": 64997245,
+      "end": 65007561,
+      "name": "SE_40202"
+    },
+    {
+      "chrom": "chr16",
+      "start": 30063277,
+      "end": 30079956,
+      "name": "SE_40203"
+    },
+    {
+      "chrom": "chr1",
+      "start": 45010461,
+      "end": 45015284,
+      "name": "SE_40204"
+    },
+    {
+      "chrom": "chr16",
+      "start": 75011390,
+      "end": 75088098,
+      "name": "SE_40205"
+    },
+    {
+      "chrom": "chr1",
+      "start": 65253474,
+      "end": 65294675,
+      "name": "SE_40206"
+    },
+    {
+      "chrom": "chr1",
+      "start": 159910028,
+      "end": 159926438,
+      "name": "SE_40207"
+    },
+    {
+      "chrom": "chr17",
+      "start": 79802194,
+      "end": 79837319,
+      "name": "SE_40208"
+    },
+    {
+      "chrom": "chr9",
+      "start": 70410793,
+      "end": 70421914,
+      "name": "SE_40209"
+    },
+    {
+      "chrom": "chr1",
+      "start": 47178525,
+      "end": 47194992,
+      "name": "SE_40210"
+    },
+    {
+      "chrom": "chr16",
+      "start": 20739827,
+      "end": 20768057,
+      "name": "SE_40211"
+    },
+    {
+      "chrom": "chr7",
+      "start": 100427734,
+      "end": 100434493,
+      "name": "SE_40212"
+    },
+    {
+      "chrom": "chr16",
+      "start": 87851661,
+      "end": 87892123,
+      "name": "SE_40213"
+    },
+    {
+      "chrom": "chr6",
+      "start": 31539219,
+      "end": 31543653,
+      "name": "SE_40214"
+    },
+    {
+      "chrom": "chr10",
+      "start": 71836608,
+      "end": 71875306,
+      "name": "SE_40215"
+    },
+    {
+      "chrom": "chr6",
+      "start": 30872018,
+      "end": 30886983,
+      "name": "SE_40216"
+    },
+    {
+      "chrom": "chr1",
+      "start": 156744949,
+      "end": 156753537,
+      "name": "SE_40217"
+    },
+    {
+      "chrom": "chr19",
+      "start": 12882995,
+      "end": 12888687,
+      "name": "SE_40218"
+    },
+    {
+      "chrom": "chr6",
+      "start": 119303044,
+      "end": 119324869,
+      "name": "SE_40219"
+    },
+    {
+      "chrom": "chr9",
+      "start": 125238560,
+      "end": 125246948,
+      "name": "SE_40220"
+    },
+    {
+      "chrom": "chr19",
+      "start": 5716936,
+      "end": 5721078,
+      "name": "SE_40221"
+    },
+    {
+      "chrom": "chr19",
+      "start": 19361172,
+      "end": 19411214,
+      "name": "SE_40222"
+    },
+    {
+      "chrom": "chr6",
+      "start": 2848600,
+      "end": 2860122,
+      "name": "SE_40223"
+    },
+    {
+      "chrom": "chr11",
+      "start": 57395573,
+      "end": 57433251,
+      "name": "SE_40224"
+    },
+    {
+      "chrom": "chr2",
+      "start": 19895400,
+      "end": 19903090,
+      "name": "SE_40225"
+    },
+    {
+      "chrom": "chr4",
+      "start": 40193593,
+      "end": 40211180,
+      "name": "SE_40226"
+    },
+    {
+      "chrom": "chr6",
+      "start": 12007351,
+      "end": 12023499,
+      "name": "SE_40227"
+    },
+    {
+      "chrom": "chr12",
+      "start": 24933093,
+      "end": 24952285,
+      "name": "SE_40228"
+    },
+    {
+      "chrom": "chr2",
+      "start": 144580173,
+      "end": 144596899,
+      "name": "SE_40229"
+    },
+    {
+      "chrom": "chr11",
+      "start": 205924,
+      "end": 223542,
+      "name": "SE_40230"
+    },
+    {
+      "chrom": "chr6",
+      "start": 33199104,
+      "end": 33203316,
+      "name": "SE_40231"
+    },
+    {
+      "chrom": "chr17",
+      "start": 7578732,
+      "end": 7588895,
+      "name": "SE_40232"
+    },
+    {
+      "chrom": "chr1",
+      "start": 52400391,
+      "end": 52405893,
+      "name": "SE_40233"
+    },
+    {
+      "chrom": "chr1",
+      "start": 154972188,
+      "end": 154977031,
+      "name": "SE_40234"
+    },
+    {
+      "chrom": "chr3",
+      "start": 138862157,
+      "end": 138891516,
+      "name": "SE_40235"
+    },
+    {
+      "chrom": "chr10",
+      "start": 104327745,
+      "end": 104350384,
+      "name": "SE_40236"
+    },
+    {
+      "chrom": "chr22",
+      "start": 20999969,
+      "end": 21004342,
+      "name": "SE_40237"
+    },
+    {
+      "chrom": "chr17",
+      "start": 76638540,
+      "end": 76644675,
+      "name": "SE_40238"
+    },
+    {
+      "chrom": "chr19",
+      "start": 48871979,
+      "end": 48876684,
+      "name": "SE_40239"
+    },
+    {
+      "chrom": "chr1",
+      "start": 20183452,
+      "end": 20189832,
+      "name": "SE_40240"
+    },
+    {
+      "chrom": "chr19",
+      "start": 47225263,
+      "end": 47230429,
+      "name": "SE_40241"
+    },
+    {
+      "chrom": "chrX",
+      "start": 154384665,
+      "end": 154400538,
+      "name": "SE_40242"
+    },
+    {
+      "chrom": "chr2",
+      "start": 156319347,
+      "end": 156344493,
+      "name": "SE_40244"
+    },
+    {
+      "chrom": "chr6",
+      "start": 39205784,
+      "end": 39230111,
+      "name": "SE_40245"
+    },
+    {
+      "chrom": "chr17",
+      "start": 27332255,
+      "end": 27355113,
+      "name": "SE_40247"
+    },
+    {
+      "chrom": "chr3",
+      "start": 45269565,
+      "end": 45275015,
+      "name": "SE_40248"
+    },
+    {
+      "chrom": "chr22",
+      "start": 21936089,
+      "end": 21950215,
+      "name": "SE_40249"
+    },
+    {
+      "chrom": "chr17",
+      "start": 29132119,
+      "end": 29180202,
+      "name": "SE_40250"
+    },
+    {
+      "chrom": "chr14",
+      "start": 34545554,
+      "end": 34562574,
+      "name": "SE_40251"
+    },
+    {
+      "chrom": "chr19",
+      "start": 28512255,
+      "end": 28565127,
+      "name": "SE_40252"
+    },
+    {
+      "chrom": "chr7",
+      "start": 120987531,
+      "end": 121008183,
+      "name": "SE_40253"
+    },
+    {
+      "chrom": "chr2",
+      "start": 239257109,
+      "end": 239296245,
+      "name": "SE_40254"
+    },
+    {
+      "chrom": "chr6",
+      "start": 3022103,
+      "end": 3027661,
+      "name": "SE_40255"
+    },
+    {
+      "chrom": "chr6",
+      "start": 16257531,
+      "end": 16278320,
+      "name": "SE_40256"
+    },
+    {
+      "chrom": "chr22",
+      "start": 21640641,
+      "end": 21644422,
+      "name": "SE_40257"
+    },
+    {
+      "chrom": "chr5",
+      "start": 91379376,
+      "end": 91384690,
+      "name": "SE_40258"
+    },
+    {
+      "chrom": "chr6",
+      "start": 31833568,
+      "end": 31838836,
+      "name": "SE_40259"
+    },
+    {
+      "chrom": "chr7",
+      "start": 121027905,
+      "end": 121050305,
+      "name": "SE_40260"
+    },
+    {
+      "chrom": "chr7",
+      "start": 139339108,
+      "end": 139343178,
+      "name": "SE_40261"
+    },
+    {
+      "chrom": "chr22",
+      "start": 21623821,
+      "end": 21630430,
+      "name": "SE_40262"
+    },
+    {
+      "chrom": "chr6",
+      "start": 17701758,
+      "end": 17715921,
+      "name": "SE_40263"
+    },
+    {
+      "chrom": "chr1",
+      "start": 228486137,
+      "end": 228491404,
+      "name": "SE_40264"
+    },
+    {
+      "chrom": "chr17",
+      "start": 74867381,
+      "end": 74878317,
+      "name": "SE_40265"
+    },
+    {
+      "chrom": "chr7",
+      "start": 22664422,
+      "end": 22718897,
+      "name": "SE_40266"
+    },
+    {
+      "chrom": "chr19",
+      "start": 13095508,
+      "end": 13105005,
+      "name": "SE_40267"
+    },
+    {
+      "chrom": "chr11",
+      "start": 72772863,
+      "end": 72788679,
+      "name": "SE_40268"
+    },
+    {
+      "chrom": "chrX",
+      "start": 153965687,
+      "end": 153974964,
+      "name": "SE_40269"
+    },
+    {
+      "chrom": "chr12",
+      "start": 104285664,
+      "end": 104290055,
+      "name": "SE_40270"
+    },
+    {
+      "chrom": "chr11",
+      "start": 118910511,
+      "end": 118928966,
+      "name": "SE_40271"
+    },
+    {
+      "chrom": "chr12",
+      "start": 46370727,
+      "end": 46386174,
+      "name": "SE_40273"
+    },
+    {
+      "chrom": "chr7",
+      "start": 130201707,
+      "end": 130206837,
+      "name": "SE_40274"
+    },
+    {
+      "chrom": "chr19",
+      "start": 55203494,
+      "end": 55218231,
+      "name": "SE_40275"
+    },
+    {
+      "chrom": "chr16",
+      "start": 80993168,
+      "end": 81008981,
+      "name": "SE_40276"
+    },
+    {
+      "chrom": "chr5",
+      "start": 138538880,
+      "end": 138545812,
+      "name": "SE_40277"
+    },
+    {
+      "chrom": "chr4",
+      "start": 38661011,
+      "end": 38675368,
+      "name": "SE_40278"
+    },
+    {
+      "chrom": "chr8",
+      "start": 129991775,
+      "end": 130017401,
+      "name": "SE_40279"
+    },
+    {
+      "chrom": "chr11",
+      "start": 62853299,
+      "end": 62858673,
+      "name": "SE_40280"
+    },
+    {
+      "chrom": "chr6",
+      "start": 159968105,
+      "end": 159999793,
+      "name": "SE_40281"
+    },
+    {
+      "chrom": "chr8",
+      "start": 101125712,
+      "end": 101160120,
+      "name": "SE_40282"
+    },
+    {
+      "chrom": "chr7",
+      "start": 30593626,
+      "end": 30597022,
+      "name": "SE_40283"
+    },
+    {
+      "chrom": "chr1",
+      "start": 110872113,
+      "end": 110891989,
+      "name": "SE_40284"
+    },
+    {
+      "chrom": "chr7",
+      "start": 16260084,
+      "end": 16270208,
+      "name": "SE_40285"
+    },
+    {
+      "chrom": "chr19",
+      "start": 40267080,
+      "end": 40287229,
+      "name": "SE_40286"
+    },
+    {
+      "chrom": "chr6",
+      "start": 33270873,
+      "end": 33277715,
+      "name": "SE_40287"
+    },
+    {
+      "chrom": "chr11",
+      "start": 45982525,
+      "end": 45998362,
+      "name": "SE_40288"
+    },
+    {
+      "chrom": "chr19",
+      "start": 14355642,
+      "end": 14402928,
+      "name": "SE_40289"
+    },
+    {
+      "chrom": "chr17",
+      "start": 60386316,
+      "end": 60393799,
+      "name": "SE_40290"
+    },
+    {
+      "chrom": "chr9",
+      "start": 110254773,
+      "end": 110258702,
+      "name": "SE_40291"
+    },
+    {
+      "chrom": "chr1",
+      "start": 23366703,
+      "end": 23392828,
+      "name": "SE_40292"
+    },
+    {
+      "chrom": "chr1",
+      "start": 207048015,
+      "end": 207053917,
+      "name": "SE_40293"
+    },
+    {
+      "chrom": "chr3",
+      "start": 141352255,
+      "end": 141370521,
+      "name": "SE_40294"
+    },
+    {
+      "chrom": "chr5",
+      "start": 179612562,
+      "end": 179635323,
+      "name": "SE_40295"
+    },
+    {
+      "chrom": "chr10",
+      "start": 3802260,
+      "end": 3812028,
+      "name": "SE_40296"
+    },
+    {
+      "chrom": "chr6",
+      "start": 32173588,
+      "end": 32180701,
+      "name": "SE_40297"
+    },
+    {
+      "chrom": "chr2",
+      "start": 231705849,
+      "end": 231716756,
+      "name": "SE_40298"
+    },
+    {
+      "chrom": "chr10",
+      "start": 71630320,
+      "end": 71659884,
+      "name": "SE_40299"
+    },
+    {
+      "chrom": "chr6",
+      "start": 167810980,
+      "end": 167861397,
+      "name": "SE_40300"
+    },
+    {
+      "chrom": "chr7",
+      "start": 23467025,
+      "end": 23475566,
+      "name": "SE_40301"
+    },
+    {
+      "chrom": "chr9",
+      "start": 132978446,
+      "end": 133005440,
+      "name": "SE_40302"
+    },
+    {
+      "chrom": "chr22",
+      "start": 19850108,
+      "end": 19856636,
+      "name": "SE_40303"
+    },
+    {
+      "chrom": "chr6",
+      "start": 24718243,
+      "end": 24722438,
+      "name": "SE_40304"
+    },
+    {
+      "chrom": "chr2",
+      "start": 144496692,
+      "end": 144525072,
+      "name": "SE_40305"
+    },
+    {
+      "chrom": "chr16",
+      "start": 29784798,
+      "end": 29810420,
+      "name": "SE_40306"
+    },
+    {
+      "chrom": "chr1",
+      "start": 234956617,
+      "end": 234985105,
+      "name": "SE_40307"
+    },
+    {
+      "chrom": "chr1",
+      "start": 11907496,
+      "end": 11911215,
+      "name": "SE_40308"
+    },
+    {
+      "chrom": "chr7",
+      "start": 34991757,
+      "end": 35015947,
+      "name": "SE_40309"
+    },
+    {
+      "chrom": "chr6",
+      "start": 15889054,
+      "end": 15909206,
+      "name": "SE_40310"
+    },
+    {
+      "chrom": "chr17",
+      "start": 58004913,
+      "end": 58008584,
+      "name": "SE_40311"
+    },
+    {
+      "chrom": "chr17",
+      "start": 59616224,
+      "end": 59621497,
+      "name": "SE_40312"
+    },
+    {
+      "chrom": "chr11",
+      "start": 33866909,
+      "end": 33899506,
+      "name": "SE_40313"
+    },
+    {
+      "chrom": "chr3",
+      "start": 37985706,
+      "end": 37999065,
+      "name": "SE_40314"
+    },
+    {
+      "chrom": "chr5",
+      "start": 179811307,
+      "end": 179822987,
+      "name": "SE_40315"
+    },
+    {
+      "chrom": "chr19",
+      "start": 40862517,
+      "end": 40876269,
+      "name": "SE_40316"
+    },
+    {
+      "chrom": "chr16",
+      "start": 88331340,
+      "end": 88336633,
+      "name": "SE_40317"
+    },
+    {
+      "chrom": "chr21",
+      "start": 25732804,
+      "end": 25736845,
+      "name": "SE_40318"
+    },
+    {
+      "chrom": "chr1",
+      "start": 206651053,
+      "end": 206687293,
+      "name": "SE_40319"
+    },
+    {
+      "chrom": "chr9",
+      "start": 112170275,
+      "end": 112182027,
+      "name": "SE_40320"
+    },
+    {
+      "chrom": "chr4",
+      "start": 40237180,
+      "end": 40240599,
+      "name": "SE_40321"
+    },
+    {
+      "chrom": "chr8",
+      "start": 124814795,
+      "end": 124854214,
+      "name": "SE_40322"
+    },
+    {
+      "chrom": "chr10",
+      "start": 91607305,
+      "end": 91631286,
+      "name": "SE_40323"
+    },
+    {
+      "chrom": "chr4",
+      "start": 6730427,
+      "end": 6735341,
+      "name": "SE_40324"
+    },
+    {
+      "chrom": "chr6",
+      "start": 44221042,
+      "end": 44250099,
+      "name": "SE_40325"
+    },
+    {
+      "chrom": "chr6",
+      "start": 28866209,
+      "end": 28898856,
+      "name": "SE_40326"
+    },
+    {
+      "chrom": "chr19",
+      "start": 49127582,
+      "end": 49162221,
+      "name": "SE_40327"
+    },
+    {
+      "chrom": "chr2",
+      "start": 26757289,
+      "end": 26773016,
+      "name": "SE_40328"
+    },
+    {
+      "chrom": "chr16",
+      "start": 70287264,
+      "end": 70291275,
+      "name": "SE_40329"
+    },
+    {
+      "chrom": "chr9",
+      "start": 116463088,
+      "end": 116472583,
+      "name": "SE_40330"
+    },
+    {
+      "chrom": "chr14",
+      "start": 35355811,
+      "end": 35369234,
+      "name": "SE_40331"
+    },
+    {
+      "chrom": "chr4",
+      "start": 6908424,
+      "end": 6918856,
+      "name": "SE_40332"
+    },
+    {
+      "chrom": "chr1",
+      "start": 2175612,
+      "end": 2213424,
+      "name": "SE_40333"
+    },
+    {
+      "chrom": "chr17",
+      "start": 1716217,
+      "end": 1737556,
+      "name": "SE_40334"
+    },
+    {
+      "chrom": "chr11",
+      "start": 97963139,
+      "end": 97974227,
+      "name": "SE_40335"
+    },
+    {
+      "chrom": "chr19",
+      "start": 45501213,
+      "end": 45516729,
+      "name": "SE_40336"
+    },
+    {
+      "chrom": "chr12",
+      "start": 98502682,
+      "end": 98519669,
+      "name": "SE_40337"
+    },
+    {
+      "chrom": "chr17",
+      "start": 78113678,
+      "end": 78145914,
+      "name": "SE_40338"
+    },
+    {
+      "chrom": "chr16",
+      "start": 50244839,
+      "end": 50275081,
+      "name": "SE_40339"
+    },
+    {
+      "chrom": "chr22",
+      "start": 19418754,
+      "end": 19433988,
+      "name": "SE_40340"
+    },
+    {
+      "chrom": "chr5",
+      "start": 42990817,
+      "end": 43010229,
+      "name": "SE_40341"
+    },
+    {
+      "chrom": "chr9",
+      "start": 3508430,
+      "end": 3529205,
+      "name": "SE_40342"
+    },
+    {
+      "chrom": "chr19",
+      "start": 51777431,
+      "end": 51807954,
+      "name": "SE_40343"
+    },
+    {
+      "chrom": "chr4",
+      "start": 67697654,
+      "end": 67727788,
+      "name": "SE_40344"
+    },
+    {
+      "chrom": "chr7",
+      "start": 26187180,
+      "end": 26214852,
+      "name": "SE_40345"
+    },
+    {
+      "chrom": "chr2",
+      "start": 12275429,
+      "end": 12289516,
+      "name": "SE_40346"
+    },
+    {
+      "chrom": "chr17",
+      "start": 32345449,
+      "end": 32356245,
+      "name": "SE_40347"
+    },
+    {
+      "chrom": "chr5",
+      "start": 90638740,
+      "end": 90661289,
+      "name": "SE_40348"
+    },
+    {
+      "chrom": "chr8",
+      "start": 127945221,
+      "end": 127972364,
+      "name": "SE_40349"
+    },
+    {
+      "chrom": "chr6",
+      "start": 129659589,
+      "end": 129709007,
+      "name": "SE_40350"
+    },
+    {
+      "chrom": "chr2",
+      "start": 27001690,
+      "end": 27021023,
+      "name": "SE_40351"
+    },
+    {
+      "chrom": "chr9",
+      "start": 35723727,
+      "end": 35733610,
+      "name": "SE_40352"
+    },
+    {
+      "chrom": "chr20",
+      "start": 38927710,
+      "end": 38963243,
+      "name": "SE_40353"
+    },
+    {
+      "chrom": "chr7",
+      "start": 129433352,
+      "end": 129440950,
+      "name": "SE_40354"
+    },
+    {
+      "chrom": "chr1",
+      "start": 207747380,
+      "end": 207756824,
+      "name": "SE_40355"
+    },
+    {
+      "chrom": "chr12",
+      "start": 116551230,
+      "end": 116562416,
+      "name": "SE_40356"
+    },
+    {
+      "chrom": "chr21",
+      "start": 37364512,
+      "end": 37379310,
+      "name": "SE_40357"
+    },
+    {
+      "chrom": "chr15",
+      "start": 35544757,
+      "end": 35558465,
+      "name": "SE_40358"
+    },
+    {
+      "chrom": "chr17",
+      "start": 82858994,
+      "end": 82888189,
+      "name": "SE_40359"
+    },
+    {
+      "chrom": "chr15",
+      "start": 58329700,
+      "end": 58334002,
+      "name": "SE_40360"
+    },
+    {
+      "chrom": "chr1",
+      "start": 28641883,
+      "end": 28645188,
+      "name": "SE_40361"
+    },
+    {
+      "chrom": "chr6",
+      "start": 28920298,
+      "end": 28925535,
+      "name": "SE_40362"
+    },
+    {
+      "chrom": "chr1",
+      "start": 244862143,
+      "end": 244866890,
+      "name": "SE_40363"
+    },
+    {
+      "chrom": "chr5",
+      "start": 122098697,
+      "end": 122128069,
+      "name": "SE_40364"
+    },
+    {
+      "chrom": "chr1",
+      "start": 44774315,
+      "end": 44778572,
+      "name": "SE_40365"
+    },
+    {
+      "chrom": "chr6",
+      "start": 73518248,
+      "end": 73524616,
+      "name": "SE_40366"
+    },
+    {
+      "chrom": "chr19",
+      "start": 15827783,
+      "end": 15845105,
+      "name": "SE_40367"
+    },
+    {
+      "chrom": "chr17",
+      "start": 2391327,
+      "end": 2402760,
+      "name": "SE_40368"
+    },
+    {
+      "chrom": "chr8",
+      "start": 141391091,
+      "end": 141418963,
+      "name": "SE_40369"
+    },
+    {
+      "chrom": "chr1",
+      "start": 246568334,
+      "end": 246588081,
+      "name": "SE_40370"
+    },
+    {
+      "chrom": "chr6",
+      "start": 26030748,
+      "end": 26035718,
+      "name": "SE_40371"
+    },
+    {
+      "chrom": "chr11",
+      "start": 69294034,
+      "end": 69302849,
+      "name": "SE_40372"
+    },
+    {
+      "chrom": "chr1",
+      "start": 193056983,
+      "end": 193071569,
+      "name": "SE_40373"
+    },
+    {
+      "chrom": "chr6",
+      "start": 13271792,
+      "end": 13276650,
+      "name": "SE_40374"
+    },
+    {
+      "chrom": "chr20",
+      "start": 22402208,
+      "end": 22414991,
+      "name": "SE_40375"
+    },
+    {
+      "chrom": "chr1",
+      "start": 19207559,
+      "end": 19211926,
+      "name": "SE_40376"
+    },
+    {
+      "chrom": "chr14",
+      "start": 90797517,
+      "end": 90807757,
+      "name": "SE_40377"
+    },
+    {
+      "chrom": "chr19",
+      "start": 48321234,
+      "end": 48334478,
+      "name": "SE_40378"
+    },
+    {
+      "chrom": "chr1",
+      "start": 179015297,
+      "end": 179062005,
+      "name": "SE_40379"
+    },
+    {
+      "chrom": "chr7",
+      "start": 138349921,
+      "end": 138359474,
+      "name": "SE_40380"
+    },
+    {
+      "chrom": "chr3",
+      "start": 9976024,
+      "end": 9980100,
+      "name": "SE_40381"
+    },
+    {
+      "chrom": "chr10",
+      "start": 22666254,
+      "end": 22721049,
+      "name": "SE_40382"
+    },
+    {
+      "chrom": "chr1",
+      "start": 42818606,
+      "end": 42831577,
+      "name": "SE_40383"
+    },
+    {
+      "chrom": "chr16",
+      "start": 23820176,
+      "end": 23840957,
+      "name": "SE_40384"
+    },
+    {
+      "chrom": "chr19",
+      "start": 788577,
+      "end": 801770,
+      "name": "SE_40385"
+    },
+    {
+      "chrom": "chr1",
+      "start": 15541830,
+      "end": 15545054,
+      "name": "SE_40386"
+    },
+    {
+      "chrom": "chr12",
+      "start": 119664328,
+      "end": 119673713,
+      "name": "SE_40387"
+    },
+    {
+      "chrom": "chr12",
+      "start": 47773217,
+      "end": 47778082,
+      "name": "SE_40388"
+    },
+    {
+      "chrom": "chr11",
+      "start": 808243,
+      "end": 812779,
+      "name": "SE_40389"
+    },
+    {
+      "chrom": "chr1",
+      "start": 204690660,
+      "end": 204715217,
+      "name": "SE_40390"
+    },
+    {
+      "chrom": "chr7",
+      "start": 106774239,
+      "end": 106778887,
+      "name": "SE_40391"
+    },
+    {
+      "chrom": "chr11",
+      "start": 5244449,
+      "end": 5259340,
+      "name": "SE_40392"
+    },
+    {
+      "chrom": "chr19",
+      "start": 21592368,
+      "end": 21628246,
+      "name": "SE_40393"
+    },
+    {
+      "chrom": "chr22",
+      "start": 20114151,
+      "end": 20121024,
+      "name": "SE_40394"
+    },
+    {
+      "chrom": "chr9",
+      "start": 133121414,
+      "end": 133145205,
+      "name": "SE_40395"
+    },
+    {
+      "chrom": "chr2",
+      "start": 96866739,
+      "end": 96894642,
+      "name": "SE_40396"
+    },
+    {
+      "chrom": "chr3",
+      "start": 196498807,
+      "end": 196529557,
+      "name": "SE_40397"
+    },
+    {
+      "chrom": "chr6",
+      "start": 27144655,
+      "end": 27148270,
+      "name": "SE_40398"
+    },
+    {
+      "chrom": "chr17",
+      "start": 63769760,
+      "end": 63776762,
+      "name": "SE_40399"
+    },
+    {
+      "chrom": "chr1",
+      "start": 12601426,
+      "end": 12620739,
+      "name": "SE_40400"
+    },
+    {
+      "chrom": "chr11",
+      "start": 61331219,
+      "end": 61343628,
+      "name": "SE_40401"
+    },
+    {
+      "chrom": "chr6",
+      "start": 26155143,
+      "end": 26174186,
+      "name": "SE_40402"
+    },
+    {
+      "chrom": "chr4",
+      "start": 169604809,
+      "end": 169627740,
+      "name": "SE_40403"
+    },
+    {
+      "chrom": "chr1",
+      "start": 26274076,
+      "end": 26289901,
+      "name": "SE_40404"
+    },
+    {
+      "chrom": "chr17",
+      "start": 45046627,
+      "end": 45074349,
+      "name": "SE_40405"
+    },
+    {
+      "chrom": "chr3",
+      "start": 36990979,
+      "end": 36994791,
+      "name": "SE_40406"
+    },
+    {
+      "chrom": "chr14",
+      "start": 100372326,
+      "end": 100377390,
+      "name": "SE_40407"
+    },
+    {
+      "chrom": "chr6",
+      "start": 34656045,
+      "end": 34674228,
+      "name": "SE_40408"
+    },
+    {
+      "chrom": "chr10",
+      "start": 61750951,
+      "end": 61795980,
+      "name": "SE_40409"
+    },
+    {
+      "chrom": "chr8",
+      "start": 61756363,
+      "end": 61767957,
+      "name": "SE_40410"
+    },
+    {
+      "chrom": "chr17",
+      "start": 32881990,
+      "end": 32913362,
+      "name": "SE_40411"
+    },
+    {
+      "chrom": "chr2",
+      "start": 218393708,
+      "end": 218408201,
+      "name": "SE_40412"
+    },
+    {
+      "chrom": "chr1",
+      "start": 160989931,
+      "end": 161019447,
+      "name": "SE_40413"
+    },
+    {
+      "chrom": "chr7",
+      "start": 128826472,
+      "end": 128833894,
+      "name": "SE_40414"
+    },
+    {
+      "chrom": "chr6",
+      "start": 161204416,
+      "end": 161230023,
+      "name": "SE_40415"
+    },
+    {
+      "chrom": "chr2",
+      "start": 85988133,
+      "end": 86003547,
+      "name": "SE_40416"
+    },
+    {
+      "chrom": "chr19",
+      "start": 38836581,
+      "end": 38853393,
+      "name": "SE_40417"
+    },
+    {
+      "chrom": "chr2",
+      "start": 110674488,
+      "end": 110696282,
+      "name": "SE_40418"
+    },
+    {
+      "chrom": "chr1",
+      "start": 203286858,
+      "end": 203312483,
+      "name": "SE_40419"
+    },
+    {
+      "chrom": "chr1",
+      "start": 36134707,
+      "end": 36163284,
+      "name": "SE_40420"
+    },
+    {
+      "chrom": "chr10",
+      "start": 28805993,
+      "end": 28823630,
+      "name": "SE_40421"
+    },
+    {
+      "chrom": "chr2",
+      "start": 70122653,
+      "end": 70126946,
+      "name": "SE_40422"
+    },
+    {
+      "chrom": "chr6",
+      "start": 109380390,
+      "end": 109383523,
+      "name": "SE_40423"
+    },
+    {
+      "chrom": "chr11",
+      "start": 64267713,
+      "end": 64274422,
+      "name": "SE_40424"
+    },
+    {
+      "chrom": "chr1",
+      "start": 149830510,
+      "end": 149834821,
+      "name": "SE_40425"
+    },
+    {
+      "chrom": "chr1",
+      "start": 26069225,
+      "end": 26079751,
+      "name": "SE_40426"
+    },
+    {
+      "chrom": "chr1",
+      "start": 149858957,
+      "end": 149863305,
+      "name": "SE_40427"
+    },
+    {
+      "chrom": "chr17",
+      "start": 63419764,
+      "end": 63448374,
+      "name": "SE_40428"
+    },
+    {
+      "chrom": "chr4",
+      "start": 102824414,
+      "end": 102829675,
+      "name": "SE_40429"
+    },
+    {
+      "chrom": "chr1",
+      "start": 161389413,
+      "end": 161408114,
+      "name": "SE_40430"
+    },
+    {
+      "chrom": "chr3",
+      "start": 126907836,
+      "end": 126918060,
+      "name": "SE_40431"
+    },
+    {
+      "chrom": "chr22",
+      "start": 30420129,
+      "end": 30445409,
+      "name": "SE_40432"
+    },
+    {
+      "chrom": "chr2",
+      "start": 240561235,
+      "end": 240586923,
+      "name": "SE_40433"
+    },
+    {
+      "chrom": "chr12",
+      "start": 108559398,
+      "end": 108565286,
+      "name": "SE_40434"
+    },
+    {
+      "chrom": "chr1",
+      "start": 184024659,
+      "end": 184038374,
+      "name": "SE_40435"
+    },
+    {
+      "chrom": "chr12",
+      "start": 53365115,
+      "end": 53383699,
+      "name": "SE_40436"
+    },
+    {
+      "chrom": "chr20",
+      "start": 59005147,
+      "end": 59023522,
+      "name": "SE_40437"
+    },
+    {
+      "chrom": "chr14",
+      "start": 23278027,
+      "end": 23303143,
+      "name": "SE_40438"
+    },
+    {
+      "chrom": "chr9",
+      "start": 124859686,
+      "end": 124871715,
+      "name": "SE_40439"
+    },
+    {
+      "chrom": "chrX",
+      "start": 154748534,
+      "end": 154766116,
+      "name": "SE_40440"
+    },
+    {
+      "chrom": "chr5",
+      "start": 126970069,
+      "end": 126983870,
+      "name": "SE_40441"
+    },
+    {
+      "chrom": "chr3",
+      "start": 142997235,
+      "end": 143003392,
+      "name": "SE_40442"
+    },
+    {
+      "chrom": "chr11",
+      "start": 58576430,
+      "end": 58580471,
+      "name": "SE_40443"
+    },
+    {
+      "chrom": "chrX",
+      "start": 41330951,
+      "end": 41335767,
+      "name": "SE_40444"
+    },
+    {
+      "chrom": "chr7",
+      "start": 1456637,
+      "end": 1463647,
+      "name": "SE_40445"
+    },
+    {
+      "chrom": "chr2",
+      "start": 10119377,
+      "end": 10125476,
+      "name": "SE_40446"
+    },
+    {
+      "chrom": "chr10",
+      "start": 7026586,
+      "end": 7030078,
+      "name": "SE_40447"
+    },
+    {
+      "chrom": "chr12",
+      "start": 28189364,
+      "end": 28192390,
+      "name": "SE_40448"
+    },
+    {
+      "chrom": "chr1",
+      "start": 150971682,
+      "end": 150979987,
+      "name": "SE_40449"
+    },
+    {
+      "chrom": "chr1",
+      "start": 150362052,
+      "end": 150367181,
+      "name": "SE_40450"
+    },
+    {
+      "chrom": "chr10",
+      "start": 17642839,
+      "end": 17663251,
+      "name": "SE_40451"
+    },
+    {
+      "chrom": "chr21",
+      "start": 46319904,
+      "end": 46326601,
+      "name": "SE_40452"
+    },
+    {
+      "chrom": "chr22",
+      "start": 19395926,
+      "end": 19405508,
+      "name": "SE_40453"
+    },
+    {
+      "chrom": "chr1",
+      "start": 212030505,
+      "end": 212038509,
+      "name": "SE_40454"
+    },
+    {
+      "chrom": "chr17",
+      "start": 82323489,
+      "end": 82346891,
+      "name": "SE_40455"
+    },
+    {
+      "chrom": "chr9",
+      "start": 109098152,
+      "end": 109144533,
+      "name": "SE_40456"
+    },
+    {
+      "chrom": "chr3",
+      "start": 14230153,
+      "end": 14236363,
+      "name": "SE_40457"
+    },
+    {
+      "chrom": "chr6",
+      "start": 30679761,
+      "end": 30688909,
+      "name": "SE_40458"
+    },
+    {
+      "chrom": "chr5",
+      "start": 138336516,
+      "end": 138340034,
+      "name": "SE_40459"
+    },
+    {
+      "chrom": "chr8",
+      "start": 143264393,
+      "end": 143295028,
+      "name": "SE_40460"
+    },
+    {
+      "chrom": "chr1",
+      "start": 30718699,
+      "end": 30738774,
+      "name": "SE_40461"
+    },
+    {
+      "chrom": "chr2",
+      "start": 64637661,
+      "end": 64650228,
+      "name": "SE_40462"
+    },
+    {
+      "chrom": "chr4",
+      "start": 138235199,
+      "end": 138243187,
+      "name": "SE_40463"
+    },
+    {
+      "chrom": "chr1",
+      "start": 116824303,
+      "end": 116828441,
+      "name": "SE_40464"
+    },
+    {
+      "chrom": "chr19",
+      "start": 58553693,
+      "end": 58560935,
+      "name": "SE_40465"
+    },
+    {
+      "chrom": "chr4",
+      "start": 74053898,
+      "end": 74065768,
+      "name": "SE_40466"
+    },
+    {
+      "chrom": "chr3",
+      "start": 44439014,
+      "end": 44443280,
+      "name": "SE_40467"
+    },
+    {
+      "chrom": "chr17",
+      "start": 80252071,
+      "end": 80263047,
+      "name": "SE_40468"
+    },
+    {
+      "chrom": "chr7",
+      "start": 130131137,
+      "end": 130153177,
+      "name": "SE_40469"
+    },
+    {
+      "chrom": "chr10",
+      "start": 30542002,
+      "end": 30554826,
+      "name": "SE_40470"
+    },
+    {
+      "chrom": "chr8",
+      "start": 104616446,
+      "end": 104623885,
+      "name": "SE_40471"
+    },
+    {
+      "chrom": "chr11",
+      "start": 65890615,
+      "end": 65912542,
+      "name": "SE_40472"
+    },
+    {
+      "chrom": "chr17",
+      "start": 48992115,
+      "end": 49004783,
+      "name": "SE_40473"
+    },
+    {
+      "chrom": "chr6",
+      "start": 36422709,
+      "end": 36445053,
+      "name": "SE_40474"
+    },
+    {
+      "chrom": "chr19",
+      "start": 41307907,
+      "end": 41329293,
+      "name": "SE_40475"
+    },
+    {
+      "chrom": "chr2",
+      "start": 24790248,
+      "end": 24819193,
+      "name": "SE_40476"
+    },
+    {
+      "chrom": "chr2",
+      "start": 151759814,
+      "end": 151800914,
+      "name": "SE_40477"
+    },
+    {
+      "chrom": "chr12",
+      "start": 62248800,
+      "end": 62262464,
+      "name": "SE_40478"
+    },
+    {
+      "chrom": "chr19",
+      "start": 12931551,
+      "end": 12941297,
+      "name": "SE_40479"
+    },
+    {
+      "chrom": "chr2",
+      "start": 20576121,
+      "end": 20602379,
+      "name": "SE_40480"
+    },
+    {
+      "chrom": "chr9",
+      "start": 91896411,
+      "end": 91908652,
+      "name": "SE_40481"
+    },
+    {
+      "chrom": "chr11",
+      "start": 75094622,
+      "end": 75106020,
+      "name": "SE_40482"
+    },
+    {
+      "chrom": "chr2",
+      "start": 85413476,
+      "end": 85439216,
+      "name": "SE_40483"
+    },
+    {
+      "chrom": "chr11",
+      "start": 58770180,
+      "end": 58778249,
+      "name": "SE_40484"
+    },
+    {
+      "chrom": "chr19",
+      "start": 17072867,
+      "end": 17077172,
+      "name": "SE_40485"
+    },
+    {
+      "chrom": "chr9",
+      "start": 112058773,
+      "end": 112096641,
+      "name": "SE_40486"
+    },
+    {
+      "chrom": "chr1",
+      "start": 109383131,
+      "end": 109395150,
+      "name": "SE_40487"
+    },
+    {
+      "chrom": "chr17",
+      "start": 43168748,
+      "end": 43172744,
+      "name": "SE_40488"
+    },
+    {
+      "chrom": "chr11",
+      "start": 746584,
+      "end": 752823,
+      "name": "SE_40489"
+    },
+    {
+      "chrom": "chr20",
+      "start": 56358943,
+      "end": 56386752,
+      "name": "SE_40490"
+    },
+    {
+      "chrom": "chr20",
+      "start": 17962976,
+      "end": 17970640,
+      "name": "SE_40491"
+    },
+    {
+      "chrom": "chr14",
+      "start": 69683753,
+      "end": 69704232,
+      "name": "SE_40492"
+    },
+    {
+      "chrom": "chr16",
+      "start": 21511322,
+      "end": 21538878,
+      "name": "SE_40493"
+    },
+    {
+      "chrom": "chr7",
+      "start": 5549046,
+      "end": 5575685,
+      "name": "SE_40494"
+    },
+    {
+      "chrom": "chr6",
+      "start": 31820964,
+      "end": 31823656,
+      "name": "SE_40495"
+    },
+    {
+      "chrom": "chr15",
+      "start": 90647971,
+      "end": 90666133,
+      "name": "SE_40496"
+    },
+    {
+      "chrom": "chr19",
+      "start": 19057251,
+      "end": 19063871,
+      "name": "SE_40497"
+    },
+    {
+      "chrom": "chr17",
+      "start": 48575111,
+      "end": 48585816,
+      "name": "SE_40498"
+    },
+    {
+      "chrom": "chr15",
+      "start": 72226557,
+      "end": 72238366,
+      "name": "SE_40499"
+    },
+    {
+      "chrom": "chr1",
+      "start": 150604057,
+      "end": 150622843,
+      "name": "SE_40500"
+    },
+    {
+      "chrom": "chr3",
+      "start": 39146563,
+      "end": 39180921,
+      "name": "SE_40501"
+    },
+    {
+      "chrom": "chr5",
+      "start": 40832885,
+      "end": 40836800,
+      "name": "SE_40502"
+    },
+    {
+      "chrom": "chr19",
+      "start": 39397581,
+      "end": 39413249,
+      "name": "SE_40503"
+    },
+    {
+      "chrom": "chrX",
+      "start": 2451465,
+      "end": 2476175,
+      "name": "SE_40504"
+    },
+    {
+      "chrom": "chr9",
+      "start": 97501622,
+      "end": 97506765,
+      "name": "SE_40505"
+    },
+    {
+      "chrom": "chr19",
+      "start": 55027322,
+      "end": 55043429,
+      "name": "SE_40506"
+    },
+    {
+      "chrom": "chr6",
+      "start": 3323697,
+      "end": 3356936,
+      "name": "SE_40507"
+    },
+    {
+      "chrom": "chr1",
+      "start": 1685978,
+      "end": 1697215,
+      "name": "SE_40508"
+    },
+    {
+      "chrom": "chr17",
+      "start": 28723852,
+      "end": 28729503,
+      "name": "SE_40509"
+    },
+    {
+      "chrom": "chr1",
+      "start": 89530579,
+      "end": 89551558,
+      "name": "SE_40510"
+    },
+    {
+      "chrom": "chr11",
+      "start": 3283575,
+      "end": 3309916,
+      "name": "SE_40511"
+    },
+    {
+      "chrom": "chr6",
+      "start": 26052372,
+      "end": 26066624,
+      "name": "SE_40512"
+    },
+    {
+      "chrom": "chr1",
+      "start": 21668921,
+      "end": 21690069,
+      "name": "SE_40513"
+    },
+    {
+      "chrom": "chr14",
+      "start": 68779777,
+      "end": 68797954,
+      "name": "SE_40514"
+    },
+    {
+      "chrom": "chr9",
+      "start": 35913151,
+      "end": 35925513,
+      "name": "SE_40515"
+    },
+    {
+      "chrom": "chr19",
+      "start": 42228627,
+      "end": 42253819,
+      "name": "SE_40516"
+    },
+    {
+      "chrom": "chr5",
+      "start": 33439135,
+      "end": 33443460,
+      "name": "SE_40517"
+    },
+    {
+      "chrom": "chr10",
+      "start": 3093832,
+      "end": 3099251,
+      "name": "SE_40518"
+    },
+    {
+      "chrom": "chr17",
+      "start": 81918252,
+      "end": 81927507,
+      "name": "SE_40519"
+    },
+    {
+      "chrom": "chr6",
+      "start": 157810845,
+      "end": 157842581,
+      "name": "SE_40520"
+    },
+    {
+      "chrom": "chr5",
+      "start": 131633740,
+      "end": 131637421,
+      "name": "SE_40521"
+    },
+    {
+      "chrom": "chr10",
+      "start": 75209260,
+      "end": 75212568,
+      "name": "SE_40522"
+    },
+    {
+      "chrom": "chr10",
+      "start": 70699323,
+      "end": 70757571,
+      "name": "SE_40523"
+    },
+    {
+      "chrom": "chr19",
+      "start": 38311340,
+      "end": 38322305,
+      "name": "SE_40524"
+    },
+    {
+      "chrom": "chr10",
+      "start": 24895880,
+      "end": 24930604,
+      "name": "SE_40525"
+    },
+    {
+      "chrom": "chr19",
+      "start": 49486308,
+      "end": 49491249,
+      "name": "SE_40526"
+    },
+    {
+      "chrom": "chr15",
+      "start": 44817554,
+      "end": 44861877,
+      "name": "SE_40527"
+    },
+    {
+      "chrom": "chr2",
+      "start": 55223131,
+      "end": 55234927,
+      "name": "SE_40528"
+    },
+    {
+      "chrom": "chr11",
+      "start": 113662877,
+      "end": 113691666,
+      "name": "SE_40529"
+    },
+    {
+      "chrom": "chr22",
+      "start": 21567305,
+      "end": 21570362,
+      "name": "SE_40530"
+    },
+    {
+      "chrom": "chr6",
+      "start": 170549649,
+      "end": 170555993,
+      "name": "SE_40531"
+    },
+    {
+      "chrom": "chr10",
+      "start": 68954806,
+      "end": 68958337,
+      "name": "SE_40532"
+    },
+    {
+      "chrom": "chr1",
+      "start": 46339149,
+      "end": 46342959,
+      "name": "SE_40533"
+    },
+    {
+      "chrom": "chr3",
+      "start": 141803991,
+      "end": 141807949,
+      "name": "SE_40534"
+    },
+    {
+      "chrom": "chr17",
+      "start": 43314736,
+      "end": 43323962,
+      "name": "SE_40535"
+    },
+    {
+      "chrom": "chr3",
+      "start": 101629139,
+      "end": 101643895,
+      "name": "SE_40536"
+    },
+    {
+      "chrom": "chr8",
+      "start": 30743303,
+      "end": 30746285,
+      "name": "SE_40537"
+    },
+    {
+      "chrom": "chr6",
+      "start": 32010769,
+      "end": 32015595,
+      "name": "SE_40538"
+    },
+    {
+      "chrom": "chr9",
+      "start": 120895478,
+      "end": 120900295,
+      "name": "SE_40539"
+    },
+    {
+      "chrom": "chr3",
+      "start": 38163473,
+      "end": 38166789,
+      "name": "SE_40540"
+    },
+    {
+      "chrom": "chr16",
+      "start": 28821915,
+      "end": 28826060,
+      "name": "SE_40541"
+    },
+    {
+      "chrom": "chr1",
+      "start": 1647336,
+      "end": 1663643,
+      "name": "SE_40542"
+    },
+    {
+      "chrom": "chr6",
+      "start": 26194497,
+      "end": 26200699,
+      "name": "SE_40543"
+    },
+    {
+      "chrom": "chr11",
+      "start": 46273567,
+      "end": 46319374,
+      "name": "SE_40544"
+    },
+    {
+      "chrom": "chr7",
+      "start": 121070604,
+      "end": 121084204,
+      "name": "SE_40545"
+    },
+    {
+      "chrom": "chr20",
+      "start": 56414584,
+      "end": 56448980,
+      "name": "SE_40546"
+    },
+    {
+      "chrom": "chr5",
+      "start": 139686029,
+      "end": 139710961,
+      "name": "SE_40547"
+    },
+    {
+      "chrom": "chr20",
+      "start": 50129844,
+      "end": 50167311,
+      "name": "SE_40548"
+    },
+    {
+      "chrom": "chr21",
+      "start": 43882028,
+      "end": 43894389,
+      "name": "SE_40549"
+    },
+    {
+      "chrom": "chr17",
+      "start": 59695156,
+      "end": 59708819,
+      "name": "SE_40550"
+    },
+    {
+      "chrom": "chr3",
+      "start": 186929735,
+      "end": 186956959,
+      "name": "SE_40551"
+    },
+    {
+      "chrom": "chr2",
+      "start": 96912075,
+      "end": 96924805,
+      "name": "SE_40552"
+    },
+    {
+      "chrom": "chr12",
+      "start": 12714472,
+      "end": 12735335,
+      "name": "SE_40553"
+    },
+    {
+      "chrom": "chr20",
+      "start": 50186942,
+      "end": 50197865,
+      "name": "SE_40554"
+    },
+    {
+      "chrom": "chr6",
+      "start": 30767292,
+      "end": 30794173,
+      "name": "SE_40555"
+    },
+    {
+      "chrom": "chr17",
+      "start": 63829111,
+      "end": 63852985,
+      "name": "SE_40556"
+    },
+    {
+      "chrom": "chr16",
+      "start": 31452418,
+      "end": 31461020,
+      "name": "SE_40557"
+    },
+    {
+      "chrom": "chr19",
+      "start": 41261888,
+      "end": 41267694,
+      "name": "SE_40558"
+    },
+    {
+      "chrom": "chr5",
+      "start": 149439557,
+      "end": 149457778,
+      "name": "SE_40559"
+    },
+    {
+      "chrom": "chrX",
+      "start": 152149558,
+      "end": 152178586,
+      "name": "SE_40560"
+    },
+    {
+      "chrom": "chr7",
+      "start": 154672274,
+      "end": 154682106,
+      "name": "SE_40561"
+    },
+    {
+      "chrom": "chr2",
+      "start": 230650508,
+      "end": 230667748,
+      "name": "SE_40562"
+    },
+    {
+      "chrom": "chr6",
+      "start": 133953200,
+      "end": 133973449,
+      "name": "SE_40563"
+    },
+    {
+      "chrom": "chr19",
+      "start": 49761115,
+      "end": 49776921,
+      "name": "SE_40564"
+    },
+    {
+      "chrom": "chr14",
+      "start": 81416180,
+      "end": 81437171,
+      "name": "SE_40565"
+    },
+    {
+      "chrom": "chr1",
+      "start": 248855852,
+      "end": 248860493,
+      "name": "SE_40566"
+    },
+    {
+      "chrom": "chr19",
+      "start": 56305623,
+      "end": 56322890,
+      "name": "SE_40567"
+    },
+    {
+      "chrom": "chr17",
+      "start": 35586513,
+      "end": 35590700,
+      "name": "SE_40568"
+    },
+    {
+      "chrom": "chr11",
+      "start": 76443000,
+      "end": 76446287,
+      "name": "SE_40569"
+    },
+    {
+      "chrom": "chr13",
+      "start": 91346657,
+      "end": 91351680,
+      "name": "SE_40570"
+    },
+    {
+      "chrom": "chr6",
+      "start": 26214136,
+      "end": 26219359,
+      "name": "SE_40571"
+    },
+    {
+      "chrom": "chr16",
+      "start": 79863092,
+      "end": 79876107,
+      "name": "SE_40572"
+    },
+    {
+      "chrom": "chrX",
+      "start": 38800740,
+      "end": 38817814,
+      "name": "SE_40573"
+    },
+    {
+      "chrom": "chr20",
+      "start": 35739272,
+      "end": 35744774,
+      "name": "SE_40574"
+    },
+    {
+      "chrom": "chr11",
+      "start": 34044294,
+      "end": 34054127,
+      "name": "SE_40575"
+    },
+    {
+      "chrom": "chr1",
+      "start": 161182072,
+      "end": 161203358,
+      "name": "SE_40576"
+    },
+    {
+      "chrom": "chr22",
+      "start": 36451194,
+      "end": 36482167,
+      "name": "SE_40577"
+    },
+    {
+      "chrom": "chr15",
+      "start": 64092253,
+      "end": 64096922,
+      "name": "SE_40578"
+    },
+    {
+      "chrom": "chr2",
+      "start": 167939532,
+      "end": 167963409,
+      "name": "SE_40579"
+    },
+    {
+      "chrom": "chr17",
+      "start": 38700920,
+      "end": 38705269,
+      "name": "SE_40580"
+    },
+    {
+      "chrom": "chr21",
+      "start": 14736565,
+      "end": 14764512,
+      "name": "SE_40581"
+    },
+    {
+      "chrom": "chr1",
+      "start": 44029435,
+      "end": 44050430,
+      "name": "SE_40582"
+    }
+  ]
+}
