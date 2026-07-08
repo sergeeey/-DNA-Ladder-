@@ -72,6 +72,29 @@ See `RESEARCH_DIRECTIONS.md` — 7 more candidate directions beyond LLPS (non-co
 function, dark transcriptome, centromeric DNA, transgenerational epigenetics, non-B DNA
 structures, missing heritability/regulatory variants). Not prioritized.
 
+## DONE (2026-07-08) — Second experiment: exp_llps_ctd_phospho_vs_coactivators, INCONCLUSIVE
+
+Extended experiment 1's promoter/SE density-ratio method to a 4th factor, Pol II-Ser5P
+(`ENCSR000BKR`/`ENCFF053XYZ`, GRCh38, K562). Novelty Check found the base fact ("Ser5P marks
+initiation, is promoter-proximal") is decades-old established biology, NOT novel -- reformulated
+to a within-project comparative extension: does Ser5P show a promoter-favoring ratio,
+contrasting with BRD4/MED1's already-robust SE-favoring pattern?
+
+**Result: INCONCLUSIVE / window-sensitive.** Ser5P ratio = 0.841 (2kb, no clear preference) vs
+0.456 (5kb, SE-favoring) -- not stable across window sizes, unlike BRD4/MED1 which stayed
+SE-favoring at both. Total POLR2A shows the same window-instability (1.039 -> 0.501). Read as a
+methodological finding: fixed-width TSS windows don't cleanly classify broadly-distributed
+Pol II-associated marks the way they do sharp coactivator peaks -- and BRD4/MED1's robustness
+to the same test is, by contrast, reinforced, not undermined. Full writeup:
+`experiments/exp_llps_ctd_phospho_vs_coactivators/decision.md`.
+
+**Process note:** running the shared `llps_promoter_vs_se_analysis.py` script directly with a
+4th factor added would have silently overwritten experiment 1's already-decided results.json --
+caught this before committing, reverted the shared script to its original 3-factor state, and
+wrote a separate `scripts/llps_ctd_phospho_analysis.py` that imports and reuses the shared
+functions without mutating the first experiment's frozen output.
+
 ## Auto-commit log
+- [2026-07-08 16:45] `e9161f6`: docs: auto-log update
 - [2026-07-08 16:44] `dc14778`: fix: reviewer-caught off-by-one in liftover reverse-strand coordinate math + close evidence gap
 - [2026-07-08 16:34] `1fcd403`: feat: exp_llps_promoter_vs_se_chip_evidence вЂ” first DNA Ladder result, SE-favoring
