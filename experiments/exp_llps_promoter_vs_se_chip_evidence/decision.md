@@ -83,6 +83,16 @@ evidence, and "orthogonal-method finding" is exactly such a claim).
   The comparison IS genuinely independent -- H3K27ac and BRD4/MED1 are different assays
   measuring different molecules.
 
+## Follow-up (2026-07-08, same day): HepG2 replication
+
+Tested generalization in a second cell line, addressing the single-cell-line limitation noted
+below. See `experiments/exp_llps_promoter_vs_se_hepg2_replication/decision.md`: **MED1
+replicates cleanly** (SE-favoring in both K562 and HepG2, both windows); **BRD4 replicates the
+direction but not the pre-registered magnitude threshold** in HepG2 at the primary window
+(0.764 vs 0.414 in K562), though it does clear the threshold at the wider window. Read this
+K562 BRD4 finding as robust-in-K562 rather than a fully general BRD4 property until a 3rd cell
+line is tested.
+
 ## Caveats / limitations
 
 - **Go/No-Go criterion gap:** claim.md pre-registered a per-factor MCID classification (>=1.5

@@ -94,7 +94,31 @@ caught this before committing, reverted the shared script to its original 3-fact
 wrote a separate `scripts/llps_ctd_phospho_analysis.py` that imports and reuses the shared
 functions without mutating the first experiment's frozen output.
 
+## DONE (2026-07-08) — Item A: HepG2 replication (PARTIAL) + Item B: permanent interval-math tests
+
+User asked to do all 3 previously-proposed next steps in order (A: generalize to a 2nd cell
+line, B: add tests for the reviewer-flagged interval-math code, C: new research direction).
+
+**A — HepG2 replication:** reused experiment 1's exact method (2kb/5kb promoter windows,
+dbSUPER-derived SE calls lifted to GRCh38, same code) on HepG2 BRD4/MED1/POLR2A ChIP-seq.
+**MED1 replicates cleanly** (ratio 0.558/0.291, SE-favoring at both windows, consistent with
+K562's 0.523). **BRD4 does NOT clear the pre-registered replication criterion at the primary
+2kb window** (0.764, "no clear preference" vs K562's 0.414 SE-favoring), though it trends the
+same direction and clears SE-favoring at the wider 5kb window. Filed honestly as PARTIAL
+REPLICATION, not rounded up to a clean positive. Cross-referenced in both experiments'
+decision.md files. Full writeup:
+`experiments/exp_llps_promoter_vs_se_hepg2_replication/decision.md`.
+
+**B — permanent tests:** `tests/verify_interval_math.py` (stdlib `unittest`, 20 tests, all
+passing) covers `merge_intervals`/`subtract_intervals`/`point_in_intervals` (including the
+reviewer's 500-trial fuzz test against a brute-force bitmap reference, now committed instead
+of re-derived each session) and a regression test for the confirmed-and-fixed liftover
+reverse-strand off-by-one bug.
+
+**C (new research direction) — not started yet, next up.**
+
 ## Auto-commit log
+- [2026-07-08 17:21] `cb58ec8`: docs: final auto-log sync
 - [2026-07-08 17:20] `3beebbe`: docs: auto-log update 4
 - [2026-07-08 17:20] `dda0641`: docs: auto-log update 3
 - [2026-07-08 17:19] `9848c6d`: docs: auto-log update 2

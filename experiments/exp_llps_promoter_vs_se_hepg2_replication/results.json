@@ -1,0 +1,39 @@
+{
+  "cell_line": "HepG2",
+  "promoter_window_bp": 2000,
+  "promoter_only_bp_total": 71586831,
+  "se_only_bp_total": 5640325,
+  "factors": {
+    "BRD4": {
+      "n_total_peaks": 8233,
+      "n_promoter_only": 4247,
+      "n_se_only": 438,
+      "n_both": 218,
+      "n_neither": 3330,
+      "density_promoter_per_kb": 0.05932655406970033,
+      "density_se_per_kb": 0.07765509966181026,
+      "promoter_se_density_ratio": 0.7639749910574943
+    },
+    "MED1": {
+      "n_total_peaks": 42852,
+      "n_promoter_only": 11782,
+      "n_se_only": 1665,
+      "n_both": 506,
+      "n_neither": 28899,
+      "density_promoter_per_kb": 0.16458334354820092,
+      "density_se_per_kb": 0.29519575556373084,
+      "promoter_se_density_ratio": 0.5575396679870909
+    },
+    "POLR2A": {
+      "n_total_peaks": 29768,
+      "n_promoter_only": 14089,
+      "n_se_only": 1120,
+      "n_both": 617,
+      "n_neither": 13942,
+      "density_promoter_per_kb": 0.1968099412027332,
+      "density_se_per_kb": 0.1985701178566838,
+      "promoter_se_density_ratio": 0.9911357425127734
+    }
+  },
+  "mcid": "density_ratio >= 1.5 promoter-favoring; <= 0.67 SE-favoring; between = no clear preference"
+}

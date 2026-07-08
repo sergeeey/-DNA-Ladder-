@@ -1,0 +1,39 @@
+{
+  "cell_line": "HepG2",
+  "promoter_window_bp": 5000,
+  "promoter_only_bp_total": 172671179,
+  "se_only_bp_total": 4882684,
+  "factors": {
+    "BRD4": {
+      "n_total_peaks": 8233,
+      "n_promoter_only": 4662,
+      "n_se_only": 386,
+      "n_both": 270,
+      "n_neither": 2915,
+      "density_promoter_per_kb": 0.02699929442191392,
+      "density_se_per_kb": 0.07905488047147839,
+      "promoter_se_density_ratio": 0.3415259660237522
+    },
+    "MED1": {
+      "n_total_peaks": 42852,
+      "n_promoter_only": 14856,
+      "n_se_only": 1445,
+      "n_both": 726,
+      "n_neither": 25825,
+      "density_promoter_per_kb": 0.0860363616327656,
+      "density_se_per_kb": 0.2959437882934878,
+      "promoter_se_density_ratio": 0.29071859263842104
+    },
+    "POLR2A": {
+      "n_total_peaks": 29768,
+      "n_promoter_only": 16780,
+      "n_se_only": 876,
+      "n_both": 861,
+      "n_neither": 11251,
+      "density_promoter_per_kb": 0.09717892758466658,
+      "density_se_per_kb": 0.179409521484495,
+      "promoter_se_density_ratio": 0.5416598114780938
+    }
+  },
+  "mcid": "density_ratio >= 1.5 promoter-favoring; <= 0.67 SE-favoring; between = no clear preference"
+}
