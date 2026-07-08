@@ -37,6 +37,13 @@ running.
    cells and their regulatory role in replication/transcription. Growing literature; check for
    existing public genome-wide prediction/experimental datasets (e.g. G4-seq) before designing
    a new test.
+   **Checked 2026-07-08:** real public G4-seq data exists (Chambers 2015 Nat Biotechnol,
+   Marsico 2019 NAR, GEO `GSE110582`) but the only found download is a 21GB raw `.tar` of
+   fastq/bigwig files -- impractical to process in a single session. A smaller processed
+   peak-call/BED file (journal supplementary, or a UCSC track) was not located on a first
+   pass. Parked, not pursued further today -- worth a second look with more targeted search
+   (e.g. UCSC Genome Browser track hubs, or the paper's own GitHub repo if one exists) before
+   attempting again.
 
 7. **Real-time single-cell 3D genome dynamics** — chromatin loops as dynamic, fluctuating
    structures (live-imaging) vs. the population-averaged Hi-C snapshot ARCHCODE and most of the
