@@ -95,6 +95,7 @@ wrote a separate `scripts/llps_ctd_phospho_analysis.py` that imports and reuses 
 functions without mutating the first experiment's frozen output.
 
 ## Auto-commit log
+- [2026-07-08 17:18] `b766250`: feat: exp_llps_ctd_phospho_vs_coactivators вЂ” second experiment, INCONCLUSIVE (window-sensitive)
 - [2026-07-08 16:45] `e9161f6`: docs: auto-log update
 - [2026-07-08 16:44] `dc14778`: fix: reviewer-caught off-by-one in liftover reverse-strand coordinate math + close evidence gap
 - [2026-07-08 16:34] `1fcd403`: feat: exp_llps_promoter_vs_se_chip_evidence вЂ” first DNA Ladder result, SE-favoring
