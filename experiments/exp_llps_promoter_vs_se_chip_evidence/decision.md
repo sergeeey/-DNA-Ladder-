@@ -58,6 +58,31 @@ anticipated.
    definition family (2kb/5kb). Generalization to other cell types or SE-calling methods is
    untested.
 
+## Verification (2026-07-08, Agent(reviewer) pass before reporting)
+
+Ran an independent logic review of `liftover.py`, `fetch_se_liftover_grch38.py`, and
+`llps_promoter_vs_se_analysis.py` before treating this result as trustworthy (per
+`audit-verification-gate.md`: no HIGH/MEDIUM claim reaches the user without tool-verified
+evidence, and "orthogonal-method finding" is exactly such a claim).
+
+- **Confirmed and fixed:** `liftover.py`'s reverse-strand coordinate formula was off by 1bp
+  (`chain.q_size - (q_block_start + offset)` missing a `-1`), verified via a constructed
+  synthetic chain. Fixed; the liftover and full analysis were **re-run from scratch** after
+  the fix -- results identical to the pre-fix numbers above (BRD4 0.414, MED1 0.523, sensitivity
+  0.177/0.287), consistent with the reviewer's assessment that a 1bp shift is immaterial at
+  kb-scale SE regions.
+- **Confirmed correct (fuzz-tested):** `subtract_intervals` (the trickiest function -- computing
+  "promoter-only"/"SE-only" region space) was fuzz-tested against a brute-force bitmap
+  reference, 2000 randomized trials, 0 failures (no negative-length intervals, no
+  out-of-bounds, no dropped/duplicated bp).
+- **Evidence gap closed:** the reviewer flagged that dbSUPER's K562 super-enhancer calls
+  needed to be confirmed independent of the BRD4/MED1 signal being tested against them
+  (otherwise the "orthogonal method" framing would be partly circular). Verified via
+  WebSearch, 2026-07-08: dbSUPER calls super-enhancers from **H3K27ac ChIP-seq** (histone
+  mark, MACS peak calling + ROSE stitching/ranking), not from BRD4/MED1/Mediator ChIP-seq.
+  The comparison IS genuinely independent -- H3K27ac and BRD4/MED1 are different assays
+  measuring different molecules.
+
 ## Caveats / limitations
 
 - **Go/No-Go criterion gap:** claim.md pre-registered a per-factor MCID classification (>=1.5

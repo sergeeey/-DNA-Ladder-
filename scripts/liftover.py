@@ -98,7 +98,11 @@ def lift_point(chains_by_chrom: dict, chrom: str, pos: int):
                         # query is on the minus strand relative to the chain's
                         # own qSize -- rare for hg19->hg38 but handled for
                         # correctness rather than silently assuming '+'.
-                        return (chrom, chain.q_size - (q_block_start + offset))
+                        # -1 because q_size is a length (exclusive upper bound),
+                        # so the reversed 0-based index of q_block_start+offset
+                        # is q_size - (q_block_start+offset) - 1, not the
+                        # off-by-one q_size - (q_block_start+offset).
+                        return (chrom, chain.q_size - (q_block_start + offset) - 1)
             return None  # inside chain span but in a gap between blocks
     return None
 

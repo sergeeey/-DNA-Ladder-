@@ -47,10 +47,30 @@ phosphorylation-switch mechanism) all exist for K562.
    `ARCHCODE/scripts/synonymous_codon_optimality_analysis.py`).
 6. Write decision.md with an honest PROMOTE/REPEAT/REJECT verdict per pre-registered MCID.
 
-No results exist yet. This experiment is design-stage only as of 2026-07-08.
+**UPDATE 2026-07-08, later same day: experiment COMPLETE.** All 6 "NOT yet done" steps above
+finished: sourced dbSUPER K562 super-enhancers (H3K27ac-derived, confirmed independent of
+BRD4/MED1 signal via WebSearch), lifted hg19->GRCh38 via a from-scratch UCSC-chain liftover
+(`scripts/liftover.py`), fetched real ENCODE BRD4/MED1/POLR2A GRCh38 peaks + GENCODE v47
+native GRCh38 TSS, pre-registered summary measure (promoter/SE peak-density ratio) + MCID
+before running `scripts/llps_promoter_vs_se_analysis.py`.
+
+**Result: BRD4 ratio=0.414, MED1 ratio=0.523 -- both SE-favoring** (opposite direction from
+the reformulated question, i.e. static ChIP-seq occupancy does NOT independently corroborate
+the 2026 promoter-centric imaging papers; it favors the classic Sabari/Boija super-enhancer
+model instead). Robust to a pre-registered 5kb-window sensitivity check. Agent(reviewer) caught
+and fixed one real off-by-one bug in the liftover's reverse-strand branch (immaterial to the
+result at kb-scale, re-ran from scratch to confirm) and flagged one evidence gap (dbSUPER's
+independence from BRD4/MED1) which was then verified true via WebSearch. Full writeup:
+`experiments/exp_llps_promoter_vs_se_chip_evidence/decision.md`.
+
+Not filed to `null_results/` -- this is a completed, informative positive result (real
+SE-favoring effect found), not a rejected hypothesis.
 
 ## Research backlog (not started)
 
 See `RESEARCH_DIRECTIONS.md` — 7 more candidate directions beyond LLPS (non-coding DNA
 function, dark transcriptome, centromeric DNA, transgenerational epigenetics, non-B DNA
 structures, missing heritability/regulatory variants). Not prioritized.
+
+## Auto-commit log
+- [2026-07-08 16:34] `1fcd403`: feat: exp_llps_promoter_vs_se_chip_evidence вЂ” first DNA Ladder result, SE-favoring
