@@ -95,6 +95,7 @@ wrote a separate `scripts/llps_ctd_phospho_analysis.py` that imports and reuses 
 functions without mutating the first experiment's frozen output.
 
 ## Auto-commit log
+- [2026-07-08 17:20] `dda0641`: docs: auto-log update 3
 - [2026-07-08 17:19] `9848c6d`: docs: auto-log update 2
 - [2026-07-08 17:18] `42464c2`: docs: auto-log update
 - [2026-07-08 17:18] `b766250`: feat: exp_llps_ctd_phospho_vs_coactivators вЂ” second experiment, INCONCLUSIVE (window-sensitive)
