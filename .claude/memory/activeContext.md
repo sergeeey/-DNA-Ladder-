@@ -73,4 +73,5 @@ function, dark transcriptome, centromeric DNA, transgenerational epigenetics, no
 structures, missing heritability/regulatory variants). Not prioritized.
 
 ## Auto-commit log
+- [2026-07-08 16:44] `dc14778`: fix: reviewer-caught off-by-one in liftover reverse-strand coordinate math + close evidence gap
 - [2026-07-08 16:34] `1fcd403`: feat: exp_llps_promoter_vs_se_chip_evidence вЂ” first DNA Ladder result, SE-favoring
