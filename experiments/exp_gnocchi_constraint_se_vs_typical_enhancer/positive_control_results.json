@@ -1,0 +1,14 @@
+{
+  "purpose": "positive control -- does the pipeline detect the known coding-vs-intergenic constraint effect?",
+  "n_pairs": 1394,
+  "median_z_cds_exon": 1.7465036913792755,
+  "median_z_intergenic": -0.32502429774424124,
+  "mann_whitney_U": 1563071.0,
+  "p_value_mwu": 1.845684242323743e-170,
+  "cliffs_delta": 0.6087299741256338,
+  "paired_permutation_observed_mean_diff": 2.2423938638563774,
+  "p_value_permutation": 9.999000099990002e-05,
+  "n_permutations": 10000,
+  "mcid_reference": "same MCID as main experiment: abs(cliffs_delta) >= 0.2 AND p < 0.05",
+  "expected_direction": "CDS exons should show HIGHER Z (more constrained) than intergenic"
+}

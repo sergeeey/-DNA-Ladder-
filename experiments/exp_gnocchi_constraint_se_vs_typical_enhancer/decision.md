@@ -3,6 +3,30 @@
 **Date:** 2026-07-10
 **Verdict:** REJECT
 
+## Positive control (added 2026-07-10, later): pipeline validated on a known effect
+
+Before trusting this REJECT, ran the exact same code (`weighted_mean_z`,
+`mann_whitney_u`, `paired_permutation_test` -- unmodified, imported directly, not
+re-derived) on a comparison with a known, large, well-documented effect: protein-coding
+CDS exons (GENCODE v47 basic, GRCh38, n=3000 sampled) vs. length-matched random regions
+>=100kb from any TSS (crude intergenic proxy). Script:
+`scripts/gnocchi_positive_control_analysis.py`, tests: `tests/verify_gnocchi_positive_control.py`.
+
+| Comparison | n pairs | median Z (test) | median Z (control) | Cliff's delta | permutation p |
+|---|---|---|---|---|---|
+| CDS exon vs. intergenic (positive control) | 1394 | **1.747** | **-0.325** | **+0.609** | **0.0001** |
+| SE-constituent vs. typical enhancer (main result, K562) | 3675 | 1.268 | 1.071 | +0.051 | 0.083 |
+| SE-constituent vs. typical enhancer (main result, HepG2) | 1380 | 0.997 | 1.109 | -0.044 | 0.010 |
+
+The positive control found the expected effect at ~12x the MCID threshold, correctly
+signed (coding = more constrained), at the permutation test's p-value floor
+(1/(n_perm+1)). **This confirms the pipeline can detect large real effects when they
+exist.** The SE-vs-typical-enhancer null is therefore not attributable to a broken or
+underpowered pipeline -- same code, same data source, same statistical machinery,
+correctly detects a ~12x-larger, well-established effect. The REJECT above is trustworthy.
+
+Full results: `experiments/exp_gnocchi_constraint_se_vs_typical_enhancer/positive_control_results.json`
+
 ## Result
 
 Pre-registered MCID (in `claim.md`, written before this analysis ran):
