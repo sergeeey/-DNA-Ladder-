@@ -240,6 +240,8 @@ discussion: non-B DNA (G-quadruplex/R-loop) using processed datasets instead of 
 FASTQ that parked this direction on 2026-07-08.
 
 ## Auto-commit log
+- [2026-07-10 17:30] `6b4fa28`: docs: meta-conclusion for missing-heritability direction closure
+- [2026-07-10 17:18] `e6aa1c2`: docs: activeContext narrative for positive control + heritability v2 closure
 - [2026-07-10 17:02] `299c913`: feat: exp_heritability_vus_se_vs_typical_enhancer -- REJECT, third convergent null closes direction
 - [2026-07-10 16:57] `6784f5c`: docs: auto-log sync
 - [2026-07-10 16:56] `5903d30`: test: positive control validates Gnocchi pipeline on known coding-vs-intergenic effect
