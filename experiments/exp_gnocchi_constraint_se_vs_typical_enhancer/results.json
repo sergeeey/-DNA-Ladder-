@@ -1,0 +1,43 @@
+{
+  "K562": {
+    "n_se_constituent_total": 5993,
+    "n_typical_total": 46341,
+    "n_matched_pairs": 5993,
+    "n_pairs_with_gnocchi_coverage": 3675,
+    "n_pairs_dropped_no_coverage": 2318,
+    "median_z_se": 1.2683952016794222,
+    "median_z_typical": 1.0714976589965752,
+    "mann_whitney_U": 7094235.5,
+    "p_value_mwu": 0.0001742837732203286,
+    "cliffs_delta": 0.05056011846915642,
+    "paired_permutation_observed_mean_diff": 0.07903152130037408,
+    "p_value_permutation": 0.08349165083491651,
+    "n_permutations": 10000,
+    "median_length_se_constituent_bp": 685,
+    "median_length_typical_matched_bp": 685,
+    "p_value_permutation_bh": 0.08349165083491651,
+    "p_value_mwu_bh": 0.0003485675464406572
+  },
+  "HepG2": {
+    "n_se_constituent_total": 1889,
+    "n_typical_total": 46409,
+    "n_matched_pairs": 1889,
+    "n_pairs_with_gnocchi_coverage": 1380,
+    "n_pairs_dropped_no_coverage": 509,
+    "median_z_se": 0.9970586884881162,
+    "median_z_typical": 1.1085302440215894,
+    "mann_whitney_U": 909963.0,
+    "p_value_mwu": 0.043615348340233694,
+    "cliffs_delta": -0.04435727788279775,
+    "paired_permutation_observed_mean_diff": -0.16639376562464744,
+    "p_value_permutation": 0.010298970102989701,
+    "n_permutations": 10000,
+    "median_length_se_constituent_bp": 1531,
+    "median_length_typical_matched_bp": 1531,
+    "p_value_permutation_bh": 0.020597940205979402,
+    "p_value_mwu_bh": 0.043615348340233694
+  },
+  "mcid": "abs(cliffs_delta) >= 0.2 AND p_value_permutation_bh < 0.05",
+  "match_seed": 42,
+  "data_source": "Gnocchi (Chen/Francioli/Karczewski 2023, Nature, DOI 10.1038/s41586-023-06045-0), gnomAD v3.1.2, GRCh38"
+}
