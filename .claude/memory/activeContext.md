@@ -164,6 +164,7 @@ decision.md cross-referenced with the same caveat (its own "vs whole genome" fra
 re-tested with a matched control).
 
 ## Auto-commit log
+- [2026-07-10 10:01] `1cd7197`: fix: matched-control follow-up substantially weakens exp_llps_promoter_vs_se_chip_evidence
 - [2026-07-10 09:19] `47e249d`: docs: auto-log sync after item C commit
 - [2026-07-10 09:18] `96caf60`: feat: exp_heritability_vus_se_frequency (Item C) вЂ” REJECT, no detectable effect
 - [2026-07-08 17:30] `c8c3cb6`: docs: check G4-seq data feasibility for non-B DNA direction, park it (21GB raw only)
