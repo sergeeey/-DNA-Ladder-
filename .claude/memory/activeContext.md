@@ -239,7 +239,40 @@ tests across the 3 test files pass. Next direction not yet chosen -- candidate f
 discussion: non-B DNA (G-quadruplex/R-loop) using processed datasets instead of the 21GB raw
 FASTQ that parked this direction on 2026-07-08.
 
+## DONE (2026-07-10, later still) — R-loop direction opened and closed same day: exp_rloop_se_vs_typical_enhancer, REJECT
+
+User confirmed the missing-heritability meta-conclusion framing (positive biological
+hypotheses failed, but the pipeline validity + convergent-null finding is itself the
+real result) and asked to pursue R-loop next via `boyko-specialist`. Re-search (not
+first search) found RLBase (Miller/Chedin/Bishop 2023, NAR, PMID 36039757) -- falsifies
+the 2026-07-08 premise that only 21GB raw data existed, but only for R-loops, not G4
+(G4 processed-file search stayed [UNKNOWN]). Verified directly via public S3 JSON API
+(`s3://rlbase-data/`): 75 K562 R-loop samples, small `hg38 broadPeak` files (76KB-11MB).
+
+User said "го" -- resolved GSM1720619 (canonical Sanz/Chedin 2016 K562 DRIP-seq) to
+SRX1070682 via NCBI eutils, downloaded the real processed peak file (44,753 peaks),
+built `scripts/rloop_se_vs_typical_analysis.py` reusing the already-tested SE/typical
+classification, length-matching, and permutation-test code from the Gnocchi experiment
+-- new logic was only `overlap_fraction`.
+
+**Result: REJECT.** Cliff's delta -0.042 (wrong-for-hypothesis direction -- typical
+enhancers show marginally MORE R-loop overlap than SE), permutation p at the test floor
+but driven by n=5993 pairs, not effect size -- same significant-by-sample-size pattern
+as several nulls this session. Literature suggested SE might show more R-loop/RNA
+signal; this matched-comparator test does not reproduce that direction.
+
+**Caught a real latent bug before trusting the result**: wrote 10 unit tests for
+`overlap_fraction` first, one deliberately tested double-counting from overlapping
+input peaks -- failed (1.2 instead of clamped 1.0). Real R-loop data happened to have
+non-overlapping peaks already (result was numerically unaffected), but fixed properly
+via `merge_intervals` reuse (already-tested code from the LLPS experiment) plus a
+defensive clamp, not just patched to pass the test. All 53 tests across 4 test files
+pass. R-loop direction opened and closed in the same session -- consistent with this
+session's pattern that "obvious" SE-associated claims do not survive matched controls.
+
 ## Auto-commit log
+- [2026-07-10 17:45] `8a61059`: feat: exp_rloop_se_vs_typical_enhancer -- REJECT, opens and closes R-loop direction same day
+- [2026-07-10 17:36] `2494764`: docs: auto-log sync
 - [2026-07-10 17:36] `8dd395f`: docs: sync activeContext + commit small reference data files
 - [2026-07-10 17:30] `39caa00`: docs: auto-log sync
 - [2026-07-10 17:30] `6b4fa28`: docs: meta-conclusion for missing-heritability direction closure
