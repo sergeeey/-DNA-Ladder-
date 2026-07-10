@@ -142,6 +142,7 @@ via `scripts/fetch_clinvar_vus_grch38.py`. The much smaller gnomAD AF cache (~32
 committed for reproducibility.
 
 ## Auto-commit log
+- [2026-07-10 09:18] `96caf60`: feat: exp_heritability_vus_se_frequency (Item C) вЂ” REJECT, no detectable effect
 - [2026-07-08 17:30] `c8c3cb6`: docs: check G4-seq data feasibility for non-B DNA direction, park it (21GB raw only)
 - [2026-07-08 17:28] `66c45e2`: docs: auto-log sync 2
 - [2026-07-08 17:28] `89668b0`: docs: auto-log sync
