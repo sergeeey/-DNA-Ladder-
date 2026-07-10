@@ -240,6 +240,7 @@ discussion: non-B DNA (G-quadruplex/R-loop) using processed datasets instead of 
 FASTQ that parked this direction on 2026-07-08.
 
 ## Auto-commit log
+- [2026-07-10 17:36] `8dd395f`: docs: sync activeContext + commit small reference data files
 - [2026-07-10 17:30] `39caa00`: docs: auto-log sync
 - [2026-07-10 17:30] `6b4fa28`: docs: meta-conclusion for missing-heritability direction closure
 - [2026-07-10 17:18] `e6aa1c2`: docs: activeContext narrative for positive control + heritability v2 closure
