@@ -216,7 +216,32 @@ Filed to `null_results/20260710-gnocchi-constraint-se-vs-typical-enhancer.md`. T
 **third independent null** on SE-vs-typical-enhancer across two unrelated data sources (ClinVar,
 gnomAD constraint) -- recommend closing this direction rather than seeking a fourth data source.
 
+## DONE (2026-07-10, later still) — Positive control + heritability v2 completion: direction formally closed
+
+User asked to run a positive control before trusting the Gnocchi REJECT (own idea, matching
+this session's falsification-first discipline). Reused the exact `weighted_mean_z` /
+`mann_whitney_u` / `paired_permutation_test` code, unmodified, on CDS exons (GENCODE v47
+basic, GRCh38) vs. length-matched regions >=100kb from any TSS. Result: Cliff's delta
+**+0.609** (~12x the MCID), p at the permutation floor, correctly signed -- confirms the
+pipeline detects large real effects, so the SE-vs-typical null is trustworthy, not a
+broken-pipeline artifact. 6 new unit tests for the sampling logic (`far_from_any_tss`), all
+pass. Added as a section to `exp_gnocchi_constraint_se_vs_typical_enhancer/decision.md`.
+
+Shortly after, the long-running `exp_heritability_vus_se_vs_typical_enhancer` background job
+(ClinVar VUS-in-SE vs VUS-in-typical-enhancer, matched control, started earlier this session)
+completed: Cliff's delta +0.008 (K562) / -0.019 (HepG2) -- essentially zero, the cleanest null
+of the three. Filed to `null_results/20260710-heritability-vus-se-vs-typical-enhancer.md`.
+
+**Missing-heritability direction now formally closed**: 3 estimands (ClinVar-vs-everywhere,
+ClinVar-vs-matched-typical, Gnocchi-constraint-vs-matched-typical), 2 independent data
+sources, 1 validated pipeline, all converge on no meaningful SE-specific effect. All 43 unit
+tests across the 3 test files pass. Next direction not yet chosen -- candidate from earlier
+discussion: non-B DNA (G-quadruplex/R-loop) using processed datasets instead of the 21GB raw
+FASTQ that parked this direction on 2026-07-08.
+
 ## Auto-commit log
+- [2026-07-10 17:02] `299c913`: feat: exp_heritability_vus_se_vs_typical_enhancer -- REJECT, third convergent null closes direction
+- [2026-07-10 16:57] `6784f5c`: docs: auto-log sync
 - [2026-07-10 16:56] `5903d30`: test: positive control validates Gnocchi pipeline on known coding-vs-intergenic effect
 - [2026-07-10 16:47] `cfcb981`: docs: auto-log sync 2
 - [2026-07-10 16:46] `46cecde`: docs: auto-log sync
