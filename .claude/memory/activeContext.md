@@ -115,9 +115,34 @@ reviewer's 500-trial fuzz test against a brute-force bitmap reference, now commi
 of re-derived each session) and a regression test for the confirmed-and-fixed liftover
 reverse-strand off-by-one bug.
 
-**C (new research direction) — not started yet, next up.**
+**C — missing heritability / VUS-in-super-enhancer frequency (2026-07-08, same day):**
+G4-seq (non-B DNA) parked (21GB raw data only, impractical). Pivoted to backlog item 8:
+does gnomAD population frequency differ between ClinVar VUS inside vs outside super-enhancers
+(K562/HepG2, reusing already-fetched SE calls)? L0 gate + Novelty Check done (WebSearch
+confirmed the general "population frequency informs interpretation" principle is established,
+but this specific SE-stratified genome-wide test was not found in the literature). Data
+feasibility confirmed live (ClinVar GRCh38 rows exist, gnomAD v4 GraphQL API reachable) before
+building anything.
+
+Fetched 2,254,079 genome-wide ClinVar VUS (GRCh38); 25,726 in K562 SE, 9,537 in HepG2 SE.
+Pre-registered (before touching AF data) a subsample cap of 3,000 per group (fixed seed=42)
+for gnomAD API tractability. Ran Mann-Whitney U + Cliff's delta on log10(AF), AF=0 (absent
+from gnomAD) treated as a real ICE category (floored at log10=-7, not imputed).
+
+**Result: REJECT.** K562-SE vs outside: Cliff's delta=-0.013, p_bh=0.47. HepG2-SE vs outside:
+Cliff's delta=-0.032, p_bh=0.14. Neither meets the pre-registered MCID (|delta|>=0.2 AND
+p_bh<0.05) -- unlike ARCHCODE's Hypothesis C (significant p but sub-MCID effect), here there
+is no signal at all, not even a marginal one. Filed to
+`null_results/20260708-heritability-vus-se-frequency.md`. Full writeup:
+`experiments/exp_heritability_vus_se_frequency/decision.md`.
+
+**Note:** the 372MB genome-wide ClinVar VUS fetch (`data/input/clinvar_vus_grch38_se_classified.json`)
+is NOT committed (too large, same discipline as ARCHCODE's large raw fetches) -- reproducible
+via `scripts/fetch_clinvar_vus_grch38.py`. The much smaller gnomAD AF cache (~320KB) IS
+committed for reproducibility.
 
 ## Auto-commit log
+- [2026-07-08 17:30] `c8c3cb6`: docs: check G4-seq data feasibility for non-B DNA direction, park it (21GB raw only)
 - [2026-07-08 17:28] `66c45e2`: docs: auto-log sync 2
 - [2026-07-08 17:28] `89668b0`: docs: auto-log sync
 - [2026-07-08 17:27] `df68a42`: feat: HepG2 replication (PARTIAL) + permanent interval-math test suite

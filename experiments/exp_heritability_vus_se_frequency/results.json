@@ -1,0 +1,32 @@
+{
+  "n_vus_total": 2254079,
+  "n_valid_snv": 2254076,
+  "n_in_k562_se_total": 25726,
+  "n_in_k562_se_sampled": 3000,
+  "n_in_hepg2_se_total": 9537,
+  "n_in_hepg2_se_sampled": 3000,
+  "n_outside_both_total": 2219756,
+  "n_outside_sampled": 3000,
+  "sample_seed": 42,
+  "k562_vs_outside": {
+    "n_k562": 1905,
+    "n_outside": 1943,
+    "median_log10af_k562": -5.209943735684952,
+    "median_log10af_outside": -5.182494541574368,
+    "mann_whitney_U": 1825895.0,
+    "p_value": 0.4714527187192972,
+    "cliffs_delta": -0.013407034877202406,
+    "p_value_bh": 0.4714527187192972
+  },
+  "hepg2_vs_outside": {
+    "n_hepg2": 2211,
+    "n_outside": 1943,
+    "median_log10af_hepg2": -5.3179965152869775,
+    "median_log10af_outside": -5.182494541574368,
+    "mann_whitney_U": 2078409.0,
+    "p_value": 0.07122699346960282,
+    "cliffs_delta": -0.03239196335731165,
+    "p_value_bh": 0.14245398693920563
+  },
+  "mcid": "abs(cliffs_delta) >= 0.2 AND p_value_bh < 0.05"
+}
