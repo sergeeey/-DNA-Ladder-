@@ -188,6 +188,7 @@ inconclusive (Ser5P), 3 REJECT (this one, its two sub-checks folded in, plus the
 heritability VUS test). Ready to move to a new direction.
 
 ## Auto-commit log
+- [2026-07-10 10:14] `5a9db09`: fix: finalize exp_llps_promoter_vs_se_chip_evidence вЂ” REJECT, ENCODE data exhausted
 - [2026-07-10 10:02] `4e14bf4`: docs: auto-log sync
 - [2026-07-10 10:01] `1cd7197`: fix: matched-control follow-up substantially weakens exp_llps_promoter_vs_se_chip_evidence
 - [2026-07-10 09:19] `47e249d`: docs: auto-log sync after item C commit
