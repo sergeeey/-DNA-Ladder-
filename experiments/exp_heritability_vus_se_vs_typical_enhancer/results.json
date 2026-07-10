@@ -1,0 +1,32 @@
+{
+  "K562": {
+    "n_se_total": 25726,
+    "n_typical_total": 111243,
+    "n_se_sampled": 3000,
+    "n_typical_sampled": 3000,
+    "n_se_with_af": 1905,
+    "n_typical_with_af": 1886,
+    "median_log10af_se": -5.209943735684952,
+    "median_log10af_typical": -5.224668070935879,
+    "mann_whitney_U": 1810320.0,
+    "p_value": 0.6798440768162586,
+    "cliffs_delta": 0.007740416329188982,
+    "p_value_bh": 0.6798440768162586
+  },
+  "HepG2": {
+    "n_se_total": 9537,
+    "n_typical_total": 131180,
+    "n_se_sampled": 3000,
+    "n_typical_sampled": 3000,
+    "n_se_with_af": 2211,
+    "n_typical_with_af": 1874,
+    "median_log10af_se": -5.3179965152869775,
+    "median_log10af_typical": -5.208481981892049,
+    "mann_whitney_U": 2031861.5,
+    "p_value": 0.2887718675839274,
+    "cliffs_delta": -0.01923317341689723,
+    "p_value_bh": 0.5775437351678548
+  },
+  "mcid": "abs(cliffs_delta) >= 0.2 AND p_value_bh < 0.05",
+  "sample_seed": 42
+}
