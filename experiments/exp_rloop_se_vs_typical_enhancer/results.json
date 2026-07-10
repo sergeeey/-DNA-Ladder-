@@ -1,0 +1,20 @@
+{
+  "data_source": "RLBase SRX1070682 (Sanz/Chedin 2016 K562 DRIP-seq, PMID 27373332), hg38",
+  "n_se_constituent_total": 5993,
+  "n_typical_total": 46341,
+  "n_matched_pairs": 5993,
+  "n_se_with_any_rloop_overlap": 1416,
+  "n_typical_with_any_rloop_overlap": 1647,
+  "pct_se_with_overlap": 23.63,
+  "pct_typical_with_overlap": 27.48,
+  "median_overlap_fraction_se": 0.0,
+  "median_overlap_fraction_typical": 0.0,
+  "mann_whitney_U": 17209352.0,
+  "p_value_mwu": 7.730628928512207e-05,
+  "cliffs_delta": -0.041690136907876485,
+  "paired_permutation_observed_mean_diff": -0.02394844510149282,
+  "p_value_permutation": 9.999000099990002e-05,
+  "n_permutations": 10000,
+  "mcid": "abs(cliffs_delta) >= 0.2 AND p_value_permutation < 0.05",
+  "match_seed": 42
+}
