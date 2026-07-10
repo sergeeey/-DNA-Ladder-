@@ -8,7 +8,6 @@ weighting would shift the effect size; wrong matching would reintroduce the
 length confound the experiment was specifically designed to remove).
 """
 
-import math
 import sys
 import unittest
 from pathlib import Path
