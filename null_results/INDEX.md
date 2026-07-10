@@ -6,3 +6,4 @@
 | 20260710-llps-promoter-vs-se-chip-evidence | 2026-07-10 | BRD4/MED1 favor super-enhancers over active chromatin? | REJECT | Matched H3K27ac control falsifies it; BRD4 reverses, MED1 splits 1-1, ENCODE data exhausted |
 | 20260710-gnocchi-constraint-se-vs-typical-enhancer | 2026-07-10 | Super-enhancers show different germline constraint (Gnocchi) than typical enhancers? | REJECT | Cliff's delta +0.05 (K562) vs -0.04 (HepG2), sign flips, both far below MCID 0.2 |
 | 20260710-heritability-vus-se-vs-typical-enhancer | 2026-07-10 | ClinVar VUS rarer in SE vs matched typical enhancer? | REJECT | Cliff's delta +0.008/-0.019, essentially zero, third convergent null on this direction |
+| META_missing_heritability_2026-07-10 | 2026-07-10 | Does SE membership explain missing heritability, across all 4 tests? | CLOSED | Pipeline validated (positive control delta=0.61); 3 estimands, 2 data sources converge on null |
