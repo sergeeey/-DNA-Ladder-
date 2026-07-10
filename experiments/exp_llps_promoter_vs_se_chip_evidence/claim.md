@@ -3,7 +3,7 @@ experiment: exp_llps_promoter_vs_se_chip_evidence
 date: 2026-07-08
 ladder_tier: Standard
 question_type: Descriptive
-status: REVISED 2026-07-10 -- original SE-favoring-vs-whole-genome result (2026-07-08) did NOT survive a matched H3K27ac-typical-enhancer control (added after external review). BRD4 shows no real SE-preference in either cell line once matched; MED1 survives in K562 (ratio 1.788) but reverses in HepG2 (0.733). Revised verdict: REPEAT, not PROMOTE. See decision.md "Matched-control follow-up" section for full honest timeline.
+status: "FINAL 2026-07-10: REJECT. Matched-control test (H3K27ac typical enhancers) falsifies the original SE-favoring claim: BRD4 no preference/reverses in both cell lines; MED1 splits 1-1 across K562/HepG2 with no explanation. ENCODE data exhausted for both factors (BRD4: 2 valid + 1 revoked; MED1: 2 total) -- no 3rd cell line exists to test further. Filed to null_results/. Full timeline in decision.md."
 ---
 
 # Claim: ChIP-seq occupancy patterns of condensate-associated factors are more consistent with a promoter-centric than a super-enhancer-centric model of Pol II condensation

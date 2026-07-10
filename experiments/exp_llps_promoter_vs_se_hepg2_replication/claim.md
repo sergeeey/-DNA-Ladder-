@@ -3,7 +3,7 @@ experiment: exp_llps_promoter_vs_se_hepg2_replication
 date: 2026-07-08
 ladder_tier: Standard
 question_type: Descriptive
-status: PARTIAL REPLICATION -- MED1 replicates cleanly (ratio 0.558/0.291), BRD4 does not clear the primary-window MCID (0.764, "no clear preference") though trends the same direction and clears it at 5kb; see decision.md
+status: "SUPERSEDED 2026-07-10: the parent experiment (exp_llps_promoter_vs_se_chip_evidence) this replication tested against was itself REJECTed after a matched-control follow-up. Original PARTIAL REPLICATION result (MED1 clean, BRD4 marginal) preserved for the record but no longer the operative conclusion -- see that experiment's decision.md 'FINAL closure' section."
 ---
 
 # Claim: BRD4/MED1 SE-favoring density ratio replicates in HepG2 (independent cell line)

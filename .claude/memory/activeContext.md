@@ -163,7 +163,32 @@ not just a sensitivity check on the same weak one. `exp_llps_promoter_vs_se_hepg
 decision.md cross-referenced with the same caveat (its own "vs whole genome" framing wasn't
 re-tested with a matched control).
 
+## FINAL CLOSURE (2026-07-10) — exp_llps_promoter_vs_se_chip_evidence: REJECT, data exhausted
+
+User asked to check BRD4/MED1 in a 3rd cell line before finalizing. `[VERIFIED-bash]` full
+ENCODE enumeration (not a filtered search): BRD4 has only 4 experiments total across ALL cell
+lines/statuses -- K562 and HepG2 (both already used) plus one H1-hESC entry
+(`ENCSR815RMQ`) that is `status: revoked` (ENCODE's own audit: platform/control
+incompatibility) -- not usable. MED1 has only 2 experiments total, period -- K562 and HepG2,
+both already used. No 3rd cell line exists for either factor; this is a complete data-source
+enumeration, not a stopped search.
+
+**Final verdict: REJECT.** BRD4 fails the matched control in both available cell lines
+(no preference in K562, reverses in HepG2). MED1 splits exactly 1-for-1 (favors SE in K562,
+reverses in HepG2) with no mechanistic explanation and no further ENCODE data to adjudicate --
+an unresolved split does not count as supporting evidence either. `claim.md`/`decision.md`
+updated with a "FINAL closure" section; filed to
+`null_results/20260710-llps-promoter-vs-se-chip-evidence.md`. HepG2 replication experiment's
+`claim.md` marked superseded (its parent claim no longer stands).
+
+**This closes out the entire exp_llps_promoter_vs_se_chip_evidence thread** (original result,
+HepG2 replication, matched-control follow-up, 3rd-cell-line check) -- net result across all of
+today's LLPS work: 0 confirmed positive findings once matched controls were applied, 1
+inconclusive (Ser5P), 3 REJECT (this one, its two sub-checks folded in, plus the missing-
+heritability VUS test). Ready to move to a new direction.
+
 ## Auto-commit log
+- [2026-07-10 10:02] `4e14bf4`: docs: auto-log sync
 - [2026-07-10 10:01] `1cd7197`: fix: matched-control follow-up substantially weakens exp_llps_promoter_vs_se_chip_evidence
 - [2026-07-10 09:19] `47e249d`: docs: auto-log sync after item C commit
 - [2026-07-10 09:18] `96caf60`: feat: exp_heritability_vus_se_frequency (Item C) вЂ” REJECT, no detectable effect
