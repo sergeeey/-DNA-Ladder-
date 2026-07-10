@@ -1,7 +1,7 @@
 ---
 experiment: exp_llps_promoter_vs_se_chip_evidence
 date: 2026-07-08
-verdict: SE-FAVORING (opposite of the reformulated question's promoter-centric direction) — robust to sensitivity check, does not contradict the imaging-based literature (different methodology)
+verdict: SUBSTANTIALLY WEAKENED after matched-control follow-up (2026-07-10) — original "SE vs whole genome" finding was largely an active-vs-inactive-chromatin artifact, not SE-specific; see "Matched-control follow-up" section below for the current honest picture. Original "SE-FAVORING vs whole genome" result (2026-07-08) preserved below, not deleted.
 ---
 
 # Decision — Promoter vs. Super-Enhancer ChIP-seq Occupancy (BRD4/MED1, K562)
@@ -93,6 +93,61 @@ direction but not the pre-registered magnitude threshold** in HepG2 at the prima
 K562 BRD4 finding as robust-in-K562 rather than a fully general BRD4 property until a 3rd cell
 line is tested.
 
+## Matched-control follow-up (2026-07-10): original finding substantially weakened
+
+An external methodological review (pasted into the session, formatted as an AI-generated
+critique) argued the original comparator ("SE-only" vs "the rest of the genome") was too
+weak a test: the genome outside SE/promoters is mostly inactive/heterochromatic DNA where
+BRD4/MED1 trivially show near-zero signal, so "SE beats whole genome" could be driven by
+"active chromatin beats inactive chromatin" rather than anything specific to super-enhancers.
+
+The critique also raised a specific circularity concern (dbSUPER's SE calls being derived
+from MED1 itself). That specific claim was checked and did NOT hold up:
+`[VERIFIED-webfetch+websearch, 2026-07-10]` dbSUPER's inclusion criterion is H3K27ac ChIP-seq
+for every cell line in the database ("a sample... is contained in the database if
+super-enhancers were successfully identified... by H3K27ac ChIP-seq"), not MED1/BRD4 -- the
+critique's proposed *mechanism* was wrong. But the underlying *concern* (the comparator is
+too weak / not appropriately matched) was directionally right, and BRD4 in particular has a
+real, independent reason to correlate with H3K27ac: BRD4's bromodomains directly bind
+acetyl-lysine, so BRD4-H3K27ac colocalization is partly expected on biochemical grounds,
+independent of any circularity in how regions were labeled.
+
+**Test run:** fetched real ENCODE H3K27ac ChIP-seq peaks (GRCh38, K562 `ENCFF038DDS`, HepG2
+`ENCFF012ADZ`) and redefined "typical enhancer" (TE) as H3K27ac-marked space minus
+super-enhancer space (same interval-math functions, `scripts/llps_matched_control_analysis.py`).
+Re-ran the density comparison as SE vs TE instead of SE vs whole-genome:
+
+| Cell line | Factor | ratio vs whole genome (original) | ratio vs matched H3K27ac typical-enhancer (new) | Survives matched control? |
+|---|---|---|---|---|
+| K562 | BRD4 | 0.414 (SE-favoring) | **1.048** (no difference) | **No** |
+| K562 | MED1 | 0.523 (SE-favoring) | **1.788** (SE-favoring) | **Yes** |
+| HepG2 | BRD4 | 0.764 (weak/no pref.) | **0.809** (typical-enhancer-favoring) | **No, reverses** |
+| HepG2 | MED1 | 0.558 (SE-favoring) | **0.733** (typical-enhancer-favoring) | **No, reverses** |
+
+(Ratio here is SE-density / typical-enhancer-density; >1 = still SE-favoring after matching,
+~1 = no real preference, <1 = reverses to favor typical enhancers.)
+
+**Honest re-interpretation:** the original "BRD4/MED1 favor super-enhancers" headline finding
+does NOT hold up as a general, robust result once compared against a fair, activity-matched
+control. BRD4 shows no real SE-preference in either cell line once matched -- consistent with
+the H3K27ac-binding-mechanism explanation above. MED1 shows a genuine, sizeable SE-preference
+in K562 (1.788, the strongest signal in this whole follow-up) but that **reverses** in HepG2
+(0.733) -- the opposite of "replication," this is now a real cell-type-dependent
+inconsistency for MED1, not a confirmed general property either.
+
+**Revised overall verdict: REPEAT, not PROMOTE.** Most of the original signal was an artifact
+of comparing active to inactive chromatin, not a genuine super-enhancer-specific effect. The
+one surviving, non-trivial signal (K562 MED1 vs matched typical enhancers) is not itself
+replicated in HepG2 and would need a 3rd cell line and a real explanation for the K562/HepG2
+divergence before being reported as a finding on its own.
+
+**Process note:** this is the second time this session a positive result was substantially
+walked back after surviving its first round of scrutiny but failing a stronger, later test
+(see also ARCHCODE's GATA1 "pearl," `ARCHCODE/null_results/20260702-enhancer-proximity-replication.md`)
+-- consistent with this project's standing rule that a single-round positive result is
+provisional until it survives an adversarial re-check with a genuinely fair comparator, not
+just a sensitivity check on the same weak comparator.
+
 ## Caveats / limitations
 
 - **Go/No-Go criterion gap:** claim.md pre-registered a per-factor MCID classification (>=1.5
@@ -109,12 +164,19 @@ line is tested.
   ENCODE experiments are not controlled for (different experiments, different labs' standard
   ENCODE pipeline runs) -- a known source of between-factor noise not addressed here.
 
-## Recommendation
+## Recommendation (superseded 2026-07-10 -- see "Matched-control follow-up" above)
 
-This is a real, reportable, orthogonal-method finding: genomic ChIP-seq occupancy of BRD4/MED1
-in K562 favors super-enhancers over promoters, robust to a promoter-window sensitivity check.
-Filed as a positive descriptive result (not to `null_results/` -- it is not a rejected
-hypothesis, it is a completed, informative test whose direction differs from the reformulated
-question's expectation). Worth citing alongside the imaging literature as a genuinely
-complementary, not duplicative, line of evidence -- exactly the role this experiment was
-designed to play per its Novelty Check.
+~~This is a real, reportable, orthogonal-method finding: genomic ChIP-seq occupancy of
+BRD4/MED1 in K562 favors super-enhancers over promoters, robust to a promoter-window
+sensitivity check.~~ **This conclusion does not survive a matched (H3K27ac-active) control and
+should not be cited as-is.**
+
+**Current recommendation:** REPEAT, not PROMOTE. Do not report "BRD4/MED1 favor
+super-enhancers" as a standalone finding from this experiment. The one component that survives
+a fair comparator (K562 MED1, ratio 1.788 vs matched typical enhancers) is itself
+inconsistent between cell lines (reverses to 0.733 in HepG2) and would need a 3rd cell line
+plus a mechanistic explanation for the divergence before being reportable on its own. This
+experiment's main surviving value is methodological: it demonstrates why "vs whole genome" is
+too weak a comparator for ChIP-seq enrichment claims, and the matched-control code
+(`scripts/llps_matched_control_analysis.py`) is reusable for future experiments in this
+project.

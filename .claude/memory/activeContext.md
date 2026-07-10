@@ -141,7 +141,30 @@ is NOT committed (too large, same discipline as ARCHCODE's large raw fetches) --
 via `scripts/fetch_clinvar_vus_grch38.py`. The much smaller gnomAD AF cache (~320KB) IS
 committed for reproducibility.
 
+## MAJOR REVISION (2026-07-10) — exp_llps_promoter_vs_se_chip_evidence weakened after matched-control follow-up
+
+An external methodological critique (pasted into the session) argued the original "SE vs whole
+genome" comparator was too weak (whole genome includes inactive DNA where BRD4/MED1 trivially
+show near-zero signal). Checked the critique's specific circularity claim (dbSUPER SE calls
+derived from MED1) -- did NOT hold up, `[VERIFIED-webfetch+websearch]` dbSUPER uses H3K27ac for
+every cell line, not MED1/BRD4. But the general concern was directionally right.
+
+Fetched real ENCODE H3K27ac peaks (K562 `ENCFF038DDS`, HepG2 `ENCFF012ADZ`) and re-ran the
+density comparison as SE vs "typical enhancer" (H3K27ac-marked, not-super) instead of vs whole
+genome (`scripts/llps_matched_control_analysis.py`). Result: **BRD4 shows no real SE-preference
+in either cell line once matched** (K562 ratio 1.048, HepG2 0.809 -- reverses); **MED1 survives
+in K562 (1.788) but reverses in HepG2 (0.733)**. The original "SE-favoring, robust across cell
+lines" headline does not hold up. Revised verdict for
+`experiments/exp_llps_promoter_vs_se_chip_evidence`: **REPEAT, not PROMOTE** -- both `claim.md`
+and `decision.md` updated in place with the full honest timeline preserved (original result not
+deleted, marked superseded), matching this project's standing rule (see ARCHCODE's GATA1 pearl
+precedent) that a positive result is provisional until it survives a genuinely fair comparator,
+not just a sensitivity check on the same weak one. `exp_llps_promoter_vs_se_hepg2_replication`'s
+decision.md cross-referenced with the same caveat (its own "vs whole genome" framing wasn't
+re-tested with a matched control).
+
 ## Auto-commit log
+- [2026-07-10 09:19] `47e249d`: docs: auto-log sync after item C commit
 - [2026-07-10 09:18] `96caf60`: feat: exp_heritability_vus_se_frequency (Item C) вЂ” REJECT, no detectable effect
 - [2026-07-08 17:30] `c8c3cb6`: docs: check G4-seq data feasibility for non-B DNA direction, park it (21GB raw only)
 - [2026-07-08 17:28] `66c45e2`: docs: auto-log sync 2

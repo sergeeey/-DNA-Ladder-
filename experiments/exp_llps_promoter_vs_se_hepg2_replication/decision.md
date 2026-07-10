@@ -1,10 +1,17 @@
 ---
 experiment: exp_llps_promoter_vs_se_hepg2_replication
 date: 2026-07-08
-verdict: PARTIAL REPLICATION — MED1 replicates cleanly, BRD4 does not clear the primary-window MCID threshold (trends correctly, clears it at wider window)
+verdict: PARTIAL REPLICATION — MED1 replicates cleanly, BRD4 does not clear the primary-window MCID threshold (trends correctly, clears it at wider window). SUPERSEDED 2026-07-10: the K562 result this experiment replicated against was itself substantially weakened by a matched-control follow-up (see exp_llps_promoter_vs_se_chip_evidence/decision.md "Matched-control follow-up") -- both this experiment's and the original's "vs whole genome" framing are now considered too weak a test; see that file for the current honest picture.
 ---
 
 # Decision — HepG2 Replication of Promoter/SE Density Ratio
+
+> **2026-07-10 update:** the "vs whole genome" comparator this replication test used is now
+> known to be a weak comparator (see
+> `experiments/exp_llps_promoter_vs_se_chip_evidence/decision.md`, "Matched-control
+> follow-up"). The BRD4/MED1 SE-favoring numbers below are preserved as originally computed,
+> but should be read alongside that follow-up, not in isolation -- a proper matched-control
+> version of this HepG2 comparison was NOT run (only K562 got the matched-control follow-up).
 
 ## Result
 

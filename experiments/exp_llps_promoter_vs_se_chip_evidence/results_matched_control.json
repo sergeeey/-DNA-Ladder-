@@ -1,0 +1,53 @@
+{
+  "K562": {
+    "se_bp": 15899951,
+    "h3k27ac_bp": 41296657,
+    "typical_enhancer_bp": 34479380,
+    "factors": {
+      "BRD4": {
+        "n_total_peaks": 4489,
+        "n_se": 1370,
+        "n_typical_enhancer": 2835,
+        "n_neither": 284,
+        "density_se_per_kb": 0.08616378754877925,
+        "density_typical_enhancer_per_kb": 0.08222305621504795,
+        "se_vs_typical_enhancer_ratio": 1.0479273273839957
+      },
+      "MED1": {
+        "n_total_peaks": 325,
+        "n_se": 61,
+        "n_typical_enhancer": 74,
+        "n_neither": 190,
+        "density_se_per_kb": 0.0038364898105660832,
+        "density_typical_enhancer_per_kb": 0.0021462102856837913,
+        "se_vs_typical_enhancer_ratio": 1.787564730332919
+      }
+    }
+  },
+  "HepG2": {
+    "se_bp": 6470398,
+    "h3k27ac_bp": 56715244,
+    "typical_enhancer_bp": 52745685,
+    "factors": {
+      "BRD4": {
+        "n_total_peaks": 8233,
+        "n_se": 656,
+        "n_typical_enhancer": 6610,
+        "n_neither": 967,
+        "density_se_per_kb": 0.10138479889490569,
+        "density_typical_enhancer_per_kb": 0.12531830802841978,
+        "se_vs_typical_enhancer_ratio": 0.8090182551133196
+      },
+      "MED1": {
+        "n_total_peaks": 42852,
+        "n_se": 2171,
+        "n_typical_enhancer": 24158,
+        "n_neither": 16523,
+        "density_se_per_kb": 0.3355280463427443,
+        "density_typical_enhancer_per_kb": 0.45800902955379197,
+        "se_vs_typical_enhancer_ratio": 0.7325795447081626
+      }
+    }
+  },
+  "interpretation_note": "ratio > 1.0 means SE peak density exceeds typical-H3K27ac-enhancer density (SE-favoring survives a matched active-chromatin control, not just vs whole genome); ratio near or below 1.0 means the original SE-favoring result may have been driven mainly by comparing to inactive genome, not by SE being special vs other active enhancers."
+}

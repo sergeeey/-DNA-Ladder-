@@ -3,7 +3,7 @@ experiment: exp_llps_promoter_vs_se_chip_evidence
 date: 2026-07-08
 ladder_tier: Standard
 question_type: Descriptive
-status: COMPLETE -- SE-favoring result (BRD4 ratio=0.414, MED1 ratio=0.523, both <=0.67 MCID), robust to 5kb sensitivity check; see decision.md
+status: REVISED 2026-07-10 -- original SE-favoring-vs-whole-genome result (2026-07-08) did NOT survive a matched H3K27ac-typical-enhancer control (added after external review). BRD4 shows no real SE-preference in either cell line once matched; MED1 survives in K562 (ratio 1.788) but reverses in HepG2 (0.733). Revised verdict: REPEAT, not PROMOTE. See decision.md "Matched-control follow-up" section for full honest timeline.
 ---
 
 # Claim: ChIP-seq occupancy patterns of condensate-associated factors are more consistent with a promoter-centric than a super-enhancer-centric model of Pol II condensation
