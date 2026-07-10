@@ -217,6 +217,8 @@ Filed to `null_results/20260710-gnocchi-constraint-se-vs-typical-enhancer.md`. T
 gnomAD constraint) -- recommend closing this direction rather than seeking a fourth data source.
 
 ## Auto-commit log
+- [2026-07-10 16:56] `5903d30`: test: positive control validates Gnocchi pipeline on known coding-vs-intergenic effect
+- [2026-07-10 16:47] `cfcb981`: docs: auto-log sync 2
 - [2026-07-10 16:46] `46cecde`: docs: auto-log sync
 - [2026-07-10 16:46] `1f427ac`: docs: activeContext narrative for Gnocchi constraint replication (REJECT)
 - [2026-07-10 16:44] `9c459db`: fix: remove unused import in gnocchi test file
