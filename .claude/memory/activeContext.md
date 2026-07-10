@@ -1,6 +1,6 @@
 # Active Context — DNA Ladder
 
-**Last Updated:** 2026-07-08
+**Last Updated:** 2026-07-10
 **Branch:** master (bootstrap merged from feature/bootstrap, commit 5b97b78)
 **Sibling projects:** `Research Library` (D:\Research Library\, literature/citations, git
 initialized, 2 commits) and `ARCHCODE` (C:\Users\sboi\ARCHCODE_review\, methodology source,
@@ -187,7 +187,39 @@ today's LLPS work: 0 confirmed positive findings once matched controls were appl
 inconclusive (Ser5P), 3 REJECT (this one, its two sub-checks folded in, plus the missing-
 heritability VUS test). Ready to move to a new direction.
 
+## DONE (2026-07-10, later) — Gnocchi constraint replication of missing-heritability direction, REJECT
+
+Ran `boyko-specialist` a second time this session, targeted at replacing ClinVar as the
+data source for the "missing heritability" direction (ClinVar carries real, WebSearch-verified
+ascertainment/gene-panel/submission bias). Found Gnocchi -- Chen/Francioli/Karczewski 2023,
+*Nature*, DOI 10.1038/s41586-023-06045-0 -- a genome-wide GRCh38 germline mutational-constraint
+map built from 76,156 gnomAD v3.1.2 genomes, zero ClinVar dependency. Located and downloaded the
+real public data (`gs://gnomad-nc-constraint-v31-paper/download_files/`, 1,984,900 QC-passed
+1kb-window Z-scores, row count cross-verified against the paper's own README).
+
+User pasted an external methodological critique of the naive "intersect windows + Mann-Whitney"
+design before it was built -- it correctly flagged (1) unresolved novelty vs. the original
+paper's own analyses, (2) K562/HepG2 are cancer lines so a positive result can't be read as
+"cell-type-specific selection" (Gnocchi is germline), (3) pooling correlated adjacent 1kb windows
+pseudoreplicates. Addressed all three in the design: Gate-0 novelty check (inconclusive --
+[UNKNOWN], not confirmed either way, paywalled supplementary not searchable), limitation stated
+in claim.md before running (not after), and region-level length-weighted-mean Z per enhancer
+(not per-window) as the unit of analysis, with a paired-permutation test (10k perms) as the
+primary significance measure instead of relying on Mann-Whitney's independence assumption.
+
+**Result: REJECT.** Cliff's delta +0.051 (K562) vs -0.044 (HepG2) -- sign flips between cell
+lines, same red flag that killed BRD4/MED1 earlier today, both far below the pre-registered
+MCID (0.2). Wrote 17 unit tests for the new region-aggregation/matching logic after a
+commit-test-gate hook correctly caught that the first commit shipped untested new numerical
+code -- all pass, confirms the weighted-mean and permutation-test math is doing what it claims.
+Filed to `null_results/20260710-gnocchi-constraint-se-vs-typical-enhancer.md`. This is the
+**third independent null** on SE-vs-typical-enhancer across two unrelated data sources (ClinVar,
+gnomAD constraint) -- recommend closing this direction rather than seeking a fourth data source.
+
 ## Auto-commit log
+- [2026-07-10 16:44] `9c459db`: fix: remove unused import in gnocchi test file
+- [2026-07-10 16:44] `7ce502c`: test: add unit tests for gnocchi_constraint_se_vs_typical_analysis core logic
+- [2026-07-10 16:43] `0d7dccd`: feat: exp_gnocchi_constraint_se_vs_typical_enhancer -- REJECT, ClinVar-free replication confirms null
 - [2026-07-10 10:14] `5a9db09`: fix: finalize exp_llps_promoter_vs_se_chip_evidence вЂ” REJECT, ENCODE data exhausted
 - [2026-07-10 10:02] `4e14bf4`: docs: auto-log sync
 - [2026-07-10 10:01] `1cd7197`: fix: matched-control follow-up substantially weakens exp_llps_promoter_vs_se_chip_evidence
