@@ -1,0 +1,203 @@
+{
+  "status": "P5_R1_COMPLETE",
+  "timestamp": "2026-07-15T12:53:29.482467+00:00",
+  "claim": "P5_R1_CLAIM_v1.md",
+  "proxy_note": "AG lengths 16kb/100kb/500kb stand in for reporter 301/1kb/2kb",
+  "holdout_sealed": true,
+  "c1_verdict": "R1_PASS",
+  "branch_b_consequence": "AG context-length proxy does not kill Branch B primary",
+  "results": [
+    {
+      "id": "C1",
+      "variant_id": "chr11:62753923:A:G",
+      "role": "TEMPLATE_DEV",
+      "windows": {
+        "proxy_short_16kb": {
+          "sequence_length_key": "SEQUENCE_LENGTH_16KB",
+          "interval_width_bp": 16384,
+          "chip_tf_mean_signed": -2.9074830082956478,
+          "chip_tf_mae": 3.390680863964904,
+          "contact_mean_signed": 0.004538125225475856,
+          "contact_mae_all": 0.01714229796613966,
+          "sign_chip": -1,
+          "status": "OK"
+        },
+        "proxy_mid_100kb": {
+          "sequence_length_key": "SEQUENCE_LENGTH_100KB",
+          "interval_width_bp": 131072,
+          "chip_tf_mean_signed": -0.34707782676946847,
+          "chip_tf_mae": 0.5408127170767988,
+          "contact_mean_signed": 0.0012091785403234617,
+          "contact_mae_all": 0.00494472762303693,
+          "sign_chip": -1,
+          "status": "OK"
+        },
+        "proxy_long_500kb": {
+          "sequence_length_key": "SEQUENCE_LENGTH_500KB",
+          "interval_width_bp": 524288,
+          "chip_tf_mean_signed": -0.07304132242739458,
+          "chip_tf_mae": 0.2161456267628761,
+          "contact_mean_signed": 0.00028115991153754294,
+          "contact_mae_all": 0.0016785423296304153,
+          "sign_chip": -1,
+          "status": "OK"
+        }
+      },
+      "signs_chip_tf": {
+        "proxy_short_16kb": -1,
+        "proxy_mid_100kb": -1,
+        "proxy_long_500kb": -1
+      },
+      "adjacent_flips": {
+        "short_to_mid": false,
+        "mid_to_long": false
+      },
+      "n_adjacent_flips": 0,
+      "verdict": "R1_PASS"
+    },
+    {
+      "id": "C2",
+      "variant_id": "chr11:62753923:A:T",
+      "role": "activity_m3",
+      "windows": {
+        "proxy_short_16kb": {
+          "sequence_length_key": "SEQUENCE_LENGTH_16KB",
+          "interval_width_bp": 16384,
+          "chip_tf_mean_signed": -0.982339890856911,
+          "chip_tf_mae": 1.2327552469851577,
+          "contact_mean_signed": 0.0032641206468854633,
+          "contact_mae_all": 0.0059359754834856305,
+          "sign_chip": -1,
+          "status": "OK"
+        },
+        "proxy_mid_100kb": {
+          "sequence_length_key": "SEQUENCE_LENGTH_100KB",
+          "interval_width_bp": 131072,
+          "chip_tf_mean_signed": -0.12892667054392778,
+          "chip_tf_mae": 0.2552076161608109,
+          "contact_mean_signed": 0.0008991585179631199,
+          "contact_mae_all": 0.002063538513279387,
+          "sign_chip": -1,
+          "status": "OK"
+        },
+        "proxy_long_500kb": {
+          "sequence_length_key": "SEQUENCE_LENGTH_500KB",
+          "interval_width_bp": 524288,
+          "chip_tf_mean_signed": -0.0226492115060857,
+          "chip_tf_mae": 0.1496806592947182,
+          "contact_mean_signed": 0.00018619540164114108,
+          "contact_mae_all": 0.001182980033003592,
+          "sign_chip": -1,
+          "status": "OK"
+        }
+      },
+      "signs_chip_tf": {
+        "proxy_short_16kb": -1,
+        "proxy_mid_100kb": -1,
+        "proxy_long_500kb": -1
+      },
+      "adjacent_flips": {
+        "short_to_mid": false,
+        "mid_to_long": false
+      },
+      "n_adjacent_flips": 0,
+      "verdict": "STABLE_NOTED"
+    },
+    {
+      "id": "C3",
+      "variant_id": "chr11:72434037:C:T",
+      "role": "activity_m3",
+      "windows": {
+        "proxy_short_16kb": {
+          "sequence_length_key": "SEQUENCE_LENGTH_16KB",
+          "interval_width_bp": 16384,
+          "chip_tf_mean_signed": -0.28807567060915273,
+          "chip_tf_mae": 0.8105305687615956,
+          "contact_mean_signed": -0.00320918219430106,
+          "contact_mae_all": 0.0038844517299107145,
+          "sign_chip": -1,
+          "status": "OK"
+        },
+        "proxy_mid_100kb": {
+          "sequence_length_key": "SEQUENCE_LENGTH_100KB",
+          "interval_width_bp": 131072,
+          "chip_tf_mean_signed": -0.1372823614947355,
+          "chip_tf_mae": 0.27137969258248845,
+          "contact_mean_signed": -0.0005586726724037103,
+          "contact_mae_all": 0.0016221310278134687,
+          "sign_chip": -1,
+          "status": "OK"
+        },
+        "proxy_long_500kb": {
+          "sequence_length_key": "SEQUENCE_LENGTH_500KB",
+          "interval_width_bp": 524288,
+          "chip_tf_mean_signed": -0.04092028528125352,
+          "chip_tf_mae": 0.13510434441691774,
+          "contact_mean_signed": 0.0003694218508566597,
+          "contact_mae_all": 0.0011203693325764366,
+          "sign_chip": -1,
+          "status": "OK"
+        }
+      },
+      "signs_chip_tf": {
+        "proxy_short_16kb": -1,
+        "proxy_mid_100kb": -1,
+        "proxy_long_500kb": -1
+      },
+      "adjacent_flips": {
+        "short_to_mid": false,
+        "mid_to_long": false
+      },
+      "n_adjacent_flips": 0,
+      "verdict": "STABLE_NOTED"
+    },
+    {
+      "id": "N3",
+      "variant_id": "chr11:108009167:T:C",
+      "role": "matched_negative",
+      "windows": {
+        "proxy_short_16kb": {
+          "sequence_length_key": "SEQUENCE_LENGTH_16KB",
+          "interval_width_bp": 16384,
+          "chip_tf_mean_signed": 0.029852740323757343,
+          "chip_tf_mae": 0.30305489449863754,
+          "contact_mean_signed": 0.0015081337520054408,
+          "contact_mae_all": 0.0021356514522007535,
+          "sign_chip": 1,
+          "status": "OK"
+        },
+        "proxy_mid_100kb": {
+          "sequence_length_key": "SEQUENCE_LENGTH_100KB",
+          "interval_width_bp": 131072,
+          "chip_tf_mean_signed": 0.009024288009992705,
+          "chip_tf_mae": 0.10911584829355216,
+          "contact_mean_signed": -9.188541610326086e-05,
+          "contact_mae_all": 0.0009642947864319597,
+          "sign_chip": 1,
+          "status": "OK"
+        },
+        "proxy_long_500kb": {
+          "sequence_length_key": "SEQUENCE_LENGTH_500KB",
+          "interval_width_bp": 524288,
+          "chip_tf_mean_signed": -0.002922033887626068,
+          "chip_tf_mae": 0.07671476851736386,
+          "contact_mean_signed": -0.0001322052308491298,
+          "contact_mae_all": 0.0007346296583169273,
+          "sign_chip": -1,
+          "status": "OK"
+        }
+      },
+      "signs_chip_tf": {
+        "proxy_short_16kb": 1,
+        "proxy_mid_100kb": 1,
+        "proxy_long_500kb": -1
+      },
+      "adjacent_flips": {
+        "short_to_mid": false,
+        "mid_to_long": true
+      },
+      "n_adjacent_flips": 1,
+      "verdict": "N3_OK_OR_MILD"
+    }
+  ]
+}

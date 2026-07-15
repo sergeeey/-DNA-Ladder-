@@ -14,7 +14,7 @@
 | **2** | C1 301 bp saturation mutagenesis | **DONE** (partial AG) | **`ALLELE_LEAN_RETAINED`** — kills none |
 | **3** | Matched-null panel ×13 | **DONE** (+expand) | v1/v2: activity **not** weakened; L1/L2 unreachable → **accept L3 ceiling**; C1 extreme@L3 |
 | **4** | Independent model matrix | PARTIAL (AG already on panel) | continue |
-| **5** | Reporter robustness | **DONE** (tech) | **`REPORTER_DESK_OK_TECHNICAL`**; R1 length-AG pending |
+| **5** | Reporter robustness | **DONE** | **`REPORTER_DESK_OK_TECHNICAL`** + **P5 R1 `R1_PASS`** (AG 16/100/500 kb proxy) |
 | **6** | PE/OT robustness | NOT STARTED | PD1 pack exists |
 | **7** | Target gene ranking | NOT STARTED | — |
 | **8** | Power simulation | NOT STARTED | — |
@@ -73,14 +73,15 @@ Pre-registered: S1 not top5% · S2 ≥20 peers @90% · S3 mean other A→G ≥ C
 
 ---
 
-## Priority 5 — Reporter technical robustness
+## Priority 5 — Reporter technical + R1 length AG
 
-**Arts:** `Stage2_reporter_robustness_v1.md`
+**Tech arts:** `Stage2_reporter_robustness_v1.md` — edge/GC OK; C1 not near edge.  
+**R1 arts:** `P5_R1_CLAIM_v1.md`, `P5_R1_window_length_ag_v1.md`
 
-- Primary window freeze recorded (301 bp, genomic sense, MCID…)  
-- C1 **not** within 15 bp of edge (idx ~150)  
-- \|ΔGC\| REF/ALT ok (SNV)  
-- **R1** (sign flip across 301/1k/2k predicted effect): **not tested** — needs AG per window length  
+AG cannot score literal 301/1kb/2kb; used **16 / 100 / 500 kb** ladder.  
+Primary: signed mean CHIP_TF. **C1 → `R1_PASS`** (no adjacent sign flips; magnitude shrinks with length, sign stays −).  
+C2/C3 stable; N3 one mild flip at tiny magnitude → `N3_OK_OR_MILD`.  
+Branch B length-sensitivity **not killed** on this proxy. Oligo order still FORBIDDEN.
 
 ---
 
@@ -107,7 +108,7 @@ Architecture contact endpoint: mostly demotion. Stage-3 / holdout / wet-lab unch
 
 1. ~~Expand matched-null universe~~ **DONE** (L2 unlocked; L1 still sparse)  
 2. **P2 full or stratified AG** beyond top-PWM (all A→G in window; random 100)  
-3. **P5 R1** AG REF–ALT for 301 vs 1 kb vs 2 kb on C1 (± panel)  
+3. ~~**P5 R1** AG length ladder~~ **DONE** (`R1_PASS` on 16/100/500 kb proxy)  
 4. **P6** second OT engine + Primer-BLAST  
 5. **P8** power curves for reporter & Capture-C  
 6. **P10** immutable hash-locked analysis release  
@@ -120,12 +121,12 @@ Architecture contact endpoint: mostly demotion. Stage-3 / holdout / wet-lab unch
 G4a single-hic risk:     WEAKENED (multi-sample + VC pass)
 C1 allele-vs-window:     NOT KILLED on partial satmut (rank #1)
 Matched-null panel:      v2 L2 RETAIN_HP for C1/C2/C3; panel not weakened
-Reporter tech:           OK; length-invariance still open
+Reporter tech + R1:      OK; AG length proxy R1_PASS (16/100/500 kb)
 Wet-lab proof:           STILL ABSENT
 Expand to hundreds:      Still DON'T
 Holdout / move E/P:      Still DON'T
 ```
 
-Matched-null после expand **укрепил** formal desk priority C1/C2/C3, не доказал биологию.  
-Следующий полезный kill-тест: **P5 R1** length AG или **P2** satmut expand.
+Desk kill-sprint: C1/panel **not destroyed**; Branch B length proxy **survives**.  
+Следующий полезный kill-тест: **P2** satmut AG expand или **P6** OT.
 

@@ -26,4 +26,5 @@
 - max |ΔGC|: 0.0033222591362125353
 - idx in 301bp: 150
 
-Length-invariance of predicted ALT/REF requires dedicated AG window scores — pending.
+Length-invariance of predicted ALT/REF: **P5 R1 DONE** — AG 16/100/500 kb signed CHIP_TF → **`R1_PASS`**  
+(literal 301/1kb/2kb not AG-native; see `P5_R1_window_length_ag_v1.md`).

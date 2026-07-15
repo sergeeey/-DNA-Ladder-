@@ -60,9 +60,11 @@
 - [x] Kill-sprint P1 G4a multi-sample → PASS_DESK_ROBUST
 - [x] Kill-sprint P2 C1 satmut (partial AG) → ALLELE_LEAN_RETAINED
 - [x] Kill-sprint P5 reporter technical robustness
+- [x] P5 R1 AG context-length ladder → **R1_PASS** (16/100/500 kb proxy)
 - [x] P3 matched-null test of frozen panel 13 → panel not weakened; C1 extreme@L3 INCONCLUSIVE
 - [x] Expand P3 null-universe (28→115) → L2 unlocked; C1/C2/C3 **RETAIN_HP**
-- [ ] P2 expand satmut AG (A→G all + random) / P5 R1 window-length AG
+- [ ] P2 expand satmut AG (A→G all + random)
+- [ ] P6 second OT engine + Primer-BLAST
 - [ ] Sign wet-lab GO (human) — **BLOCKED**
 - [ ] Unblind holdout — **BLOCKED**
 
