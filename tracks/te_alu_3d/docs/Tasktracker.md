@@ -61,7 +61,7 @@
 - [x] Kill-sprint P2 C1 satmut (partial AG) → ALLELE_LEAN_RETAINED
 - [x] Kill-sprint P5 reporter technical robustness
 - [x] P3 matched-null test of frozen panel 13 → panel not weakened; C1 extreme@L3 INCONCLUSIVE
-- [ ] Expand P3 null-universe (L1/L2) OR accept L3 ceiling
+- [x] Expand P3 null-universe (28→115) → L2 unlocked; C1/C2/C3 **RETAIN_HP**
 - [ ] P2 expand satmut AG (A→G all + random) / P5 R1 window-length AG
 - [ ] Sign wet-lab GO (human) — **BLOCKED**
 - [ ] Unblind holdout — **BLOCKED**

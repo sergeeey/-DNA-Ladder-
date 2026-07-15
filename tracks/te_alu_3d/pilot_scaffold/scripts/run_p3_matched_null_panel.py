@@ -21,6 +21,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT.parent / "09_outputs" / "prospective"
 STAGE1 = OUT / "stage1_desk_screen_v1.json"
+DEFAULT_UNIVERSE = OUT / "p3_expanded_universe_v1.json"
 SEED = 20260715
 N_PERM = 5000
 
@@ -199,9 +200,41 @@ def decide(role: str, pct: float, effect: float, level: str, n_ctrl: int) -> str
 
 
 def main() -> None:
+    import argparse
+
+    ap = argparse.ArgumentParser()
+    ap.add_argument(
+        "--universe",
+        type=Path,
+        default=None,
+        help="optional expanded universe JSON (p3_expanded_universe_v1.json)",
+    )
+    ap.add_argument(
+        "--out-stem",
+        default="P3_matched_null_panel_v1",
+        help="output basename under 09_outputs/prospective/",
+    )
+    args = ap.parse_args()
+
     doc = json.loads(STAGE1.read_text(encoding="utf-8"))
-    pool = doc["pool"]
-    pool_by_vid = {r["variant_id"]: r for r in pool}
+    if args.universe and args.universe.exists():
+        uni_doc = json.loads(args.universe.read_text(encoding="utf-8"))
+        pool = uni_doc["pool"]
+        universe_note = f"{args.universe.name} SCORED n={len(pool)}"
+    elif DEFAULT_UNIVERSE.exists() and args.universe is None:
+        # prefer expanded if present when explicitly re-running without flags? 
+        # Keep v1 default = stage1 only unless --universe passed.
+        pool = doc["pool"]
+        universe_note = "stage1_desk_screen_v1.json pool SCORED (n=28)"
+    else:
+        pool = doc["pool"]
+        universe_note = f"stage1_desk_screen_v1.json pool (n={len(pool)})"
+
+    # Only SCORED alleles in matching universe
+    pool = [r for r in pool if r.get("ag_status") == "SCORED" or r.get("ag_chip_tf_mae") not in (None, "")]
+    # Prefer expanded pool, but keep Stage-1 metadata fallback for frozen alleles
+    stage_by_vid = {r["variant_id"]: r for r in doc["pool"]}
+    pool_by_vid = {**stage_by_vid, **{r["variant_id"]: r for r in pool}}
 
     # enrich frozen rows from pool / parse vid
     frozen_raw = doc["frozen_panel"]
@@ -348,12 +381,12 @@ def main() -> None:
             "NEG_PCT_FAIL": NEG_PCT_FAIL,
             "MIN_CTRL": MIN_CTRL,
         },
-        "universe": "stage1_desk_screen_v1.json pool SCORED (n=28)",
+        "universe": universe_note,
         "panel_summary": panel,
         "results": results,
     }
 
-    out_json = OUT / "P3_matched_null_panel_v1.json"
+    out_json = OUT / f"{args.out_stem}.json"
     out_json.write_text(json.dumps(out, indent=2), encoding="utf-8")
 
     def _fmt(x: Any, kind: str) -> str:
@@ -419,9 +452,9 @@ def main() -> None:
         "- Pool n=28 limits L1/L2; thin matches force INCONCLUSIVE by design",
         "",
     ]
-    out_md = OUT / "P3_matched_null_panel_v1.md"
+    out_md = OUT / f"{args.out_stem}.md"
     out_md.write_text("\n".join(lines), encoding="utf-8")
-    print(json.dumps({"wrote": str(out_json), "panel": panel, "n": len(results)}, indent=2))
+    print(json.dumps({"wrote": str(out_json), "panel": panel, "n": len(results), "universe": universe_note}, indent=2))
 
 
 if __name__ == "__main__":

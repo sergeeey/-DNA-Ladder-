@@ -143,12 +143,25 @@ def _dist_to_ctcf(pos: int, ctcf) -> int:
     return int(best)
 
 
-def build_panel(ctcf, te, *, max_af: float, max_dist: int, limit: int) -> list[dict]:
+def build_panel(
+    ctcf,
+    te,
+    *,
+    max_af: float,
+    max_dist: int,
+    limit: int,
+    per_peak_cap: int = 2,
+    prefer_families: set[str] | None = None,
+) -> list[dict]:
     hits = _peak_te_hits(ctcf, te)
+    if prefer_families:
+        # Prefer peaks whose TE family matches frozen-panel families, then the rest.
+        preferred = [h for h in hits if h.get("te_family") in prefer_families]
+        other = [h for h in hits if h.get("te_family") not in prefer_families]
+        hits = preferred + other
     print(f"ctcf_x_te_hits_outside_exclude={len(hits)}")
     panel: list[dict] = []
     seen: set[str] = set()
-    per_peak_cap = 2
     for h in hits:
         if len(panel) >= limit:
             break
