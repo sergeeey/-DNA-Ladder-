@@ -1,0 +1,78 @@
+# Confirmatory holdout manifest — SEALED
+# Labels must remain hidden until scientific_freeze + score_freeze confirmatory
+# and scorer_benchmark PASS are satisfied.
+#
+# DO NOT run enrichment / inspect outcome scores on these windows
+# until unblind_authorized: true is set by a dated protocol note.
+
+holdout:
+  status: SEALED
+  sealed_at: "2026-07-13"
+  unblind_authorized: false
+  unblind_date: null
+  unblind_by: null
+
+  role: confirmatory
+  development_set_excluded:
+    - label: HBB
+      chrom: chr11
+      start: 5200000
+      end: 5300000
+      reason: labels_viewed_development_calibration
+
+  cell_context:
+    cell_line: HUDEP-2
+    kc0_required: true
+    ctcf_peaks: data/ctcf_HUDEP2_peaks.bed
+    genome_build: GRCh38
+
+  primary_estimand: total_te_effect
+  secondary_estimand: ctcf_conditional
+  multiplicity_policy: primary_only_at_alpha
+  alpha: 0.05
+  scorer_required: ctcf_pwm_delta_v1.1  # or FROZEN ARCHCODE if admitted
+  benchmark_required_status: PASS
+  variant_class: rare_SNV_indel_in_annotated_Alu_SVA
+  endpoint_language: predicted_CTCF_motif_disruption
+
+  # Pre-registered erythroid CTCF-dense panels on chr11, non-overlapping HBB
+  windows:
+    - id: HO_A
+      chrom: chr11
+      start: 65000000
+      end: 66000000
+      rationale: top HUDEP-2 CTCF density bin on chr11 (non-HBB)
+    - id: HO_B
+      chrom: chr11
+      start: 67000000
+      end: 68000000
+      rationale: second CTCF-dense erythroid-context bin
+    - id: HO_C
+      chrom: chr11
+      start: 64000000
+      end: 65000000
+      rationale: adjacent dense bin; panel diversity
+
+  target_independent_units:
+    min_unique_TE_copies_post_qc: 50
+    note: N_SNV alone is insufficient; report matching_diagnostics
+
+  data_fetch:
+    gnomad: graphQL_window_slices_only  # no bulk
+    clinvar: chr11_filtered_to_windows
+    forbidden: inspect_scores_before_unblind
+    last_fetch_attempt: "2026-07-13"
+    last_fetch_status: COMPLETE_SEALED_UNSCORED
+    unblind_protocol_draft: ../07_methods/unblind_protocol_draft_v1.md
+
+  analysis_gate_before_unblind:
+    - scientific_freeze_v1 signed
+    - score_freeze exploratory or confirmatory as applicable
+    - scorer_benchmark PASS
+    - holdout windows unchanged since seal
+    - primary_estimand still total_te_effect
+
+  refs:
+    holdout_plan: ../07_methods/holdout_plan.md
+    scientific_freeze: ../07_methods/scientific_freeze_v1.md
+    scorer_benchmark: ../07_methods/scorer_benchmark_spec.md

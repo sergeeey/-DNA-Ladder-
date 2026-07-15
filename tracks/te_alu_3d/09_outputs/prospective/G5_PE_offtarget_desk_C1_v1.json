@@ -1,0 +1,122 @@
+{
+  "locus_repeat": [
+    {
+      "assembly_name": "GRCh38",
+      "feature_type": "repeat",
+      "seq_region_name": "11",
+      "end": 62751962,
+      "strand": 1,
+      "description": "AluY",
+      "start": 62751645
+    },
+    {
+      "feature_type": "repeat",
+      "assembly_name": "GRCh38",
+      "seq_region_name": "11",
+      "description": "AluSz",
+      "strand": 1,
+      "start": 62754546,
+      "end": 62754825
+    },
+    {
+      "seq_region_name": "11",
+      "feature_type": "repeat",
+      "assembly_name": "GRCh38",
+      "end": 62755237,
+      "start": 62754938,
+      "description": "AluSz",
+      "strand": 1
+    },
+    {
+      "assembly_name": "GRCh38",
+      "feature_type": "repeat",
+      "seq_region_name": "11",
+      "description": "AluSp",
+      "strand": 1,
+      "start": 62755845,
+      "end": 62756155
+    },
+    {
+      "start": 62751645,
+      "strand": 1,
+      "description": "AluY",
+      "end": 62751962,
+      "seq_region_name": "11",
+      "feature_type": "repeat",
+      "assembly_name": "GRCh38"
+    },
+    {
+      "start": 62754546,
+      "strand": 1,
+      "description": "AluSz",
+      "end": 62754825,
+      "seq_region_name": "11",
+      "assembly_name": "GRCh38",
+      "feature_type": "repeat"
+    },
+    {
+      "seq_region_name": "11",
+      "feature_type": "repeat",
+      "assembly_name": "GRCh38",
+      "end": 62755237,
+      "start": 62754938,
+      "strand": 1,
+      "description": "AluSz"
+    },
+    {
+      "assembly_name": "GRCh38",
+      "feature_type": "repeat",
+      "seq_region_name": "11",
+      "end": 62756155,
+      "description": "AluSp",
+      "strand": 1,
+      "start": 62755845
+    }
+  ],
+  "scan_window_grch38": "chr11:61753923-63753923",
+  "spacers": {
+    "PD1": {
+      "spacer": "CGTCCGATAAGCCCTGCCCC",
+      "design_strand": "+",
+      "note": "PrimeDesign #1",
+      "hits_leq_3mm_in_2Mb": 1,
+      "by_mm": {
+        "0": 1,
+        "1": 0,
+        "2": 0,
+        "3": 0
+      },
+      "exact_mm0": 1,
+      "risk": "LOWER_NEAR_LOCUS"
+    },
+    "PD2": {
+      "spacer": "TGGCTAAGGGGCGGGACTTC",
+      "design_strand": "-",
+      "note": "PrimeDesign #2",
+      "hits_leq_3mm_in_2Mb": 1,
+      "by_mm": {
+        "0": 1,
+        "1": 0,
+        "2": 0,
+        "3": 0
+      },
+      "exact_mm0": 1,
+      "risk": "LOWER_NEAR_LOCUS"
+    },
+    "PD3": {
+      "spacer": "GCGGAGGGTGGCTAAGGGGC",
+      "design_strand": "-",
+      "note": "PrimeDesign #3",
+      "hits_leq_3mm_in_2Mb": 1,
+      "by_mm": {
+        "0": 1,
+        "1": 0,
+        "2": 0,
+        "3": 0
+      },
+      "exact_mm0": 1,
+      "risk": "LOWER_NEAR_LOCUS"
+    }
+  },
+  "caveat": "Neighborhood scan only (2Mb). Not a genome-wide Cas-OFFinder substitute."
+}

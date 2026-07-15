@@ -1,0 +1,83 @@
+{
+  "dataset": "GSE160422",
+  "sample": "GSM4873113",
+  "biosource": "HUDEP-2",
+  "genome_build": "hg19",
+  "locked_E_hg19": "chr11:62157472-62162472",
+  "locked_P_hg19": "chr11:62457472-62462472",
+  "C1_hg19": "chr11:62521395",
+  "norm": "KR",
+  "verdict": "PASS_DESK",
+  "metrics_10kb": {
+    "binsize": 10000,
+    "e_bins": [
+      62150000,
+      62160000
+    ],
+    "p_bins": [
+      62450000,
+      62460000
+    ],
+    "c1_bin": 62520000,
+    "primary_pair": [
+      62150000,
+      62450000
+    ],
+    "primary_obs_KR": 7.131877,
+    "primary_oe_KR": 3.198061,
+    "ep_pair_obs_values": [
+      7.131877,
+      6.7324033,
+      5.066299,
+      3.5868926
+    ],
+    "ep_pair_oe_values": [
+      3.198061,
+      3.1004927,
+      2.1972723,
+      1.6084267
+    ],
+    "same_distance_bg_n": 118,
+    "same_distance_bg_mean_obs": 2.0963568427118644,
+    "same_distance_bg_median_obs": 1.905486,
+    "enrichment_vs_mean_bg": 3.4020338783420794,
+    "primary_obs_percentile_same_dist": 1.0,
+    "primary_oe_percentile_same_dist": 1.0,
+    "same_distance_bg_mean_oe": 0.9351886538983051,
+    "c1_row_nonzero_pixels": 139,
+    "n_obs_pixels_in_dump": 2625
+  },
+  "metrics_25kb": {
+    "binsize": 25000,
+    "e_bins": [
+      62150000
+    ],
+    "p_bins": [
+      62450000
+    ],
+    "c1_bin": 62500000,
+    "primary_pair": [
+      62150000,
+      62450000
+    ],
+    "primary_obs_KR": 29.820076,
+    "primary_oe_KR": 2.1376076,
+    "ep_pair_obs_values": [
+      29.820076
+    ],
+    "ep_pair_oe_values": [
+      2.1376076
+    ],
+    "same_distance_bg_n": 56,
+    "same_distance_bg_mean_obs": 12.16587060357143,
+    "same_distance_bg_median_obs": 9.724046000000001,
+    "enrichment_vs_mean_bg": 2.451125527444454,
+    "primary_obs_percentile_same_dist": 0.9821428571428571,
+    "primary_oe_percentile_same_dist": 0.9821428571428571,
+    "same_distance_bg_mean_oe": 0.8627379026785714,
+    "c1_row_nonzero_pixels": 61,
+    "n_obs_pixels_in_dump": 494
+  },
+  "g4b": "NOT_TESTED",
+  "note": "Desk G4a only; single .hic, no independent replicate file in this dump."
+}

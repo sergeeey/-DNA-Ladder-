@@ -36,12 +36,21 @@ regardless of whether the result is positive or negative.
 - ENCODE (ChIP-seq, ATAC-seq) — same portal as ARCHCODE (`www.encodeproject.org`)
 - Research Library (`D:\Research Library\sources\`) — literature, cited by DOI
 
-## Folder layout
+## Folder layout (monorepo tracks — variant B)
 
 ```
-experiments/exp_<slug>/claim.md, decision.md, results.json
-null_results/<date>-<slug>.md + INDEX.md
-scripts/       — fetch + analysis scripts, real public sources only
-data/input/    — fetched raw data (large files NOT committed to git, same as ARCHCODE)
+tracks/se_llps/          — SE / LLPS / G4 / R-loop / constraint track
+  experiments/exp_<slug>/claim.md, decision.md, results.json
+  scripts/               — fetch + analysis (ROOT = this track)
+  tests/
+  data/input/            — fetched extracts (large binaries NOT committed)
+tracks/te_alu_3d/        — Alu/SVA rare SNV vs 3D/activity desk track
+  09_outputs/prospective/
+  pilot_scaffold/
+null_results/<date>-<slug>.md + INDEX.md   — shared across tracks (repo root)
+CONTRIBUTING.md
+README.md
 .claude/memory/activeContext.md — session continuity
 ```
+
+Do not commit `.env`, `*.hic`, juicer jars, or sealed holdout dumps.

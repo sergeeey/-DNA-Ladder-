@@ -1,0 +1,33 @@
+set_id	variant_id	chrom	pos	ref	alt	expected	note	paired_positive_id
+S2	S2_0_chr11:5202005:A:G	chr11	5202005	A	G	low_or_negative_delta	reversal_of_P1_0_chr11:5202005:G:A	P1_0_chr11:5202005:G:A
+S2	S2_1_chr11:5204974:A:G	chr11	5204974	A	G	low_or_negative_delta	reversal_of_P1_1_chr11:5204974:G:A	P1_1_chr11:5204974:G:A
+S2	S2_2_chr11:5206005:A:G	chr11	5206005	A	G	low_or_negative_delta	reversal_of_P1_2_chr11:5206005:G:A	P1_2_chr11:5206005:G:A
+S2	S2_3_chr11:5210005:A:G	chr11	5210005	A	G	low_or_negative_delta	reversal_of_P1_3_chr11:5210005:G:A	P1_3_chr11:5210005:G:A
+S2	S2_4_chr11:5214005:A:G	chr11	5214005	A	G	low_or_negative_delta	reversal_of_P1_4_chr11:5214005:G:A	P1_4_chr11:5214005:G:A
+S2	S2_5_chr11:5218005:A:G	chr11	5218005	A	G	low_or_negative_delta	reversal_of_P1_5_chr11:5218005:G:A	P1_5_chr11:5218005:G:A
+S2	S2_6_chr11:5222005:A:G	chr11	5222005	A	G	low_or_negative_delta	reversal_of_P1_6_chr11:5222005:G:A	P1_6_chr11:5222005:G:A
+S2	S2_7_chr11:5226005:A:G	chr11	5226005	A	G	low_or_negative_delta	reversal_of_P1_7_chr11:5226005:G:A	P1_7_chr11:5226005:G:A
+S2	S2_8_chr11:5230005:A:G	chr11	5230005	A	G	low_or_negative_delta	reversal_of_P1_8_chr11:5230005:G:A	P1_8_chr11:5230005:G:A
+S2	S2_9_chr11:5234005:A:G	chr11	5234005	A	G	low_or_negative_delta	reversal_of_P1_9_chr11:5234005:G:A	P1_9_chr11:5234005:G:A
+S2	S2_10_chr11:5238005:A:G	chr11	5238005	A	G	low_or_negative_delta	reversal_of_P1_10_chr11:5238005:G:A	P1_10_chr11:5238005:G:A
+S2	S2_11_chr11:5242005:A:G	chr11	5242005	A	G	low_or_negative_delta	reversal_of_P1_11_chr11:5242005:G:A	P1_11_chr11:5242005:G:A
+S2	S2_12_chr11:5246005:A:G	chr11	5246005	A	G	low_or_negative_delta	reversal_of_P1_12_chr11:5246005:G:A	P1_12_chr11:5246005:G:A
+S2	S2_13_chr11:5250005:A:G	chr11	5250005	A	G	low_or_negative_delta	reversal_of_P1_13_chr11:5250005:G:A	P1_13_chr11:5250005:G:A
+S2	S2_14_chr11:5254005:A:G	chr11	5254005	A	G	low_or_negative_delta	reversal_of_P1_14_chr11:5254005:G:A	P1_14_chr11:5254005:G:A
+S2	S2_15_chr11:5258005:A:G	chr11	5258005	A	G	low_or_negative_delta	reversal_of_P1_15_chr11:5258005:G:A	P1_15_chr11:5258005:G:A
+S2	S2_16_chr11:5262005:A:G	chr11	5262005	A	G	low_or_negative_delta	reversal_of_P1_16_chr11:5262005:G:A	P1_16_chr11:5262005:G:A
+S2	S2_17_chr11:5266005:A:G	chr11	5266005	A	G	low_or_negative_delta	reversal_of_P1_17_chr11:5266005:G:A	P1_17_chr11:5266005:G:A
+S2	S2_18_chr11:5270005:A:G	chr11	5270005	A	G	low_or_negative_delta	reversal_of_P1_18_chr11:5270005:G:A	P1_18_chr11:5270005:G:A
+S2	S2_19_chr11:5274005:A:G	chr11	5274005	A	G	low_or_negative_delta	reversal_of_P1_19_chr11:5274005:G:A	P1_19_chr11:5274005:G:A
+S2	S2_20_chr11:5278005:A:G	chr11	5278005	A	G	low_or_negative_delta	reversal_of_P1_20_chr11:5278005:G:A	P1_20_chr11:5278005:G:A
+S2	S2_21_chr11:5291438:A:G	chr11	5291438	A	G	low_or_negative_delta	reversal_of_P1_21_chr11:5291438:G:A	P1_21_chr11:5291438:G:A
+S1	S1_0_chr11:5202085:C:A	chr11	5202085	C	A	consistent_magnitude	revcomp_planted_motif_destroy	
+S1	S1_1_chr11:5205054:C:A	chr11	5205054	C	A	consistent_magnitude	revcomp_planted_motif_destroy	
+S1	S1_2_chr11:5206085:C:A	chr11	5206085	C	A	consistent_magnitude	revcomp_planted_motif_destroy	
+S1	S1_3_chr11:5210085:C:A	chr11	5210085	C	A	consistent_magnitude	revcomp_planted_motif_destroy	
+S1	S1_4_chr11:5214085:C:A	chr11	5214085	C	A	consistent_magnitude	revcomp_planted_motif_destroy	
+S1	S1_5_chr11:5218085:C:A	chr11	5218085	C	A	consistent_magnitude	revcomp_planted_motif_destroy	
+S1	S1_6_chr11:5222085:C:A	chr11	5222085	C	A	consistent_magnitude	revcomp_planted_motif_destroy	
+S1	S1_7_chr11:5226085:C:A	chr11	5226085	C	A	consistent_magnitude	revcomp_planted_motif_destroy	
+S1	S1_8_chr11:5230085:C:A	chr11	5230085	C	A	consistent_magnitude	revcomp_planted_motif_destroy	
+S1	S1_9_chr11:5234085:C:A	chr11	5234085	C	A	consistent_magnitude	revcomp_planted_motif_destroy	

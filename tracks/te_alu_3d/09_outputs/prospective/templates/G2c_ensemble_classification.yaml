@@ -1,0 +1,55 @@
+# Ensemble classification sheet (EMPTY TEMPLATE)
+
+**Refs:** `07_methods/competitor_baseline_ensemble.md`  
+**Status:** `UNFILLED` — fill per candidate before G6/G9 freeze.
+
+```yaml
+candidate_id: null
+variant_id: null
+
+observed:
+  cell_state: null
+  wt_contact: UNKNOWN
+  occupied_anchor_or_mechanism_element: UNKNOWN
+
+baselines:
+  motif_only: null
+  distance_only: null
+  archcode_leakage_free: null   # null until admitted
+  alphagenome: null
+  unichrom_or_hicompass: null   # only if allele-delta validated
+  enhancer3d_context: null
+  activity_axis: null
+  looplook_target: null
+
+independence_check:
+  matrix_path: G2b_model_independence_matrix.yaml
+  redundant_agreement: UNKNOWN
+
+classification: null
+# allowed:
+#   convergence              → Arm A
+#   principled_disagreement  → Arm B
+#   unsupported
+#   inconclusive
+#   hold_missing_cell_context
+
+arm: null   # A | B | none
+wet_lab_eligible: false
+
+decision_rules:
+  REJECT_if:
+    - archcode_only_and_no_direct_mechanism
+  ARM_A_if:
+    - multi_method_plus_observed_wt_contact
+  ARM_B_if:
+    - archcode_positive
+    - sequence_models_negative_or_null
+    - explicit_mechanism
+    - observed_wt_contact
+    - matched_controls_feasible
+  INCONCLUSIVE_if:
+    - agreement_driven_by_shared_training_overlap
+  HOLD_if:
+    - models_positive_but_cell_context_missing
+```

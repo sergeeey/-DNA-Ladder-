@@ -1,0 +1,23 @@
+{
+  "scorer_benchmark_gate": {
+    "positive_vs_negative": {
+      "min_auROC": 0.75,
+      "or_median_delta_and_perm": {
+        "median_P_minus_median_N_gt": 0.0,
+        "perm_p_max": 0.01
+      }
+    },
+    "direction_reversal": {
+      "fraction_correct_sign": 0.9
+    },
+    "peak_summit_monotonicity": "exploratory_report_only",
+    "fail_action": "STOP_biological_enrichment_runs"
+  },
+  "n_positive": 22,
+  "n_negative": 32,
+  "n_reversal": 22,
+  "fasta": "D:\\DNK - 2\\DNA_TE_3DGenome_Context\\pilot_scaffold\\data\\benchmark\\chr11_hbb_benchmark.fa",
+  "peaks": "D:\\DNK - 2\\DNA_TE_3DGenome_Context\\pilot_scaffold\\data\\ctcf_HUDEP2_peaks.bed",
+  "window": "chr11:5200000-5300000",
+  "note": "benchmark fasta contains planted CTCF consensus motifs"
+}

@@ -1,0 +1,63 @@
+# G6 — Control panel manifest
+
+
+
+**Status:** `DESK_DRAFT` — see `../G6_control_panel_desk_pass_v1.md`  
+
+**panel_frozen:** false  
+
+**Default panel size:** 3 candidates + 3 matched neutrals + 1 positive control  
+
+**This draft:** smaller feasibility panel — architecture P1 **DEFERRED**
+
+
+
+```yaml
+
+panel_frozen: false
+
+frozen_at: null
+
+candidates:
+
+  - C1  # chr11:62753923:A:G  primary M3
+
+  - C2  # chr11:62753923:A:T  allelic control
+
+  - C3  # chr11:72434037:C:T  motif competitor
+
+matched_neutrals:
+
+  - N1  # chr11:35821778:C:G
+
+  - N2  # chr11:35822097:A:T
+
+  - N3  # chr11:108009167:T:C
+
+positive_control: null          # architecture P1 deferred
+
+motif_proxy_positive: C3
+
+matching_axes:
+
+  - locus_neighborhood          # PARTIAL
+
+  - substitution_type           # PARTIAL
+
+  - dist_to_E_P                 # UNKNOWN
+
+  - gc                          # UNKNOWN
+
+  - accessibility               # UNKNOWN
+
+  - baseline_ctcf_occupancy     # PARTIAL
+
+  - editability                 # HARD (C1/C2)
+
+replacement_after_outcome_view: FORBIDDEN
+
+wet_lab_go: STOPPED
+
+```
+
+

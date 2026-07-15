@@ -1,0 +1,481 @@
+{
+  "status": "REPORTER_ROBUSTNESS_DESK",
+  "timestamp": "2026-07-15T11:32:43.670456+00:00",
+  "freeze_pre_registered": {
+    "primary_window": "minimal_301bp",
+    "orientation": "genomic_sense",
+    "backbone": "minP_luc_or_FP_TBD_at_GO",
+    "normalization": "ALT/REF ratio with empty-backbone control",
+    "primary_endpoint": "|log2(ALT/REF)|>=0.5 in >=2 tx",
+    "secondary_windows": [
+      "context_1kb",
+      "context_2kb"
+    ]
+  },
+  "kill_definitions": [
+    "R1_sign_flip_across_lengths",
+    "R2_deltaGC_gt_0.02",
+    "R3_variant_near_edge"
+  ],
+  "overall": "REPORTER_DESK_OK_TECHNICAL",
+  "kills": [],
+  "note_r1": "R1 not scored \u2014 need AG per window length before freeze of length invariance",
+  "constructs": [
+    {
+      "id": "C1",
+      "variant_id": "chr11:62753923:A:G",
+      "windows": {
+        "minimal_301bp": {
+          "len": 301,
+          "gc_ref": 0.584717607973422,
+          "gc_alt": 0.5880398671096345,
+          "delta_gc": 0.0033222591362125353,
+          "variant_index0": 150,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": false,
+            "polyA_alt": false,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": "0.5408127170767988",
+          "ag_contact_mae_allele": "0.00494472762303693"
+        },
+        "context_1kb": {
+          "len": 1001,
+          "gc_ref": 0.5734265734265734,
+          "gc_alt": 0.5744255744255744,
+          "delta_gc": 0.0009990009990009652,
+          "variant_index0": 500,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": true,
+            "polyA_alt": true,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": "0.5408127170767988",
+          "ag_contact_mae_allele": "0.00494472762303693"
+        },
+        "context_2kb": {
+          "len": 2001,
+          "gc_ref": 0.5722138930534733,
+          "gc_alt": 0.5727136431784108,
+          "delta_gc": 0.0004997501249375258,
+          "variant_index0": 1000,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": true,
+            "polyA_alt": true,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": "0.5408127170767988",
+          "ag_contact_mae_allele": "0.00494472762303693"
+        }
+      },
+      "edge_risk_301": false,
+      "max_delta_gc": 0.0033222591362125353,
+      "R1_status": "NOT_TESTED_NEED_WINDOW_AG"
+    },
+    {
+      "id": "C2",
+      "variant_id": "chr11:62753923:A:T",
+      "windows": {
+        "minimal_301bp": {
+          "len": 301,
+          "gc_ref": 0.584717607973422,
+          "gc_alt": 0.584717607973422,
+          "delta_gc": 0.0,
+          "variant_index0": 150,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": false,
+            "polyA_alt": false,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": "0.2552076161608109",
+          "ag_contact_mae_allele": "0.002063538513279387"
+        },
+        "context_1kb": {
+          "len": 1001,
+          "gc_ref": 0.5734265734265734,
+          "gc_alt": 0.5734265734265734,
+          "delta_gc": 0.0,
+          "variant_index0": 500,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": true,
+            "polyA_alt": true,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": "0.2552076161608109",
+          "ag_contact_mae_allele": "0.002063538513279387"
+        },
+        "context_2kb": {
+          "len": 2001,
+          "gc_ref": 0.5722138930534733,
+          "gc_alt": 0.5722138930534733,
+          "delta_gc": 0.0,
+          "variant_index0": 1000,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": true,
+            "polyA_alt": true,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": "0.2552076161608109",
+          "ag_contact_mae_allele": "0.002063538513279387"
+        }
+      },
+      "edge_risk_301": false,
+      "max_delta_gc": 0.0,
+      "R1_status": "NOT_TESTED_NEED_WINDOW_AG"
+    },
+    {
+      "id": "C3",
+      "variant_id": "chr11:72434037:C:T",
+      "windows": {
+        "minimal_301bp": {
+          "len": 301,
+          "gc_ref": 0.5514950166112956,
+          "gc_alt": 0.5481727574750831,
+          "delta_gc": 0.0033222591362125353,
+          "variant_index0": 150,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": false,
+            "polyA_alt": false,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": "0.27137969258248845",
+          "ag_contact_mae_allele": "0.0016221310278134687"
+        },
+        "context_1kb": {
+          "len": 1001,
+          "gc_ref": 0.5424575424575424,
+          "gc_alt": 0.5414585414585414,
+          "delta_gc": 0.0009990009990009652,
+          "variant_index0": 500,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": false,
+            "polyA_alt": false,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": "0.27137969258248845",
+          "ag_contact_mae_allele": "0.0016221310278134687"
+        },
+        "context_2kb": {
+          "len": 2001,
+          "gc_ref": 0.5307346326836582,
+          "gc_alt": 0.5302348825587206,
+          "delta_gc": 0.0004997501249375258,
+          "variant_index0": 1000,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": true,
+            "polyA_alt": true,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": "0.27137969258248845",
+          "ag_contact_mae_allele": "0.0016221310278134687"
+        }
+      },
+      "edge_risk_301": false,
+      "max_delta_gc": 0.0033222591362125353,
+      "R1_status": "NOT_TESTED_NEED_WINDOW_AG"
+    },
+    {
+      "id": "A114",
+      "variant_id": "chr11:114036577:G:C",
+      "windows": {
+        "minimal_301bp": {
+          "len": 301,
+          "gc_ref": 0.5481727574750831,
+          "gc_alt": 0.5481727574750831,
+          "delta_gc": 0.0,
+          "variant_index0": 150,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": false,
+            "polyA_alt": false,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": "0.16610442228205202",
+          "ag_contact_mae_allele": "0.0015654870575027807"
+        },
+        "context_1kb": {
+          "len": 1001,
+          "gc_ref": 0.5464535464535465,
+          "gc_alt": 0.5464535464535465,
+          "delta_gc": 0.0,
+          "variant_index0": 500,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": false,
+            "polyA_alt": false,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": "0.16610442228205202",
+          "ag_contact_mae_allele": "0.0015654870575027807"
+        },
+        "context_2kb": {
+          "len": 2001,
+          "gc_ref": 0.5272363818090955,
+          "gc_alt": 0.5272363818090955,
+          "delta_gc": 0.0,
+          "variant_index0": 1000,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": true,
+            "polyA_alt": true,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": "0.16610442228205202",
+          "ag_contact_mae_allele": "0.0015654870575027807"
+        }
+      },
+      "edge_risk_301": false,
+      "max_delta_gc": 0.0,
+      "R1_status": "NOT_TESTED_NEED_WINDOW_AG"
+    },
+    {
+      "id": "ARCH754",
+      "variant_id": "chr11:75445532:G:A",
+      "windows": {
+        "minimal_301bp": {
+          "len": 301,
+          "gc_ref": 0.5548172757475083,
+          "gc_alt": 0.5514950166112956,
+          "delta_gc": 0.0033222591362126463,
+          "variant_index0": 150,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": false,
+            "polyA_alt": false,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": 0.13502105519442772,
+          "ag_contact_mae_allele": 0.0017045619232313974
+        },
+        "context_1kb": {
+          "len": 1001,
+          "gc_ref": 0.5124875124875125,
+          "gc_alt": 0.5114885114885115,
+          "delta_gc": 0.0009990009990009652,
+          "variant_index0": 500,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": true,
+            "polyA_alt": true,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": 0.13502105519442772,
+          "ag_contact_mae_allele": 0.0017045619232313974
+        },
+        "context_2kb": {
+          "len": 2001,
+          "gc_ref": 0.5207396301849075,
+          "gc_alt": 0.52023988005997,
+          "delta_gc": 0.0004997501249375258,
+          "variant_index0": 1000,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": true,
+            "polyA_alt": true,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": 0.13502105519442772,
+          "ag_contact_mae_allele": 0.0017045619232313974
+        }
+      },
+      "edge_risk_301": false,
+      "max_delta_gc": 0.0033222591362126463,
+      "R1_status": "NOT_TESTED_NEED_WINDOW_AG"
+    },
+    {
+      "id": "ARCH518",
+      "variant_id": "chr11:518575:C:A",
+      "windows": {
+        "minimal_301bp": {
+          "len": 301,
+          "gc_ref": 0.574750830564784,
+          "gc_alt": 0.5714285714285714,
+          "delta_gc": 0.0033222591362126463,
+          "variant_index0": 150,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": true,
+            "polyA_alt": true,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": 0.21470037683264,
+          "ag_contact_mae_allele": 0.00183345317574484
+        },
+        "context_1kb": {
+          "len": 1001,
+          "gc_ref": 0.6103896103896104,
+          "gc_alt": 0.6093906093906094,
+          "delta_gc": 0.0009990009990009652,
+          "variant_index0": 500,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": true,
+            "polyA_alt": true,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": 0.21470037683264,
+          "ag_contact_mae_allele": 0.00183345317574484
+        },
+        "context_2kb": {
+          "len": 2001,
+          "gc_ref": 0.553223388305847,
+          "gc_alt": 0.5527236381809095,
+          "delta_gc": 0.0004997501249375258,
+          "variant_index0": 1000,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": true,
+            "polyA_alt": true,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": 0.21470037683264,
+          "ag_contact_mae_allele": 0.00183345317574484
+        }
+      },
+      "edge_risk_301": false,
+      "max_delta_gc": 0.0033222591362126463,
+      "R1_status": "NOT_TESTED_NEED_WINDOW_AG"
+    },
+    {
+      "id": "N3",
+      "variant_id": "chr11:108009167:T:C",
+      "windows": {
+        "minimal_301bp": {
+          "len": 301,
+          "gc_ref": 0.6677740863787376,
+          "gc_alt": 0.6710963455149501,
+          "delta_gc": 0.0033222591362125353,
+          "variant_index0": 150,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": false,
+            "polyA_alt": false,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": "0.10911584829355216",
+          "ag_contact_mae_allele": "0.0009642947864319597"
+        },
+        "context_1kb": {
+          "len": 1001,
+          "gc_ref": 0.6353646353646354,
+          "gc_alt": 0.6363636363636364,
+          "delta_gc": 0.0009990009990009652,
+          "variant_index0": 500,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": false,
+            "polyA_alt": false,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": "0.10911584829355216",
+          "ag_contact_mae_allele": "0.0009642947864319597"
+        },
+        "context_2kb": {
+          "len": 2001,
+          "gc_ref": 0.5302348825587206,
+          "gc_alt": 0.5307346326836582,
+          "delta_gc": 0.0004997501249375258,
+          "variant_index0": 1000,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": true,
+            "polyA_alt": true,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": "0.10911584829355216",
+          "ag_contact_mae_allele": "0.0009642947864319597"
+        }
+      },
+      "edge_risk_301": false,
+      "max_delta_gc": 0.0033222591362125353,
+      "R1_status": "NOT_TESTED_NEED_WINDOW_AG"
+    },
+    {
+      "id": "W1",
+      "variant_id": "chr11:57568168:C:T",
+      "windows": {
+        "minimal_301bp": {
+          "len": 301,
+          "gc_ref": 0.6611295681063123,
+          "gc_alt": 0.6578073089700996,
+          "delta_gc": 0.0033222591362126463,
+          "variant_index0": 150,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": false,
+            "polyA_alt": false,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": "0.12971634826471426",
+          "ag_contact_mae_allele": "0.0011541253687547787"
+        },
+        "context_1kb": {
+          "len": 1001,
+          "gc_ref": 0.6593406593406593,
+          "gc_alt": 0.6583416583416584,
+          "delta_gc": 0.0009990009990009652,
+          "variant_index0": 500,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": false,
+            "polyA_alt": false,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": "0.12971634826471426",
+          "ag_contact_mae_allele": "0.0011541253687547787"
+        },
+        "context_2kb": {
+          "len": 2001,
+          "gc_ref": 0.5912043978010995,
+          "gc_alt": 0.5907046476761619,
+          "delta_gc": 0.0004997501249375258,
+          "variant_index0": 1000,
+          "near_edge_15bp": false,
+          "flags": {
+            "polyA_ref": true,
+            "polyA_alt": true,
+            "splice_donor_gained": false,
+            "splice_accept_gained": false
+          },
+          "ag_chip_tf_mae_allele": "0.12971634826471426",
+          "ag_contact_mae_allele": "0.0011541253687547787"
+        }
+      },
+      "edge_risk_301": false,
+      "max_delta_gc": 0.0033222591362126463,
+      "R1_status": "NOT_TESTED_NEED_WINDOW_AG"
+    }
+  ]
+}

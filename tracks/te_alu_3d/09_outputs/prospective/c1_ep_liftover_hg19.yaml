@@ -1,0 +1,25 @@
+# Auto-generated liftOver via Ensembl REST map/human/GRCh38→GRCh37
+# DO NOT paste GRCh38 coords into hg19 .hic Juicebox windows
+source_assembly: GRCh38
+target_assembly: GRCh37/hg19
+method: ensembl_rest_map
+locked_ref: C1_claim_freeze_pack_v1.md
+regions:
+  - id: C1
+    grch38: chr11:62753923-62753923
+    hg19: chr11:62521395-62521395
+    strand: 1
+    n_mappings: 1
+    status: MAPPED
+  - id: E
+    grch38: chr11:62390000-62395000
+    hg19: chr11:62157472-62162472
+    strand: 1
+    n_mappings: 1
+    status: MAPPED
+  - id: P
+    grch38: chr11:62690000-62695000
+    hg19: chr11:62457472-62462472
+    strand: 1
+    n_mappings: 1
+    status: MAPPED

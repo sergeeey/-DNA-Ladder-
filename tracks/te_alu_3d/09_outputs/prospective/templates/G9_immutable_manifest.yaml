@@ -1,0 +1,19 @@
+# G9 — Immutable candidate manifest (EMPTY SHELL)
+
+**Status:** `EMPTY_SHELL`  
+**Rule:** after outcome data are viewed, candidate identities cannot be replaced while claiming the same frozen test.
+
+```yaml
+manifest_id: prospective_candidates_v0
+created_at: null
+immutable: false
+content_hash: null
+unblind_or_outcome_viewed: false
+candidates: []
+controls: []
+positive_control: null
+framework_ref: ../07_methods/archcode_prospective_framework.md
+cultivation_ref: ../07_methods/hypothesis_cultivation_pass_architecture_variant.md
+notes: >
+  Shell only. Do not set immutable:true until G1–G8 are filled for real candidates.
+```

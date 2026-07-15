@@ -1,0 +1,88 @@
+{
+  "gate": "G1",
+  "verdict": "PASS",
+  "g2_preparation_ready": true,
+  "g2_status": "PREP_ONLY",
+  "meaning": "Leakage controls OK for framework inputs",
+  "holdout_sealed": true,
+  "hashes": {
+    "prospective_config.yaml": "212b5d69187526fa1104af371718da70ca4b656cf7f7a783c7374e40ba91c335",
+    "build_prospective_universe.py": "eef566b508385bcfa3404887ee1dbaf2f8a3cf96f9c032894958230aaa8dfae9",
+    "baseline_scorers.py": "bdcc23ac95fb5f0c34bd30bf4ae9d1db0c2c19102b3b8b915c3d7c5ee5cd5e51",
+    "leakage_audit.py": "5baf9dce3b83c3ef36c7d00f6080b8c7830921fd736a4b65e8500de8e1c30900",
+    "run_prospective_baselines.py": "b0117c34397ef32a45d541977bdd15da4155a2f42a17f126b37a181a9e6c7223",
+    "holdout_guard.py": "c243014b3939e0246df648c6aa0823ef4becf79eb41bb3acc4c27a1cfc9354fc"
+  },
+  "checks": [
+    {
+      "check": "holdout_sealed_not_scored",
+      "pass": true,
+      "detail": "holdout must remain sealed during framework builds"
+    },
+    {
+      "check": "framework_status_framework_only",
+      "pass": true,
+      "detail": "status=FRAMEWORK_ONLY"
+    },
+    {
+      "check": "wet_lab_go_false",
+      "pass": true,
+      "detail": "wet_lab_go=False"
+    },
+    {
+      "check": "hbb_window_excluded",
+      "pass": true,
+      "detail": "exclude_windows must list HBB development set"
+    },
+    {
+      "check": "input_headers_clean",
+      "pass": true,
+      "detail": {
+        "checked": true,
+        "pass": true,
+        "path": "D:\\DNK - 2\\DNA_TE_3DGenome_Context\\pilot_scaffold\\data\\prospective_fixtures\\universe_seed.tsv",
+        "headers": [
+          "chrom",
+          "pos",
+          "ref",
+          "alt",
+          "af",
+          "variant_id"
+        ],
+        "forbidden_header_hits": []
+      }
+    },
+    {
+      "check": "code_hashes_recorded",
+      "pass": true,
+      "detail": {
+        "prospective_config.yaml": "212b5d691875\u2026",
+        "build_prospective_universe.py": "eef566b50838\u2026",
+        "baseline_scorers.py": "bdcc23ac95fb\u2026",
+        "leakage_audit.py": "5baf9dce3b83\u2026",
+        "run_prospective_baselines.py": "b0117c34397e\u2026",
+        "holdout_guard.py": "c243014b3939\u2026"
+      }
+    }
+  ],
+  "forbidden_header_fields": [
+    "clinical_significance",
+    "clnsig",
+    "clinvar",
+    "consequence",
+    "vep",
+    "vep_severity",
+    "effect_strength",
+    "pearl_status",
+    "pearl",
+    "pathogenicity",
+    "label",
+    "pathogenic",
+    "benign"
+  ],
+  "action_if_fail": [
+    "Remove ClinVar/consequence/pearl fields from input TSV",
+    "Do not point --input at data/holdout/",
+    "Keep prospective.status=FRAMEWORK_ONLY"
+  ]
+}

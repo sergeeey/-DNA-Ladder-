@@ -1,0 +1,95 @@
+{
+  "status": "G2_PREP_COMPLETE",
+  "timestamp": "2026-07-14T05:39:33.991003+00:00",
+  "holdout_sealed": true,
+  "scored_holdout": false,
+  "scorer_pwm": "ctcf_pwm_delta_v1.1",
+  "scorer_fp": "54a2ad823a0e6b6f",
+  "rows": [
+    {
+      "candidate_id": "C1",
+      "variant_id": "chr11:62753923:A:G",
+      "pwm_version": "ctcf_pwm_delta_v1.1",
+      "pwm_fingerprint": "54a2ad823a0e6b6f",
+      "delta_logodds": -4.087462841250339,
+      "pwm_disruption_score": 0.08801082216282294,
+      "in_peak": true,
+      "dist_peak": 0,
+      "allele_mismatch": false,
+      "motif_only_score": 0.06477221158364088,
+      "motif_only_ok": true,
+      "distance_only_score": 0.003424657534246575,
+      "ag_contact_mae": 0.00494472762303693,
+      "ag_chip_tf_mae": 0.5408127170767988,
+      "fasta": "data\\cultivation\\chr11_C1C2_62753000_62755000.fa"
+    },
+    {
+      "candidate_id": "C2",
+      "variant_id": "chr11:62753923:A:T",
+      "pwm_version": "ctcf_pwm_delta_v1.1",
+      "pwm_fingerprint": "54a2ad823a0e6b6f",
+      "delta_logodds": -4.087462841250339,
+      "pwm_disruption_score": 0.08801082216282294,
+      "in_peak": true,
+      "dist_peak": 0,
+      "allele_mismatch": false,
+      "motif_only_score": 0.06477221158364088,
+      "motif_only_ok": true,
+      "distance_only_score": 0.003424657534246575,
+      "ag_contact_mae": 0.002063538513279387,
+      "ag_chip_tf_mae": 0.2552076161608109,
+      "fasta": "data\\cultivation\\chr11_C1C2_62753000_62755000.fa"
+    },
+    {
+      "candidate_id": "C3",
+      "variant_id": "chr11:72434037:C:T",
+      "pwm_version": "ctcf_pwm_delta_v1.1",
+      "pwm_fingerprint": "54a2ad823a0e6b6f",
+      "delta_logodds": 4.087462841250339,
+      "pwm_disruption_score": 0.9339783556743542,
+      "in_peak": true,
+      "dist_peak": 0,
+      "allele_mismatch": false,
+      "motif_only_score": 0.8704555768327182,
+      "motif_only_ok": true,
+      "distance_only_score": 0.003076923076923077,
+      "ag_contact_mae": 0.0016221310278134687,
+      "ag_chip_tf_mae": 0.27137969258248845,
+      "fasta": "data\\cultivation\\chr11_C3_72433000_72435000.fa"
+    }
+  ],
+  "rank_agreement": [
+    {
+      "candidate_id": "C1",
+      "rank_ag_contact": 1,
+      "rank_ag_chip_tf": 1,
+      "rank_motif": 2,
+      "ag_vs_motif": "DISAGREE"
+    },
+    {
+      "candidate_id": "C2",
+      "rank_ag_contact": 2,
+      "rank_ag_chip_tf": 3,
+      "rank_motif": 3,
+      "ag_vs_motif": "DISAGREE"
+    },
+    {
+      "candidate_id": "C3",
+      "rank_ag_contact": 3,
+      "rank_ag_chip_tf": 2,
+      "rank_motif": 1,
+      "ag_vs_motif": "DISAGREE"
+    }
+  ],
+  "g2_note": "Descriptive only (n=3). Arm A = AG\u2229motif directionally up; Arm B = AG high + motif low \u2192 architecture-leaning vs motif-only.",
+  "verdict": {
+    "C1": "ARM_B_AG_GT_MOTIF",
+    "C2": "ARM_B_AG_GT_MOTIF",
+    "C3": "ARM_B_MOTIF_GT_AG"
+  },
+  "next": [
+    "Keep C1 preferred if Arm B (AG>motif) confirmed after TF channel audit",
+    "Do not G9 freeze \u2014 need G5 editability + HUDEP-2 G4",
+    "Holdout still sealed"
+  ]
+}

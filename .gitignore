@@ -1,3 +1,45 @@
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Secrets / local env
+.env
+.env.*
+!.env.example
+
+# Claude local state
 .claude/state/
+**/scripts/.claude/state/
+
+# Large genomics binaries (keep local / fetch separately)
+*.hic
+*.mcool
+*.cool
+*.bam
+*.bai
+*.jar
+*.zip
+
+# Track-specific bulky / sealed data (see tracks/*/DATA.md)
+tracks/te_alu_3d/pilot_scaffold/data/clinvar.vcf.gz
+tracks/te_alu_3d/pilot_scaffold/data/rmsk.txt.gz
+tracks/te_alu_3d/pilot_scaffold/data/clinvar_chr11.vcf.gz
+tracks/te_alu_3d/pilot_scaffold/data/genomicSuperDups.txt.gz
+tracks/te_alu_3d/pilot_scaffold/data/holdout/
+tracks/te_alu_3d/pilot_scaffold/tools/
+tracks/te_alu_3d/09_outputs/prospective/g4a_dumps*/
+tracks/te_alu_3d/09_outputs/prospective/*_OT*.tsv
+tracks/te_alu_3d/09_outputs/prospective/crispor*/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
