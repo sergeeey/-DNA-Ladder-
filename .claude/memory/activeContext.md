@@ -270,7 +270,35 @@ defensive clamp, not just patched to pass the test. All 53 tests across 4 test f
 pass. R-loop direction opened and closed in the same session -- consistent with this
 session's pattern that "obvious" SE-associated claims do not survive matched controls.
 
+## DONE (2026-07-10, later still) — G4 direction: found the concrete file the first pass missed, REJECT
+
+User asked to re-check the G4 niche and find a concrete file (first `boyko-specialist` pass
+had only gotten `[UNKNOWN]` on the specific processed file). Second targeted search found
+GSE145090 (Spiegel/Cuesta/Adhikari et al 2021, Genome Biology, PMC8063395,
+Balasubramanian lab -- same niche as the first pass, but this time with a concrete,
+verified source): official NCBI GEO FTP processed BED files for BOTH K562 (9205 peaks)
+and HepG2 (8805 peaks) BG4 ChIP-seq -- peak counts cross-verified exact against the
+paper's abstract. hg19 build, confirmed via the authors' own pipeline repo -- lifted to
+GRCh38 via this project's own `liftover.py` (0.3% loss rate on both, consistent with the
+earlier dbSUPER liftover).
+
+User said "го" -- ran the same SE-vs-typical-enhancer overlap-fraction analysis (reused
+from the R-loop experiment) on both cell lines.
+
+**Result: REJECT.** Cliff's delta -0.047 (K562, p at permutation floor but n=5993-driven)
+and -0.024 (HepG2, p=0.995, no signal at all) -- both wrong-for-hypothesis direction, both
+far below MCID. This is the **5th REJECT today** across 5 different data types (BRD4/MED1,
+ClinVar VUS x2, Gnocchi constraint, R-loop, G4) on "does SE membership distinguish
+enhancer subclasses" -- closes both halves of the non-B-DNA direction opened this session.
+
+Wrote 4 integration tests for `load_and_liftover_g4` (the one new glue-code piece;
+lift_interval/merge_intervals/overlap_fraction were already tested) covering successful
+lift, out-of-coverage failure counting, merge-after-lift, and gzip/plain file handling.
+**All 57 tests across 5 test files pass.**
+
 ## Auto-commit log
+- [2026-07-15 16:08] `797170a`: feat: exp_g4_se_vs_typical_enhancer -- REJECT, 5th convergent null on SE-vs-typical direction
+- [2026-07-10 17:54] `7bd1f9a`: docs: auto-log sync 2
 - [2026-07-10 17:53] `85929d2`: docs: final auto-log sync for session close
 - [2026-07-10 17:52] `614ee55`: docs: auto-log sync
 - [2026-07-10 17:52] `bd5d40e`: docs: activeContext narrative for R-loop direction (opened and closed same day)
