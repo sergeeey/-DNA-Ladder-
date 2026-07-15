@@ -1,0 +1,35 @@
+{
+  "K562": {
+    "n_se_constituent": 5993,
+    "gnocchi": {
+      "n": 4776,
+      "spearman_rho": -0.009028726046778202,
+      "p_value_permutation": 0.5392460753924607
+    },
+    "rloop": {
+      "n": 5993,
+      "spearman_rho": -0.14649525134027572,
+      "p_value_permutation": 9.999000099990002e-05
+    },
+    "g4": {
+      "n": 5993,
+      "spearman_rho": -0.15928645910099168,
+      "p_value_permutation": 9.999000099990002e-05
+    }
+  },
+  "HepG2": {
+    "n_se_constituent": 1889,
+    "gnocchi": {
+      "n": 1606,
+      "spearman_rho": 0.07334452689157817,
+      "p_value_permutation": 0.0038996100389961006
+    },
+    "g4": {
+      "n": 1889,
+      "spearman_rho": -0.1630683440560219,
+      "p_value_permutation": 9.999000099990002e-05
+    }
+  },
+  "mcid": "abs(spearman_rho) >= 0.2 AND p_value_permutation < 0.05",
+  "n_permutations": 10000
+}
