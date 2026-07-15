@@ -297,6 +297,7 @@ lift, out-of-coverage failure counting, merge-after-lift, and gzip/plain file ha
 **All 57 tests across 5 test files pass.**
 
 ## Auto-commit log
+- [2026-07-15 16:14] `5a51aee`: docs: activeContext narrative for G4 direction (5th convergent REJECT)
 - [2026-07-15 16:08] `797170a`: feat: exp_g4_se_vs_typical_enhancer -- REJECT, 5th convergent null on SE-vs-typical direction
 - [2026-07-10 17:54] `7bd1f9a`: docs: auto-log sync 2
 - [2026-07-10 17:53] `85929d2`: docs: final auto-log sync for session close
