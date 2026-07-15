@@ -1,0 +1,2071 @@
+{
+  "status": "STAGE1_DESK_COMPLETE_CURATED",
+  "timestamp": "2026-07-15T08:00:41.140637+00:00",
+  "holdout_sealed": true,
+  "ag_api": "PRESENT_rescore_pass",
+  "n_pool": 28,
+  "n_frozen_proposed": 13,
+  "exclude_windows": [
+    {
+      "start": 5200000,
+      "end": 5300000,
+      "reason": "HBB_development"
+    },
+    {
+      "start": 64000000,
+      "end": 68000000,
+      "reason": "holdout_HO_A_B_C_geography"
+    }
+  ],
+  "admission_counts": {
+    "FROZEN_PANEL_CANDIDATE": 28
+  },
+  "frozen_panel": [
+    {
+      "frozen_role": "TEMPLATE_DEV",
+      "variant_id": "chr11:62753923:A:G",
+      "mechanism_prior": "M3_activity",
+      "candidate_class": "convergence",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "dist_ctcf": 0,
+      "te_family": "AluSz",
+      "ag_contact_mae": "0.00494472762303693",
+      "ag_chip_tf_mae": "0.5408127170767988",
+      "pwm_delta_logodds": -4.087462841250339,
+      "pe_desk": "PASS_DESK",
+      "curation_note": "desk template; M3 primary; G4b ready; not auto Stage-3 winner"
+    },
+    {
+      "frozen_role": "activity_m3",
+      "variant_id": "chr11:62753923:A:T",
+      "mechanism_prior": "M3_activity",
+      "candidate_class": "convergence",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "dist_ctcf": 0,
+      "te_family": "AluSz",
+      "ag_contact_mae": "0.002063538513279387",
+      "ag_chip_tf_mae": "0.2552076161608109",
+      "pwm_delta_logodds": -4.087462841250339,
+      "pe_desk": "PASS_DESK",
+      "curation_note": "same-site allelic amplitude vs C1"
+    },
+    {
+      "frozen_role": "activity_m3",
+      "variant_id": "chr11:72434037:C:T",
+      "mechanism_prior": "M3_activity",
+      "candidate_class": "convergence",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "dist_ctcf": 0,
+      "te_family": "AluSx1",
+      "ag_contact_mae": "0.0016221310278134687",
+      "ag_chip_tf_mae": "0.27137969258248845",
+      "pwm_delta_logodds": 4.087462841250339,
+      "pe_desk": "PASS_DESK",
+      "curation_note": "motif competitor / historical PWM strong"
+    },
+    {
+      "frozen_role": "activity_m3",
+      "variant_id": "chr11:72434037:C:A",
+      "mechanism_prior": "M3_activity",
+      "candidate_class": "convergence",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "dist_ctcf": 0,
+      "te_family": "AluSx1",
+      "ag_contact_mae": "0.0015270736933286702",
+      "ag_chip_tf_mae": "0.24159636229147644",
+      "pwm_delta_logodds": 4.087462841250339,
+      "pe_desk": "PASS_DESK",
+      "curation_note": "AG CHIP_TF lean"
+    },
+    {
+      "frozen_role": "activity_m3",
+      "variant_id": "chr11:114036577:G:C",
+      "mechanism_prior": "M3_activity",
+      "candidate_class": "convergence",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "dist_ctcf": 0,
+      "te_family": "AluJb",
+      "ag_contact_mae": "0.0015654870575027807",
+      "ag_chip_tf_mae": "0.16610442228205202",
+      "pwm_delta_logodds": 4.087462841250343,
+      "pe_desk": "PASS_DESK",
+      "curation_note": "AG CHIP_TF lean"
+    },
+    {
+      "frozen_role": "architecture_m1",
+      "variant_id": "chr11:75445532:G:A",
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "dist_ctcf": 0,
+      "te_family": "AluJr",
+      "ag_contact_mae": null,
+      "ag_chip_tf_mae": null,
+      "pwm_delta_logodds": 4.087462841250344,
+      "pe_desk": "PASS_DESK",
+      "curation_note": "Stage1 motif/anchor prior; allele contact untested"
+    },
+    {
+      "frozen_role": "architecture_m1",
+      "variant_id": "chr11:518575:C:A",
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "dist_ctcf": 1,
+      "te_family": "AluY",
+      "ag_contact_mae": null,
+      "ag_chip_tf_mae": null,
+      "pwm_delta_logodds": 4.087462841250343,
+      "pe_desk": "PASS_DESK",
+      "curation_note": "Stage1 motif/anchor prior; allele contact untested"
+    },
+    {
+      "frozen_role": "architecture_m1",
+      "variant_id": "chr11:119030718:C:T",
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "dist_ctcf": 1,
+      "te_family": "AluY",
+      "ag_contact_mae": null,
+      "ag_chip_tf_mae": null,
+      "pwm_delta_logodds": -4.087462841250343,
+      "pe_desk": "PASS_DESK",
+      "curation_note": "Stage1 motif/anchor prior; allele contact untested"
+    },
+    {
+      "frozen_role": "architecture_m1",
+      "variant_id": "chr11:75445269:C:T",
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "dist_ctcf": 0,
+      "te_family": "AluJr",
+      "ag_contact_mae": null,
+      "ag_chip_tf_mae": null,
+      "pwm_delta_logodds": -4.087462841250343,
+      "pe_desk": "PASS_DESK",
+      "curation_note": "Stage1 motif/anchor prior; allele contact untested"
+    },
+    {
+      "frozen_role": "matched_negative",
+      "variant_id": "chr11:108009167:T:C",
+      "mechanism_prior": "M0_neutral_lean",
+      "candidate_class": "matched_negative_candidate",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "dist_ctcf": 0,
+      "te_family": "FLAM_C",
+      "ag_contact_mae": "0.0009642947864319597",
+      "ag_chip_tf_mae": "0.10911584829355216",
+      "pwm_delta_logodds": -4.087462841250339,
+      "pe_desk": "PASS_DESK",
+      "curation_note": "G6 KEEP; GC+ATAC matched vs C1"
+    },
+    {
+      "frozen_role": "matched_negative",
+      "variant_id": "chr11:108009167:T:A",
+      "mechanism_prior": "M3_activity",
+      "candidate_class": "convergence",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "dist_ctcf": 0,
+      "te_family": "FLAM_C",
+      "ag_contact_mae": "0.0009619002895695823",
+      "ag_chip_tf_mae": "0.16568255498222015",
+      "pwm_delta_logodds": -4.087462841250339,
+      "pe_desk": "PASS_DESK",
+      "curation_note": "same-locus allelic negative companion"
+    },
+    {
+      "frozen_role": "known_positive",
+      "variant_id": "P1_SYSTEM_3primeHS1",
+      "mechanism_prior": "M1_architecture_control",
+      "candidate_class": "known_positive",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "dist_ctcf": null,
+      "te_family": null,
+      "ag_contact_mae": null,
+      "ag_chip_tf_mae": null,
+      "pwm_delta_logodds": null,
+      "pe_desk": "N/A_system_control",
+      "curation_note": "Historical HUDEP-2 3primeHS1 del/inv PASS_DESK; not an Alu SNV"
+    },
+    {
+      "frozen_role": "principled_disagreement",
+      "variant_id": "chr11:57568168:C:T",
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "dist_ctcf": 0,
+      "te_family": "AluSz6",
+      "ag_contact_mae": "0.0011541253687547787",
+      "ag_chip_tf_mae": "0.12971634826471426",
+      "pwm_delta_logodds": 4.087462841250341,
+      "pe_desk": "PASS_DESK",
+      "curation_note": "contact vs activity channel tension (pre-registered class)"
+    }
+  ],
+  "stage3_advancement_proposed": {
+    "architecture_strong_1": "chr11:75445532:G:A",
+    "architecture_strong_2": "chr11:518575:C:A",
+    "convergence_1": "chr11:72434037:C:T",
+    "disagreement_1": "chr11:57568168:C:T",
+    "negative_1": "chr11:108009167:T:C",
+    "assignment_locked": true,
+    "locked_date": "2026-07-15",
+    "lock_rule": "LOCKED before Stage-2 reporter readout per SCALE_PROTOCOL",
+    "template_excluded_from_stage3_slots": "chr11:62753923:A:G",
+    "known_positive_assay_chain": "P1_SYSTEM_3primeHS1"
+  },
+  "pool": [
+    {
+      "chrom": "chr11",
+      "pos": 35821778,
+      "ref": "C",
+      "alt": "G",
+      "af": 6.58197854274995e-06,
+      "source": "gnomad_peak_35822097",
+      "te_family": "AluSz6",
+      "dist_ctcf": 1,
+      "distance_score": 0.5,
+      "peak_mid": 35822097,
+      "variant_id": "chr11:35821778:C:G",
+      "ag_status": "SCORED",
+      "ag_contact_mae": "0.0007107469718903303",
+      "ag_chip_tf_mae": "0.09006223283436243",
+      "ag_primary_score": "0.0007107469718903303",
+      "pwm_delta_logodds": -4.087462841250343,
+      "pwm_error": null,
+      "be_chemistry": null,
+      "be_desk": "N/A",
+      "pe_geometries": 11,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 1,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=1; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=N/A; geometries=11"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      }
+    },
+    {
+      "chrom": "chr11",
+      "pos": 518575,
+      "ref": "C",
+      "alt": "A",
+      "af": 6.57713000355165e-06,
+      "source": "gnomad_peak_518836",
+      "te_family": "AluY",
+      "dist_ctcf": 1,
+      "distance_score": 0.5,
+      "peak_mid": 518836,
+      "variant_id": "chr11:518575:C:A",
+      "ag_status": "SCORED",
+      "ag_contact_mae": 0.00183345317574484,
+      "ag_chip_tf_mae": 0.21470037683264,
+      "ag_primary_score": 0.00183345317574484,
+      "pwm_delta_logodds": 4.087462841250343,
+      "pwm_error": null,
+      "be_chemistry": null,
+      "be_desk": "N/A",
+      "pe_geometries": 12,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 1,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=1; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=N/A; geometries=12"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      },
+      "ag_error": null
+    },
+    {
+      "chrom": "chr11",
+      "pos": 119030718,
+      "ref": "C",
+      "alt": "T",
+      "af": 0.0,
+      "source": "gnomad_peak_119030971",
+      "te_family": "AluY",
+      "dist_ctcf": 1,
+      "distance_score": 0.5,
+      "peak_mid": 119030971,
+      "variant_id": "chr11:119030718:C:T",
+      "ag_status": "SCORED",
+      "ag_contact_mae": 0.0011890178014125144,
+      "ag_chip_tf_mae": 0.1452748375906204,
+      "ag_primary_score": 0.0011890178014125144,
+      "pwm_delta_logodds": -4.087462841250343,
+      "pwm_error": null,
+      "be_chemistry": "CBE",
+      "be_desk": "CONDITIONAL",
+      "pe_geometries": 11,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 3,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=1; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=CONDITIONAL; geometries=11"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      },
+      "ag_error": null
+    },
+    {
+      "chrom": "chr11",
+      "pos": 118907233,
+      "ref": "G",
+      "alt": "A",
+      "af": 1.3140086461768918e-05,
+      "source": "gnomad_peak_118907234",
+      "te_family": "FLAM_C",
+      "dist_ctcf": 1,
+      "distance_score": 0.5,
+      "peak_mid": 118907234,
+      "variant_id": "chr11:118907233:G:A",
+      "ag_status": "SCORED",
+      "ag_contact_mae": 0.005975344185052174,
+      "ag_chip_tf_mae": 0.22108745398017163,
+      "ag_primary_score": 0.005975344185052174,
+      "pwm_delta_logodds": 4.087462841250339,
+      "pwm_error": null,
+      "be_chemistry": null,
+      "be_desk": "N/A",
+      "pe_geometries": 9,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 4,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=1; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=N/A; geometries=9"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      },
+      "ag_error": null
+    },
+    {
+      "chrom": "chr11",
+      "pos": 118907233,
+      "ref": "G",
+      "alt": "C",
+      "af": 6.564953651427221e-06,
+      "source": "gnomad_peak_118907234",
+      "te_family": "FLAM_C",
+      "dist_ctcf": 1,
+      "distance_score": 0.5,
+      "peak_mid": 118907234,
+      "variant_id": "chr11:118907233:G:C",
+      "ag_status": "SCORED",
+      "ag_contact_mae": 0.0040703976327287296,
+      "ag_chip_tf_mae": 0.28613740334779153,
+      "ag_primary_score": 0.0040703976327287296,
+      "pwm_delta_logodds": 4.087462841250339,
+      "pwm_error": null,
+      "be_chemistry": null,
+      "be_desk": "N/A",
+      "pe_geometries": 9,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 4,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=1; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=N/A; geometries=9"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      },
+      "ag_error": null
+    },
+    {
+      "chrom": "chr11",
+      "pos": 75248816,
+      "ref": "G",
+      "alt": "A",
+      "af": 6.568834820079614e-05,
+      "source": "gnomad_peak_75248818",
+      "te_family": "FRAM",
+      "dist_ctcf": 2,
+      "distance_score": 0.3333333333333333,
+      "peak_mid": 75248818,
+      "variant_id": "chr11:75248816:G:A",
+      "ag_status": "SCORED",
+      "ag_contact_mae": 0.0026557976379990578,
+      "ag_chip_tf_mae": 0.15551267115510978,
+      "ag_primary_score": 0.0026557976379990578,
+      "pwm_delta_logodds": 4.087462841250339,
+      "pwm_error": null,
+      "be_chemistry": null,
+      "be_desk": "N/A",
+      "pe_geometries": 7,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 0,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=2; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=N/A; geometries=7"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      },
+      "ag_error": null
+    },
+    {
+      "chrom": "chr11",
+      "pos": 62753923,
+      "ref": "A",
+      "alt": "G",
+      "af": 6.861609568926241e-07,
+      "source": "gnomad_peak_62754214",
+      "te_family": "AluSz",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 62754214,
+      "variant_id": "chr11:62753923:A:G",
+      "ag_status": "SCORED",
+      "ag_contact_mae": "0.00494472762303693",
+      "ag_chip_tf_mae": "0.5408127170767988",
+      "ag_primary_score": "0.00494472762303693",
+      "pwm_delta_logodds": -4.087462841250339,
+      "pwm_error": null,
+      "be_chemistry": "ABE",
+      "be_desk": "CONDITIONAL",
+      "pe_geometries": 24,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 0,
+      "mechanism_prior": "M3_activity",
+      "candidate_class": "convergence",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M3_activity"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=CONDITIONAL; geometries=24"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_contact; activity_decrease_if_M3; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      }
+    },
+    {
+      "chrom": "chr11",
+      "pos": 62753923,
+      "ref": "A",
+      "alt": "T",
+      "af": 6.861600152601988e-07,
+      "source": "gnomad_peak_62754214",
+      "te_family": "AluSz",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 62754214,
+      "variant_id": "chr11:62753923:A:T",
+      "ag_status": "SCORED",
+      "ag_contact_mae": "0.002063538513279387",
+      "ag_chip_tf_mae": "0.2552076161608109",
+      "ag_primary_score": "0.002063538513279387",
+      "pwm_delta_logodds": -4.087462841250339,
+      "pwm_error": null,
+      "be_chemistry": null,
+      "be_desk": "N/A",
+      "pe_geometries": 24,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 0,
+      "mechanism_prior": "M3_activity",
+      "candidate_class": "convergence",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M3_activity"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=N/A; geometries=24"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_contact; activity_decrease_if_M3; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      }
+    },
+    {
+      "chrom": "chr11",
+      "pos": 72434037,
+      "ref": "C",
+      "alt": "T",
+      "af": 1.383403310484122e-06,
+      "source": "gnomad_peak_72434361",
+      "te_family": "AluSx1",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 72434361,
+      "variant_id": "chr11:72434037:C:T",
+      "ag_status": "SCORED",
+      "ag_contact_mae": "0.0016221310278134687",
+      "ag_chip_tf_mae": "0.27137969258248845",
+      "ag_primary_score": "0.0016221310278134687",
+      "pwm_delta_logodds": 4.087462841250339,
+      "pwm_error": null,
+      "be_chemistry": "CBE",
+      "be_desk": "CONDITIONAL",
+      "pe_geometries": 12,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 1,
+      "mechanism_prior": "M3_activity",
+      "candidate_class": "convergence",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M3_activity"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=CONDITIONAL; geometries=12"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_contact; activity_decrease_if_M3; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      }
+    },
+    {
+      "chrom": "chr11",
+      "pos": 114036577,
+      "ref": "G",
+      "alt": "C",
+      "af": 6.5688348200796145e-06,
+      "source": "gnomad_peak_114036293",
+      "te_family": "AluJb",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 114036293,
+      "variant_id": "chr11:114036577:G:C",
+      "ag_status": "SCORED",
+      "ag_contact_mae": "0.0015654870575027807",
+      "ag_chip_tf_mae": "0.16610442228205202",
+      "ag_primary_score": "0.0015654870575027807",
+      "pwm_delta_logodds": 4.087462841250343,
+      "pwm_error": null,
+      "be_chemistry": null,
+      "be_desk": "N/A",
+      "pe_geometries": 10,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 4,
+      "mechanism_prior": "M3_activity",
+      "candidate_class": "convergence",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M3_activity"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=N/A; geometries=10"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_contact; activity_decrease_if_M3; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      }
+    },
+    {
+      "chrom": "chr11",
+      "pos": 72434037,
+      "ref": "C",
+      "alt": "A",
+      "af": 0.0,
+      "source": "gnomad_peak_72434361",
+      "te_family": "AluSx1",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 72434361,
+      "variant_id": "chr11:72434037:C:A",
+      "ag_status": "SCORED",
+      "ag_contact_mae": "0.0015270736933286702",
+      "ag_chip_tf_mae": "0.24159636229147644",
+      "ag_primary_score": "0.0015270736933286702",
+      "pwm_delta_logodds": 4.087462841250339,
+      "pwm_error": null,
+      "be_chemistry": null,
+      "be_desk": "N/A",
+      "pe_geometries": 12,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 1,
+      "mechanism_prior": "M3_activity",
+      "candidate_class": "convergence",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M3_activity"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=N/A; geometries=12"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_contact; activity_decrease_if_M3; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      }
+    },
+    {
+      "chrom": "chr11",
+      "pos": 57568168,
+      "ref": "C",
+      "alt": "T",
+      "af": 0.0,
+      "source": "gnomad_peak_57568168",
+      "te_family": "AluSz6",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 57568168,
+      "variant_id": "chr11:57568168:C:T",
+      "ag_status": "SCORED",
+      "ag_contact_mae": "0.0011541253687547787",
+      "ag_chip_tf_mae": "0.12971634826471426",
+      "ag_primary_score": "0.0011541253687547787",
+      "pwm_delta_logodds": 4.087462841250341,
+      "pwm_error": null,
+      "be_chemistry": "CBE",
+      "be_desk": "CONDITIONAL",
+      "pe_geometries": 19,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 2,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=CONDITIONAL; geometries=19"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      }
+    },
+    {
+      "chrom": "chr11",
+      "pos": 57568168,
+      "ref": "C",
+      "alt": "A",
+      "af": 0.0,
+      "source": "gnomad_peak_57568168",
+      "te_family": "AluSz6",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 57568168,
+      "variant_id": "chr11:57568168:C:A",
+      "ag_status": "SCORED",
+      "ag_contact_mae": "0.0011324893151010787",
+      "ag_chip_tf_mae": "0.13307041788661486",
+      "ag_primary_score": "0.0011324893151010787",
+      "pwm_delta_logodds": 4.087462841250341,
+      "pwm_error": null,
+      "be_chemistry": null,
+      "be_desk": "N/A",
+      "pe_geometries": 19,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 2,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=N/A; geometries=19"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      }
+    },
+    {
+      "chrom": "chr11",
+      "pos": 114036293,
+      "ref": "C",
+      "alt": "T",
+      "af": 6.572720580502681e-06,
+      "source": "gnomad_peak_114036293",
+      "te_family": "AluJb",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 114036293,
+      "variant_id": "chr11:114036293:C:T",
+      "ag_status": "SCORED",
+      "ag_contact_mae": "0.0011036249675921031",
+      "ag_chip_tf_mae": "0.13546860033741834",
+      "ag_primary_score": "0.0011036249675921031",
+      "pwm_delta_logodds": 4.087462841250339,
+      "pwm_error": null,
+      "be_chemistry": "CBE",
+      "be_desk": "CONDITIONAL",
+      "pe_geometries": 15,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 0,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=CONDITIONAL; geometries=15"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      }
+    },
+    {
+      "chrom": "chr11",
+      "pos": 108009167,
+      "ref": "T",
+      "alt": "C",
+      "af": 0.0,
+      "source": "gnomad_peak_108008887",
+      "te_family": "FLAM_C",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 108008887,
+      "variant_id": "chr11:108009167:T:C",
+      "ag_status": "SCORED",
+      "ag_contact_mae": "0.0009642947864319597",
+      "ag_chip_tf_mae": "0.10911584829355216",
+      "ag_primary_score": "0.0009642947864319597",
+      "pwm_delta_logodds": -4.087462841250339,
+      "pwm_error": null,
+      "be_chemistry": null,
+      "be_desk": "N/A",
+      "pe_geometries": 12,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 1,
+      "mechanism_prior": "M0_neutral_lean",
+      "candidate_class": "matched_negative_candidate",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M0_neutral_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=N/A; geometries=12"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      }
+    },
+    {
+      "chrom": "chr11",
+      "pos": 108009167,
+      "ref": "T",
+      "alt": "A",
+      "af": 0.0,
+      "source": "gnomad_peak_108008887",
+      "te_family": "FLAM_C",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 108008887,
+      "variant_id": "chr11:108009167:T:A",
+      "ag_status": "SCORED",
+      "ag_contact_mae": "0.0009619002895695823",
+      "ag_chip_tf_mae": "0.16568255498222015",
+      "ag_primary_score": "0.0009619002895695823",
+      "pwm_delta_logodds": -4.087462841250339,
+      "pwm_error": null,
+      "be_chemistry": null,
+      "be_desk": "N/A",
+      "pe_geometries": 12,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 1,
+      "mechanism_prior": "M3_activity",
+      "candidate_class": "convergence",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M3_activity"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=N/A; geometries=12"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_contact; activity_decrease_if_M3; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      }
+    },
+    {
+      "chrom": "chr11",
+      "pos": 35822097,
+      "ref": "A",
+      "alt": "T",
+      "af": 6.579033934657035e-06,
+      "source": "gnomad_peak_35822097",
+      "te_family": "AluSz6",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 35822097,
+      "variant_id": "chr11:35822097:A:T",
+      "ag_status": "SCORED",
+      "ag_contact_mae": "0.0007740485681486982",
+      "ag_chip_tf_mae": "0.08700769361921792",
+      "ag_primary_score": "0.0007740485681486982",
+      "pwm_delta_logodds": 4.087462841250339,
+      "pwm_error": null,
+      "be_chemistry": null,
+      "be_desk": "N/A",
+      "pe_geometries": 13,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 6,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=N/A; geometries=13"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      }
+    },
+    {
+      "chrom": "chr11",
+      "pos": 75445532,
+      "ref": "G",
+      "alt": "A",
+      "af": 1.9711424741780336e-05,
+      "source": "gnomad_peak_75445532",
+      "te_family": "AluJr",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 75445532,
+      "variant_id": "chr11:75445532:G:A",
+      "ag_status": "SCORED",
+      "ag_contact_mae": 0.0017045619232313974,
+      "ag_chip_tf_mae": 0.13502105519442772,
+      "ag_primary_score": 0.0017045619232313974,
+      "pwm_delta_logodds": 4.087462841250344,
+      "pwm_error": null,
+      "be_chemistry": null,
+      "be_desk": "N/A",
+      "pe_geometries": 17,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 4,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=N/A; geometries=17"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      },
+      "ag_error": null
+    },
+    {
+      "chrom": "chr11",
+      "pos": 75445269,
+      "ref": "C",
+      "alt": "T",
+      "af": 6.570561257342603e-06,
+      "source": "gnomad_peak_75445532",
+      "te_family": "AluJr",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 75445532,
+      "variant_id": "chr11:75445269:C:T",
+      "ag_status": "SCORED",
+      "ag_contact_mae": 0.0012837631095732962,
+      "ag_chip_tf_mae": 0.11332023681942592,
+      "ag_primary_score": 0.0012837631095732962,
+      "pwm_delta_logodds": -4.087462841250343,
+      "pwm_error": null,
+      "be_chemistry": "CBE",
+      "be_desk": "CONDITIONAL",
+      "pe_geometries": 10,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 4,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=CONDITIONAL; geometries=10"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      },
+      "ag_error": null
+    },
+    {
+      "chrom": "chr11",
+      "pos": 47642326,
+      "ref": "A",
+      "alt": "G",
+      "af": 3.2843742610157914e-05,
+      "source": "gnomad_peak_47642597",
+      "te_family": "AluSg",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 47642597,
+      "variant_id": "chr11:47642326:A:G",
+      "ag_status": "SCORED",
+      "ag_contact_mae": 0.0012466269877872296,
+      "ag_chip_tf_mae": 0.13074033143863903,
+      "ag_primary_score": 0.0012466269877872296,
+      "pwm_delta_logodds": -4.087462841250341,
+      "pwm_error": null,
+      "be_chemistry": "ABE",
+      "be_desk": "CONDITIONAL",
+      "pe_geometries": 18,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 2,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=CONDITIONAL; geometries=18"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      },
+      "ag_error": null
+    },
+    {
+      "chrom": "chr11",
+      "pos": 119030971,
+      "ref": "C",
+      "alt": "A",
+      "af": 0.0,
+      "source": "gnomad_peak_119030971",
+      "te_family": "AluY",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 119030971,
+      "variant_id": "chr11:119030971:C:A",
+      "ag_status": "SCORED",
+      "ag_contact_mae": 0.002800963952073029,
+      "ag_chip_tf_mae": 0.2238551949599531,
+      "ag_primary_score": 0.002800963952073029,
+      "pwm_delta_logodds": 4.087462841250341,
+      "pwm_error": null,
+      "be_chemistry": null,
+      "be_desk": "N/A",
+      "pe_geometries": 15,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 1,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=N/A; geometries=15"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      },
+      "ag_error": null
+    },
+    {
+      "chrom": "chr11",
+      "pos": 47642597,
+      "ref": "C",
+      "alt": "T",
+      "af": 0.0,
+      "source": "gnomad_peak_47642597",
+      "te_family": "AluSg",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 47642597,
+      "variant_id": "chr11:47642597:C:T",
+      "ag_status": "SCORED",
+      "ag_contact_mae": 0.002093047369271517,
+      "ag_chip_tf_mae": 0.20041116963364713,
+      "ag_primary_score": 0.002093047369271517,
+      "pwm_delta_logodds": 4.08746284125034,
+      "pwm_error": null,
+      "be_chemistry": "CBE",
+      "be_desk": "CONDITIONAL",
+      "pe_geometries": 15,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 9,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=CONDITIONAL; geometries=15"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      },
+      "ag_error": null
+    },
+    {
+      "chrom": "chr11",
+      "pos": 77548165,
+      "ref": "T",
+      "alt": "A",
+      "af": 6.568575932737782e-06,
+      "source": "gnomad_peak_77548426",
+      "te_family": "AluJb",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 77548426,
+      "variant_id": "chr11:77548165:T:A",
+      "ag_status": "SCORED",
+      "ag_contact_mae": 0.0009949537260191782,
+      "ag_chip_tf_mae": 0.07610126889334391,
+      "ag_primary_score": 0.0009949537260191782,
+      "pwm_delta_logodds": 4.08746284125034,
+      "pwm_error": null,
+      "be_chemistry": null,
+      "be_desk": "N/A",
+      "pe_geometries": 7,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 0,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=N/A; geometries=7"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      },
+      "ag_error": null
+    },
+    {
+      "chrom": "chr11",
+      "pos": 77548165,
+      "ref": "T",
+      "alt": "C",
+      "af": 6.568575932737782e-06,
+      "source": "gnomad_peak_77548426",
+      "te_family": "AluJb",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 77548426,
+      "variant_id": "chr11:77548165:T:C",
+      "ag_status": "SCORED",
+      "ag_contact_mae": 0.000816567734416042,
+      "ag_chip_tf_mae": 0.07586938625658893,
+      "ag_primary_score": 0.000816567734416042,
+      "pwm_delta_logodds": 4.08746284125034,
+      "pwm_error": null,
+      "be_chemistry": null,
+      "be_desk": "N/A",
+      "pe_geometries": 7,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 0,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=N/A; geometries=7"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      },
+      "ag_error": null
+    },
+    {
+      "chrom": "chr11",
+      "pos": 20387307,
+      "ref": "G",
+      "alt": "C",
+      "af": 0.00019033867156734052,
+      "source": "gnomad_peak_20387307",
+      "te_family": "AluSx",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 20387307,
+      "variant_id": "chr11:20387307:G:C",
+      "ag_status": "SCORED",
+      "ag_contact_mae": 0.0014829679525324277,
+      "ag_chip_tf_mae": 0.1670670659732288,
+      "ag_primary_score": 0.0014829679525324277,
+      "pwm_delta_logodds": -4.087462841250339,
+      "pwm_error": null,
+      "be_chemistry": null,
+      "be_desk": "N/A",
+      "pe_geometries": 14,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 1,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=N/A; geometries=14"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      },
+      "ag_error": null
+    },
+    {
+      "chrom": "chr11",
+      "pos": 20387585,
+      "ref": "T",
+      "alt": "C",
+      "af": 0.0,
+      "source": "gnomad_peak_20387307",
+      "te_family": "AluSx",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 20387307,
+      "variant_id": "chr11:20387585:T:C",
+      "ag_status": "SCORED",
+      "ag_contact_mae": 0.002041307743638754,
+      "ag_chip_tf_mae": 0.25663504839385815,
+      "ag_primary_score": 0.002041307743638754,
+      "pwm_delta_logodds": 4.087462841250339,
+      "pwm_error": null,
+      "be_chemistry": null,
+      "be_desk": "N/A",
+      "pe_geometries": 8,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 1,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=N/A; geometries=8"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      },
+      "ag_error": null
+    },
+    {
+      "chrom": "chr11",
+      "pos": 518574,
+      "ref": "C",
+      "alt": "G",
+      "af": 1.970339817940601e-05,
+      "source": "gnomad_peak_518836",
+      "te_family": "AluY",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 518836,
+      "variant_id": "chr11:518574:C:G",
+      "ag_status": "SCORED",
+      "ag_contact_mae": 0.0015587565223021166,
+      "ag_chip_tf_mae": 0.19173356509164446,
+      "ag_primary_score": 0.0015587565223021166,
+      "pwm_delta_logodds": -4.087462841250339,
+      "pwm_error": null,
+      "be_chemistry": null,
+      "be_desk": "N/A",
+      "pe_geometries": 12,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 1,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=N/A; geometries=12"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      },
+      "ag_error": null
+    },
+    {
+      "chrom": "chr11",
+      "pos": 75248818,
+      "ref": "G",
+      "alt": "A",
+      "af": 6.564608880602893e-06,
+      "source": "gnomad_peak_75248818",
+      "te_family": "FRAM",
+      "dist_ctcf": 0,
+      "distance_score": 1.0,
+      "peak_mid": 75248818,
+      "variant_id": "chr11:75248818:G:A",
+      "ag_status": "SCORED",
+      "ag_contact_mae": 0.0017039798466222627,
+      "ag_chip_tf_mae": 0.14623702597161023,
+      "ag_primary_score": 0.0017039798466222627,
+      "pwm_delta_logodds": 4.087462841250339,
+      "pwm_error": null,
+      "be_chemistry": null,
+      "be_desk": "N/A",
+      "pe_geometries": 7,
+      "pe_desk": "PASS_DESK",
+      "best_pe_cut_dist": 1,
+      "mechanism_prior": "M1_motif_lean",
+      "candidate_class": "architecture_prior",
+      "admission": "FROZEN_PANEL_CANDIDATE",
+      "gates": {
+        "G0": {
+          "pass": true,
+          "note": "gnomAD r4 SNV; chr11; exclude holdout/HBB applied at build"
+        },
+        "G1": {
+          "pass": true,
+          "note": "HUDEP-2 CTCF peak context (intended cell)"
+        },
+        "G2": {
+          "pass": true,
+          "note": "dist_ctcf=0; WT CTCF peak present; allele contact NOT measured"
+        },
+        "G3": {
+          "pass": true,
+          "note": "M1_motif_lean"
+        },
+        "G4": {
+          "pass": true,
+          "note": "no ClinVar; holdout sealed/unscored; AG optional overlay only"
+        },
+        "G5": {
+          "pass": true,
+          "note": "pe=PASS_DESK; be=N/A; geometries=7"
+        },
+        "G6": {
+          "pass": true,
+          "note": "panel-level; N3 KEEP available; N1/N2 need reselect"
+        },
+        "G7": {
+          "pass": true,
+          "note": "direction=UNKNOWN_do_not_preclaim; MCID inherit C1 template if Stage3"
+        },
+        "G8": {
+          "pass": false,
+          "note": "claim coords not frozen until frozen_panel admission"
+        }
+      },
+      "ag_error": null
+    }
+  ],
+  "curation": {
+    "g2_bugfix": "dist_ctcf=0 was treated as missing via `0 or 9999`",
+    "pwm_caveat": "many |delta|~4.09 \u2014 exploratory ordinal only; not Stage-3 decision sole input",
+    "g6_drop_excluded_from_arch_strong": [
+      "chr11:35821778:C:G",
+      "chr11:35822097:A:T"
+    ],
+    "ag_api_this_run": "ABSENT \u2014 used prior R4 AG overlay for 12 alleles"
+  },
+  "ag_rescore": {
+    "n_attempted": 16,
+    "n_ok": 16,
+    "n_fail": 0
+  }
+}

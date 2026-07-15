@@ -1,0 +1,511 @@
+{
+  "status": "P3_MATCHED_NULL_COMPLETE",
+  "timestamp": "2026-07-15T12:11:54.441081+00:00",
+  "claim": "P3_matched_null_CLAIM_v1.md",
+  "seed": 20260715,
+  "n_perm": 5000,
+  "thresholds": {
+    "PCT_RETAIN": 90.0,
+    "PCT_KILL": 75.0,
+    "EFFECT_CHIP": 0.05,
+    "NEG_PCT_PASS": 50.0,
+    "NEG_PCT_FAIL": 90.0,
+    "MIN_CTRL": 5
+  },
+  "universe": "stage1_desk_screen_v1.json pool SCORED (n=28)",
+  "panel_summary": {
+    "PANEL_ACTIVITY_CLAIM_WEAKENED": false,
+    "n_activity_kill_demotion": 1,
+    "PANEL_NEGATIVE_BROKEN": false
+  },
+  "results": [
+    {
+      "variant_id": "chr11:62753923:A:G",
+      "frozen_role": "TEMPLATE_DEV",
+      "te_family": "AluSz",
+      "te_clade": "AluS",
+      "dist_ctcf": 0,
+      "mut": "A>G",
+      "endpoint": "ag_chip_tf_mae",
+      "score": 0.5408127170767988,
+      "match_level": "L3",
+      "n_ctrl": 9,
+      "match_counts": {
+        "L1": 0,
+        "L2": 0,
+        "L3": 9,
+        "L4": 20
+      },
+      "median_ctrl": 0.1670670659732288,
+      "effect": 0.37374565110357,
+      "empirical_percentile": 95.0,
+      "block_perm_p_one_sided": 0.10077984403119376,
+      "loo_percentile_range": 0.0,
+      "secondary_endpoint": "ag_contact_mae",
+      "secondary_percentile": 95.0,
+      "pe_desk_balance": {
+        "PASS_DESK": 9
+      },
+      "ctrl_variant_ids": [
+        "chr11:72434037:C:T",
+        "chr11:72434037:C:A",
+        "chr11:57568168:C:T",
+        "chr11:57568168:C:A",
+        "chr11:35822097:A:T",
+        "chr11:47642326:A:G",
+        "chr11:47642597:C:T",
+        "chr11:20387307:G:C",
+        "chr11:20387585:T:C"
+      ],
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "variant_id": "chr11:62753923:A:T",
+      "frozen_role": "activity_m3",
+      "te_family": "AluSz",
+      "te_clade": "AluS",
+      "dist_ctcf": 0,
+      "mut": "A>T",
+      "endpoint": "ag_chip_tf_mae",
+      "score": 0.2552076161608109,
+      "match_level": "L3",
+      "n_ctrl": 9,
+      "match_counts": {
+        "L1": 0,
+        "L2": 0,
+        "L3": 9,
+        "L4": 20
+      },
+      "median_ctrl": 0.1670670659732288,
+      "effect": 0.0881405501875821,
+      "empirical_percentile": 75.0,
+      "block_perm_p_one_sided": 0.2985402919416117,
+      "loo_percentile_range": 11.1111111111111,
+      "secondary_endpoint": "ag_contact_mae",
+      "secondary_percentile": 85.0,
+      "pe_desk_balance": {
+        "PASS_DESK": 9
+      },
+      "ctrl_variant_ids": [
+        "chr11:72434037:C:T",
+        "chr11:72434037:C:A",
+        "chr11:57568168:C:T",
+        "chr11:57568168:C:A",
+        "chr11:35822097:A:T",
+        "chr11:47642326:A:G",
+        "chr11:47642597:C:T",
+        "chr11:20387307:G:C",
+        "chr11:20387585:T:C"
+      ],
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "variant_id": "chr11:72434037:C:T",
+      "frozen_role": "activity_m3",
+      "te_family": "AluSx1",
+      "te_clade": "AluS",
+      "dist_ctcf": 0,
+      "mut": "C>T",
+      "endpoint": "ag_chip_tf_mae",
+      "score": 0.27137969258248845,
+      "match_level": "L3",
+      "n_ctrl": 9,
+      "match_counts": {
+        "L1": 0,
+        "L2": 0,
+        "L3": 9,
+        "L4": 20
+      },
+      "median_ctrl": 0.1670670659732288,
+      "effect": 0.10431262660925966,
+      "empirical_percentile": 85.0,
+      "block_perm_p_one_sided": 0.20155968806238753,
+      "loo_percentile_range": 11.111111111111114,
+      "secondary_endpoint": "ag_contact_mae",
+      "secondary_percentile": 55.0,
+      "pe_desk_balance": {
+        "PASS_DESK": 9
+      },
+      "ctrl_variant_ids": [
+        "chr11:62753923:A:G",
+        "chr11:62753923:A:T",
+        "chr11:57568168:C:T",
+        "chr11:57568168:C:A",
+        "chr11:35822097:A:T",
+        "chr11:47642326:A:G",
+        "chr11:47642597:C:T",
+        "chr11:20387307:G:C",
+        "chr11:20387585:T:C"
+      ],
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "variant_id": "chr11:72434037:C:A",
+      "frozen_role": "activity_m3",
+      "te_family": "AluSx1",
+      "te_clade": "AluS",
+      "dist_ctcf": 0,
+      "mut": "C>A",
+      "endpoint": "ag_chip_tf_mae",
+      "score": 0.24159636229147644,
+      "match_level": "L3",
+      "n_ctrl": 9,
+      "match_counts": {
+        "L1": 0,
+        "L2": 0,
+        "L3": 9,
+        "L4": 20
+      },
+      "median_ctrl": 0.1670670659732288,
+      "effect": 0.07452929631824765,
+      "empirical_percentile": 65.0,
+      "block_perm_p_one_sided": 0.4071185762847431,
+      "loo_percentile_range": 11.111111111111114,
+      "secondary_endpoint": "ag_contact_mae",
+      "secondary_percentile": 55.0,
+      "pe_desk_balance": {
+        "PASS_DESK": 9
+      },
+      "ctrl_variant_ids": [
+        "chr11:62753923:A:G",
+        "chr11:62753923:A:T",
+        "chr11:57568168:C:T",
+        "chr11:57568168:C:A",
+        "chr11:35822097:A:T",
+        "chr11:47642326:A:G",
+        "chr11:47642597:C:T",
+        "chr11:20387307:G:C",
+        "chr11:20387585:T:C"
+      ],
+      "verdict": "KILL_HP_DEMOTION"
+    },
+    {
+      "variant_id": "chr11:114036577:G:C",
+      "frozen_role": "activity_m3",
+      "te_family": "AluJb",
+      "te_clade": "AluJ",
+      "dist_ctcf": 0,
+      "mut": "G>C",
+      "endpoint": "ag_chip_tf_mae",
+      "score": 0.16610442228205202,
+      "match_level": "L3",
+      "n_ctrl": 5,
+      "match_counts": {
+        "L1": 0,
+        "L2": 1,
+        "L3": 5,
+        "L4": 21
+      },
+      "median_ctrl": 0.11332023681942592,
+      "effect": 0.0527841854626261,
+      "empirical_percentile": 91.66666666666667,
+      "block_perm_p_one_sided": 0.16036792641471706,
+      "loo_percentile_range": 0.0,
+      "secondary_endpoint": "ag_contact_mae",
+      "secondary_percentile": 75.0,
+      "pe_desk_balance": {
+        "PASS_DESK": 5
+      },
+      "ctrl_variant_ids": [
+        "chr11:114036293:C:T",
+        "chr11:75445532:G:A",
+        "chr11:75445269:C:T",
+        "chr11:77548165:T:A",
+        "chr11:77548165:T:C"
+      ],
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "variant_id": "chr11:75445532:G:A",
+      "frozen_role": "architecture_m1",
+      "te_family": "AluJr",
+      "te_clade": "AluJ",
+      "dist_ctcf": 0,
+      "mut": "G>A",
+      "endpoint": "ag_contact_mae",
+      "score": 0.0017045619232313974,
+      "match_level": "L3",
+      "n_ctrl": 5,
+      "match_counts": {
+        "L1": 0,
+        "L2": 3,
+        "L3": 5,
+        "L4": 21
+      },
+      "median_ctrl": 0.0011036249675921031,
+      "effect": 0.0006009369556392943,
+      "empirical_percentile": 91.66666666666667,
+      "block_perm_p_one_sided": 0.16376724655068986,
+      "loo_percentile_range": 0.0,
+      "secondary_endpoint": "ag_chip_tf_mae",
+      "secondary_percentile": 58.333333333333336,
+      "pe_desk_balance": {
+        "PASS_DESK": 5
+      },
+      "ctrl_variant_ids": [
+        "chr11:114036577:G:C",
+        "chr11:114036293:C:T",
+        "chr11:75445269:C:T",
+        "chr11:77548165:T:A",
+        "chr11:77548165:T:C"
+      ],
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "variant_id": "chr11:518575:C:A",
+      "frozen_role": "architecture_m1",
+      "te_family": "AluY",
+      "te_clade": "AluY",
+      "dist_ctcf": 1,
+      "mut": "C>A",
+      "endpoint": "ag_contact_mae",
+      "score": 0.00183345317574484,
+      "match_level": "L4",
+      "n_ctrl": 5,
+      "match_counts": {
+        "L1": 0,
+        "L2": 0,
+        "L3": 1,
+        "L4": 5
+      },
+      "median_ctrl": 0.0026557976379990578,
+      "effect": -0.0008223444622542178,
+      "empirical_percentile": 41.666666666666664,
+      "block_perm_p_one_sided": 0.6692661467706459,
+      "loo_percentile_range": 20.0,
+      "secondary_endpoint": "ag_chip_tf_mae",
+      "secondary_percentile": 58.333333333333336,
+      "pe_desk_balance": {
+        "PASS_DESK": 5
+      },
+      "ctrl_variant_ids": [
+        "chr11:35821778:C:G",
+        "chr11:119030718:C:T",
+        "chr11:118907233:G:A",
+        "chr11:118907233:G:C",
+        "chr11:75248816:G:A"
+      ],
+      "verdict": "KILL_HP_DEMOTION"
+    },
+    {
+      "variant_id": "chr11:119030718:C:T",
+      "frozen_role": "architecture_m1",
+      "te_family": "AluY",
+      "te_clade": "AluY",
+      "dist_ctcf": 1,
+      "mut": "C>T",
+      "endpoint": "ag_contact_mae",
+      "score": 0.0011890178014125144,
+      "match_level": "L4",
+      "n_ctrl": 5,
+      "match_counts": {
+        "L1": 0,
+        "L2": 0,
+        "L3": 1,
+        "L4": 5
+      },
+      "median_ctrl": 0.0026557976379990578,
+      "effect": -0.0014667798365865434,
+      "empirical_percentile": 25.0,
+      "block_perm_p_one_sided": 0.8350329934013198,
+      "loo_percentile_range": 20.0,
+      "secondary_endpoint": "ag_chip_tf_mae",
+      "secondary_percentile": 25.0,
+      "pe_desk_balance": {
+        "PASS_DESK": 5
+      },
+      "ctrl_variant_ids": [
+        "chr11:35821778:C:G",
+        "chr11:518575:C:A",
+        "chr11:118907233:G:A",
+        "chr11:118907233:G:C",
+        "chr11:75248816:G:A"
+      ],
+      "verdict": "KILL_HP_DEMOTION"
+    },
+    {
+      "variant_id": "chr11:75445269:C:T",
+      "frozen_role": "architecture_m1",
+      "te_family": "AluJr",
+      "te_clade": "AluJ",
+      "dist_ctcf": 0,
+      "mut": "C>T",
+      "endpoint": "ag_contact_mae",
+      "score": 0.0012837631095732962,
+      "match_level": "L3",
+      "n_ctrl": 5,
+      "match_counts": {
+        "L1": 0,
+        "L2": 3,
+        "L3": 5,
+        "L4": 21
+      },
+      "median_ctrl": 0.0011036249675921031,
+      "effect": 0.00018013814198119312,
+      "empirical_percentile": 58.333333333333336,
+      "block_perm_p_one_sided": 0.4979004199160168,
+      "loo_percentile_range": 20.0,
+      "secondary_endpoint": "ag_chip_tf_mae",
+      "secondary_percentile": 41.666666666666664,
+      "pe_desk_balance": {
+        "PASS_DESK": 5
+      },
+      "ctrl_variant_ids": [
+        "chr11:114036577:G:C",
+        "chr11:114036293:C:T",
+        "chr11:75445532:G:A",
+        "chr11:77548165:T:A",
+        "chr11:77548165:T:C"
+      ],
+      "verdict": "KILL_HP_DEMOTION"
+    },
+    {
+      "variant_id": "chr11:108009167:T:C",
+      "frozen_role": "matched_negative",
+      "te_family": "FLAM_C",
+      "te_clade": "FLAM",
+      "dist_ctcf": 0,
+      "mut": "T>C",
+      "endpoint": "ag_chip_tf_mae",
+      "score": 0.10911584829355216,
+      "match_level": "L4",
+      "n_ctrl": 20,
+      "match_counts": {
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 20
+      },
+      "median_ctrl": 0.15617072412683114,
+      "effect": -0.047054875833278983,
+      "empirical_percentile": 16.666666666666668,
+      "block_perm_p_one_sided": 0.853629274145171,
+      "loo_percentile_range": 5.0,
+      "secondary_endpoint": "ag_contact_mae",
+      "secondary_percentile": 11.904761904761905,
+      "pe_desk_balance": {
+        "PASS_DESK": 20
+      },
+      "ctrl_variant_ids": [
+        "chr11:62753923:A:G",
+        "chr11:62753923:A:T",
+        "chr11:72434037:C:T",
+        "chr11:114036577:G:C",
+        "chr11:72434037:C:A",
+        "chr11:57568168:C:T",
+        "chr11:57568168:C:A",
+        "chr11:114036293:C:T",
+        "chr11:35822097:A:T",
+        "chr11:75445532:G:A",
+        "chr11:75445269:C:T",
+        "chr11:47642326:A:G",
+        "chr11:119030971:C:A",
+        "chr11:47642597:C:T",
+        "chr11:77548165:T:A",
+        "chr11:77548165:T:C",
+        "chr11:20387307:G:C",
+        "chr11:20387585:T:C",
+        "chr11:518574:C:G",
+        "chr11:75248818:G:A"
+      ],
+      "verdict": "PASS_AS_NEGATIVE"
+    },
+    {
+      "variant_id": "chr11:108009167:T:A",
+      "frozen_role": "matched_negative",
+      "te_family": "FLAM_C",
+      "te_clade": "FLAM",
+      "dist_ctcf": 0,
+      "mut": "T>A",
+      "endpoint": "ag_chip_tf_mae",
+      "score": 0.16568255498222015,
+      "match_level": "L4",
+      "n_ctrl": 20,
+      "match_counts": {
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 20
+      },
+      "median_ctrl": 0.15617072412683114,
+      "effect": 0.009511830855389009,
+      "empirical_percentile": 50.0,
+      "block_perm_p_one_sided": 0.5268946210757849,
+      "loo_percentile_range": 5.0,
+      "secondary_endpoint": "ag_contact_mae",
+      "secondary_percentile": 11.904761904761905,
+      "pe_desk_balance": {
+        "PASS_DESK": 20
+      },
+      "ctrl_variant_ids": [
+        "chr11:62753923:A:G",
+        "chr11:62753923:A:T",
+        "chr11:72434037:C:T",
+        "chr11:114036577:G:C",
+        "chr11:72434037:C:A",
+        "chr11:57568168:C:T",
+        "chr11:57568168:C:A",
+        "chr11:114036293:C:T",
+        "chr11:35822097:A:T",
+        "chr11:75445532:G:A",
+        "chr11:75445269:C:T",
+        "chr11:47642326:A:G",
+        "chr11:119030971:C:A",
+        "chr11:47642597:C:T",
+        "chr11:77548165:T:A",
+        "chr11:77548165:T:C",
+        "chr11:20387307:G:C",
+        "chr11:20387585:T:C",
+        "chr11:518574:C:G",
+        "chr11:75248818:G:A"
+      ],
+      "verdict": "PASS_AS_NEGATIVE"
+    },
+    {
+      "variant_id": "P1_SYSTEM_3primeHS1",
+      "frozen_role": "known_positive",
+      "verdict": "SKIP_KNOWN_ASSAY_CONTROL",
+      "note": "no AG SNV score in Stage-1 pool"
+    },
+    {
+      "variant_id": "chr11:57568168:C:T",
+      "frozen_role": "principled_disagreement",
+      "te_family": "AluSz6",
+      "te_clade": "AluS",
+      "dist_ctcf": 0,
+      "mut": "C>T",
+      "endpoint": "ag_chip_tf_mae",
+      "score": 0.12971634826471426,
+      "match_level": "L3",
+      "n_ctrl": 9,
+      "match_counts": {
+        "L1": 0,
+        "L2": 0,
+        "L3": 9,
+        "L4": 20
+      },
+      "median_ctrl": 0.24159636229147644,
+      "effect": -0.11188001402676218,
+      "empirical_percentile": 15.0,
+      "block_perm_p_one_sided": 0.9020195960807839,
+      "loo_percentile_range": 11.111111111111112,
+      "secondary_endpoint": "ag_contact_mae",
+      "secondary_percentile": 15.0,
+      "pe_desk_balance": {
+        "PASS_DESK": 9
+      },
+      "ctrl_variant_ids": [
+        "chr11:62753923:A:G",
+        "chr11:62753923:A:T",
+        "chr11:72434037:C:T",
+        "chr11:72434037:C:A",
+        "chr11:35822097:A:T",
+        "chr11:47642326:A:G",
+        "chr11:47642597:C:T",
+        "chr11:20387307:G:C",
+        "chr11:20387585:T:C"
+      ],
+      "verdict": "KILL_HP_DEMOTION"
+    }
+  ]
+}
