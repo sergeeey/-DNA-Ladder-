@@ -1,5 +1,9 @@
 # Null Results Index
 
+Shared across monorepo tracks. Historical filings below belong to **`tracks/se_llps`**
+(experiment folders: `tracks/se_llps/experiments/exp_<slug>/`). New TE/Alu nulls go here too,
+with track tag in the slug or body.
+
 | ID | Date | Slug | Verdict | Why (10 words) |
 |---|---|---|---|---|
 | 20260708-heritability-vus-se-frequency | 2026-07-08 | ClinVar VUS rarer inside super-enhancers? | REJECT | Cliff's delta -0.01/-0.03, neither significant nor meaningful |

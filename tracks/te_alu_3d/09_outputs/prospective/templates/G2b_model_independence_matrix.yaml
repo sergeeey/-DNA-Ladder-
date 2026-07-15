@@ -1,0 +1,68 @@
+# Model independence matrix (EMPTY TEMPLATE)
+
+**Gate:** fill before treating multi-model agreement as Arm A convergence.  
+**Status:** `UNFILLED`
+
+```yaml
+panel_id: null
+filled_at: null
+models:
+  - name: AlphaGenome
+    version: null
+    role: mandatory_sequence_baseline
+    training_datasets: []
+    cell_types: []
+    hic_or_contact_overlap_with_others: UNKNOWN
+    input_modalities: [sequence]
+    label_overlap_with_others: UNKNOWN
+    dependence_flag: UNKNOWN
+    allele_delta_mode_validated: UNKNOWN
+    run_status: NOT_RUN
+  - name: UniChrom
+    version: null
+    role: contact_comparator_if_delta_validated
+    training_datasets: []
+    cell_types: []
+    hic_or_contact_overlap_with_others: UNKNOWN
+    input_modalities: []
+    label_overlap_with_others: UNKNOWN
+    dependence_flag: UNKNOWN
+    allele_delta_mode_validated: false
+    run_status: NOT_RUN
+  - name: Hi-Compass
+    version: null
+    role: contact_map_context_or_delta_if_validated
+    training_datasets: []
+    cell_types: []
+    hic_or_contact_overlap_with_others: UNKNOWN
+    input_modalities: []
+    label_overlap_with_others: UNKNOWN
+    dependence_flag: UNKNOWN
+    allele_delta_mode_validated: false
+    run_status: NOT_RUN
+  - name: enhancer3D
+    version: null
+    role: structural_context_not_snv_scorer
+    training_datasets: []
+    cell_types: []
+    hic_or_contact_overlap_with_others: UNKNOWN
+    input_modalities: []
+    label_overlap_with_others: UNKNOWN
+    dependence_flag: UNKNOWN
+    allele_delta_mode_validated: n/a
+    run_status: NOT_RUN
+  - name: activity_axis_model
+    version: null
+    role: activity_discriminator
+    training_datasets: []
+    cell_types: []
+    hic_or_contact_overlap_with_others: UNKNOWN
+    input_modalities: []
+    label_overlap_with_others: UNKNOWN
+    dependence_flag: UNKNOWN
+    allele_delta_mode_validated: UNKNOWN
+    run_status: NOT_RUN
+
+notes: >
+  Correlated ENCODE/4DN-trained nets are not independent lines of evidence.
+```

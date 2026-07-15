@@ -1,0 +1,97 @@
+{
+  "status": "G6_MATCHING_AMENDMENT_COMPLETE",
+  "atac_file": "ENCFF055NNT",
+  "atac_path": "data\\cultivation\\ENCFF055NNT_K562_ATAC.bed.gz",
+  "caveat": "K562 ATAC proxy \u2014 not HUDEP-2",
+  "access_rows": [
+    {
+      "id": "C1",
+      "pos": 62753923,
+      "in_K562_ATAC_peak": true,
+      "within_250bp_ATAC": true,
+      "dist_ATAC_peak": 177,
+      "access_match_vs_C1": "MATCH"
+    },
+    {
+      "id": "N1",
+      "pos": 35821778,
+      "in_K562_ATAC_peak": false,
+      "within_250bp_ATAC": true,
+      "dist_ATAC_peak": 19,
+      "access_match_vs_C1": "MISMATCH"
+    },
+    {
+      "id": "N2",
+      "pos": 35822097,
+      "in_K562_ATAC_peak": true,
+      "within_250bp_ATAC": true,
+      "dist_ATAC_peak": 13,
+      "access_match_vs_C1": "MATCH"
+    },
+    {
+      "id": "N3",
+      "pos": 108009167,
+      "in_K562_ATAC_peak": true,
+      "within_250bp_ATAC": true,
+      "dist_ATAC_peak": 85,
+      "access_match_vs_C1": "MATCH"
+    },
+    {
+      "id": "C3",
+      "pos": 72434037,
+      "in_K562_ATAC_peak": true,
+      "within_250bp_ATAC": true,
+      "dist_ATAC_peak": 79,
+      "access_match_vs_C1": "MATCH"
+    }
+  ],
+  "gc_grades": [
+    {
+      "id": "N1",
+      "abs_delta_gc_201": 0.06965174129353224,
+      "abs_delta_gc_2001": 0.12243878060969515,
+      "gc_match_grade": "POOR"
+    },
+    {
+      "id": "N2",
+      "abs_delta_gc_201": 0.12935323383084574,
+      "abs_delta_gc_2001": 0.13843078460769614,
+      "gc_match_grade": "POOR"
+    },
+    {
+      "id": "N3",
+      "abs_delta_gc_201": 0.04477611940298509,
+      "abs_delta_gc_2001": 0.04197901049475261,
+      "gc_match_grade": "TIGHT"
+    },
+    {
+      "id": "C3",
+      "abs_delta_gc_201": 0.09950248756218905,
+      "abs_delta_gc_2001": 0.041479260369815085,
+      "gc_match_grade": "OK"
+    }
+  ],
+  "neutral_recommendation": [
+    {
+      "id": "N1",
+      "keep_as_matched_neutral": false,
+      "gc_match_grade": "POOR",
+      "access_match_vs_C1": "MISMATCH",
+      "in_K562_ATAC_peak": false
+    },
+    {
+      "id": "N2",
+      "keep_as_matched_neutral": false,
+      "gc_match_grade": "POOR",
+      "access_match_vs_C1": "MATCH",
+      "in_K562_ATAC_peak": true
+    },
+    {
+      "id": "N3",
+      "keep_as_matched_neutral": true,
+      "gc_match_grade": "TIGHT",
+      "access_match_vs_C1": "MATCH",
+      "in_K562_ATAC_peak": true
+    }
+  ]
+}

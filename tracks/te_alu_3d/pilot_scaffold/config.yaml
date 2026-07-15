@@ -1,0 +1,192 @@
+# Chr11 toy-test pilot — kill-first configuration
+# Redesign freeze: ../07_methods/pilot_redesign_v2.md
+# Score freeze: score_freeze.yaml (must be signed before confirmatory)
+# Genome: GRCh38/hg38 only | Track A only (no MWPM)
+
+pilot:
+  name: chr11_toy_test
+  chromosome: chr11
+  genome_build: hg38
+  random_seed: 42
+  mode: kill_first
+  redesign_version: v2
+  track: A
+  max_pool_size: 5000
+  # HBB = DEVELOPMENT set (scientific_freeze_v1); not confirmatory
+  genomic_window:
+    chrom: chr11
+    start: 5200000
+    end: 5300000
+    label: HBB
+    role: development_calibration
+
+te_focus:
+  families:
+    - Alu
+    - SVA
+  repeat_masker_classes:
+    - SINE/Alu
+    - SINE
+    - SVA
+  min_overlap_fraction: 0.5
+
+three_d_context:
+  preferred_cell_line: HUDEP-2   # KC0: HBB confirmatory path
+  auto_huddep2_for_hbb: true
+  ctcf_encode_accession: ENCFF000DAS  # GM12878 fallback
+  ctcf_huddep2_source: ChIP-Atlas_SRX5821035
+  hic_source: 4DN
+  fallback_cell_lines: [GM12878, K562, H1]
+  kc0:
+    enabled: true
+    rules:
+      - locus: HBB
+        allowed_cell_types: [erythroid, HUDEP-2, HUDEP2, primary_erythroblast]
+        forbidden_as_confirmatory: [GM12878]
+        gm12878_status: exploratory_only
+      - locus: B_cell_active_chr11
+        allowed_cell_types: [GM12878]
+        status: confirmatory_candidate
+
+variant_sets:
+  test_clinvar:
+    clinical_significance: [Pathogenic, Likely_pathogenic]
+    review_status_min_stars: 0
+  test_gnomad_rare:
+    max_af: 0.001
+    pass_only: true
+  control_pool_source: gnomad_chr11_slice
+
+estimands:
+  total_te_effect:
+    id: T
+    match_distance_to_ctcf: false
+    match_vars:
+      - variant_length
+      - gc_content
+      - mappability
+      - distance_to_tss
+  ctcf_conditional:
+    id: C
+    match_distance_to_ctcf: true
+    match_vars:
+      - variant_length
+      - gc_content
+      - mappability
+      - distance_to_tss
+      - distance_to_ctcf
+
+control_hierarchy:
+  A_nonTE:
+    role: primary
+  B_same_family:
+    role: diagnostic
+  C_subfamily_age:
+    role: diagnostic
+  D_same_TAD:
+    role: diagnostic
+
+qc_gates:
+  gate_0_kc0_cell_type:
+    enabled: true
+    action: confirmatory_exclude_on_fail
+  gate_1_blacklist:
+    enabled: true
+    source: encode_blacklist_hg38
+    action: hard_exclude
+  gate_2_mappability:
+    enabled: true
+    min_score: 0.9
+    window_bp: 1
+    action: hard_exclude
+  gate_3_segmental_duplications:
+    enabled: true
+    action: hard_exclude
+  gate_4_gnomad_discordance:
+    enabled: true
+    exome_genome_p_threshold: 1.0e-4
+    low_confidence_flags: [RF, AC0, AS_VQSR]
+    action: hard_exclude
+  gate_5_matched_controls:
+    n_per_variant: 20
+    # default list kept for backward compat; run_pilot must branch by estimand
+    match_vars:
+      - variant_length
+      - gc_content
+      - mappability
+      - distance_to_tss
+    calipers:
+      gc_abs: 0.02
+      mappability_decile: same
+      ctcf_distance_log_bins: same
+      tss_distance_log_bins: same
+      length_exact: true
+  gate_6_permutation:
+    enabled: true
+    mode: block_matched   # primary; global_shuffle = software control only
+    n_perm: 10000
+    run_before_enrichment: true
+    strata: [mappability_decile, gc_decile]
+    software_negative_control: global_shuffle
+  gate_7_output_split:
+    confirmatory_requires:
+      - passes_all_qc
+      - gnomad_rare_or_dual_track
+      - kc0_pass
+      - score_freeze_signed
+      - primary_scorer_not_fallback
+    exploratory_flags:
+      - clinvar_only
+      - ascertainment_suspect
+      - single_submitter_dominance
+      - cell_type_mismatch
+      - lssim_fallback
+
+scoring:
+  primary_metric: archcode_disruption
+  fallback_metric: ctcf_pwm_delta_v1.1
+  freeze_card: score_freeze.yaml
+  fasta_window: data/chr11_hbb_window.fa
+  archcode:
+    binary_path: null
+    cell_line: HUDEP-2
+    locus_priors: [HBB]
+  lssim:
+    ctcf_pwm_source: jaspar_approx_MA0139
+    window_bp: 51
+    confirmatory_if_used: false
+
+kill_criteria:
+  kc0:
+    enabled: true
+  kc1:
+    metric: delta_MAD
+    formula: (median_TE - median_C) / (1.4826 * MAD_C)
+    biological_gate: suspended_until_calibration
+    interim_direction_gate: median_TE_gt_median_control
+    legacy_raw_delta_report: true
+  kc2:
+    estimand_specific: true
+    or_ci_includes_one: stop_named_estimand
+  kc3:
+    clinvar_only_without_gnomad: exploratory_only
+  kc4:
+    poor_mappability_fraction_max: 0.5
+  kc6:
+    orthogonal_min: 2
+
+outputs:
+  base_dir: ../09_outputs/pilot_chr11
+  confirmatory_subdir: confirmatory
+  exploratory_subdir: exploratory
+  artifacts:
+    - qc_dropout_report.json
+    - control_manifest_T.csv
+    - control_manifest_C.csv
+    - balance_table.csv
+    - permutation_results.json
+    - kill_criteria_status.json
+    - enrichment_summary.csv  # ONLY if permutation + direction + freeze gates pass
+
+paths:
+  data_dir: data

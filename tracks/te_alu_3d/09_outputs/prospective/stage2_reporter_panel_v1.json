@@ -1,0 +1,368 @@
+{
+  "status": "STAGE2_REPORTER_DESK_READY",
+  "timestamp": "2026-07-15T11:06:37.419856+00:00",
+  "order": "FORBIDDEN until signed GO",
+  "transfection": "FORBIDDEN",
+  "genome": "hg38/GRCh38",
+  "cell_preferred": "HUDEP-2",
+  "mcid_reporter": "|log2(ALT/REF)| >= 0.5 in >=2 independent transfections",
+  "escalation": "minimal_301bp -> context_1kb -> context_2kb before biological null",
+  "stage3_locked": true,
+  "note": "Stage-3 slot assignments unchanged; reporter-null does not prove architecture",
+  "n_constructs": 8,
+  "constructs": [
+    {
+      "id": "C1",
+      "variant_id": "chr11:62753923:A:G",
+      "role": "TEMPLATE_DEV/activity",
+      "stage3": false,
+      "chrom": "chr11",
+      "pos": 62753923,
+      "ref": "A",
+      "alt": "G",
+      "ag": {
+        "chip_tf_mae": "0.5408127170767988",
+        "contact_mae": "0.00494472762303693",
+        "mechanism_prior": "M3_activity"
+      },
+      "windows": {
+        "minimal_301bp": {
+          "grch38": "chr11:62753773-62754073",
+          "len": 301,
+          "c1_index0": 150,
+          "ref_file": "c1_minimal_301bp_REF.fa",
+          "alt_file": "c1_minimal_301bp_ALT.fa",
+          "observed_ref_base": "A",
+          "allele_mismatch_vs_gnomad_ref": false
+        },
+        "context_1kb": {
+          "grch38": "chr11:62753423-62754423",
+          "len": 1001,
+          "c1_index0": 500,
+          "ref_file": "c1_context_1kb_REF.fa",
+          "alt_file": "c1_context_1kb_ALT.fa",
+          "observed_ref_base": "A",
+          "allele_mismatch_vs_gnomad_ref": false
+        },
+        "context_2kb": {
+          "grch38": "chr11:62752923-62754923",
+          "len": 2001,
+          "c1_index0": 1000,
+          "ref_file": "c1_context_2kb_REF.fa",
+          "alt_file": "c1_context_2kb_ALT.fa",
+          "observed_ref_base": "A",
+          "allele_mismatch_vs_gnomad_ref": false
+        }
+      }
+    },
+    {
+      "id": "C2",
+      "variant_id": "chr11:62753923:A:T",
+      "role": "activity_m3",
+      "stage3": false,
+      "chrom": "chr11",
+      "pos": 62753923,
+      "ref": "A",
+      "alt": "T",
+      "ag": {
+        "chip_tf_mae": "0.2552076161608109",
+        "contact_mae": "0.002063538513279387",
+        "mechanism_prior": "M3_activity"
+      },
+      "windows": {
+        "minimal_301bp": {
+          "grch38": "chr11:62753773-62754073",
+          "len": 301,
+          "c1_index0": 150,
+          "ref_file": "c2_minimal_301bp_REF.fa",
+          "alt_file": "c2_minimal_301bp_ALT.fa",
+          "observed_ref_base": "A",
+          "allele_mismatch_vs_gnomad_ref": false
+        },
+        "context_1kb": {
+          "grch38": "chr11:62753423-62754423",
+          "len": 1001,
+          "c1_index0": 500,
+          "ref_file": "c2_context_1kb_REF.fa",
+          "alt_file": "c2_context_1kb_ALT.fa",
+          "observed_ref_base": "A",
+          "allele_mismatch_vs_gnomad_ref": false
+        },
+        "context_2kb": {
+          "grch38": "chr11:62752923-62754923",
+          "len": 2001,
+          "c1_index0": 1000,
+          "ref_file": "c2_context_2kb_REF.fa",
+          "alt_file": "c2_context_2kb_ALT.fa",
+          "observed_ref_base": "A",
+          "allele_mismatch_vs_gnomad_ref": false
+        }
+      }
+    },
+    {
+      "id": "C3",
+      "variant_id": "chr11:72434037:C:T",
+      "role": "activity_m3/convergence_stage3",
+      "stage3": true,
+      "chrom": "chr11",
+      "pos": 72434037,
+      "ref": "C",
+      "alt": "T",
+      "ag": {
+        "chip_tf_mae": "0.27137969258248845",
+        "contact_mae": "0.0016221310278134687",
+        "mechanism_prior": "M3_activity"
+      },
+      "windows": {
+        "minimal_301bp": {
+          "grch38": "chr11:72433887-72434187",
+          "len": 301,
+          "c1_index0": 150,
+          "ref_file": "c3_minimal_301bp_REF.fa",
+          "alt_file": "c3_minimal_301bp_ALT.fa",
+          "observed_ref_base": "C",
+          "allele_mismatch_vs_gnomad_ref": false
+        },
+        "context_1kb": {
+          "grch38": "chr11:72433537-72434537",
+          "len": 1001,
+          "c1_index0": 500,
+          "ref_file": "c3_context_1kb_REF.fa",
+          "alt_file": "c3_context_1kb_ALT.fa",
+          "observed_ref_base": "C",
+          "allele_mismatch_vs_gnomad_ref": false
+        },
+        "context_2kb": {
+          "grch38": "chr11:72433037-72435037",
+          "len": 2001,
+          "c1_index0": 1000,
+          "ref_file": "c3_context_2kb_REF.fa",
+          "alt_file": "c3_context_2kb_ALT.fa",
+          "observed_ref_base": "C",
+          "allele_mismatch_vs_gnomad_ref": false
+        }
+      }
+    },
+    {
+      "id": "A114",
+      "variant_id": "chr11:114036577:G:C",
+      "role": "activity_m3",
+      "stage3": false,
+      "chrom": "chr11",
+      "pos": 114036577,
+      "ref": "G",
+      "alt": "C",
+      "ag": {
+        "chip_tf_mae": "0.16610442228205202",
+        "contact_mae": "0.0015654870575027807",
+        "mechanism_prior": "M3_activity"
+      },
+      "windows": {
+        "minimal_301bp": {
+          "grch38": "chr11:114036427-114036727",
+          "len": 301,
+          "c1_index0": 150,
+          "ref_file": "a114_minimal_301bp_REF.fa",
+          "alt_file": "a114_minimal_301bp_ALT.fa",
+          "observed_ref_base": "G",
+          "allele_mismatch_vs_gnomad_ref": false
+        },
+        "context_1kb": {
+          "grch38": "chr11:114036077-114037077",
+          "len": 1001,
+          "c1_index0": 500,
+          "ref_file": "a114_context_1kb_REF.fa",
+          "alt_file": "a114_context_1kb_ALT.fa",
+          "observed_ref_base": "G",
+          "allele_mismatch_vs_gnomad_ref": false
+        },
+        "context_2kb": {
+          "grch38": "chr11:114035577-114037577",
+          "len": 2001,
+          "c1_index0": 1000,
+          "ref_file": "a114_context_2kb_REF.fa",
+          "alt_file": "a114_context_2kb_ALT.fa",
+          "observed_ref_base": "G",
+          "allele_mismatch_vs_gnomad_ref": false
+        }
+      }
+    },
+    {
+      "id": "ARCH754",
+      "variant_id": "chr11:75445532:G:A",
+      "role": "architecture_m1/stage3_arch1",
+      "stage3": true,
+      "chrom": "chr11",
+      "pos": 75445532,
+      "ref": "G",
+      "alt": "A",
+      "ag": {
+        "chip_tf_mae": 0.13502105519442772,
+        "contact_mae": 0.0017045619232313974,
+        "mechanism_prior": "M1_motif_lean"
+      },
+      "windows": {
+        "minimal_301bp": {
+          "grch38": "chr11:75445382-75445682",
+          "len": 301,
+          "c1_index0": 150,
+          "ref_file": "arch754_minimal_301bp_REF.fa",
+          "alt_file": "arch754_minimal_301bp_ALT.fa",
+          "observed_ref_base": "G",
+          "allele_mismatch_vs_gnomad_ref": false
+        },
+        "context_1kb": {
+          "grch38": "chr11:75445032-75446032",
+          "len": 1001,
+          "c1_index0": 500,
+          "ref_file": "arch754_context_1kb_REF.fa",
+          "alt_file": "arch754_context_1kb_ALT.fa",
+          "observed_ref_base": "G",
+          "allele_mismatch_vs_gnomad_ref": false
+        },
+        "context_2kb": {
+          "grch38": "chr11:75444532-75446532",
+          "len": 2001,
+          "c1_index0": 1000,
+          "ref_file": "arch754_context_2kb_REF.fa",
+          "alt_file": "arch754_context_2kb_ALT.fa",
+          "observed_ref_base": "G",
+          "allele_mismatch_vs_gnomad_ref": false
+        }
+      }
+    },
+    {
+      "id": "ARCH518",
+      "variant_id": "chr11:518575:C:A",
+      "role": "architecture_m1/stage3_arch2",
+      "stage3": true,
+      "chrom": "chr11",
+      "pos": 518575,
+      "ref": "C",
+      "alt": "A",
+      "ag": {
+        "chip_tf_mae": 0.21470037683264,
+        "contact_mae": 0.00183345317574484,
+        "mechanism_prior": "M1_motif_lean"
+      },
+      "windows": {
+        "minimal_301bp": {
+          "grch38": "chr11:518425-518725",
+          "len": 301,
+          "c1_index0": 150,
+          "ref_file": "arch518_minimal_301bp_REF.fa",
+          "alt_file": "arch518_minimal_301bp_ALT.fa",
+          "observed_ref_base": "C",
+          "allele_mismatch_vs_gnomad_ref": false
+        },
+        "context_1kb": {
+          "grch38": "chr11:518075-519075",
+          "len": 1001,
+          "c1_index0": 500,
+          "ref_file": "arch518_context_1kb_REF.fa",
+          "alt_file": "arch518_context_1kb_ALT.fa",
+          "observed_ref_base": "C",
+          "allele_mismatch_vs_gnomad_ref": false
+        },
+        "context_2kb": {
+          "grch38": "chr11:517575-519575",
+          "len": 2001,
+          "c1_index0": 1000,
+          "ref_file": "arch518_context_2kb_REF.fa",
+          "alt_file": "arch518_context_2kb_ALT.fa",
+          "observed_ref_base": "C",
+          "allele_mismatch_vs_gnomad_ref": false
+        }
+      }
+    },
+    {
+      "id": "N3",
+      "variant_id": "chr11:108009167:T:C",
+      "role": "matched_negative/stage3_neg",
+      "stage3": true,
+      "chrom": "chr11",
+      "pos": 108009167,
+      "ref": "T",
+      "alt": "C",
+      "ag": {
+        "chip_tf_mae": "0.10911584829355216",
+        "contact_mae": "0.0009642947864319597",
+        "mechanism_prior": "M0_neutral_lean"
+      },
+      "windows": {
+        "minimal_301bp": {
+          "grch38": "chr11:108009017-108009317",
+          "len": 301,
+          "c1_index0": 150,
+          "ref_file": "n3_minimal_301bp_REF.fa",
+          "alt_file": "n3_minimal_301bp_ALT.fa",
+          "observed_ref_base": "T",
+          "allele_mismatch_vs_gnomad_ref": false
+        },
+        "context_1kb": {
+          "grch38": "chr11:108008667-108009667",
+          "len": 1001,
+          "c1_index0": 500,
+          "ref_file": "n3_context_1kb_REF.fa",
+          "alt_file": "n3_context_1kb_ALT.fa",
+          "observed_ref_base": "T",
+          "allele_mismatch_vs_gnomad_ref": false
+        },
+        "context_2kb": {
+          "grch38": "chr11:108008167-108010167",
+          "len": 2001,
+          "c1_index0": 1000,
+          "ref_file": "n3_context_2kb_REF.fa",
+          "alt_file": "n3_context_2kb_ALT.fa",
+          "observed_ref_base": "T",
+          "allele_mismatch_vs_gnomad_ref": false
+        }
+      }
+    },
+    {
+      "id": "W1",
+      "variant_id": "chr11:57568168:C:T",
+      "role": "disagreement/stage3",
+      "stage3": true,
+      "chrom": "chr11",
+      "pos": 57568168,
+      "ref": "C",
+      "alt": "T",
+      "ag": {
+        "chip_tf_mae": "0.12971634826471426",
+        "contact_mae": "0.0011541253687547787",
+        "mechanism_prior": "M1_motif_lean"
+      },
+      "windows": {
+        "minimal_301bp": {
+          "grch38": "chr11:57568018-57568318",
+          "len": 301,
+          "c1_index0": 150,
+          "ref_file": "w1_minimal_301bp_REF.fa",
+          "alt_file": "w1_minimal_301bp_ALT.fa",
+          "observed_ref_base": "C",
+          "allele_mismatch_vs_gnomad_ref": false
+        },
+        "context_1kb": {
+          "grch38": "chr11:57567668-57568668",
+          "len": 1001,
+          "c1_index0": 500,
+          "ref_file": "w1_context_1kb_REF.fa",
+          "alt_file": "w1_context_1kb_ALT.fa",
+          "observed_ref_base": "C",
+          "allele_mismatch_vs_gnomad_ref": false
+        },
+        "context_2kb": {
+          "grch38": "chr11:57567168-57569168",
+          "len": 2001,
+          "c1_index0": 1000,
+          "ref_file": "w1_context_2kb_REF.fa",
+          "alt_file": "w1_context_2kb_ALT.fa",
+          "observed_ref_base": "C",
+          "allele_mismatch_vs_gnomad_ref": false
+        }
+      }
+    }
+  ],
+  "data_dir": "D:\\DNK - 2\\DNA_TE_3DGenome_Context\\pilot_scaffold\\data\\cultivation\\stage2_reporters"
+}

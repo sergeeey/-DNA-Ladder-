@@ -1,0 +1,133 @@
+# Score + scientific freeze card — Track A
+# Confirmatory BLOCKED until ARCHCODE (or validated primary) + benchmark PASS + holdout.
+
+score_freeze:
+  status: EXPLORATORY_FROZEN   # NOT confirmatory
+  redesign_ref: ../07_methods/pilot_redesign_v2.md
+  scientific_freeze_ref: ../07_methods/scientific_freeze_v1.md
+
+  scientific_freeze:
+    status: FROZEN
+    frozen_at: "2026-07-13"
+    primary_claim: >
+      Rare SNVs inside Alu/SVA show higher predicted CTCF-motif disruption
+      than matched non-TE controls after QC (pre-registered estimand).
+    primary_estimand: total_te_effect
+    secondary_estimand: ctcf_conditional
+    primary_endpoint: delta_MAD_block_perm
+    primary_control: A_nonTE
+    alpha: 0.05
+    multiplicity_policy: primary_only_at_alpha
+    permutation_scheme: block_matched
+    cluster_unit: TE_instance
+    minimum_effect_of_interest: null
+    stop_rules:
+      - perm_fail
+      - direction_fail
+      - scorer_benchmark_fail
+      - confirmatory_on_development_set
+    development_set: HBB_HUDEP2
+    confirmatory_set: erythroid_holdout_TBD
+    variant_class: SNV_indel_in_annotated_Alu_SVA
+    endpoint_language: predicted_CTCF_motif_disruption
+    forbidden_endpoint_language: confirmed_3D_genome_disruption
+
+  primary_model:
+    name: ARCHCODE
+    version: null
+    binary_path: null
+    binary_hash: null
+    config_hash: null
+    input_schema_version: null
+    available_in_workspace: false
+    admission_gate: ../07_methods/scorer_benchmark_spec.md
+
+  alternate_primary:
+    name: AlphaGenome
+    type_id: alphagenome_variant_contact
+    client_package_version: "0.7.0"
+    smoke_status: PASS
+    smoke_report: ../09_outputs/pilot_chr11/alphagenome_smoke.json
+    admission_overall: AVAILABLE
+    admitted_at: "2026-07-14"
+    confirmatory_status: admitted_not_CONFIRMATORY_FROZEN
+    note: >
+      Live API smoke PASS (CONTACT_MAPS+CHIP_TF). Auth via env
+      ALPHAGENOME_API_KEY only — never store key in this file.
+      Holdout scoring and wet-lab still forbidden until unblind + G1–G9.
+
+  exploratory_scorer:
+    name: ctcf_pwm_delta_v1.1
+    fingerprint: 54a2ad823a0e6b6f
+    fasta_window: data/chr11_hbb_window.fa
+    ctcf_peaks: data/ctcf_HUDEP2_peaks.bed
+    confirmatory_status: exploratory
+    frozen_at: "2026-07-13"
+    benchmark_status: PASS
+    benchmark_report: ../09_outputs/pilot_chr11/benchmark/scorer_benchmark_report.json
+    note: >
+      PWM stand-in; benchmark PASS on planted motifs (auROC OR perm gate).
+      Never confirmatory. HBB biological numbers from v1.0 mapping are superseded
+      for future runs — re-score development set before comparing to holdout.
+
+  preprocessing:
+    genome_build: GRCh38
+    chromosome_scope: chr11
+    genomic_window: chr11:5200000-5300000
+    te_families: [Alu, SVA]
+    normalization: sigmoid_delta_logodds
+    missing_data_policy: exclude_outside_fasta_window
+    duplicate_variant_policy: first
+    multi_allelic_policy: split_alts
+
+  aggregation:
+    primary_score: archcode_disruption
+    active_score_until_archcode: ctcf_pwm_delta_v1.1
+    direction_of_effect: higher_is_more_disruptive
+    locus_aggregation_rule: per_variant
+
+  fallback:
+    allowed: true
+    model: ctcf_pwm_delta_v1.1
+    trigger_conditions:
+      - primary_binary_unavailable
+      - primary_runtime_failure
+    confirmatory_status_if_used: exploratory
+
+  estimands:
+    total_te_effect:
+      id: T
+      role: primary
+      control_distance_to_ctcf: false
+      hbb_status: NOT_SUPPORTED
+    ctcf_conditional:
+      id: C
+      role: secondary
+      control_distance_to_ctcf: true
+      hbb_status: NOT_SUPPORTED  # v1.1 re-score 2026-07-13; was UNRESOLVED under v1.0
+
+  thresholds:
+    kc1_effect_metric: delta_MAD
+    kc1_effect_threshold: null
+    source_of_threshold: null
+    kc1_biological_gate: suspended_until_calibration
+    interim_direction_gate: median_TE_gt_median_control
+    permutation_alpha: 0.05
+    frozen_at: "2026-07-13"
+
+  labels:
+    outcome_labels_hidden_until_freeze: true
+    hbb_labels_viewed: true
+    hbb_role: development_calibration
+
+  frozen_by: pilot_scaffold
+  frozen_date: "2026-07-13"
+  notes: >
+    Scientific freeze v1 accepted. HBB/HUDEP-2 = development set.
+    T and C NOT SUPPORTED under v1.1. Confirmatory requires
+    holdout + validated primary scorer. MWPM not tested.
+    Hypothesis registry: ../00_research_question/hypothesis_registry_v1.md
+    Second scorer path: ../07_methods/second_scorer_type_spec.md
+    Confirmatory primary path: AlphaGenome alternate AVAILABLE (smoke PASS 2026-07-14);
+    ARCHCODE still absent. score_freeze.status remains EXPLORATORY_FROZEN until
+    planted/benchmark + unblind gates. Never store API keys in this file.

@@ -1,0 +1,93 @@
+{
+  "windows": {
+    "minimal_301bp": {
+      "grch38": "chr11:62753773-62754073",
+      "len": 301,
+      "c1_index0": 150
+    },
+    "context_1kb": {
+      "grch38": "chr11:62753423-62754423",
+      "len": 1001,
+      "c1_index0": 500
+    },
+    "context_2kb": {
+      "grch38": "chr11:62752923-62754923",
+      "len": 2001,
+      "c1_index0": 1000
+    }
+  },
+  "nearest_genes": [
+    {
+      "name": "ZBTB3",
+      "start": 62737172,
+      "end": 62758835,
+      "strand": -1
+    },
+    {
+      "name": "POLR2G",
+      "start": 62761453,
+      "end": 62766715,
+      "strand": 1
+    },
+    {
+      "name": "TTC9C",
+      "start": 62727687,
+      "end": 62740293,
+      "strand": 1
+    },
+    {
+      "name": "TAF6L",
+      "start": 62771307,
+      "end": 62787342,
+      "strand": 1
+    },
+    {
+      "name": "TMEM223",
+      "start": 62771629,
+      "end": 62792022,
+      "strand": -1
+    },
+    {
+      "name": "HNRNPUL2",
+      "start": 62712630,
+      "end": 62727637,
+      "strand": -1
+    },
+    {
+      "name": "HNRNPUL2-BSCL2",
+      "start": 62690275,
+      "end": 62727384,
+      "strand": -1
+    },
+    {
+      "name": null,
+      "start": 62726885,
+      "end": 62727265,
+      "strand": -1
+    },
+    {
+      "name": "TMEM179B",
+      "start": 62787375,
+      "end": 62792166,
+      "strand": 1
+    },
+    {
+      "name": "NXF1",
+      "start": 62792123,
+      "end": 62806302,
+      "strand": -1
+    },
+    {
+      "name": "GNG3",
+      "start": 62706400,
+      "end": 62712083,
+      "strand": 1
+    },
+    {
+      "name": "BSCL2",
+      "start": 62689289,
+      "end": 62709861,
+      "strand": -1
+    }
+  ]
+}

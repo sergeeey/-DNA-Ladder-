@@ -1,0 +1,116 @@
+{
+  "verdict": "PASS_DESK",
+  "anchors_hg19": {
+    "HS1": [
+      5224000,
+      5228000
+    ],
+    "HS5": [
+      5302000,
+      5306000
+    ],
+    "OR52A1": [
+      5180000,
+      5200000
+    ],
+    "HBB": [
+      5246696,
+      5248301
+    ]
+  },
+  "samples": {
+    "WT": {
+      "sample": "WT",
+      "status": "OK",
+      "bytes": 7112676977,
+      "binsize": 5000,
+      "obs_HS1_HS5": 4.958853825,
+      "oe_HS1_HS5": 3.2253135,
+      "obs_HS1_OR52A1": 2.084471975,
+      "oe_HS1_OR52A1": 0.7489876825,
+      "obs_HBB_OR52A1": 4.868378,
+      "oe_HBB_OR52A1": 2.211311,
+      "obs_HS1_HBB": 8.223501,
+      "oe_HS1_HBB": 1.7531661500000002,
+      "n_pixels": 1637
+    },
+    "DEL_B6": {
+      "sample": "DEL_B6",
+      "status": "OK",
+      "bytes": 7090244948,
+      "binsize": 5000,
+      "obs_HS1_HS5": 1.5665237333333333,
+      "oe_HS1_HS5": 1.1058755,
+      "obs_HS1_OR52A1": 5.4585870750000005,
+      "oe_HS1_OR52A1": 1.8682439499999999,
+      "obs_HBB_OR52A1": 6.42598515,
+      "oe_HBB_OR52A1": 3.4652506,
+      "obs_HS1_HBB": 5.73663025,
+      "oe_HS1_HBB": 1.2898363499999999,
+      "n_pixels": 1652
+    },
+    "INV_A2": {
+      "sample": "INV_A2",
+      "status": "OK",
+      "bytes": 6909061208,
+      "binsize": 5000,
+      "obs_HS1_HS5": 2.8009687999999997,
+      "oe_HS1_HS5": 1.87469915,
+      "obs_HS1_OR52A1": 4.253499925,
+      "oe_HS1_OR52A1": 1.322124375,
+      "obs_HBB_OR52A1": 3.36632335,
+      "oe_HBB_OR52A1": 1.73445705,
+      "obs_HS1_HBB": 5.99947955,
+      "oe_HS1_HBB": 1.4174388,
+      "n_pixels": 1714
+    },
+    "CAP_WT": {
+      "sample": "CAP_WT",
+      "status": "DUMP_EMPTY",
+      "bytes": 2467765796
+    },
+    "CAP_DEL": {
+      "sample": "CAP_DEL",
+      "status": "OK",
+      "bytes": 2487625662,
+      "binsize": 5000,
+      "obs_HS1_HS5": 0.11757254624999999,
+      "oe_HS1_HS5": 0.4024290225,
+      "obs_HS1_OR52A1": 0.58337187,
+      "oe_HS1_OR52A1": 0.9408183375000001,
+      "obs_HBB_OR52A1": 0.27016994,
+      "oe_HBB_OR52A1": 0.69494105,
+      "obs_HS1_HBB": 0.534495445,
+      "oe_HS1_HBB": 0.61966727,
+      "n_pixels": 1857
+    },
+    "CAP_INV": {
+      "sample": "CAP_INV",
+      "status": "OK",
+      "bytes": 2274698584,
+      "binsize": 5000,
+      "obs_HS1_HS5": 0.2516258675,
+      "oe_HS1_HS5": 0.8822062875,
+      "obs_HS1_OR52A1": 0.467659685,
+      "oe_HS1_OR52A1": 0.798561745,
+      "obs_HBB_OR52A1": 0.23230319,
+      "oe_HBB_OR52A1": 0.63601045,
+      "obs_HS1_HBB": 0.42552875,
+      "oe_HS1_HBB": 0.49199891,
+      "n_pixels": 1859
+    }
+  },
+  "literature": {
+    "paper": "eLife 70557 / GSE160425",
+    "edit_verified": true,
+    "CTCF_CUT_and_RUN_reported": true,
+    "HiC_and_Capture_reported": true,
+    "expression_HbF_delta_reported": true,
+    "note": "Literature can ground P1-system biology; local dump confirms contact \u0394 when files OK."
+  },
+  "ratios": {
+    "oe_HS1_HS5_DEL_over_WT": 0.34287380125993955,
+    "oe_HBB_OR52A1_DEL_over_WT": 1.567057098707509,
+    "cap_oe_HS1_HS5_DEL_over_WT": null
+  }
+}

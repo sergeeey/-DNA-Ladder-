@@ -1,0 +1,73 @@
+# Tasktracker
+
+## Done
+
+- [x] Pilot scaffold + dual estimand T/C + block permutation
+- [x] Dual-track gnomAD HBB + HUDEP-2 CTCF (KC0 PASS)
+- [x] Exploratory PWM scorer + EXPLORATORY_FROZEN
+- [x] **Scientific freeze v1** (primary=T; HBB=development)
+- [x] Scorer benchmark spec + CTCF DAG note + holdout plan
+- [x] Matching diagnostics module
+
+## Next (ordered)
+
+- [x] Build benchmark pos/neg controls → run `scorer_benchmark` gate (**PASS** v1.1)
+- [x] Fill `holdout_manifest.yaml` (non-HBB erythroid; labels sealed)
+- [x] Re-score HBB development set with v1.1 (diagnostics only) — T/C both NOT SUPPORTED
+- [x] ARCHCODE admission gate → **FAIL** (binary absent); checklist written
+- [x] Cluster-aware permutation diagnostics (HBB) — inflation ~75×; cluster perm ns
+- [x] Hypothesis Cultivation Pass — prospective architecture-variant path H1→H6
+- [x] ARCHCODE-PROSPECTIVE leakage-free framework (universe + baselines + G1 + templates)
+- [x] Competitor baseline ensemble contract (Arm A/B + independence matrix templates)
+- [x] Package A: unified hypothesis registry + closure report (all testable-now claims statused)
+- [x] Second scorer type spec + admission gate (confirmatory primary UNAVAILABLE; PWM not promoted)
+- [x] AlphaGenome adapter stub (smoke FAIL — no credentials)
+- [x] Cultivation desk-pass H1→H3 (locus geography; alleles UNKNOWN)
+- [x] Fetch holdout gnomAD slices (HO_A/B/C COMPLETE; SEALED / unscored)
+- [x] RDR Router v1 (`07_methods/rdr_router_v1.md`) — lean routing + stop matrix
+- [x] Desk G4 locus contact readiness + unblind protocol draft (no unblind)
+- [x] Queue A admission attempt → FAIL (no ARCHCODE/AG creds)
+- [x] Queue B K562 proxy Hi-C for L-HO_* (loops/domains on disk)
+- [x] Queue C pause list until credentials
+- [x] AlphaGenome live smoke PASS → second scorer admission **AVAILABLE**
+- [x] R4 AG contact-Δ cultivation shortlist (non-holdout; IMMATURE ≤3)
+- [x] Expand R4 panel to n=12 + desk G3/G4 for C1–C3
+- [x] G2 prep: local fasta + PWM Δ vs AG for C1–C3
+- [x] CHIP_TF channel unpack for C1 → M3 lean (not CTCF)
+- [x] C1/C2 same-site compare + G5 editability desk (BE FAIL / PE preferred)
+- [x] G6 control panel desk (C1–C3 + N1–N3; P1 deferred; unfrozen)
+- [x] G6 GC+ATAC matching amendment (N3 keep; N1/N2 drop) + PAUSE PIN
+- [x] Priority correction accepted: G4a+P1 critical; ARCHCODE auxiliary
+- [x] C1 claim freeze pack (E/P locked; Branch A/B/C)
+- [x] GSE160422 nominated; GSM4873113 download started; hg19 liftOver recorded
+- [x] ARCHCODE technical note (EXPLORATORY; not scientific validation)
+- [x] Finish GSM4873113 + SHA-256 + G4a desk at locked E–P → **PASS_DESK**
+- [x] Launch overnight orchestrator (Capture 3116–3118 + GW 3114–3115 + auto P1)
+- [x] Morning auto: all files OK · P1 **PASS_DESK** · G4a **PASS_DESK**
+- [x] G4b protocol desk-freeze + MCID + PE shortlist + provisional Branch A panel
+- [x] Step1 PrimeDesign external PE validate (PD1); neighborhood OT; GW OT pending
+- [x] CRISPOR hg38 genome-wide OT for PD1 → **CONDITIONAL_PASS** (MIT69/CFD89; RADIL mm3 watch)
+- [x] Step2 HUDEP-2 CTCF planted-P1 nominees
+- [x] Step3 Branch B reporter design (301bp+)
+- [x] CRISPOR OT for PE3 ngRNAs → prefer `GTTCTAAGGTTAGGCCGAGG` (MIT91; PE3 dist −46)
+- [x] NDE Engine 4+2 for dual-track A+B → `NDE_C1_exhaustion_A_plus_B_v1.md`
+- [x] GO-note draft B-first (UNSIGNED) + Branch B oligo checklist + Capture-C quote sheet
+- [x] OT amplicon primer desk panel (C1/RADIL/KDM2B/RPAP2/UPF3A) + locked-P TSS note
+- [x] Scale protocol v1 + panel registry (C1 = TEMPLATE_DEV; Stage-3 rule pre-registered)
+- [x] Stage-1 desk-screen 28 candidates → curated frozen 13; Stage-3 LOCKED
+- [x] AG rescore of 16 new alleles (key restored to gitignored `.env`) — 16/16 SCORED
+- [x] Stage-2 reporter panel desk (8 alleles × 301/1k/2k FASTA) — ORDER FORBIDDEN
+- [x] Kill-sprint P1 G4a multi-sample → PASS_DESK_ROBUST
+- [x] Kill-sprint P2 C1 satmut (partial AG) → ALLELE_LEAN_RETAINED
+- [x] Kill-sprint P5 reporter technical robustness
+- [ ] P3 matched-null test of frozen panel 13
+- [ ] P2 expand satmut AG (A→G all + random) / P5 R1 window-length AG
+- [ ] Sign wet-lab GO (human) — **BLOCKED**
+- [ ] Unblind holdout — **BLOCKED**
+
+## Blocked
+
+- Confirmatory enrichment on HBB
+- Calling results “3D genome disruption”
+- Track B / MWPM
+- Post-hoc primary switch T→C

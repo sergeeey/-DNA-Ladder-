@@ -1,0 +1,19 @@
+{
+  "input": "D:\\DNK - 2\\DNA_TE_3DGenome_Context\\pilot_scaffold\\data\\prospective_fixtures\\universe_seed.tsv",
+  "dry_run": true,
+  "audit": {
+    "n_input": 5,
+    "n_kept": 4,
+    "drop": {
+      "excluded_window": 1,
+      "af_fail": 0,
+      "te_fail": 0,
+      "missing_af": 0
+    },
+    "te_bed": "D:\\DNK - 2\\DNA_TE_3DGenome_Context\\pilot_scaffold\\data\\prospective_fixtures\\repeatmasker_chr11_alu_sva.bed",
+    "holdout_sealed": true,
+    "status": "FRAMEWORK_ONLY",
+    "claim": null
+  },
+  "leakage_audit_verdict": "PASS"
+}

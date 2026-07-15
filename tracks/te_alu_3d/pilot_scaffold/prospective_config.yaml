@@ -1,0 +1,82 @@
+# ARCHCODE-PROSPECTIVE configuration — leakage-free framework only
+# No primary scorer. No candidate nomination. No holdout scoring.
+
+prospective:
+  status: FRAMEWORK_ONLY
+  version: "0.1.1"
+  seed: 20260713
+  genome_build: GRCh38
+  chromosome: chr11
+  cell_context: HUDEP-2
+  claim_status: IMMATURE_HYPOTHESIS
+  wet_lab_go: false
+  competitor_ensemble_ref: ../07_methods/competitor_baseline_ensemble.md
+  arms:
+    A_convergence: allowed
+    B_principled_disagreement: allowed_with_elevated_bar
+    archcode_only_no_mechanism: reject
+
+  rarity:
+    max_af: 0.001
+    require_af: false   # allow missing AF in fixtures; real runs should set true
+
+  te_focus:
+    families: [Alu, SVA]
+    require_te_overlap: true
+
+  exclude_windows:
+    - chrom: chr11
+      start: 5200000
+      end: 5300000
+      reason: HBB_development_set_viewed
+
+  forbid_path_tokens:
+    - holdout
+
+  forbid_header_fields:
+    - clinical_significance
+    - clnsig
+    - clinvar
+    - consequence
+    - vep
+    - vep_severity
+    - effect_strength
+    - pearl_status
+    - pearl
+    - pathogenicity
+    - label
+    - pathogenic
+    - benign
+
+  paths:
+    data_dir: data
+    out_dir: ../09_outputs/prospective
+    ctcf_bed: ctcf_HUDEP2_peaks.bed
+    ctcf_bed_fallback: ctcf_GM12878_peaks.bed
+    te_bed: repeatmasker_chr11_alu_sva.bed
+    tss_bed: gencode_v46_protein_coding_TSS_chr11.bed
+    blacklist: encode_blacklist_hg38.bed
+    segdups: genomicSuperDups_chr11.bed
+    # Motif baseline needs a fasta covering scored positions.
+    # HBB fasta must NOT be used to score non-HBB candidates.
+    fasta: null
+
+  baselines:
+    motif_only:
+      name: motif_only_ctcf_pwm
+      method: ctcf_pwm_delta_logodds_mapped
+      role: comparator_not_primary
+      uses_peak_boost: false
+    distance_only:
+      name: distance_only_to_ctcf_peak
+      method: inv_one_plus_dist
+      role: comparator_not_primary
+
+  audit:
+    hash_files:
+      - prospective_config.yaml
+      - build_prospective_universe.py
+      - baseline_scorers.py
+      - leakage_audit.py
+      - run_prospective_baselines.py
+      - holdout_guard.py

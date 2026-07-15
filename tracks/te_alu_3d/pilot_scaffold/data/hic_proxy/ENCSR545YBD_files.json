@@ -1,0 +1,1343 @@
+[
+  {
+    "accession": "ENCFF039JQF",
+    "file_format": "pairs",
+    "output_type": "pairs",
+    "assembly": "GRCh38",
+    "file_size": 42247263712,
+    "href": "/files/ENCFF039JQF/@@download/ENCFF039JQF.pairs.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF440HUR",
+    "file_format": "bedpe",
+    "output_type": "loops",
+    "assembly": "GRCh38",
+    "file_size": 638419,
+    "href": "/files/ENCFF440HUR/@@download/ENCFF440HUR.bedpe.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF523ADY",
+    "file_format": "bedpe",
+    "output_type": "contact domains",
+    "assembly": "GRCh38",
+    "file_size": 338547,
+    "href": "/files/ENCFF523ADY/@@download/ENCFF523ADY.bedpe.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF699RSL",
+    "file_format": "bigWig",
+    "output_type": "genome compartments",
+    "assembly": "GRCh38",
+    "file_size": 2618219,
+    "href": "/files/ENCFF699RSL/@@download/ENCFF699RSL.bigWig",
+    "preferred": true
+  },
+  {
+    "accession": "ENCFF272BIP",
+    "file_format": "bigWig",
+    "output_type": "genome compartments",
+    "assembly": "GRCh38",
+    "file_size": 1343271,
+    "href": "/files/ENCFF272BIP/@@download/ENCFF272BIP.bigWig",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF490EEB",
+    "file_format": "bam",
+    "output_type": "alignments",
+    "assembly": "GRCh38",
+    "file_size": 120445990820,
+    "href": "/files/ENCFF490EEB/@@download/ENCFF490EEB.bam",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF173VDJ",
+    "file_format": "bedpe",
+    "output_type": "contact domains",
+    "assembly": "GRCh38",
+    "file_size": 311882,
+    "href": "/files/ENCFF173VDJ/@@download/ENCFF173VDJ.bedpe.gz",
+    "preferred": true
+  },
+  {
+    "accession": "ENCFF937OKK",
+    "file_format": "bigWig",
+    "output_type": "genome compartments",
+    "assembly": "GRCh38",
+    "file_size": 2642136,
+    "href": "/files/ENCFF937OKK/@@download/ENCFF937OKK.bigWig",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF662ZGL",
+    "file_format": "hic",
+    "output_type": "contact matrix",
+    "assembly": "GRCh38",
+    "file_size": 22497081589,
+    "href": "/files/ENCFF662ZGL/@@download/ENCFF662ZGL.hic",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF080DPJ",
+    "file_format": "hic",
+    "output_type": "mapping quality thresholded contact matrix",
+    "assembly": "GRCh38",
+    "file_size": 20655472689,
+    "href": "/files/ENCFF080DPJ/@@download/ENCFF080DPJ.hic",
+    "preferred": true
+  },
+  {
+    "accession": "ENCFF142DLV",
+    "file_format": "bam",
+    "output_type": "alignments",
+    "assembly": "GRCh38",
+    "file_size": 131255989866,
+    "href": "/files/ENCFF142DLV/@@download/ENCFF142DLV.bam",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF456BBV",
+    "file_format": "bigWig",
+    "output_type": "genome compartments",
+    "assembly": "GRCh38",
+    "file_size": 1377911,
+    "href": "/files/ENCFF456BBV/@@download/ENCFF456BBV.bigWig",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF874HMG",
+    "file_format": "pairs",
+    "output_type": "pairs",
+    "assembly": "GRCh38",
+    "file_size": 22155563616,
+    "href": "/files/ENCFF874HMG/@@download/ENCFF874HMG.pairs.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF669JRU",
+    "file_format": "bedpe",
+    "output_type": "contact domains",
+    "assembly": "GRCh38",
+    "file_size": 178190,
+    "href": "/files/ENCFF669JRU/@@download/ENCFF669JRU.bedpe.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF448GZL",
+    "file_format": "bedpe",
+    "output_type": "chromatin stripes",
+    "assembly": "GRCh38",
+    "file_size": 13208,
+    "href": "/files/ENCFF448GZL/@@download/ENCFF448GZL.bedpe.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF845GJG",
+    "file_format": "bedpe",
+    "output_type": "loops",
+    "assembly": "GRCh38",
+    "file_size": 74048,
+    "href": "/files/ENCFF845GJG/@@download/ENCFF845GJG.bedpe.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF271SAF",
+    "file_format": "bedpe",
+    "output_type": "contact domains",
+    "assembly": "GRCh38",
+    "file_size": 299666,
+    "href": "/files/ENCFF271SAF/@@download/ENCFF271SAF.bedpe.gz",
+    "preferred": true
+  },
+  {
+    "accession": "ENCFF757IIX",
+    "file_format": "bedpe",
+    "output_type": "loops",
+    "assembly": "GRCh38",
+    "file_size": 1290782,
+    "href": "/files/ENCFF757IIX/@@download/ENCFF757IIX.bedpe.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF809YRB",
+    "file_format": "bam",
+    "output_type": "alignments",
+    "assembly": "GRCh38",
+    "file_size": 59258724248,
+    "href": "/files/ENCFF809YRB/@@download/ENCFF809YRB.bam",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF726JJU",
+    "file_format": "bigWig",
+    "output_type": "genome compartments",
+    "assembly": "GRCh38",
+    "file_size": 2714041,
+    "href": "/files/ENCFF726JJU/@@download/ENCFF726JJU.bigWig",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF303XPT",
+    "file_format": "bam",
+    "output_type": "alignments",
+    "assembly": "GRCh38",
+    "file_size": 132937261296,
+    "href": "/files/ENCFF303XPT/@@download/ENCFF303XPT.bam",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF539KNF",
+    "file_format": "hic",
+    "output_type": "contact matrix",
+    "assembly": "GRCh38",
+    "file_size": 24272457353,
+    "href": "/files/ENCFF539KNF/@@download/ENCFF539KNF.hic",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF303JSE",
+    "file_format": "bedpe",
+    "output_type": "contact domains",
+    "assembly": "GRCh38",
+    "file_size": 319217,
+    "href": "/files/ENCFF303JSE/@@download/ENCFF303JSE.bedpe.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF601ALX",
+    "file_format": "bed",
+    "output_type": "genome subcompartments",
+    "assembly": "GRCh38",
+    "file_size": 130537,
+    "href": "/files/ENCFF601ALX/@@download/ENCFF601ALX.bed.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF955KEB",
+    "file_format": "bed",
+    "output_type": "genome subcompartments",
+    "assembly": "GRCh38",
+    "file_size": 613774,
+    "href": "/files/ENCFF955KEB/@@download/ENCFF955KEB.bed.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF406HHC",
+    "file_format": "hic",
+    "output_type": "mapping quality thresholded contact matrix",
+    "assembly": "hg19",
+    "file_size": 4187973262,
+    "href": "/files/ENCFF406HHC/@@download/ENCFF406HHC.hic",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF416MGD",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1142408992,
+    "href": "/files/ENCFF416MGD/@@download/ENCFF416MGD.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF299EZU",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1143034992,
+    "href": "/files/ENCFF299EZU/@@download/ENCFF299EZU.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF657QKE",
+    "file_format": "bedpe",
+    "output_type": "loops",
+    "assembly": "GRCh38",
+    "file_size": 208215,
+    "href": "/files/ENCFF657QKE/@@download/ENCFF657QKE.bedpe.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF616PUW",
+    "file_format": "hic",
+    "output_type": "mapping quality thresholded contact matrix",
+    "assembly": "GRCh38",
+    "file_size": 22638682080,
+    "href": "/files/ENCFF616PUW/@@download/ENCFF616PUW.hic",
+    "preferred": true
+  },
+  {
+    "accession": "ENCFF693XIL",
+    "file_format": "bedpe",
+    "output_type": "loops",
+    "assembly": "GRCh38",
+    "file_size": 900362,
+    "href": "/files/ENCFF693XIL/@@download/ENCFF693XIL.bedpe.gz",
+    "preferred": true
+  },
+  {
+    "accession": "ENCFF369SUV",
+    "file_format": "bigWig",
+    "output_type": "genome compartments",
+    "assembly": "GRCh38",
+    "file_size": 1373903,
+    "href": "/files/ENCFF369SUV/@@download/ENCFF369SUV.bigWig",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF229KAH",
+    "file_format": "bam",
+    "output_type": "alignments",
+    "assembly": "GRCh38",
+    "file_size": 232635081114,
+    "href": "/files/ENCFF229KAH/@@download/ENCFF229KAH.bam",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF749YOA",
+    "file_format": "bigWig",
+    "output_type": "genome compartments",
+    "assembly": "GRCh38",
+    "file_size": 2707643,
+    "href": "/files/ENCFF749YOA/@@download/ENCFF749YOA.bigWig",
+    "preferred": true
+  },
+  {
+    "accession": "ENCFF414JGK",
+    "file_format": "bed",
+    "output_type": "genome subcompartments",
+    "assembly": "GRCh38",
+    "file_size": 231108,
+    "href": "/files/ENCFF414JGK/@@download/ENCFF414JGK.bed.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF681AQK",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2346126638,
+    "href": "/files/ENCFF681AQK/@@download/ENCFF681AQK.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF077DJW",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2416863819,
+    "href": "/files/ENCFF077DJW/@@download/ENCFF077DJW.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF675FKJ",
+    "file_format": "bam",
+    "output_type": "alignments",
+    "assembly": "GRCh38",
+    "file_size": 59434616702,
+    "href": "/files/ENCFF675FKJ/@@download/ENCFF675FKJ.bam",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF313VQB",
+    "file_format": "bam",
+    "output_type": "alignments",
+    "assembly": "GRCh38",
+    "file_size": 233185010262,
+    "href": "/files/ENCFF313VQB/@@download/ENCFF313VQB.bam",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF134HIZ",
+    "file_format": "bedpe",
+    "output_type": "loops",
+    "assembly": "GRCh38",
+    "file_size": 584314,
+    "href": "/files/ENCFF134HIZ/@@download/ENCFF134HIZ.bedpe.gz",
+    "preferred": true
+  },
+  {
+    "accession": "ENCFF008RNP",
+    "file_format": "bam",
+    "output_type": "alignments",
+    "assembly": "GRCh38",
+    "file_size": 121605001402,
+    "href": "/files/ENCFF008RNP/@@download/ENCFF008RNP.bam",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF281GCG",
+    "file_format": "bigWig",
+    "output_type": "genome compartments",
+    "assembly": "GRCh38",
+    "file_size": 1352865,
+    "href": "/files/ENCFF281GCG/@@download/ENCFF281GCG.bigWig",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF420HLS",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1959719524,
+    "href": "/files/ENCFF420HLS/@@download/ENCFF420HLS.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF527EYP",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1506525063,
+    "href": "/files/ENCFF527EYP/@@download/ENCFF527EYP.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF028JQP",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2382035811,
+    "href": "/files/ENCFF028JQP/@@download/ENCFF028JQP.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF432BWZ",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2585443903,
+    "href": "/files/ENCFF432BWZ/@@download/ENCFF432BWZ.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF174GRI",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1590892846,
+    "href": "/files/ENCFF174GRI/@@download/ENCFF174GRI.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF208KRF",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1765083806,
+    "href": "/files/ENCFF208KRF/@@download/ENCFF208KRF.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF570LUL",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1358070852,
+    "href": "/files/ENCFF570LUL/@@download/ENCFF570LUL.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF339QFH",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1510819000,
+    "href": "/files/ENCFF339QFH/@@download/ENCFF339QFH.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF680JHC",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1342364968,
+    "href": "/files/ENCFF680JHC/@@download/ENCFF680JHC.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF658UXU",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1799209306,
+    "href": "/files/ENCFF658UXU/@@download/ENCFF658UXU.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF475PAM",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2326139446,
+    "href": "/files/ENCFF475PAM/@@download/ENCFF475PAM.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF487HBM",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2350458827,
+    "href": "/files/ENCFF487HBM/@@download/ENCFF487HBM.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF834KWY",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1617147885,
+    "href": "/files/ENCFF834KWY/@@download/ENCFF834KWY.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF073ZCF",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1322180155,
+    "href": "/files/ENCFF073ZCF/@@download/ENCFF073ZCF.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF258EHI",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1475858069,
+    "href": "/files/ENCFF258EHI/@@download/ENCFF258EHI.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF428KMZ",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2239559731,
+    "href": "/files/ENCFF428KMZ/@@download/ENCFF428KMZ.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF500YKA",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2406694812,
+    "href": "/files/ENCFF500YKA/@@download/ENCFF500YKA.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF570ZJK",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1175286524,
+    "href": "/files/ENCFF570ZJK/@@download/ENCFF570ZJK.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF996XEO",
+    "file_format": "hic",
+    "output_type": "mapping quality thresholded contact matrix",
+    "assembly": "hg19",
+    "file_size": 2406364892,
+    "href": "/files/ENCFF996XEO/@@download/ENCFF996XEO.hic",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF929RPW",
+    "file_format": "hic",
+    "output_type": "mapping quality thresholded contact matrix",
+    "assembly": "hg19",
+    "file_size": 2307706303,
+    "href": "/files/ENCFF929RPW/@@download/ENCFF929RPW.hic",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF464KRA",
+    "file_format": "hic",
+    "output_type": "mapping quality thresholded contact matrix",
+    "assembly": "hg19",
+    "file_size": 2290746158,
+    "href": "/files/ENCFF464KRA/@@download/ENCFF464KRA.hic",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF457XFM",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 4139006981,
+    "href": "/files/ENCFF457XFM/@@download/ENCFF457XFM.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF969DIX",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1973231668,
+    "href": "/files/ENCFF969DIX/@@download/ENCFF969DIX.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF559STQ",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1225772431,
+    "href": "/files/ENCFF559STQ/@@download/ENCFF559STQ.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF017YRC",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2439382634,
+    "href": "/files/ENCFF017YRC/@@download/ENCFF017YRC.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF740JAL",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2621010353,
+    "href": "/files/ENCFF740JAL/@@download/ENCFF740JAL.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF321KDM",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1644283164,
+    "href": "/files/ENCFF321KDM/@@download/ENCFF321KDM.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF512YEU",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1337139005,
+    "href": "/files/ENCFF512YEU/@@download/ENCFF512YEU.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF651LGZ",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2252567592,
+    "href": "/files/ENCFF651LGZ/@@download/ENCFF651LGZ.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF680SNA",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2369663894,
+    "href": "/files/ENCFF680SNA/@@download/ENCFF680SNA.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF846VGE",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1444084666,
+    "href": "/files/ENCFF846VGE/@@download/ENCFF846VGE.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF976LEP",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1983904686,
+    "href": "/files/ENCFF976LEP/@@download/ENCFF976LEP.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF513EOT",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1963710872,
+    "href": "/files/ENCFF513EOT/@@download/ENCFF513EOT.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF149WOB",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1748496486,
+    "href": "/files/ENCFF149WOB/@@download/ENCFF149WOB.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF208SCV",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1993956767,
+    "href": "/files/ENCFF208SCV/@@download/ENCFF208SCV.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF363MKK",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2020680215,
+    "href": "/files/ENCFF363MKK/@@download/ENCFF363MKK.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF485GEG",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2622245917,
+    "href": "/files/ENCFF485GEG/@@download/ENCFF485GEG.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF402DLV",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2314549188,
+    "href": "/files/ENCFF402DLV/@@download/ENCFF402DLV.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF825VCF",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1185071416,
+    "href": "/files/ENCFF825VCF/@@download/ENCFF825VCF.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF991GET",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1265612987,
+    "href": "/files/ENCFF991GET/@@download/ENCFF991GET.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF272RRK",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1215496720,
+    "href": "/files/ENCFF272RRK/@@download/ENCFF272RRK.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF756BRI",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 33223220773,
+    "href": "/files/ENCFF756BRI/@@download/ENCFF756BRI.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF300UHD",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 35078103386,
+    "href": "/files/ENCFF300UHD/@@download/ENCFF300UHD.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF663JXG",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2354946133,
+    "href": "/files/ENCFF663JXG/@@download/ENCFF663JXG.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF085PIR",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1354463550,
+    "href": "/files/ENCFF085PIR/@@download/ENCFF085PIR.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF053USQ",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1364136278,
+    "href": "/files/ENCFF053USQ/@@download/ENCFF053USQ.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF777KWM",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1544014646,
+    "href": "/files/ENCFF777KWM/@@download/ENCFF777KWM.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF137OYI",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1744540335,
+    "href": "/files/ENCFF137OYI/@@download/ENCFF137OYI.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF106NDA",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1745000314,
+    "href": "/files/ENCFF106NDA/@@download/ENCFF106NDA.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF605SCP",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1536121346,
+    "href": "/files/ENCFF605SCP/@@download/ENCFF605SCP.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF559OHB",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2639296625,
+    "href": "/files/ENCFF559OHB/@@download/ENCFF559OHB.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF098FRU",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1570076169,
+    "href": "/files/ENCFF098FRU/@@download/ENCFF098FRU.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF821GSR",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2619078724,
+    "href": "/files/ENCFF821GSR/@@download/ENCFF821GSR.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF394ESW",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1414695598,
+    "href": "/files/ENCFF394ESW/@@download/ENCFF394ESW.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF541TCH",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1583741844,
+    "href": "/files/ENCFF541TCH/@@download/ENCFF541TCH.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF641IKF",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2310178027,
+    "href": "/files/ENCFF641IKF/@@download/ENCFF641IKF.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF769RNQ",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1381602455,
+    "href": "/files/ENCFF769RNQ/@@download/ENCFF769RNQ.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF873NRO",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1414130076,
+    "href": "/files/ENCFF873NRO/@@download/ENCFF873NRO.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF970GFK",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2662465995,
+    "href": "/files/ENCFF970GFK/@@download/ENCFF970GFK.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF961YDO",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1292721706,
+    "href": "/files/ENCFF961YDO/@@download/ENCFF961YDO.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF519OGH",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1577810767,
+    "href": "/files/ENCFF519OGH/@@download/ENCFF519OGH.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF060KMI",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1590693819,
+    "href": "/files/ENCFF060KMI/@@download/ENCFF060KMI.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF097JCH",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1537741247,
+    "href": "/files/ENCFF097JCH/@@download/ENCFF097JCH.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF578LHZ",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2222491407,
+    "href": "/files/ENCFF578LHZ/@@download/ENCFF578LHZ.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF782RXO",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2371188605,
+    "href": "/files/ENCFF782RXO/@@download/ENCFF782RXO.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF411ROJ",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2679788689,
+    "href": "/files/ENCFF411ROJ/@@download/ENCFF411ROJ.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF125NTC",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1523468986,
+    "href": "/files/ENCFF125NTC/@@download/ENCFF125NTC.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF517TPN",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1496260563,
+    "href": "/files/ENCFF517TPN/@@download/ENCFF517TPN.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF902ICD",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1546075365,
+    "href": "/files/ENCFF902ICD/@@download/ENCFF902ICD.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF288DYD",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1609534011,
+    "href": "/files/ENCFF288DYD/@@download/ENCFF288DYD.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF468THW",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1975584010,
+    "href": "/files/ENCFF468THW/@@download/ENCFF468THW.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF464TZG",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2277572165,
+    "href": "/files/ENCFF464TZG/@@download/ENCFF464TZG.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF647VVJ",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1413469625,
+    "href": "/files/ENCFF647VVJ/@@download/ENCFF647VVJ.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF732NMZ",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1352997265,
+    "href": "/files/ENCFF732NMZ/@@download/ENCFF732NMZ.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF899NQH",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1484329323,
+    "href": "/files/ENCFF899NQH/@@download/ENCFF899NQH.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF245VNR",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 17620325568,
+    "href": "/files/ENCFF245VNR/@@download/ENCFF245VNR.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF887BPM",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 18691290762,
+    "href": "/files/ENCFF887BPM/@@download/ENCFF887BPM.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF013TGD",
+    "file_format": "hic",
+    "output_type": "mapping quality thresholded contact matrix",
+    "assembly": "hg19",
+    "file_size": 4541866559,
+    "href": "/files/ENCFF013TGD/@@download/ENCFF013TGD.hic",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF609GTI",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 3713842633,
+    "href": "/files/ENCFF609GTI/@@download/ENCFF609GTI.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF374ACE",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2135252667,
+    "href": "/files/ENCFF374ACE/@@download/ENCFF374ACE.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF434MDZ",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2295524918,
+    "href": "/files/ENCFF434MDZ/@@download/ENCFF434MDZ.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF187ZQO",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1532796369,
+    "href": "/files/ENCFF187ZQO/@@download/ENCFF187ZQO.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF736BFW",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1388945589,
+    "href": "/files/ENCFF736BFW/@@download/ENCFF736BFW.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF539DDS",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1547225091,
+    "href": "/files/ENCFF539DDS/@@download/ENCFF539DDS.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF314MPU",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 10111264611,
+    "href": "/files/ENCFF314MPU/@@download/ENCFF314MPU.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF187UVO",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1554012170,
+    "href": "/files/ENCFF187UVO/@@download/ENCFF187UVO.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF307HYX",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1105151336,
+    "href": "/files/ENCFF307HYX/@@download/ENCFF307HYX.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF942LOO",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2591117992,
+    "href": "/files/ENCFF942LOO/@@download/ENCFF942LOO.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF749NNL",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1219850906,
+    "href": "/files/ENCFF749NNL/@@download/ENCFF749NNL.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF375MOP",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2509134537,
+    "href": "/files/ENCFF375MOP/@@download/ENCFF375MOP.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF403MXC",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2469474485,
+    "href": "/files/ENCFF403MXC/@@download/ENCFF403MXC.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF038KOR",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1793351705,
+    "href": "/files/ENCFF038KOR/@@download/ENCFF038KOR.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF128XBB",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1576451955,
+    "href": "/files/ENCFF128XBB/@@download/ENCFF128XBB.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF776LYK",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1973456175,
+    "href": "/files/ENCFF776LYK/@@download/ENCFF776LYK.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF608TQZ",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2231458670,
+    "href": "/files/ENCFF608TQZ/@@download/ENCFF608TQZ.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF458WZC",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1400563233,
+    "href": "/files/ENCFF458WZC/@@download/ENCFF458WZC.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF056GDJ",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2612604143,
+    "href": "/files/ENCFF056GDJ/@@download/ENCFF056GDJ.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF120NPU",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1695147242,
+    "href": "/files/ENCFF120NPU/@@download/ENCFF120NPU.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF255CQZ",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1396110869,
+    "href": "/files/ENCFF255CQZ/@@download/ENCFF255CQZ.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF586LTN",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 10707140098,
+    "href": "/files/ENCFF586LTN/@@download/ENCFF586LTN.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF624JGN",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1719145545,
+    "href": "/files/ENCFF624JGN/@@download/ENCFF624JGN.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF401SOG",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1402987605,
+    "href": "/files/ENCFF401SOG/@@download/ENCFF401SOG.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF208KWJ",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1337381928,
+    "href": "/files/ENCFF208KWJ/@@download/ENCFF208KWJ.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF011VBP",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1523747053,
+    "href": "/files/ENCFF011VBP/@@download/ENCFF011VBP.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF133ZWC",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 1688627916,
+    "href": "/files/ENCFF133ZWC/@@download/ENCFF133ZWC.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF711VXM",
+    "file_format": "fastq",
+    "output_type": "reads",
+    "assembly": null,
+    "file_size": 2223794046,
+    "href": "/files/ENCFF711VXM/@@download/ENCFF711VXM.fastq.gz",
+    "preferred": null
+  },
+  {
+    "accession": "ENCFF097SKJ",
+    "file_format": "hic",
+    "output_type": "mapping quality thresholded contact matrix",
+    "assembly": "hg19",
+    "file_size": 2316970028,
+    "href": "/files/ENCFF097SKJ/@@download/ENCFF097SKJ.hic",
+    "preferred": null
+  }
+]

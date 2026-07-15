@@ -1,0 +1,163 @@
+# Prospective panel registry v1
+# Status: STAGE1_FROZEN_CURATED — Stage-3 advancement LOCKED
+# C1 is TEMPLATE_DEV, not automatic Stage-3 winner
+
+schema_version: 1
+date: "2026-07-15"
+protocol: SCALE_PROTOCOL_prospective_panel_v1.md
+stage1_report: STAGE1_RESULTS_2026-07-15.md
+stage1_json: stage1_desk_screen_v1.json
+holdout: SEALED
+enrichment_discovery: STOPPED
+archcode_role: exploratory_prior_only
+ag_api_stage1_run: PRESENT
+stage2_status: DESK_READY
+stage2_report: STAGE2_REPORTER_PANEL_v1.md
+stage2_json: stage2_reporter_panel_v1.json
+stage2_fasta_dir: pilot_scaffold/data/cultivation/stage2_reporters
+oligo_order: FORBIDDEN
+
+panel_targets:
+  activity_m3: {min: 3, max: 5}
+  architecture_m1: {min: 3, max: 5}
+  matched_negatives: 3
+  known_positive: 1
+  desk_screen_in: {min: 20, max: 30}
+  frozen_out: {min: 8, max: 12}
+  stage2_reporter: {min: 6, max: 8}
+  stage3_3d: {min: 2, max: 4}
+
+stage3_advancement_preregistered:
+  status: LOCKED
+  locked_date: "2026-07-15"
+  rule: |
+    Stage 3 receives fixed slots only:
+      - 2 strongest architecture candidates
+      - 1 convergence candidate
+      - 1 principled disagreement candidate
+      - 1 negative control
+  assignments:
+    architecture_strong_1: "chr11:75445532:G:A"
+    architecture_strong_2: "chr11:518575:C:A"
+    convergence_1: "chr11:72434037:C:T"
+    disagreement_1: "chr11:57568168:C:T"
+    negative_1: "chr11:108009167:T:C"
+  template_excluded_from_stage3_slots: "chr11:62753923:A:G"
+  known_positive_assay_chain: "P1_SYSTEM_3primeHS1"
+  substitutions_allowed_only_if:
+    - cannot_edit_or_verify
+    - assay_documented_blind
+    - ot_panel_fails_pre_spec
+  substitutions_forbidden_if:
+    - post_hoc_largest_reporter_effect
+    - post_hoc_most_interesting_narrative
+    - reshuffle_after_seeing_stage2_results
+
+gates_required: [G0, G1, G2, G3, G4, G5, G6, G7, G8]
+
+slots:
+  - slot_id: TEMPLATE_DEV_C1
+    candidate_id: C1
+    role: development_template
+    class: convergence
+    stage: desk_complete_wet_NOGO
+    variant_id: "chr11:62753923:A:G"
+    notes: "Do not use C1 outcomes to rewrite Stage-3 rule"
+
+  - slot_id: ACT_01
+    candidate_id: C2
+    role: activity_m3
+    class: convergence
+    stage: frozen_stage1
+    variant_id: "chr11:62753923:A:T"
+  - slot_id: ACT_02
+    candidate_id: C3
+    role: activity_m3
+    class: convergence
+    stage: frozen_stage1
+    variant_id: "chr11:72434037:C:T"
+  - slot_id: ACT_03
+    candidate_id: C3b
+    role: activity_m3
+    class: convergence
+    stage: frozen_stage1
+    variant_id: "chr11:72434037:C:A"
+  - slot_id: ACT_04
+    candidate_id: A114
+    role: activity_m3
+    class: convergence
+    stage: frozen_stage1
+    variant_id: "chr11:114036577:G:C"
+
+  - slot_id: ARCH_01
+    candidate_id: A754
+    role: architecture_m1
+    class: architecture_prior
+    stage: frozen_stage1
+    variant_id: "chr11:75445532:G:A"
+  - slot_id: ARCH_02
+    candidate_id: A518
+    role: architecture_m1
+    class: architecture_prior
+    stage: frozen_stage1
+    variant_id: "chr11:518575:C:A"
+  - slot_id: ARCH_03
+    candidate_id: A119
+    role: architecture_m1
+    class: architecture_prior
+    stage: frozen_stage1
+    variant_id: "chr11:119030718:C:T"
+  - slot_id: ARCH_04
+    candidate_id: A754b
+    role: architecture_m1
+    class: architecture_prior
+    stage: frozen_stage1
+    variant_id: "chr11:75445269:C:T"
+
+  - slot_id: NEG_01
+    candidate_id: N3
+    role: matched_negative
+    class: matched_negative_candidate
+    stage: frozen_stage1
+    variant_id: "chr11:108009167:T:C"
+  - slot_id: NEG_02
+    candidate_id: N3b
+    role: matched_negative
+    class: matched_negative_candidate
+    stage: frozen_stage1
+    variant_id: "chr11:108009167:T:A"
+  - slot_id: NEG_03
+    candidate_id: null
+    role: matched_negative
+    class: null
+    stage: open_reselect
+    notes: "N1/N2 dropped (GC/ATAC); optional third negative later"
+
+  - slot_id: POS_01
+    candidate_id: P1_SYS
+    role: known_positive
+    class: known_positive
+    stage: frozen_stage1
+    variant_id: "P1_SYSTEM_3primeHS1"
+
+  - slot_id: DIS_01
+    candidate_id: W1
+    role: principled_disagreement
+    class: principled_disagreement
+    stage: frozen_stage1
+    variant_id: "chr11:57568168:C:T"
+
+stage3_slot_assignments:
+  architecture_strong_1: "chr11:75445532:G:A"
+  architecture_strong_2: "chr11:518575:C:A"
+  convergence_1: "chr11:72434037:C:T"
+  disagreement_1: "chr11:57568168:C:T"
+  negative_1: "chr11:108009167:T:C"
+  assignment_locked: true
+  locked_date: "2026-07-15"
+
+scenarios_interpretation:
+  A_architecture_only: "reporter− AND contact+ across ≥2 non-control slots"
+  B_mixed: "reporter+ AND contact+"
+  C_activity_driven: "almost all non-control effects are reporter+ / contact−"
+  D_null_panel: "no slot meets MCID — document pipeline/class boundary"

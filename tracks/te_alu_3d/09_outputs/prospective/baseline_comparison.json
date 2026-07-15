@@ -1,0 +1,61 @@
+{
+  "summary": {
+    "n_variants": 4,
+    "n_motif_scored": 3,
+    "n_distance_scored": 4,
+    "motif_only_median": 0.0,
+    "distance_only_median": 0.017379679144385027,
+    "spearman_motif_vs_distance": 0.125,
+    "role": "G2_preparation_only",
+    "primary_scorer": null,
+    "claim": null,
+    "note": "Baselines are comparators. A future leakage-free primary must beat both on an independent shortlist before G2 can PASS.",
+    "peaks": "D:\\DNK - 2\\DNA_TE_3DGenome_Context\\pilot_scaffold\\data\\prospective_fixtures\\ctcf_HUDEP2_peaks.bed",
+    "fasta": "D:\\DNK - 2\\DNA_TE_3DGenome_Context\\pilot_scaffold\\data\\prospective_fixtures\\chr11_prospective_fixture.fa"
+  },
+  "rows_head": [
+    {
+      "variant_id": "chr11:10800060:G:A",
+      "motif_only": 0.0,
+      "motif_only_ok": true,
+      "motif_delta_logodds": 0.0,
+      "motif_error": null,
+      "distance_only": 0.047619047619047616,
+      "dist_ctcf": 20,
+      "role": "comparator_not_primary"
+    },
+    {
+      "variant_id": "chr11:10800090:T:C",
+      "motif_only": 0.8704555768327183,
+      "motif_only_ok": true,
+      "motif_delta_logodds": 4.087462841250341,
+      "motif_error": null,
+      "distance_only": 0.0196078431372549,
+      "dist_ctcf": 50,
+      "role": "comparator_not_primary"
+    },
+    {
+      "variant_id": "chr11:10800150:A:G",
+      "motif_only": 0.0,
+      "motif_only_ok": true,
+      "motif_delta_logodds": 0.0,
+      "motif_error": null,
+      "distance_only": 0.009009009009009009,
+      "dist_ctcf": 110,
+      "role": "comparator_not_primary"
+    },
+    {
+      "variant_id": "chr11:17400050:C:T",
+      "motif_only": null,
+      "motif_only_ok": false,
+      "motif_delta_logodds": 0.0,
+      "motif_error": "pos_outside_fasta_window",
+      "distance_only": 0.015151515151515152,
+      "dist_ctcf": 65,
+      "role": "comparator_not_primary"
+    }
+  ],
+  "gate": "G2_PREP",
+  "verdict": "PREP_COMPLETE",
+  "wet_lab_go": false
+}
