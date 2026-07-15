@@ -333,6 +333,7 @@ brute-force-verified rho=0.0 permutation instead of a hand-picked "looks uncorre
 one. All 72 tests across 6 test files pass.
 
 ## Auto-commit log
+- [2026-07-15 17:18] `37a55a7`: docs: activeContext narrative for hypothesis-generation trio + dichotomization toy-test
 - [2026-07-15 17:14] `8b7f21e`: feat: exp_se_continuous_rank_dichotomization_check -- REJECT-with-signal, tests the dichotomization hypothesis three independent skills converged on
 - [2026-07-15 16:15] `3506fd6`: docs: auto-log sync
 - [2026-07-15 16:14] `5a51aee`: docs: activeContext narrative for G4 direction (5th convergent REJECT)
