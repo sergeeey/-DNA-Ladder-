@@ -12,7 +12,7 @@
 |----:|------|--------|---------|
 | **1** | G4a multi-sample Contact(E,P) | **DONE** | **`PASS_DESK_ROBUST`** — kills none |
 | **2** | C1 301 bp saturation mutagenesis | **DONE** (partial AG) | **`ALLELE_LEAN_RETAINED`** — kills none |
-| **3** | Matched-null panel ×13 | NOT STARTED | — |
+| **3** | Matched-null panel ×13 | **DONE** | **panel not weakened**; C1 extreme but L3→`INCONCLUSIVE`; 1 activity demotion; arch mostly demoted; negatives OK |
 | **4** | Independent model matrix | PARTIAL (AG already on panel) | continue |
 | **5** | Reporter robustness | **DONE** (tech) | **`REPORTER_DESK_OK_TECHNICAL`**; R1 length-AG pending |
 | **6** | PE/OT robustness | NOT STARTED | PD1 pack exists |
@@ -84,9 +84,27 @@ Pre-registered: S1 not top5% · S2 ≥20 peers @90% · S3 mean other A→G ≥ C
 
 ---
 
+## Priority 3 — Matched-null panel ×13
+
+**Arts:** `P3_matched_null_CLAIM_v1.md` (pre-registered), `P3_matched_null_panel_v1.md`, `.json`
+
+Universe: Stage-1 SCORED pool n=28. No L1/L2 sets reached `n_ctrl≥5` → most decisions at **L3/L4**.
+
+| Panel rule | Result |
+|------------|--------|
+| `PANEL_ACTIVITY_CLAIM_WEAKENED` (≥2 activity demotions) | **False** (1: C3b) |
+| `PANEL_NEGATIVE_BROKEN` | **False** (N3 T>C / T>A both PASS_AS_NEGATIVE) |
+
+Notable singles: C1 CHIP pct **95** / effect **+0.37** but **INCONCLUSIVE** (L3 cannot RETAIN_HP by claim). Architecture slots mostly **KILL_HP_DEMOTION** on contact.
+
+### Plain language
+Негативы ведут себя как негативы. Панель activity **не развалилась**. C1 по-прежнему самый высокий CHIP на своём фоне, но **строгий** matched-null (L1/L2) недоступен на n=28 — high-priority formal retain не выдан.
+
+---
+
 ## What NOT done (still recommended next)
 
-1. **P3 matched-null** for frozen 13 (empirical percentiles, pre-registered threshold)  
+1. **Expand matched-null universe** (more SCORED Alu/SVA rare SNVs) so L1/L2 can fire — or accept L3 as ceiling  
 2. **P2 full or stratified AG** beyond top-PWM (all A→G in window; random 100)  
 3. **P5 R1** AG REF–ALT for 301 vs 1 kb vs 2 kb on C1 (± panel)  
 4. **P6** second OT engine + Primer-BLAST  
@@ -100,11 +118,12 @@ Pre-registered: S1 not top5% · S2 ≥20 peers @90% · S3 mean other A→G ≥ C
 ```text
 G4a single-hic risk:     WEAKENED (multi-sample + VC pass)
 C1 allele-vs-window:     NOT KILLED on partial satmut (rank #1)
+Matched-null panel:      activity claim NOT weakened; C1 extreme@L3 only
 Reporter tech:           OK; length-invariance still open
 Wet-lab proof:           STILL ABSENT
 Expand to hundreds:      Still DON'T
 Holdout / move E/P:      Still DON'T
 ```
 
-Сильный desk-кандидат **укреплён**, но не «доказан».  
-Следующий самый полезный kill-тест: **matched-null панели** + **полный/стратифицированный satmut AG**.
+Сильный desk-кандидат **не убит** matched-null, но и **formal RETAIN_HP** не получил (L3).  
+Следующий полезный шаг: **расширить null-universe / AG** или **P5 R1** length AG.

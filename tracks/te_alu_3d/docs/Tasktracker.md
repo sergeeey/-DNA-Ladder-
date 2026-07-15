@@ -60,7 +60,8 @@
 - [x] Kill-sprint P1 G4a multi-sample → PASS_DESK_ROBUST
 - [x] Kill-sprint P2 C1 satmut (partial AG) → ALLELE_LEAN_RETAINED
 - [x] Kill-sprint P5 reporter technical robustness
-- [ ] P3 matched-null test of frozen panel 13
+- [x] P3 matched-null test of frozen panel 13 → panel not weakened; C1 extreme@L3 INCONCLUSIVE
+- [ ] Expand P3 null-universe (L1/L2) OR accept L3 ceiling
 - [ ] P2 expand satmut AG (A→G all + random) / P5 R1 window-length AG
 - [ ] Sign wet-lab GO (human) — **BLOCKED**
 - [ ] Unblind holdout — **BLOCKED**
