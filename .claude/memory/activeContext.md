@@ -296,7 +296,45 @@ lift_interval/merge_intervals/overlap_fraction were already tested) covering suc
 lift, out-of-coverage failure counting, merge-after-lift, and gzip/plain file handling.
 **All 57 tests across 5 test files pass.**
 
+## DONE (2026-07-10, later still) — hypothesis-generation trio + dichotomization toy-test
+
+After 5 straight REJECTs, user asked whether there's a skill for finding hypotheses.
+Ran three in parallel with shared context (5/5 REJECT, 2/5 sign-flip between K562/HepG2):
+`cross-domain`, `narrow-discovery-engines`, `hypothesis-revival`. All three converged
+independently on the same diagnosis: **binary SE-vs-typical classification may itself be
+the methodological issue, not the biology** -- `cross-domain` found a formal structural
+match to dichotomization-of-continuous-variables (MacCallum et al. 2002, real proven power
+loss from binning a continuous predictor); `hypothesis-revival` found this critique already
+exists specifically for super-enhancers and was ignored by the field: **[VERIFIED]**
+Pott & Lieb 2015, *Nature Genetics*, DOI 10.1038/ng.3167, and **[VERIFIED]**
+Blobel/Higgs/Mitchell/Notani/**Young** (SE concept co-originator) 2021, *Nature Reviews
+Genetics*, PMID 34480110, still calling it an open question 6 years later.
+
+User said "го" -- ran the toy-test: within SE-constituent peaks only, does the size of the
+enclosing SE (continuous) correlate with Gnocchi/R-loop/G4 (endpoints already computed
+today)? Wrote `scripts/se_continuous_rank_dichotomization_check.py`, reusing every loader
+from today's prior 3 experiments; new code was `find_enclosing_se` + a from-scratch
+Spearman correlation + permutation test (optimized to rank-once/permute-ranks after
+recognizing the naive re-rank-every-permutation version would be ~10-20x too slow at
+n~6000 x 10,000 perms).
+
+**Result: REJECT-with-signal.** Max |rho|=0.163, below the pre-registered MCID (0.2) --
+technically fails. But 3/5 correlations (K562 R-loop, K562 G4, HepG2 G4) show a real,
+permutation-floor-significant, directionally consistent NEGATIVE relationship (bigger SE
+= less R-loop/G4 overlap) that no binary test could have detected in principle. Ran a
+confound check before writing up (SE-length vs constituent-peak-length, the
+`overlap_fraction` denominator) -- it argues against a denominator-dilution artifact, not
+for one. Gnocchi shows no gradient either way -- dichotomization explains R-loop/G4's small
+residual signal, not the full 5-REJECT pattern.
+
+Caught and fixed a flaky test fixture (a "looks random" 6-point permutation happened to
+have rho=0.667, failing an `abs(rho)<0.6` assertion by chance) -- replaced with a
+brute-force-verified rho=0.0 permutation instead of a hand-picked "looks uncorrelated"
+one. All 72 tests across 6 test files pass.
+
 ## Auto-commit log
+- [2026-07-15 17:14] `8b7f21e`: feat: exp_se_continuous_rank_dichotomization_check -- REJECT-with-signal, tests the dichotomization hypothesis three independent skills converged on
+- [2026-07-15 16:15] `3506fd6`: docs: auto-log sync
 - [2026-07-15 16:14] `5a51aee`: docs: activeContext narrative for G4 direction (5th convergent REJECT)
 - [2026-07-15 16:08] `797170a`: feat: exp_g4_se_vs_typical_enhancer -- REJECT, 5th convergent null on SE-vs-typical direction
 - [2026-07-10 17:54] `7bd1f9a`: docs: auto-log sync 2
