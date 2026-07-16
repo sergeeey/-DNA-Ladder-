@@ -1,0 +1,408 @@
+{
+  "status": "P7_TARGET_GENE_COMPLETE",
+  "label": "P7_RANKED_EXPLORATORY",
+  "created_utc": "2026-07-16T10:21:42.369937+00:00",
+  "claim": "P7_TARGET_GENE_CLAIM_v1.md",
+  "locked": {
+    "C1": "chr11:62753923",
+    "E": "chr11:62390000-62395000",
+    "P": "chr11:62690000-62695000",
+    "query": "chr11:62350000-62860000"
+  },
+  "inputs": {
+    "ensembl_genes_raw": 69,
+    "unique_symbols": 68,
+    "hudep2_ctcf_intervals_in_window": 21,
+    "k562_atac_intervals_in_window": 88,
+    "hudep2_rna": "UNAVAILABLE"
+  },
+  "tss_inside_locked_P_count": 0,
+  "p_redefinition": "FORBIDDEN",
+  "provisional_top": "HNRNPUL2-BSCL2",
+  "ranked": [
+    {
+      "gene": "HNRNPUL2-BSCL2",
+      "ensembl_id": "ENSG00000234857",
+      "biotype": "protein_coding",
+      "strand": -1,
+      "start": 62690275,
+      "end": 62727384,
+      "score": 6,
+      "body_overlaps_P": true,
+      "body_overlaps_E": false,
+      "tss_in_P": false,
+      "geometry": {
+        "tss": 62727384,
+        "dist_tss_to_C1": 26539,
+        "dist_tss_to_P_mid": 34884,
+        "dist_tss_to_E_mid": 334884
+      },
+      "evidence_for": [
+        "gene_body_overlaps_locked_P",
+        "TSS_within_50kb_of_C1 (26539bp)",
+        "K562_ATAC_within_2kb_of_TSS_PROXY"
+      ],
+      "evidence_against": [
+        "TSS_not_inside_locked_P",
+        "no_HUDEP2_CTCF_within_5kb_of_TSS"
+      ],
+      "uncertainty": [
+        "HUDEP-2_RNA_UNAVAILABLE",
+        "ATAC_is_K562_not_HUDEP2"
+      ]
+    },
+    {
+      "gene": "BSCL2",
+      "ensembl_id": "ENSG00000168000",
+      "biotype": "protein_coding",
+      "strand": -1,
+      "start": 62689289,
+      "end": 62709861,
+      "score": 5,
+      "body_overlaps_P": true,
+      "body_overlaps_E": false,
+      "tss_in_P": false,
+      "geometry": {
+        "tss": 62709861,
+        "dist_tss_to_C1": 44062,
+        "dist_tss_to_P_mid": 17361,
+        "dist_tss_to_E_mid": 317361
+      },
+      "evidence_for": [
+        "gene_body_overlaps_locked_P",
+        "TSS_within_50kb_of_C1 (44062bp)"
+      ],
+      "evidence_against": [
+        "TSS_not_inside_locked_P",
+        "no_HUDEP2_CTCF_within_5kb_of_TSS"
+      ],
+      "uncertainty": [
+        "HUDEP-2_RNA_UNAVAILABLE"
+      ]
+    },
+    {
+      "gene": "TAF6L",
+      "ensembl_id": "ENSG00000162227",
+      "biotype": "protein_coding",
+      "strand": 1,
+      "start": 62771307,
+      "end": 62787342,
+      "score": 4,
+      "body_overlaps_P": false,
+      "body_overlaps_E": false,
+      "tss_in_P": false,
+      "geometry": {
+        "tss": 62771307,
+        "dist_tss_to_C1": 17384,
+        "dist_tss_to_P_mid": 78807,
+        "dist_tss_to_E_mid": 378807
+      },
+      "evidence_for": [
+        "TSS_within_50kb_of_C1 (17384bp)",
+        "HUDEP2_CTCF_within_5kb_of_TSS",
+        "K562_ATAC_within_2kb_of_TSS_PROXY"
+      ],
+      "evidence_against": [
+        "TSS_not_inside_locked_P"
+      ],
+      "uncertainty": [
+        "HUDEP-2_RNA_UNAVAILABLE",
+        "ATAC_is_K562_not_HUDEP2"
+      ]
+    },
+    {
+      "gene": "ENSG00000267811",
+      "ensembl_id": "ENSG00000267811",
+      "biotype": "lncRNA",
+      "strand": -1,
+      "start": 62769946,
+      "end": 62771606,
+      "score": 4,
+      "body_overlaps_P": false,
+      "body_overlaps_E": false,
+      "tss_in_P": false,
+      "geometry": {
+        "tss": 62771606,
+        "dist_tss_to_C1": 17683,
+        "dist_tss_to_P_mid": 79106,
+        "dist_tss_to_E_mid": 379106
+      },
+      "evidence_for": [
+        "TSS_within_50kb_of_C1 (17683bp)",
+        "HUDEP2_CTCF_within_5kb_of_TSS",
+        "K562_ATAC_within_2kb_of_TSS_PROXY"
+      ],
+      "evidence_against": [
+        "TSS_not_inside_locked_P"
+      ],
+      "uncertainty": [
+        "HUDEP-2_RNA_UNAVAILABLE",
+        "ATAC_is_K562_not_HUDEP2",
+        "biotype_lncRNA"
+      ]
+    },
+    {
+      "gene": "ENSG00000269176",
+      "ensembl_id": "ENSG00000269176",
+      "biotype": "lncRNA",
+      "strand": -1,
+      "start": 62786023,
+      "end": 62786785,
+      "score": 4,
+      "body_overlaps_P": false,
+      "body_overlaps_E": false,
+      "tss_in_P": false,
+      "geometry": {
+        "tss": 62786785,
+        "dist_tss_to_C1": 32862,
+        "dist_tss_to_P_mid": 94285,
+        "dist_tss_to_E_mid": 394285
+      },
+      "evidence_for": [
+        "TSS_within_50kb_of_C1 (32862bp)",
+        "HUDEP2_CTCF_within_5kb_of_TSS",
+        "K562_ATAC_within_2kb_of_TSS_PROXY"
+      ],
+      "evidence_against": [
+        "TSS_not_inside_locked_P"
+      ],
+      "uncertainty": [
+        "HUDEP-2_RNA_UNAVAILABLE",
+        "ATAC_is_K562_not_HUDEP2",
+        "biotype_lncRNA"
+      ]
+    },
+    {
+      "gene": "TMEM179B",
+      "ensembl_id": "ENSG00000185475",
+      "biotype": "protein_coding",
+      "strand": 1,
+      "start": 62787375,
+      "end": 62792166,
+      "score": 4,
+      "body_overlaps_P": false,
+      "body_overlaps_E": false,
+      "tss_in_P": false,
+      "geometry": {
+        "tss": 62787375,
+        "dist_tss_to_C1": 33452,
+        "dist_tss_to_P_mid": 94875,
+        "dist_tss_to_E_mid": 394875
+      },
+      "evidence_for": [
+        "TSS_within_50kb_of_C1 (33452bp)",
+        "HUDEP2_CTCF_within_5kb_of_TSS",
+        "K562_ATAC_within_2kb_of_TSS_PROXY"
+      ],
+      "evidence_against": [
+        "TSS_not_inside_locked_P"
+      ],
+      "uncertainty": [
+        "HUDEP-2_RNA_UNAVAILABLE",
+        "ATAC_is_K562_not_HUDEP2"
+      ]
+    },
+    {
+      "gene": "MIR6748",
+      "ensembl_id": "ENSG00000284535",
+      "biotype": "miRNA",
+      "strand": 1,
+      "start": 62789815,
+      "end": 62789885,
+      "score": 4,
+      "body_overlaps_P": false,
+      "body_overlaps_E": false,
+      "tss_in_P": false,
+      "geometry": {
+        "tss": 62789815,
+        "dist_tss_to_C1": 35892,
+        "dist_tss_to_P_mid": 97315,
+        "dist_tss_to_E_mid": 397315
+      },
+      "evidence_for": [
+        "TSS_within_50kb_of_C1 (35892bp)",
+        "HUDEP2_CTCF_within_5kb_of_TSS",
+        "K562_ATAC_within_2kb_of_TSS_PROXY"
+      ],
+      "evidence_against": [
+        "TSS_not_inside_locked_P"
+      ],
+      "uncertainty": [
+        "HUDEP-2_RNA_UNAVAILABLE",
+        "ATAC_is_K562_not_HUDEP2",
+        "biotype_miRNA"
+      ]
+    },
+    {
+      "gene": "TMEM223",
+      "ensembl_id": "ENSG00000168569",
+      "biotype": "protein_coding",
+      "strand": -1,
+      "start": 62771629,
+      "end": 62792022,
+      "score": 4,
+      "body_overlaps_P": false,
+      "body_overlaps_E": false,
+      "tss_in_P": false,
+      "geometry": {
+        "tss": 62792022,
+        "dist_tss_to_C1": 38099,
+        "dist_tss_to_P_mid": 99522,
+        "dist_tss_to_E_mid": 399522
+      },
+      "evidence_for": [
+        "TSS_within_50kb_of_C1 (38099bp)",
+        "HUDEP2_CTCF_within_5kb_of_TSS",
+        "K562_ATAC_within_2kb_of_TSS_PROXY"
+      ],
+      "evidence_against": [
+        "TSS_not_inside_locked_P"
+      ],
+      "uncertainty": [
+        "HUDEP-2_RNA_UNAVAILABLE",
+        "ATAC_is_K562_not_HUDEP2"
+      ]
+    },
+    {
+      "gene": "ZBTB3",
+      "ensembl_id": "ENSG00000185670",
+      "biotype": "protein_coding",
+      "strand": -1,
+      "start": 62737172,
+      "end": 62758835,
+      "score": 3,
+      "body_overlaps_P": false,
+      "body_overlaps_E": false,
+      "tss_in_P": false,
+      "geometry": {
+        "tss": 62758835,
+        "dist_tss_to_C1": 4912,
+        "dist_tss_to_P_mid": 66335,
+        "dist_tss_to_E_mid": 366335
+      },
+      "evidence_for": [
+        "TSS_within_50kb_of_C1 (4912bp)",
+        "HUDEP2_CTCF_within_5kb_of_TSS"
+      ],
+      "evidence_against": [
+        "TSS_not_inside_locked_P"
+      ],
+      "uncertainty": [
+        "HUDEP-2_RNA_UNAVAILABLE"
+      ]
+    },
+    {
+      "gene": "POLR2G",
+      "ensembl_id": "ENSG00000168002",
+      "biotype": "protein_coding",
+      "strand": 1,
+      "start": 62761453,
+      "end": 62766715,
+      "score": 3,
+      "body_overlaps_P": false,
+      "body_overlaps_E": false,
+      "tss_in_P": false,
+      "geometry": {
+        "tss": 62761453,
+        "dist_tss_to_C1": 7530,
+        "dist_tss_to_P_mid": 68953,
+        "dist_tss_to_E_mid": 368953
+      },
+      "evidence_for": [
+        "TSS_within_50kb_of_C1 (7530bp)",
+        "K562_ATAC_within_2kb_of_TSS_PROXY"
+      ],
+      "evidence_against": [
+        "TSS_not_inside_locked_P",
+        "no_HUDEP2_CTCF_within_5kb_of_TSS"
+      ],
+      "uncertainty": [
+        "HUDEP-2_RNA_UNAVAILABLE",
+        "ATAC_is_K562_not_HUDEP2"
+      ]
+    },
+    {
+      "gene": "TTC9C",
+      "ensembl_id": "ENSG00000162222",
+      "biotype": "protein_coding",
+      "strand": 1,
+      "start": 62727687,
+      "end": 62740293,
+      "score": 3,
+      "body_overlaps_P": false,
+      "body_overlaps_E": false,
+      "tss_in_P": false,
+      "geometry": {
+        "tss": 62727687,
+        "dist_tss_to_C1": 26236,
+        "dist_tss_to_P_mid": 35187,
+        "dist_tss_to_E_mid": 335187
+      },
+      "evidence_for": [
+        "TSS_within_50kb_of_C1 (26236bp)",
+        "K562_ATAC_within_2kb_of_TSS_PROXY"
+      ],
+      "evidence_against": [
+        "TSS_not_inside_locked_P",
+        "no_HUDEP2_CTCF_within_5kb_of_TSS"
+      ],
+      "uncertainty": [
+        "HUDEP-2_RNA_UNAVAILABLE",
+        "ATAC_is_K562_not_HUDEP2"
+      ]
+    },
+    {
+      "gene": "HNRNPUL2",
+      "ensembl_id": "ENSG00000214753",
+      "biotype": "protein_coding",
+      "strand": -1,
+      "start": 62712630,
+      "end": 62727637,
+      "score": 3,
+      "body_overlaps_P": false,
+      "body_overlaps_E": false,
+      "tss_in_P": false,
+      "geometry": {
+        "tss": 62727637,
+        "dist_tss_to_C1": 26286,
+        "dist_tss_to_P_mid": 35137,
+        "dist_tss_to_E_mid": 335137
+      },
+      "evidence_for": [
+        "TSS_within_50kb_of_C1 (26286bp)",
+        "K562_ATAC_within_2kb_of_TSS_PROXY"
+      ],
+      "evidence_against": [
+        "TSS_not_inside_locked_P",
+        "no_HUDEP2_CTCF_within_5kb_of_TSS"
+      ],
+      "uncertainty": [
+        "HUDEP-2_RNA_UNAVAILABLE",
+        "ATAC_is_K562_not_HUDEP2"
+      ]
+    }
+  ],
+  "prior_desk_nominations": {
+    "LRRN4CL": {
+      "score": 3,
+      "rank_hint": 17
+    },
+    "BSCL2": {
+      "score": 5,
+      "rank_hint": 2
+    },
+    "ZBTB3": {
+      "score": 3,
+      "rank_hint": 9
+    },
+    "POLR2G": {
+      "score": 3,
+      "rank_hint": 10
+    },
+    "HNRNPUL2-BSCL2": {
+      "score": 6,
+      "rank_hint": 1
+    }
+  },
+  "forbidden_claim": "C1 regulates <gene>"
+}

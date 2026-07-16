@@ -69,6 +69,8 @@
 - [x] P10 immutable handoff snapshot (SHA-256 catalog + locks)
 - [x] P9 virtual E2E → **P9_GAPS** (0 hard; backbone / Primer-BLAST / Capture soft)
 - [x] P10 rehash after P9
+- [x] P7 target gene ranking → **P7_RANKED_EXPLORATORY** (BSCL2-axis; no TSS in P; RNA absent)
+- [ ] P4 independent model matrix (optional desk)
 - [ ] Genome-wide Primer-BLAST (manual) before any oligo order
 - [ ] Sign wet-lab GO (human) — **BLOCKED**
 - [ ] Unblind holdout — **BLOCKED**

@@ -1,8 +1,8 @@
 {
   "manifest_id": "te_alu_3d_kill_sprint_handoff_v1",
-  "created_at": "2026-07-16T10:17:28.727579+00:00",
+  "created_at": "2026-07-16T10:22:31.532548+00:00",
   "immutable": true,
-  "content_hash": "03be577467b6a2db9869431aaba12da5e6b92843d67d58e28559b65059988418",
+  "content_hash": "0a4f439ee103385b363cfeda269fcaec5fd408ed7772b98b2721ac17d02c15d0",
   "unblind_or_outcome_viewed": false,
   "holdout": "SEALED",
   "wet_lab_go": "NO-GO",
@@ -32,6 +32,7 @@
     "P3_matched_null": "RETAIN_HP_C1_C2_C3_panel_not_weakened",
     "P5_R1": "R1_PASS",
     "P6_PE_OT": "PE_OT_CONDITIONAL_PASS",
+    "P7_target_gene": "P7_RANKED_EXPLORATORY",
     "P8_power": "reporter P8_ADEQUATE (n_tx=6); Capture-C P8_UNDERPOWERED",
     "P9_virtual_e2e": "P9_GAPS",
     "P10_immutable": "locked"
@@ -44,13 +45,13 @@
   "files": [
     {
       "path": "09_outputs/prospective/KILL_SPRINT_RESULTS_v1.md",
-      "sha256": "3b576f515f70b21ed71c6386995fc8e8d79040a0f5f5213e359950b3f0eb656f",
-      "bytes": 9095
+      "sha256": "4966e3e7d5e0e3efc62e9f05c11e5f0fe3e2df0df6d6160e6ebe3b2d40aae908",
+      "bytes": 10001
     },
     {
       "path": "09_outputs/prospective/PAUSE_PIN_2026-07-14.md",
-      "sha256": "3776ed162013a4ff0412a136d0ef922d142231d5be4b12cc4e2dd2f43affddd2",
-      "bytes": 1251
+      "sha256": "e1e5618a2f96937287e3ceef070f7e58b2dc413cfd4f3626d506e2e5a8f25ea9",
+      "bytes": 1396
     },
     {
       "path": "09_outputs/prospective/SCALE_PROTOCOL_prospective_panel_v1.md",
@@ -163,6 +164,21 @@
       "bytes": 66428
     },
     {
+      "path": "09_outputs/prospective/P7_TARGET_GENE_CLAIM_v1.md",
+      "sha256": "2cce867a4c5cceb27c5fe85d2afb4285f6230fe8f8ec9d930c9901887cc7c471",
+      "bytes": 2623
+    },
+    {
+      "path": "09_outputs/prospective/P7_target_gene_ranking_v1.md",
+      "sha256": "124cdec31b6d65d72cf5f932dd84993b95832735211402d6f2b978b5afeecbe9",
+      "bytes": 2329
+    },
+    {
+      "path": "09_outputs/prospective/P7_target_gene_ranking_v1.json",
+      "sha256": "5489610c62615133b4d0192aebc8744c393c92e7eb4dadb4d9745f13eb2e3fce",
+      "bytes": 10775
+    },
+    {
       "path": "09_outputs/prospective/P9_VIRTUAL_E2E_CLAIM_v1.md",
       "sha256": "e1e1b9f946744ae8ebc63c02ca1df643b879af51623c0e4f5179241f2e08ee04",
       "bytes": 1623
@@ -201,6 +217,11 @@
       "path": "pilot_scaffold/scripts/run_p6_pe_ot_primer_desk.py",
       "sha256": "b242a9ddec662dd370faffba5a2aa70c218127e6097e5cf4f88dde49f85cf51b",
       "bytes": 18679
+    },
+    {
+      "path": "pilot_scaffold/scripts/run_p7_target_gene_ranking.py",
+      "sha256": "a6e10703b54b7a6b970ac680b876c57f4f8b5a1755976062e1afdb47465a29e8",
+      "bytes": 11949
     },
     {
       "path": "pilot_scaffold/scripts/run_p8_power_simulation.py",
