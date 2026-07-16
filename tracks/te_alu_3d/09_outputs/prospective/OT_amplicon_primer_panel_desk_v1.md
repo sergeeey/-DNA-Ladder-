@@ -56,12 +56,13 @@ Do **not** claim C1 regulates LRRN4CL/BSCL2 until HUDEP-2 RNA / TSS-seq nominate
 
 ## Pre-order gate (A1)
 
-- [ ] Primer-BLAST all five pairs  
-- [ ] Redesign OT2 if polyA causes failure  
-- [ ] Phase A1 GO signed  
-- [ ] Include Illumina tails / indices per core SOP (not in this desk file)  
+- [x] UCSC in-silico PCR desk batch — `PRIMER_ISPCR_desk_v1.md` (**OT2 FAIL → redesign**)
+- [ ] NCBI Primer-BLAST human confirm (optional/SOP) for OT0/1/3/4
+- [ ] Redesign OT2 (Alu-like F primer / polyA amp — isPCR 0 products)
+- [ ] Phase A1 GO signed
+- [ ] Include Illumina tails / indices per core SOP (not in this desk file)
 
-**If unchecked → no oligo PO.**
+**If OT2 unchecked redesign → no oligo PO for full OT panel.**
 
 ---
 
