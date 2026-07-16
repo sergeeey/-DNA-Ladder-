@@ -1,8 +1,8 @@
 {
   "manifest_id": "te_alu_3d_kill_sprint_handoff_v1",
-  "created_at": "2026-07-16T10:22:31.532548+00:00",
+  "created_at": "2026-07-16T10:25:47.357619+00:00",
   "immutable": true,
-  "content_hash": "0a4f439ee103385b363cfeda269fcaec5fd408ed7772b98b2721ac17d02c15d0",
+  "content_hash": "0bfe50d5c89120338d8335617a7089ef5a61d6f8c61ba92dd2f9fa0eb18493da",
   "unblind_or_outcome_viewed": false,
   "holdout": "SEALED",
   "wet_lab_go": "NO-GO",
@@ -32,6 +32,7 @@
     "P3_matched_null": "RETAIN_HP_C1_C2_C3_panel_not_weakened",
     "P5_R1": "R1_PASS",
     "P6_PE_OT": "PE_OT_CONDITIONAL_PASS",
+    "P4_model_matrix": "P4_MATRIX_COMPLETE",
     "P7_target_gene": "P7_RANKED_EXPLORATORY",
     "P8_power": "reporter P8_ADEQUATE (n_tx=6); Capture-C P8_UNDERPOWERED",
     "P9_virtual_e2e": "P9_GAPS",
@@ -45,13 +46,13 @@
   "files": [
     {
       "path": "09_outputs/prospective/KILL_SPRINT_RESULTS_v1.md",
-      "sha256": "4966e3e7d5e0e3efc62e9f05c11e5f0fe3e2df0df6d6160e6ebe3b2d40aae908",
-      "bytes": 10001
+      "sha256": "ba1d0cf3b6f33e82f99b60d72c2dfc30ff341f21378cd547dee22e852849ddc5",
+      "bytes": 10764
     },
     {
       "path": "09_outputs/prospective/PAUSE_PIN_2026-07-14.md",
-      "sha256": "e1e5618a2f96937287e3ceef070f7e58b2dc413cfd4f3626d506e2e5a8f25ea9",
-      "bytes": 1396
+      "sha256": "fea012e7388f7fb5a5f65b51e680aaffcc858c15a21f5f3c262c83ff4c591fdd",
+      "bytes": 1485
     },
     {
       "path": "09_outputs/prospective/SCALE_PROTOCOL_prospective_panel_v1.md",
@@ -179,6 +180,26 @@
       "bytes": 10775
     },
     {
+      "path": "09_outputs/prospective/P4_INDEPENDENT_MODEL_CLAIM_v1.md",
+      "sha256": "e47c96dfa23ab31ebff5f3e2fbceb30f1d9e209a4ea619a13cf25995451c6537",
+      "bytes": 2175
+    },
+    {
+      "path": "09_outputs/prospective/P4_independent_model_matrix_v1.md",
+      "sha256": "637ea758e8e26588f8ddb26d8064cd7f74856b30afe05cad25ed01abba432074",
+      "bytes": 3148
+    },
+    {
+      "path": "09_outputs/prospective/P4_independent_model_matrix_v1.json",
+      "sha256": "b6c8ee8136eda553ae4968dcbb99c3615c28b97b43d8c0f4f7f31bcbe5941f4d",
+      "bytes": 13806
+    },
+    {
+      "path": "09_outputs/prospective/P4_G2b_independence_notes_v1.md",
+      "sha256": "6e0580d3cc73476382136c7bfa0f297a13877c35a248573014880768b156160e",
+      "bytes": 920
+    },
+    {
       "path": "09_outputs/prospective/P9_VIRTUAL_E2E_CLAIM_v1.md",
       "sha256": "e1e1b9f946744ae8ebc63c02ca1df643b879af51623c0e4f5179241f2e08ee04",
       "bytes": 1623
@@ -222,6 +243,11 @@
       "path": "pilot_scaffold/scripts/run_p7_target_gene_ranking.py",
       "sha256": "a6e10703b54b7a6b970ac680b876c57f4f8b5a1755976062e1afdb47465a29e8",
       "bytes": 11949
+    },
+    {
+      "path": "pilot_scaffold/scripts/run_p4_independent_model_matrix.py",
+      "sha256": "9922787bff161b35504d06f5c3ebd67663a73befe4d73f61f52db778098ab117",
+      "bytes": 10810
     },
     {
       "path": "pilot_scaffold/scripts/run_p8_power_simulation.py",

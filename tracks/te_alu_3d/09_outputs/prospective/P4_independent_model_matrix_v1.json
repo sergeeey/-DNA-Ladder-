@@ -1,0 +1,390 @@
+{
+  "status": "P4_INDEPENDENT_MODEL_COMPLETE",
+  "label": "P4_MATRIX_COMPLETE",
+  "created_utc": "2026-07-16T10:24:50.345319+00:00",
+  "claim": "P4_INDEPENDENT_MODEL_CLAIM_v1.md",
+  "thresholds": {
+    "motif_high": 0.5,
+    "motif_low": 0.2,
+    "activity_high": 0.2,
+    "activity_low": 0.12,
+    "ag_contact_high": 0.002
+  },
+  "independence_notes": {
+    "AlphaGenome_CHIP_TF_vs_contact": "SAME_MODEL_FAMILY — not independent lines",
+    "motif_only_vs_distance_only": "SHARED_CTCF_PEAK_LAYER — partially dependent",
+    "ARCHCODE": "NOT_RUN — exploratory prior lean only",
+    "WT_HiC_G4a": "INDEPENDENT_OBSERVATIONAL for C1 E–P only",
+    "panel_note": "Multi-model agreement ≠ wet-lab proof; correlated sequence nets ≠ Arm A gold"
+  },
+  "n_alleles": 12,
+  "class_counts": {
+    "convergence": 5,
+    "principled_disagreement": 3,
+    "unsupported": 2,
+    "negative_consistent": 2
+  },
+  "rows": [
+    {
+      "candidate_id": "C1",
+      "slot_id": "TEMPLATE_DEV_C1",
+      "role": "development_template",
+      "registry_class": "convergence",
+      "variant_id": "chr11:62753923:A:G",
+      "archcode": {
+        "status": "UNAVAILABLE_EXPLORATORY_PRIOR_ONLY",
+        "mechanism_prior_lean": "M3_activity",
+        "note": "Not an independent validation score"
+      },
+      "motif_only": 0.06477221158364088,
+      "pwm_delta_logodds": -4.087462841250339,
+      "distance_only": 1.0,
+      "dist_ctcf": 0,
+      "activity_prediction_ag_chip_tf": 0.5408127170767988,
+      "ag_chip_tf_mae": 0.5408127170767988,
+      "alphagenome_contact_mae": 0.00494472762303693,
+      "ag_contact_mae": 0.00494472762303693,
+      "wt_contact_status": "PASS_DESK_ROBUST",
+      "mechanism_prior": "M3_activity",
+      "flags": {
+        "motif_high": false,
+        "motif_low": true,
+        "activity_high": true,
+        "activity_low": false,
+        "ag_contact_high": true
+      },
+      "p4_class": "convergence"
+    },
+    {
+      "candidate_id": "C2",
+      "slot_id": "ACT_01",
+      "role": "activity_m3",
+      "registry_class": "convergence",
+      "variant_id": "chr11:62753923:A:T",
+      "archcode": {
+        "status": "UNAVAILABLE_EXPLORATORY_PRIOR_ONLY",
+        "mechanism_prior_lean": "M3_activity",
+        "note": "Not an independent validation score"
+      },
+      "motif_only": 0.06477221158364088,
+      "pwm_delta_logodds": -4.087462841250339,
+      "distance_only": 1.0,
+      "dist_ctcf": 0,
+      "activity_prediction_ag_chip_tf": 0.2552076161608109,
+      "ag_chip_tf_mae": 0.2552076161608109,
+      "alphagenome_contact_mae": 0.002063538513279387,
+      "ag_contact_mae": 0.002063538513279387,
+      "wt_contact_status": "NOT_MEASURED_FOR_THIS_ALLELE",
+      "mechanism_prior": "M3_activity",
+      "flags": {
+        "motif_high": false,
+        "motif_low": true,
+        "activity_high": true,
+        "activity_low": false,
+        "ag_contact_high": true
+      },
+      "p4_class": "convergence"
+    },
+    {
+      "candidate_id": "C3",
+      "slot_id": "ACT_02",
+      "role": "activity_m3",
+      "registry_class": "convergence",
+      "variant_id": "chr11:72434037:C:T",
+      "archcode": {
+        "status": "UNAVAILABLE_EXPLORATORY_PRIOR_ONLY",
+        "mechanism_prior_lean": "M3_activity",
+        "note": "Not an independent validation score"
+      },
+      "motif_only": 0.8704555768327182,
+      "pwm_delta_logodds": 4.087462841250339,
+      "distance_only": 1.0,
+      "dist_ctcf": 0,
+      "activity_prediction_ag_chip_tf": 0.27137969258248845,
+      "ag_chip_tf_mae": 0.27137969258248845,
+      "alphagenome_contact_mae": 0.0016221310278134687,
+      "ag_contact_mae": 0.0016221310278134687,
+      "wt_contact_status": "NOT_MEASURED_FOR_THIS_ALLELE",
+      "mechanism_prior": "M3_activity",
+      "flags": {
+        "motif_high": true,
+        "motif_low": false,
+        "activity_high": true,
+        "activity_low": false,
+        "ag_contact_high": false
+      },
+      "p4_class": "convergence"
+    },
+    {
+      "candidate_id": "C3b",
+      "slot_id": "ACT_03",
+      "role": "activity_m3",
+      "registry_class": "convergence",
+      "variant_id": "chr11:72434037:C:A",
+      "archcode": {
+        "status": "UNAVAILABLE_EXPLORATORY_PRIOR_ONLY",
+        "mechanism_prior_lean": "M3_activity",
+        "note": "Not an independent validation score"
+      },
+      "motif_only": 0.8704555768327182,
+      "pwm_delta_logodds": 4.087462841250339,
+      "distance_only": 1.0,
+      "dist_ctcf": 0,
+      "activity_prediction_ag_chip_tf": 0.24159636229147644,
+      "ag_chip_tf_mae": 0.24159636229147644,
+      "alphagenome_contact_mae": 0.0015270736933286702,
+      "ag_contact_mae": 0.0015270736933286702,
+      "wt_contact_status": "NOT_MEASURED_FOR_THIS_ALLELE",
+      "mechanism_prior": "M3_activity",
+      "flags": {
+        "motif_high": true,
+        "motif_low": false,
+        "activity_high": true,
+        "activity_low": false,
+        "ag_contact_high": false
+      },
+      "p4_class": "convergence"
+    },
+    {
+      "candidate_id": "A114",
+      "slot_id": "ACT_04",
+      "role": "activity_m3",
+      "registry_class": "convergence",
+      "variant_id": "chr11:114036577:G:C",
+      "archcode": {
+        "status": "UNAVAILABLE_EXPLORATORY_PRIOR_ONLY",
+        "mechanism_prior_lean": "M3_activity",
+        "note": "Not an independent validation score"
+      },
+      "motif_only": 0.8704555768327185,
+      "pwm_delta_logodds": 4.087462841250343,
+      "distance_only": 1.0,
+      "dist_ctcf": 0,
+      "activity_prediction_ag_chip_tf": 0.16610442228205202,
+      "ag_chip_tf_mae": 0.16610442228205202,
+      "alphagenome_contact_mae": 0.0015654870575027807,
+      "ag_contact_mae": 0.0015654870575027807,
+      "wt_contact_status": "NOT_MEASURED_FOR_THIS_ALLELE",
+      "mechanism_prior": "M3_activity",
+      "flags": {
+        "motif_high": true,
+        "motif_low": false,
+        "activity_high": false,
+        "activity_low": false,
+        "ag_contact_high": false
+      },
+      "p4_class": "principled_disagreement"
+    },
+    {
+      "candidate_id": "A754",
+      "slot_id": "ARCH_01",
+      "role": "architecture_m1",
+      "registry_class": "architecture_prior",
+      "variant_id": "chr11:75445532:G:A",
+      "archcode": {
+        "status": "UNAVAILABLE_EXPLORATORY_PRIOR_ONLY",
+        "mechanism_prior_lean": "M1_motif_lean",
+        "note": "Not an independent validation score"
+      },
+      "motif_only": 0.8704555768327186,
+      "pwm_delta_logodds": 4.087462841250344,
+      "distance_only": 1.0,
+      "dist_ctcf": 0,
+      "activity_prediction_ag_chip_tf": 0.13502105519442772,
+      "ag_chip_tf_mae": 0.13502105519442772,
+      "alphagenome_contact_mae": 0.0017045619232313974,
+      "ag_contact_mae": 0.0017045619232313974,
+      "wt_contact_status": "NOT_MEASURED_FOR_THIS_ALLELE",
+      "mechanism_prior": "M1_motif_lean",
+      "flags": {
+        "motif_high": true,
+        "motif_low": false,
+        "activity_high": false,
+        "activity_low": false,
+        "ag_contact_high": false
+      },
+      "p4_class": "principled_disagreement"
+    },
+    {
+      "candidate_id": "A518",
+      "slot_id": "ARCH_02",
+      "role": "architecture_m1",
+      "registry_class": "architecture_prior",
+      "variant_id": "chr11:518575:C:A",
+      "archcode": {
+        "status": "UNAVAILABLE_EXPLORATORY_PRIOR_ONLY",
+        "mechanism_prior_lean": "M1_motif_lean",
+        "note": "Not an independent validation score"
+      },
+      "motif_only": 0.8704555768327185,
+      "pwm_delta_logodds": 4.087462841250343,
+      "distance_only": 0.5,
+      "dist_ctcf": 1,
+      "activity_prediction_ag_chip_tf": 0.21470037683264,
+      "ag_chip_tf_mae": 0.21470037683264,
+      "alphagenome_contact_mae": 0.00183345317574484,
+      "ag_contact_mae": 0.00183345317574484,
+      "wt_contact_status": "NOT_MEASURED_FOR_THIS_ALLELE",
+      "mechanism_prior": "M1_motif_lean",
+      "flags": {
+        "motif_high": true,
+        "motif_low": false,
+        "activity_high": true,
+        "activity_low": false,
+        "ag_contact_high": false
+      },
+      "p4_class": "convergence"
+    },
+    {
+      "candidate_id": "A119",
+      "slot_id": "ARCH_03",
+      "role": "architecture_m1",
+      "registry_class": "architecture_prior",
+      "variant_id": "chr11:119030718:C:T",
+      "archcode": {
+        "status": "UNAVAILABLE_EXPLORATORY_PRIOR_ONLY",
+        "mechanism_prior_lean": "M1_motif_lean",
+        "note": "Not an independent validation score"
+      },
+      "motif_only": 0.06477221158364076,
+      "pwm_delta_logodds": -4.087462841250343,
+      "distance_only": 0.5,
+      "dist_ctcf": 1,
+      "activity_prediction_ag_chip_tf": 0.1452748375906204,
+      "ag_chip_tf_mae": 0.1452748375906204,
+      "alphagenome_contact_mae": 0.0011890178014125144,
+      "ag_contact_mae": 0.0011890178014125144,
+      "wt_contact_status": "NOT_MEASURED_FOR_THIS_ALLELE",
+      "mechanism_prior": "M1_motif_lean",
+      "flags": {
+        "motif_high": false,
+        "motif_low": true,
+        "activity_high": false,
+        "activity_low": false,
+        "ag_contact_high": false
+      },
+      "p4_class": "unsupported"
+    },
+    {
+      "candidate_id": "A754b",
+      "slot_id": "ARCH_04",
+      "role": "architecture_m1",
+      "registry_class": "architecture_prior",
+      "variant_id": "chr11:75445269:C:T",
+      "archcode": {
+        "status": "UNAVAILABLE_EXPLORATORY_PRIOR_ONLY",
+        "mechanism_prior_lean": "M1_motif_lean",
+        "note": "Not an independent validation score"
+      },
+      "motif_only": 0.06477221158364076,
+      "pwm_delta_logodds": -4.087462841250343,
+      "distance_only": 1.0,
+      "dist_ctcf": 0,
+      "activity_prediction_ag_chip_tf": 0.11332023681942592,
+      "ag_chip_tf_mae": 0.11332023681942592,
+      "alphagenome_contact_mae": 0.0012837631095732962,
+      "ag_contact_mae": 0.0012837631095732962,
+      "wt_contact_status": "NOT_MEASURED_FOR_THIS_ALLELE",
+      "mechanism_prior": "M1_motif_lean",
+      "flags": {
+        "motif_high": false,
+        "motif_low": true,
+        "activity_high": false,
+        "activity_low": true,
+        "ag_contact_high": false
+      },
+      "p4_class": "unsupported"
+    },
+    {
+      "candidate_id": "N3",
+      "slot_id": "NEG_01",
+      "role": "matched_negative",
+      "registry_class": "matched_negative_candidate",
+      "variant_id": "chr11:108009167:T:C",
+      "archcode": {
+        "status": "UNAVAILABLE_EXPLORATORY_PRIOR_ONLY",
+        "mechanism_prior_lean": "M0_neutral_lean",
+        "note": "Not an independent validation score"
+      },
+      "motif_only": 0.06477221158364088,
+      "pwm_delta_logodds": -4.087462841250339,
+      "distance_only": 1.0,
+      "dist_ctcf": 0,
+      "activity_prediction_ag_chip_tf": 0.10911584829355216,
+      "ag_chip_tf_mae": 0.10911584829355216,
+      "alphagenome_contact_mae": 0.0009642947864319597,
+      "ag_contact_mae": 0.0009642947864319597,
+      "wt_contact_status": "NOT_MEASURED_FOR_THIS_ALLELE",
+      "mechanism_prior": "M0_neutral_lean",
+      "flags": {
+        "motif_high": false,
+        "motif_low": true,
+        "activity_high": false,
+        "activity_low": true,
+        "ag_contact_high": false
+      },
+      "p4_class": "negative_consistent"
+    },
+    {
+      "candidate_id": "N3b",
+      "slot_id": "NEG_02",
+      "role": "matched_negative",
+      "registry_class": "matched_negative_candidate",
+      "variant_id": "chr11:108009167:T:A",
+      "archcode": {
+        "status": "UNAVAILABLE_EXPLORATORY_PRIOR_ONLY",
+        "mechanism_prior_lean": "M3_activity",
+        "note": "Not an independent validation score"
+      },
+      "motif_only": 0.06477221158364088,
+      "pwm_delta_logodds": -4.087462841250339,
+      "distance_only": 1.0,
+      "dist_ctcf": 0,
+      "activity_prediction_ag_chip_tf": 0.16568255498222015,
+      "ag_chip_tf_mae": 0.16568255498222015,
+      "alphagenome_contact_mae": 0.0009619002895695823,
+      "ag_contact_mae": 0.0009619002895695823,
+      "wt_contact_status": "NOT_MEASURED_FOR_THIS_ALLELE",
+      "mechanism_prior": "M3_activity",
+      "flags": {
+        "motif_high": false,
+        "motif_low": true,
+        "activity_high": false,
+        "activity_low": false,
+        "ag_contact_high": false
+      },
+      "p4_class": "negative_consistent"
+    },
+    {
+      "candidate_id": "W1",
+      "slot_id": "DIS_01",
+      "role": "principled_disagreement",
+      "registry_class": "principled_disagreement",
+      "variant_id": "chr11:57568168:C:T",
+      "archcode": {
+        "status": "UNAVAILABLE_EXPLORATORY_PRIOR_ONLY",
+        "mechanism_prior_lean": "M1_motif_lean",
+        "note": "Not an independent validation score"
+      },
+      "motif_only": 0.8704555768327183,
+      "pwm_delta_logodds": 4.087462841250341,
+      "distance_only": 1.0,
+      "dist_ctcf": 0,
+      "activity_prediction_ag_chip_tf": 0.12971634826471426,
+      "ag_chip_tf_mae": 0.12971634826471426,
+      "alphagenome_contact_mae": 0.0011541253687547787,
+      "ag_contact_mae": 0.0011541253687547787,
+      "wt_contact_status": "NOT_MEASURED_FOR_THIS_ALLELE",
+      "mechanism_prior": "M1_motif_lean",
+      "flags": {
+        "motif_high": true,
+        "motif_low": false,
+        "activity_high": false,
+        "activity_low": false,
+        "ag_contact_high": false
+      },
+      "p4_class": "principled_disagreement"
+    }
+  ],
+  "peaks_path_used_for_dist_field": "pilot_scaffold\\data\\ctcf_HUDEP2_peaks.bed"
+}

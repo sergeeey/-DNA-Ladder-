@@ -1,8 +1,8 @@
 # P10 — Immutable handoff snapshot v1
 
-**Created:** 2026-07-16T10:22:31.532548+00:00
+**Created:** 2026-07-16T10:25:47.357619+00:00
 **immutable:** `true`
-**content_hash:** `0a4f439ee103385b363cfeda269fcaec5fd408ed7772b98b2721ac17d02c15d0`
+**content_hash:** `0bfe50d5c89120338d8335617a7089ef5a61d6f8c61ba92dd2f9fa0eb18493da`
 
 ## Locks
 
@@ -32,17 +32,18 @@
 - **P3_matched_null:** `RETAIN_HP_C1_C2_C3_panel_not_weakened`
 - **P5_R1:** `R1_PASS`
 - **P6_PE_OT:** `PE_OT_CONDITIONAL_PASS`
+- **P4_model_matrix:** `P4_MATRIX_COMPLETE`
 - **P7_target_gene:** `P7_RANKED_EXPLORATORY`
 - **P8_power:** `reporter P8_ADEQUATE (n_tx=6); Capture-C P8_UNDERPOWERED`
 - **P9_virtual_e2e:** `P9_GAPS`
 - **P10_immutable:** `locked`
 
-## Hashed files (39)
+## Hashed files (44)
 
 | path | sha256 | bytes |
 |------|--------|------:|
-| `09_outputs/prospective/KILL_SPRINT_RESULTS_v1.md` | `4966e3e7d5e0e3ef…` | 10001 |
-| `09_outputs/prospective/PAUSE_PIN_2026-07-14.md` | `e1e5618a2f969372…` | 1396 |
+| `09_outputs/prospective/KILL_SPRINT_RESULTS_v1.md` | `ba1d0cf3b6f33e82…` | 10764 |
+| `09_outputs/prospective/PAUSE_PIN_2026-07-14.md` | `fea012e7388f7fb5…` | 1485 |
 | `09_outputs/prospective/SCALE_PROTOCOL_prospective_panel_v1.md` | `cf3a6f34b3d9f420…` | 11257 |
 | `09_outputs/prospective/prospective_panel_registry_v1.yaml` | `92149bd3ceb6d030…` | 4922 |
 | `09_outputs/prospective/STAGE1_RESULTS_2026-07-15.md` | `3620d660df7a70aa…` | 4816 |
@@ -68,6 +69,10 @@
 | `09_outputs/prospective/P7_TARGET_GENE_CLAIM_v1.md` | `2cce867a4c5cceb2…` | 2623 |
 | `09_outputs/prospective/P7_target_gene_ranking_v1.md` | `124cdec31b6d65d7…` | 2329 |
 | `09_outputs/prospective/P7_target_gene_ranking_v1.json` | `5489610c62615133…` | 10775 |
+| `09_outputs/prospective/P4_INDEPENDENT_MODEL_CLAIM_v1.md` | `e47c96dfa23ab31e…` | 2175 |
+| `09_outputs/prospective/P4_independent_model_matrix_v1.md` | `637ea758e8e26588…` | 3148 |
+| `09_outputs/prospective/P4_independent_model_matrix_v1.json` | `b6c8ee8136eda553…` | 13806 |
+| `09_outputs/prospective/P4_G2b_independence_notes_v1.md` | `6e0580d3cc734763…` | 920 |
 | `09_outputs/prospective/P9_VIRTUAL_E2E_CLAIM_v1.md` | `e1e1b9f946744ae8…` | 1623 |
 | `09_outputs/prospective/P9_virtual_e2e_v1.md` | `01c2aaa09842ad38…` | 1571 |
 | `09_outputs/prospective/P9_virtual_e2e_v1.json` | `e7924d272c1f5475…` | 3707 |
@@ -77,6 +82,7 @@
 | `pilot_scaffold/scripts/run_p5_r1_window_length_ag.py` | `8c63cafec95b0c77…` | 9098 |
 | `pilot_scaffold/scripts/run_p6_pe_ot_primer_desk.py` | `b242a9ddec662dd3…` | 18679 |
 | `pilot_scaffold/scripts/run_p7_target_gene_ranking.py` | `a6e10703b54b7a6b…` | 11949 |
+| `pilot_scaffold/scripts/run_p4_independent_model_matrix.py` | `9922787bff161b35…` | 10810 |
 | `pilot_scaffold/scripts/run_p8_power_simulation.py` | `d5ff062ad0846905…` | 9093 |
 | `pilot_scaffold/scripts/run_p9_virtual_e2e.py` | `966299d330b1d83a…` | 9642 |
 | `pilot_scaffold/scripts/run_c1_satmut_ag_expand_v2.py` | `d51fc3bfef3fdc30…` | 9455 |

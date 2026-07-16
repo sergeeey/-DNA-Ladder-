@@ -13,7 +13,7 @@
 | **1** | G4a multi-sample Contact(E,P) | **DONE** | **`PASS_DESK_ROBUST`** — kills none |
 | **2** | C1 301 bp saturation mutagenesis | **DONE** (v1+v2 expand) | **`ALLELE_LEAN_RETAINED`** — kills none; v2: all 60 A→G + random100 (n=255) |
 | **3** | Matched-null panel ×13 | **DONE** (+expand) | activity **not** weakened; v2 L2 **RETAIN_HP** C1/C2/C3 |
-| **4** | Independent model matrix | PARTIAL (AG already on panel) | continue |
+| **4** | Independent model matrix | **DONE** | **`P4_MATRIX_COMPLETE`** — 5 conv / 3 disagree / 2 unsupported / 2 neg; C1 convergence |
 | **5** | Reporter robustness | **DONE** | **`REPORTER_DESK_OK_TECHNICAL`** + **P5 R1 `R1_PASS`** (AG 16/100/500 kb proxy) |
 | **6** | PE/OT robustness | **DONE** | **`PE_OT_CONDITIONAL_PASS`** — PD1+PD2 viable; RADIL watch; Primer-BLAST still manual |
 | **7** | Target gene ranking | **DONE** | **`P7_RANKED_EXPLORATORY`** — top HNRNPUL2-BSCL2/BSCL2; no TSS in P; RNA absent |
@@ -174,11 +174,30 @@ Reporter power (desk):   P8_ADEQUATE at n_tx=6
 Capture-C power (desk):  P8_UNDERPOWERED (ε≤0.7)
 Virtual E2E:             P9_GAPS (0 hard blocks)
 Target gene (desk):      P7_RANKED_EXPLORATORY (BSCL2-axis; RNA absent)
+Model matrix (desk):     P4_MATRIX_COMPLETE (5/3/2/2; C1 convergence)
 Immutable snapshot:      P10 locked (incl. P9)
 Wet-lab proof:           STILL ABSENT
 Expand to hundreds:      Still DON'T
 Holdout / move E/P:      Still DON'T
 ```
+
+## Priority 4 — Independent model matrix
+
+**Arts:** `P4_INDEPENDENT_MODEL_CLAIM_v1.md`, `P4_independent_model_matrix_v1.md`, `P4_G2b_independence_notes_v1.md`
+
+| Class | n |
+|-------|--:|
+| convergence | 5 (incl. C1 via activity+WT) |
+| principled_disagreement | 3 |
+| unsupported | 2 |
+| negative_consistent | 2 |
+
+ARCHCODE: UNAVAILABLE (exploratory prior only). AG CHIP+contact = same family — not two votes.
+
+### Plain language
+Панель разложена по согласию моделей. C1 — convergence не из‑за motif, а activity+WT Hi-C. Это desk-карта, не лаборатория.
+
+---
 
 ## Priority 7 — Target gene ranking
 
@@ -213,6 +232,6 @@ B0→A1→A2 на desk **сходится**. Редизайн не нужен. �
 
 ---
 
-Desk kill-sprint: C1/panel **not destroyed**; PE **conditional**; Capture **not powered**; E2E **gaps only**; target gene **exploratory only**.  
-Следующий шаг: **P4** independent model matrix · Primer-BLAST manual · или human GO (blocked).
+Desk kill-sprint: C1/panel **not destroyed**; PE **conditional**; Capture **not powered**; E2E **gaps only**; target gene **exploratory**; model matrix **complete**.  
+Следующий шаг: Primer-BLAST manual · или human GO (blocked).
 
