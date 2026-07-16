@@ -1,0 +1,164 @@
+{
+  "status": "OT_FORWARD_REDESIGN_COMPLETE",
+  "created_utc": "2026-07-16T11:51:29.938999+00:00",
+  "label": "OT_F_REDESIGN_PASS",
+  "oligo_order": "FORBIDDEN",
+  "results": {
+    "OT2c": {
+      "replaces": "OT2b",
+      "ot_site": [
+        121534383,
+        121534405
+      ],
+      "chosen": {
+        "fwd": "CTCGAGAGCTGAGGTGGGAA",
+        "rev": "ATCTCTAGCTGTTTGTGTGG",
+        "blat_f": 1,
+        "blat_r": 1,
+        "n_ispcr": 1,
+        "ispcr": [
+          [
+            "chr12",
+            "121533931",
+            "+",
+            "121534465",
+            "535"
+          ]
+        ],
+        "amp_bp": 535,
+        "genomic_start0": 121533930,
+        "genomic_end0": 121534465
+      },
+      "tried_n": 6,
+      "tried_tail": [
+        {
+          "fwd": "GCCCACGCCTACAATCCCAG",
+          "blat_f": 8,
+          "status": "skip_blat_f"
+        },
+        {
+          "fwd": "TCCCAGCACTTTGGAAGACC",
+          "blat_f": 0,
+          "status": "skip_blat_f"
+        },
+        {
+          "fwd": "TCCCAGCACTTTGGAAGACCA",
+          "blat_f": 0,
+          "status": "skip_blat_f"
+        },
+        {
+          "fwd": "TCCCAGCACTTTGGAAGACCAA",
+          "blat_f": 0,
+          "status": "skip_blat_f"
+        },
+        {
+          "fwd": "AGGATCACGTGAGCCCAGGA",
+          "blat_f": 138,
+          "status": "skip_blat_f"
+        },
+        {
+          "fwd": "CTCGAGAGCTGAGGTGGGAA",
+          "rev": "ATCTCTAGCTGTTTGTGTGG",
+          "blat_f": 1,
+          "blat_r": 1,
+          "n_ispcr": 1,
+          "ispcr": [
+            [
+              "chr12",
+              "121533931",
+              "+",
+              "121534465",
+              "535"
+            ]
+          ],
+          "amp_bp": 535,
+          "genomic_start0": 121533930,
+          "genomic_end0": 121534465
+        }
+      ]
+    },
+    "OT3b": {
+      "replaces": "OT3",
+      "ot_site": [
+        92388950,
+        92388972
+      ],
+      "chosen": {
+        "fwd": "TAGCCCACAGAGGGTTAGCC",
+        "rev": "ATTATCGGAGCTTGAACGCG",
+        "blat_f": 1,
+        "blat_r": 1,
+        "n_ispcr": 1,
+        "ispcr": [
+          [
+            "chr1",
+            "92388530",
+            "+",
+            "92389070",
+            "541"
+          ]
+        ],
+        "amp_bp": 541,
+        "genomic_start0": 92388529,
+        "genomic_end0": 92389070
+      },
+      "tried_n": 23,
+      "tried_tail": [
+        {
+          "fwd": "GAACAGCTCCAGTCTACAGC",
+          "blat_f": 1807,
+          "status": "skip_blat_f"
+        },
+        {
+          "fwd": "GAACAGCTCCAGTCTACAGCT",
+          "blat_f": 1804,
+          "status": "skip_blat_f"
+        },
+        {
+          "fwd": "GATGGGTGATTTCTGCATTT",
+          "blat_f": 920,
+          "status": "skip_blat_f"
+        },
+        {
+          "fwd": "GATGGGTGATTTCTGCATTTT",
+          "blat_f": 760,
+          "status": "skip_blat_f"
+        },
+        {
+          "fwd": "GATGGGTGATTTCTGCATTTTC",
+          "blat_f": 104,
+          "status": "skip_blat_f"
+        },
+        {
+          "fwd": "AGTACCTGGTTCGTCTCACTG",
+          "blat_f": 6,
+          "status": "skip_blat_f"
+        },
+        {
+          "fwd": "CTCACTGGGACTGGCTGGAC",
+          "blat_f": 24,
+          "status": "skip_blat_f"
+        },
+        {
+          "fwd": "TAGCCCACAGAGGGTTAGCC",
+          "rev": "ATTATCGGAGCTTGAACGCG",
+          "blat_f": 1,
+          "blat_r": 1,
+          "n_ispcr": 1,
+          "ispcr": [
+            [
+              "chr1",
+              "92388530",
+              "+",
+              "92389070",
+              "541"
+            ]
+          ],
+          "amp_bp": 541,
+          "genomic_start0": 92388529,
+          "genomic_end0": 92389070
+        }
+      ]
+    }
+  }
+}

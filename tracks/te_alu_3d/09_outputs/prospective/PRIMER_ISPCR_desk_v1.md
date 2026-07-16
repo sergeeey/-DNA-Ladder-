@@ -3,7 +3,7 @@
 **Date:** 2026-07-16
 **Status:** `PRIMER_ISPCR_DESK_COMPLETE`
 **Claim:** `PRIMER_ISPCR_CLAIM_v1.md`
-**Label:** **`PRIMER_DESK_GAPS`**
+**Label:** **`PRIMER_DESK_PASS`**
 **Engine:** UCSC hgPcr hg38
 **Oligo order:** FORBIDDEN
 **NCBI Primer-BLAST:** still recommended as human confirm before A1 order
@@ -15,8 +15,10 @@
 | OT0 | C1_on_target | **ISPCR_PASS** | 1 | chr11:62753823-62754058(236bp) | edit_verify |
 | OT1 | RADIL_exon | **ISPCR_PASS** | 1 | chr7:4805443-4805729(287bp) | priority_watch |
 | OT2 | KDM2B_intron_DEPRECATED | **ISPCR_SKIP_DEPRECATED** | None | — | DEPRECATED_Alu_like_ISPCR_NONE |
-| OT2b | KDM2B_intron | **ISPCR_WARN** | 1 | chr12:121534219-121534516(298bp) | redesign_v1_polyA_in_body |
-| OT3 | RPAP2_exon | **ISPCR_PASS** | 1 | chr1:92388850-92389070(221bp) | — |
+| OT2b | KDM2B_intron_DEPRECATED_v1 | **ISPCR_SKIP_DEPRECATED** | None | — | DEPRECATED_F_BLAT_MULTI |
+| OT2c | KDM2B_intron | **ISPCR_PASS** | 1 | chr12:121533931-121534465(535bp) | redesign_v2_blat_unique_F |
+| OT3 | RPAP2_exon_DEPRECATED | **ISPCR_SKIP_DEPRECATED** | None | — | DEPRECATED_F_BLAT_MULTI |
+| OT3b | RPAP2_exon | **ISPCR_PASS** | 1 | chr1:92388530-92389070(541bp) | redesign_v2_blat_unique_F |
 | OT4 | UPF3A_intron | **ISPCR_PASS** | 1 | chr13:114290081-114290322(242bp) | — |
 
 ## Reading

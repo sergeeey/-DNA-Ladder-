@@ -73,9 +73,10 @@
 - [x] P4 independent model matrix → **P4_MATRIX_COMPLETE** (5/3/2/2; C1 convergence)
 - [x] Primer UCSC isPCR desk → **PRIMER_DESK_GAPS** (OT0/1/3/4 PASS; OT2b WARN polyA)
 - [x] OT2 redesign → **OT2b** single-product isPCR (`OT2_KDM2B_primer_redesign_v1.md`)
-- [x] Primer single-seq BLAT desk → **PRIMER_BLAT_DESK_REDESIGN** (OT2b-F / OT3-F multi; pairs isPCR-OK)
-- [ ] Optional: redesign OT2b/OT3 forward for unique singles
-- [ ] Sign wet-lab GO (human) — **BLOCKED**
+- [x] Primer single-seq BLAT desk → was REDESIGN; after F redesign → **PRIMER_BLAT_DESK_PASS**
+- [x] OT forward redesign → **OT2c** + **OT3b** (`OT_F_REDESIGN_PASS`)
+- [x] Re-verify isPCR → **PRIMER_DESK_PASS**
+- [ ] Sign wet-lab GO (human) — **BLOCKED** (recommend B0 only first)
 - [ ] Unblind holdout — **BLOCKED**
 
 ## Blocked

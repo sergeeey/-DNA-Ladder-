@@ -18,14 +18,15 @@ Sites = watchlist from CRISPOR PD1 — **not** proven off-targets.
 
 ## Primer table
 
-| ID | Locus | Amplicon (GRCh38) | bp | Forward (5′→3′) | Rev (5′→3′) | Tm F/R | Flag |
-|----|-------|-------------------|---:|-----------------|-------------|--------|------|
-| OT0 | C1 on-target | chr11:62753823-62754058 | 236 | `TTTCTCCTAGGTCACACCCA` | `TTAGGGAGTTCTCGAAGTGG` | 60/60 | edit verify |
-| OT1 | RADIL exon | chr7:4805443-4805729 | 287 | `AGGTCCCCAGGAGAGAGGT` | `TCTTGTCACCCAGATGAGCT` | 62/60 | priority watch |
-| ~~OT2~~ | KDM2B (old) | — | — | `AGCTTGCAGTGAGCCGAGA` | `GGGAAGGTGAGTTTCAGTTG` | — | **DEPRECATED** Alu-like / isPCR NONE |
-| **OT2b** | KDM2B intron | chr12:121534219-121534516 | 298 | `GGCACTTGTAGTCCCAGCTAC` | `ATGTTTTCCGGGGTGGGAAGG` | ~64/66 | redesign v1; **polyA in body** |
-| OT3 | RPAP2 exon | chr1:92388850-92389070 | 221 | `CGGTTCTATGCTCACAGTGT` | `ATTATCGGAGCTTGAACGCG` | 60/60 | |
-| OT4 | UPF3A intron | chr13:114290091-114290332 | 242 | `TGAGCCAGAGTTCATGGTCA` | `TTGGAACTGAGAACCCCTGA` | 60/60 | |
+| ID | Locus | Amplicon (GRCh38) | bp | Forward (5′→3′) | Rev (5′→3′) | Flag |
+|----|-------|-------------------|---:|-----------------|-------------|------|
+| OT0 | C1 on-target | chr11:62753823-62754058 | 236 | `TTTCTCCTAGGTCACACCCA` | `TTAGGGAGTTCTCGAAGTGG` | edit verify |
+| OT1 | RADIL exon | chr7:4805443-4805729 | 287 | `AGGTCCCCAGGAGAGAGGT` | `TCTTGTCACCCAGATGAGCT` | priority watch |
+| ~~OT2 / OT2b~~ | KDM2B old | — | — | — | — | DEPRECATED |
+| **OT2c** | KDM2B intron | chr12:121533931-121534465 | 535 | `CTCGAGAGCTGAGGTGGGAA` | `ATCTCTAGCTGTTTGTGTGG` | redesign v2; BLAT-unique |
+| ~~OT3~~ | RPAP2 old | — | — | `CGGTTCTATGCTCACAGTGT` | — | DEPRECATED F multi |
+| **OT3b** | RPAP2 exon | chr1:92388530-92389070 | 541 | `TAGCCCACAGAGGGTTAGCC` | `ATTATCGGAGCTTGAACGCG` | redesign v2; BLAT-unique |
+| OT4 | UPF3A intron | chr13:114290091-114290332 | 242 | `TGAGCCAGAGTTCATGGTCA` | `TTGGAACTGAGAACCCCTGA` | |
 
 Coordinates: UCSC 0-based design internally; table shows 1-based inclusive amplicon span.
 
@@ -57,11 +58,11 @@ Do **not** claim C1 regulates LRRN4CL/BSCL2 until HUDEP-2 RNA / TSS-seq nominate
 
 ## Pre-order gate (A1)
 
-- [x] UCSC in-silico PCR desk batch — see `PRIMER_ISPCR_desk_v1.md`
-- [x] OT2 redesigned → **OT2b** (`OT2_KDM2B_primer_redesign_v1.md`) — isPCR 1 product; polyA-in-body WARN
-- [x] Single-primer BLAT desk — `PRIMER_NCBI_BLAST_desk_v1.md` (OT2b-F / OT3-F multi-map disclosure)
+- [x] UCSC isPCR — **PRIMER_DESK_PASS** (`PRIMER_ISPCR_desk_v1.md`) active set OT0/1/2c/3b/4
+- [x] Forward redesign — **OT2c** + **OT3b** (`OT_forward_redesign_v1.md`)
+- [x] Single-primer BLAT — **PRIMER_BLAT_DESK_PASS** (`PRIMER_NCBI_BLAST_desk_v1.md`)
 - [ ] Phase A1 GO signed
-- [ ] Include Illumina tails / indices per core SOP (not in this desk file)
+- [ ] Include Illumina tails / indices per core SOP
 
 **If A1 GO unchecked → no oligo PO.**
 

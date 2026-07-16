@@ -1,7 +1,7 @@
 {
   "status": "PRIMER_ISPCR_DESK_COMPLETE",
-  "label": "PRIMER_DESK_GAPS",
-  "created_utc": "2026-07-16T10:41:10.002126+00:00",
+  "label": "PRIMER_DESK_PASS",
+  "created_utc": "2026-07-16T11:52:09.434320+00:00",
   "claim": "PRIMER_ISPCR_CLAIM_v1.md",
   "engine": "UCSC_hgPcr_hg38",
   "ncbi_primer_blast": "STILL_RECOMMENDED_MANUAL_CONFIRM",
@@ -71,51 +71,79 @@
     },
     {
       "id": "OT2b",
-      "locus": "KDM2B_intron",
+      "locus": "KDM2B_intron_DEPRECATED_v1",
       "expected_chrom": "chr12",
       "expected_start": 121534219,
       "expected_end": 121534516,
       "fwd": "GGCACTTGTAGTCCCAGCTAC",
       "rev": "ATGTTTTCCGGGGTGGGAAGG",
-      "flag": "redesign_v1_polyA_in_body",
+      "flag": "DEPRECATED_F_BLAT_MULTI",
+      "n_products": null,
+      "products": [],
+      "label": "ISPCR_SKIP_DEPRECATED",
+      "error": null
+    },
+    {
+      "id": "OT2c",
+      "locus": "KDM2B_intron",
+      "expected_chrom": "chr12",
+      "expected_start": 121533931,
+      "expected_end": 121534465,
+      "fwd": "CTCGAGAGCTGAGGTGGGAA",
+      "rev": "ATCTCTAGCTGTTTGTGTGG",
+      "flag": "redesign_v2_blat_unique_F",
       "n_products": 1,
       "products": [
         {
           "chrom": "chr12",
-          "start": 121534219,
-          "end": 121534516,
+          "start": 121533931,
+          "end": 121534465,
           "strand": "+",
-          "bp": 298
-        }
-      ],
-      "label": "ISPCR_WARN",
-      "error": null,
-      "manual_primer_blast_url": "https://www.ncbi.nlm.nih.gov/tools/primer-blast/?LINK_LOC=BlastHomeAd",
-      "ucsc_ispcr_hint": "hg38 F=GGCACTTGTAGTCCCAGCTAC R=ATGTTTTCCGGGGTGGGAAGG"
-    },
-    {
-      "id": "OT3",
-      "locus": "RPAP2_exon",
-      "expected_chrom": "chr1",
-      "expected_start": 92388850,
-      "expected_end": 92389070,
-      "fwd": "CGGTTCTATGCTCACAGTGT",
-      "rev": "ATTATCGGAGCTTGAACGCG",
-      "flag": "",
-      "n_products": 1,
-      "products": [
-        {
-          "chrom": "chr1",
-          "start": 92388850,
-          "end": 92389070,
-          "strand": "+",
-          "bp": 221
+          "bp": 535
         }
       ],
       "label": "ISPCR_PASS",
       "error": null,
       "manual_primer_blast_url": "https://www.ncbi.nlm.nih.gov/tools/primer-blast/?LINK_LOC=BlastHomeAd",
-      "ucsc_ispcr_hint": "hg38 F=CGGTTCTATGCTCACAGTGT R=ATTATCGGAGCTTGAACGCG"
+      "ucsc_ispcr_hint": "hg38 F=CTCGAGAGCTGAGGTGGGAA R=ATCTCTAGCTGTTTGTGTGG"
+    },
+    {
+      "id": "OT3",
+      "locus": "RPAP2_exon_DEPRECATED",
+      "expected_chrom": "chr1",
+      "expected_start": 92388850,
+      "expected_end": 92389070,
+      "fwd": "CGGTTCTATGCTCACAGTGT",
+      "rev": "ATTATCGGAGCTTGAACGCG",
+      "flag": "DEPRECATED_F_BLAT_MULTI",
+      "n_products": null,
+      "products": [],
+      "label": "ISPCR_SKIP_DEPRECATED",
+      "error": null
+    },
+    {
+      "id": "OT3b",
+      "locus": "RPAP2_exon",
+      "expected_chrom": "chr1",
+      "expected_start": 92388530,
+      "expected_end": 92389070,
+      "fwd": "TAGCCCACAGAGGGTTAGCC",
+      "rev": "ATTATCGGAGCTTGAACGCG",
+      "flag": "redesign_v2_blat_unique_F",
+      "n_products": 1,
+      "products": [
+        {
+          "chrom": "chr1",
+          "start": 92388530,
+          "end": 92389070,
+          "strand": "+",
+          "bp": 541
+        }
+      ],
+      "label": "ISPCR_PASS",
+      "error": null,
+      "manual_primer_blast_url": "https://www.ncbi.nlm.nih.gov/tools/primer-blast/?LINK_LOC=BlastHomeAd",
+      "ucsc_ispcr_hint": "hg38 F=TAGCCCACAGAGGGTTAGCC R=ATTATCGGAGCTTGAACGCG"
     },
     {
       "id": "OT4",
