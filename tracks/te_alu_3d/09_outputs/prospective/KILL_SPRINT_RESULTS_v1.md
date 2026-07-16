@@ -15,7 +15,7 @@
 | **3** | Matched-null panel ×13 | **DONE** (+expand) | activity **not** weakened; v2 L2 **RETAIN_HP** C1/C2/C3 |
 | **4** | Independent model matrix | PARTIAL (AG already on panel) | continue |
 | **5** | Reporter robustness | **DONE** | **`REPORTER_DESK_OK_TECHNICAL`** + **P5 R1 `R1_PASS`** (AG 16/100/500 kb proxy) |
-| **6** | PE/OT robustness | NOT STARTED | PD1 pack exists |
+| **6** | PE/OT robustness | **DONE** | **`PE_OT_CONDITIONAL_PASS`** — PD1+PD2 viable; RADIL watch; Primer-BLAST still manual |
 | **7** | Target gene ranking | NOT STARTED | — |
 | **8** | Power simulation | NOT STARTED | — |
 | **9** | Virtual end-to-end | NOT STARTED | — |
@@ -102,15 +102,37 @@ Architecture contact endpoint: mostly demotion. Stage-3 / holdout / wet-lab unch
 
 ---
 
+## Priority 6 — PE/OT robustness
+
+**Arts:** `P6_PE_OT_CLAIM_v1.md`, `P6_PE_OT_robustness_v1.md`
+
+| Check | Result |
+|-------|--------|
+| PD1 mm≤2 | **0** (MIT69) |
+| PD2 backup | **viable** (MIT84, mm≤2=0) |
+| ngRNA primary | **prefer** `GTTCTAAGGTTAGGCCGAGG` (mm≤2=0) |
+| ngRNA alt | weaker (mm≤2=1) |
+| Engine2 UCSC OT verify | **4/4** sites match CRISPOR OT seq |
+| RADIL watch | CFD 0.37 (K3 soft) |
+| Primers amp-local | OK (OT2 polyA noted) |
+| Genome Primer-BLAST | still **manual** before order |
+| Verdict | **`PE_OT_CONDITIONAL_PASS`** |
+
+### Plain language
+PE-дизайн не fragile на одном guide: PD2 — нормальный backup. Главный риск — **RADIL** и ручной Primer-BLAST до заказа.
+
+---
+
 ## What NOT done (still recommended next)
 
 1. ~~Expand matched-null universe~~ **DONE** (L2 unlocked; L1 still sparse)  
 2. ~~**P2 full or stratified AG**~~ **DONE** (all A→G + random 100; lean retained)  
 3. ~~**P5 R1** AG length ladder~~ **DONE** (`R1_PASS` on 16/100/500 kb proxy)  
-4. **P6** second OT engine + Primer-BLAST  
+4. ~~**P6** second OT engine + Primer-BLAST~~ **DONE** desk (`PE_OT_CONDITIONAL_PASS`; genomewide Primer-BLAST still manual)  
 5. **P8** power curves for reporter & Capture-C  
 6. **P10** immutable hash-locked analysis release  
-7. Optional: remaining ~648 AG subst if budget allows (not required after v2) 
+7. Optional: remaining ~648 AG subst if budget allows (not required after v2)  
+8. Optional: local Cas-OFFinder when hg38 dump available
 
 ---
 
@@ -121,11 +143,12 @@ G4a single-hic risk:     WEAKENED (multi-sample + VC pass)
 C1 allele-vs-window:     NOT KILLED (v2 satmut: rank#2/255, lean retained)
 Matched-null panel:      v2 L2 RETAIN_HP for C1/C2/C3; panel not weakened
 Reporter tech + R1:      OK; AG length proxy R1_PASS (16/100/500 kb)
+PE/OT desk:              PE_OT_CONDITIONAL_PASS (RADIL watch; Primer-BLAST manual)
 Wet-lab proof:           STILL ABSENT
 Expand to hundreds:      Still DON'T
 Holdout / move E/P:      Still DON'T
 ```
 
-Desk kill-sprint: C1/panel **not destroyed**; Branch B length proxy **survives**; satmut expand **does not** kill allele lean.  
-Следующий полезный kill-тест: **P6** OT / Primer-BLAST.
+Desk kill-sprint: C1/panel **not destroyed**; PE path **conditional**.  
+Следующий полезный шаг: **P8** power / **P10** snapshot — или human GO.
 

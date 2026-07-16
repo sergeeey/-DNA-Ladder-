@@ -1,0 +1,400 @@
+{
+  "status": "P6_PE_OT_COMPLETE",
+  "timestamp": "2026-07-16T05:13:33.459258+00:00",
+  "claim": "P6_PE_OT_CLAIM_v1.md",
+  "claim_amendment": {
+    "engine2": "UCSC verify of CRISPOR OT coords (BLAST remote abandoned \u2014 hung)",
+    "K2": "fires if verified OT has mm_vs_guide<=2 outside C1 \u00b11kb",
+    "K5_genomewide": "still PENDING_MANUAL Primer-BLAST; amp-local check automated"
+  },
+  "crispor_dir": "D:\\DNK - 2\\DNA_TE_3DGenome_Context\\09_outputs\\prospective\\crispor_c1",
+  "engine1_crispor": {
+    "PD1": {
+      "guideId": "197forw",
+      "spacer": "CGTCCGATAAGCCCTGCCCC",
+      "pam": "CGG",
+      "mit": 69.0,
+      "cfd_spec": 89.0,
+      "ot_count_guide": 121,
+      "locus": "intron:ZBTB3",
+      "graf": "GrafOK",
+      "n_ot": 121,
+      "by_mm": {
+        "3": 6,
+        "4": 115
+      },
+      "mm_le_2": 0,
+      "exon_watch_top": [
+        {
+          "mm": 3,
+          "locus": "exon:RADIL",
+          "chrom": "chr7",
+          "start": 4805549,
+          "end": 4805571,
+          "strand": "-",
+          "cfd": 0.36828644466203875,
+          "offtargetSeq": "GGTCAGGTAAGCCCTGCCCCAGG",
+          "guideSeq": "CGTCCGATAAGCCCTGCCCCCGG"
+        },
+        {
+          "mm": 4,
+          "locus": "exon:RPAP2",
+          "chrom": "chr1",
+          "start": 92388950,
+          "end": 92388972,
+          "strand": "-",
+          "cfd": 0.2929551261853057,
+          "offtargetSeq": "GTTCAGATATGCCCTGCCCCTGG",
+          "guideSeq": "CGTCCGATAAGCCCTGCCCCCGG"
+        },
+        {
+          "mm": 4,
+          "locus": "exon:TEX40/RP11-783K16.10",
+          "chrom": "chr11",
+          "start": 64300836,
+          "end": 64300858,
+          "strand": "-",
+          "cfd": 0.18181818209090908,
+          "offtargetSeq": "CGTCCAACGAGCCCCGCCCCGGG",
+          "guideSeq": "CGTCCGATAAGCCCTGCCCCCGG"
+        },
+        {
+          "mm": 4,
+          "locus": "exon:PHF12",
+          "chrom": "chr17",
+          "start": 28951309,
+          "end": 28951331,
+          "strand": "-",
+          "cfd": 0.057258530875650665,
+          "offtargetSeq": "CCTCCGATACCCCCAGCCCCGGG",
+          "guideSeq": "CGTCCGATAAGCCCTGCCCCCGG"
+        }
+      ],
+      "max_exon_cfd": 0.36828644466203875
+    },
+    "PD2": {
+      "guideId": "196rev",
+      "spacer": "TGGCTAAGGGGCGGGACTTC",
+      "pam": "CGG",
+      "mit": 84.0,
+      "cfd_spec": 92.0,
+      "ot_count_guide": 96,
+      "locus": "intron:ZBTB3",
+      "graf": "tt",
+      "n_ot": 96,
+      "by_mm": {
+        "3": 11,
+        "4": 85
+      },
+      "mm_le_2": 0,
+      "exon_watch_top": [
+        {
+          "mm": 4,
+          "locus": "exon:AC073934.6",
+          "chrom": "chr7",
+          "start": 127651973,
+          "end": 127651995,
+          "strand": "-",
+          "cfd": 0.23380566792984564,
+          "offtargetSeq": "TAAATATGGGGCGGGACTTCCGG",
+          "guideSeq": "TGGCTAAGGGGCGGGACTTCCGG"
+        },
+        {
+          "mm": 4,
+          "locus": "exon:CSPG5",
+          "chrom": "chr3",
+          "start": 47577940,
+          "end": 47577962,
+          "strand": "+",
+          "cfd": 0.1666666665,
+          "offtargetSeq": "AGGGCAAGGGGCGGGACGTCAGG",
+          "guideSeq": "TGGCTAAGGGGCGGGACTTCCGG"
+        },
+        {
+          "mm": 4,
+          "locus": "exon:PFKFB4",
+          "chrom": "chr3",
+          "start": 48556841,
+          "end": 48556863,
+          "strand": "-",
+          "cfd": 0.15766841883182037,
+          "offtargetSeq": "GGCCCAAGGGGCGGGACCTCGGG",
+          "guideSeq": "TGGCTAAGGGGCGGGACTTCCGG"
+        },
+        {
+          "mm": 4,
+          "locus": "exon:ZNF550",
+          "chrom": "chr19",
+          "start": 57559853,
+          "end": 57559875,
+          "strand": "-",
+          "cfd": 0.14610389622564937,
+          "offtargetSeq": "CGACACAGGGGCGGGACTTCCGG",
+          "guideSeq": "TGGCTAAGGGGCGGGACTTCCGG"
+        },
+        {
+          "mm": 4,
+          "locus": "exon:FKBP5",
+          "chrom": "chr6",
+          "start": 35575201,
+          "end": 35575223,
+          "strand": "+",
+          "cfd": 0.08888888873269842,
+          "offtargetSeq": "TGGCTGAGGAGGGGGACTTTGGG",
+          "guideSeq": "TGGCTAAGGGGCGGGACTTCCGG"
+        }
+      ],
+      "max_exon_cfd": 0.23380566792984564
+    },
+    "ngRNA_primary": {
+      "guideId": "142rev",
+      "spacer": "GTTCTAAGGTTAGGCCGAGG",
+      "pam": "TGG",
+      "mit": 91.0,
+      "cfd_spec": 93.0,
+      "ot_count_guide": 60,
+      "locus": "intron:ZBTB3",
+      "graf": "GrafOK",
+      "n_ot": 60,
+      "by_mm": {
+        "3": 4,
+        "4": 56
+      },
+      "mm_le_2": 0,
+      "exon_watch_top": [
+        {
+          "mm": 3,
+          "locus": "exon:RAX2",
+          "chrom": "chr19",
+          "start": 3770577,
+          "end": 3770599,
+          "strand": "+",
+          "cfd": 0.2317290554382056,
+          "offtargetSeq": "GTTCTCGGGTTGGGCCGAGGAGG",
+          "guideSeq": "GTTCTAAGGTTAGGCCGAGGTGG"
+        },
+        {
+          "mm": 4,
+          "locus": "exon:SLC36A1",
+          "chrom": "chr5",
+          "start": 151437058,
+          "end": 151437080,
+          "strand": "-",
+          "cfd": 0.11995386405151867,
+          "offtargetSeq": "GTTCCAGGGTTGGGCCCAGGCGG",
+          "guideSeq": "GTTCTAAGGTTAGGCCGAGGTGG"
+        },
+        {
+          "mm": 4,
+          "locus": "exon:AC116038.1",
+          "chrom": "chr3",
+          "start": 38800359,
+          "end": 38800381,
+          "strand": "+",
+          "cfd": 0.05647058829741177,
+          "offtargetSeq": "GGTCTGAGGTGAGGCCCAGGGGG",
+          "guideSeq": "GTTCTAAGGTTAGGCCGAGGTGG"
+        },
+        {
+          "mm": 4,
+          "locus": "exon:ZFAS1/ZNFX1-AS1_3/SNORD12",
+          "chrom": "chr20",
+          "start": 49281011,
+          "end": 49281033,
+          "strand": "-",
+          "cfd": 0.05042016817310925,
+          "offtargetSeq": "GTCCTGAGGTTAGGCCCAGTTGG",
+          "guideSeq": "GTTCTAAGGTTAGGCCGAGGTGG"
+        }
+      ],
+      "max_exon_cfd": 0.2317290554382056
+    },
+    "ngRNA_alt": {
+      "guideId": "128rev",
+      "spacer": "CCGAGGTGGGCGGAGCTAAT",
+      "pam": "GGG",
+      "mit": 90.0,
+      "cfd_spec": 94.0,
+      "ot_count_guide": 162,
+      "locus": "intron:ZBTB3",
+      "graf": "GrafOK",
+      "n_ot": 162,
+      "by_mm": {
+        "2": 1,
+        "3": 7,
+        "4": 154
+      },
+      "mm_le_2": 1,
+      "exon_watch_top": [
+        {
+          "mm": 4,
+          "locus": "exon:SYNGAP1/XXbac-BPG294E21.9/ZBTB9",
+          "chrom": "chr6",
+          "start": 33454447,
+          "end": 33454469,
+          "strand": "-",
+          "cfd": 0.17499999989062498,
+          "offtargetSeq": "ACGAGGAGGGCGGTGCTAGTAGG",
+          "guideSeq": "CCGAGGTGGGCGGAGCTAATGGG"
+        },
+        {
+          "mm": 4,
+          "locus": "exon:LINC00534",
+          "chrom": "chr8",
+          "start": 90221666,
+          "end": 90221688,
+          "strand": "-",
+          "cfd": 0.130536130606993,
+          "offtargetSeq": "CTCAGGTGGCCAGAGCTAATGGG",
+          "guideSeq": "CCGAGGTGGGCGGAGCTAATGGG"
+        }
+      ],
+      "max_exon_cfd": 0.17499999989062498
+    }
+  },
+  "engine2_ucsc_verify": {
+    "method": "UCSC_fetch_verify_CRISPOR_OT_coords",
+    "note": "Not Cas-OFFinder/full BLAST; validates Engine1 sites independently",
+    "sites": [
+      {
+        "locus": "exon:RADIL",
+        "chrom": "chr7",
+        "start": 4805549,
+        "reported_mm": 3,
+        "cfd": 0.36828644466203875,
+        "status": "OK",
+        "fetched_len": 23,
+        "mm_vs_guideSeq": 4,
+        "mm_vs_reported_ot_seq": 0,
+        "site_matches_crispor_ot_seq": true,
+        "matches_crispor_mm": false,
+        "site_seq": "GGTCAGGTAAGCCCTGCCCCAGG"
+      },
+      {
+        "locus": "exon:RPAP2",
+        "chrom": "chr1",
+        "start": 92388950,
+        "reported_mm": 4,
+        "cfd": 0.2929551261853057,
+        "status": "OK",
+        "fetched_len": 23,
+        "mm_vs_guideSeq": 5,
+        "mm_vs_reported_ot_seq": 0,
+        "site_matches_crispor_ot_seq": true,
+        "matches_crispor_mm": false,
+        "site_seq": "GTTCAGATATGCCCTGCCCCTGG"
+      },
+      {
+        "locus": "exon:TEX40/RP11-783K16.10",
+        "chrom": "chr11",
+        "start": 64300836,
+        "reported_mm": 4,
+        "cfd": 0.18181818209090908,
+        "status": "OK",
+        "fetched_len": 23,
+        "mm_vs_guideSeq": 5,
+        "mm_vs_reported_ot_seq": 0,
+        "site_matches_crispor_ot_seq": true,
+        "matches_crispor_mm": false,
+        "site_seq": "CGTCCAACGAGCCCCGCCCCGGG"
+      },
+      {
+        "locus": "exon:PHF12",
+        "chrom": "chr17",
+        "start": 28951309,
+        "reported_mm": 4,
+        "cfd": 0.057258530875650665,
+        "status": "OK",
+        "fetched_len": 23,
+        "mm_vs_guideSeq": 5,
+        "mm_vs_reported_ot_seq": 0,
+        "site_matches_crispor_ot_seq": true,
+        "matches_crispor_mm": false,
+        "site_seq": "CCTCCGATACCCCCAGCCCCGGG"
+      }
+    ]
+  },
+  "primers": [
+    {
+      "id": "OT0",
+      "locus": "C1_on_target",
+      "status": "OK",
+      "fwd_found_in_amp": true,
+      "rev_found_in_amp": true,
+      "amp_len_stated": 236,
+      "search_pad_bp": 25,
+      "polyA_or_polyT_ge6_in_amp": false,
+      "desk_flag": "edit_verify",
+      "primer_blast_genomewide": "PENDING_MANUAL"
+    },
+    {
+      "id": "OT1",
+      "locus": "RADIL_exon",
+      "status": "OK",
+      "fwd_found_in_amp": true,
+      "rev_found_in_amp": true,
+      "amp_len_stated": 287,
+      "search_pad_bp": 25,
+      "polyA_or_polyT_ge6_in_amp": false,
+      "desk_flag": "priority_watch",
+      "primer_blast_genomewide": "PENDING_MANUAL"
+    },
+    {
+      "id": "OT2",
+      "locus": "KDM2B_intron",
+      "status": "OK",
+      "fwd_found_in_amp": true,
+      "rev_found_in_amp": true,
+      "amp_len_stated": 220,
+      "search_pad_bp": 25,
+      "polyA_or_polyT_ge6_in_amp": true,
+      "desk_flag": "polyA_inside_amp",
+      "primer_blast_genomewide": "PENDING_MANUAL"
+    },
+    {
+      "id": "OT3",
+      "locus": "RPAP2_exon",
+      "status": "OK",
+      "fwd_found_in_amp": true,
+      "rev_found_in_amp": true,
+      "amp_len_stated": 221,
+      "search_pad_bp": 25,
+      "polyA_or_polyT_ge6_in_amp": false,
+      "desk_flag": "",
+      "primer_blast_genomewide": "PENDING_MANUAL"
+    },
+    {
+      "id": "OT4",
+      "locus": "UPF3A_intron",
+      "status": "OK",
+      "fwd_found_in_amp": true,
+      "rev_found_in_amp": true,
+      "amp_len_stated": 242,
+      "search_pad_bp": 25,
+      "polyA_or_polyT_ge6_in_amp": false,
+      "desk_flag": "",
+      "primer_blast_genomewide": "PENDING_MANUAL"
+    }
+  ],
+  "kills": [],
+  "disclosures": [
+    "K3_SOFT_EXON_WATCH_CFD_ge_0.3",
+    "PD1_AND_PD2_BOTH_VIABLE",
+    "K4_NGRNA_ALT_HAS_mm_le_2_OR_WEAK",
+    "K5_GENOMEWIDE_PRIMER_BLAST_STILL_MANUAL"
+  ],
+  "verdict": "PE_OT_CONDITIONAL_PASS",
+  "pd_viability": {
+    "PD1": true,
+    "PD2": true,
+    "ngRNA_primary": true,
+    "ngRNA_alt": false
+  },
+  "recommended_desk_stack": {
+    "pegRNA": "PD1",
+    "backup_pegRNA": "PD2",
+    "ngRNA": "GTTCTAAGGTTAGGCCGAGG",
+    "ngRNA_alt": "WEAKER_mm_le_2"
+  },
+  "oligo_order": "FORBIDDEN"
+}

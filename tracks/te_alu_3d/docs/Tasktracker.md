@@ -64,7 +64,9 @@
 - [x] P5 R1 AG context-length ladder → **R1_PASS** (16/100/500 kb proxy)
 - [x] P3 matched-null test of frozen panel 13 → panel not weakened; C1 extreme@L3 INCONCLUSIVE
 - [x] Expand P3 null-universe (28→115) → L2 unlocked; C1/C2/C3 **RETAIN_HP**
-- [ ] P6 second OT engine + Primer-BLAST
+- [x] P6 PE/OT robustness desk → **PE_OT_CONDITIONAL_PASS** (RADIL watch; Primer-BLAST manual)
+- [ ] Genome-wide Primer-BLAST (manual) before any oligo order
+- [ ] P8 power curves / P10 immutable snapshot
 - [ ] Sign wet-lab GO (human) — **BLOCKED**
 - [ ] Unblind holdout — **BLOCKED**
 
