@@ -22,7 +22,8 @@ Sites = watchlist from CRISPOR PD1 — **not** proven off-targets.
 |----|-------|-------------------|---:|-----------------|-------------|--------|------|
 | OT0 | C1 on-target | chr11:62753823-62754058 | 236 | `TTTCTCCTAGGTCACACCCA` | `TTAGGGAGTTCTCGAAGTGG` | 60/60 | edit verify |
 | OT1 | RADIL exon | chr7:4805443-4805729 | 287 | `AGGTCCCCAGGAGAGAGGT` | `TCTTGTCACCCAGATGAGCT` | 62/60 | priority watch |
-| OT2 | KDM2B intron | chr12:121534283-121534502 | 220 | `AGCTTGCAGTGAGCCGAGA` | `GGGAAGGTGAGTTTCAGTTG` | 60/60 | **polyA inside amp — redesign if PCR poor** |
+| ~~OT2~~ | KDM2B (old) | — | — | `AGCTTGCAGTGAGCCGAGA` | `GGGAAGGTGAGTTTCAGTTG` | — | **DEPRECATED** Alu-like / isPCR NONE |
+| **OT2b** | KDM2B intron | chr12:121534219-121534516 | 298 | `GGCACTTGTAGTCCCAGCTAC` | `ATGTTTTCCGGGGTGGGAAGG` | ~64/66 | redesign v1; **polyA in body** |
 | OT3 | RPAP2 exon | chr1:92388850-92389070 | 221 | `CGGTTCTATGCTCACAGTGT` | `ATTATCGGAGCTTGAACGCG` | 60/60 | |
 | OT4 | UPF3A intron | chr13:114290091-114290332 | 242 | `TGAGCCAGAGTTCATGGTCA` | `TTGGAACTGAGAACCCCTGA` | 60/60 | |
 
@@ -56,13 +57,13 @@ Do **not** claim C1 regulates LRRN4CL/BSCL2 until HUDEP-2 RNA / TSS-seq nominate
 
 ## Pre-order gate (A1)
 
-- [x] UCSC in-silico PCR desk batch — `PRIMER_ISPCR_desk_v1.md` (**OT2 FAIL → redesign**)
-- [ ] NCBI Primer-BLAST human confirm (optional/SOP) for OT0/1/3/4
-- [ ] Redesign OT2 (Alu-like F primer / polyA amp — isPCR 0 products)
+- [x] UCSC in-silico PCR desk batch — see `PRIMER_ISPCR_desk_v1.md`
+- [x] OT2 redesigned → **OT2b** (`OT2_KDM2B_primer_redesign_v1.md`) — isPCR 1 product; polyA-in-body WARN
+- [ ] NCBI Primer-BLAST human confirm (optional/SOP) for OT0/1/2b/3/4
 - [ ] Phase A1 GO signed
 - [ ] Include Illumina tails / indices per core SOP (not in this desk file)
 
-**If OT2 unchecked redesign → no oligo PO for full OT panel.**
+**If A1 GO unchecked → no oligo PO.**
 
 ---
 

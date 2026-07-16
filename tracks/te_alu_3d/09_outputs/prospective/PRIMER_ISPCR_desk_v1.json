@@ -1,7 +1,7 @@
 {
   "status": "PRIMER_ISPCR_DESK_COMPLETE",
-  "label": "PRIMER_DESK_REDESIGN",
-  "created_utc": "2026-07-16T10:34:53.547629+00:00",
+  "label": "PRIMER_DESK_GAPS",
+  "created_utc": "2026-07-16T10:41:10.002126+00:00",
   "claim": "PRIMER_ISPCR_CLAIM_v1.md",
   "engine": "UCSC_hgPcr_hg38",
   "ncbi_primer_blast": "STILL_RECOMMENDED_MANUAL_CONFIRM",
@@ -57,19 +57,41 @@
     },
     {
       "id": "OT2",
-      "locus": "KDM2B_intron",
+      "locus": "KDM2B_intron_DEPRECATED",
       "expected_chrom": "chr12",
       "expected_start": 121534283,
       "expected_end": 121534502,
       "fwd": "AGCTTGCAGTGAGCCGAGA",
       "rev": "GGGAAGGTGAGTTTCAGTTG",
-      "flag": "polyA_inside_amp",
-      "n_products": 0,
+      "flag": "DEPRECATED_Alu_like_ISPCR_NONE",
+      "n_products": null,
       "products": [],
-      "label": "ISPCR_NONE",
+      "label": "ISPCR_SKIP_DEPRECATED",
+      "error": null
+    },
+    {
+      "id": "OT2b",
+      "locus": "KDM2B_intron",
+      "expected_chrom": "chr12",
+      "expected_start": 121534219,
+      "expected_end": 121534516,
+      "fwd": "GGCACTTGTAGTCCCAGCTAC",
+      "rev": "ATGTTTTCCGGGGTGGGAAGG",
+      "flag": "redesign_v1_polyA_in_body",
+      "n_products": 1,
+      "products": [
+        {
+          "chrom": "chr12",
+          "start": 121534219,
+          "end": 121534516,
+          "strand": "+",
+          "bp": 298
+        }
+      ],
+      "label": "ISPCR_WARN",
       "error": null,
       "manual_primer_blast_url": "https://www.ncbi.nlm.nih.gov/tools/primer-blast/?LINK_LOC=BlastHomeAd",
-      "ucsc_ispcr_hint": "hg38 F=AGCTTGCAGTGAGCCGAGA R=GGGAAGGTGAGTTTCAGTTG"
+      "ucsc_ispcr_hint": "hg38 F=GGCACTTGTAGTCCCAGCTAC R=ATGTTTTCCGGGGTGGGAAGG"
     },
     {
       "id": "OT3",

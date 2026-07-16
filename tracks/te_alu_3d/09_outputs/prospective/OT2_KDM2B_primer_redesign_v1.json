@@ -1,0 +1,56 @@
+{
+  "status": "OT2_REDESIGN_COMPLETE",
+  "created_utc": "2026-07-16T10:40:24.435534+00:00",
+  "old_ot2": {
+    "fwd": "AGCTTGCAGTGAGCCGAGA",
+    "rev": "GGGAAGGTGAGTTTCAGTTG",
+    "verdict": "ISPCR_NONE_Alu_like_F"
+  },
+  "ot2b": {
+    "fwd": "GGCACTTGTAGTCCCAGCTAC",
+    "rev": "ATGTTTTCCGGGGTGGGAAGG",
+    "amp_bp": 298,
+    "genomic_start0": 121534218,
+    "genomic_end0": 121534516,
+    "polyA_or_T_in_amplicon_body": true,
+    "n_hits": 1,
+    "hits": [
+      {
+        "chrom": "chr12",
+        "a": "121534219",
+        "strand": "+",
+        "b": "121534516",
+        "bp": "298"
+      }
+    ],
+    "ispcr_product": [
+      "chr12",
+      "121534219",
+      "+",
+      "121534516",
+      "298"
+    ]
+  },
+  "tried_n": 1,
+  "tried": [
+    {
+      "fwd": "GGCACTTGTAGTCCCAGCTAC",
+      "rev": "ATGTTTTCCGGGGTGGGAAGG",
+      "amp_bp": 298,
+      "genomic_start0": 121534218,
+      "genomic_end0": 121534516,
+      "polyA_or_T_in_amplicon_body": true,
+      "n_hits": 1,
+      "hits": [
+        {
+          "chrom": "chr12",
+          "a": "121534219",
+          "strand": "+",
+          "b": "121534516",
+          "bp": "298"
+        }
+      ]
+    }
+  ],
+  "oligo_order": "FORBIDDEN"
+}

@@ -3,7 +3,7 @@
 **Date:** 2026-07-16
 **Status:** `PRIMER_ISPCR_DESK_COMPLETE`
 **Claim:** `PRIMER_ISPCR_CLAIM_v1.md`
-**Label:** **`PRIMER_DESK_REDESIGN`**
+**Label:** **`PRIMER_DESK_GAPS`**
 **Engine:** UCSC hgPcr hg38
 **Oligo order:** FORBIDDEN
 **NCBI Primer-BLAST:** still recommended as human confirm before A1 order
@@ -14,9 +14,8 @@
 |----|-------|-------|----------:|----------|------|
 | OT0 | C1_on_target | **ISPCR_PASS** | 1 | chr11:62753823-62754058(236bp) | edit_verify |
 | OT1 | RADIL_exon | **ISPCR_PASS** | 1 | chr7:4805443-4805729(287bp) | priority_watch |
-| OT2 | KDM2B_intron | **ISPCR_NONE** | 0 | — | polyA_inside_amp |
-
-**OT2 note:** F primer `AGCTTGCAGTGAGCCGAGA` is Alu-like; UCSC isPCR returns 0 products despite local sequence match. **Redesign required** before A1 OT panel order. OT0/1/3/4 are single-product at expected loci.
+| OT2 | KDM2B_intron_DEPRECATED | **ISPCR_SKIP_DEPRECATED** | None | — | DEPRECATED_Alu_like_ISPCR_NONE |
+| OT2b | KDM2B_intron | **ISPCR_WARN** | 1 | chr12:121534219-121534516(298bp) | redesign_v1_polyA_in_body |
 | OT3 | RPAP2_exon | **ISPCR_PASS** | 1 | chr1:92388850-92389070(221bp) | — |
 | OT4 | UPF3A_intron | **ISPCR_PASS** | 1 | chr13:114290081-114290322(242bp) | — |
 

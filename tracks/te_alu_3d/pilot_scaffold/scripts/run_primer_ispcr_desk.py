@@ -39,13 +39,24 @@ PAIRS = [
     },
     {
         "id": "OT2",
-        "locus": "KDM2B_intron",
+        "locus": "KDM2B_intron_DEPRECATED",
         "expected_chrom": "chr12",
         "expected_start": 121_534_283,
         "expected_end": 121_534_502,
         "fwd": "AGCTTGCAGTGAGCCGAGA",
         "rev": "GGGAAGGTGAGTTTCAGTTG",
-        "flag": "polyA_inside_amp",
+        "flag": "DEPRECATED_Alu_like_ISPCR_NONE",
+        "skip": True,
+    },
+    {
+        "id": "OT2b",
+        "locus": "KDM2B_intron",
+        "expected_chrom": "chr12",
+        "expected_start": 121_534_219,
+        "expected_end": 121_534_516,
+        "fwd": "GGCACTTGTAGTCCCAGCTAC",
+        "rev": "ATGTTTTCCGGGGTGGGAAGG",
+        "flag": "redesign_v1_polyA_in_body",
     },
     {
         "id": "OT3",
@@ -141,7 +152,8 @@ def label_pair(pair: dict, products: list[dict], err: str | None) -> str:
     ok_loc = overlaps(p0, pair["expected_chrom"], pair["expected_start"], pair["expected_end"])
     exp_len = pair["expected_end"] - pair["expected_start"] + 1
     len_ok = abs(p0["bp"] - exp_len) <= 40
-    if ok_loc and len_ok and pair.get("flag") != "polyA_inside_amp":
+    flag = pair.get("flag") or ""
+    if ok_loc and len_ok and "polyA" not in flag:
         return "ISPCR_PASS"
     if ok_loc:
         return "ISPCR_WARN"
@@ -149,7 +161,7 @@ def label_pair(pair: dict, products: list[dict], err: str | None) -> str:
 
 
 def panel_label(rows: list[dict]) -> str:
-    labs = [r["label"] for r in rows]
+    labs = [r["label"] for r in rows if not str(r["label"]).startswith("ISPCR_SKIP")]
     if any(x == "ISPCR_FAIL" for x in labs):
         return "PRIMER_DESK_BLOCKED" if all(x == "ISPCR_FAIL" for x in labs) else "PRIMER_DESK_GAPS"
     if any(x in ("ISPCR_MULTI", "ISPCR_NONE") for x in labs):
@@ -162,8 +174,18 @@ def panel_label(rows: list[dict]) -> str:
 def main() -> int:
     rows = []
     for pair in PAIRS:
+        if pair.get("skip"):
+            rows.append(
+                {
+                    **{k: v for k, v in pair.items() if k != "skip"},
+                    "n_products": None,
+                    "products": [],
+                    "label": "ISPCR_SKIP_DEPRECATED",
+                    "error": None,
+                }
+            )
+            continue
         err = None
-        html = ""
         products: list[dict] = []
         try:
             html = hg_pcr(pair["fwd"], pair["rev"])
@@ -173,7 +195,7 @@ def main() -> int:
         lab = label_pair(pair, products, err)
         rows.append(
             {
-                **pair,
+                **{k: v for k, v in pair.items() if k != "skip"},
                 "n_products": len(products),
                 "products": products,
                 "label": lab,

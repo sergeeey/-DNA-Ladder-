@@ -71,9 +71,9 @@
 - [x] P10 rehash after P9
 - [x] P7 target gene ranking → **P7_RANKED_EXPLORATORY** (BSCL2-axis; no TSS in P; RNA absent)
 - [x] P4 independent model matrix → **P4_MATRIX_COMPLETE** (5/3/2/2; C1 convergence)
-- [x] Primer UCSC isPCR desk → **PRIMER_DESK_REDESIGN** (OT0/1/3/4 PASS; **OT2 NONE**)
-- [ ] Redesign OT2 amplicon primers (Alu-like / polyA locus)
-- [ ] NCBI Primer-BLAST human confirm (optional/SOP) for PASS pairs
+- [x] Primer UCSC isPCR desk → **PRIMER_DESK_GAPS** (OT0/1/3/4 PASS; OT2b WARN polyA)
+- [x] OT2 redesign → **OT2b** single-product isPCR (`OT2_KDM2B_primer_redesign_v1.md`)
+- [ ] NCBI Primer-BLAST human confirm (optional/SOP) for OT0/1/2b/3/4
 - [ ] Sign wet-lab GO (human) — **BLOCKED**
 - [ ] Unblind holdout — **BLOCKED**
 
