@@ -42,12 +42,16 @@ ARTS = [
     "09_outputs/prospective/P8_POWER_CLAIM_v1.md",
     "09_outputs/prospective/P8_power_simulation_v1.md",
     "09_outputs/prospective/P8_power_simulation_v1.json",
+    "09_outputs/prospective/P9_VIRTUAL_E2E_CLAIM_v1.md",
+    "09_outputs/prospective/P9_virtual_e2e_v1.md",
+    "09_outputs/prospective/P9_virtual_e2e_v1.json",
     "09_outputs/prospective/G4a_multisample_kill_test_v1.md",
     "09_outputs/prospective/GO_note_draft_C1_B_first_v1.md",
     "pilot_scaffold/scripts/run_p3_matched_null_panel.py",
     "pilot_scaffold/scripts/run_p5_r1_window_length_ag.py",
     "pilot_scaffold/scripts/run_p6_pe_ot_primer_desk.py",
     "pilot_scaffold/scripts/run_p8_power_simulation.py",
+    "pilot_scaffold/scripts/run_p9_virtual_e2e.py",
     "pilot_scaffold/scripts/run_c1_satmut_ag_expand_v2.py",
 ]
 
@@ -115,6 +119,7 @@ def main() -> int:
             "P5_R1": "R1_PASS",
             "P6_PE_OT": "PE_OT_CONDITIONAL_PASS",
             "P8_power": "reporter P8_ADEQUATE (n_tx=6); Capture-C P8_UNDERPOWERED",
+            "P9_virtual_e2e": "P9_GAPS",
             "P10_immutable": "locked",
         },
         "rules_after_lock": [

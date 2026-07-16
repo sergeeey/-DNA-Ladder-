@@ -1,0 +1,150 @@
+{
+  "status": "P9_VIRTUAL_E2E_COMPLETE",
+  "label": "P9_GAPS",
+  "created_utc": "2026-07-16T10:16:20.339820+00:00",
+  "claim": "P9_VIRTUAL_E2E_CLAIM_v1.md",
+  "n_ok": 32,
+  "n_soft": 3,
+  "n_hard": 0,
+  "ok_checks": [
+    {
+      "id": "ART_PRESENT",
+      "path": "09_outputs/prospective/GO_note_draft_C1_B_first_v1.md"
+    },
+    {
+      "id": "ART_PRESENT",
+      "path": "09_outputs/prospective/C1_claim_freeze_pack_v1.md"
+    },
+    {
+      "id": "ART_PRESENT",
+      "path": "09_outputs/prospective/STAGE2_REPORTER_PANEL_v1.md"
+    },
+    {
+      "id": "ART_PRESENT",
+      "path": "09_outputs/prospective/P6_PE_OT_robustness_v1.md"
+    },
+    {
+      "id": "ART_PRESENT",
+      "path": "09_outputs/prospective/OT_amplicon_primer_panel_desk_v1.md"
+    },
+    {
+      "id": "ART_PRESENT",
+      "path": "09_outputs/prospective/G4b_bait_windows_locked.yaml"
+    },
+    {
+      "id": "ART_PRESENT",
+      "path": "09_outputs/prospective/CaptureC_bait_quote_sheet_v1.md"
+    },
+    {
+      "id": "ART_PRESENT",
+      "path": "09_outputs/prospective/P8_power_simulation_v1.md"
+    },
+    {
+      "id": "ART_PRESENT",
+      "path": "09_outputs/prospective/P10_immutable_handoff_v1.md"
+    },
+    {
+      "id": "ART_PRESENT",
+      "path": "09_outputs/prospective/PAUSE_PIN_2026-07-14.md"
+    },
+    {
+      "id": "ART_PRESENT",
+      "path": "09_outputs/prospective/BranchB_oligo_checklist_v1.md"
+    },
+    {
+      "id": "ART_PRESENT",
+      "path": "09_outputs/prospective/KILL_SPRINT_RESULTS_v1.md"
+    },
+    {
+      "id": "FASTA_PRESENT",
+      "path": "c1_reporter_minimal_301bp_REF.fa"
+    },
+    {
+      "id": "FASTA_PRESENT",
+      "path": "c1_reporter_minimal_301bp_ALT.fa"
+    },
+    {
+      "id": "FASTA_PRESENT",
+      "path": "c1_reporter_context_1kb_REF.fa"
+    },
+    {
+      "id": "FASTA_PRESENT",
+      "path": "c1_reporter_context_1kb_ALT.fa"
+    },
+    {
+      "id": "FASTA_PRESENT",
+      "path": "c1_reporter_context_2kb_REF.fa"
+    },
+    {
+      "id": "FASTA_PRESENT",
+      "path": "c1_reporter_context_2kb_ALT.fa"
+    },
+    {
+      "id": "GO_UNSIGNED",
+      "detail": "GO remains UNSIGNED_DRAFT"
+    },
+    {
+      "id": "OLIGO_FORBIDDEN",
+      "detail": "oligo/transfection FORBIDDEN in GO note"
+    },
+    {
+      "id": "C1_ALLELE_FROZEN",
+      "detail": "C1 A>G present in GO note"
+    },
+    {
+      "id": "STAGE2_ORDER_FORBIDDEN"
+    },
+    {
+      "id": "REPORTER_MCID",
+      "detail": "MCID log2>=0.5 present"
+    },
+    {
+      "id": "P6_CONDITIONAL_PASS"
+    },
+    {
+      "id": "RADIL_WATCH_DOCUMENTED"
+    },
+    {
+      "id": "NGRNA_DOCUMENTED"
+    },
+    {
+      "id": "OT_PRIMER_PANEL_PRESENT"
+    },
+    {
+      "id": "BAITS_LOCKED"
+    },
+    {
+      "id": "REPORTER_POWER_ADEQUATE"
+    },
+    {
+      "id": "HOLDOUT_SEALED"
+    },
+    {
+      "id": "WET_NOGO"
+    },
+    {
+      "id": "STAGE3_LOCKED"
+    }
+  ],
+  "soft_gaps": [
+    {
+      "id": "BACKBONE_TBD",
+      "detail": "Reporter backbone vendor/plasmid ID still lab-fill before order"
+    },
+    {
+      "id": "PRIMER_BLAST_MANUAL",
+      "detail": "Genome-wide Primer-BLAST still manual before oligo order"
+    },
+    {
+      "id": "CAPTURE_UNDERPOWERED",
+      "detail": "Capture-C P8_UNDERPOWERED — must not be sold as powered primary"
+    }
+  ],
+  "hard_blocks": [],
+  "phases": {
+    "B0": "desk arts present; backbone soft gap; ORDER FORBIDDEN",
+    "A1": "PE_OT_CONDITIONAL_PASS; Primer-BLAST soft gap; RADIL watch",
+    "A2": "baits locked; Capture UNDERPOWERED soft gap",
+    "cross": "holdout SEALED; Stage-3 LOCKED; GO UNSIGNED"
+  }
+}

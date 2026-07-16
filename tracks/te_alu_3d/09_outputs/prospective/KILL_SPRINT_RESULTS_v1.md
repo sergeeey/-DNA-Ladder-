@@ -18,7 +18,7 @@
 | **6** | PE/OT robustness | **DONE** | **`PE_OT_CONDITIONAL_PASS`** — PD1+PD2 viable; RADIL watch; Primer-BLAST still manual |
 | **7** | Target gene ranking | NOT STARTED | — |
 | **8** | Power simulation | **DONE** | Reporter **`P8_ADEQUATE`** (n_tx=6); Capture-C **`P8_UNDERPOWERED`** |
-| **9** | Virtual end-to-end | NOT STARTED | — |
+| **9** | Virtual end-to-end | **DONE** | **`P9_GAPS`** — path coherent; backbone / Primer-BLAST / Capture soft |
 | **10** | Immutable handoff snapshot | **DONE** | `content_hash` in `P10_immutable_handoff_v1.md` |
 
 ---
@@ -154,8 +154,8 @@ SHA-256 catalog of kill-sprint arts; locks (holdout SEALED, wet NO-GO, Stage-3 L
 3. ~~**P5 R1** AG length ladder~~ **DONE** (`R1_PASS` on 16/100/500 kb proxy)  
 4. ~~**P6** second OT engine + Primer-BLAST~~ **DONE** desk (`PE_OT_CONDITIONAL_PASS`; genomewide Primer-BLAST still manual)  
 5. ~~**P8** power curves~~ **DONE** (reporter ADEQUATE; Capture UNDERPOWERED)  
-6. ~~**P10** immutable snapshot~~ **DONE**  
-7. Optional: **P9** virtual end-to-end  
+6. ~~**P10** immutable snapshot~~ **DONE** (rehashed after P9)  
+7. ~~**P9** virtual end-to-end~~ **DONE** (`P9_GAPS`)  
 8. Optional: remaining ~648 AG subst if budget allows (not required after v2)  
 9. Genomewide Primer-BLAST (manual) before any oligo order  
 10. Optional: local Cas-OFFinder when hg38 dump available
@@ -172,12 +172,29 @@ Reporter tech + R1:      OK; AG length proxy R1_PASS (16/100/500 kb)
 PE/OT desk:              PE_OT_CONDITIONAL_PASS (RADIL watch; Primer-BLAST manual)
 Reporter power (desk):   P8_ADEQUATE at n_tx=6
 Capture-C power (desk):  P8_UNDERPOWERED (ε≤0.7)
-Immutable snapshot:      P10 locked
+Virtual E2E:             P9_GAPS (0 hard blocks)
+Immutable snapshot:      P10 locked (incl. P9)
 Wet-lab proof:           STILL ABSENT
 Expand to hundreds:      Still DON'T
 Holdout / move E/P:      Still DON'T
 ```
 
-Desk kill-sprint: C1/panel **not destroyed**; PE path **conditional**; Capture **not powered**.  
-Следующий полезный шаг: **P9** virtual E2E — или human GO (blocked).
+## Priority 9 — Virtual end-to-end
+
+**Arts:** `P9_VIRTUAL_E2E_CLAIM_v1.md`, `P9_virtual_e2e_v1.md`
+
+| | |
+|--|--|
+| Label | **`P9_GAPS`** |
+| Hard blocks | **0** |
+| Soft gaps | backbone TBD · Primer-BLAST manual · Capture `P8_UNDERPOWERED` |
+| Locks | holdout SEALED · Stage-3 LOCKED · GO UNSIGNED · ORDER FORBIDDEN |
+
+### Plain language
+B0→A1→A2 на desk **сходится**. Редизайн не нужен. До human GO — backbone, Primer-BLAST, и не продавать Capture как powered primary.
+
+---
+
+Desk kill-sprint: C1/panel **not destroyed**; PE **conditional**; Capture **not powered**; E2E **gaps only**.  
+Следующий шаг: Primer-BLAST manual · или human GO (blocked).
 
