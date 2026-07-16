@@ -65,8 +65,10 @@
 - [x] P3 matched-null test of frozen panel 13 → panel not weakened; C1 extreme@L3 INCONCLUSIVE
 - [x] Expand P3 null-universe (28→115) → L2 unlocked; C1/C2/C3 **RETAIN_HP**
 - [x] P6 PE/OT robustness desk → **PE_OT_CONDITIONAL_PASS** (RADIL watch; Primer-BLAST manual)
+- [x] P8 power simulation → reporter **P8_ADEQUATE** (n_tx=6); Capture-C **P8_UNDERPOWERED**
+- [x] P10 immutable handoff snapshot (SHA-256 catalog + locks)
 - [ ] Genome-wide Primer-BLAST (manual) before any oligo order
-- [ ] P8 power curves / P10 immutable snapshot
+- [ ] P9 virtual end-to-end (optional desk)
 - [ ] Sign wet-lab GO (human) — **BLOCKED**
 - [ ] Unblind holdout — **BLOCKED**
 

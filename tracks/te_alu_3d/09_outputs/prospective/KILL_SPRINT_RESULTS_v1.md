@@ -17,9 +17,9 @@
 | **5** | Reporter robustness | **DONE** | **`REPORTER_DESK_OK_TECHNICAL`** + **P5 R1 `R1_PASS`** (AG 16/100/500 kb proxy) |
 | **6** | PE/OT robustness | **DONE** | **`PE_OT_CONDITIONAL_PASS`** — PD1+PD2 viable; RADIL watch; Primer-BLAST still manual |
 | **7** | Target gene ranking | NOT STARTED | — |
-| **8** | Power simulation | NOT STARTED | — |
+| **8** | Power simulation | **DONE** | Reporter **`P8_ADEQUATE`** (n_tx=6); Capture-C **`P8_UNDERPOWERED`** |
 | **9** | Virtual end-to-end | NOT STARTED | — |
-| **10** | Immutable handoff snapshot | NOT STARTED | — |
+| **10** | Immutable handoff snapshot | **DONE** | `content_hash` in `P10_immutable_handoff_v1.md` |
 
 ---
 
@@ -123,16 +123,42 @@ PE-дизайн не fragile на одном guide: PD2 — нормальный
 
 ---
 
+## Priority 8 — Power simulation
+
+**Arts:** `P8_POWER_CLAIM_v1.md`, `P8_power_simulation_v1.md`
+
+| Assay | Label | Mid-noise power @ n=6 |
+|-------|-------|----------------------:|
+| Reporter (μ=0.5 MCID) | **`P8_ADEQUATE`** | 0.894 |
+| Capture-C (Δ=0.25, ε=0.7) | **`P8_UNDERPOWERED`** | 0.111 |
+
+Recommended reporter n_tx (mid, power≥0.8): **6**. Capture has **no** n_batch ≤6 reaching 0.8 at ε≤0.7.  
+MCID false-positive (μ=0, mid, n=6): **0.22** — rule is liberal under null; interpret with care.
+
+### Plain language
+Репортёрный план на 6 трансфекций desk-adequate для MCID. Capture-C при реалистичной edit efficiency **недомощен** — не обещать 3D-контакт как powered primary.
+
+---
+
+## Priority 10 — Immutable handoff
+
+**Arts:** `P10_immutable_handoff_v1.md` / `.json`  
+SHA-256 catalog of kill-sprint arts; locks (holdout SEALED, wet NO-GO, Stage-3 LOCKED) frozen in snapshot.
+
+---
+
 ## What NOT done (still recommended next)
 
 1. ~~Expand matched-null universe~~ **DONE** (L2 unlocked; L1 still sparse)  
 2. ~~**P2 full or stratified AG**~~ **DONE** (all A→G + random 100; lean retained)  
 3. ~~**P5 R1** AG length ladder~~ **DONE** (`R1_PASS` on 16/100/500 kb proxy)  
 4. ~~**P6** second OT engine + Primer-BLAST~~ **DONE** desk (`PE_OT_CONDITIONAL_PASS`; genomewide Primer-BLAST still manual)  
-5. **P8** power curves for reporter & Capture-C  
-6. **P10** immutable hash-locked analysis release  
-7. Optional: remaining ~648 AG subst if budget allows (not required after v2)  
-8. Optional: local Cas-OFFinder when hg38 dump available
+5. ~~**P8** power curves~~ **DONE** (reporter ADEQUATE; Capture UNDERPOWERED)  
+6. ~~**P10** immutable snapshot~~ **DONE**  
+7. Optional: **P9** virtual end-to-end  
+8. Optional: remaining ~648 AG subst if budget allows (not required after v2)  
+9. Genomewide Primer-BLAST (manual) before any oligo order  
+10. Optional: local Cas-OFFinder when hg38 dump available
 
 ---
 
@@ -144,11 +170,14 @@ C1 allele-vs-window:     NOT KILLED (v2 satmut: rank#2/255, lean retained)
 Matched-null panel:      v2 L2 RETAIN_HP for C1/C2/C3; panel not weakened
 Reporter tech + R1:      OK; AG length proxy R1_PASS (16/100/500 kb)
 PE/OT desk:              PE_OT_CONDITIONAL_PASS (RADIL watch; Primer-BLAST manual)
+Reporter power (desk):   P8_ADEQUATE at n_tx=6
+Capture-C power (desk):  P8_UNDERPOWERED (ε≤0.7)
+Immutable snapshot:      P10 locked
 Wet-lab proof:           STILL ABSENT
 Expand to hundreds:      Still DON'T
 Holdout / move E/P:      Still DON'T
 ```
 
-Desk kill-sprint: C1/panel **not destroyed**; PE path **conditional**.  
-Следующий полезный шаг: **P8** power / **P10** snapshot — или human GO.
+Desk kill-sprint: C1/panel **not destroyed**; PE path **conditional**; Capture **not powered**.  
+Следующий полезный шаг: **P9** virtual E2E — или human GO (blocked).
 
