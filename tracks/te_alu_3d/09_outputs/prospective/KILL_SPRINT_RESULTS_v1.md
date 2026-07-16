@@ -11,8 +11,8 @@
 | Pri | Test | Status | Verdict |
 |----:|------|--------|---------|
 | **1** | G4a multi-sample Contact(E,P) | **DONE** | **`PASS_DESK_ROBUST`** — kills none |
-| **2** | C1 301 bp saturation mutagenesis | **DONE** (partial AG) | **`ALLELE_LEAN_RETAINED`** — kills none |
-| **3** | Matched-null panel ×13 | **DONE** (+expand) | v1/v2: activity **not** weakened; L1/L2 unreachable → **accept L3 ceiling**; C1 extreme@L3 |
+| **2** | C1 301 bp saturation mutagenesis | **DONE** (v1+v2 expand) | **`ALLELE_LEAN_RETAINED`** — kills none; v2: all 60 A→G + random100 (n=255) |
+| **3** | Matched-null panel ×13 | **DONE** (+expand) | activity **not** weakened; v2 L2 **RETAIN_HP** C1/C2/C3 |
 | **4** | Independent model matrix | PARTIAL (AG already on panel) | continue |
 | **5** | Reporter robustness | **DONE** | **`REPORTER_DESK_OK_TECHNICAL`** + **P5 R1 `R1_PASS`** (AG 16/100/500 kb proxy) |
 | **6** | PE/OT robustness | NOT STARTED | PD1 pack exists |
@@ -51,25 +51,23 @@ Still **not** an allele effect of C1.
 
 ## Priority 2 — C1 saturation mutagenesis
 
-**Arts:** `C1_saturation_mutagenesis_v1.md`, `.json`
+**Arts:** `C1_saturation_mutagenesis_v1.md`, `P2_SATMUT_EXPAND_CLAIM_v1.md`, `C1_saturation_mutagenesis_v2.md`
 
-- Window 301 bp: **903** possible single-base alts  
-- PWM scored: all  
-- AG scored: **101** = C1 + top-100 \|PWM\| (budget)  
-
-Pre-registered: S1 not top5% · S2 ≥20 peers @90% · S3 mean other A→G ≥ C1.
-
-| Metric | Value |
-|--------|------:|
-| C1 CHIP_TF | 0.541 |
-| Rank among AG-set | **1 / 101** (~top 1%) |
-| Peers ≥0.9×C1 | **0** |
-| Mean other A→G CHIP_TF | 0.155 ≪ C1 |
+| | v1 (top-PWM) | v2 (all A→G + random 100) |
+|--|--------------|---------------------------|
+| AG scored | 101 / 903 | **255** / 903 |
+| A→G covered | 6 | **60 / 60** |
+| C1 rank | 1 | **2** (neighbor `62753922:A:G` 0.567 > C1 0.541) |
+| pct from top | ~1% | **~0.8%** |
+| peers ≥0.9×C1 | 0 | **1** |
+| mean other A→G | 0.155 | **0.178** ≪ C1 |
+| Kills S1/S2/S3 | none | **none** |
+| Overall | ALLELE_LEAN_RETAINED | **ALLELE_LEAN_RETAINED** |
 
 ### Plain language
-Среди самых «мотивных» замен в окне C1 A→G пока **локальный выброс**, не средний A→G и не толпа соседей с тем же score.
+Даже на полном A→G + random фоне C1 остаётся редким выбросом. Соседний A→G на −1 bp чуть выше — локальный кластер, не «средняя A→G» и не толпа peers.
 
-**Caveat:** AG не на всех 903 (только top-PWM + C1) — это делает тест **строже против C1** (соседи уже сильные по PWM). Полный 903-run — усиление, не отмена.
+**Caveat:** still not full 903 AG; not wet biology.
 
 ---
 
@@ -107,11 +105,12 @@ Architecture contact endpoint: mostly demotion. Stage-3 / holdout / wet-lab unch
 ## What NOT done (still recommended next)
 
 1. ~~Expand matched-null universe~~ **DONE** (L2 unlocked; L1 still sparse)  
-2. **P2 full or stratified AG** beyond top-PWM (all A→G in window; random 100)  
+2. ~~**P2 full or stratified AG**~~ **DONE** (all A→G + random 100; lean retained)  
 3. ~~**P5 R1** AG length ladder~~ **DONE** (`R1_PASS` on 16/100/500 kb proxy)  
 4. **P6** second OT engine + Primer-BLAST  
 5. **P8** power curves for reporter & Capture-C  
 6. **P10** immutable hash-locked analysis release  
+7. Optional: remaining ~648 AG subst if budget allows (not required after v2) 
 
 ---
 
@@ -119,7 +118,7 @@ Architecture contact endpoint: mostly demotion. Stage-3 / holdout / wet-lab unch
 
 ```text
 G4a single-hic risk:     WEAKENED (multi-sample + VC pass)
-C1 allele-vs-window:     NOT KILLED on partial satmut (rank #1)
+C1 allele-vs-window:     NOT KILLED (v2 satmut: rank#2/255, lean retained)
 Matched-null panel:      v2 L2 RETAIN_HP for C1/C2/C3; panel not weakened
 Reporter tech + R1:      OK; AG length proxy R1_PASS (16/100/500 kb)
 Wet-lab proof:           STILL ABSENT
@@ -127,6 +126,6 @@ Expand to hundreds:      Still DON'T
 Holdout / move E/P:      Still DON'T
 ```
 
-Desk kill-sprint: C1/panel **not destroyed**; Branch B length proxy **survives**.  
-Следующий полезный kill-тест: **P2** satmut AG expand или **P6** OT.
+Desk kill-sprint: C1/panel **not destroyed**; Branch B length proxy **survives**; satmut expand **does not** kill allele lean.  
+Следующий полезный kill-тест: **P6** OT / Primer-BLAST.
 
