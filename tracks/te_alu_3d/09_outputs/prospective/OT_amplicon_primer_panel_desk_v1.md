@@ -59,7 +59,7 @@ Do **not** claim C1 regulates LRRN4CL/BSCL2 until HUDEP-2 RNA / TSS-seq nominate
 
 - [x] UCSC in-silico PCR desk batch — see `PRIMER_ISPCR_desk_v1.md`
 - [x] OT2 redesigned → **OT2b** (`OT2_KDM2B_primer_redesign_v1.md`) — isPCR 1 product; polyA-in-body WARN
-- [ ] NCBI Primer-BLAST human confirm (optional/SOP) for OT0/1/2b/3/4
+- [x] Single-primer BLAT desk — `PRIMER_NCBI_BLAST_desk_v1.md` (OT2b-F / OT3-F multi-map disclosure)
 - [ ] Phase A1 GO signed
 - [ ] Include Illumina tails / indices per core SOP (not in this desk file)
 

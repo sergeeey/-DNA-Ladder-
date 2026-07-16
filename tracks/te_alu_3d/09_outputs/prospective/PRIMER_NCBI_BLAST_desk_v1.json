@@ -1,0 +1,350 @@
+{
+  "status": "PRIMER_BLAT_DESK_COMPLETE",
+  "label": "PRIMER_BLAT_DESK_REDESIGN",
+  "created_utc": "2026-07-16T10:58:32.619331+00:00",
+  "claim": "PRIMER_NCBI_BLAST_CLAIM_v1.md",
+  "engine_primary": "ucsc_hgBlat_hg38_psl",
+  "ncbi_note": "NCBI Primer-BLAST UI / blastn-short skipped or flaky (502); BLAT used as desk uniqueness",
+  "oligo_order": "FORBIDDEN",
+  "rows": [
+    {
+      "pair": "OT0",
+      "role": "fwd",
+      "seq": "TTTCTCCTAGGTCACACCCA",
+      "label": "BLAST_OK",
+      "n_strong_hits": 1,
+      "top_hits": [
+        {
+          "chrom": "chr11",
+          "start": 62753822,
+          "end": 62753842,
+          "strand": "+",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 20,
+          "mismatches": 0
+        }
+      ],
+      "engine": "ucsc_hgBlat_hg38_psl",
+      "error": null
+    },
+    {
+      "pair": "OT0",
+      "role": "rev",
+      "seq": "TTAGGGAGTTCTCGAAGTGG",
+      "label": "BLAST_OK",
+      "n_strong_hits": 1,
+      "top_hits": [
+        {
+          "chrom": "chr11",
+          "start": 62754038,
+          "end": 62754058,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 20,
+          "mismatches": 0
+        }
+      ],
+      "engine": "ucsc_hgBlat_hg38_psl",
+      "error": null
+    },
+    {
+      "pair": "OT1",
+      "role": "fwd",
+      "seq": "AGGTCCCCAGGAGAGAGGT",
+      "label": "BLAST_OK",
+      "n_strong_hits": 0,
+      "top_hits": [],
+      "engine": "ucsc_hgBlat_hg38_psl",
+      "error": null
+    },
+    {
+      "pair": "OT1",
+      "role": "rev",
+      "seq": "TCTTGTCACCCAGATGAGCT",
+      "label": "BLAST_OK",
+      "n_strong_hits": 1,
+      "top_hits": [
+        {
+          "chrom": "chr7",
+          "start": 4805709,
+          "end": 4805729,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 20,
+          "mismatches": 0
+        }
+      ],
+      "engine": "ucsc_hgBlat_hg38_psl",
+      "error": null
+    },
+    {
+      "pair": "OT2b",
+      "role": "fwd",
+      "seq": "GGCACTTGTAGTCCCAGCTAC",
+      "label": "BLAST_MULTI",
+      "n_strong_hits": 89,
+      "top_hits": [
+        {
+          "chrom": "chr9",
+          "start": 66617845,
+          "end": 66617866,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 21,
+          "mismatches": 0
+        },
+        {
+          "chrom": "chr9",
+          "start": 66929910,
+          "end": 66929931,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 21,
+          "mismatches": 0
+        },
+        {
+          "chrom": "chr9",
+          "start": 42777590,
+          "end": 42777611,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 21,
+          "mismatches": 0
+        },
+        {
+          "chrom": "chr9",
+          "start": 2408235,
+          "end": 2408256,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 21,
+          "mismatches": 0
+        },
+        {
+          "chrom": "chr8_MU273360v1_fix",
+          "start": 8495,
+          "end": 8516,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 21,
+          "mismatches": 0
+        },
+        {
+          "chrom": "chr8",
+          "start": 123522335,
+          "end": 123522356,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 21,
+          "mismatches": 0
+        },
+        {
+          "chrom": "chr8",
+          "start": 122303765,
+          "end": 122303786,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 21,
+          "mismatches": 0
+        },
+        {
+          "chrom": "chr8",
+          "start": 63887650,
+          "end": 63887671,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 21,
+          "mismatches": 0
+        }
+      ],
+      "engine": "ucsc_hgBlat_hg38_psl",
+      "error": null
+    },
+    {
+      "pair": "OT2b",
+      "role": "rev",
+      "seq": "ATGTTTTCCGGGGTGGGAAGG",
+      "label": "BLAST_OK",
+      "n_strong_hits": 1,
+      "top_hits": [
+        {
+          "chrom": "chr12",
+          "start": 121534495,
+          "end": 121534516,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 21,
+          "mismatches": 0
+        }
+      ],
+      "engine": "ucsc_hgBlat_hg38_psl",
+      "error": null
+    },
+    {
+      "pair": "OT3",
+      "role": "fwd",
+      "seq": "CGGTTCTATGCTCACAGTGT",
+      "label": "BLAST_MULTI",
+      "n_strong_hits": 23,
+      "top_hits": [
+        {
+          "chrom": "chrX",
+          "start": 55674042,
+          "end": 55674062,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 20,
+          "mismatches": 0
+        },
+        {
+          "chrom": "chrX",
+          "start": 14463535,
+          "end": 14463555,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 20,
+          "mismatches": 0
+        },
+        {
+          "chrom": "chr6",
+          "start": 83292808,
+          "end": 83292828,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 20,
+          "mismatches": 0
+        },
+        {
+          "chrom": "chr5",
+          "start": 134337014,
+          "end": 134337034,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 20,
+          "mismatches": 0
+        },
+        {
+          "chrom": "chr5",
+          "start": 5115353,
+          "end": 5115373,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 20,
+          "mismatches": 0
+        },
+        {
+          "chrom": "chr4",
+          "start": 127905167,
+          "end": 127905187,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 20,
+          "mismatches": 0
+        },
+        {
+          "chrom": "chr3",
+          "start": 101971090,
+          "end": 101971110,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 20,
+          "mismatches": 0
+        },
+        {
+          "chrom": "chr19",
+          "start": 32787607,
+          "end": 32787627,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 20,
+          "mismatches": 0
+        }
+      ],
+      "engine": "ucsc_hgBlat_hg38_psl",
+      "error": null
+    },
+    {
+      "pair": "OT3",
+      "role": "rev",
+      "seq": "ATTATCGGAGCTTGAACGCG",
+      "label": "BLAST_OK",
+      "n_strong_hits": 1,
+      "top_hits": [
+        {
+          "chrom": "chr1",
+          "start": 92389050,
+          "end": 92389070,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 20,
+          "mismatches": 0
+        }
+      ],
+      "engine": "ucsc_hgBlat_hg38_psl",
+      "error": null
+    },
+    {
+      "pair": "OT4",
+      "role": "fwd",
+      "seq": "TGAGCCAGAGTTCATGGTCA",
+      "label": "BLAST_OK",
+      "n_strong_hits": 1,
+      "top_hits": [
+        {
+          "chrom": "chr13",
+          "start": 114290080,
+          "end": 114290100,
+          "strand": "+",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 20,
+          "mismatches": 0
+        }
+      ],
+      "engine": "ucsc_hgBlat_hg38_psl",
+      "error": null
+    },
+    {
+      "pair": "OT4",
+      "role": "rev",
+      "seq": "TTGGAACTGAGAACCCCTGA",
+      "label": "BLAST_OK",
+      "n_strong_hits": 1,
+      "top_hits": [
+        {
+          "chrom": "chr13",
+          "start": 114290302,
+          "end": 114290322,
+          "strand": "-",
+          "pct_identity": 100.0,
+          "query_coverage": 100.0,
+          "matches": 20,
+          "mismatches": 0
+        }
+      ],
+      "engine": "ucsc_hgBlat_hg38_psl",
+      "error": null
+    }
+  ]
+}
