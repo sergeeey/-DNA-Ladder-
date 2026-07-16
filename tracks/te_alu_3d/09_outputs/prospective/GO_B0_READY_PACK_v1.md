@@ -39,13 +39,15 @@ Desk kill-sprint: C1 not destroyed (P1–P10). Still **not** wet biology.
 
 ## Lab must freeze before PO (fill at signature or same day)
 
-| Item | Value |
-|------|-------|
-| Backbone vendor / plasmid ID | ________________ |
-| Readout (luc / FP) | ________________ |
-| Cloning method | ________________ |
-| Partner lab | ________________ |
-| Budget cap (USD) | ________________ |
+| Item | Desk nominate | Sign / confirm |
+|------|---------------|----------------|
+| Backbone vendor / plasmid ID | `Promega_pGL4.23_luc2_minP_E8411` | ________________ |
+| Readout (luc / FP) | luc2 + Renilla norm | ________________ |
+| Cloning method | gBlock ± Gibson | ________________ |
+| Partner lab | — | ________________ |
+| Budget cap (USD) | — | ________________ |
+
+See `B0_backbone_desk_nominate_v1.md` · `B0_PO_draft_v1.md` · `B0_transfection_day_card_v1.md`.
 
 ---
 
@@ -73,6 +75,7 @@ notes: "B0 only; B-min REF/ALT + backbone; no PE/Capture/OT"
 
 - `GO_note_draft_C1_B_first_v1.md` — master authorization file  
 - `BranchB_oligo_checklist_v1.md` — shopping list  
-- `P8_power_simulation_v1.md` — reporter power  
-- `P9_virtual_e2e_v1.md` — B0 path coherent  
-- `P10_immutable_handoff_v1.md` — locks  
+- `B0_backbone_desk_nominate_v1.md` · `B0_PO_draft_v1.md` · `B0_insert_verify_primers_desk_v1.md`  
+- `B0_transfection_day_card_v1.md` · `B0_bmin_hash_spotcheck_v1.json`  
+- `GO_A1_READY_PACK_v1.md` · `A2_CAPTURE_HELD_v1.md` · `HOLDOUT_REMAIN_SEALED_v1.md`  
+- `P8_power_simulation_v1.md` · `P9_virtual_e2e_v1.md` · `P10_immutable_handoff_v1.md`  

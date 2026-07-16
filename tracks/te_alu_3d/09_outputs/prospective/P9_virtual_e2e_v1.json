@@ -128,23 +128,27 @@
   ],
   "soft_gaps": [
     {
-      "id": "BACKBONE_TBD",
-      "detail": "Reporter backbone vendor/plasmid ID still lab-fill before order"
+      "id": "BACKBONE_DESK_NOMINATED",
+      "detail": "Desk default Promega E8411; lab freezes backbone_id at GO (B0_backbone_desk_nominate_v1.md)"
+    },
+    {
+      "id": "B0_INSERT_VERIFY_PRIMERS",
+      "detail": "Insert-internal IV/Sanger primers desk; junction oligos blocked until MCS map"
     },
     {
       "id": "PRIMER_BLAST_MANUAL",
-      "detail": "Genome-wide Primer-BLAST still manual before oligo order"
+      "detail": "OT panel UCSC isPCR+BLAT PASS; NCBI Primer-BLAST still optional manual for A1"
     },
     {
       "id": "CAPTURE_UNDERPOWERED",
-      "detail": "Capture-C P8_UNDERPOWERED — must not be sold as powered primary"
+      "detail": "P8 Capture underpowered as primary; A2_CAPTURE_HELD_v1.md"
     }
   ],
   "hard_blocks": [],
   "phases": {
-    "B0": "desk arts present; backbone soft gap; ORDER FORBIDDEN",
-    "A1": "PE_OT_CONDITIONAL_PASS; Primer-BLAST soft gap; RADIL watch",
-    "A2": "baits locked; Capture UNDERPOWERED soft gap",
+    "B0": "desk closed for paperwork; ORDER FORBIDDEN until GO; backbone nominated",
+    "A1": "GO_A1_READY_PACK UNSIGNED; PE_OT_CONDITIONAL_PASS; RADIL watch",
+    "A2": "A2_CAPTURE_HELD; UNDERPOWERED as primary",
     "cross": "holdout SEALED; Stage-3 LOCKED; GO UNSIGNED"
   }
 }

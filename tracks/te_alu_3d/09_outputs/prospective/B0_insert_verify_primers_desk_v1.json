@@ -1,0 +1,51 @@
+{
+  "label": "B0_INSERT_VERIFY_PRIMERS_DESK_v1",
+  "date": "2026-07-16",
+  "status": "DESK_CANDIDATE",
+  "order": "FORBIDDEN_UNTIL_B0_GO",
+  "insert_window": "chr11:62753773-62754073",
+  "c1_index_0based": 150,
+  "alleles": {"REF": "A", "ALT": "G"},
+  "primers": [
+    {
+      "id": "B0-IV-F",
+      "role": "insert_verify_F",
+      "seq": "CTTGCCACTCCAAAACAATCGC",
+      "bind_start": 11,
+      "bind_end": 32,
+      "tm_approx": 54.8,
+      "gc": 0.5
+    },
+    {
+      "id": "B0-IV-R",
+      "role": "insert_verify_R",
+      "seq": "GCGTGAGGGAGATGCTTAGG",
+      "bind_start": 281,
+      "bind_end": 300,
+      "strand": "RC",
+      "tm_approx": 55.9,
+      "gc": 0.6
+    },
+    {
+      "id": "B0-SG-F",
+      "role": "sanger_F",
+      "seq": "AAGCTCTCCCATTAGCTCCGCC",
+      "bind_start": 70,
+      "bind_end": 91,
+      "tm_approx": 58.6,
+      "gc": 0.59
+    },
+    {
+      "id": "B0-SG-R",
+      "role": "sanger_R",
+      "seq": "TACTTCGTGGAGCCGTTGGACG",
+      "bind_start": 198,
+      "bind_end": 219,
+      "strand": "RC",
+      "tm_approx": 58.6,
+      "gc": 0.59
+    }
+  ],
+  "junction_primers": "BLOCKED_UNTIL_BACKBONE_ID",
+  "method": "local_wallace_tm_gc_heuristic"
+}

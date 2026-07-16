@@ -77,7 +77,10 @@
 - [x] OT forward redesign → **OT2c** + **OT3b** (`OT_F_REDESIGN_PASS`)
 - [x] Re-verify isPCR → **PRIMER_DESK_PASS**
 - [x] Prepare **GO_B0_READY_PACK_v1.md** (awaiting human signature)
+- [x] B0 desk closure: backbone nominate · insert-verify/Sanger primers · PO draft · transfection card · B-min hash spotcheck
+- [x] A1 ready pack UNSIGNED + A2 Capture HELD + holdout SEALED reminder + HUDEP-2 RNA ABSENT note
 - [ ] Sign wet-lab GO B0 (human) — paste one-line fields; still **UNSIGNED**
+- [ ] Submit B0 PO (lab) — **BLOCKED** until signature
 - [ ] Unblind holdout — **BLOCKED**
 
 ## Blocked

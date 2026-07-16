@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-16 — B0 desk closure (still UNSIGNED)
+
+- Backbone desk nominate: Promega E8411 (`B0_backbone_desk_nominate_v1.md`)
+- Insert-verify + Sanger primers; B-min hash spotcheck; PO draft; transfection day card
+- A1 ready pack UNSIGNED; A2 Capture HELD; holdout SEALED reminder; HUDEP-2 RNA ABSENT note
+- Oligo order / wet-lab still FORBIDDEN until human GO signature
+
 ## 2026-07-15 — Kill-sprint P1/P2/P5
 
 - G4a multi-sample → **PASS_DESK_ROBUST** (3113/3114/3115 + VC); kills none

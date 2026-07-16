@@ -1,0 +1,28 @@
+{
+  "label": "B0_BMIN_HASH_SPOTCHECK_v1",
+  "date": "2026-07-16",
+  "status": "PASS_SPOTCHECK",
+  "files": [
+    {
+      "path": "pilot_scaffold/data/cultivation/c1_reporter_minimal_301bp_REF.fa",
+      "header": ">C1_minimal_301bp_REF_A",
+      "length_bp": 301,
+      "base_at_150": "A",
+      "flank_140_161": "TGCCCCCGGAAGTCCCGCCCC",
+      "sha256_file_bytes": "6660a4acf6314f38dd6e8fe862b668eaed88c8c25d686984548132a5426182e0"
+    },
+    {
+      "path": "pilot_scaffold/data/cultivation/c1_reporter_minimal_301bp_ALT.fa",
+      "header": ">C1_minimal_301bp_ALT_G",
+      "length_bp": 301,
+      "base_at_150": "G",
+      "flank_140_161": "TGCCCCCGGAGGTCCCGCCCC",
+      "sha256_file_bytes": "2fbce8ffea0f9e95cafa9688e45dd2e7a0d87c22f8b08ee252ab3423a49f5b2b"
+    }
+  ],
+  "checks": {
+    "lengths_equal_301": true,
+    "single_snp_at_150_A_to_G": true,
+    "ready_for_PO_after_GO": true
+  }
+}

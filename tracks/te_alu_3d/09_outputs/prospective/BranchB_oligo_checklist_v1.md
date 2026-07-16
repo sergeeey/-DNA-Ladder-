@@ -36,9 +36,9 @@ C1 index within inserts: 150 / 500 / 1000 (0-based) per `BranchB_reporter_sequen
 
 | Item | Desk default | Freeze at GO |
 |------|--------------|--------------|
-| Reporter backbone | minP + luc or FP | ☐ vendor / plasmid ID _______ |
+| Reporter backbone | **nominate:** Promega E8411 pGL4.23[luc2/minP] (`B0_backbone_desk_nominate_v1.md`) | ☐ paste `backbone_id` in GO |
 | Insert orientation | sense as genomic + | ☐ confirm |
-| Cloning method | Gibson / IDT gBlock / PCR | ☐ _______ |
+| Cloning method | IDT gBlock ± Gibson after MCS map | ☐ _______ |
 | Antibiotic | lab standard | ☐ _______ |
 | Empty backbone control | required | ☐ |
 | Scramble insert | optional | ☐ |
@@ -46,15 +46,16 @@ C1 index within inserts: 150 / 500 / 1000 (0-based) per `BranchB_reporter_sequen
 
 ---
 
-## PCR / sequencing oligos (design pending — slots)
+## PCR / sequencing oligos
 
 | Purpose | Status | Notes |
 |---------|--------|-------|
-| Insert verify F/R | **TODO** | span junction insert–backbone |
-| Sanger of C1 base in plasmid | **TODO** | confirm A vs G before transfection |
+| Insert verify F/R | **DESK DONE** | `B0-IV-F/R` in `B0_insert_verify_primers_desk_v1.md` (insert-internal) |
+| Sanger of C1 base in plasmid | **DESK DONE** | `B0-SG-F/R` — covers index 150 A/G |
+| Junction insert–backbone | **BLOCKED** | needs frozen backbone MCS map |
 | qPCR / RNA (if FP not used) | optional | not required for luciferase MCID |
 
-Do **not** invent primer sequences in this checklist until a named primer design pass.
+PO draft line items: `B0_PO_draft_v1.md`. Hash spotcheck: `B0_bmin_hash_spotcheck_v1.json`.
 
 ---
 

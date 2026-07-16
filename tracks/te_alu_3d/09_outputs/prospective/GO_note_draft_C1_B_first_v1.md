@@ -130,6 +130,9 @@ To sign: fill the block above **or** reply in chat:
 
 ## Linked
 
+- `GO_B0_READY_PACK_v1.md` · `GO_A1_READY_PACK_v1.md` · `A2_CAPTURE_HELD_v1.md`  
+- `B0_backbone_desk_nominate_v1.md` · `B0_PO_draft_v1.md` · `B0_insert_verify_primers_desk_v1.md`  
+- `B0_transfection_day_card_v1.md` · `HOLDOUT_REMAIN_SEALED_v1.md`  
 - `NDE_C1_exhaustion_A_plus_B_v1.md`  
 - `BranchB_oligo_checklist_v1.md`  
 - `CaptureC_bait_quote_sheet_v1.md`  

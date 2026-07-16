@@ -10,16 +10,17 @@
 | Class | n |
 |-------|--:|
 | OK checks | 32 |
-| Soft gaps | 3 |
+| Soft gaps | 4 |
 | Hard blocks | 0 |
 
 ## Soft gaps
 
 | ID | Detail |
 |----|--------|
-| `BACKBONE_TBD` | Reporter backbone vendor/plasmid ID still lab-fill before order |
-| `PRIMER_BLAST_MANUAL` | Genome-wide Primer-BLAST still manual before oligo order |
-| `CAPTURE_UNDERPOWERED` | Capture-C P8_UNDERPOWERED — must not be sold as powered primary |
+| `BACKBONE_DESK_NOMINATED` | Desk default Promega E8411; lab still freezes `backbone_id` at GO |
+| `B0_INSERT_VERIFY_PRIMERS` | Insert-internal IV/Sanger desk; junction oligos wait MCS map |
+| `PRIMER_BLAST_MANUAL` | OT isPCR+BLAT PASS; NCBI Primer-BLAST optional for A1 |
+| `CAPTURE_UNDERPOWERED` | Capture held as non-primary (`A2_CAPTURE_HELD_v1.md`) |
 
 ## Hard blocks
 
@@ -31,15 +32,14 @@
 
 | Phase | Result |
 |-------|--------|
-| B0 reporter | FASTA present; MCID present; ORDER FORBIDDEN; backbone lab-fill soft |
+| B0 reporter | FASTA+hashes; IV/Sanger primers desk; PO draft; backbone nominated; ORDER FORBIDDEN until GO |
 | A1 PE | `PE_OT_CONDITIONAL_PASS`; RADIL watch; Primer-BLAST manual soft |
 | A2 Capture-C | baits locked; quote sheet present; **P8_UNDERPOWERED** soft |
 | Cross-cutting | holdout SEALED · Stage-3 LOCKED · GO UNSIGNED_DRAFT |
 
 ## Plain language
 
-План B0→A1→A2 на бумаге **сходится**: артефакты есть, замки целы, жёстких противоречий нет.
-Остаются мягкие дыры (backbone, Primer-BLAST, Capture недомощен) — это не редизайн, а чеклист до human GO.
+План B0→A1→A2 на бумаге **сходится**. B0 paperwork desk-closed (backbone nominate, IV/Sanger, PO draft). Жёсткий блокер один: human GO signature. Capture не primary.
 
 ## What this does NOT mean
 
