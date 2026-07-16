@@ -1,11 +1,13 @@
 # GO-note DRAFT — C1 dual-track (B-first)
 
-**Date:** 2026-07-15  
+**Date:** 2026-07-15 (rev 2026-07-16 — B0 ready pack)  
 **Doc type:** wet-lab authorization **template**  
 **Current machine status:**
 
 ```text
 authorization_state:  UNSIGNED_DRAFT
+ready_pack:           GO_B0_READY_PACK_v1.md
+recommended:          authorize [B0] only
 oligo_order:          FORBIDDEN
 transfection / PE:    FORBIDDEN
 Capture-C wet:        FORBIDDEN
@@ -107,17 +109,22 @@ Quote sheet: `CaptureC_bait_quote_sheet_v1.md` (pricing only).
 ## Signature block (blank = NO-GO)
 
 ```yaml
-go_version: DRAFT_v1
-authorized_phases: []          # e.g. [B0] or [B0, A1]
+go_version: DRAFT_v1          # set to GO_B0_v1 when signing B0
+authorized_phases: []         # set to [B0] for recommended first wet step
 signer_name: null
 signer_role: null
 date_signed: null
 budget_cap_usd: null
 partner_lab: null
+backbone_id: null             # required before oligo PO
 notes: null
 ```
 
 **Machine read:** if `date_signed` is null → **NO-GO**.
+
+To sign: fill the block above **or** reply in chat:
+
+`B0 | signer_name=… | signer_role=… | backbone_id=… | budget_cap_usd=… | partner_lab=…`
 
 ---
 

@@ -76,7 +76,8 @@
 - [x] Primer single-seq BLAT desk → was REDESIGN; after F redesign → **PRIMER_BLAT_DESK_PASS**
 - [x] OT forward redesign → **OT2c** + **OT3b** (`OT_F_REDESIGN_PASS`)
 - [x] Re-verify isPCR → **PRIMER_DESK_PASS**
-- [ ] Sign wet-lab GO (human) — **BLOCKED** (recommend B0 only first)
+- [x] Prepare **GO_B0_READY_PACK_v1.md** (awaiting human signature)
+- [ ] Sign wet-lab GO B0 (human) — paste one-line fields; still **UNSIGNED**
 - [ ] Unblind holdout — **BLOCKED**
 
 ## Blocked
