@@ -43,7 +43,9 @@ tracks/se_llps/experiments/exp_topology_community_crispr_eg/data/input/
 tracks/se_llps/experiments/exp_te_derived_pels_gnocchi/data/input/
 tracks/se_llps/data/input/gnocchi_constraint_z_genome_1kb_qc.txt.gz
 tracks/te_alu_3d/experiments/exp_microc_vs_hic_alu_anchors/data/input/
+tracks/te_alu_3d/experiments/exp_l1hs_ctcf_loop_anchors/data/input/
 *.2bit
+k100.Umap*.bw
 
 # Track-specific bulky / sealed data (see tracks/*/DATA.md)
 tracks/te_alu_3d/pilot_scaffold/data/clinvar.vcf.gz

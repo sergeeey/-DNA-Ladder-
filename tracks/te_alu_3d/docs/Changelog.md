@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-20 — C-L1 L1HS@CTCF REJECT + autonomous wave STOP
+
+- True **C-L1** (NOT cross-cell): `exp_l1hs_ctcf_loop_anchors/`
+- Unit = CTCF peak on vs off Hi-C anchor; L1HS 5′UTR (2 kb); match chrom/length/umap
+- K562 OR **0.143** / HCT116 **0.200**; umap kill; null_results REJECT
+- Wave summary `09_outputs/prospective/AUTONOMOUS_DESK_WAVE_2026-07-20.md`; `next_fruit_recommend: PAUSE_HUMAN`
+
 ## 2026-07-20 — C-H1 TE-pELS Gnocchi SUPPORT + C-I1 Micro-C BLOCKED_DATA
 
 - True **C-H1** (NOT Micro-C): se_llps `exp_te_derived_pels_gnocchi` → **SUPPORT** |\Delta|=0.211

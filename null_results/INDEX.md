@@ -6,6 +6,7 @@ with track tag in the slug or body.
 
 | ID | Date | Slug | Verdict | Why (10 words) | Track |
 |---|---|---|---|---|---|
+| 20260720-l1hs-ctcf-loop-anchor-enrichment | 2026-07-20 | L1HS 5′UTR enriched at CTCF∩Hi-C anchors vs matched CTCF? | REJECT | K562 OR 0.14; umap kill; sparse events | te_alu_3d |
 | 20260720-sva-f-dels-state-switching | 2026-07-20 | SVA_F dELS active↔inactive switching vs matched non-TE? | REJECT | OR 0.49; odd+even OR&lt;1.1 FAIL_KILL | te_alu_3d |
 | 20260720-topology-community-crispr-eg-delta-auc | 2026-07-20 | CRE-community topology ΔAUC over dist+ELS+SE for CRISPR E–G? | REJECT | Holdout ΔAUC −0.007; FAIL_KILL; distance alone AUC 0.88 | se_llps |
 | 20260720-te-chia-vs-hic-alusz-anchor-discordance | 2026-07-20 | AluSz enrichment Pol II ChIA-PET vs Hi-C discordant anchors? | INCONCLUSIVE | K562 FAIL; GM12878/HCT116 mid-zone; cross-cell inconsistent | te_alu_3d |

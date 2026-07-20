@@ -6,6 +6,7 @@
 # 2026-07-20: TRUE C-A2 = SVA_F dELS switching (NOT ChIA-PET) → REJECT FAIL_KILL
 # 2026-07-20: TRUE C-H1 = TE-derived pELS Gnocchi (NOT Micro-C) → SUPPORT
 # 2026-07-20: TRUE C-I1 = Micro-C vs Hi-C Alu anchors (Deep Research original C-H1) → BLOCKED_DATA
+# 2026-07-20: TRUE C-L1 = L1HS 5′UTR @ CTCF∩Hi-C anchors → REJECT FAIL_KILL; autonomous wave STOP
 
 schema_version: 1
 date: "2026-07-20"
@@ -13,7 +14,7 @@ report: DEEP_RESEARCH_REPORT_C_A1_v1.md
 inspection_commit: c048650
 decision: INCONCLUSIVE_CLOSED
 recommended_id: C-A1
-next_fruit_recommend: C-L1
+next_fruit_recommend: PAUSE_HUMAN
 scoring_formula: "0.15*N + 0.15*F + 0.25*I + 0.20*K + 0.15*D + 0.10*T"
 
 candidates:
@@ -140,10 +141,22 @@ candidates:
       TRUE C-A2 (not ChIA-PET). Primary OR 0.489; odd+even OR<1.1 → FAIL_KILL / REJECT.
       Matching locked before outcomes. Next fruit was C-H1 (TE-pELS Gnocchi; closed SUPPORT).
   - id: C-L1
+    title: "L1HS 5prime UTR enrichment at CTCF/Hi-C loop anchors vs matched background CTCF (K562+/-HCT116)"
+    final_score: null
+    recommended: false
+    status: REJECT_CLOSED
+    desk_verdict: FAIL_KILL
+    alias: C-L1-l1hs-ctcf-loop-anchors
+    path: tracks/te_alu_3d/experiments/exp_l1hs_ctcf_loop_anchors/
+    null_results: null_results/20260720-l1hs-ctcf-loop-anchor-enrichment.md
+    note: >
+      TRUE C-L1 (NOT cross-cell transfer). Unit=CTCF peak on vs off Hi-C anchor.
+      K562 OR 0.143 / HCT116 0.200; both <1.1 after umap. Sparse L1HS CTCF events.
+  - id: C-L1-crosscell-original
     title: "Cross-cell-line transfer: K562 discordant-TE pattern vs GM12878"
     final_score: 6.04
-    recommended: true
-    status: QUEUED
+    recommended: false
+    status: PARKED
     note: >
-      Next fruit after C-I1 Micro-C BLOCKED_DATA (and after C-H1 TE-pELS Gnocchi SUPPORT).
-      Was fallback when Micro-C processed loops unavailable.
+      Deep Research original C-L1. Desk slot filled with L1HS@CTCF estimand.
+      Remains PARKED after autonomous wave STOP (2026-07-20).

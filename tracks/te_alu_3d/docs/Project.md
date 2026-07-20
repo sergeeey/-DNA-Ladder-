@@ -14,7 +14,8 @@ C-A1 desk (`exp_te_loop_assay_discordance_chia_vs_hic`): **CLOSED** `INCONCLUSIV
 C-K1 desk (`exp_plac_vs_hic_alu_anchors`): **CLOSED** `BLOCKED_DATA` — no processed H3K4me3 PLAC-seq loop bedpe (GM12878/K562) on ENCODE/4DN; OR not computed  
 C-A2 desk (`exp_sva_f_ccre_state_switching`): **CLOSED** `REJECT` / `FAIL_KILL` — SVA_F dELS switcher OR **0.489** (odd/even both &lt;1.1); not ChIA-PET  
 C-H1 desk (`tracks/se_llps/.../exp_te_derived_pels_gnocchi`): **CLOSED** `SUPPORT` — TE-pELS |\Delta Gnocchi| **0.211** (NOT Micro-C)  
-C-I1 desk (`exp_microc_vs_hic_alu_anchors`): **CLOSED** `BLOCKED_DATA` — no processed Micro-C loop bedpe; next fruit **C-L1**
+C-I1 desk (`exp_microc_vs_hic_alu_anchors`): **CLOSED** `BLOCKED_DATA` — no processed Micro-C loop bedpe  
+C-L1 desk (`exp_l1hs_ctcf_loop_anchors`): **CLOSED** `REJECT` — L1HS 5′UTR @ CTCF OR **0.143**; autonomous wave **STOP** / PAUSE_HUMAN
 
 ## Operational snapshot
 

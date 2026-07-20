@@ -1,0 +1,89 @@
+{
+  "experiment": "exp_l1hs_ctcf_loop_anchors",
+  "candidate_id": "C-L1",
+  "seed": 20260720,
+  "l1hs_utr_bp": 2000,
+  "cells": {
+    "K562": {
+      "cell": "K562",
+      "primary_cell": true,
+      "unit": "CTCF_peak_on_vs_off_HiC_anchor",
+      "n_case_ctcf_on_anchor": 15552,
+      "n_ctrl_pool": 36207,
+      "n_matched_pairs": 1514,
+      "n_undermatched": 14038,
+      "median_length_matched_case": 424.0,
+      "median_length_matched_ctrl": 424.0,
+      "contingency_primary": {
+        "a": 0,
+        "b": 1514,
+        "c": 3,
+        "d": 1511
+      },
+      "or_primary": 0.14257416403339152,
+      "or_ci95": [
+        0.007357823107753373,
+        2.7626910775281157
+      ],
+      "p_fisher": NaN,
+      "n_pairs_umap_ge_0_3": 1495,
+      "contingency_umap": {
+        "a": 0,
+        "b": 1495,
+        "c": 3,
+        "d": 1492
+      },
+      "or_umap_0_3": 0.14257056884940536,
+      "or_umap_ci95": [
+        0.007357557418069272,
+        2.7626515087906665
+      ],
+      "p_fisher_umap": NaN,
+      "mcid_support": 1.4,
+      "mcid_kill": 1.1,
+      "verdict": "REJECT"
+    },
+    "HCT116": {
+      "cell": "HCT116",
+      "primary_cell": false,
+      "unit": "CTCF_peak_on_vs_off_HiC_anchor",
+      "n_case_ctcf_on_anchor": 8664,
+      "n_ctrl_pool": 51206,
+      "n_matched_pairs": 5312,
+      "n_undermatched": 3352,
+      "median_length_matched_case": 376.0,
+      "median_length_matched_ctrl": 379.0,
+      "contingency_primary": {
+        "a": 0,
+        "b": 5312,
+        "c": 2,
+        "d": 5310
+      },
+      "or_primary": 0.19992470588235295,
+      "or_ci95": [
+        0.009595398835806434,
+        4.165526488903482
+      ],
+      "p_fisher": NaN,
+      "n_pairs_umap_ge_0_3": 5290,
+      "contingency_umap": {
+        "a": 0,
+        "b": 5290,
+        "c": 2,
+        "d": 5288
+      },
+      "or_umap_0_3": 0.19992439277951043,
+      "or_umap_ci95": [
+        0.009595374303038308,
+        4.165524091707377
+      ],
+      "p_fisher_umap": NaN,
+      "mcid_support": 1.4,
+      "mcid_kill": 1.1,
+      "verdict": "REJECT"
+    }
+  },
+  "primary_verdict": "REJECT",
+  "elapsed_sec": 10.9,
+  "note": "Unit=CTCF peak on vs off Hi-C anchor (length-matched). Hi-C-anchor-as-unit abandoned: median span ~10kb vs CTCF ~0.4kb prevents valid length match; mid-1kb yields ~0 L1HS hits."
+}

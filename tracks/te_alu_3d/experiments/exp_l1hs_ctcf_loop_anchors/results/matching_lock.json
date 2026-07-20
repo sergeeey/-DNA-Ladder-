@@ -1,0 +1,11 @@
+{
+  "seed": 20260720,
+  "unit": "CTCF_peak",
+  "covariates": [
+    "chrom",
+    "length_bin_q4",
+    "umap_bin_q4"
+  ],
+  "k562_matched": 1514,
+  "hct116_matched": 5312
+}

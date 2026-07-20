@@ -15,11 +15,13 @@
 - [x] **C-A2 desk CLOSED** as `REJECT` / `FAIL_KILL` (2026-07-20): SVA_F dELS switching vs
   matched non-TE — primary OR **0.489**; odd+even OR&lt;1.1; null_results REJECT; **not**
   ChIA-PET — **no wet / no holdout / no C1 E/P**
+- [x] **C-L1 desk CLOSED** as `REJECT` / `FAIL_KILL` (2026-07-20): L1HS 5′UTR @ CTCF
+  on-anchor vs matched CTCF — K562 OR **0.143**; wave **STOP** / PAUSE_HUMAN
 - [x] **C-H1 desk CLOSED** as `SUPPORT` (2026-07-20): TE-derived pELS Gnocchi |\Delta|=**0.211**
   (se_llps `exp_te_derived_pels_gnocchi`); NOT Micro-C — **no wet / no holdout / no C1 E/P**
 - [x] **C-I1 desk CLOSED** as `BLOCKED_DATA` (2026-07-20): Micro-C vs Hi-C Alu anchors T0 —
   ENCODE Micro-C assay 404; 4DN pairs/hic/mcool only — **no wet / no holdout / no C1 E/P**
-- [ ] **C-L1** (queued): cross-cell transfer K562→GM12878 — Standard-tier prereg when started
+- [ ] **PAUSE_HUMAN** — do not auto-start C-F1/C-D1/C-E1/C-G1/C-J1 overnight
 - [x] **C-K1 desk CLOSED** as `BLOCKED_DATA` (2026-07-20): H3K4me3 PLAC vs Hi-C AluSz prereg + T0 ENCODE/4DN probe — no processed PLAC loop bedpe (GM12878/K562); OR not run — **no wet / no holdout / no C1 E/P**
 - [x] **C-A1 desk CLOSED** as `INCONCLUSIVE_CROSS_CELL` (2026-07-20): caller-swap DELTA OR≈0.913 FAIL-robust; figures; null_results **INCONCLUSIVE** filed; recommend C-B1 next (do not auto-start) — **no wet / no holdout / no C1 E/P / no post-hoc TE switch**
 - [x] C-A1 T5b HCT116: freeze `ENCFF322FOT`/`ENCFF060QTI`/`ENCFF463FGL`; AluSz OR **1.280** (CI 1.162–1.410) mid-zone; CTCF gate PASS (OR≈8.35); umap≥0.3 OR **1.281**; three-cell synthesis still not REJECT; null_results not filed — **no wet / no holdout / no C1 E/P**
