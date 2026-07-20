@@ -1,0 +1,30 @@
+{
+  "experiment": "exp_te_derived_pels_gnocchi",
+  "files": [
+    {
+      "path": "data/input/GRCh38-cCREs.Registry-V3.bed",
+      "bytes": 63732631,
+      "sha256": "d53dd192912eee5ac8f37ab39daf0dde3e81d8b95d2d9b4d54edceb971872ebc"
+    },
+    {
+      "path": "data/input/rmsk.txt.gz",
+      "bytes": 155633856,
+      "sha256": "db60e6aa7ac175f8f5465cd01b48b550e67e1fb0fd828608d8343481867bb276"
+    },
+    {
+      "path": "data/input/hg38.2bit",
+      "bytes": 835393456,
+      "sha256": "1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0"
+    },
+    {
+      "path": "data/input/gencode.v47.basic.annotation.gtf.gz",
+      "bytes": 33706193,
+      "sha256": "8858ec2557c2904f91e44aeda762759cd998ce663774245710cb52ad4dc334ee"
+    },
+    {
+      "path": "tracks/se_llps/data/input/gnocchi_constraint_z_genome_1kb_qc.txt.gz",
+      "bytes": 91229369,
+      "sha256": "7578bfb7f84d2985ed0d09c4dcc265b0fe7ad6c164c6795bfe4b36fd6ec89290"
+    }
+  ]
+}

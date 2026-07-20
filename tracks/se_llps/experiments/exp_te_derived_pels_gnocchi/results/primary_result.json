@@ -1,0 +1,27 @@
+{
+  "experiment": "exp_te_derived_pels_gnocchi",
+  "candidate_id": "C-H1",
+  "n_matched_pairs_lock": 53846,
+  "n_pairs_with_gnocchi": 30962,
+  "n_pairs_dropped_no_coverage": 22884,
+  "mean_z_te": 0.8171262903564458,
+  "mean_z_non_te": 1.0281058750722092,
+  "median_z_te": 0.9339019348429219,
+  "median_z_non_te": 1.1019943102205634,
+  "mean_delta_te_minus_nonte": -0.21097958471576347,
+  "abs_mean_delta": 0.21097958471576347,
+  "bootstrap_ci95_mean_delta": [
+    -0.23866193537539332,
+    -0.1833585587342043
+  ],
+  "n_bootstrap": 5000,
+  "cliffs_delta": -0.06354549054738945,
+  "paired_permutation_observed_mean_diff": -0.21097958471576347,
+  "p_value_permutation": 9.999000099990002e-05,
+  "n_permutations": 10000,
+  "support_threshold_abs_delta": 0.15,
+  "kill_threshold_abs_delta": 0.05,
+  "verdict": "SUPPORT",
+  "data_source_gnocchi": "Chen/Francioli/Karczewski 2023 Gnocchi QC 1kb (gs://gnomad-nc-constraint-v31-paper/download_files/constraint_z_genome_1kb.qc.download.txt.gz)",
+  "elapsed_sec": 56.5
+}

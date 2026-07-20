@@ -1,0 +1,46 @@
+{
+  "experiment": "exp_te_derived_pels_gnocchi",
+  "candidate_id": "C-H1",
+  "seed": 20260720,
+  "n_pels_universe": 171894,
+  "n_finite_gc": 171894,
+  "n_te_exposed": 62471,
+  "n_non_te_pool": 109423,
+  "n_matched_pairs": 53846,
+  "n_undermatched": 8625,
+  "match_covariates": [
+    "chrom",
+    "length_bin_q4",
+    "gc_bin_d10",
+    "tss_dist_bin"
+  ],
+  "te_classes": [
+    "DNA",
+    "LINE",
+    "LTR",
+    "Retroposon",
+    "SINE"
+  ],
+  "pairs_sample": [
+    {
+      "te": "EH38E0213783",
+      "non_te": "EH38E1542711"
+    },
+    {
+      "te": "EH38E0286683",
+      "non_te": "EH38E1610829"
+    },
+    {
+      "te": "EH38E0456872",
+      "non_te": "EH38E3270110"
+    },
+    {
+      "te": "EH38E0535764",
+      "non_te": "EH38E3378288"
+    },
+    {
+      "te": "EH38E0665062",
+      "non_te": "EH38E3526293"
+    }
+  ]
+}

@@ -1,0 +1,2564 @@
+{
+  "probe": "t0_probe_microc_vs_hic",
+  "experiment": "exp_microc_vs_hic_alu_anchors",
+  "candidate_id": "C-I1",
+  "queried_at_utc": "2026-07-20T12:58:37.441234+00:00",
+  "encode_base": "https://www.encodeproject.org",
+  "fourdn_base": "https://data.4dnucleome.org",
+  "note": "Metadata only \u2014 no large file downloads",
+  "prefer_cells": [
+    "HFFc6",
+    "H1",
+    "GM12878",
+    "K562"
+  ],
+  "primary_te": "AluSz",
+  "mcid_or": 1.5,
+  "falsify_or_after_umap_0_3": 1.1,
+  "encode_assay_probes": {
+    "assay_title_Micro-C": {
+      "error": true,
+      "status": 404,
+      "total": null,
+      "sample_accessions": [],
+      "sample_biosamples": []
+    },
+    "assay_term_micro-C": {
+      "error": true,
+      "status": 404,
+      "total": null,
+      "sample_accessions": [],
+      "sample_biosamples": []
+    },
+    "assay_title_DNase-Micro-C": {
+      "error": true,
+      "status": 404,
+      "total": null,
+      "sample_accessions": [],
+      "sample_biosamples": []
+    },
+    "searchTerm_Micro-C": {
+      "error": null,
+      "status": null,
+      "total": 799,
+      "sample_accessions": [
+        "ENCSR291HNO",
+        "ENCSR153MHB",
+        "ENCSR496QLS",
+        "ENCSR523CTA",
+        "ENCSR436GZP",
+        "ENCSR332HPA",
+        "ENCSR857OZQ",
+        "ENCSR642MUL"
+      ],
+      "sample_biosamples": [
+        "Homo sapiens WTC11",
+        "Homo sapiens chondrocyte",
+        "Homo sapiens HL-60 treated with 10 \u03bcM phorbol 13-acetate 12-myristate for 120 hours, 100 ng/mL lipopolysaccharide for 12 hours, 100 ng/mL interferon gamma for 12 hours",
+        "Mus musculus strain 5xFAD/CAST (B6SJL-Tg(APPSwFlLon,PSEN1*M146L*L286V)6799Vas/Mmjax x CAST/EiJ) heart tissue male adult (8-10 months)",
+        "Mus musculus strain B6NCrl layer of hippocampus tissue",
+        "Mus musculus strain B6CASTF1/J left cerebral cortex tissue female postnatal (10 days)",
+        "Mus musculus strain B6CASTF1/J left cerebral cortex tissue male adult (2 months)",
+        "Mus musculus strain B6CASTF1/J layer of hippocampus tissue female postnatal (14 days)"
+      ],
+      "false_positive_assay": "microRNA-seq"
+    }
+  },
+  "encode_microc_experiments": {
+    "total": null,
+    "error": true,
+    "n_listed": 0,
+    "experiments": [],
+    "any_grch38_loop_bedpe": false,
+    "usable_grch38_loop_bedpe": []
+  },
+  "fourdn_microc_experiment_sets": [
+    {
+      "accession": "4DNESWST3UBH",
+      "dataset_label": "Micro-C on H1 and HFF cells",
+      "processed_files": [
+        {
+          "accession": "4DNFINYO612N",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFINYO612N.pairs.gz"
+        },
+        {
+          "accession": "4DNFIPC7P27B",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIPC7P27B.hic"
+        },
+        {
+          "accession": "4DNFI9FVHJZQ",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFI9FVHJZQ.mcool"
+        },
+        {
+          "accession": "4DNFIC8438YF",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIC8438YF.bed.gz"
+        },
+        {
+          "accession": "4DNFI1L2FVX1",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFI1L2FVX1.bw"
+        },
+        {
+          "accession": "4DNFIFIPWIKW",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIFIPWIKW.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C HFFc6",
+      "display_title": "4DNESWST3UBH",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNES2R6PUEK",
+      "dataset_label": "Hi-C on HFF cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIJEOJ221",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIJEOJ221.pairs.gz"
+        },
+        {
+          "accession": "4DNFIFLJLIS5",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIFLJLIS5.hic"
+        },
+        {
+          "accession": "4DNFIB59T7NN",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIB59T7NN.mcool"
+        },
+        {
+          "accession": "4DNFI328YQF7",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFI328YQF7.bed.gz"
+        },
+        {
+          "accession": "4DNFISTV2GJX",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFISTV2GJX.bw"
+        },
+        {
+          "accession": "4DNFINQZ5JHV",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFINQZ5JHV.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C HFFc6",
+      "display_title": "4DNES2R6PUEK",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNESNWTJGIN",
+      "dataset_label": "CUT&Tag on HFFc6 cells",
+      "processed_files": [],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [],
+      "query": "Micro-C HFFc6",
+      "display_title": "4DNESNWTJGIN",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNES89MZOPI",
+      "dataset_label": "CUT&Tag on HFFc6 cells",
+      "processed_files": [],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [],
+      "query": "Micro-C HFFc6",
+      "display_title": "4DNES89MZOPI",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNESH5YI3CM",
+      "dataset_label": "Hi-C on HFF cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFI8YIHWY9",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFI8YIHWY9.pairs.gz"
+        },
+        {
+          "accession": "4DNFII84FBKM",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFII84FBKM.hic"
+        },
+        {
+          "accession": "4DNFIGBKMVCD",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIGBKMVCD.mcool"
+        },
+        {
+          "accession": "4DNFI7KPN7C8",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFI7KPN7C8.bed.gz"
+        },
+        {
+          "accession": "4DNFIV4V789H",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIV4V789H.bw"
+        },
+        {
+          "accession": "4DNFIAW44HST",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIAW44HST.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C HFFc6",
+      "display_title": "4DNESH5YI3CM",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNESNMAAN97",
+      "dataset_label": "Hi-C on HFF cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFINFTFBN2",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFINFTFBN2.pairs.gz"
+        },
+        {
+          "accession": "4DNFIMROE6N4",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIMROE6N4.hic"
+        },
+        {
+          "accession": "4DNFIAVXXO55",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIAVXXO55.mcool"
+        },
+        {
+          "accession": "4DNFI3CGVRKU",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFI3CGVRKU.bed.gz"
+        },
+        {
+          "accession": "4DNFIQRGYZ7U",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIQRGYZ7U.bw"
+        },
+        {
+          "accession": "4DNFIRP5X7A3",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIRP5X7A3.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C HFFc6",
+      "display_title": "4DNESNMAAN97",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNESN49VY8X",
+      "dataset_label": "Hi-C on HFF cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIYIDJIBN",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIYIDJIBN.pairs.gz"
+        },
+        {
+          "accession": "4DNFI5SUHCGZ",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFI5SUHCGZ.hic"
+        },
+        {
+          "accession": "4DNFI8ZYY7VT",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFI8ZYY7VT.mcool"
+        },
+        {
+          "accession": "4DNFI1JCMZB6",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFI1JCMZB6.bed.gz"
+        },
+        {
+          "accession": "4DNFIKIC2D7K",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIKIC2D7K.bw"
+        },
+        {
+          "accession": "4DNFISETAAMC",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFISETAAMC.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C HFFc6",
+      "display_title": "4DNESN49VY8X",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNESMBA9T3L",
+      "dataset_label": "ATAC-seq on HFFc6 (Tier 1)",
+      "processed_files": [
+        {
+          "accession": "4DNFI4R7BEGM",
+          "file_type": "peaks",
+          "file_format": "bigbed",
+          "display_title": "4DNFI4R7BEGM.bb"
+        },
+        {
+          "accession": "4DNFIWQJFZHS",
+          "file_type": "conservative peaks",
+          "file_format": "bigbed",
+          "display_title": "4DNFIWQJFZHS.bb"
+        },
+        {
+          "accession": "4DNFIZ9191QU",
+          "file_type": "signal fold change",
+          "file_format": "bw",
+          "display_title": "4DNFIZ9191QU.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "conservative peaks|bigbed",
+        "peaks|bigbed",
+        "signal fold change|bw"
+      ],
+      "query": "Micro-C HFFc6",
+      "display_title": "4DNESMBA9T3L",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNESV6NQ665",
+      "dataset_label": "H3K27ac - HFFc6",
+      "processed_files": [],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [],
+      "query": "Micro-C HFFc6",
+      "display_title": "4DNESV6NQ665",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNES8ZSCTFJ",
+      "dataset_label": "H3K4me3 - HFFc6",
+      "processed_files": [],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [],
+      "query": "Micro-C HFFc6",
+      "display_title": "4DNES8ZSCTFJ",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNES21D8SP8",
+      "dataset_label": "Micro-C on H1 and HFF cells",
+      "processed_files": [
+        {
+          "accession": "4DNFI1O6IL1Q",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFI1O6IL1Q.pairs.gz"
+        },
+        {
+          "accession": "4DNFI2TK7L2F",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFI2TK7L2F.hic"
+        },
+        {
+          "accession": "4DNFI9GMP2J8",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFI9GMP2J8.mcool"
+        },
+        {
+          "accession": "4DNFIED5HLDC",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIED5HLDC.bed.gz"
+        },
+        {
+          "accession": "4DNFI6YRK53R",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFI6YRK53R.bw"
+        },
+        {
+          "accession": "4DNFI475YIT8",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFI475YIT8.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNES21D8SP8",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESW1SPPTD",
+      "dataset_label": "Micro-C on H1-DE cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIL84TXJ9",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIL84TXJ9.pairs.gz"
+        },
+        {
+          "accession": "4DNFI2WSZPG9",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFI2WSZPG9.hic"
+        },
+        {
+          "accession": "4DNFINQYW56E",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFINQYW56E.mcool"
+        },
+        {
+          "accession": "4DNFIA19FZM3",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIA19FZM3.bed.gz"
+        },
+        {
+          "accession": "4DNFIXR7P794",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIXR7P794.bw"
+        },
+        {
+          "accession": "4DNFIS47UYYR",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIS47UYYR.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNESW1SPPTD",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESKOBVYIY",
+      "dataset_label": "Micro-C on H1 cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIJ8R68XA",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIJ8R68XA.pairs.gz"
+        },
+        {
+          "accession": "4DNFIS1DZ4R1",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIS1DZ4R1.hic"
+        },
+        {
+          "accession": "4DNFIU5DRADP",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIU5DRADP.mcool"
+        },
+        {
+          "accession": "4DNFIZCUASDN",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIZCUASDN.bed.gz"
+        },
+        {
+          "accession": "4DNFIEHJQHCU",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIEHJQHCU.bw"
+        },
+        {
+          "accession": "4DNFI13VBBAV",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFI13VBBAV.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNESKOBVYIY",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESFEVMZ63",
+      "dataset_label": "Micro-C on H1 cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFI2DF9BRZ",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFI2DF9BRZ.pairs.gz"
+        },
+        {
+          "accession": "4DNFIQNBLLVG",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIQNBLLVG.hic"
+        },
+        {
+          "accession": "4DNFI113I8BA",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFI113I8BA.mcool"
+        },
+        {
+          "accession": "4DNFI51H2FO4",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFI51H2FO4.bed.gz"
+        },
+        {
+          "accession": "4DNFIBT14D5W",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIBT14D5W.bw"
+        },
+        {
+          "accession": "4DNFICSKUD2K",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFICSKUD2K.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNESFEVMZ63",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESEVQ1V15",
+      "dataset_label": "Micro-C on H1 cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIR1FK55F",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIR1FK55F.pairs.gz"
+        },
+        {
+          "accession": "4DNFILTYFH3B",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFILTYFH3B.hic"
+        },
+        {
+          "accession": "4DNFIJLK5WML",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIJLK5WML.mcool"
+        },
+        {
+          "accession": "4DNFIM86H1MI",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIM86H1MI.bed.gz"
+        },
+        {
+          "accession": "4DNFI32N1QN9",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFI32N1QN9.bw"
+        },
+        {
+          "accession": "4DNFICDSZHO1",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFICDSZHO1.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNESEVQ1V15",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESPPSOUKK",
+      "dataset_label": "Micro-C on H1-DE cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFI2L94L23",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFI2L94L23.pairs.gz"
+        },
+        {
+          "accession": "4DNFI59Y6R69",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFI59Y6R69.hic"
+        },
+        {
+          "accession": "4DNFII4IPDTR",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFII4IPDTR.mcool"
+        },
+        {
+          "accession": "4DNFIZMP8TXH",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIZMP8TXH.bed.gz"
+        },
+        {
+          "accession": "4DNFI6847LX6",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFI6847LX6.bw"
+        },
+        {
+          "accession": "4DNFI1RZIGGI",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFI1RZIGGI.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNESPPSOUKK",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESN6KY4J7",
+      "dataset_label": "Micro-C on H1-DE cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFI46W7VDQ",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFI46W7VDQ.pairs.gz"
+        },
+        {
+          "accession": "4DNFIPIP38S7",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIPIP38S7.hic"
+        },
+        {
+          "accession": "4DNFIJS5LHMV",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIJS5LHMV.mcool"
+        },
+        {
+          "accession": "4DNFICO6XTNS",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFICO6XTNS.bed.gz"
+        },
+        {
+          "accession": "4DNFIQCSKP4N",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIQCSKP4N.bw"
+        },
+        {
+          "accession": "4DNFIH1G8WRL",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIH1G8WRL.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNESN6KY4J7",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESP4MARXG",
+      "dataset_label": "Micro-C on H1-DE cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIH3CQYRW",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIH3CQYRW.pairs.gz"
+        },
+        {
+          "accession": "4DNFIZMOVYIN",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIZMOVYIN.hic"
+        },
+        {
+          "accession": "4DNFI9E222YJ",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFI9E222YJ.mcool"
+        },
+        {
+          "accession": "4DNFI9IORQOG",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFI9IORQOG.bed.gz"
+        },
+        {
+          "accession": "4DNFI919XMIA",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFI919XMIA.bw"
+        },
+        {
+          "accession": "4DNFIGZCGSA8",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIGZCGSA8.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNESP4MARXG",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESV4MND3G",
+      "dataset_label": "Hi-C on H1 cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFI731KGWC",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFI731KGWC.pairs.gz"
+        },
+        {
+          "accession": "4DNFIILDWK8M",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIILDWK8M.hic"
+        },
+        {
+          "accession": "4DNFII2G4NT7",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFII2G4NT7.mcool"
+        },
+        {
+          "accession": "4DNFIHJEVFVK",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIHJEVFVK.bed.gz"
+        },
+        {
+          "accession": "4DNFIPUZG3Y2",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIPUZG3Y2.bw"
+        },
+        {
+          "accession": "4DNFIRMA1AW3",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIRMA1AW3.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNESV4MND3G",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNESTTX579P",
+      "dataset_label": "Hi-C on H1 cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIZTCXQV9",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIZTCXQV9.pairs.gz"
+        },
+        {
+          "accession": "4DNFI6XD6JAQ",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFI6XD6JAQ.hic"
+        },
+        {
+          "accession": "4DNFIOJJCGMD",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIOJJCGMD.mcool"
+        },
+        {
+          "accession": "4DNFIOOM2RI9",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIOOM2RI9.bed.gz"
+        },
+        {
+          "accession": "4DNFIWTGWA8Z",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIWTGWA8Z.bw"
+        },
+        {
+          "accession": "4DNFIKZEQG1U",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIKZEQG1U.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNESTTX579P",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNESLTRW5KE",
+      "dataset_label": "Hi-C on H1 cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIK8ZDQR8",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIK8ZDQR8.pairs.gz"
+        },
+        {
+          "accession": "4DNFIALNLR78",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIALNLR78.hic"
+        },
+        {
+          "accession": "4DNFIOEYIQ7R",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIOEYIQ7R.mcool"
+        },
+        {
+          "accession": "4DNFIEA8KDPX",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIEA8KDPX.bed.gz"
+        },
+        {
+          "accession": "4DNFIMD7ACHK",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIMD7ACHK.bw"
+        },
+        {
+          "accession": "4DNFIBMJ146L",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIBMJ146L.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNESLTRW5KE",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNESF2TSPAM",
+      "dataset_label": "Hi-C on H1 cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIYK9FU3H",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIYK9FU3H.pairs.gz"
+        },
+        {
+          "accession": "4DNFIBT4EAKN",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIBT4EAKN.hic"
+        },
+        {
+          "accession": "4DNFI8F87AP3",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFI8F87AP3.mcool"
+        },
+        {
+          "accession": "4DNFI76KRYP5",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFI76KRYP5.bed.gz"
+        },
+        {
+          "accession": "4DNFIFGOFWQW",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIFGOFWQW.bw"
+        },
+        {
+          "accession": "4DNFIYKIV9QA",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIYKIV9QA.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNESF2TSPAM",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNES6VNJ14M",
+      "dataset_label": "Hi-C on H1-DE cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIGTIJTHQ",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIGTIJTHQ.pairs.gz"
+        },
+        {
+          "accession": "4DNFIB7QTIMH",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIB7QTIMH.hic"
+        },
+        {
+          "accession": "4DNFIZTQKBMM",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIZTQKBMM.mcool"
+        },
+        {
+          "accession": "4DNFIP84DZUF",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIP84DZUF.bed.gz"
+        },
+        {
+          "accession": "4DNFIAQ5NGZB",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIAQ5NGZB.bw"
+        },
+        {
+          "accession": "4DNFIU59T3G1",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIU59T3G1.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNES6VNJ14M",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNESPU5OVNM",
+      "dataset_label": "Hi-C on H1-DE cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIDIBI761",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIDIBI761.pairs.gz"
+        },
+        {
+          "accession": "4DNFIJ5DQZVK",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIJ5DQZVK.hic"
+        },
+        {
+          "accession": "4DNFI7U2CC6V",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFI7U2CC6V.mcool"
+        },
+        {
+          "accession": "4DNFIHZCU44D",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIHZCU44D.bed.gz"
+        },
+        {
+          "accession": "4DNFI58SDPHD",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFI58SDPHD.bw"
+        },
+        {
+          "accession": "4DNFI9Z2NG9O",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFI9Z2NG9O.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNESPU5OVNM",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNESQ9BNPAP",
+      "dataset_label": "Hi-C on H1-DE cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFITMXWCYG",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFITMXWCYG.pairs.gz"
+        },
+        {
+          "accession": "4DNFISTWNV9C",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFISTWNV9C.hic"
+        },
+        {
+          "accession": "4DNFIDGANREZ",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIDGANREZ.mcool"
+        },
+        {
+          "accession": "4DNFIGVIUNAO",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIGVIUNAO.bed.gz"
+        },
+        {
+          "accession": "4DNFI99VSBMA",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFI99VSBMA.bw"
+        },
+        {
+          "accession": "4DNFIIVDIDYL",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIIVDIDYL.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNESQ9BNPAP",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNES65W85KE",
+      "dataset_label": "Hi-C on H1-DE cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIBJS6NM2",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIBJS6NM2.pairs.gz"
+        },
+        {
+          "accession": "4DNFIBN9K4V9",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIBN9K4V9.hic"
+        },
+        {
+          "accession": "4DNFIN8CTHRJ",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIN8CTHRJ.mcool"
+        },
+        {
+          "accession": "4DNFI1E7T8RM",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFI1E7T8RM.bed.gz"
+        },
+        {
+          "accession": "4DNFICOK5NYV",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFICOK5NYV.bw"
+        },
+        {
+          "accession": "4DNFI193CYYK",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFI193CYYK.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNES65W85KE",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNESFPSJFSJ",
+      "dataset_label": "Hi-C on H1-DE cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFI8X4P4EL",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFI8X4P4EL.pairs.gz"
+        },
+        {
+          "accession": "4DNFIR8OU6QJ",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIR8OU6QJ.hic"
+        },
+        {
+          "accession": "4DNFIQ55F5RS",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIQ55F5RS.mcool"
+        },
+        {
+          "accession": "4DNFIJM39UBT",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIJM39UBT.bed.gz"
+        },
+        {
+          "accession": "4DNFIR9CVDO1",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIR9CVDO1.bw"
+        },
+        {
+          "accession": "4DNFICRMFRPI",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFICRMFRPI.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNESFPSJFSJ",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNESFLV3UMN",
+      "dataset_label": "Hi-C on H1-DE cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFI6VQO96P",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFI6VQO96P.pairs.gz"
+        },
+        {
+          "accession": "4DNFIDSWKFF5",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIDSWKFF5.hic"
+        },
+        {
+          "accession": "4DNFI3724MS8",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFI3724MS8.mcool"
+        },
+        {
+          "accession": "4DNFIYOKTAPJ",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIYOKTAPJ.bed.gz"
+        },
+        {
+          "accession": "4DNFIDPX7DAG",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIDPX7DAG.bw"
+        },
+        {
+          "accession": "4DNFIHUJDRIL",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIHUJDRIL.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNESFLV3UMN",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNESYTUBW2E",
+      "dataset_label": "Hi-C on H1 cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFI733IUMB",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFI733IUMB.pairs.gz"
+        },
+        {
+          "accession": "4DNFIFI6NIKJ",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIFI6NIKJ.hic"
+        },
+        {
+          "accession": "4DNFISWCOKN2",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFISWCOKN2.mcool"
+        },
+        {
+          "accession": "4DNFIHCLXNCE",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIHCLXNCE.bed.gz"
+        },
+        {
+          "accession": "4DNFICF85GXM",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFICF85GXM.bw"
+        },
+        {
+          "accession": "4DNFI4F5GUV1",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFI4F5GUV1.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNESYTUBW2E",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNESRJ8KV4Q",
+      "dataset_label": "Hi-C on H1 cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIXKAVZL3",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIXKAVZL3.pairs.gz"
+        },
+        {
+          "accession": "4DNFIOX3BGNE",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIOX3BGNE.hic"
+        },
+        {
+          "accession": "4DNFI7JNCNFB",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFI7JNCNFB.mcool"
+        },
+        {
+          "accession": "4DNFIGDQ72ID",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIGDQ72ID.bed.gz"
+        },
+        {
+          "accession": "4DNFI31FJ1CO",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFI31FJ1CO.bw"
+        },
+        {
+          "accession": "4DNFI4E7YSQU",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFI4E7YSQU.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNESRJ8KV4Q",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNES2M5JIGV",
+      "dataset_label": "Hi-C on H1 cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFITU7K8VQ",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFITU7K8VQ.pairs.gz"
+        },
+        {
+          "accession": "4DNFIQYQWPF5",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIQYQWPF5.hic"
+        },
+        {
+          "accession": "4DNFI6HDY7WZ",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFI6HDY7WZ.mcool"
+        },
+        {
+          "accession": "4DNFI5INXRCH",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFI5INXRCH.bed.gz"
+        },
+        {
+          "accession": "4DNFI4P777MF",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFI4P777MF.bw"
+        },
+        {
+          "accession": "4DNFI4RWBB4U",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFI4RWBB4U.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNES2M5JIGV",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNES5WCKFXE",
+      "dataset_label": "Hi-C on H1 cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIUTE4F4B",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIUTE4F4B.pairs.gz"
+        },
+        {
+          "accession": "4DNFIDJ2JZ7Q",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIDJ2JZ7Q.hic"
+        },
+        {
+          "accession": "4DNFIXGIJGA5",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIXGIJGA5.mcool"
+        },
+        {
+          "accession": "4DNFIFOAZ6J4",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIFOAZ6J4.bed.gz"
+        },
+        {
+          "accession": "4DNFIZUB2HAK",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIZUB2HAK.bw"
+        },
+        {
+          "accession": "4DNFIA1RP3L8",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIA1RP3L8.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNES5WCKFXE",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNES6ZLUF2N",
+      "dataset_label": "Hi-C on H1 cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIUPGJLFO",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIUPGJLFO.pairs.gz"
+        },
+        {
+          "accession": "4DNFI8JFOAJT",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFI8JFOAJT.hic"
+        },
+        {
+          "accession": "4DNFI7I8KUQD",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFI7I8KUQD.mcool"
+        },
+        {
+          "accession": "4DNFIZROT79C",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIZROT79C.bed.gz"
+        },
+        {
+          "accession": "4DNFII7C8ZLO",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFII7C8ZLO.bw"
+        },
+        {
+          "accession": "4DNFIW5ZC5EY",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIW5ZC5EY.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNES6ZLUF2N",
+      "title_mentions_microc": false
+    },
+    {
+      "accession": "4DNESTJD2Z2P",
+      "dataset_label": "Hi-C on H1 cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIPVA6VYB",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIPVA6VYB.pairs.gz"
+        },
+        {
+          "accession": "4DNFIRZA6EV6",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIRZA6EV6.hic"
+        },
+        {
+          "accession": "4DNFIM9HI7RP",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIM9HI7RP.mcool"
+        },
+        {
+          "accession": "4DNFI5V9IP7L",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFI5V9IP7L.bed.gz"
+        },
+        {
+          "accession": "4DNFI7CMMW8H",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFI7CMMW8H.bw"
+        },
+        {
+          "accession": "4DNFI889SGFQ",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFI889SGFQ.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C H1",
+      "display_title": "4DNESTJD2Z2P",
+      "title_mentions_microc": false
+    },
+    {
+      "query": "Micro-C GM12878",
+      "error": {
+        "_error": true,
+        "status": 404,
+        "url": "https://data.4dnucleome.org/search/?type=ExperimentSetReplicate&q=Micro-C+GM12878&limit=25&status=released",
+        "body": "{\"@context\": \"/terms/\", \"@id\": \"/search/?type=ExperimentSetReplicate&q=Micro-C+GM12878&limit=25&status=released\", \"@type\": [\"ExperimentSetReplicateSearchResults\", \"ExperimentSetSearchResults\", \"ItemSearchResults\", \"Search\"], \"title\": \"Search\", \"filters\": [{\"field\": \"type\", \"term\": \"ExperimentSetReplicate\", \"remove\": \"/search/?q=Micro-C+GM12878&limit=25&status=released\"}, {\"field\": \"status\", \"term\""
+      }
+    },
+    {
+      "query": "Micro-C K562",
+      "error": {
+        "_error": true,
+        "status": 404,
+        "url": "https://data.4dnucleome.org/search/?type=ExperimentSetReplicate&q=Micro-C+K562&limit=25&status=released",
+        "body": "{\"@context\": \"/terms/\", \"@id\": \"/search/?type=ExperimentSetReplicate&q=Micro-C+K562&limit=25&status=released\", \"@type\": [\"ExperimentSetReplicateSearchResults\", \"ExperimentSetSearchResults\", \"ItemSearchResults\", \"Search\"], \"title\": \"Search\", \"filters\": [{\"field\": \"type\", \"term\": \"ExperimentSetReplicate\", \"remove\": \"/search/?q=Micro-C+K562&limit=25&status=released\"}, {\"field\": \"status\", \"term\": \"rel"
+      }
+    },
+    {
+      "accession": "4DNES14CNC1I",
+      "dataset_label": "Micro-C on JM8.N4 Cells +/- transcription",
+      "processed_files": [
+        {
+          "accession": "4DNFILZ1CPT8",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFILZ1CPT8.pairs.gz"
+        },
+        {
+          "accession": "4DNFI6HG4GP3",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFI6HG4GP3.hic"
+        },
+        {
+          "accession": "4DNFINNZDDXV",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFINNZDDXV.mcool"
+        },
+        {
+          "accession": "4DNFINMZROCN",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFINMZROCN.bed.gz"
+        },
+        {
+          "accession": "4DNFI855PSNR",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFI855PSNR.bw"
+        },
+        {
+          "accession": "4DNFILGE5LQU",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFILGE5LQU.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C",
+      "display_title": "4DNES14CNC1I",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESAGG7EUC",
+      "dataset_label": "Hi-C and Micro-C on WTC-11 derived iPS cells",
+      "processed_files": [
+        {
+          "accession": "4DNFI3ULPBI5",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFI3ULPBI5.pairs.gz"
+        },
+        {
+          "accession": "4DNFIPEBRZZA",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIPEBRZZA.hic"
+        },
+        {
+          "accession": "4DNFI31XBNMI",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFI31XBNMI.mcool"
+        },
+        {
+          "accession": "4DNFIGTELUGU",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIGTELUGU.bed.gz"
+        },
+        {
+          "accession": "4DNFIL75UQ98",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIL75UQ98.bw"
+        },
+        {
+          "accession": "4DNFIJK6BLTX",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIJK6BLTX.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C",
+      "display_title": "4DNESAGG7EUC",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESODGV2V2",
+      "dataset_label": "Hi-C and Micro-C on WTC-11 derived iPS cells",
+      "processed_files": [
+        {
+          "accession": "4DNFIEVQW3GY",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIEVQW3GY.pairs.gz"
+        },
+        {
+          "accession": "4DNFIXSZ8ZVW",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIXSZ8ZVW.hic"
+        },
+        {
+          "accession": "4DNFIXJ5WTBJ",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIXJ5WTBJ.mcool"
+        },
+        {
+          "accession": "4DNFIDABZELC",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIDABZELC.bed.gz"
+        },
+        {
+          "accession": "4DNFIHKFZW81",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIHKFZW81.bw"
+        },
+        {
+          "accession": "4DNFIGHZSS9W",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIGHZSS9W.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C",
+      "display_title": "4DNESODGV2V2",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESZJMHC3O",
+      "dataset_label": "Micro-C on HFF cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFI1MCF9GZ",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFI1MCF9GZ.pairs.gz"
+        },
+        {
+          "accession": "4DNFIQXJQWD8",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIQXJQWD8.hic"
+        },
+        {
+          "accession": "4DNFIOYPL9EC",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIOYPL9EC.mcool"
+        },
+        {
+          "accession": "4DNFI5OZ7TBE",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFI5OZ7TBE.bed.gz"
+        },
+        {
+          "accession": "4DNFIPMHBA41",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIPMHBA41.bw"
+        },
+        {
+          "accession": "4DNFI8JXB9IS",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFI8JXB9IS.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C",
+      "display_title": "4DNESZJMHC3O",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESEGKQY7I",
+      "dataset_label": "Micro-C on HFF cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFISF6CQIA",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFISF6CQIA.pairs.gz"
+        },
+        {
+          "accession": "4DNFIQJP232C",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIQJP232C.hic"
+        },
+        {
+          "accession": "4DNFILVNX49Q",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFILVNX49Q.mcool"
+        },
+        {
+          "accession": "4DNFIOW1YAWW",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIOW1YAWW.bed.gz"
+        },
+        {
+          "accession": "4DNFIS9A7EXC",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIS9A7EXC.bw"
+        },
+        {
+          "accession": "4DNFIZUVFH3U",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIZUVFH3U.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C",
+      "display_title": "4DNESEGKQY7I",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESA5PN8AB",
+      "dataset_label": "Micro-C on HeLa cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFILD8JK1M",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFILD8JK1M.pairs.gz"
+        },
+        {
+          "accession": "4DNFIMXKBE64",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIMXKBE64.hic"
+        },
+        {
+          "accession": "4DNFIM48WBOE",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIM48WBOE.mcool"
+        },
+        {
+          "accession": "4DNFIKG4WE98",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIKG4WE98.bed.gz"
+        },
+        {
+          "accession": "4DNFIQHADV6V",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIQHADV6V.bw"
+        },
+        {
+          "accession": "4DNFIFGCLJ3X",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIFGCLJ3X.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C",
+      "display_title": "4DNESA5PN8AB",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNES1UAI7F5",
+      "dataset_label": "Micro-C on HeLa cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIIRFHTMG",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIIRFHTMG.pairs.gz"
+        },
+        {
+          "accession": "4DNFISX94IID",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFISX94IID.hic"
+        },
+        {
+          "accession": "4DNFIF1MVM2C",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIF1MVM2C.mcool"
+        },
+        {
+          "accession": "4DNFI4L8Y16R",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFI4L8Y16R.bed.gz"
+        },
+        {
+          "accession": "4DNFIAXIVWXI",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIAXIVWXI.bw"
+        },
+        {
+          "accession": "4DNFIMGOCPN5",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIMGOCPN5.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C",
+      "display_title": "4DNES1UAI7F5",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESC9311OT",
+      "dataset_label": "Micro-C on HeLa cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIG2PQSWK",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIG2PQSWK.pairs.gz"
+        },
+        {
+          "accession": "4DNFIVHWL1LE",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIVHWL1LE.hic"
+        },
+        {
+          "accession": "4DNFIC6SYWN7",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIC6SYWN7.mcool"
+        },
+        {
+          "accession": "4DNFIMJJDKXG",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIMJJDKXG.bed.gz"
+        },
+        {
+          "accession": "4DNFISP12BWL",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFISP12BWL.bw"
+        },
+        {
+          "accession": "4DNFIBIGE926",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIBIGE926.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C",
+      "display_title": "4DNESC9311OT",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESFT1GE12",
+      "dataset_label": "Micro-C on HeLa cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFICR6SQM2",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFICR6SQM2.pairs.gz"
+        },
+        {
+          "accession": "4DNFI5I4CK6R",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFI5I4CK6R.hic"
+        },
+        {
+          "accession": "4DNFIVNLQCAL",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIVNLQCAL.mcool"
+        },
+        {
+          "accession": "4DNFI2QF919X",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFI2QF919X.bed.gz"
+        },
+        {
+          "accession": "4DNFI1OYRA4B",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFI1OYRA4B.bw"
+        },
+        {
+          "accession": "4DNFI577AGFQ",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFI577AGFQ.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C",
+      "display_title": "4DNESFT1GE12",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNES9X112GZ",
+      "dataset_label": "Micro-C on HFF cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFI2T9UE49",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFI2T9UE49.pairs.gz"
+        },
+        {
+          "accession": "4DNFIYWIZSCR",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIYWIZSCR.hic"
+        },
+        {
+          "accession": "4DNFIOH5BDRC",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIOH5BDRC.mcool"
+        },
+        {
+          "accession": "4DNFI5QLTREL",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFI5QLTREL.bed.gz"
+        },
+        {
+          "accession": "4DNFI669U5UE",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFI669U5UE.bw"
+        },
+        {
+          "accession": "4DNFIH365UUB",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIH365UUB.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C",
+      "display_title": "4DNES9X112GZ",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESCXWBAEE",
+      "dataset_label": "Micro-C on HeLa cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIRH4JIXD",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIRH4JIXD.pairs.gz"
+        },
+        {
+          "accession": "4DNFIE7V3DN9",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIE7V3DN9.hic"
+        },
+        {
+          "accession": "4DNFINEQCFN3",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFINEQCFN3.mcool"
+        },
+        {
+          "accession": "4DNFIWLR1FDV",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFIWLR1FDV.bed.gz"
+        },
+        {
+          "accession": "4DNFI8USLUVX",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFI8USLUVX.bw"
+        },
+        {
+          "accession": "4DNFI1QVEG1R",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFI1QVEG1R.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C",
+      "display_title": "4DNESCXWBAEE",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESRTUDA91",
+      "dataset_label": "Micro-C on HeLa cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIHTWQLL7",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIHTWQLL7.pairs.gz"
+        },
+        {
+          "accession": "4DNFI7OMRYXC",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFI7OMRYXC.hic"
+        },
+        {
+          "accession": "4DNFI3VRUO3V",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFI3VRUO3V.mcool"
+        },
+        {
+          "accession": "4DNFITUYR1VB",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFITUYR1VB.bed.gz"
+        },
+        {
+          "accession": "4DNFIZJCP77C",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIZJCP77C.bw"
+        },
+        {
+          "accession": "4DNFIESN4I7M",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIESN4I7M.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C",
+      "display_title": "4DNESRTUDA91",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESGCCOT7T",
+      "dataset_label": "Micro-C on HeLa cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIYIFFAYM",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIYIFFAYM.pairs.gz"
+        },
+        {
+          "accession": "4DNFIWLGIO3R",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIWLGIO3R.hic"
+        },
+        {
+          "accession": "4DNFI5T9D5WW",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFI5T9D5WW.mcool"
+        },
+        {
+          "accession": "4DNFID5G47VP",
+          "file_type": "boundaries",
+          "file_format": "bed",
+          "display_title": "4DNFID5G47VP.bed.gz"
+        },
+        {
+          "accession": "4DNFIXBQOAZE",
+          "file_type": "insulation score-diamond",
+          "file_format": "bw",
+          "display_title": "4DNFIXBQOAZE.bw"
+        },
+        {
+          "accession": "4DNFI3XHIBT9",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFI3XHIBT9.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "boundaries|bed",
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool",
+        "insulation score-diamond|bw"
+      ],
+      "query": "Micro-C",
+      "display_title": "4DNESGCCOT7T",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESA645JZF",
+      "dataset_label": "Micro-C on HeLa cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFIWPIKKFW",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIWPIKKFW.pairs.gz"
+        },
+        {
+          "accession": "4DNFI3QGMQ9O",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFI3QGMQ9O.hic"
+        },
+        {
+          "accession": "4DNFIMFEX6VG",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIMFEX6VG.mcool"
+        },
+        {
+          "accession": "4DNFIPLK3OAS",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIPLK3OAS.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool"
+      ],
+      "query": "Micro-C",
+      "display_title": "4DNESA645JZF",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESM9M3FA4",
+      "dataset_label": "Micro-C on HeLa cells - protocol variations",
+      "processed_files": [
+        {
+          "accession": "4DNFI9JQUS4N",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFI9JQUS4N.pairs.gz"
+        },
+        {
+          "accession": "4DNFIXIA9GTY",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIXIA9GTY.hic"
+        },
+        {
+          "accession": "4DNFIXYACXY6",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIXYACXY6.mcool"
+        },
+        {
+          "accession": "4DNFIXIXXESF",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIXIXXESF.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool"
+      ],
+      "query": "Micro-C",
+      "display_title": "4DNESM9M3FA4",
+      "title_mentions_microc": true
+    },
+    {
+      "accession": "4DNESSY8C22T",
+      "dataset_label": "Micro-C on JM8.N4 Cells +/- transcription",
+      "processed_files": [
+        {
+          "accession": "4DNFIYBGP2L6",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIYBGP2L6.pairs.gz"
+        },
+        {
+          "accession": "4DNFI7RHE4AP",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFI7RHE4AP.hic"
+        },
+        {
+          "accession": "4DNFIIWPHCM6",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIIWPHCM6.mcool"
+        },
+        {
+          "accession": "4DNFIPZXL27O",
+          "file_type": "compartments",
+          "file_format": "bw",
+          "display_title": "4DNFIPZXL27O.bw"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "compartments|bw",
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool"
+      ],
+      "query": "Micro-C",
+      "display_title": "4DNESSY8C22T",
+      "title_mentions_microc": true
+    }
+  ],
+  "fourdn_any_processed_bedpe": false,
+  "encode_usable_microc_grch38_bedpe": false,
+  "fourdn_usable_microc_grch38_bedpe": false,
+  "fourdn_usable_sets": [],
+  "verdict": "BLOCKED_DATA",
+  "stop_condition": "No processed Micro-C loop bedpe (GRCh38) usable on ENCODE/4DN for preferred cells; do not call loops from pairs/mcool without new claim freeze.",
+  "next_fruit_recommend": "C-L1",
+  "encode_searchTerm_note": "searchTerm=Micro-C hits are microRNA-seq false positives (e.g. ENCSR291HNO); assay_title Micro-C/micro-C return HTTP 404"
+}

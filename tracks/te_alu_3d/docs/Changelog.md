@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-07-20 — C-H1 TE-pELS Gnocchi SUPPORT + C-I1 Micro-C BLOCKED_DATA
+
+- True **C-H1** (NOT Micro-C): se_llps `exp_te_derived_pels_gnocchi` → **SUPPORT** |\Delta|=0.211
+- True **C-I1** (Deep Research original Micro-C C-H1): `exp_microc_vs_hic_alu_anchors`
+  T0 ENCODE+4DN → **BLOCKED_DATA** (no processed Micro-C loop bedpe; pairs/hic/mcool only)
+- Registry remapped; `next_fruit_recommend: C-L1`; AluJo NC parked as C-A1 control
+- Holdout/C1/wet untouched
+
 ## 2026-07-20 — C-A2 SVA_F dELS switching → REJECT (FAIL_KILL)
 
 - True **C-A2** (NOT ChIA-PET): `experiments/exp_sva_f_ccre_state_switching/`

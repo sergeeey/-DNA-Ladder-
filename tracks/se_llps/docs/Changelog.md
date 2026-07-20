@@ -1,5 +1,14 @@
 # Changelog — se_llps
 
+## 2026-07-20 — C-H1 TE-derived pELS Gnocchi → SUPPORT
+
+- True **C-H1** (NOT Micro-C): `experiments/exp_te_derived_pels_gnocchi/`
+- Claim: |\Delta mean Gnocchi Z| ≥ 0.15 TE-derived vs GC/length/TSS-matched non-TE pELS; kill |\Delta|<0.05
+- Data: Registry-V3 pELS + rmsk TE + hg38.2bit + GENCODE TSS + Gnocchi QC 1kb (1 984 900 rows)
+- Primary |\Delta| = **0.211** (Δ=−0.211; CI [−0.239, −0.183]); Cliff's δ=−0.064; n=30 962 pairs with coverage
+- **SUPPORT**; distinct from closed SE-vs-typical Gnocchi REJECT; next fruit C-I1 (Micro-C) → BLOCKED_DATA → C-L1
+- Artifacts: `results/{matching_lock,primary_result}.json`; scripts + unit tests
+
 ## 2026-07-20 — C-B1 kill-test FAIL_KILL / REJECT (ΔAUC −0.0073)
 
 - Redesigned baseline locked before fit: `log10_distance + activity_els (ENCFF210CAN pELS/dELS) + SE`

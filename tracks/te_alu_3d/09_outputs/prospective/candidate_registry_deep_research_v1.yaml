@@ -4,6 +4,8 @@
 # Note: post-C-A1 standing order started C-B1 as topology/CRISPR (se_llps); TE AluY+AG parked
 # 2026-07-20: C-K1 desk filled with PLAC vs Hi-C Alu → BLOCKED_DATA
 # 2026-07-20: TRUE C-A2 = SVA_F dELS switching (NOT ChIA-PET) → REJECT FAIL_KILL
+# 2026-07-20: TRUE C-H1 = TE-derived pELS Gnocchi (NOT Micro-C) → SUPPORT
+# 2026-07-20: TRUE C-I1 = Micro-C vs Hi-C Alu anchors (Deep Research original C-H1) → BLOCKED_DATA
 
 schema_version: 1
 date: "2026-07-20"
@@ -11,7 +13,7 @@ report: DEEP_RESEARCH_REPORT_C_A1_v1.md
 inspection_commit: c048650
 decision: INCONCLUSIVE_CLOSED
 recommended_id: C-A1
-next_fruit_recommend: C-H1
+next_fruit_recommend: C-L1
 scoring_formula: "0.15*N + 0.15*F + 0.25*I + 0.20*K + 0.15*D + 0.10*T"
 
 candidates:
@@ -65,15 +67,42 @@ candidates:
     final_score: 6.35
     recommended: false
   - id: C-H1
-    title: "Micro-C vs Hi-C TE recovery differential (needs Micro-C processed loops)"
+    title: "TE-derived pELS Gnocchi constraint vs matched non-TE pELS (gnomAD/Gnocchi)"
+    final_score: null
+    recommended: false
+    status: SUPPORT_CLOSED
+    desk_verdict: SUPPORT
+    alias: C-H1-te-derived-pels-gnocchi
+    track: se_llps
+    path: tracks/se_llps/experiments/exp_te_derived_pels_gnocchi/
+    note: >
+      TRUE C-H1 (NOT Micro-C). Primary |Δ mean Gnocchi Z|=0.211 ≥0.15 SUPPORT
+      (Δ=−0.211 TE lower than matched non-TE; Cliff's δ=−0.064). Distinct from
+      closed SE-vs-typical Gnocchi REJECT. Deep Research Micro-C title remapped to C-I1.
+  - id: C-H1-microc-original
+    title: "Micro-C vs Hi-C TE recovery differential (Deep Research original C-H1)"
     final_score: 7.12
-    recommended: true
-    status: QUEUED
-    note: Recommended next fruit after C-A2 SVA_F dELS switching REJECT; Standard-tier prereg when started.
+    recommended: false
+    status: REMAPPED_TO_C-I1
+    note: Desk filled as C-I1 (exp_microc_vs_hic_alu_anchors); see C-I1 BLOCKED_DATA.
   - id: C-I1
+    title: "Micro-C vs Hi-C Alu-anchor recovery differential (needs Micro-C processed loops)"
+    final_score: 7.12
+    recommended: false
+    status: BLOCKED_DATA
+    desk_verdict: BLOCKED_DATA
+    alias: C-I1-microc-vs-hic-alu-anchors
+    path: tracks/te_alu_3d/experiments/exp_microc_vs_hic_alu_anchors/
+    note: >
+      TRUE C-I1 = Deep Research original Micro-C C-H1 estimand. T0 ENCODE+4DN:
+      ENCODE Micro-C assay 404; 4DN Micro-C = pairs/hic/mcool only (no bedpe).
+      Registry AluJo NC (score 6.30) remains C-A1-internal control, not this desk.
+  - id: C-I1-alujo-nc-original
     title: "AluJo negative-control calibration of loop-call false-positive rate"
     final_score: 6.30
     recommended: false
+    status: PARKED_AS_C-A1_CONTROL
+    note: Keep as control inside C-A1; desk slot C-I1 used for Micro-C.
   - id: C-J1
     title: "TE insertion orientation vs loop-anchor asymmetry"
     final_score: 6.20
@@ -109,10 +138,12 @@ candidates:
     null_results: null_results/20260720-sva-f-dels-state-switching.md
     note: >
       TRUE C-A2 (not ChIA-PET). Primary OR 0.489; odd+even OR<1.1 → FAIL_KILL / REJECT.
-      Matching locked before outcomes. Next fruit C-H1 (else C-L1).
+      Matching locked before outcomes. Next fruit was C-H1 (TE-pELS Gnocchi; closed SUPPORT).
   - id: C-L1
     title: "Cross-cell-line transfer: K562 discordant-TE pattern vs GM12878"
     final_score: 6.04
-    recommended: false
-    status: QUEUED_FALLBACK
-    note: Fallback next fruit if C-H1 Micro-C processed loops unavailable.
+    recommended: true
+    status: QUEUED
+    note: >
+      Next fruit after C-I1 Micro-C BLOCKED_DATA (and after C-H1 TE-pELS Gnocchi SUPPORT).
+      Was fallback when Micro-C processed loops unavailable.
