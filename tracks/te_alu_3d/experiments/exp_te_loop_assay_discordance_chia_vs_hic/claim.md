@@ -6,24 +6,27 @@ question_type: Descriptive
 status: PREREGISTERED_DESK
 source_report: tracks/te_alu_3d/09_outputs/prospective/DEEP_RESEARCH_REPORT_C_A1_v1.md
 candidate_id: C-A1
+candidate_final_score: 7.06
 decision_gate: VALIDATE_DESK
+accession_freeze: ACCESSION_FREEZE_v1.md
 ---
 
 # Claim: TE-subfamily enrichment among Pol II ChIA-PET vs Hi-C discordant loop anchors in K562 (mappability-matched)
 
 ## Status
 
-**PREREGISTERED_DESK** — Standard tier. No primary analysis results yet. Accessions marked
-**VERIFY** until T0 probe JSON is reviewed. Holdout remains SEALED. Wet-lab / oligo order
-forbidden. C1 E/P locks and GO signature packs are out of scope for this experiment.
+**PREREGISTERED_DESK** — Standard tier. No primary enrichment OR results yet.  
+**Accessions:** FROZEN in `ACCESSION_FREEZE_v1.md` (T0 probe PASS — processed bedpe available).  
+Holdout remains SEALED. Wet-lab / oligo order forbidden. C1 E/P locks and GO signature packs
+are out of scope for this experiment.
 
 ## EstimandOps L0
 
 **Question type:** Descriptive.
 
-Genome-wide in K562, among processed chromatin-loop call sets from Pol II (POLR2A) ChIA-PET
-and Hi-C, is membership in the **assay-discordant** loop-anchor set enriched for one or more
-pre-registered TE subfamilies relative to a mappability-, length-, and GC-matched null?
+Genome-wide in K562, among processed chromatin-loop call sets from Pol II (RNAPII / POLR2A)
+ChIA-PET and Hi-C, is membership in the **assay-discordant** loop-anchor set enriched for one
+or more pre-registered TE subfamilies relative to a mappability-, length-, and GC-matched null?
 
 Explicitly **not causal**: no perturbation, no DAG claiming TE → loop formation, no allele
 edit. Explicitly **not** a C1 E–P contact test.
@@ -36,20 +39,19 @@ kill-test?
 
 ## Frozen claim (pre-results)
 
-After T0 accession verify and before primary enrichment analysis:
+Before primary enrichment analysis:
 
-> In K562, at least one pre-registered TE subfamily (from the frozen list finalized at T0:
-> AluY, AluS, AluJ, SVA, L1 — drop any class with n below a pre-registered minimum) has
-> **OR ≥ 1.3** for discordant vs matched-null loop anchors.
+> In K562, at least one pre-registered TE subfamily (from the frozen list finalized before
+> OR computation: AluY, AluS, AluJ, SVA, L1 — drop any class with n below a pre-registered
+> minimum) has **OR ≥ 1.3** for discordant vs matched-null loop anchors.
 
 **Falsification (pre-registered):** if, after MAPQ≥30 (or equivalent high-mappability gate)
-and replication on an independent processed file/experiment, the OR for every tested
-subfamily is **< 1.1**, the claim is **REJECT**.
+and replication on an independent processed file/biorep, the OR for every tested subfamily is
+**< 1.1**, the claim is **REJECT**.
 
 ## Primary estimand
 
-- **Universe:** Loop anchors from released, processed Pol II ChIA-PET and Hi-C loop call sets
-  in K562 (assembly frozen at T0; prefer GRCh38 if both assays provide it).
+- **Universe:** Loop anchors from frozen primary bedpe files (GRCh38).
 - **Exposure:** TE subfamily label overlapping the anchor window (public RepeatMasker or
   equivalent; source pinned in `data_manifest.md` after download).
 - **Outcome:** Discordance class — ChIA-PET-only / Hi-C-only / shared (both).
@@ -58,20 +60,25 @@ subfamily is **< 1.1**, the claim is **REJECT**.
 - **MCID:** OR ≥ 1.3 for ≥1 pre-registered subfamily.
 - **Falsification threshold:** OR < 1.1 after MAPQ≥30 + replication.
 
-## Datasets (VERIFY at T0 — do not invent biology)
+## Datasets — FROZEN primary accessions (T0)
 
-| Role | Candidate / note | Status |
-|------|------------------|--------|
-| Pol II ChIA-PET K562 loops | **T0 verified:** `ENCSR880DSH` bedpe `ENCFF759YBZ` / `ENCFF511QFN` / `ENCFF030PMM` (GRCh38). **Do not** use `ENCSR000BZZ` (ESR1) | T0_OK — download pending |
-| Hi-C K562 loops | **T0 verified:** e.g. `ENCFF693XIL` (`ENCSR545YBD`); `ENCFF598CLH`/`ENCFF256ZMD` (`ENCSR479XDG`) | T0_OK — download pending |
-| Invalid placeholder | `ENCSR444WCX` | **Missing (404)** — discarded |
-| TE annotation | Public RMSK (assembly-matched GRCh38) | VERIFY / pin at download |
-| Mappability | Umap or ENCODE mappability track, assembly-matched | VERIFY / pin at download |
+See `ACCESSION_FREEZE_v1.md` for full rationale. Portal md5 recorded; **on-disk download md5
+still pending** (no multi-GB fetch this step).
 
-T0 script: `scripts/t0_probe_encode_accessions.py` → `data/t0_accession_probe.json`.
+| Role | Experiment | Primary file | Assembly | Status |
+|------|------------|--------------|----------|--------|
+| Pol II ChIA-PET K562 loops | `ENCSR880DSH` | **`ENCFF511QFN`** (bedpe loops; preferred_default; biorep 1) | GRCh38 | **FROZEN** |
+| Pol II sensitivity bioreps | `ENCSR880DSH` | `ENCFF759YBZ` (rep2), `ENCFF030PMM` (rep3) | GRCh38 | FROZEN (non-primary) |
+| Hi-C K562 loops | `ENCSR545YBD` | **`ENCFF693XIL`** (bedpe loops; HiCCUPS merged_loops_30; preferred_default) | GRCh38 | **FROZEN** |
+| Hi-C alternate | `ENCSR479XDG` | `ENCFF598CLH` (intact localizer; sensitivity only) | GRCh38 | Alternate |
+| Rejected | `ENCSR000BZZ` | — | — | **WRONG** (ESR1 ChIA-PET, not Pol II) |
+| Rejected | `ENCSR444WCX` | — | — | **404** |
+| TE annotation | — | RMSK GRCh38 | GRCh38 | pin at download |
+| Mappability | — | Umap / ENCODE track | GRCh38 | pin at download |
 
-Large binaries are **not** downloaded by T0 (metadata only). Real downloads require
-`data_manifest.md` md5 entries.
+**Hi-C primary rationale:** Prefer ENCODE processed in situ Hi-C loop calls (`ENCFF693XIL`,
+HiCCUPS) over intact localizer (`ENCFF598CLH`); matches track’s existing K562 loop proxy and
+portal preferred_default.
 
 ## Controls
 
@@ -104,6 +111,8 @@ See `controls.md`:
   question: TE-subfamily stratification of **cross-assay discordance** with **mappability
   matching**. A positive result would not rediscover their protocol ranking; a negative
   result would not falsify it.
+- Deep Research selected C-A1 (final **7.06**) over higher-scoring C-B1 (**7.47**) for
+  identifiability and cheap MAPQ kill-test — see report §1 / §5.
 
 ## What this does NOT mean
 
@@ -112,8 +121,10 @@ See `controls.md`:
 3. NOT authorization to unseal holdout or order oligos.
 4. NOT a license to edit C1 E/P locks or GO packs.
 5. NOT a re-opening of SE vs typical-enhancer closed tests.
+6. NOT an enrichment OR result (none computed yet).
 
 ## Next step
 
-Run / review T0 accession probe. If Pol II ChIA-PET K562 lacks processed bedpe/loops
-(FASTQ-only) → `BLOCKED_DATA` and demote per report §16 (consider C-B1 or C-K1).
+Download primary bedpe only (`ENCFF511QFN`, `ENCFF693XIL`); record on-disk checksums in
+`data_manifest.md`. Do **not** invent ORs. If downloads fail or files are not loop bedpe as
+frozen → reopen freeze.

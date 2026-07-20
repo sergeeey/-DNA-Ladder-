@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-20 — C-A1 report expand + accession freeze
+
+- Expand `DEEP_RESEARCH_REPORT_C_A1_v1.md` to full 16-section Deep Research structure (scores: C-B1 7.47 > C-A1 7.06; C-A1 still recommended)
+- Registry scores aligned; inspection commit pin `c048650`
+- Freeze primary bedpe: Pol II **`ENCFF511QFN`**, Hi-C **`ENCFF693XIL`** (`ACCESSION_FREEZE_v1.md`)
+- claim/data_manifest/decision updated; T0 probe PASS; no OR results; no multi-GB download
+
 ## 2026-07-20 — C-A1 VALIDATE_DESK (loop-assay discordance prereg)
 
 - Persist Deep Research Report v1.0 recommending C-A1: `09_outputs/prospective/DEEP_RESEARCH_REPORT_C_A1_v1.md`

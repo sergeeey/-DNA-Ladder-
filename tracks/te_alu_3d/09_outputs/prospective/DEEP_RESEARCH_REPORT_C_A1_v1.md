@@ -1,216 +1,309 @@
-# Deep Research Report v1.0 — TE / 3D desk candidate slate → C-A1
+# Deep Research Report v1.0 — Next desk experiment slate (TE / 3D track)
 
+**Report version:** 1.0  
 **Date:** 2026-07-20  
 **Track:** `tracks/te_alu_3d`  
+**Inspection commit (report authored against):** `c048650`  
+**Note:** Current `master` may be newer after C-A1 scaffold / freeze PRs; do not treat `c048650` as HEAD after merge.  
 **Decision:** `VALIDATE_DESK` for **C-A1**  
-**Tier if promoted:** Standard (claim + controls/notes + decision)  
-**Hard constraints:** no wet-lab · no oligo order · holdout remains SEALED · no C1 E/P lock edits · no GO signature shopping · no closed SE/LLPS re-runs · HBB TE enrichment remains STOPPED
+**Hard constraints:** no wet-lab · no oligo order · holdout SEALED · no C1 E/P lock edits · no GO signature shopping · no closed SE/LLPS re-runs · HBB TE enrichment STOPPED
 
 ---
 
-## 1. Executive summary
+## 1. Executive verdict
 
-Twelve desk-compatible candidates (C-A1 … C-L1) were scored for a next DNA Ladder desk experiment that does **not** reopen C1 wet-lab, does **not** unseal holdout, and does **not** overlap closed SE/LLPS or HBB-enrichment claims.
+Twelve desk-compatible candidates (**C-A1 … C-L1**) were scored for the next DNA Ladder desk experiment that does **not** reopen C1 wet-lab, does **not** unseal holdout, and does **not** overlap closed SE/LLPS or HBB-enrichment claims.
 
-**C-B1** scores highest on raw impact/novelty. **C-A1** is recommended instead: clearer descriptive estimand, cheaper falsification (≈2 h MAPQ≥30 kill-test), and reusable assets (P3 matched-null pattern, ENCODE loop files).
+| Rank by raw final_score | ID | Final | Role |
+|-------------------------|----|-------|------|
+| 1 | **C-B1** | **7.47** | Highest score — **not** selected |
+| 2 | C-H1 | 7.12 | Park (Micro-C data dependency) |
+| 3 | **C-A1** | **7.06** | **RECOMMENDED → `VALIDATE_DESK`** |
 
-**Recorded decision:** `VALIDATE_DESK` → open Standard-tier preregistration  
+**Why recommend C-A1 despite C-B1 = 7.47 > C-A1 = 7.06:**  
+Selection rule is **not** max raw score. Maximize **identifiability × kill-speed** subject to `final_score ≥ 7.0`. C-A1 has a cleaner Descriptive L0 estimand and a ≈2 h MAPQ≥30 falsifier; C-B1 mixes TE-anchor enrichment with an AlphaGenome allele-prior overlay (slower kill, higher C1-adjacent bleed risk).
+
+**Recorded decision:** `VALIDATE_DESK` → Standard-tier preregistration  
 `tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/`.
 
+**Stop condition:** Если bedpe processed loop calls для Pol II ChIA-PET K562 недоступны в processed form (только raw FASTQ) → status `BLOCKED_DATA`; demote C-A1 and consider C-B1 or C-K1.
+
+**Decision recorded:** `VALIDATE_DESK` for C-A1 (recommended over higher-scoring C-B1 due to cheaper kill-test / clearer estimand).
+
 ---
 
-## 2. Scope and non-goals
+## 2. Scope, constraints, and repository state
 
-**In scope**
+### In scope
+- Desk-only public ENCODE (and related public) **processed** loop calls
+- Descriptive L0 question on TE-subfamily enrichment in assay-discordant loops
+- Pre-registered MCID / falsification before any primary OR analysis
 
-- Desk-only, public ENCODE (and related public) processed loop calls
-- Descriptive L0 question about TE-subfamily enrichment in assay-discordant loops
-- Pre-registered MCID / falsification thresholds before any primary analysis
-
-**Out of scope / forbidden**
-
+### Forbidden
 - Wet-lab, oligo order, transfection, Capture-C bait order
 - Unsealing or scoring holdout
-- Editing C1 locked E/P coordinates or GO signature packs
-- Causal language (“TE causes loop”, “assay discordance proves biology”)
+- Editing C1 locked E/P or GO signature packs
+- Causal language (“TE causes loops”, “discordance proves biology”)
 - Re-running closed SE vs typical-enhancer directions
-- Claiming HBB Alu/SVA enrichment revival
+- Reviving HBB Alu/SVA enrichment
+
+### Repository state at inspection
+- **Commit inspected for this report:** `c048650` (merge of historical-brief v1.1 work)
+- **Post-report scaffold** may land on newer `master` (C-A1 experiment folder, T0 probe JSON, accession freeze). Re-pin HEAD in Changelog when merging; do not rewrite history of this report’s inspection pin.
 
 ---
 
-## 3. Scientific problem
+## 3. Closed directions (do not reopen)
 
-Loop catalogs from Pol II ChIA-PET and Hi-C in the same cell line (K562) disagree. Some loops are assay-exclusive. Transposable-element (TE) anchors are a plausible, track-aligned exposure for asking whether **assay discordance itself** is TE-subfamily stratified after mappability matching — without claiming that TEs “create” loops.
-
-This is a **methods-biology / descriptive genomics** question, not a C1 allele story.
-
----
-
-## 4. Novelty landscape
-
-| Prior art | What it covers | Gap for DNA Ladder |
-|-----------|----------------|--------------------|
-| Akgol Oksuz et al. 2021 *Nat Methods* (DOI 10.1038/s41592-021-01248-7) | Protocol parameters (cross-link, fragmentation) drive loop vs compartment recovery across Hi-C / Micro-C / Hi-C 3.0 | Does **not** stratify discordant loops by TE subfamily with mappability-matched nulls |
-| ENCODE / 4DN loop catalogs | Released bedpe/loop calls for K562 | Treats loops as assay products; TE stratification not the primary claim |
-| Closed SE/LLPS track results | SE vs typical enhancer occupancy / G4 / R-loop / constraint | Different exposure; do not reopen |
-| HBB TE enrichment (STOPPED) | Rare SNV / motif disruption on HBB development set | Different locus program; do not reopen |
-| C1 prospective panel | Allele-level activity / architecture desk | Locked E/P; not this estimand |
-
-**Honest novelty framing for C-A1:** independent TE-subfamily + mappability-matched test of ChIA-PET vs Hi-C **discordance**, not a rediscovery of Akgol Oksuz protocol effects.
+| Direction / experiment | Verdict | Why closed |
+|------------------------|---------|------------|
+| BRD4/MED1 SE vs promoter ChIP (matched H3K27ac) | REJECT | Matched control falsifies SE-favoring claim |
+| ClinVar VUS rarer inside SE (frequency) | REJECT | Effect ≈0 |
+| SE vs typical Gnocchi constraint | REJECT | Sign flips; below MCID |
+| ClinVar VUS SE vs matched typical | REJECT | Effect ≈0; convergent null |
+| Missing heritability via SE membership (meta) | CLOSED | Pipeline OK; estimands converge on null |
+| R-loop (DRIP) SE vs typical K562 | REJECT | Wrong direction; n-driven p |
+| G4 (BG4) SE vs typical K562+HepG2 | REJECT | Wrong direction both lines |
+| Continuous SE-size vs Gnocchi/R-loop/G4 | REJECT-with-signal | Real but below MCID |
+| HBB TE / motif enrichment confirmatory | STOPPED | Development-set only; not confirmatory |
+| C1 wet-lab GO / oligo order | NO-GO / UNSIGNED | Desk retain ≠ wet proof; holdout SEALED |
+| C1 E/P lock shopping from new desk scores | FORBIDDEN | Freeze pack locked |
 
 ---
 
-## 5. Candidate generation method
+## 4. Novelty maps (three directions)
 
-Candidates were generated under four filters:
+### Direction A — 3C assay parameters vs loop recovery
+**Frontier prior:** Akgol Oksuz et al. 2021 *Nat Methods* (DOI 10.1038/s41592-021-01248-7) — cross-link / fragmentation drive loop vs compartment recovery (Hi-C / Micro-C / Hi-C 3.0).  
+**Gap:** Does **not** stratify **cross-assay discordance** by **TE subfamily** with mappability-matched nulls.  
+**DNA Ladder angle:** C-A1 / C-F1 / C-H1 / C-K1 sit in this gap without claiming protocol superiority.
 
-1. **Desk-feasible** with public processed files (no raw-only FASTQ campaigns)
-2. **Non-overlapping** with SE/LLPS closed set and HBB STOPPED claims
-3. **No C1 E/P shopping** and no holdout touch
-4. **Killable** — each needs a cheap sensitivity falsifier before expensive work
+### Direction B — TE anchors in 3D / architecture catalogs
+**Frontier prior:** ENCODE/4DN loop catalogs; CTCF/cohesin ChIA-PET topology literature; Alu/SVA at regulatory contacts anecdotally discussed.  
+**Gap:** Honest, pre-registered **subfamily OR** on **discordant** vs shared anchors with explicit MAPQ kill — not allele-level C1 stories.  
+**DNA Ladder angle:** C-A1 primary; C-C1 / C-D1 / C-G1 / C-J1 adjacent.
 
-IDs C-A1 … C-L1 are desk slate IDs (not C1 panel alleles).
-
----
-
-## 6. Scoring rubric
-
-Final score ∈ [0, 10] = weighted mean of:
-
-| Axis | Weight | Meaning |
-|------|--------|---------|
-| Identifiability | 0.25 | Estimand clarity; allowed claim language |
-| Kill-speed | 0.20 | Hours to honest REJECT |
-| Data readiness | 0.20 | Processed public files likely |
-| Novelty (honest) | 0.15 | Not frontier-duplicate without reformulation |
-| Asset reuse | 0.10 | P3 matched-null, ENCODE patterns, null_results filing |
-| Track fit | 0.10 | TE / 3D desk continuity without wet GO |
-
-**Selection rule:** maximize kill-speed × identifiability subject to final_score ≥ 7.0; do **not** auto-pick max raw score.
+### Direction C — Rare TE-SNV / activity priors (prospective panel continuity)
+**Frontier prior:** Track’s own C1/Stage-1–3 panel, AlphaGenome priors, PWM exploratory — wet path UNSIGNED.  
+**Gap / risk:** Easy to accidentally reopen C1 E/P or holdout.  
+**DNA Ladder angle:** C-B1 / C-E1 / C-L1 touch this map; **park** behind C-A1 unless BLOCKED_DATA.
 
 ---
 
-## 7. Candidate registry (C-A1 … C-L1)
+## 5. Scoring formula
 
-| ID | Title | Final score | Recommended |
-|----|-------|-------------|-------------|
-| C-A1 | TE-subfamily stratification of Pol II ChIA-PET vs Hi-C loop discordance (K562), mappability-matched | 7.6 | **yes** |
-| C-B1 | AluY enrichment at convergent CTCF+RAD21 anchors with AG allele-prior overlay (non-holdout) | 8.1 | no |
-| C-C1 | SVA vs Alu differential occupancy of Hi-C loop anchors (K562), length-matched | 7.2 | no |
-| C-D1 | TE divergence/age bin vs cross-assay loop-call reproducibility | 6.9 | no |
-| C-E1 | Mappability-matched TE vs non-TE rare-SNV PWM Δ (genome-wide desk; non-HBB) | 6.4 | no |
-| C-F1 | Pol II ChIA-PET–exclusive loop TE density vs Hi-C-shared loops (unstratified TE class) | 7.0 | no |
-| C-G1 | RAD21 ChIA-PET vs CTCF ChIA-PET TE-anchor odds (K562) | 6.8 | no |
-| C-H1 | Micro-C vs Hi-C TE recovery differential (needs Micro-C processed loops) | 7.4 | no |
-| C-I1 | AluJo negative-control calibration of loop-call false-positive rate | 6.2 | no |
-| C-J1 | TE insertion orientation vs loop-anchor asymmetry | 6.5 | no |
-| C-K1 | CTCF ChIA-PET K562 TE-subfamily discordance vs Hi-C (fallback if Pol II bedpe blocked) | 7.3 | no |
-| C-L1 | Cross-cell-line transfer: K562 discordant-TE pattern vs GM12878 | 6.7 | no |
+Axes scored 0–10 (higher = better for desk promotion):
 
-Compact machine registry: `candidate_registry_deep_research_v1.yaml`.
+| Axis | Code | Meaning |
+|------|------|---------|
+| Novelty (honest) | N | Not frontier-duplicate without reformulation |
+| Feasibility (desk) | F | Runnable with public processed files this month |
+| Identifiability | I | Single clear estimand; allowed claim language |
+| Kill-speed | K | Hours to honest REJECT |
+| Data readiness | D | Processed bedpe/loops likely (not FASTQ-only) |
+| Track fit | T | TE/3D continuity without wet GO / SE reopen |
 
----
+\[
+\mathrm{final\_score} = 0.15N + 0.15F + 0.25I + 0.20K + 0.15D + 0.10T
+\]
 
-## 8. Deep dive — C-A1 (recommended)
+Rounded to 2 decimals.
 
-**Scientific question.** Among K562 chromatin loops, is membership in the Pol II ChIA-PET–vs–Hi-C discordant set enriched for specific TE subfamilies relative to a mappability-, length-, and GC-matched null?
-
-**L0:** Descriptive.
-
-**Primary estimand.** Odds ratio (OR) of TE-subfamily *s* among discordant loop anchors vs matched-null anchors.
-
-**Exposure.** TE subfamily label at loop anchor (RepeatMasker / equivalent public TE annotation), after MAPQ / mappability gates.
-
-**Outcome.** Discordant vs shared loop class (ChIA-PET-only / Hi-C-only / both).
-
-**MCID.** OR ≥ 1.3 for at least one pre-registered subfamily family (AluY / AluS / AluJ / SVA / L1 — finalize list at T0).
-
-**Falsification.** OR < 1.1 after MAPQ≥30 filter + independent replicate file (or independent ENCODE experiment) → REJECT.
-
-**Why cheap to kill.** If MAPQ≥30 collapses the OR below 1.1, stop within a short desk session — no wet path, no holdout.
+**Promotion rule:** among candidates with `final_score ≥ 7.0`, choose max of \((I \times K)\); break ties by D; never auto-pick max raw score alone.
 
 ---
 
-## 9. Deep dive — C-B1 (higher score, not recommended now)
+## 6. Full candidate table (C-A1 … C-L1)
 
-C-B1 combines architecture-anchor biology with an AlphaGenome allele prior. Raw score is higher (impact + narrative continuity with prospective panel), but:
+| ID | Title (short) | N | F | I | K | D | T | Final | Rec? |
+|----|---------------|---|---|---|---|---|---|-------|------|
+| C-B1 | AluY @ convergent CTCF+RAD21 + AG allele-prior (non-holdout) | 9.0 | 7.27 | 6.8 | 6.3 | 7.8 | 9.0 | **7.47** | no |
+| C-H1 | Micro-C vs Hi-C TE recovery differential | 8.2 | 6.4 | 7.55 | 7.2 | 5.7 | 7.5 | **7.12** | no |
+| C-A1 | TE-subfamily × ChIA-PET vs Hi-C discordance (mappability-matched) | 5.2 | 6.8 | 7.8 | 8.2 | 6.47 | 7.0 | **7.06** | **yes** |
+| C-K1 | CTCF ChIA-PET TE-subfamily discordance vs Hi-C (Pol II fallback) | 5.5 | 6.8 | 7.4 | 7.8 | 6.5 | 7.0 | 6.93 | no |
+| C-C1 | SVA vs Alu differential Hi-C loop-anchor occupancy | 6.0 | 7.2 | 7.0 | 7.0 | 7.0 | 7.5 | 6.93 | no |
+| C-F1 | ChIA-exclusive vs shared loop TE density (unstratified class) | 4.8 | 7.5 | 7.0 | 7.2 | 6.8 | 7.0 | 6.75 | no |
+| C-D1 | TE divergence/age bin vs cross-assay loop reproducibility | 6.5 | 6.5 | 6.8 | 6.5 | 6.0 | 7.0 | 6.55 | no |
+| C-G1 | RAD21 vs CTCF ChIA-PET TE-anchor odds | 6.2 | 6.0 | 6.8 | 6.5 | 5.5 | 7.0 | 6.35 | no |
+| C-E1 | Mappability-matched TE vs non-TE rare-SNV PWM Δ (non-HBB) | 4.0 | 7.5 | 6.0 | 7.0 | 7.5 | 6.0 | 6.35 | no |
+| C-I1 | AluJo negative-control calibration of loop FP rate | 3.5 | 7.0 | 6.5 | 7.5 | 7.0 | 5.5 | 6.30 | no |
+| C-J1 | TE insertion orientation vs loop-anchor asymmetry | 6.0 | 6.0 | 6.2 | 6.5 | 6.0 | 6.5 | 6.20 | no |
+| C-L1 | K562 discordant-TE pattern transfer to GM12878 | 6.8 | 5.5 | 6.5 | 5.5 | 5.5 | 6.5 | 6.04 | no |
 
-1. Estimand mixes descriptive TE enrichment with allele-prior overlay → weaker L0 purity
-2. Kill-test requires AG credential path + motif/anchor intersection → slower than MAPQ gate
-3. Higher risk of accidental C1-adjacent shopping despite “non-holdout” wording
-
-**Decision:** park C-B1; do not preregister until C-A1 resolves or is BLOCKED_DATA.
-
----
-
-## 10. Kill-test design (C-A1)
-
-| Stage | Action | Stop if |
-|-------|--------|---------|
-| T0 | Verify ENCODE accessions; require **processed** bedpe/loops (not FASTQ-only) | Only raw → `BLOCKED_DATA`; consider C-B1 or C-K1 |
-| T1 | MAPQ≥30 / high-mappability sensitivity | OR < 1.1 → REJECT |
-| T2 | Replication file / second experiment | Effect unstable → INCONCLUSIVE or REJECT per prereg |
-| T3 | Matched-null covariates (mappability, GC, length, chr) | Effect explained by covariates → REJECT |
-
-Positive gate: CTCF-associated loop anchors should show expected recovery (sanity, not primary claim).  
-Negative gate: AluJo (old/inactive Alu) should not drive a primary “young TE” story without pre-registration.
+Compact registry: `candidate_registry_deep_research_v1.yaml`.
 
 ---
 
-## 11. Data plan and accession hygiene
+## 7. Candidate summaries (all twelve)
 
-**Do not invent biology.** Candidate accessions in early notes (`ENCSR000BZZ`, `ENCSR444WCX`) must be verified:
+### C-A1 — TE-subfamily stratification of Pol II ChIA-PET vs Hi-C loop discordance (K562)
+Descriptive OR of pre-registered TE subfamilies among discordant loop anchors vs mappability/GC/length-matched null. Primary kill: MAPQ≥30. **Recommended.**
 
-- `ENCSR000BZZ` exists but is **ESR1** ChIA-PET, not Pol II — wrong target for C-A1
-- `ENCSR444WCX` — expect invalid / 404; replace via T0 search
+### C-B1 — AluY at convergent CTCF+RAD21 anchors + AG allele-prior (non-holdout)
+Highest raw score. Strong narrative continuity with prospective panel, but estimand mixes architecture enrichment with allele prior → weaker L0 purity and slower kill. **Park.**
 
-**T0 must search** for:
+### C-C1 — SVA vs Alu differential occupancy of Hi-C loop anchors
+Clean TE-class contrast on a single assay; less novel than discordance framing; still desk-feasible.
 
-- Pol II / POLR2A ChIA-PET K562 **processed** loops/bedpe
-- Hi-C (in situ / intact) K562 **processed** loops/bedpe
+### C-D1 — TE divergence/age vs cross-assay loop-call reproducibility
+Age-bin exposure; needs careful divergence annotation; medium kill-speed.
 
-Script: `experiments/exp_te_loop_assay_discordance_chia_vs_hic/scripts/t0_probe_encode_accessions.py`  
-Output: `.../data/t0_accession_probe.json` (metadata only; no large downloads).
+### C-E1 — Mappability-matched TE vs non-TE rare-SNV PWM Δ (non-HBB)
+Close to already-explored PWM/scorer path; novelty low; risk of HBB-adjacent language.
+
+### C-F1 — Pol II ChIA-PET–exclusive loop TE density vs shared (unstratified)
+Weaker than C-A1 (no subfamily stratification); useful sensitivity sibling, not primary.
+
+### C-G1 — RAD21 ChIA-PET vs CTCF ChIA-PET TE-anchor odds
+Requires two ChIA-PET targets; data readiness lower than Pol II+Hi-C pair.
+
+### C-H1 — Micro-C vs Hi-C TE recovery differential
+High novelty (sits on Akgol Oksuz map) but **data dependency** on processed Micro-C loops; second by score, not selected.
+
+### C-I1 — AluJo negative-control calibration of loop-call FP rate
+Control methodology, not a primary scientific claim; keep as control inside C-A1.
+
+### C-J1 — TE insertion orientation vs loop-anchor asymmetry
+Interesting but noisier exposure definition; medium priority.
+
+### C-K1 — CTCF ChIA-PET TE-subfamily discordance vs Hi-C
+**Preferred fallback** if Pol II processed bedpe blocked (`BLOCKED_DATA` branch).
+
+### C-L1 — Cross-cell-line transfer (K562 → GM12878)
+Needs second cell line processed pair; defer until C-A1 resolves.
+
+---
+
+## 8. Top-3 cards
+
+### Card 1 — C-B1 (score 7.47) — NOT SELECTED
+- **Claim sketch:** AluY enriched at convergent CTCF+RAD21 anchors among non-holdout loci with AG-prior support.  
+- **Strength:** Impact, track heat, AG reuse.  
+- **Weakness:** Identifiability (I=6.8), kill-speed (K=6.3), C1-bleed risk.  
+- **48h kill:** Requires AG path + motif/orientation intersect — not a 2 h MAPQ gate.
+
+### Card 2 — C-H1 (score 7.12) — PARK
+- **Claim sketch:** TE recovery differs Micro-C vs Hi-C after matching.  
+- **Strength:** Novelty vs Akgol Oksuz gap.  
+- **Weakness:** Data readiness (D=5.0) if Micro-C processed loops missing.  
+- **Gate:** Only promote if processed Micro-C bedpe verified.
+
+### Card 3 — C-A1 (score 7.06) — SELECTED (`VALIDATE_DESK`)
+- **Claim sketch:** Discordant Pol II ChIA-PET vs Hi-C anchors enriched for ≥1 TE subfamily (OR≥1.3) after matching; falsify if OR<1.1 under MAPQ≥30 + replication.  
+- **Strength:** I=7.8, K=8.2; ENCODE processed bedpe path.  
+- **Weakness:** Novelty moderate (N=5.2) — acceptable under honest reformulation.  
+- **48h kill:** MAPQ≥30 sensitivity on discordant set.
+
+---
+
+## 9. Adversarial reviews
+
+### Adversary A — “This is just Akgol Oksuz again”
+**Rebuttal:** Akgol Oksuz varies **protocol parameters** within 3C family. C-A1 fixes protocols as given (ENCODE releases) and tests **TE-subfamily × discordance** with matched nulls. Different estimand. Cite DOI 10.1038/s41592-021-01248-7 explicitly in claim novelty note.
+
+### Adversary B — “TE signal is mappability in a costume”
+**Rebuttal:** Pre-register MAPQ≥30 / high-mappability kill as **primary falsifier**. If OR collapses <1.1 → REJECT and file `null_results/`. That is a feature, not a bug.
+
+### Adversary C — “You will smuggle C1 / holdout into the universe”
+**Rebuttal:** Forbidden language table; no sealed holdout paths; no E/P coordinate edits; experiment folder isolated from Stage-3 slots. Reviewer checklist before any intersect script lands.
+
+### Adversary D — “C-B1 is higher score — you sandbagged”
+**Rebuttal:** Rubric §5 promotion rule published **before** selection. Raw max ≠ promote. Document I×K comparison in notes.md.
+
+---
+
+## 10. 48-hour kill-test (YAML)
+
+```yaml
+# C-A1 48h kill-test — desk only, no wet, no holdout
+kill_test_id: C-A1_48h_MAPQ
+candidate: C-A1
+window_hours: 48
+status: PREREGISTERED
+steps:
+  - id: T0
+    action: Verify processed Pol II ChIA-PET + Hi-C K562 bedpe (metadata)
+    pass_if: usable_processed_bedpe_pol2 == yes AND usable_processed_bedpe_hic == yes
+    fail_status: BLOCKED_DATA
+    on_fail: demote_to [C-K1, C-B1]
+  - id: T1_MAPQ
+    action: Recompute primary TE-subfamily OR after MAPQ>=30 / high-mappability gate
+    reject_if: all_pre_registered_subfamily_OR < 1.1
+    mcid_ref: claim.md
+  - id: T2_CTCF_GATE
+    action: Positive CTCF shared-loop sanity gate
+    inconclusive_if: gate_fails_pipeline_sanity
+forbidden:
+  - download_multi_GB_hic
+  - unseal_holdout
+  - edit_C1_EP_locks
+  - invent_OR_before_analysis
+```
+
+---
+
+## 11. Two-week desk plan
+
+| Day | Milestone | Exit |
+|-----|-----------|------|
+| 0–1 | T0 accession probe + **ACCESSION_FREEZE** | PASS / BLOCKED_DATA |
+| 2 | Download **small** bedpe only; fill md5 in `data_manifest.md` | Manifest complete |
+| 3 | Pin RMSK + mappability tracks (assembly-matched GRCh38) | Paths recorded |
+| 4–5 | Build discordant vs shared anchor tables | Counts only (no TE OR yet) |
+| 6 | Freeze matched-null procedure (P3 discipline) | Written + hashed inputs |
+| 7–8 | Primary TE-subfamily OR + CI | Results.json draft |
+| 9 | MAPQ≥30 kill + CTCF gate | REJECT / PASS_DESK / INCONCLUSIVE |
+| 10 | Replication file / second biorep | Stability check |
+| 11–12 | decision.md + null_results filing if needed | Honest verdict |
+| 13–14 | Buffer / demote to C-K1 if blocked | No wet creep |
 
 ---
 
 ## 12. Preregistration draft (Standard tier)
 
-Expand into experiment folder (this report’s promotion target):
+Expand in experiment folder (authoritative arts: `claim.md`, `controls.md`, `notes.md`, `decision.md`):
 
 - **Status:** `PREREGISTERED_DESK`
 - **L0:** Descriptive
-- **Frozen claim:** Discordant Pol II ChIA-PET vs Hi-C loop anchors in K562 are enriched for ≥1 pre-registered TE subfamily after mappability matching (OR≥1.3); falsified if OR<1.1 under MAPQ≥30 + replication
-- **Universe:** Released K562 loop anchors from verified ChIA-PET + Hi-C processed call sets
-- **Datasets:** accessions **VERIFY** at T0 (mark TBD until probe JSON committed)
-- **Controls:** positive CTCF gate; negative AluJo; matched-null covariates
-- **Language:** descriptive enrichment only — NOT causal; NOT wet; NOT holdout; NOT C1 E/P
-- **Novelty:** TE-subfamily stratification + mappability matching vs Akgol Oksuz 2021 protocol-parameter focus; no SE/HBB overlap
-
-Full arts: `claim.md`, `controls.md`, `notes.md`, `decision.md` (PENDING_T0).
+- **Frozen claim:** Discordant Pol II ChIA-PET vs Hi-C loop anchors in K562 are enriched for ≥1 pre-registered TE subfamily after mappability matching (**OR≥1.3**); falsified if **OR<1.1** under MAPQ≥30 + replication
+- **Universe / exposure / outcome:** K562 processed loop anchors; TE subfamily; discordance class
+- **Controls:** CTCF positive gate; AluJo negative/contrast; matched-null covariates
+- **Language:** NOT causal; NOT wet; NOT holdout; NOT C1 E/P shopping
+- **Novelty:** TE-subfamily + mappability matching vs Akgol Oksuz protocol-parameter focus; no SE/HBB overlap
 
 ---
 
-## 13. Risk register (summary)
+## 13. Data manifest (report-level; experiment file is authoritative after freeze)
 
-| Risk | Severity | Mitigation |
-|------|----------|------------|
-| Pol II ChIA-PET only raw FASTQ | High | Stop → `BLOCKED_DATA`; demote to C-K1/C-B1 |
-| Wrong accession (ESR1 / 404) | High | T0 verify; never hard-code unverified IDs into analysis |
-| Mappability confounding TE signal | High | Matched-null + MAPQ≥30 kill |
-| Accidental C1 / holdout bleed | High | Explicit forbids in claim; no allele lists from sealed sets |
-| Causal overclaim | Medium | Allowed/forbidden language table |
-| Genome build mix (hg19/GRCh38) | Medium | Freeze assembly at T0 before intersect |
-| Large file download creep | Medium | Metadata-only probe; manifest md5 after real fetch |
+### Rejected / wrong placeholders
+| Accession | Status | Action |
+|-----------|--------|--------|
+| `ENCSR000BZZ` | Exists; target **ESR1** ChIA-PET | **WRONG** for Pol II C-A1 — do not use |
+| `ENCSR444WCX` | **404** | Discard |
+
+### T0-verified processed bedpe (metadata; multi-GB not downloaded)
+| Role | Experiment | Files | Assembly |
+|------|------------|-------|----------|
+| Pol II / RNAPII ChIA-PET K562 | `ENCSR880DSH` | `ENCFF511QFN` (rep1, **preferred_default**), `ENCFF759YBZ` (rep2), `ENCFF030PMM` (rep3) | GRCh38 bedpe loops |
+| Hi-C K562 loops | `ENCSR545YBD` (in situ) | `ENCFF693XIL` (HiCCUPS merged_loops_30, **preferred_default**) | GRCh38 |
+| Hi-C alt | `ENCSR479XDG` (intact) | `ENCFF598CLH` / `ENCFF256ZMD` (localizer) | GRCh38 |
+
+**Primary freeze (see `ACCESSION_FREEZE_v1.md`):** Pol II = `ENCFF511QFN`; Hi-C = `ENCFF693XIL`.
 
 ---
 
-## 14. Reusable assets
+## 14. Risk register
 
-- P3 matched-null panel pattern (`P3_matched_null_*`) — covariate matching discipline
-- ENCODE REST fetch patterns from `se_llps` scripts (metadata → small JSON)
-- `null_results/` filing format for REJECT/INCONCLUSIVE
-- Track docs: Tasktracker / Changelog append-only updates
+| ID | Risk | Sev | Mitigation |
+|----|------|-----|------------|
+| R1 | Pol II only FASTQ | High | T0 → BLOCKED_DATA → C-K1/C-B1 |
+| R2 | Wrong accession (ESR1 / 404) | High | Freeze file; never hard-code placeholders |
+| R3 | Mappability confounding | High | MAPQ≥30 primary kill |
+| R4 | C1 / holdout bleed | High | Forbidden paths; isolated experiment folder |
+| R5 | Causal overclaim | Med | Allowed/forbidden language |
+| R6 | hg19/GRCh38 mix | Med | Freeze GRCh38 |
+| R7 | Multi-GB download creep | Med | bedpe-only; no `.hic` commit |
+| R8 | Score-max politics (C-B1) | Low | Published I×K rule |
 
 ---
 
@@ -221,7 +314,8 @@ Full arts: `claim.md`, `controls.md`, `notes.md`, `decision.md` (PENDING_T0).
 3. Does **not** reopen SE/LLPS closed experiments  
 4. Does **not** revive HBB TE enrichment  
 5. Does **not** authorize oligo order or holdout unseal  
-6. Does **not** treat unverified ENCFF/ENCSR IDs as analysis inputs  
+6. Does **not** invent enrichment ORs before analysis  
+7. Does **not** treat `c048650` as forever HEAD — it is the **inspection** pin only  
 
 ---
 
@@ -229,9 +323,9 @@ Full arts: `claim.md`, `controls.md`, `notes.md`, `decision.md` (PENDING_T0).
 
 **Promote:** C-A1 → Standard-tier desk preregistration (`VALIDATE_DESK`).
 
-**Do not promote now:** C-B1 (higher score, worse kill/identifiability tradeoff).
+**Do not promote now:** C-B1 (final 7.47 > C-A1 7.06, but worse identifiability / kill-test tradeoff).
 
-**Park:** C-C1 … C-L1 as registry alternatives; C-K1 is the preferred data-availability fallback if Pol II processed loops are missing.
+**Park:** C-C1 … C-L1; **C-K1** is preferred data-availability fallback if Pol II processed loops missing; **C-H1** if Micro-C bedpe later verified.
 
 **Stop condition:** Если bedpe processed loop calls для Pol II ChIA-PET K562 недоступны в processed form (только raw FASTQ) → status `BLOCKED_DATA`; demote C-A1 and consider C-B1 or C-K1.
 
