@@ -1,10 +1,9 @@
-# Next fruit note (C-A1 closed) — one paragraph only
+# Next fruit note (updated 2026-07-20) — one paragraph only
 
-**Recommend C-B1 next**, not C-K1 and not immediate STOP: Deep Research already scored C-B1
-highest (7.47) and parked it only because C-A1 had a cheaper Descriptive kill; C-A1 is now
-desk-closed as `INCONCLUSIVE_CROSS_CELL`, so the adversarial “you sandbagged the higher
-score” note is settled by finishing C-A1 honestly rather than by starting C-K1 (Pol II
-fallback — Pol II bedpe was never blocked). C-B1 still needs non-holdout convergent
-CTCF+RAD21 anchor work plus a restrained AG allele-prior overlay — start only when AG/PWM
-credentials and a Standard-tier claim.md are ready; if those stay blocked, STOP new TE desk
-fruit rather than inventing C-K1 busywork. **Do not start C-B1 analysis in this closure PR.**
+C-A1 desk is **CLOSED** as `INCONCLUSIVE_CROSS_CELL`. Standing order started **C-B1** as the
+Predictive topology-community vs SE CRISPR E–G experiment under
+`tracks/se_llps/experiments/exp_topology_community_crispr_eg/` (T0 **PASS_FREEZE**; rE2G audit
+**SURVIVES_WITH_REDESIGN**; kill-test not yet run). The Deep Research registry’s original
+highest-score C-B1 (AluY @ convergent CTCF+RAD21 + AG allele-prior) remains **PARKED** as
+`C-B1-TE-AluY-AG` until AG credentials and a separate TE-track claim.md exist — do not conflate
+the two. Holdout SEALED; no C1 E/P / wet / oligo.

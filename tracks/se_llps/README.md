@@ -2,7 +2,11 @@
 
 Falsification tests around super-enhancers (SE), coactivator LLPS (BRD4/MED1), G4, R-loops, and germline constraint / ClinVar VUS density.
 
-Most directions in this track have already **converged on REJECT** — see repo-root [`null_results/`](../../null_results/).
+Most enrichment directions in this track have already **converged on REJECT** — see repo-root [`null_results/`](../../null_results/).
+
+**Active (2026-07-20):** `experiments/exp_topology_community_crispr_eg/` — C-B1 Predictive
+claim (CRE-community topology ΔAUC over SE membership for CRISPR E–G in K562);
+status `PENDING_KILL_TEST` after T0 freeze + ENCODE-rE2G feature audit.
 
 ## Layout
 

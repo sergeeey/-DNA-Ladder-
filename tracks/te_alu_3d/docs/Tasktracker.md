@@ -88,7 +88,8 @@
 - [ ] Sign wet-lab GO B0 (human) — paste one-line fields; still **UNSIGNED**
 - [ ] Submit B0 PO (lab) — **BLOCKED** until signature
 - [ ] Unblind holdout — **BLOCKED**
-- [ ] Optional next TE fruit: **C-B1** Standard-tier prereg only when AG credentials ready (see C-A1 `NEXT_FRUIT_NOTE.md`) — **not started**
+- [x] Standing-order next fruit after C-A1: **C-B1 topology/CRISPR** started under `tracks/se_llps/experiments/exp_topology_community_crispr_eg/` (not TE AluY+AG)
+- [ ] Optional TE fruit **C-B1-TE-AluY-AG** (registry original C-B1): Standard-tier prereg only when AG credentials ready — **still parked**
 
 ## Blocked
 

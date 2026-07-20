@@ -1,7 +1,7 @@
 # Compact candidate registry from Deep Research Report v1.0 (2026-07-20)
 # Source: DEEP_RESEARCH_REPORT_C_A1_v1.md
 # Decision: C-A1 desk CLOSED as INCONCLUSIVE_CLOSED (2026-07-20)
-# Note: C-B1 final_score 7.47 > C-A1 7.06; next fruit recommend C-B1 (not auto-started)
+# Note: post-C-A1 standing order started C-B1 as topology/CRISPR (se_llps); TE AluY+AG parked
 
 schema_version: 1
 date: "2026-07-20"
@@ -24,7 +24,22 @@ candidates:
     title: "AluY enrichment at convergent CTCF+RAD21 anchors with AG allele-prior overlay (non-holdout)"
     final_score: 7.47
     recommended: false
-    status: PARKED_NEXT_FRUIT
+    status: PARKED_TE_ALUY_AG
+    alias: C-B1-TE-AluY-AG
+    note: >
+      Standing order 2026-07-20 filled the post-C-A1 C-B1 desk slot with a different estimand
+      (topology community ΔAUC over SE for CRISPR E–G) under tracks/se_llps/experiments/
+      exp_topology_community_crispr_eg/. This TE AluY+AG candidate remains parked pending AG creds.
+  - id: C-B1-topology-crispr-eg
+    title: "CRE-community topology incremental ΔAUC over SE membership for CRISPR E–G (K562)"
+    final_score: null
+    recommended: true
+    status: PENDING_KILL_TEST
+    track: se_llps
+    path: tracks/se_llps/experiments/exp_topology_community_crispr_eg/
+    desk_slot: C-B1
+    t0_status: PASS_FREEZE
+    rE2G_audit: SURVIVES_WITH_REDESIGN
   - id: C-C1
     title: "SVA vs Alu differential occupancy of Hi-C loop anchors (K562), length-matched"
     final_score: 6.93

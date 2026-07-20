@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-20 — Next fruit C-B1 started (topology/CRISPR under se_llps; TE AluY+AG still parked)
+
+- Standing order after C-A1 close: open **C-B1** as Predictive topology-community ΔAUC over SE
+  for CRISPR E–G (K562) at `tracks/se_llps/experiments/exp_topology_community_crispr_eg/`
+- Registry AluY@CTCF+RAD21+AG candidate renamed in notes to **C-B1-TE-AluY-AG** (still PARKED)
+- TE track: no new OR analysis; holdout/C1/wet untouched
+
 ## 2026-07-20 — C-A1 desk CLOSED → INCONCLUSIVE_CROSS_CELL
 
 - T6 caller-swap: Mustache N/A on ENCODE; DELTA `ENCFF657QKE` AluSz OR **0.913**

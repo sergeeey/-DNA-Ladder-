@@ -1,0 +1,715 @@
+{
+  "probe": "t0_probe_encode_accessions_c_b1_topology",
+  "experiment": "exp_topology_community_crispr_eg",
+  "candidate_id": "C-B1",
+  "queried_at_utc": "2026-07-20T12:29:44.251760+00:00",
+  "encode_base": "https://www.encodeproject.org",
+  "note": "Metadata only \u2014 no multi-GB ENCODE-rE2G prediction downloads",
+  "crispr_benchmark": {
+    "url": "https://raw.githubusercontent.com/EngreitzLab/ENCODE_rE2G/main/reference/EPCrisprBenchmark_ensemble_data_GRCh38.tsv.gz",
+    "head": {
+      "url": "https://raw.githubusercontent.com/EngreitzLab/ENCODE_rE2G/main/reference/EPCrisprBenchmark_ensemble_data_GRCh38.tsv.gz",
+      "ok": true,
+      "http_status": 200,
+      "content_length": "436609",
+      "content_type": "application/octet-stream",
+      "etag": "\"8c9fe473a13c893b6a7617fad29bbb019ebf9bf6660dc2bd905af5576a92e7b0\"",
+      "last_modified": null
+    },
+    "sha256_precomputed": "d0806eb8a3cfe71066a9a1c88da2f730ccf5d86364bd52ca9bc6ba628744e417",
+    "n_pairs_expected": 10412,
+    "cell_type": "K562",
+    "includes_FlowFISH_K562": true,
+    "repo_commit_path_note": "EngreitzLab/ENCODE_rE2G reference/ (public)"
+  },
+  "flowfish_encode": {
+    "experiments": {
+      "total": 239,
+      "sample": [
+        {
+          "accession": "ENCSR443VTK",
+          "assay_title": "Flow-FISH CRISPR screen",
+          "description": "",
+          "href": "https://www.encodeproject.org/functional-characterization-experiments/ENCSR443VTK/"
+        },
+        {
+          "accession": "ENCSR476KHP",
+          "assay_title": "Flow-FISH CRISPR screen",
+          "description": "",
+          "href": "https://www.encodeproject.org/functional-characterization-experiments/ENCSR476KHP/"
+        },
+        {
+          "accession": "ENCSR211TEA",
+          "assay_title": "Flow-FISH CRISPR screen",
+          "description": "",
+          "href": "https://www.encodeproject.org/functional-characterization-experiments/ENCSR211TEA/"
+        },
+        {
+          "accession": "ENCSR516MPE",
+          "assay_title": "Flow-FISH CRISPR screen",
+          "description": "",
+          "href": "https://www.encodeproject.org/functional-characterization-experiments/ENCSR516MPE/"
+        },
+        {
+          "accession": "ENCSR298NSD",
+          "assay_title": "Flow-FISH CRISPR screen",
+          "description": "",
+          "href": "https://www.encodeproject.org/functional-characterization-experiments/ENCSR298NSD/"
+        },
+        {
+          "accession": "ENCSR346PHE",
+          "assay_title": "Flow-FISH CRISPR screen",
+          "description": "",
+          "href": "https://www.encodeproject.org/functional-characterization-experiments/ENCSR346PHE/"
+        },
+        {
+          "accession": "ENCSR592ONV",
+          "assay_title": "Flow-FISH CRISPR screen",
+          "description": "",
+          "href": "https://www.encodeproject.org/functional-characterization-experiments/ENCSR592ONV/"
+        },
+        {
+          "accession": "ENCSR925WKN",
+          "assay_title": "Flow-FISH CRISPR screen",
+          "description": "",
+          "href": "https://www.encodeproject.org/functional-characterization-experiments/ENCSR925WKN/"
+        },
+        {
+          "accession": "ENCSR974YJG",
+          "assay_title": "Flow-FISH CRISPR screen",
+          "description": "",
+          "href": "https://www.encodeproject.org/functional-characterization-experiments/ENCSR974YJG/"
+        },
+        {
+          "accession": "ENCSR103FXA",
+          "assay_title": "Flow-FISH CRISPR screen",
+          "description": "",
+          "href": "https://www.encodeproject.org/functional-characterization-experiments/ENCSR103FXA/"
+        },
+        {
+          "accession": "ENCSR897GNT",
+          "assay_title": "Flow-FISH CRISPR screen",
+          "description": "",
+          "href": "https://www.encodeproject.org/functional-characterization-experiments/ENCSR897GNT/"
+        },
+        {
+          "accession": "ENCSR473SLB",
+          "assay_title": "Flow-FISH CRISPR screen",
+          "description": "CAPRIN1",
+          "href": "https://www.encodeproject.org/functional-characterization-experiments/ENCSR473SLB/"
+        },
+        {
+          "accession": "ENCSR450RRS",
+          "assay_title": "Flow-FISH CRISPR screen",
+          "description": "CAPRIN1",
+          "href": "https://www.encodeproject.org/functional-characterization-experiments/ENCSR450RRS/"
+        },
+        {
+          "accession": "ENCSR687CFN",
+          "assay_title": "Flow-FISH CRISPR screen",
+          "description": "CAT",
+          "href": "https://www.encodeproject.org/functional-characterization-experiments/ENCSR687CFN/"
+        },
+        {
+          "accession": "ENCSR639EDX",
+          "assay_title": "Flow-FISH CRISPR screen",
+          "description": "CAT",
+          "href": "https://www.encodeproject.org/functional-characterization-experiments/ENCSR639EDX/"
+        }
+      ]
+    },
+    "element_quantification_files": {
+      "total": 53,
+      "sample": [
+        {
+          "accession": "ENCFF337VVS",
+          "file_format": "bed",
+          "assembly": "GRCh38",
+          "file_size": 144,
+          "dataset": "/functional-characterization-series/ENCSR759RSA/"
+        },
+        {
+          "accession": "ENCFF091IOP",
+          "file_format": "bed",
+          "assembly": "GRCh38",
+          "file_size": 233,
+          "dataset": "/functional-characterization-series/ENCSR408VHJ/"
+        },
+        {
+          "accession": "ENCFF845YHV",
+          "file_format": "bed",
+          "assembly": "GRCh38",
+          "file_size": 286,
+          "dataset": "/functional-characterization-series/ENCSR564EPW/"
+        },
+        {
+          "accession": "ENCFF910PDZ",
+          "file_format": "bed",
+          "assembly": "GRCh38",
+          "file_size": 473,
+          "dataset": "/functional-characterization-series/ENCSR459QNY/"
+        },
+        {
+          "accession": "ENCFF811PPJ",
+          "file_format": "bed",
+          "assembly": "GRCh38",
+          "file_size": 482,
+          "dataset": "/functional-characterization-series/ENCSR449NJV/"
+        },
+        {
+          "accession": "ENCFF151MNC",
+          "file_format": "bed",
+          "assembly": "GRCh38",
+          "file_size": 170,
+          "dataset": "/functional-characterization-series/ENCSR278YTB/"
+        },
+        {
+          "accession": "ENCFF227DUX",
+          "file_format": "bed",
+          "assembly": "GRCh38",
+          "file_size": 273,
+          "dataset": "/functional-characterization-series/ENCSR630WLB/"
+        },
+        {
+          "accession": "ENCFF149IDL",
+          "file_format": "bed",
+          "assembly": "GRCh38",
+          "file_size": 223,
+          "dataset": "/functional-characterization-series/ENCSR968CIN/"
+        },
+        {
+          "accession": "ENCFF786ZPA",
+          "file_format": "bed",
+          "assembly": "GRCh38",
+          "file_size": 244,
+          "dataset": "/functional-characterization-series/ENCSR382ZJS/"
+        },
+        {
+          "accession": "ENCFF413WYU",
+          "file_format": "bed",
+          "assembly": "GRCh38",
+          "file_size": 200,
+          "dataset": "/functional-characterization-series/ENCSR917XEU/"
+        },
+        {
+          "accession": "ENCFF632PQY",
+          "file_format": "bed",
+          "assembly": "GRCh38",
+          "file_size": 200,
+          "dataset": "/functional-characterization-series/ENCSR009KPS/"
+        },
+        {
+          "accession": "ENCFF894DJT",
+          "file_format": "bed",
+          "assembly": "GRCh38",
+          "file_size": 201,
+          "dataset": "/functional-characterization-series/ENCSR940PYU/"
+        },
+        {
+          "accession": "ENCFF813GCK",
+          "file_format": "bed",
+          "assembly": "GRCh38",
+          "file_size": 226,
+          "dataset": "/functional-characterization-series/ENCSR979QQN/"
+        },
+        {
+          "accession": "ENCFF270ZLE",
+          "file_format": "bed",
+          "assembly": "GRCh38",
+          "file_size": 363,
+          "dataset": "/functional-characterization-series/ENCSR393VDD/"
+        },
+        {
+          "accession": "ENCFF270LYK",
+          "file_format": "bed",
+          "assembly": "GRCh38",
+          "file_size": 245,
+          "dataset": "/functional-characterization-series/ENCSR157WAN/"
+        },
+        {
+          "accession": "ENCFF240IPT",
+          "file_format": "bed",
+          "assembly": "GRCh38",
+          "file_size": 247,
+          "dataset": "/functional-characterization-series/ENCSR825SFH/"
+        },
+        {
+          "accession": "ENCFF005DTR",
+          "file_format": "bed",
+          "assembly": "GRCh38",
+          "file_size": 429,
+          "dataset": "/functional-characterization-series/ENCSR496MZF/"
+        },
+        {
+          "accession": "ENCFF469FXP",
+          "file_format": "bed",
+          "assembly": "GRCh38",
+          "file_size": 271,
+          "dataset": "/functional-characterization-series/ENCSR321CEH/"
+        },
+        {
+          "accession": "ENCFF863AVQ",
+          "file_format": "bed",
+          "assembly": "GRCh38",
+          "file_size": 227,
+          "dataset": "/functional-characterization-series/ENCSR793WTM/"
+        },
+        {
+          "accession": "ENCFF619FXH",
+          "file_format": "bed",
+          "assembly": "GRCh38",
+          "file_size": 173,
+          "dataset": "/functional-characterization-series/ENCSR794SPV/"
+        }
+      ]
+    },
+    "note": "Many per-locus Flow-FISH screens released; primary frozen labels for C-B1 are the EngreitzLab ensemble CRISPR benchmark (harmonized positives/negatives)."
+  },
+  "hic_loops_k562": {
+    "experiment": {
+      "accession": "ENCSR545YBD",
+      "exists": true,
+      "status": "released",
+      "assay_title": "in situ Hi-C",
+      "biosample_summary": "Homo sapiens K562",
+      "description": "K562 in situ Hi-C experiment",
+      "href": "https://www.encodeproject.org/experiments/ENCSR545YBD/"
+    },
+    "preferred_loop_file": {
+      "accession": "ENCFF693XIL",
+      "exists": true,
+      "status": "released",
+      "file_format": "bedpe",
+      "output_type": "loops",
+      "assembly": "GRCh38",
+      "file_size": 900362,
+      "preferred_default": true,
+      "dataset": "/experiments/ENCSR545YBD/",
+      "href": "/files/ENCFF693XIL/@@download/ENCFF693XIL.bedpe.gz",
+      "cloud_metadata": true,
+      "md5sum": "ae663464bdbe60998e422254ea0dac2c"
+    },
+    "bedpe_loop_files_sample": [
+      {
+        "accession": "ENCFF845GJG",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "file_size": 74048,
+        "preferred_default": null,
+        "href": "/files/ENCFF845GJG/@@download/ENCFF845GJG.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF657QKE",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "file_size": 208215,
+        "preferred_default": null,
+        "href": "/files/ENCFF657QKE/@@download/ENCFF657QKE.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF693XIL",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "file_size": 900362,
+        "preferred_default": true,
+        "href": "/files/ENCFF693XIL/@@download/ENCFF693XIL.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF757IIX",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "file_size": 1290782,
+        "preferred_default": null,
+        "href": "/files/ENCFF757IIX/@@download/ENCFF757IIX.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF134HIZ",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "file_size": 584314,
+        "preferred_default": true,
+        "href": "/files/ENCFF134HIZ/@@download/ENCFF134HIZ.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF440HUR",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "file_size": 638419,
+        "preferred_default": null,
+        "href": "/files/ENCFF440HUR/@@download/ENCFF440HUR.bedpe.gz"
+      }
+    ],
+    "usable_processed_bedpe": true
+  },
+  "ccre": {
+    "screen_registry_v3_bed": {
+      "url": "https://downloads.wenglab.org/Registry-V3/GRCh38-cCREs.bed",
+      "ok": true,
+      "http_status": 200,
+      "content_length": "63732631",
+      "content_type": "application/octet-stream",
+      "etag": "\"634075cf-3cc7b97\"",
+      "last_modified": "Fri, 07 Oct 2022 18:54:07 GMT"
+    },
+    "encode_v3_k562": {
+      "annotation": {
+        "accession": "ENCSR940SYU",
+        "exists": true,
+        "status": "released",
+        "annotation_type": "candidate Cis-Regulatory Elements",
+        "encyclopedia_version": [
+          "ENCODE v3",
+          "current"
+        ],
+        "description": "candidate regulatory elements for GRCh38 in K562",
+        "date_released": "2022-02-15",
+        "aliases": [
+          "zhiping-weng:cCREs-GRCh38-V6-EFO_0002067-ENCSR000EOT-7group"
+        ],
+        "href": "https://www.encodeproject.org/annotations/ENCSR940SYU/"
+      },
+      "files": [
+        {
+          "accession": "ENCFF948HPU",
+          "file_format": "bigBed",
+          "output_type": "candidate Cis-Regulatory Elements",
+          "assembly": "GRCh38",
+          "file_size": 36102336,
+          "preferred_default": true,
+          "href": "/files/ENCFF948HPU/@@download/ENCFF948HPU.bigBed"
+        },
+        {
+          "accession": "ENCFF210CAN",
+          "file_format": "bed",
+          "output_type": "candidate Cis-Regulatory Elements",
+          "assembly": "GRCh38",
+          "file_size": 15160841,
+          "preferred_default": true,
+          "href": "/files/ENCFF210CAN/@@download/ENCFF210CAN.bed.gz"
+        }
+      ]
+    },
+    "encode_v4_agnostic": {
+      "annotation": {
+        "accession": "ENCSR800VNX",
+        "exists": true,
+        "status": "released",
+        "annotation_type": "candidate Cis-Regulatory Elements",
+        "encyclopedia_version": [
+          "ENCODE v4"
+        ],
+        "description": "agnostic candidate Cis-Regulatory Elements for GRCh38",
+        "date_released": "2023-03-27",
+        "aliases": [
+          "zhiping-weng:GRCh38-cCREs.DCC"
+        ],
+        "href": "https://www.encodeproject.org/annotations/ENCSR800VNX/"
+      },
+      "files": [
+        {
+          "accession": "ENCFF217ARC",
+          "file_format": "bigBed",
+          "output_type": "candidate Cis-Regulatory Elements",
+          "assembly": "GRCh38",
+          "file_size": 71544208,
+          "preferred_default": true,
+          "href": "/files/ENCFF217ARC/@@download/ENCFF217ARC.bigBed"
+        },
+        {
+          "accession": "ENCFF420VPZ",
+          "file_format": "bed",
+          "output_type": "candidate Cis-Regulatory Elements",
+          "assembly": "GRCh38",
+          "file_size": 32795453,
+          "preferred_default": true,
+          "href": "/files/ENCFF420VPZ/@@download/ENCFF420VPZ.bed.gz"
+        }
+      ]
+    },
+    "encode_v4_k562": {
+      "annotation": {
+        "accession": "ENCSR935IVQ",
+        "exists": true,
+        "status": "released",
+        "annotation_type": "candidate Cis-Regulatory Elements",
+        "encyclopedia_version": [
+          "ENCODE v4"
+        ],
+        "description": "candidate regulatory elements for GRCh38 in K562",
+        "date_released": "2022-12-20",
+        "aliases": [
+          "zhiping-weng:v4-cCREs-GRCh38-ENCFF503WXT"
+        ],
+        "href": "https://www.encodeproject.org/annotations/ENCSR935IVQ/"
+      }
+    },
+    "preferred_for_claim": "SCREEN Registry-V3 GRCh38-cCREs.bed (v3); ENCODE ENCFF210CAN as portal v3 K562 bed"
+  },
+  "encode_re2g_k562_products": {
+    "standard": {
+      "annotation": {
+        "accession": "ENCSR512SWG",
+        "exists": true,
+        "status": "released",
+        "annotation_type": "element gene regulatory interaction predictions",
+        "encyclopedia_version": null,
+        "description": "ENCODE-rE2G predictions for K562; Donor: ENCDO000AAD",
+        "date_released": "2025-04-24",
+        "aliases": [
+          "jesse-engreitz:abc_predictions_K562_ENCSR000EKS_DNaseOnly",
+          "jesse-engreitz:encode_re2g_predictions_K562_ENCSR000EKS_DNaseOnly"
+        ],
+        "href": "https://www.encodeproject.org/annotations/ENCSR512SWG/"
+      },
+      "files": [
+        {
+          "accession": "ENCFF357PVG",
+          "file_format": "bed",
+          "output_type": "elements reference",
+          "assembly": "GRCh38",
+          "file_size": 1427629,
+          "preferred_default": null,
+          "href": "/files/ENCFF357PVG/@@download/ENCFF357PVG.bed.gz"
+        },
+        {
+          "accession": "ENCFF926AQK",
+          "file_format": "bed",
+          "output_type": "elements reference",
+          "assembly": "GRCh38",
+          "file_size": 6917132,
+          "preferred_default": null,
+          "href": "/files/ENCFF926AQK/@@download/ENCFF926AQK.bed.gz"
+        },
+        {
+          "accession": "ENCFF380AZY",
+          "file_format": "bed",
+          "output_type": "elements reference",
+          "assembly": "GRCh38",
+          "file_size": 1177581,
+          "preferred_default": null,
+          "href": "/files/ENCFF380AZY/@@download/ENCFF380AZY.bed.gz"
+        },
+        {
+          "accession": "ENCFF779ELS",
+          "file_format": "bigInteract",
+          "output_type": "thresholded links",
+          "assembly": "GRCh38",
+          "file_size": 230226529,
+          "preferred_default": null,
+          "href": "/files/ENCFF779ELS/@@download/ENCFF779ELS.bigInteract"
+        },
+        {
+          "accession": "ENCFF233CKX",
+          "file_format": "bigInteract",
+          "output_type": "thresholded links",
+          "assembly": "GRCh38",
+          "file_size": 3534636,
+          "preferred_default": true,
+          "href": "/files/ENCFF233CKX/@@download/ENCFF233CKX.bigInteract"
+        },
+        {
+          "accession": "ENCFF916YGI",
+          "file_format": "bedpe",
+          "output_type": "thresholded links",
+          "assembly": "GRCh38",
+          "file_size": 1687578,
+          "preferred_default": null,
+          "href": "/files/ENCFF916YGI/@@download/ENCFF916YGI.bedpe.gz"
+        },
+        {
+          "accession": "ENCFF821ASK",
+          "file_format": "bedpe",
+          "output_type": "thresholded links",
+          "assembly": "GRCh38",
+          "file_size": 2016659,
+          "preferred_default": true,
+          "href": "/files/ENCFF821ASK/@@download/ENCFF821ASK.bedpe.gz"
+        },
+        {
+          "accession": "ENCFF256MKO",
+          "file_format": "bed",
+          "output_type": "thresholded element gene links",
+          "assembly": "GRCh38",
+          "file_size": 6256195,
+          "preferred_default": null,
+          "href": "/files/ENCFF256MKO/@@download/ENCFF256MKO.bed.gz"
+        },
+        {
+          "accession": "ENCFF711SWE",
+          "file_format": "bed",
+          "output_type": "thresholded element gene links",
+          "assembly": "GRCh38",
+          "file_size": 3596239,
+          "preferred_default": true,
+          "href": "/files/ENCFF711SWE/@@download/ENCFF711SWE.bed.gz"
+        },
+        {
+          "accession": "ENCFF132SZV",
+          "file_format": "bed",
+          "output_type": "element gene links",
+          "assembly": "GRCh38",
+          "file_size": 417333951,
+          "preferred_default": null,
+          "href": "/files/ENCFF132SZV/@@download/ENCFF132SZV.bed.gz"
+        },
+        {
+          "accession": "ENCFF306GGL",
+          "file_format": "bed",
+          "output_type": "element gene links",
+          "assembly": "GRCh38",
+          "file_size": 338858146,
+          "preferred_default": true,
+          "href": "/files/ENCFF306GGL/@@download/ENCFF306GGL.bed.gz"
+        }
+      ]
+    },
+    "extended": {
+      "annotation": {
+        "accession": "ENCSR621BIJ",
+        "exists": true,
+        "status": "released",
+        "annotation_type": "element gene regulatory interaction predictions",
+        "encyclopedia_version": null,
+        "description": "ENCODE-rE2G (extended) predictions for K562; Donor: ENCDO000AAD",
+        "date_released": "2025-04-24",
+        "aliases": [
+          "jesse-engreitz:abc_full_predictions_K562",
+          "jesse-engreitz:encode-re2g_extended_predictions_K562"
+        ],
+        "href": "https://www.encodeproject.org/annotations/ENCSR621BIJ/"
+      },
+      "files": [
+        {
+          "accession": "ENCFF826GMI",
+          "file_format": "bed",
+          "output_type": "elements reference",
+          "assembly": "GRCh38",
+          "file_size": 3156675,
+          "preferred_default": null,
+          "href": "/files/ENCFF826GMI/@@download/ENCFF826GMI.bed.gz"
+        },
+        {
+          "accession": "ENCFF559MIY",
+          "file_format": "bed",
+          "output_type": "elements reference",
+          "assembly": "GRCh38",
+          "file_size": 13929967,
+          "preferred_default": null,
+          "href": "/files/ENCFF559MIY/@@download/ENCFF559MIY.bed.gz"
+        },
+        {
+          "accession": "ENCFF511GIG",
+          "file_format": "bed",
+          "output_type": "elements reference",
+          "assembly": "GRCh38",
+          "file_size": 1224240,
+          "preferred_default": null,
+          "href": "/files/ENCFF511GIG/@@download/ENCFF511GIG.bed.gz"
+        },
+        {
+          "accession": "ENCFF534PXC",
+          "file_format": "bigInteract",
+          "output_type": "thresholded links",
+          "assembly": "GRCh38",
+          "file_size": 5227692,
+          "preferred_default": true,
+          "href": "/files/ENCFF534PXC/@@download/ENCFF534PXC.bigInteract"
+        },
+        {
+          "accession": "ENCFF127CER",
+          "file_format": "bigInteract",
+          "output_type": "thresholded links",
+          "assembly": "GRCh38",
+          "file_size": 2039229,
+          "preferred_default": null,
+          "href": "/files/ENCFF127CER/@@download/ENCFF127CER.bigInteract"
+        },
+        {
+          "accession": "ENCFF647VTW",
+          "file_format": "bedpe",
+          "output_type": "thresholded links",
+          "assembly": "GRCh38",
+          "file_size": 3237477,
+          "preferred_default": true,
+          "href": "/files/ENCFF647VTW/@@download/ENCFF647VTW.bedpe.gz"
+        },
+        {
+          "accession": "ENCFF926ALE",
+          "file_format": "bedpe",
+          "output_type": "thresholded links",
+          "assembly": "GRCh38",
+          "file_size": 945000,
+          "preferred_default": null,
+          "href": "/files/ENCFF926ALE/@@download/ENCFF926ALE.bedpe.gz"
+        },
+        {
+          "accession": "ENCFF269DKY",
+          "file_format": "bed",
+          "output_type": "thresholded element gene links",
+          "assembly": "GRCh38",
+          "file_size": 18392229,
+          "preferred_default": true,
+          "href": "/files/ENCFF269DKY/@@download/ENCFF269DKY.bed.gz"
+        },
+        {
+          "accession": "ENCFF431MXT",
+          "file_format": "bed",
+          "output_type": "thresholded element gene links",
+          "assembly": "GRCh38",
+          "file_size": 3796100,
+          "preferred_default": null,
+          "href": "/files/ENCFF431MXT/@@download/ENCFF431MXT.bed.gz"
+        },
+        {
+          "accession": "ENCFF950FTI",
+          "file_format": "bed",
+          "output_type": "element gene links",
+          "assembly": "GRCh38",
+          "file_size": 1213395055,
+          "preferred_default": true,
+          "href": "/files/ENCFF950FTI/@@download/ENCFF950FTI.bed.gz"
+        },
+        {
+          "accession": "ENCFF658KQS",
+          "file_format": "bed",
+          "output_type": "element gene links",
+          "assembly": "GRCh38",
+          "file_size": 404687177,
+          "preferred_default": null,
+          "href": "/files/ENCFF658KQS/@@download/ENCFF658KQS.bed.gz"
+        }
+      ]
+    },
+    "usage": "Reference / optional EXPLORATORY ceiling only \u2014 NOT primary features for C-B1"
+  },
+  "t0_status": "PASS_FREEZE",
+  "freeze_recommendation": {
+    "crispr_eg_labels": {
+      "primary": "https://raw.githubusercontent.com/EngreitzLab/ENCODE_rE2G/main/reference/EPCrisprBenchmark_ensemble_data_GRCh38.tsv.gz",
+      "sha256": "d0806eb8a3cfe71066a9a1c88da2f730ccf5d86364bd52ca9bc6ba628744e417",
+      "status": "FROZEN"
+    },
+    "hic_loops_k562": {
+      "experiment": "ENCSR545YBD",
+      "file": "ENCFF693XIL",
+      "status": "FROZEN"
+    },
+    "ccre_v3": {
+      "screen_bed": "https://downloads.wenglab.org/Registry-V3/GRCh38-cCREs.bed",
+      "encode_k562_bed_candidate": "ENCFF210CAN",
+      "encode_k562_annotation": "ENCSR940SYU",
+      "v4_fallback_agnostic_bed": "ENCFF420VPZ",
+      "status": "FROZEN"
+    },
+    "se_membership": {
+      "path": "tracks/se_llps/data/input/k562_super_enhancers_grch38.json",
+      "status": "ON_DISK"
+    }
+  }
+}
