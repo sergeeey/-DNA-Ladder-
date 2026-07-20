@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-20 — Historical brief v1.1 (publication-ready auditability)
+
+- `PROJECT_HISTORICAL_BRIEF_v1.md` → report_version 1.1: YAML snapshot header + commit pin, claim-status table, status glossary, careful C1 framing (desk retain ≠ wet/biology proof)
+- README link text updated to status-brief v1.1
+- External review upgrade (~9/10 → publication-ready); wet-lab GO signatures untouched; holdout remains SEALED
+
 ## 2026-07-16 — B0 desk closure (still UNSIGNED)
 
 - Backbone desk nominate: Promega E8411 (`B0_backbone_desk_nominate_v1.md`)
