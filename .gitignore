@@ -28,6 +28,9 @@ venv/
 *.bedpe.gz
 *.bed.gz
 rmsk.txt.gz
+*.bw
+*.bigWig
+k100.Umap*.bw.md5
 
 # Experiment bulky downloads / derived beds (checksums + JSON committed)
 tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/data/input/

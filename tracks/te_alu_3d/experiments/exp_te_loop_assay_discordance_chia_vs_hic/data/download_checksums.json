@@ -2,7 +2,7 @@
   "script": "t1_download_primary_inputs",
   "experiment": "exp_te_loop_assay_discordance_chia_vs_hic",
   "candidate_id": "C-A1",
-  "downloaded_at_utc": "2026-07-20T06:58:50.870454+00:00",
+  "downloaded_at_utc": "2026-07-20T10:45:55.317784+00:00",
   "assembly": "GRCh38",
   "files": {
     "ENCFF511QFN": {
@@ -119,5 +119,33 @@
     "experiment": "ENCSR000AKO",
     "output_type": "conservative IDR thresholded peaks",
     "rationale": "preferred_default K562 CTCF TF ChIP-seq IDR peaks, GRCh38"
+  },
+  "updated_at_utc": "2026-07-20T10:51:03.591850+00:00",
+  "t4_t5_extra": {
+    "umap_k100": {
+      "file": "k100.Umap.MultiTrackMappability.bw",
+      "url": "https://hgdownload.soe.ucsc.edu/gbdb/hg38/hoffmanMappability/k100.Umap.MultiTrackMappability.bw",
+      "md5": "59646493c85a8f991603d8af8701bdc4",
+      "size_bytes": 864604710,
+      "role": "mappability_MAPQ_proxy"
+    },
+    "ENCFF913VWM": {
+      "role": "pol2_gm12878_replication",
+      "md5": "04d3b1fb8ef74777f8f70d19da489215",
+      "size_bytes": 7372214,
+      "experiment": "ENCSR905HWW"
+    },
+    "ENCFF781ASD": {
+      "role": "hic_gm12878_replication",
+      "md5": "9bd4e66734ffacabdffa3ccbe4f0d21c",
+      "size_bytes": 986986,
+      "experiment": "ENCSR410MDC"
+    },
+    "ENCFF796WRU": {
+      "role": "ctcf_gm12878_gate",
+      "md5": "3f36655eb9a421a542ff031fc7b5e9aa",
+      "size_bytes": 711745,
+      "experiment": "ENCSR000DZN"
+    }
   }
 }
