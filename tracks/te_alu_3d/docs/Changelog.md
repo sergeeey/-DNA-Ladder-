@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-07-20 — C-A1 T4 umap + T5 GM12878 → INCONCLUSIVE_REPLICATION
+
+- T4: Hoffman Umap k100; MAPQ=N/A on processed bedpe; mean umap ≥0.3 / ≥0.5 sensitivity
+  → AluSz OR **0.898** / **0.894** (still < 1.1) — strengthens K562 FAIL
+- T5: freeze GM12878 Pol II `ENCFF913VWM` + Hi-C `ENCFF781ASD` + CTCF `ENCFF796WRU`
+  (`ACCESSION_FREEZE_replication_v1.md`); same AluSz pipeline → OR **1.252** (CI 1.172–1.339)
+  → `INCONCLUSIVE_REPLICATION`; CTCF gate PASS (OR ≈ 10.74)
+- Arts: `results/sensitivity_mappability.{json,md}`, `results/replication_gm12878_OR_CI.{json,md}`
+- `null_results/` **not filed** (replication OR not < 1.15); primary TE remains AluSz
+- Scripts/tests: `t4_mappability_sensitivity.py`, `t5_replication_celltype.py`, `test_t4_t5_unit.py`
+- decision/claim/controls/data_manifest updated; holdout/C1/wet untouched
+
 ## 2026-07-20 — C-A1 T3 primary AluSz OR → FAIL_DESK_PRIMARY
 
 - Script: `scripts/t3_primary_alusz_or.py` — merged ≥1 kb anchors; primary TE overlap on fixed 1 kb midpoint windows; Fisher OR + Woolf CI + chrom block-bootstrap; matched-null n_perm=200 (chr+width; GC PENDING)

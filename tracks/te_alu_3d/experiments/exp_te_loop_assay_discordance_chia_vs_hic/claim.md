@@ -3,25 +3,28 @@ experiment: exp_te_loop_assay_discordance_chia_vs_hic
 date: 2026-07-20
 ladder_tier: Standard
 question_type: Descriptive
-status: FAIL_DESK_PRIMARY
+status: INCONCLUSIVE_REPLICATION
 source_report: tracks/te_alu_3d/09_outputs/prospective/DEEP_RESEARCH_REPORT_C_A1_v1.md
 candidate_id: C-A1
 candidate_final_score: 7.06
 decision_gate: VALIDATE_DESK
 accession_freeze: ACCESSION_FREEZE_v1.md
+replication_freeze: ACCESSION_FREEZE_replication_v1.md
 ---
 
 # Claim: TE-subfamily enrichment among Pol II ChIA-PET vs Hi-C discordant loop anchors in K562 (mappability-matched)
 
 ## Status
 
-**FAIL_DESK_PRIMARY** — Standard tier. T2 CTCF gate **PASS** (Fisher OR ≈ 5.12).  
-T3 primary AluSz Fisher OR ≈ **0.908** (Woolf 95% CI 0.851–0.967) < 1.1 at single-cell-type
-(K562) desk stage. Matched-null run (n_perm=200). MAPQ/`umap` = `PENDING_MAPPABILITY`.  
-Full claim **REJECT** still requires MAPQ≥30 + replication — `null_results/` not filed yet.  
-**Accessions:** FROZEN in `ACCESSION_FREEZE_v1.md` (downloads + on-disk md5 in `data_manifest.md`).  
-Holdout remains SEALED. Wet-lab / oligo order forbidden. C1 E/P locks and GO signature packs
-are out of scope for this experiment.
+**INCONCLUSIVE_REPLICATION** — Standard tier. T2 CTCF gate **PASS** (Fisher OR ≈ 5.12).  
+T3 primary AluSz Fisher OR ≈ **0.908** (Woolf 95% CI 0.851–0.967) < 1.1 at K562 desk.  
+T4 umap≥0.3 (MAPQ=N/A proxy) OR ≈ **0.898** — strengthens FAIL.  
+T5 GM12878 replication AluSz OR ≈ **1.252** (CI 1.172–1.339) → mid-zone
+(`INCONCLUSIVE_REPLICATION`; not < 1.15, not ≥ 1.3).  
+**null_results/ not filed** — falsification needs umap-gated OR < 1.1 **and** replication
+OR < 1.15 or opposite; replication arm not met.  
+**Accessions:** K562 `ACCESSION_FREEZE_v1.md`; replication GM12878
+`ACCESSION_FREEZE_replication_v1.md`. Holdout SEALED. Wet/oligo forbidden.
 
 ## EstimandOps L0
 
@@ -77,7 +80,10 @@ See `ACCESSION_FREEZE_v1.md` for full rationale. On-disk md5 recorded in `data_m
 | Rejected | `ENCSR000BZZ` | — | — | **WRONG** (ESR1 ChIA-PET, not Pol II) |
 | Rejected | `ENCSR444WCX` | — | — | **404** |
 | TE annotation | UCSC | `rmsk.txt.gz` (hg38) | GRCh38 | downloaded (gitignored) |
-| Mappability | — | Umap / ENCODE track | GRCh38 | pending matched-null |
+| Mappability | Hoffman Umap | `k100.Umap.MultiTrackMappability.bw` | GRCh38 | downloaded (gitignored); T4 done |
+| Pol II ChIA-PET GM12878 (replication) | `ENCSR905HWW` | **`ENCFF913VWM`** | GRCh38 | **FROZEN + downloaded** |
+| Hi-C GM12878 (replication) | `ENCSR410MDC` | **`ENCFF781ASD`** (HiCCUPS merged_loops_30) | GRCh38 | **FROZEN + downloaded** |
+| CTCF GM12878 (replication gate) | `ENCSR000DZN` | **`ENCFF796WRU`** | GRCh38 | **FROZEN + downloaded** |
 
 **Hi-C primary rationale:** Prefer ENCODE processed in situ Hi-C loop calls (`ENCFF693XIL`,
 HiCCUPS) over intact localizer (`ENCFF598CLH`); matches track’s existing K562 loop proxy and
@@ -124,11 +130,13 @@ See `controls.md`:
 3. NOT authorization to unseal holdout or order oligos.
 4. NOT a license to edit C1 E/P locks or GO packs.
 5. NOT a re-opening of SE vs typical-enhancer closed tests.
-6. NOT a multi-cell-type / MAPQ-gated REJECT (desk FAIL_DESK_PRIMARY only).
-7. NOT enrichment support for AluSz (OR < 1.1 at desk primary).
+6. NOT a finalized claim-level REJECT (GM12878 replication OR mid-zone, not < 1.15).
+7. NOT enrichment support for AluSz at MCID (K562 OR < 1.1; GM12878 OR < 1.3).
+8. NOT a license to switch primary TE because GM12878 ≠ K562 sign.
 
 ## Next step
 
-MAPQ/umap sensitivity + independent replication cell type / biorep before claim-level
-REJECT or upgrade. Do **not** change primary subfamily post-hoc; do **not** promote
-exploratory AluJo / SVA_F.
+Honest options without post-hoc TE shopping: (i) second replication cell type (HCT116)
+under same AluSz freeze; (ii) leave as `INCONCLUSIVE_REPLICATION` and stop. Do **not**
+change primary subfamily post-hoc; do **not** promote exploratory AluJo / SVA_F;
+do **not** file `null_results/` until both falsification arms are met.

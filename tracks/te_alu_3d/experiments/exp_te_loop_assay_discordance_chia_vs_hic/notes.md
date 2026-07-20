@@ -25,6 +25,10 @@ identifiability × kill-speed. Hence C-A1 despite C-B1’s higher headline score
 - **ENCODE probe pattern:** metadata-only REST queries (as in `se_llps` fetch scripts);
   no `.hic` commits.
 - **Accession freeze:** `ACCESSION_FREEZE_v1.md` — primary `ENCFF511QFN` + `ENCFF693XIL`.
+- **Replication freeze:** `ACCESSION_FREEZE_replication_v1.md` — GM12878 `ENCFF913VWM` +
+  `ENCFF781ASD` (+ CTCF `ENCFF796WRU`).
+- **T4/T5:** umap≥0.3 OR 0.898 (FAIL strengthened); GM12878 OR 1.252 inconclusive —
+  `null_results/` deferred.
 
 ## Risks (from report risk register)
 

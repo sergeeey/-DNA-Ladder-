@@ -1,72 +1,53 @@
 # Decision — exp_te_loop_assay_discordance_chia_vs_hic (C-A1)
 
 **Date:** 2026-07-20  
-**Status:** `FAIL_DESK_PRIMARY`
+**Status:** `INCONCLUSIVE_REPLICATION` (K562 FAIL strengthened by umap; GM12878 OR mid-zone)
 
 ## Verdict
 
-**T3 primary AluSz desk OR: `FAIL_DESK_PRIMARY`.**
+**Combined (claim.md falsification rule): NOT yet claim-level REJECT.**
 
-Fisher OR for AluSz overlap (1 kb midpoint windows of merged ≥1 kb anchors),
-Pol II ChIA-PET (`ENCFF511QFN`) vs Hi-C (`ENCFF693XIL`):
+| Arm | AluSz Fisher OR | Woolf 95% CI | Gate |
+|-----|-----------------|--------------|------|
+| K562 desk (T3) | **0.908** | 0.851–0.967 | `FAIL_DESK_PRIMARY` (OR < 1.1) |
+| K562 umap ≥ 0.3 (T4 primary) | **0.898** | 0.842–0.957 | strengthens FAIL |
+| K562 umap ≥ 0.5 (sensitivity) | **0.894** | — | still < 1.1 |
+| GM12878 replication (T5) | **1.252** | 1.172–1.339 | `INCONCLUSIVE_REPLICATION` (1.15 ≤ OR < 1.3) |
 
-| Metric | Value |
-|--------|-------|
-| n Pol II / n Hi-C | **572808** / **17183** |
-| AluSz+ Pol II / Hi-C | 31531 / 1036 |
-| Fisher OR | **0.908** |
-| Woolf 95% CI | **0.851 – 0.967** |
-| Chrom block-bootstrap 95% CI | 0.866 – 0.958 (n_boot=500) |
-| Matched-null | **run** (n_perm=200; chr + width; GC PENDING) |
-| Null OR mean | 0.985 |
-| Emp. p (two-sided) | 0.015 |
-| MAPQ / mappability | `PENDING_MAPPABILITY` |
-| Desk threshold | support ≥1.3; fail <1.1 |
-| Desk verdict | **FAIL_DESK_PRIMARY** (OR < 1.1) |
+**MAPQ:** `N/A` on processed bedpe (`ENCFF511QFN` / `ENCFF693XIL`); Umap k100 mean is the
+preregistered MAPQ≥30-spirit proxy (`results/sensitivity_mappability.*`).
 
-Single-cell-type (K562) stage only. Per `claim.md`, full **REJECT** still requires
-MAPQ≥30 (or equivalent high-mappability gate) **and** replication — **not** filed
-in `null_results/` yet. Pending replication cell type / biorep + mappability kill-test.
+**null_results/:** **Not filed.** Preregistered filing rule requires (a) OR < 1.1 after
+mappability **and** (b) replication OR < 1.15 or opposite. Arm (a) met; arm (b) not
+(GM12878 OR ≈ 1.25). Cross-cell-type sign differs (K562 depletion vs GM12878 mild elevation
+below MCID) — recorded honestly; does **not** authorize post-hoc TE switch or claim inflation.
 
-Exploratory secondary (not claim): AluJo OR≈0.988 (near 1, as expected contrast);
-SVA_F OR≈0.985 (wide CI). Primary subfamily remains frozen **AluSz** (no post-hoc swap).
+Primary TE remains frozen **AluSz**.
 
 ## Current gate
 
 | Gate | Status |
 |------|--------|
 | Deep Research promote | `VALIDATE_DESK` (C-A1; score 7.06) |
-| Standard-tier preregistration | Written (`claim.md`, `controls.md`, `notes.md`) |
-| T0 ENCODE accession probe | **PASS** |
-| Accession freeze | **DONE** — Pol II `ENCFF511QFN`; Hi-C `ENCFF693XIL` |
-| Primary bedpe on-disk download + md5 | **DONE** |
-| CTCF accession freeze | **DONE** — `ENCFF769AUF` |
-| T2 CTCF positive control gate | **PASS** (OR 5.12) |
-| T1 TE annotation skeleton | **EXPLORATORY_PARTIAL** |
+| Standard-tier preregistration | Written |
+| T0 / accession freeze K562 | **DONE** — Pol II `ENCFF511QFN`; Hi-C `ENCFF693XIL` |
+| T2 CTCF gate K562 | **PASS** (OR 5.12) |
 | T3 primary AluSz OR | **DONE** → `FAIL_DESK_PRIMARY` |
-| MAPQ / umap kill-test | **PENDING_MAPPABILITY** |
-| Replication cell type | **PENDING** |
-| Holdout | SEALED (untouched) |
+| T4 MAPQ/umap kill-test | **DONE** — MAPQ=N/A; umap≥0.3 OR **0.898** < 1.1 |
+| Replication freeze | **DONE** — GM12878 `ACCESSION_FREEZE_replication_v1.md` |
+| T5 GM12878 AluSz OR | **DONE** — OR **1.252** → `INCONCLUSIVE_REPLICATION` |
+| T5 GM12878 CTCF gate | **PASS** (OR ≈ 10.74) |
+| Holdout | SEALED |
 | Wet-lab / oligos | FORBIDDEN |
-| null_results filing | **Deferred** (desk fail ≠ claim REJECT yet) |
-
-### T3 primary summary
-
-Source: `results/primary_result_OR_CI.json` / `.tsv` / `.md`;
-`results/permutation_null_summary.json`; `results/exploratory_secondary_TE.tsv`.
-
-### T2 CTCF gate summary
-
-| Metric | Value |
-|--------|-------|
-| Fisher OR | **5.119** |
-| Verdict | **PASS** |
+| null_results filing | **Deferred** (replication not in falsify zone) |
 
 ## Stop / branch rules
 
-- Desk OR < 1.1 → `FAIL_DESK_PRIMARY` (triggered); await MAPQ + replication before claim REJECT.
-- MAPQ≥30 + replication yield OR < 1.1 for all pre-registered subfamilies → `REJECT` + `null_results/`.
-- Do not promote exploratory AluJo / SVA_F to primary.
+- Desk OR < 1.1 → `FAIL_DESK_PRIMARY` (done).
+- Umap≥0.3 still OR < 1.1 → strengthens FAIL (done); MAPQ=N/A documented.
+- Claim REJECT + `null_results/` only if umap-gated OR < 1.1 **and** replication OR < 1.15
+  or opposite — **not met** (replication OR 1.252).
+- Do not promote exploratory AluJo / SVA_F; do not switch primary TE.
 - Do not claim mechanism / wet GO / holdout / C1 E–P edits.
 
 ## What this does NOT mean
@@ -75,11 +56,12 @@ Source: `results/primary_result_OR_CI.json` / `.tsv` / `.md`;
 2. Not C1 validation  
 3. Not holdout license  
 4. Not SE/HBB claim revival  
-5. Not a finalized multi-cell-type REJECT (MAPQ + replication still open)  
-6. Not enrichment support for AluSz (desk OR below falsify threshold)
+5. Not claim-level REJECT (replication inconclusive vs falsify rule)  
+6. Not enrichment support at MCID (K562 fails; GM12878 OR < 1.3)  
+7. Not authorization to rebrand GM12878 mid-zone OR as SUPPORT
 
-## Next edit to this file
+## Arts
 
-After MAPQ/umap sensitivity and/or independent cell-type / biorep replication →
-upgrade to SUPPORT / REJECT / INCONCLUSIVE with honest numbers; file `null_results/`
-only on claim-level REJECT/FAIL per falsification rule.
+- `results/sensitivity_mappability.json|.md`
+- `results/replication_gm12878_OR_CI.json|.md`
+- `ACCESSION_FREEZE_replication_v1.md`

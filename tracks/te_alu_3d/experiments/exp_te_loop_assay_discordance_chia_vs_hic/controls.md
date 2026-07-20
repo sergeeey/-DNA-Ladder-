@@ -63,11 +63,12 @@ If (1)+(2) drive all subfamily ORs below 1.1 → **REJECT** per `claim.md`.
 | CTCF positive gate OR ≥ 2.0 | DONE (PASS, OR 5.12) |
 | RMSK pinned | DONE (UCSC hg38 md5 recorded) |
 | Matched-null covariates implemented | DONE (n_perm=200; chr + width; GC PENDING — no FASTA) |
-| MAPQ/mappability track pinned | PENDING_MAPPABILITY (processed bedpe lack MAPQ; umap absent) |
+| MAPQ/mappability track pinned | DONE — MAPQ=N/A; Umap k100 mean ≥0.3 primary / ≥0.5 sensitivity |
 | Subfamily list frozen with n minima | DONE — primary **AluSz** only; exploratory SVA_F, AluJo |
 | AluJo negative/contrast rule acknowledged | PRE-REGISTERED (exploratory OR≈0.99) |
 | T3 primary AluSz OR finalized (desk) | DONE → FAIL_DESK_PRIMARY (OR 0.908 < 1.1) |
+| T4 umap sensitivity | DONE — umap≥0.3 OR 0.898 < 1.1 (strengthens FAIL) |
+| T5 replication cell type | DONE — GM12878 OR 1.252 → INCONCLUSIVE (not < 1.15) |
 
-Primary desk OR is finalized with `PENDING_MAPPABILITY` caveat. Claim-level REJECT still
-needs MAPQ kill-test + replication per `claim.md`.
+Claim-level REJECT + `null_results/` still blocked: replication OR not in falsify zone.
 

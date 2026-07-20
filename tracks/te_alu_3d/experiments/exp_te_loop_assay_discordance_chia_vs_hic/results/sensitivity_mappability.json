@@ -1,0 +1,120 @@
+{
+  "script": "t4_mappability_sensitivity",
+  "experiment": "exp_te_loop_assay_discordance_chia_vs_hic",
+  "candidate_id": "C-A1",
+  "computed_at_utc": "2026-07-20T10:48:45.955134+00:00",
+  "assembly": "GRCh38",
+  "primary_te": "AluSz",
+  "mapq": {
+    "status": "N/A",
+    "note": "Processed ENCODE bedpe ENCFF511QFN (7-col ChIA-PET clusters) and ENCFF693XIL (HiCCUPS bedpe) lack per-anchor MAPQ fields usable for MAPQ\u226530 filtering. Umap mean \u22650.3 is the preregistered proxy for 'MAPQ\u226530 spirit' (claim.md / controls.md)."
+  },
+  "umap_track": {
+    "source": "Hoffman lab Umap / Karimzadeh et al. NAR 2018",
+    "file": "k100.Umap.MultiTrackMappability.bw",
+    "url": "https://hgdownload.soe.ucsc.edu/gbdb/hg38/hoffmanMappability/k100.Umap.MultiTrackMappability.bw",
+    "measure": "multi-read mappability, k=100",
+    "annotation": "mean over fixed 1 kb midpoint scoring windows",
+    "path": "/workspace/tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/data/input/k100.Umap.MultiTrackMappability.bw",
+    "on_disk_md5": "59646493c85a8f991603d8af8701bdc4"
+  },
+  "inputs": {
+    "pol2_bedpe": "/workspace/tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/data/input/ENCFF511QFN.bedpe.gz",
+    "pol2_accession": "ENCFF511QFN",
+    "hic_bedpe": "/workspace/tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/data/input/ENCFF693XIL.bedpe.gz",
+    "hic_accession": "ENCFF693XIL",
+    "rmsk": "/workspace/tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/data/input/rmsk.txt.gz"
+  },
+  "anchor_counts_unfiltered": {
+    "n_pol2": 572808,
+    "n_hic": 17183,
+    "mean_umap_pol2": 0.9971407902072195,
+    "mean_umap_hic": 0.949560123101497
+  },
+  "unfiltered_baseline": {
+    "a_pol2_te_pos": 31531,
+    "b_pol2_te_neg": 541277,
+    "c_hic_te_pos": 1036,
+    "d_hic_te_neg": 16147,
+    "n_pol2": 572808,
+    "n_hic": 17183,
+    "pol2_rate": 0.05504636806748509,
+    "hic_rate": 0.06029214921724961,
+    "fisher_or": 0.9075292752410831,
+    "fisher_p_two_sided": 0.0033561948742340058,
+    "woolf_or": 0.9075292752410831,
+    "woolf_ci95_lo": 0.8514191403226319,
+    "woolf_ci95_hi": 0.9673371743880596,
+    "label": "unfiltered_baseline",
+    "umap_threshold": null,
+    "te": "AluSz",
+    "below_fail_threshold_1_1": true,
+    "desk_note": "OR=0.9075 < 1.1 (strengthens FAIL)"
+  },
+  "filters": {
+    "ge_0.3": {
+      "a_pol2_te_pos": 31531,
+      "b_pol2_te_neg": 541277,
+      "c_hic_te_pos": 1028,
+      "d_hic_te_neg": 15851,
+      "n_pol2": 572808,
+      "n_hic": 16879,
+      "pol2_rate": 0.05504636806748509,
+      "hic_rate": 0.060904081995378875,
+      "fisher_or": 0.8978229978163415,
+      "fisher_p_two_sided": 0.0012289027398185407,
+      "woolf_or": 0.8978229978163415,
+      "woolf_ci95_lo": 0.8420938932877942,
+      "woolf_ci95_hi": 0.9572402101869111,
+      "label": "umap_ge_0.3",
+      "umap_threshold": 0.3,
+      "te": "AluSz",
+      "below_fail_threshold_1_1": true,
+      "desk_note": "OR=0.8978 < 1.1 (strengthens FAIL)",
+      "n_pol2_kept": 572808,
+      "n_hic_kept": 16879,
+      "frac_pol2_kept": 1.0,
+      "frac_hic_kept": 0.9823080952103823,
+      "mean_umap_pol2_kept": 0.9971407902072195,
+      "mean_umap_hic_kept": 0.9664518378604166
+    },
+    "ge_0.5": {
+      "a_pol2_te_pos": 31531,
+      "b_pol2_te_neg": 541262,
+      "c_hic_te_pos": 1023,
+      "d_hic_te_neg": 15705,
+      "n_pol2": 572793,
+      "n_hic": 16728,
+      "pol2_rate": 0.05504780959264516,
+      "hic_rate": 0.06115494978479197,
+      "fisher_or": 0.8939240307452585,
+      "fisher_p_two_sided": 0.0007626904074611522,
+      "woolf_or": 0.8939240307452585,
+      "woolf_ci95_lo": 0.8383030075460339,
+      "woolf_ci95_hi": 0.953235483531256,
+      "label": "umap_ge_0.5",
+      "umap_threshold": 0.5,
+      "te": "AluSz",
+      "below_fail_threshold_1_1": true,
+      "desk_note": "OR=0.8939 < 1.1 (strengthens FAIL)",
+      "n_pol2_kept": 572793,
+      "n_hic_kept": 16728,
+      "frac_pol2_kept": 0.9999738132148992,
+      "frac_hic_kept": 0.9735203398708026,
+      "mean_umap_pol2_kept": 0.9971547896658779,
+      "mean_umap_hic_kept": 0.9711216276484298
+    }
+  },
+  "verdict": {
+    "primary_filter": "mean_umap_ge_0.3",
+    "or_ge_0_3": 0.8978229978163415,
+    "or_ge_0_5": 0.8939240307452585,
+    "strengthens_fail": true,
+    "note": "After umap\u22650.3, AluSz OR remains <1.1 \u2192 strengthens FAIL_DESK_PRIMARY (MAPQ-spirit proxy). Full claim REJECT still needs replication arm."
+  },
+  "explicit_non_claims": [
+    "MAPQ=N/A on processed bedpe; umap is proxy only",
+    "No post-hoc primary TE switch",
+    "No causal / wet / holdout / C1 claims"
+  ]
+}
