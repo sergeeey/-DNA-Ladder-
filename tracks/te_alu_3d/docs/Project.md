@@ -9,7 +9,8 @@ Do rare SNVs inside Alu/SVA show higher **predicted CTCF-motif disruption** than
 
 ## Status
 
-`CURRENT CLAIM STOPPED` · Package A hypothesis closure · HBB = **development set**
+`CURRENT CLAIM STOPPED` · Package A hypothesis closure · HBB = **development set**  
+C-A1 desk (`exp_te_loop_assay_discordance_chia_vs_hic`): **T2 CTCF gate PASS** → `PENDING_PRIMARY` (no primary TE OR yet)
 
 ## Operational snapshot
 

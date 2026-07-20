@@ -12,7 +12,8 @@
 
 ## Next (ordered)
 
-- [ ] T0 download after accession verify — primary bedpe only: `ENCFF511QFN` + `ENCFF693XIL`; md5 in `data_manifest.md` — **no wet / no holdout / no C1 E/P / no OR invention**
+- [ ] T3 primary TE OR (discordant vs matched-null) after controls checklist — **no wet / no holdout / no C1 E/P**; do not promote EXPLORATORY_PARTIAL tallies
+- [x] T0→T2 C-A1 desk: download `ENCFF511QFN` + `ENCFF693XIL` + CTCF `ENCFF769AUF` + rmsk; md5 in `data_manifest.md`; CTCF gate **PASS** (OR 5.12) → `PENDING_PRIMARY`; T1 annotation skeleton `EXPLORATORY_PARTIAL` — **no wet / no holdout / no C1 E/P / no primary TE OR**
 - [x] Build benchmark pos/neg controls → run `scorer_benchmark` gate (**PASS** v1.1)
 - [x] Fill `holdout_manifest.yaml` (non-HBB erythroid; labels sealed)
 - [x] Re-score HBB development set with v1.1 (diagnostics only) — T/C both NOT SUPPORTED

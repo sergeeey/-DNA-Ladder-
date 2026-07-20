@@ -3,7 +3,7 @@ experiment: exp_te_loop_assay_discordance_chia_vs_hic
 date: 2026-07-20
 ladder_tier: Standard
 question_type: Descriptive
-status: PREREGISTERED_DESK
+status: PENDING_PRIMARY
 source_report: tracks/te_alu_3d/09_outputs/prospective/DEEP_RESEARCH_REPORT_C_A1_v1.md
 candidate_id: C-A1
 candidate_final_score: 7.06
@@ -15,8 +15,9 @@ accession_freeze: ACCESSION_FREEZE_v1.md
 
 ## Status
 
-**PREREGISTERED_DESK** — Standard tier. No primary enrichment OR results yet.  
-**Accessions:** FROZEN in `ACCESSION_FREEZE_v1.md` (T0 probe PASS — processed bedpe available).  
+**PENDING_PRIMARY** — Standard tier. T2 CTCF gate **PASS** (Fisher OR ≈ 5.12).  
+No primary TE enrichment OR finalized. T1 annotation skeleton = `EXPLORATORY_PARTIAL` only.  
+**Accessions:** FROZEN in `ACCESSION_FREEZE_v1.md` (downloads + on-disk md5 in `data_manifest.md`).  
 Holdout remains SEALED. Wet-lab / oligo order forbidden. C1 E/P locks and GO signature packs
 are out of scope for this experiment.
 
@@ -60,21 +61,21 @@ and replication on an independent processed file/biorep, the OR for every tested
 - **MCID:** OR ≥ 1.3 for ≥1 pre-registered subfamily.
 - **Falsification threshold:** OR < 1.1 after MAPQ≥30 + replication.
 
-## Datasets — FROZEN primary accessions (T0)
+## Datasets — FROZEN primary accessions (T0/T1)
 
-See `ACCESSION_FREEZE_v1.md` for full rationale. Portal md5 recorded; **on-disk download md5
-still pending** (no multi-GB fetch this step).
+See `ACCESSION_FREEZE_v1.md` for full rationale. On-disk md5 recorded in `data_manifest.md`.
 
 | Role | Experiment | Primary file | Assembly | Status |
 |------|------------|--------------|----------|--------|
-| Pol II ChIA-PET K562 loops | `ENCSR880DSH` | **`ENCFF511QFN`** (bedpe loops; preferred_default; biorep 1) | GRCh38 | **FROZEN** |
+| Pol II ChIA-PET K562 loops | `ENCSR880DSH` | **`ENCFF511QFN`** (bedpe loops; preferred_default; biorep 1) | GRCh38 | **FROZEN + downloaded** |
 | Pol II sensitivity bioreps | `ENCSR880DSH` | `ENCFF759YBZ` (rep2), `ENCFF030PMM` (rep3) | GRCh38 | FROZEN (non-primary) |
-| Hi-C K562 loops | `ENCSR545YBD` | **`ENCFF693XIL`** (bedpe loops; HiCCUPS merged_loops_30; preferred_default) | GRCh38 | **FROZEN** |
+| Hi-C K562 loops | `ENCSR545YBD` | **`ENCFF693XIL`** (bedpe loops; HiCCUPS merged_loops_30; preferred_default) | GRCh38 | **FROZEN + downloaded** |
 | Hi-C alternate | `ENCSR479XDG` | `ENCFF598CLH` (intact localizer; sensitivity only) | GRCh38 | Alternate |
+| CTCF peaks (positive gate) | `ENCSR000AKO` | **`ENCFF769AUF`** (conservative IDR; preferred_default) | GRCh38 | **FROZEN + downloaded** |
 | Rejected | `ENCSR000BZZ` | — | — | **WRONG** (ESR1 ChIA-PET, not Pol II) |
 | Rejected | `ENCSR444WCX` | — | — | **404** |
-| TE annotation | — | RMSK GRCh38 | GRCh38 | pin at download |
-| Mappability | — | Umap / ENCODE track | GRCh38 | pin at download |
+| TE annotation | UCSC | `rmsk.txt.gz` (hg38) | GRCh38 | downloaded (gitignored) |
+| Mappability | — | Umap / ENCODE track | GRCh38 | pending matched-null |
 
 **Hi-C primary rationale:** Prefer ENCODE processed in situ Hi-C loop calls (`ENCFF693XIL`,
 HiCCUPS) over intact localizer (`ENCFF598CLH`); matches track’s existing K562 loop proxy and
@@ -121,10 +122,9 @@ See `controls.md`:
 3. NOT authorization to unseal holdout or order oligos.
 4. NOT a license to edit C1 E/P locks or GO packs.
 5. NOT a re-opening of SE vs typical-enhancer closed tests.
-6. NOT an enrichment OR result (none computed yet).
+6. NOT a primary TE enrichment OR result (CTCF gate only; TE tallies EXPLORATORY_PARTIAL).
 
 ## Next step
 
-Download primary bedpe only (`ENCFF511QFN`, `ENCFF693XIL`); record on-disk checksums in
-`data_manifest.md`. Do **not** invent ORs. If downloads fail or files are not loop bedpe as
-frozen → reopen freeze.
+T3 primary TE OR under frozen claim after `controls.md` checklist (matched-null covariates).
+Do **not** promote `EXPLORATORY_PARTIAL` first-hit tallies to claim language.

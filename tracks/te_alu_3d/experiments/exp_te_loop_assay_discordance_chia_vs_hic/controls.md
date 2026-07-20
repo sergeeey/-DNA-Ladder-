@@ -8,12 +8,13 @@
 **Purpose:** Sanity check that the loop-call intersection pipeline recovers an expected
 architecture-associated class, not a test of the primary TE claim.
 
-- Define CTCF-associated anchors using a public K562 CTCF peak set (ENCODE accession
-  **VERIFY** at T0; assembly-matched to loop freeze).
-- Expectation: CTCF-overlapping anchors should be enriched among **shared** (ChIA-PET ∩ Hi-C)
-  loops relative to genomic background at a coarse level.
-- Failure mode: if CTCF gate shows no recoverable shared-loop enrichment, treat primary TE
-  OR estimates as **pipeline-suspect** (INCONCLUSIVE / debug) before claiming biology.
+- Define CTCF-associated anchors using frozen K562 CTCF peaks: **`ENCFF769AUF`**
+  (`ENCSR000AKO`, conservative IDR, GRCh38, preferred_default).
+- T2 implementation: intersect unique Hi-C anchors (`ENCFF693XIL`) with CTCF peaks; compare
+  to chromosome-preserving shuffle of CTCF; Fisher OR gate **≥ 2.0** → PASS
+  (result: **PASS**, OR ≈ 5.12 — see `results/positive_control_ctcf_gate.json`).
+- Failure mode: if CTCF gate OR < 2.0, treat primary TE OR estimates as **pipeline-suspect**
+  (`BLOCKED_PIPELINE`) before claiming biology.
 
 This gate does **not** authorize CTCF-causal language or C1 E/P edits.
 
@@ -53,3 +54,18 @@ after seeing TE ORs). Exact matching script is post-T0; this file freezes the co
 6. Window size sensitivity (± pre-registered pad around anchor midpoint)
 
 If (1)+(2) drive all subfamily ORs below 1.1 → **REJECT** per `claim.md`.
+
+## Checklist before primary TE OR (T3)
+
+| Item | Status |
+|------|--------|
+| Primary bedpe downloaded + md5 | DONE |
+| CTCF positive gate OR ≥ 2.0 | DONE (PASS, OR 5.12) |
+| RMSK pinned | DONE (UCSC hg38 md5 recorded) |
+| Matched-null covariates implemented | PENDING |
+| MAPQ/mappability track pinned | PENDING |
+| Subfamily list frozen with n minima | PENDING |
+| AluJo negative/contrast rule acknowledged | PRE-REGISTERED |
+
+Do **not** finalize primary AluSz / subfamily OR until this checklist is complete.
+

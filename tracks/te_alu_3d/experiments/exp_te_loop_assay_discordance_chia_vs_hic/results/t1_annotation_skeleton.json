@@ -1,0 +1,65 @@
+{
+  "script": "t1_annotate_anchors_te_skeleton",
+  "experiment": "exp_te_loop_assay_discordance_chia_vs_hic",
+  "candidate_id": "C-A1",
+  "computed_at_utc": "2026-07-20T06:55:44.149233+00:00",
+  "status": "EXPLORATORY_PARTIAL",
+  "primary_te_or": null,
+  "anchors": {
+    "hic": {
+      "source": "ENCFF693XIL",
+      "n_unique": 24049,
+      "bed": "results/anchors_hic.bed"
+    },
+    "pol2": {
+      "source": "ENCFF511QFN",
+      "n_unique": 1463166,
+      "bed": "results/anchors_pol2.bed"
+    }
+  },
+  "te_annotation": {
+    "rmsk": "data/input/rmsk.txt.gz",
+    "universe": "hic_anchors",
+    "n_anchors": 24049,
+    "n_overlapping_any_rmsk_interval": 23953,
+    "overlap_rate": 0.9960081500270281,
+    "class_first_hit_counts": {
+      "LTR": 2981,
+      "LINE": 6403,
+      "SINE": 9146,
+      "DNA": 1957
+    },
+    "family_first_hit_top20": {
+      "Alu": 6189,
+      "L1": 3919,
+      "MIR": 2896,
+      "Simple_repeat": 2547,
+      "L2": 2107,
+      "ERVL-MaLR": 1229,
+      "hAT-Charlie": 1075,
+      "ERV1": 850,
+      "ERVL": 647,
+      "Low_complexity": 457,
+      "TcMar-Tigger": 452,
+      "CR1": 274,
+      "centr": 210,
+      "hAT-Tip100": 181,
+      "ERVK": 115,
+      "Gypsy": 82,
+      "hAT-Blackjack": 71,
+      "RTE-X": 65,
+      "Satellite": 65,
+      "TcMar-Mariner": 53
+    },
+    "focus_prefix_first_hit_counts": {
+      "L1": 3783,
+      "AluS": 3749,
+      "AluJ": 1610,
+      "AluY": 638,
+      "SVA": 29
+    },
+    "status": "EXPLORATORY_PARTIAL",
+    "primary_or_computed": false,
+    "note": "First-hit TE tallies only; NOT discordant-vs-null ORs. Do not finalize AluSz / primary subfamily OR until controls.md checklist done."
+  }
+}

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-07-20 — C-A1 T0→T2 download + CTCF gate PASS
+
+- Download scripts: `t1_download_primary_inputs.py` → bedpe `ENCFF511QFN` / `ENCFF693XIL`, CTCF `ENCFF769AUF`, UCSC `rmsk.txt.gz`; checksums in `data/download_checksums.json` + `data_manifest.md`
+- T2 positive control: `t2_positive_control_ctcf_gate.py` → Fisher OR **5.12** (95% CI 4.91–5.34) ≥ 2.0 → **PASS** / `PENDING_PRIMARY`
+- Arts: `results/positive_control_ctcf_gate.json|.md`; T1 skeleton `results/t1_annotation_skeleton.json` (`EXPLORATORY_PARTIAL`; no primary TE OR)
+- CTCF freeze: `ENCFF769AUF` (`ENCSR000AKO`); large binaries gitignored under `data/input/`
+- Unit tests: `tests/test_ctcf_gate_unit.py`
+
 ## 2026-07-20 — C-A1 report expand + accession freeze
 
 - Expand `DEEP_RESEARCH_REPORT_C_A1_v1.md` to full 16-section Deep Research structure (scores: C-B1 7.47 > C-A1 7.06; C-A1 still recommended)
