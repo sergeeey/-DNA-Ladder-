@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-07-20 — C-K1 PLAC vs Hi-C Alu anchors → BLOCKED_DATA
+
+- Standard-tier prereg: `experiments/exp_plac_vs_hic_alu_anchors/` (claim/controls/notes)
+- Claim: H3K4me3 PLAC-seq AluSz OR ≥ 1.5 vs matched Hi-C (≥1 cell; prefer GM12878);
+  falsify OR < 1.1 after umap ≥ 0.3; distinct from C-A1 Pol II ChIA-PET discordance
+- T0 probe ENCODE+4DN (`scripts/t0_probe_plac_vs_hic.py` → `data/t0_accession_probe.json`):
+  ENCODE PLAC-seq assay **404**; K562/GM12878 4DN PLAC = pairs/hic/mcool only; near-miss
+  H3K4me3 ChIA-PET `ENCSR000FDF` hg19 TSV + multi-assay union bedpe **rejected**
+- Decision **`BLOCKED_DATA`** (OR not computed); next fruit **C-A2** (CTCF ChIA-PET vs Hi-C
+  AluSz; original Deep Research C-K1 estimand)
+- Registry C-K1 → `BLOCKED_DATA`; C-A2 queued; holdout/C1/wet untouched
+
 ## 2026-07-20 — Next fruit C-B1 started (topology/CRISPR under se_llps; TE AluY+AG still parked)
 
 - Standing order after C-A1 close: open **C-B1** as Predictive topology-community ΔAUC over SE

@@ -10,7 +10,8 @@ Do rare SNVs inside Alu/SVA show higher **predicted CTCF-motif disruption** than
 ## Status
 
 `CURRENT CLAIM STOPPED` · Package A hypothesis closure · HBB = **development set**  
-C-A1 desk (`exp_te_loop_assay_discordance_chia_vs_hic`): **CLOSED** `INCONCLUSIVE_CROSS_CELL` — K562 AluSz OR **0.908**/umap **0.898**/DELTA **0.913** FAIL; GM12878 **1.252** + HCT116 **1.280** mid-zone; null_results INCONCLUSIVE filed
+C-A1 desk (`exp_te_loop_assay_discordance_chia_vs_hic`): **CLOSED** `INCONCLUSIVE_CROSS_CELL` — K562 AluSz OR **0.908**/umap **0.898**/DELTA **0.913** FAIL; GM12878 **1.252** + HCT116 **1.280** mid-zone; null_results INCONCLUSIVE filed  
+C-K1 desk (`exp_plac_vs_hic_alu_anchors`): **CLOSED** `BLOCKED_DATA` — no processed H3K4me3 PLAC-seq loop bedpe (GM12878/K562) on ENCODE/4DN; OR not computed; next fruit **C-A2**
 
 ## Operational snapshot
 

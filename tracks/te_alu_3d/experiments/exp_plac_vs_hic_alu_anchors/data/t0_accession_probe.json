@@ -1,0 +1,379 @@
+{
+  "probe": "t0_probe_plac_vs_hic",
+  "experiment": "exp_plac_vs_hic_alu_anchors",
+  "candidate_id": "C-K1",
+  "queried_at_utc": "2026-07-20T12:39:57.572651+00:00",
+  "encode_base": "https://www.encodeproject.org",
+  "fourdn_base": "https://data.4dnucleome.org",
+  "note": "Metadata only \u2014 no large file downloads",
+  "prefer_cell": "GM12878",
+  "fallback_cell": "K562",
+  "primary_te": "AluSz",
+  "mcid_or": 1.5,
+  "falsify_or_after_umap_0_3": 1.1,
+  "encode_assay_probes": {
+    "assay_title_PLAC-seq": {
+      "error": true,
+      "status": 404,
+      "total": null,
+      "note": null,
+      "sample_accessions": []
+    },
+    "assay_term_PLAC-seq": {
+      "error": true,
+      "status": 404,
+      "total": null,
+      "note": null,
+      "sample_accessions": []
+    },
+    "assay_title_HiChIP": {
+      "error": true,
+      "status": 404,
+      "total": null,
+      "note": null,
+      "sample_accessions": []
+    },
+    "searchTerm_PLAC-seq": {
+      "error": null,
+      "status": null,
+      "total": 269,
+      "note": "placenta_name_collision",
+      "sample_accessions": [
+        "ENCSR498ZRC",
+        "ENCSR648RAX",
+        "ENCSR869GFF",
+        "ENCSR778NLR",
+        "ENCSR029KFQ"
+      ]
+    }
+  },
+  "encode_h3k4me3_chia_pet": {
+    "total": 3,
+    "error": null,
+    "experiments": [
+      {
+        "accession": "ENCSR025JPD",
+        "biosample_summary": "Homo sapiens GM19240",
+        "loopish_files": [],
+        "n_grch38_loop_bedpe": 0,
+        "rejected_as_plac_substitute": true,
+        "reject_reason": "assay_is_ChIA-PET_not_PLAC-seq"
+      },
+      {
+        "accession": "ENCSR000FDF",
+        "biosample_summary": "Homo sapiens K562",
+        "loopish_files": [
+          {
+            "accession": "ENCFF002ENG",
+            "file_format": "tsv",
+            "file_type": "tsv",
+            "output_type": "loops",
+            "assembly": "hg19",
+            "status": "archived",
+            "preferred_default": null,
+            "file_size": 16743,
+            "processed_grch38_bedpe": false
+          },
+          {
+            "accession": "ENCFF002ENE",
+            "file_format": "tsv",
+            "file_type": "tsv",
+            "output_type": "loops",
+            "assembly": "hg19",
+            "status": "archived",
+            "preferred_default": null,
+            "file_size": 104311,
+            "processed_grch38_bedpe": false
+          }
+        ],
+        "n_grch38_loop_bedpe": 0,
+        "rejected_as_plac_substitute": true,
+        "reject_reason": "assay_is_ChIA-PET_not_PLAC-seq"
+      },
+      {
+        "accession": "ENCSR952NXC",
+        "biosample_summary": "Homo sapiens GM19239",
+        "loopish_files": [],
+        "n_grch38_loop_bedpe": 0,
+        "rejected_as_plac_substitute": true,
+        "reject_reason": "assay_is_ChIA-PET_not_PLAC-seq"
+      }
+    ],
+    "any_grch38_loop_bedpe": false,
+    "note": "Near-miss only; cannot freeze as H3K4me3 PLAC-seq primary"
+  },
+  "fourdn_plac_experiment_sets": [
+    {
+      "accession": "4DNESWX1J3QU",
+      "dataset_label": "PLAC-Seq on K562 cells",
+      "processed_files": [
+        {
+          "accession": "4DNFI33H8F87",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFI33H8F87.pairs.gz"
+        },
+        {
+          "accession": "4DNFIB52PNGQ",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIB52PNGQ.hic"
+        },
+        {
+          "accession": "4DNFINDGV53G",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFINDGV53G.mcool"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool"
+      ],
+      "query": "K562 PLAC-seq"
+    },
+    {
+      "accession": "4DNESN3CDATJ",
+      "dataset_label": "low coverage parameterization",
+      "processed_files": [
+        {
+          "accession": "4DNFI2UM2XD6",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFI2UM2XD6.pairs.gz"
+        },
+        {
+          "accession": "4DNFII7CJCU4",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFII7CJCU4.hic"
+        },
+        {
+          "accession": "4DNFIIQI3SSY",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIIQI3SSY.mcool"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool"
+      ],
+      "query": "GM12878 PLAC-seq H3K4me3"
+    },
+    {
+      "accession": "4DNESMBE39SA",
+      "dataset_label": "low coverage parameterization",
+      "processed_files": [
+        {
+          "accession": "4DNFIZW8AAG9",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIZW8AAG9.pairs.gz"
+        },
+        {
+          "accession": "4DNFIG79KVMF",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIG79KVMF.hic"
+        },
+        {
+          "accession": "4DNFILXPPI6D",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFILXPPI6D.mcool"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool"
+      ],
+      "query": "GM12878 PLAC-seq H3K4me3"
+    },
+    {
+      "accession": "4DNESL3LFLGI",
+      "dataset_label": "low coverage parameterization",
+      "processed_files": [
+        {
+          "accession": "4DNFIKBP5S1J",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIKBP5S1J.pairs.gz"
+        },
+        {
+          "accession": "4DNFIHMX5V5O",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIHMX5V5O.hic"
+        },
+        {
+          "accession": "4DNFIF4YWBUX",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIF4YWBUX.mcool"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool"
+      ],
+      "query": "GM12878 PLAC-seq H3K4me3"
+    },
+    {
+      "accession": "4DNESNH551EE",
+      "dataset_label": "4DNESNH551EE",
+      "processed_files": [
+        {
+          "accession": "4DNFI27JCV16",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFI27JCV16.pairs.gz"
+        },
+        {
+          "accession": "4DNFI4TZW6IJ",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFI4TZW6IJ.hic"
+        },
+        {
+          "accession": "4DNFI95QTNRM",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFI95QTNRM.mcool"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool"
+      ],
+      "query": "GM12878 PLAC-seq H3K4me3"
+    },
+    {
+      "accession": "4DNESM8YKZNI",
+      "dataset_label": "low coverage parameterization",
+      "processed_files": [
+        {
+          "accession": "4DNFIPH5B4ZJ",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFIPH5B4ZJ.pairs.gz"
+        },
+        {
+          "accession": "4DNFIXQ2WYPA",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIXQ2WYPA.hic"
+        },
+        {
+          "accession": "4DNFI5Z8U9YB",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFI5Z8U9YB.mcool"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool"
+      ],
+      "query": "GM12878 PLAC-seq"
+    },
+    {
+      "accession": "4DNESDUNGS5T",
+      "dataset_label": "low coverage parameterization",
+      "processed_files": [
+        {
+          "accession": "4DNFI2U3RJBE",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFI2U3RJBE.pairs.gz"
+        },
+        {
+          "accession": "4DNFIZIW499B",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFIZIW499B.hic"
+        },
+        {
+          "accession": "4DNFIQTP4L34",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIQTP4L34.mcool"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool"
+      ],
+      "query": "GM12878 PLAC-seq"
+    },
+    {
+      "accession": "4DNESZ1XLHNJ",
+      "dataset_label": "low coverage parameterization",
+      "processed_files": [
+        {
+          "accession": "4DNFINQBQU6O",
+          "file_type": "contact list-combined",
+          "file_format": "pairs",
+          "display_title": "4DNFINQBQU6O.pairs.gz"
+        },
+        {
+          "accession": "4DNFICKWWRQC",
+          "file_type": "contact matrix",
+          "file_format": "hic",
+          "display_title": "4DNFICKWWRQC.hic"
+        },
+        {
+          "accession": "4DNFIOUS2AUO",
+          "file_type": "contact matrix",
+          "file_format": "mcool",
+          "display_title": "4DNFIOUS2AUO.mcool"
+        }
+      ],
+      "has_processed_bedpe": false,
+      "processed_type_summary": [
+        "contact list-combined|pairs",
+        "contact matrix|hic",
+        "contact matrix|mcool"
+      ],
+      "query": "GM12878 PLAC-seq"
+    }
+  ],
+  "fourdn_any_processed_bedpe": false,
+  "fourdn_bedpe_mentioning_plac": [
+    {
+      "accession": "4DNFI32J1C6W",
+      "genome_assembly": "GRCh38",
+      "file_type": "long range chromatin interactions",
+      "description": "The union set of chromatin loops annotated for  immortalized fibroblast cells (HFFc6) identified through the integration of multiple 3D genome mapping platforms, including Hi-C, Micro-C, CTCF ChIA-PET, RNAPII ChIA-PET, and H3K4me3 PLAC-Seq. Loops were identified using a hybrid lo",
+      "plac_primary": false,
+      "note": "multi-assay_union_or_non_target_cell \u2014 reject as PLAC primary"
+    },
+    {
+      "accession": "4DNFIX6VZKOA",
+      "genome_assembly": "GRCh38",
+      "file_type": "long range chromatin interactions",
+      "description": "The union set of chromatin loops annotated for  human embryonic stem cells (H1-hESC) identified through the integration of multiple 3D genome mapping platforms, including Hi-C, Micro-C, CTCF ChIA-PET, RNAPII ChIA-PET, and H3K4me3 PLAC-Seq. Loops were identified using a hybrid loo",
+      "plac_primary": false,
+      "note": "multi-assay_union_or_non_target_cell \u2014 reject as PLAC primary"
+    }
+  ],
+  "encode_usable_plac_grch38_bedpe": false,
+  "fourdn_usable_plac_grch38_bedpe": false,
+  "verdict": "BLOCKED_DATA",
+  "stop_condition": "No processed H3K4me3 PLAC-seq loop bedpe (GRCh38) for GM12878 or K562 on ENCODE or 4DN; do not call loops from pairs/hic without new claim freeze.",
+  "next_fruit_recommend": "C-A2"
+}

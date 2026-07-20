@@ -2,6 +2,7 @@
 # Source: DEEP_RESEARCH_REPORT_C_A1_v1.md
 # Decision: C-A1 desk CLOSED as INCONCLUSIVE_CLOSED (2026-07-20)
 # Note: post-C-A1 standing order started C-B1 as topology/CRISPR (se_llps); TE AluY+AG parked
+# 2026-07-20: C-K1 desk filled with PLAC vs Hi-C Alu → BLOCKED_DATA; next_fruit C-A2
 
 schema_version: 1
 date: "2026-07-20"
@@ -9,7 +10,7 @@ report: DEEP_RESEARCH_REPORT_C_A1_v1.md
 inspection_commit: c048650
 decision: INCONCLUSIVE_CLOSED
 recommended_id: C-A1
-next_fruit_recommend: C-B1
+next_fruit_recommend: C-A2
 scoring_formula: "0.15*N + 0.15*F + 0.25*I + 0.20*K + 0.15*D + 0.10*T"
 
 candidates:
@@ -33,11 +34,13 @@ candidates:
   - id: C-B1-topology-crispr-eg
     title: "CRE-community topology incremental ΔAUC over SE membership for CRISPR E–G (K562)"
     final_score: null
-    recommended: true
-    status: PENDING_KILL_TEST
+    recommended: false
+    status: REJECT_CLOSED
     track: se_llps
     path: tracks/se_llps/experiments/exp_topology_community_crispr_eg/
     desk_slot: C-B1
+    desk_verdict: FAIL_KILL
+    null_results: null_results/20260720-topology-community-crispr-eg-delta-auc.md
     t0_status: PASS_FREEZE
     rE2G_audit: SURVIVES_WITH_REDESIGN
   - id: C-C1
@@ -73,9 +76,31 @@ candidates:
     final_score: 6.20
     recommended: false
   - id: C-K1
-    title: "CTCF ChIA-PET K562 TE-subfamily discordance vs Hi-C (fallback if Pol II bedpe blocked)"
+    title: "H3K4me3 PLAC-seq AluSz-anchor enrichment vs matched Hi-C (GM12878 preferred / K562 fallback)"
     final_score: 6.93
     recommended: false
+    status: BLOCKED_DATA
+    desk_verdict: BLOCKED_DATA
+    alias: C-K1-plac-h3k4me3-alu-anchors
+    path: tracks/te_alu_3d/experiments/exp_plac_vs_hic_alu_anchors/
+    note: >
+      Standing order 2026-07-20 filled C-K1 desk with PLAC vs Hi-C AluSz estimand.
+      T0 ENCODE+4DN probe found no processed PLAC loop bedpe for GM12878/K562.
+      Deep Research original CTCF ChIA-PET fallback parked as C-K1-CTCF-chia-fallback / C-A2.
+  - id: C-K1-CTCF-chia-fallback
+    title: "CTCF ChIA-PET K562 TE-subfamily discordance vs Hi-C (original Deep Research C-K1)"
+    final_score: 6.93
+    recommended: true
+    status: PARKED_AS_C-A2
+    desk_slot: C-A2
+    note: Recommended next fruit after C-K1 PLAC BLOCKED_DATA.
+  - id: C-A2
+    title: "CTCF ChIA-PET vs Hi-C AluSz discordance (queued; was Deep Research C-K1)"
+    final_score: 6.93
+    recommended: true
+    status: QUEUED
+    alias: C-K1-CTCF-chia-fallback
+    note: Do not auto-start without human queue; Standard-tier prereg when started.
   - id: C-L1
     title: "Cross-cell-line transfer: K562 discordant-TE pattern vs GM12878"
     final_score: 6.04
