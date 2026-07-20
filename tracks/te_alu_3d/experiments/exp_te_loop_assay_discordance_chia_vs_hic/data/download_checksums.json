@@ -112,6 +112,66 @@
         "sha256": "db60e6aa7ac175f8f5465cd01b48b550e67e1fb0fd828608d8343481867bb276",
         "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/rmsk.txt.gz"
       }
+    },
+    "ENCFF322FOT": {
+      "role": "pol2_chia_pet_hct116_replication_loops",
+      "experiment": "ENCSR035PVZ",
+      "assembly": "GRCh38",
+      "format": "bedpe.gz",
+      "portal_md5": "fa2693618035e033ef7c975198493a9e",
+      "url": "https://www.encodeproject.org/files/ENCFF322FOT/@@download/ENCFF322FOT.bedpe.gz",
+      "filename": "ENCFF322FOT.bedpe.gz",
+      "required": true,
+      "notes": "HCT116 POLR2A ChIA-PET preferred_default; plain HCT116",
+      "download": {
+        "status": "downloaded",
+        "path": "/workspace/tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/data/input/ENCFF322FOT.bedpe.gz",
+        "size_bytes": 1855045,
+        "md5": "fa2693618035e033ef7c975198493a9e",
+        "sha256": "266913b7d41614972540e87d6b1bf224a8d740d5bba09470c29ca6efad0ef792",
+        "url": "https://www.encodeproject.org/files/ENCFF322FOT/@@download/ENCFF322FOT.bedpe.gz",
+        "portal_md5_match": true
+      }
+    },
+    "ENCFF060QTI": {
+      "role": "hic_hct116_replication_loops",
+      "experiment": "ENCSR123UVP",
+      "assembly": "GRCh38",
+      "format": "bedpe.gz",
+      "portal_md5": "3cf083558b07ba7ab29cb6509610d522",
+      "url": "https://www.encodeproject.org/files/ENCFF060QTI/@@download/ENCFF060QTI.bedpe.gz",
+      "filename": "ENCFF060QTI.bedpe.gz",
+      "required": true,
+      "notes": "HiCCUPS merged_loops_30 preferred_default; untreated RAD21-AID HCT116",
+      "download": {
+        "status": "downloaded",
+        "path": "/workspace/tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/data/input/ENCFF060QTI.bedpe.gz",
+        "size_bytes": 324914,
+        "md5": "3cf083558b07ba7ab29cb6509610d522",
+        "sha256": "7718ae816590c7beddc87ef2c5f95675c7adf962aa5b490b864d6faf1e260d05",
+        "url": "https://www.encodeproject.org/files/ENCFF060QTI/@@download/ENCFF060QTI.bedpe.gz",
+        "portal_md5_match": true
+      }
+    },
+    "ENCFF463FGL": {
+      "role": "ctcf_hct116_conservative_idr_peaks",
+      "experiment": "ENCSR240PRQ",
+      "assembly": "GRCh38",
+      "format": "bed.gz",
+      "portal_md5": "d1ca230c75391179937ace2a17ed0043",
+      "url": "https://www.encodeproject.org/files/ENCFF463FGL/@@download/ENCFF463FGL.bed.gz",
+      "filename": "ENCFF463FGL.bed.gz",
+      "required": true,
+      "notes": "CTCF HCT116 conservative IDR preferred_default",
+      "download": {
+        "status": "downloaded",
+        "path": "/workspace/tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/data/input/ENCFF463FGL.bed.gz",
+        "size_bytes": 987887,
+        "md5": "d1ca230c75391179937ace2a17ed0043",
+        "sha256": "6d2e6982d0e0eff6be0d49a477dbc3217977a7a2144d648b576474dda22b3195",
+        "url": "https://www.encodeproject.org/files/ENCFF463FGL/@@download/ENCFF463FGL.bed.gz",
+        "portal_md5_match": true
+      }
     }
   },
   "ctcf_freeze": {
@@ -147,5 +207,6 @@
       "size_bytes": 711745,
       "experiment": "ENCSR000DZN"
     }
-  }
+  },
+  "hct116_replication_downloaded_at_utc": "2026-07-20T12:10:04.299319+00:00"
 }

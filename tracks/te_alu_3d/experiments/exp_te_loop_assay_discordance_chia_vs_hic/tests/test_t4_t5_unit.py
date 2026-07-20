@@ -10,7 +10,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
 from t4_mappability_sensitivity import filter_by_umap, or_block  # noqa: E402
-from t5_replication_celltype import replication_verdict  # noqa: E402
+from t5_replication_celltype import CELL_CONFIGS, replication_verdict  # noqa: E402
 
 
 class TestUmapFilter(unittest.TestCase):
@@ -41,6 +41,19 @@ class TestReplicationVerdict(unittest.TestCase):
         self.assertEqual(
             replication_verdict(1.2)["verdict"], "INCONCLUSIVE_REPLICATION"
         )
+        # HCT116 observed mid-zone (~1.28) maps to inconclusive, not support/fail
+        self.assertEqual(
+            replication_verdict(1.280)["verdict"], "INCONCLUSIVE_REPLICATION"
+        )
+
+
+class TestHct116Config(unittest.TestCase):
+    def test_frozen_accessions(self):
+        cfg = CELL_CONFIGS["HCT116"]
+        self.assertEqual(cfg["pol2_acc"], "ENCFF322FOT")
+        self.assertEqual(cfg["hic_acc"], "ENCFF060QTI")
+        self.assertEqual(cfg["ctcf_acc"], "ENCFF463FGL")
+        self.assertIn("HCT116", cfg["freeze"])
 
 
 if __name__ == "__main__":

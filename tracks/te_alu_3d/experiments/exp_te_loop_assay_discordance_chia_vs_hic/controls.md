@@ -69,6 +69,8 @@ If (1)+(2) drive all subfamily ORs below 1.1 → **REJECT** per `claim.md`.
 | T3 primary AluSz OR finalized (desk) | DONE → FAIL_DESK_PRIMARY (OR 0.908 < 1.1) |
 | T4 umap sensitivity | DONE — umap≥0.3 OR 0.898 < 1.1 (strengthens FAIL) |
 | T5 replication cell type | DONE — GM12878 OR 1.252 → INCONCLUSIVE (not < 1.15) |
+| T5b HCT116 second replication | DONE — OR 1.280 mid-zone; CTCF gate PASS (OR ≈ 8.35) |
 
-Claim-level REJECT + `null_results/` still blocked: replication OR not in falsify zone.
+Claim-level REJECT + `null_results/` still blocked: replication OR not in falsify zone
+(GM12878 1.252; HCT116 1.280).
 

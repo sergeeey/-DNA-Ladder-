@@ -10,7 +10,7 @@ Do rare SNVs inside Alu/SVA show higher **predicted CTCF-motif disruption** than
 ## Status
 
 `CURRENT CLAIM STOPPED` · Package A hypothesis closure · HBB = **development set**  
-C-A1 desk (`exp_te_loop_assay_discordance_chia_vs_hic`): T3 AluSz OR **0.908** → `FAIL_DESK_PRIMARY` (PENDING_MAPPABILITY; replication pending)
+C-A1 desk (`exp_te_loop_assay_discordance_chia_vs_hic`): K562 AluSz OR **0.908**/umap **0.898** FAIL; GM12878 **1.252** + HCT116 **1.280** mid-zone → `INCONCLUSIVE_REPLICATION` (null not filed)
 
 ## Operational snapshot
 

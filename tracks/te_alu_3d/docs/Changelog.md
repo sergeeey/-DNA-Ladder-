@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026-07-20 — C-A1 T5b HCT116 replication → still INCONCLUSIVE_REPLICATION
+
+- Freeze HCT116: Pol II `ENCFF322FOT` (`ENCSR035PVZ`) + Hi-C HiCCUPS `ENCFF060QTI`
+  (`ENCSR123UVP`, untreated RAD21-AID) + CTCF `ENCFF463FGL` (`ENCSR240PRQ`)
+  → `ACCESSION_FREEZE_replication_HCT116_v1.md` (RAD21/CTCF ChIA-PET rejected as Pol II
+  substitutes; auxin-treated `ENCFF522WVV` rejected)
+- Same AluSz pipeline as K562/GM12878 → OR **1.280** (Woolf CI 1.162–1.410) → mid-zone
+  `INCONCLUSIVE_REPLICATION`; CTCF gate **PASS** (OR ≈ 8.35)
+- Optional umap≥0.3 → OR **1.281** (still mid-zone)
+- Three-cell synthesis: K562 FAIL (0.91/0.90) vs GM12878 1.252 + HCT116 1.280 — sign
+  inconsistent, but falsify arm (replication < 1.15) **not** met → **null_results/ not filed**
+- Arts: `results/replication_hct116_OR_CI.{json,md}`,
+  `results/replication_hct116_umap_sensitivity.{json,md}`; script `--celltype HCT116`
+- decision/claim/data_manifest/Tasktracker updated; holdout/C1/wet untouched
+
 ## 2026-07-20 — C-A1 T4 umap + T5 GM12878 → INCONCLUSIVE_REPLICATION
 
 - T4: Hoffman Umap k100; MAPQ=N/A on processed bedpe; mean umap ≥0.3 / ≥0.5 sensitivity
