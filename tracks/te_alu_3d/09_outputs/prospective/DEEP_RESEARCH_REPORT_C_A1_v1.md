@@ -5,7 +5,10 @@
 **Track:** `tracks/te_alu_3d`  
 **Inspection commit (report authored against):** `c048650`  
 **Note:** Current `master` may be newer after C-A1 scaffold / freeze PRs; do not treat `c048650` as HEAD after merge.  
-**Decision:** `VALIDATE_DESK` for **C-A1**  
+**Decision (original):** `VALIDATE_DESK` for **C-A1**  
+**Desk closure (2026-07-20):** C-A1 → **`INCONCLUSIVE_CLOSED`** / `INCONCLUSIVE_CROSS_CELL`
+(null_results `20260720-te-chia-vs-hic-alusz-anchor-discordance.md`). Prospective queue:
+**PAUSE** new C-A1 analysis; next fruit recommend **C-B1** (not auto-started).  
 **Hard constraints:** no wet-lab · no oligo order · holdout SEALED · no C1 E/P lock edits · no GO signature shopping · no closed SE/LLPS re-runs · HBB TE enrichment STOPPED
 
 ---

@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026-07-20 — C-A1 desk CLOSED → INCONCLUSIVE_CROSS_CELL
+
+- T6 caller-swap: Mustache N/A on ENCODE; DELTA `ENCFF657QKE` AluSz OR **0.913**
+  (vs HiCCUPS 0.908) → FAIL robust; intact localizer sens. OR ≈ 1.107 (not primary)
+- Optional robustness: PLAC-seq H3K4me3 **SKIPPED** (no cheap K562 processed bedpe);
+  chrom block-bootstrap note from T3 (CI 0.866–0.958)
+- Figures: `results/figures/or_forest_cross_cell.{svg,png}`, `umap_sensitivity_k562.{svg,png}`
+- Terminal decision `INCONCLUSIVE_CROSS_CELL`; null_results **INCONCLUSIVE** filed
+  `null_results/20260720-te-chia-vs-hic-alusz-anchor-discordance.md` + INDEX track `te_alu_3d`
+- Repro stub `workflow/README.md`; `draft_abstract.md`; `NEXT_FRUIT_NOTE.md` → recommend C-B1
+- Registry C-A1 → `INCONCLUSIVE_CLOSED`; PAUSE / Deep Research note updated
+- Holdout/C1/wet untouched; C-B1 analysis **not** started
+
 ## 2026-07-20 — C-A1 T5b HCT116 replication → still INCONCLUSIVE_REPLICATION
 
 - Freeze HCT116: Pol II `ENCFF322FOT` (`ENCSR035PVZ`) + Hi-C HiCCUPS `ENCFF060QTI`

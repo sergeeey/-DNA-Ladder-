@@ -1,14 +1,15 @@
 # Compact candidate registry from Deep Research Report v1.0 (2026-07-20)
 # Source: DEEP_RESEARCH_REPORT_C_A1_v1.md
-# Decision: VALIDATE_DESK for C-A1 only
-# Note: C-B1 final_score 7.47 > C-A1 7.06; C-A1 still recommended (identifiability × kill-speed)
+# Decision: C-A1 desk CLOSED as INCONCLUSIVE_CLOSED (2026-07-20)
+# Note: C-B1 final_score 7.47 > C-A1 7.06; next fruit recommend C-B1 (not auto-started)
 
 schema_version: 1
 date: "2026-07-20"
 report: DEEP_RESEARCH_REPORT_C_A1_v1.md
 inspection_commit: c048650
-decision: VALIDATE_DESK
+decision: INCONCLUSIVE_CLOSED
 recommended_id: C-A1
+next_fruit_recommend: C-B1
 scoring_formula: "0.15*N + 0.15*F + 0.25*I + 0.20*K + 0.15*D + 0.10*T"
 
 candidates:
@@ -16,10 +17,14 @@ candidates:
     title: "TE-subfamily stratification of Pol II ChIA-PET vs Hi-C loop discordance (K562), mappability-matched"
     final_score: 7.06
     recommended: true
+    status: INCONCLUSIVE_CLOSED
+    desk_verdict: INCONCLUSIVE_CROSS_CELL
+    null_results: null_results/20260720-te-chia-vs-hic-alusz-anchor-discordance.md
   - id: C-B1
     title: "AluY enrichment at convergent CTCF+RAD21 anchors with AG allele-prior overlay (non-holdout)"
     final_score: 7.47
     recommended: false
+    status: PARKED_NEXT_FRUIT
   - id: C-C1
     title: "SVA vs Alu differential occupancy of Hi-C loop anchors (K562), length-matched"
     final_score: 6.93

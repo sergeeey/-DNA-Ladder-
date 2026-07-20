@@ -1,17 +1,19 @@
 # Data manifest — exp_te_loop_assay_discordance_chia_vs_hic (C-A1)
 
-**Status:** K562 primary + umap + GM12878 + HCT116 replication **done**.  
+**Status:** K562 primary + umap + GM12878 + HCT116 + caller-swap **done**; desk
+**CLOSED** as `INCONCLUSIVE_CROSS_CELL`.  
 **Probe JSON:** `data/t0_accession_probe.json`  
 **Checksum JSON:** `data/download_checksums.json`  
 **Assembly:** GRCh38  
-**Operator:** cloud agent 2026-07-20 (T0→T5b)
+**Operator:** cloud agent 2026-07-20 (T0→T6 closure)
 
 ## Rules
 
 - Real public ENCODE / UCSC / Hoffman-lab files only
 - Large binaries in `data/input/` (gitignored); commit manifests + checksums only
 - T3 AluSz OR `FAIL_DESK_PRIMARY`; T4 umap≥0.3 OR 0.898; T5 GM12878 OR 1.252;
-  T5b HCT116 OR 1.280 — combined `INCONCLUSIVE_REPLICATION` (null not filed)
+  T5b HCT116 OR 1.280; T6 DELTA caller-swap OR 0.913 — combined
+  `INCONCLUSIVE_CROSS_CELL`; null_results **INCONCLUSIVE** filed
 
 ## Rejected placeholders
 
@@ -37,9 +39,11 @@
 | **Pol II HCT116 (T5b)** | `ENCSR035PVZ` | **`ENCFF322FOT`** | bedpe.gz | GRCh38 | `fa2693618035e033ef7c975198493a9e` | `fa2693618035e033ef7c975198493a9e` | 1855045 | preferred_default; plain HCT116; **MATCH** |
 | **Hi-C HCT116 (T5b)** | `ENCSR123UVP` | **`ENCFF060QTI`** | bedpe.gz | GRCh38 | `3cf083558b07ba7ab29cb6509610d522` | `3cf083558b07ba7ab29cb6509610d522` | 324914 | HiCCUPS merged_loops_30; untreated RAD21-AID; **MATCH** |
 | **CTCF HCT116 (T5b)** | `ENCSR240PRQ` | **`ENCFF463FGL`** | bed.gz | GRCh38 | `d1ca230c75391179937ace2a17ed0043` | `d1ca230c75391179937ace2a17ed0043` | 987887 | conservative IDR; preferred_default; **MATCH** |
+| Hi-C alternate (T6 DELTA) | `ENCSR545YBD` | `ENCFF657QKE` | bedpe.gz | GRCh38 | `0a3751e380c7b18e8565addaa23595ff` | `0a3751e380c7b18e8565addaa23595ff` | 208215 | DELTA v1.9; caller-swap; **MATCH** |
+| Hi-C alternate (intact sens.) | `ENCSR479XDG` | `ENCFF256ZMD` | bedpe.gz | GRCh38 | `47a1aa77c97c340234a1da38a21b8c62` | `47a1aa77c97c340234a1da38a21b8c62` | 2869470 | localizer loops_30; **MATCH** |
 | Pol II sensitivity | `ENCSR880DSH` | `ENCFF759YBZ` | bedpe | GRCh38 | `c4bcd92733e0861184966acbe346d11c` | _not downloaded_ | — | biorep 2 |
 | Pol II sensitivity | `ENCSR880DSH` | `ENCFF030PMM` | bedpe | GRCh38 | `66ee96602bb7762314b7fd6f5e990621` | _not downloaded_ | — | biorep 3 |
-| Hi-C alternate | `ENCSR479XDG` | `ENCFF598CLH` | bedpe | GRCh38 | `8795e2e90f554bff5e83db09ae3b1eea` | _not downloaded_ | — | intact localizer |
+| Hi-C alternate (legacy note) | `ENCSR479XDG` | `ENCFF598CLH` | bedpe | GRCh38 | `8795e2e90f554bff5e83db09ae3b1eea` | _not downloaded_ | — | intact localizer loops_1 |
 
 ### Download URLs
 

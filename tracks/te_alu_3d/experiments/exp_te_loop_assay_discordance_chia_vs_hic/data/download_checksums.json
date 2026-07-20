@@ -172,6 +172,32 @@
         "url": "https://www.encodeproject.org/files/ENCFF463FGL/@@download/ENCFF463FGL.bed.gz",
         "portal_md5_match": true
       }
+    },
+    "ENCFF657QKE": {
+      "role": "hic_delta_caller_swap",
+      "experiment": "ENCSR545YBD",
+      "assembly": "GRCh38",
+      "format": "bedpe.gz",
+      "portal_md5": "0a3751e380c7b18e8565addaa23595ff",
+      "url": "https://www.encodeproject.org/files/ENCFF657QKE/@@download/ENCFF657QKE.bedpe.gz",
+      "filename": "ENCFF657QKE.bedpe.gz",
+      "on_disk_md5": "0a3751e380c7b18e8565addaa23595ff",
+      "on_disk_sha256": "08fec00326cd9c00d54bf11f916387104119ff676feeed646f4ea8786162b642",
+      "size_bytes": 208215,
+      "md5_match_portal": true
+    },
+    "ENCFF256ZMD": {
+      "role": "hic_intact_localizer_sensitivity",
+      "experiment": "ENCSR479XDG",
+      "assembly": "GRCh38",
+      "format": "bedpe.gz",
+      "portal_md5": "47a1aa77c97c340234a1da38a21b8c62",
+      "url": "https://www.encodeproject.org/files/ENCFF256ZMD/@@download/ENCFF256ZMD.bedpe.gz",
+      "filename": "ENCFF256ZMD.bedpe.gz",
+      "on_disk_md5": "47a1aa77c97c340234a1da38a21b8c62",
+      "on_disk_sha256": "34e878c5a7927f313e53989a4da047c2ebcb5f9d2b91c18372d10e578a33744d",
+      "size_bytes": 2869470,
+      "md5_match_portal": true
     }
   },
   "ctcf_freeze": {
@@ -180,7 +206,7 @@
     "output_type": "conservative IDR thresholded peaks",
     "rationale": "preferred_default K562 CTCF TF ChIP-seq IDR peaks, GRCh38"
   },
-  "updated_at_utc": "2026-07-20T10:51:03.591850+00:00",
+  "updated_at_utc": "2026-07-20T12:24:28.233201+00:00",
   "t4_t5_extra": {
     "umap_k100": {
       "file": "k100.Umap.MultiTrackMappability.bw",
@@ -208,5 +234,6 @@
       "experiment": "ENCSR000DZN"
     }
   },
-  "hct116_replication_downloaded_at_utc": "2026-07-20T12:10:04.299319+00:00"
+  "hct116_replication_downloaded_at_utc": "2026-07-20T12:10:04.299319+00:00",
+  "caller_swap_downloaded_at_utc": "2026-07-20T12:24:28.233183+00:00"
 }
