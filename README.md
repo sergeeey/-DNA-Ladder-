@@ -17,6 +17,7 @@ Shared across tracks:
 - [`CLAUDE.md`](CLAUDE.md) — prime directive + protocol
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — how to add experiments without breaking the ladder
 - [`RESEARCH_DIRECTIONS.md`](RESEARCH_DIRECTIONS.md) — open directions (historical + current)
+- [`PROJECT_HISTORICAL_BRIEF_v1.md`](PROJECT_HISTORICAL_BRIEF_v1.md) — full-project historical brief (both tracks, B0 pause)
 
 ## Why tracks (variant B)
 
