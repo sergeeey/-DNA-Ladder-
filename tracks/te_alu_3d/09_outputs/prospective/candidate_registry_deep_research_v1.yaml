@@ -1,0 +1,59 @@
+# Compact candidate registry from Deep Research Report v1.0 (2026-07-20)
+# Source: DEEP_RESEARCH_REPORT_C_A1_v1.md
+# Decision: VALIDATE_DESK for C-A1 only
+
+schema_version: 1
+date: "2026-07-20"
+report: DEEP_RESEARCH_REPORT_C_A1_v1.md
+decision: VALIDATE_DESK
+recommended_id: C-A1
+
+candidates:
+  - id: C-A1
+    title: "TE-subfamily stratification of Pol II ChIA-PET vs Hi-C loop discordance (K562), mappability-matched"
+    final_score: 7.6
+    recommended: true
+  - id: C-B1
+    title: "AluY enrichment at convergent CTCF+RAD21 anchors with AG allele-prior overlay (non-holdout)"
+    final_score: 8.1
+    recommended: false
+  - id: C-C1
+    title: "SVA vs Alu differential occupancy of Hi-C loop anchors (K562), length-matched"
+    final_score: 7.2
+    recommended: false
+  - id: C-D1
+    title: "TE divergence/age bin vs cross-assay loop-call reproducibility"
+    final_score: 6.9
+    recommended: false
+  - id: C-E1
+    title: "Mappability-matched TE vs non-TE rare-SNV PWM delta (genome-wide desk; non-HBB)"
+    final_score: 6.4
+    recommended: false
+  - id: C-F1
+    title: "Pol II ChIA-PET-exclusive loop TE density vs Hi-C-shared loops (unstratified TE class)"
+    final_score: 7.0
+    recommended: false
+  - id: C-G1
+    title: "RAD21 ChIA-PET vs CTCF ChIA-PET TE-anchor odds (K562)"
+    final_score: 6.8
+    recommended: false
+  - id: C-H1
+    title: "Micro-C vs Hi-C TE recovery differential (needs Micro-C processed loops)"
+    final_score: 7.4
+    recommended: false
+  - id: C-I1
+    title: "AluJo negative-control calibration of loop-call false-positive rate"
+    final_score: 6.2
+    recommended: false
+  - id: C-J1
+    title: "TE insertion orientation vs loop-anchor asymmetry"
+    final_score: 6.5
+    recommended: false
+  - id: C-K1
+    title: "CTCF ChIA-PET K562 TE-subfamily discordance vs Hi-C (fallback if Pol II bedpe blocked)"
+    final_score: 7.3
+    recommended: false
+  - id: C-L1
+    title: "Cross-cell-line transfer: K562 discordant-TE pattern vs GM12878"
+    final_score: 6.7
+    recommended: false

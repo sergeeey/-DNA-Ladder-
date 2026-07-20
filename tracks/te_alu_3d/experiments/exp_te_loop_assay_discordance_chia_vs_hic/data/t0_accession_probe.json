@@ -1,0 +1,654 @@
+{
+  "probe": "t0_probe_encode_accessions",
+  "experiment": "exp_te_loop_assay_discordance_chia_vs_hic",
+  "candidate_id": "C-A1",
+  "queried_at_utc": "2026-07-20T06:45:08.070203+00:00",
+  "encode_base": "https://www.encodeproject.org",
+  "note": "Metadata only \u2014 no large file downloads",
+  "placeholder_checks": {
+    "ENCSR000BZZ": {
+      "experiment": {
+        "accession": "ENCSR000BZZ",
+        "exists": true,
+        "status": "released",
+        "assay_title": "ChIA-PET",
+        "assay_term_name": "ChIA-PET",
+        "target_label": "ESR1",
+        "biosample_summary": "Homo sapiens MCF-7",
+        "description": "ESR1 ChIA-PET on human MCF-7",
+        "href": "https://www.encodeproject.org/experiments/ENCSR000BZZ/"
+      },
+      "loopish_files": [
+        {
+          "accession": "ENCFF001TIA",
+          "file_format": "bed",
+          "file_type": "bed bed12",
+          "output_type": "loops",
+          "assembly": "hg19",
+          "status": "released",
+          "href": "/files/ENCFF001TIA/@@download/ENCFF001TIA.bed.gz",
+          "cloud_metadata": false,
+          "file_size": 201206,
+          "dataset": "/experiments/ENCSR000BZZ/",
+          "processed_loop_like": true
+        },
+        {
+          "accession": "ENCFF001TIB",
+          "file_format": "bed",
+          "file_type": "bed bed12",
+          "output_type": "loops",
+          "assembly": "hg19",
+          "status": "released",
+          "href": "/files/ENCFF001TIB/@@download/ENCFF001TIB.bed.gz",
+          "cloud_metadata": false,
+          "file_size": 85130,
+          "dataset": "/experiments/ENCSR000BZZ/",
+          "processed_loop_like": true
+        },
+        {
+          "accession": "ENCFF000KZE",
+          "file_format": "bigBed",
+          "file_type": "bigBed bed12",
+          "output_type": "loops",
+          "assembly": "hg19",
+          "status": "released",
+          "href": "/files/ENCFF000KZE/@@download/ENCFF000KZE.bigBed",
+          "cloud_metadata": false,
+          "file_size": 299210,
+          "dataset": "/experiments/ENCSR000BZZ/",
+          "processed_loop_like": true
+        },
+        {
+          "accession": "ENCFF000KZG",
+          "file_format": "bigBed",
+          "file_type": "bigBed bed12",
+          "output_type": "loops",
+          "assembly": "hg19",
+          "status": "released",
+          "href": "/files/ENCFF000KZG/@@download/ENCFF000KZG.bigBed",
+          "cloud_metadata": false,
+          "file_size": 195968,
+          "dataset": "/experiments/ENCSR000BZZ/",
+          "processed_loop_like": true
+        },
+        {
+          "accession": "ENCFF000KZF",
+          "file_format": "bigBed",
+          "file_type": "bigBed bed12",
+          "output_type": "loops",
+          "assembly": "hg19",
+          "status": "released",
+          "href": "/files/ENCFF000KZF/@@download/ENCFF000KZF.bigBed",
+          "cloud_metadata": false,
+          "file_size": 346142,
+          "dataset": "/experiments/ENCSR000BZZ/",
+          "processed_loop_like": true
+        },
+        {
+          "accession": "ENCFF001THZ",
+          "file_format": "bed",
+          "file_type": "bed bed12",
+          "output_type": "loops",
+          "assembly": "hg19",
+          "status": "released",
+          "href": "/files/ENCFF001THZ/@@download/ENCFF001THZ.bed.gz",
+          "cloud_metadata": false,
+          "file_size": 158308,
+          "dataset": "/experiments/ENCSR000BZZ/",
+          "processed_loop_like": true
+        }
+      ],
+      "note": "WRONG_TARGET_ESR1_not_POLR2A"
+    },
+    "ENCSR444WCX": {
+      "experiment": {
+        "accession": "ENCSR444WCX",
+        "exists": false,
+        "error": {
+          "_error": true,
+          "status": 404,
+          "url": "https://www.encodeproject.org/experiments/ENCSR444WCX/?format=json",
+          "body": "{\"@type\": [\"HTTPNotFound\", \"Error\"], \"status\": \"error\", \"code\": 404, \"title\": \"Not Found\", \"description\": \"The resource could not be found.\", \"detail\": \"/experiments/ENCSR444WCX/\"}"
+        }
+      },
+      "loopish_files": [],
+      "note": "NOT_FOUND"
+    }
+  },
+  "pol2_chia_pet_k562": {
+    "search_hits": [
+      {
+        "accession": "ENCSR880DSH",
+        "assay_title": "ChIA-PET",
+        "assay_term_name": "ChIA-PET",
+        "biosample_summary": "Homo sapiens K562",
+        "description": "RNAPII ChIA-PET in K562",
+        "href": "https://www.encodeproject.org/experiments/ENCSR880DSH/"
+      },
+      {
+        "accession": "ENCSR000FDC",
+        "assay_title": "ChIA-PET",
+        "assay_term_name": "ChIA-PET",
+        "biosample_summary": "Homo sapiens K562",
+        "description": "POLR2A ChIA-PET in K562",
+        "href": "https://www.encodeproject.org/experiments/ENCSR000FDC/"
+      }
+    ],
+    "experiments_with_files": [
+      {
+        "experiment": {
+          "accession": "ENCSR880DSH",
+          "assay_title": "ChIA-PET",
+          "assay_term_name": "ChIA-PET",
+          "biosample_summary": "Homo sapiens K562",
+          "description": "RNAPII ChIA-PET in K562",
+          "href": "https://www.encodeproject.org/experiments/ENCSR880DSH/"
+        },
+        "loopish_files": [
+          {
+            "accession": "ENCFF026LJG",
+            "file_format": "hic",
+            "file_type": "hic",
+            "output_type": "contact matrix",
+            "assembly": "GRCh38",
+            "status": "released",
+            "href": "/files/ENCFF026LJG/@@download/ENCFF026LJG.hic",
+            "cloud_metadata": false,
+            "file_size": 310842428,
+            "dataset": "/experiments/ENCSR880DSH/",
+            "processed_loop_like": false
+          },
+          {
+            "accession": "ENCFF759YBZ",
+            "file_format": "bedpe",
+            "file_type": "bedpe",
+            "output_type": "loops",
+            "assembly": "GRCh38",
+            "status": "released",
+            "href": "/files/ENCFF759YBZ/@@download/ENCFF759YBZ.bedpe.gz",
+            "cloud_metadata": false,
+            "file_size": 1944869,
+            "dataset": "/experiments/ENCSR880DSH/",
+            "processed_loop_like": true
+          },
+          {
+            "accession": "ENCFF981HTN",
+            "file_format": "bigInteract",
+            "file_type": "bigInteract",
+            "output_type": "loops",
+            "assembly": "GRCh38",
+            "status": "released",
+            "href": "/files/ENCFF981HTN/@@download/ENCFF981HTN.bigInteract",
+            "cloud_metadata": false,
+            "file_size": 3199517,
+            "dataset": "/experiments/ENCSR880DSH/",
+            "processed_loop_like": true
+          },
+          {
+            "accession": "ENCFF626IXP",
+            "file_format": "bigInteract",
+            "file_type": "bigInteract",
+            "output_type": "loops",
+            "assembly": "GRCh38",
+            "status": "released",
+            "href": "/files/ENCFF626IXP/@@download/ENCFF626IXP.bigInteract",
+            "cloud_metadata": false,
+            "file_size": 5014519,
+            "dataset": "/experiments/ENCSR880DSH/",
+            "processed_loop_like": true
+          },
+          {
+            "accession": "ENCFF511QFN",
+            "file_format": "bedpe",
+            "file_type": "bedpe",
+            "output_type": "loops",
+            "assembly": "GRCh38",
+            "status": "released",
+            "href": "/files/ENCFF511QFN/@@download/ENCFF511QFN.bedpe.gz",
+            "cloud_metadata": false,
+            "file_size": 11964739,
+            "dataset": "/experiments/ENCSR880DSH/",
+            "processed_loop_like": true
+          },
+          {
+            "accession": "ENCFF693OEA",
+            "file_format": "hic",
+            "file_type": "hic",
+            "output_type": "contact matrix",
+            "assembly": "GRCh38",
+            "status": "released",
+            "href": "/files/ENCFF693OEA/@@download/ENCFF693OEA.hic",
+            "cloud_metadata": false,
+            "file_size": 378077184,
+            "dataset": "/experiments/ENCSR880DSH/",
+            "processed_loop_like": false
+          },
+          {
+            "accession": "ENCFF030PMM",
+            "file_format": "bedpe",
+            "file_type": "bedpe",
+            "output_type": "loops",
+            "assembly": "GRCh38",
+            "status": "released",
+            "href": "/files/ENCFF030PMM/@@download/ENCFF030PMM.bedpe.gz",
+            "cloud_metadata": false,
+            "file_size": 3075373,
+            "dataset": "/experiments/ENCSR880DSH/",
+            "processed_loop_like": true
+          },
+          {
+            "accession": "ENCFF582UXM",
+            "file_format": "hic",
+            "file_type": "hic",
+            "output_type": "contact matrix",
+            "assembly": "GRCh38",
+            "status": "released",
+            "href": "/files/ENCFF582UXM/@@download/ENCFF582UXM.hic",
+            "cloud_metadata": false,
+            "file_size": 851587067,
+            "dataset": "/experiments/ENCSR880DSH/",
+            "processed_loop_like": false
+          },
+          {
+            "accession": "ENCFF876DVD",
+            "file_format": "bigInteract",
+            "file_type": "bigInteract",
+            "output_type": "loops",
+            "assembly": "GRCh38",
+            "status": "released",
+            "href": "/files/ENCFF876DVD/@@download/ENCFF876DVD.bigInteract",
+            "cloud_metadata": false,
+            "file_size": 19285634,
+            "dataset": "/experiments/ENCSR880DSH/",
+            "processed_loop_like": true
+          }
+        ],
+        "usable": {
+          "has_processed_loop_like": true,
+          "has_bedpe": true,
+          "n_processed_loop_like": 6,
+          "n_bedpe": 3,
+          "bedpe_accessions": [
+            "ENCFF759YBZ",
+            "ENCFF511QFN",
+            "ENCFF030PMM"
+          ],
+          "processed_accessions": [
+            "ENCFF759YBZ",
+            "ENCFF981HTN",
+            "ENCFF626IXP",
+            "ENCFF511QFN",
+            "ENCFF030PMM",
+            "ENCFF876DVD"
+          ]
+        }
+      },
+      {
+        "experiment": {
+          "accession": "ENCSR000FDC",
+          "assay_title": "ChIA-PET",
+          "assay_term_name": "ChIA-PET",
+          "biosample_summary": "Homo sapiens K562",
+          "description": "POLR2A ChIA-PET in K562",
+          "href": "https://www.encodeproject.org/experiments/ENCSR000FDC/"
+        },
+        "loopish_files": [
+          {
+            "accession": "ENCFF002ENM",
+            "file_format": "tsv",
+            "file_type": "tsv",
+            "output_type": "loops",
+            "assembly": "hg19",
+            "status": "archived",
+            "href": "/files/ENCFF002ENM/@@download/ENCFF002ENM.tsv",
+            "cloud_metadata": false,
+            "file_size": 196082,
+            "dataset": "/experiments/ENCSR000FDC/",
+            "processed_loop_like": true
+          },
+          {
+            "accession": "ENCFF002ENI",
+            "file_format": "tsv",
+            "file_type": "tsv",
+            "output_type": "loops",
+            "assembly": "hg19",
+            "status": "archived",
+            "href": "/files/ENCFF002ENI/@@download/ENCFF002ENI.tsv",
+            "cloud_metadata": false,
+            "file_size": 246976,
+            "dataset": "/experiments/ENCSR000FDC/",
+            "processed_loop_like": true
+          },
+          {
+            "accession": "ENCFF002ENK",
+            "file_format": "tsv",
+            "file_type": "tsv",
+            "output_type": "loops",
+            "assembly": "hg19",
+            "status": "archived",
+            "href": "/files/ENCFF002ENK/@@download/ENCFF002ENK.tsv",
+            "cloud_metadata": false,
+            "file_size": 104751,
+            "dataset": "/experiments/ENCSR000FDC/",
+            "processed_loop_like": true
+          }
+        ],
+        "usable": {
+          "has_processed_loop_like": true,
+          "has_bedpe": false,
+          "n_processed_loop_like": 3,
+          "n_bedpe": 0,
+          "bedpe_accessions": [],
+          "processed_accessions": [
+            "ENCFF002ENM",
+            "ENCFF002ENI",
+            "ENCFF002ENK"
+          ]
+        }
+      }
+    ]
+  },
+  "hic_k562_loops": {
+    "bedpe_search_hits": [
+      {
+        "accession": "ENCFF598CLH",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/experiments/ENCSR479XDG/",
+        "href": "/files/ENCFF598CLH/@@download/ENCFF598CLH.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF598CLH/@@download/ENCFF598CLH.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF256ZMD",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/experiments/ENCSR479XDG/",
+        "href": "/files/ENCFF256ZMD/@@download/ENCFF256ZMD.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF256ZMD/@@download/ENCFF256ZMD.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF693XIL",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/experiments/ENCSR545YBD/",
+        "href": "/files/ENCFF693XIL/@@download/ENCFF693XIL.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF693XIL/@@download/ENCFF693XIL.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF440HUR",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/experiments/ENCSR545YBD/",
+        "href": "/files/ENCFF440HUR/@@download/ENCFF440HUR.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF440HUR/@@download/ENCFF440HUR.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF657QKE",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/experiments/ENCSR545YBD/",
+        "href": "/files/ENCFF657QKE/@@download/ENCFF657QKE.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF657QKE/@@download/ENCFF657QKE.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF757IIX",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/experiments/ENCSR545YBD/",
+        "href": "/files/ENCFF757IIX/@@download/ENCFF757IIX.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF757IIX/@@download/ENCFF757IIX.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF134HIZ",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/experiments/ENCSR545YBD/",
+        "href": "/files/ENCFF134HIZ/@@download/ENCFF134HIZ.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF134HIZ/@@download/ENCFF134HIZ.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF845GJG",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/experiments/ENCSR545YBD/",
+        "href": "/files/ENCFF845GJG/@@download/ENCFF845GJG.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF845GJG/@@download/ENCFF845GJG.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF953LXY",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/aggregate-series/ENCSR549VZO/",
+        "href": "/files/ENCFF953LXY/@@download/ENCFF953LXY.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF953LXY/@@download/ENCFF953LXY.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF287ZOF",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/aggregate-series/ENCSR666ZGW/",
+        "href": "/files/ENCFF287ZOF/@@download/ENCFF287ZOF.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF287ZOF/@@download/ENCFF287ZOF.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF511QFN",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/experiments/ENCSR880DSH/",
+        "href": "/files/ENCFF511QFN/@@download/ENCFF511QFN.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF511QFN/@@download/ENCFF511QFN.bedpe.gz"
+      }
+    ],
+    "loop_output_files": [
+      {
+        "accession": "ENCFF598CLH",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/experiments/ENCSR479XDG/",
+        "href": "/files/ENCFF598CLH/@@download/ENCFF598CLH.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF598CLH/@@download/ENCFF598CLH.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF256ZMD",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/experiments/ENCSR479XDG/",
+        "href": "/files/ENCFF256ZMD/@@download/ENCFF256ZMD.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF256ZMD/@@download/ENCFF256ZMD.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF693XIL",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/experiments/ENCSR545YBD/",
+        "href": "/files/ENCFF693XIL/@@download/ENCFF693XIL.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF693XIL/@@download/ENCFF693XIL.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF440HUR",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/experiments/ENCSR545YBD/",
+        "href": "/files/ENCFF440HUR/@@download/ENCFF440HUR.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF440HUR/@@download/ENCFF440HUR.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF657QKE",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/experiments/ENCSR545YBD/",
+        "href": "/files/ENCFF657QKE/@@download/ENCFF657QKE.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF657QKE/@@download/ENCFF657QKE.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF757IIX",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/experiments/ENCSR545YBD/",
+        "href": "/files/ENCFF757IIX/@@download/ENCFF757IIX.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF757IIX/@@download/ENCFF757IIX.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF134HIZ",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/experiments/ENCSR545YBD/",
+        "href": "/files/ENCFF134HIZ/@@download/ENCFF134HIZ.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF134HIZ/@@download/ENCFF134HIZ.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF845GJG",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/experiments/ENCSR545YBD/",
+        "href": "/files/ENCFF845GJG/@@download/ENCFF845GJG.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF845GJG/@@download/ENCFF845GJG.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF953LXY",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/aggregate-series/ENCSR549VZO/",
+        "href": "/files/ENCFF953LXY/@@download/ENCFF953LXY.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF953LXY/@@download/ENCFF953LXY.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF287ZOF",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/aggregate-series/ENCSR666ZGW/",
+        "href": "/files/ENCFF287ZOF/@@download/ENCFF287ZOF.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF287ZOF/@@download/ENCFF287ZOF.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF511QFN",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "dataset": "/experiments/ENCSR880DSH/",
+        "href": "/files/ENCFF511QFN/@@download/ENCFF511QFN.bedpe.gz",
+        "full_href": "https://www.encodeproject.org/files/ENCFF511QFN/@@download/ENCFF511QFN.bedpe.gz"
+      }
+    ]
+  },
+  "usable_processed_bedpe_pol2": "yes",
+  "usable_processed_bedpe_hic": "yes",
+  "recommended_shortlist": {
+    "pol2_chia_pet": [
+      {
+        "experiment": "ENCSR880DSH",
+        "bedpe": [
+          "ENCFF759YBZ",
+          "ENCFF511QFN",
+          "ENCFF030PMM"
+        ],
+        "href": "https://www.encodeproject.org/experiments/ENCSR880DSH/"
+      }
+    ],
+    "hic_loops": [
+      {
+        "file": "ENCFF598CLH",
+        "dataset": "/experiments/ENCSR479XDG/",
+        "assembly": "GRCh38",
+        "href": "https://www.encodeproject.org/files/ENCFF598CLH/@@download/ENCFF598CLH.bedpe.gz"
+      },
+      {
+        "file": "ENCFF256ZMD",
+        "dataset": "/experiments/ENCSR479XDG/",
+        "assembly": "GRCh38",
+        "href": "https://www.encodeproject.org/files/ENCFF256ZMD/@@download/ENCFF256ZMD.bedpe.gz"
+      },
+      {
+        "file": "ENCFF693XIL",
+        "dataset": "/experiments/ENCSR545YBD/",
+        "assembly": "GRCh38",
+        "href": "https://www.encodeproject.org/files/ENCFF693XIL/@@download/ENCFF693XIL.bedpe.gz"
+      },
+      {
+        "file": "ENCFF440HUR",
+        "dataset": "/experiments/ENCSR545YBD/",
+        "assembly": "GRCh38",
+        "href": "https://www.encodeproject.org/files/ENCFF440HUR/@@download/ENCFF440HUR.bedpe.gz"
+      },
+      {
+        "file": "ENCFF657QKE",
+        "dataset": "/experiments/ENCSR545YBD/",
+        "assembly": "GRCh38",
+        "href": "https://www.encodeproject.org/files/ENCFF657QKE/@@download/ENCFF657QKE.bedpe.gz"
+      },
+      {
+        "file": "ENCFF757IIX",
+        "dataset": "/experiments/ENCSR545YBD/",
+        "assembly": "GRCh38",
+        "href": "https://www.encodeproject.org/files/ENCFF757IIX/@@download/ENCFF757IIX.bedpe.gz"
+      },
+      {
+        "file": "ENCFF134HIZ",
+        "dataset": "/experiments/ENCSR545YBD/",
+        "assembly": "GRCh38",
+        "href": "https://www.encodeproject.org/files/ENCFF134HIZ/@@download/ENCFF134HIZ.bedpe.gz"
+      },
+      {
+        "file": "ENCFF845GJG",
+        "dataset": "/experiments/ENCSR545YBD/",
+        "assembly": "GRCh38",
+        "href": "https://www.encodeproject.org/files/ENCFF845GJG/@@download/ENCFF845GJG.bedpe.gz"
+      },
+      {
+        "file": "ENCFF953LXY",
+        "dataset": "/aggregate-series/ENCSR549VZO/",
+        "assembly": "GRCh38",
+        "href": "https://www.encodeproject.org/files/ENCFF953LXY/@@download/ENCFF953LXY.bedpe.gz"
+      },
+      {
+        "file": "ENCFF287ZOF",
+        "dataset": "/aggregate-series/ENCSR666ZGW/",
+        "assembly": "GRCh38",
+        "href": "https://www.encodeproject.org/files/ENCFF287ZOF/@@download/ENCFF287ZOF.bedpe.gz"
+      }
+    ]
+  }
+}
