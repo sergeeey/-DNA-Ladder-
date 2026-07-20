@@ -1,0 +1,120 @@
+{
+  "experiment": "exp_topology_community_crispr_eg",
+  "candidate_id": "C-B1",
+  "run_utc": "2026-07-20T12:33:39.953059+00:00",
+  "status": "FAIL_KILL",
+  "estimand_redesign": "\u0394AUC of baseline+topology vs baseline=log10_distance+activity_els+se_membership; NOT novelty for any 3D contact (rE2G already has contact/loops).",
+  "label": {
+    "column": "Regulated",
+    "positive": "TRUE",
+    "note": "Frozen EngreitzLab ensemble binary Regulated flag (not a post-hoc |EffectSize|\u22650.1 rethreshold)."
+  },
+  "inputs": {
+    "crispr": {
+      "path": "/workspace/tracks/se_llps/experiments/exp_topology_community_crispr_eg/data/input/EPCrisprBenchmark_ensemble_data_GRCh38.tsv.gz",
+      "sha256": "d0806eb8a3cfe71066a9a1c88da2f730ccf5d86364bd52ca9bc6ba628744e417",
+      "n_pairs_usable": 10330
+    },
+    "hic_loops": {
+      "accession": "ENCFF693XIL",
+      "n_intrachrom_loops": 13621
+    },
+    "ccre_activity": {
+      "accession": "ENCFF210CAN",
+      "proxy": "binary overlap with pELS or dELS"
+    },
+    "se": {
+      "path": "/workspace/tracks/se_llps/data/input/k562_super_enhancers_grch38.json",
+      "source": "dbSUPER K562 lifted GRCh38"
+    }
+  },
+  "features": {
+    "baseline": [
+      "log10_distance",
+      "activity_els",
+      "se_membership"
+    ],
+    "topology_model": [
+      "enh_loop_degree",
+      "prom_loop_degree",
+      "shared_community_size",
+      "min_loop_span_rank_inv"
+    ],
+    "topology_raw_also_computed": [
+      "enh_loop_degree",
+      "prom_loop_degree",
+      "shared_community_size",
+      "min_loop_span_rank"
+    ]
+  },
+  "split": {
+    "protocol": "chromosome_holdout_chr20_21_22",
+    "test_chroms": [
+      "chr20",
+      "chr21",
+      "chr22"
+    ],
+    "n_train": 10065,
+    "n_test": 265,
+    "n_pos_train": 467,
+    "n_pos_test": 20
+  },
+  "primary": {
+    "auc_baseline": 0.8806122448979592,
+    "auc_baseline_plus_topology": 0.8732653061224489,
+    "delta_auc": -0.007346938775510292,
+    "auprc_baseline": 0.685533065655084,
+    "auprc_baseline_plus_topology": 0.6816263257262154,
+    "kill_threshold": 0.02,
+    "support_threshold": 0.05,
+    "verdict": "FAIL_KILL"
+  },
+  "positive_control_distance": {
+    "auc": 0.8795918367346939,
+    "gate": ">0.55 preferred",
+    "note": "Distance-alone AUC=0.8796 (>0.55 positive-control gate PASS)."
+  },
+  "sensitivity_se_only_auc": 0.5377551020408164,
+  "leave_one_chr_cv": {
+    "baseline_mean_auc": 0.9096010234062727,
+    "full_mean_auc": 0.9099305566972195,
+    "delta_mean_auc": 0.00032953329094675965,
+    "n_folds_baseline": 22,
+    "n_folds_full": 22
+  },
+  "shuffle_label_null": {
+    "n_perm": 20,
+    "n_valid": 20,
+    "mean_delta_auc": 0.009290393930223805,
+    "std_delta_auc": 0.07526595756865899,
+    "deltas": [
+      0.10728744939271256,
+      0.032163742690058506,
+      0.00347222222222221,
+      -0.10897435897435892,
+      0.013375071143995443,
+      -0.015936254980079667,
+      0.06877510040160639,
+      -0.06156048675733711,
+      -0.06585540443808163,
+      0.09921568627450983,
+      0.008268482490272344,
+      0.060311284046692615,
+      -0.04182754182754189,
+      0.033864541832669515,
+      0.13372549019607838,
+      -0.05236198064883324,
+      0.010540184453227963,
+      0.061468412066021605,
+      0.07508680555555558,
+      -0.17523056653491437
+    ]
+  },
+  "feature_prevalence": {
+    "activity_els_frac": 0.60648596321394,
+    "se_membership_frac": 0.16573088092933205,
+    "mean_enh_loop_degree": 0.2960309777347531,
+    "mean_prom_loop_degree": 0.3150048402710552,
+    "frac_shared_community_gt0": 0.012681510164569216
+  }
+}

@@ -36,6 +36,7 @@ k100.Umap*.bw.md5
 tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/data/input/
 tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/results/*.bed
 tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/results/*.bed.gz
+tracks/se_llps/experiments/exp_topology_community_crispr_eg/data/input/
 
 # Track-specific bulky / sealed data (see tracks/*/DATA.md)
 tracks/te_alu_3d/pilot_scaffold/data/clinvar.vcf.gz

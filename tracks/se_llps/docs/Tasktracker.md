@@ -3,15 +3,17 @@
 ## Done
 
 - [x] Closed SE / LLPS / VUS / Gnocchi / R-loop / G4 directions (see `null_results/INDEX.md`)
-- [x] **C-B1** Standard-tier prereg `experiments/exp_topology_community_crispr_eg/` (Predictive topology community ΔAUC over SE for CRISPR E–G K562)
+- [x] **C-B1** Standard-tier prereg `experiments/exp_topology_community_crispr_eg/`
 - [x] C-B1 adversarial gate: `ENCODE_R2G_FEATURE_AUDIT_v1.md` → **SURVIVES_WITH_REDESIGN**
-- [x] C-B1 T0 probe + **ACCESSION_FREEZE_v1** (CRISPR ensemble SHA pinned; Hi-C `ENCFF693XIL`; cCRE v3 SCREEN + `ENCFF210CAN`) — status `PENDING_KILL_TEST`
+- [x] C-B1 T0 probe + **ACCESSION_FREEZE_v1** — `PASS_FREEZE`
+- [x] C-B1 baseline redesign (dist + ELS + SE) locked before fit
+- [x] C-B1 chromosome-holdout kill-test → **FAIL_KILL** (ΔAUC −0.0073) → **REJECT**
+- [x] Null filed: `null_results/20260720-topology-community-crispr-eg-delta-auc.md`
 
 ## Next (ordered)
 
-- [ ] C-B1: freeze community feature columns + chromosome folds → run holdout ΔAUC kill-test (REJECT if ΔAUC < 0.02)
-- [ ] If REJECT/INCONCLUSIVE: file `null_results/` with “what this does NOT mean”
-- [ ] Do **not** reopen closed SE enrichment claims; do **not** start TE AluY+AG under this folder
+- [ ] Do **not** reopen closed SE enrichment claims
+- [ ] Do **not** auto-start parked `C-B1-TE-AluY-AG` without credentials / human queue
 
 ## Blocked / out of scope
 

@@ -1,40 +1,55 @@
 # Decision — exp_topology_community_crispr_eg (C-B1)
 
 **Date:** 2026-07-20  
-**Status:** `PENDING_KILL_TEST` (T0 **PASS_FREEZE**)
+**Status:** `FAIL_KILL` → **REJECT**
 
-## Verdict (current)
+## Verdict
 
-Desk experiment **opened** under Standard tier. Prereg + T0 freeze + rE2G audit complete.
-No predictive ΔAUC results yet.
+Chromosome-holdout kill-test **failed**. CRE-community topology features do **not** add
+incremental ROC-AUC over the redesigned baseline
+(`log10_distance + activity_els + se_membership`).
+
+| Metric | Value |
+|--------|-------|
+| AUC baseline | 0.8806 |
+| AUC baseline + topology | 0.8733 |
+| **ΔAUC (primary)** | **−0.0073** |
+| Kill threshold | < 0.02 → FAIL_KILL |
+| Support threshold | ≥ 0.05 |
+| Distance-alone AUC (positive control) | 0.8796 (**PASS** > 0.55) |
+| Leave-one-chr mean ΔAUC | +0.0003 |
+| Shuffle-label null mean ΔAUC | +0.0093 (std 0.075) |
+
+**Decision rule applied:** ΔAUC < 0.02 → **FAIL_KILL** / claim **REJECT**.
+
+Artifacts: `results/kill_test_chr_holdout.json`, `results/kill_test_chr_holdout.md`.  
+Null filing: `null_results/20260720-topology-community-crispr-eg-delta-auc.md`.
+
+## Gate checklist
 
 | Gate | Status |
 |------|--------|
 | L0 Predictive classification | DONE |
 | claim / controls / notes prereg | DONE |
-| Novelty vs closed SE nulls + C-A1 | DONE (see claim.md) |
-| ENCODE-rE2G adversarial feature audit | DONE → **SURVIVES_WITH_REDESIGN** |
-| T0 ENCODE / public accession probe | **PASS_FREEZE** (`data/t0_accession_probe.json`) |
-| Accession freeze | **DONE** (`ACCESSION_FREEZE_v1.md`) |
-| Chromosome-holdout ΔAUC kill-test | **NOT STARTED** (next session) |
+| Novelty vs closed SE nulls + C-A1 | DONE |
+| ENCODE-rE2G adversarial feature audit | **SURVIVES_WITH_REDESIGN** |
+| T0 accession freeze | **PASS_FREEZE** |
+| Baseline redesign (dist+ELS+SE) locked before fit | DONE |
+| Chromosome-holdout ΔAUC kill-test | **DONE → FAIL_KILL** |
 
-## Pre-registered decision rules (unchanged until results)
+## Label (exact)
 
-- **SUPPORT** if holdout ΔAUC ≥ 0.05 (topology+SE vs SE-only)
-- **REJECT** if holdout ΔAUC < 0.02
-- **INCONCLUSIVE** if 0.02 ≤ ΔAUC < 0.05
-- **BLOCKED_DATA** if CRISPR labels, Hi-C loops, or cCRE nodes cannot be frozen in processed form
-- **KILLED_BY_FRONTIER** only if audit shows the exact community estimand is already settled
-  (audit currently: **SURVIVES_WITH_REDESIGN**, not killed)
+Positive class = EngreitzLab ensemble column **`Regulated == TRUE`**
+(`EPCrisprBenchmark_ensemble_data_GRCh38.tsv.gz`, SHA-256 `d0806eb8…e417`).
+Not a post-hoc `|EffectSize|≥0.1` rethreshold.
 
-## What this decision does NOT authorize
+## What this decision does NOT mean
 
-- Full ML fit in the same commit as first prereg without freeze
-- Reopening SE→G4/R-loop/Gnocchi/VUS/LLPS claims
-- Starting TE AluY+AG (registry C-B1-TE) analysis
-- Holdout unblind / wet GO / C1 E/P edits
+- Does **not** claim 3D contact/loops are useless for E–G prediction (rE2G already uses them).
+- Does **not** authorize causal community → regulation language.
+- Does **not** reopen closed SE enrichment nulls or TE C-A1.
+- Does **not** license wet-lab / holdout unblind / C1 E/P edits.
 
-## Next action
+## Next
 
-After merge: implement community features on frozen accessions → chromosome-holdout kill-test
-→ update this file + optional `null_results/` if REJECT/INCONCLUSIVE.
+Desk claim closed REJECT. Do not start C-B1-TE-AluY-AG under this folder.
