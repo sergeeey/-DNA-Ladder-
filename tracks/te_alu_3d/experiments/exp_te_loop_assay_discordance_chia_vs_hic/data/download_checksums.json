@@ -1,0 +1,123 @@
+{
+  "script": "t1_download_primary_inputs",
+  "experiment": "exp_te_loop_assay_discordance_chia_vs_hic",
+  "candidate_id": "C-A1",
+  "downloaded_at_utc": "2026-07-20T06:54:51.820791+00:00",
+  "assembly": "GRCh38",
+  "files": {
+    "ENCFF511QFN": {
+      "role": "pol2_chia_pet_primary_loops",
+      "experiment": "ENCSR880DSH",
+      "assembly": "GRCh38",
+      "format": "bedpe.gz",
+      "portal_md5": "ec8482f0227730d178169776b209c10f",
+      "url": "https://www.encodeproject.org/files/ENCFF511QFN/@@download/ENCFF511QFN.bedpe.gz",
+      "filename": "ENCFF511QFN.bedpe.gz",
+      "required": true,
+      "api": {
+        "accession": "ENCFF511QFN",
+        "md5sum": "ec8482f0227730d178169776b209c10f",
+        "file_size": 11964739,
+        "assembly": "GRCh38",
+        "output_type": "loops",
+        "file_format": "bedpe",
+        "href": "https://www.encodeproject.org/files/ENCFF511QFN/@@download/ENCFF511QFN.bedpe.gz",
+        "dataset": "/experiments/ENCSR880DSH/",
+        "preferred_default": true
+      },
+      "download": {
+        "status": "downloaded",
+        "path": "data/input/ENCFF511QFN.bedpe.gz",
+        "size_bytes": 11964739,
+        "md5": "ec8482f0227730d178169776b209c10f",
+        "sha256": "145af802bd55daa585f47be071f82d19a73e2b841e1becc20221827e34fe34a1",
+        "url": "https://www.encodeproject.org/files/ENCFF511QFN/@@download/ENCFF511QFN.bedpe.gz",
+        "portal_md5_match": true
+      }
+    },
+    "ENCFF693XIL": {
+      "role": "hic_primary_loops",
+      "experiment": "ENCSR545YBD",
+      "assembly": "GRCh38",
+      "format": "bedpe.gz",
+      "portal_md5": "ae663464bdbe60998e422254ea0dac2c",
+      "url": "https://www.encodeproject.org/files/ENCFF693XIL/@@download/ENCFF693XIL.bedpe.gz",
+      "filename": "ENCFF693XIL.bedpe.gz",
+      "required": true,
+      "api": {
+        "accession": "ENCFF693XIL",
+        "md5sum": "ae663464bdbe60998e422254ea0dac2c",
+        "file_size": 900362,
+        "assembly": "GRCh38",
+        "output_type": "loops",
+        "file_format": "bedpe",
+        "href": "https://www.encodeproject.org/files/ENCFF693XIL/@@download/ENCFF693XIL.bedpe.gz",
+        "dataset": "/experiments/ENCSR545YBD/",
+        "preferred_default": true
+      },
+      "download": {
+        "status": "downloaded",
+        "path": "data/input/ENCFF693XIL.bedpe.gz",
+        "size_bytes": 900362,
+        "md5": "ae663464bdbe60998e422254ea0dac2c",
+        "sha256": "db7fd5f97064899130838b943379ac5d527bf94bb19b6a7073fcea57136e2f2a",
+        "url": "https://www.encodeproject.org/files/ENCFF693XIL/@@download/ENCFF693XIL.bedpe.gz",
+        "portal_md5_match": true
+      }
+    },
+    "ENCFF769AUF": {
+      "role": "ctcf_k562_conservative_idr_peaks",
+      "experiment": "ENCSR000AKO",
+      "assembly": "GRCh38",
+      "format": "bed.gz",
+      "portal_md5": "7d086cac19c5311a77b7e21e3d931435",
+      "url": "https://www.encodeproject.org/files/ENCFF769AUF/@@download/ENCFF769AUF.bed.gz",
+      "filename": "ENCFF769AUF.bed.gz",
+      "required": true,
+      "notes": "CTCF K562 TF ChIP-seq; conservative IDR thresholded peaks; preferred_default",
+      "api": {
+        "accession": "ENCFF769AUF",
+        "md5sum": "7d086cac19c5311a77b7e21e3d931435",
+        "file_size": 919491,
+        "assembly": "GRCh38",
+        "output_type": "conservative IDR thresholded peaks",
+        "file_format": "bed",
+        "href": "https://www.encodeproject.org/files/ENCFF769AUF/@@download/ENCFF769AUF.bed.gz",
+        "dataset": "/experiments/ENCSR000AKO/",
+        "preferred_default": true
+      },
+      "download": {
+        "status": "downloaded",
+        "path": "data/input/ENCFF769AUF.bed.gz",
+        "size_bytes": 919491,
+        "md5": "7d086cac19c5311a77b7e21e3d931435",
+        "sha256": "d269cd9b06ec5d9986d331a5623283f396977cdf2e94c83ab9a409171470f28e",
+        "url": "https://www.encodeproject.org/files/ENCFF769AUF/@@download/ENCFF769AUF.bed.gz",
+        "portal_md5_match": true
+      }
+    },
+    "rmsk_hg38": {
+      "role": "repeatmasker_hg38",
+      "assembly": "hg38/GRCh38",
+      "format": "txt.gz",
+      "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/rmsk.txt.gz",
+      "filename": "rmsk.txt.gz",
+      "required": false,
+      "notes": "UCSC RepeatMasker table dump; large \u2014 gitignored",
+      "download": {
+        "status": "downloaded",
+        "path": "data/input/rmsk.txt.gz",
+        "size_bytes": 155633856,
+        "md5": "b2e108b535550ba9e3cf83c77417380f",
+        "sha256": "db60e6aa7ac175f8f5465cd01b48b550e67e1fb0fd828608d8343481867bb276",
+        "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/rmsk.txt.gz"
+      }
+    }
+  },
+  "ctcf_freeze": {
+    "accession": "ENCFF769AUF",
+    "experiment": "ENCSR000AKO",
+    "output_type": "conservative IDR thresholded peaks",
+    "rationale": "preferred_default K562 CTCF TF ChIP-seq IDR peaks, GRCh38"
+  }
+}

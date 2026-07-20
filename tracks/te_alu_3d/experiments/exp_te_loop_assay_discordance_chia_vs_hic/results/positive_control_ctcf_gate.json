@@ -1,0 +1,112 @@
+{
+  "script": "t2_positive_control_ctcf_gate",
+  "experiment": "exp_te_loop_assay_discordance_chia_vs_hic",
+  "candidate_id": "C-A1",
+  "computed_at_utc": "2026-07-20T06:55:00.114820+00:00",
+  "assembly": "GRCh38",
+  "inputs": {
+    "hic_bedpe": "data/input/ENCFF693XIL.bedpe.gz",
+    "hic_accession": "ENCFF693XIL",
+    "ctcf_peaks": "data/input/ENCFF769AUF.bed.gz",
+    "ctcf_accession": "ENCFF769AUF",
+    "ctcf_experiment": "ENCSR000AKO"
+  },
+  "parameters": {
+    "n_shuffles": 50,
+    "seed": 42,
+    "gate_or_threshold": 2.0,
+    "chroms": "canonical chr1-22,X",
+    "null": "chromosome-preserving peak-length shuffle within observed chrom spans"
+  },
+  "counts": {
+    "n_hic_anchors_unique": 24049,
+    "n_ctcf_peaks": 51759,
+    "obs_anchors_overlapping_ctcf": 12607,
+    "obs_anchors_not_overlapping": 11442,
+    "obs_overlap_rate": 0.5242213813464177,
+    "shuffle_hit_counts": [
+      4278,
+      4228,
+      4334,
+      4239,
+      4342,
+      4330,
+      4282,
+      4376,
+      4334,
+      4224,
+      4244,
+      4328,
+      4256,
+      4200,
+      4279,
+      4160,
+      4218,
+      4358,
+      4217,
+      4221,
+      4280,
+      4232,
+      4292,
+      4281,
+      4266,
+      4173,
+      4190,
+      4289,
+      4195,
+      4190,
+      4271,
+      4223,
+      4180,
+      4326,
+      4287,
+      4290,
+      4291,
+      4249,
+      4269,
+      4235,
+      4228,
+      4225,
+      4211,
+      4202,
+      4331,
+      4183,
+      4264,
+      4244,
+      4330,
+      4252
+    ],
+    "mean_null_hit": 4258.54,
+    "null_hit_rounded": 4259,
+    "null_miss_rounded": 19790,
+    "null_overlap_rate": 0.1770776331656202
+  },
+  "statistics": {
+    "fisher_odds_ratio": 5.119248359570402,
+    "fisher_p_two_sided": 0.0,
+    "woolf_or": 5.119248359570402,
+    "woolf_or_ci95": [
+      4.910309583621306,
+      5.337077697581147
+    ],
+    "empirical_rate_ratio": 2.9604042700080306,
+    "contingency_ab_cd": [
+      12607,
+      11442,
+      4259,
+      19790
+    ]
+  },
+  "gate": {
+    "threshold_or": 2.0,
+    "verdict": "PASS",
+    "decision_status": "PENDING_PRIMARY",
+    "note": "PASS means pipeline recovers CTCF enrichment at Hi-C anchors; does NOT authorize primary TE OR claims."
+  },
+  "primary_te_or": null,
+  "explicit_non_claims": [
+    "No primary TE subfamily OR computed",
+    "Holdout untouched",
+    "No C1 E/P or wet-lab GO"
+  ]
+}

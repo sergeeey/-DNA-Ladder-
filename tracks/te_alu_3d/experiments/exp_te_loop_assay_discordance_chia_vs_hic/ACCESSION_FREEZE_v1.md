@@ -3,7 +3,7 @@
 **Date:** 2026-07-20  
 **Experiment:** `exp_te_loop_assay_discordance_chia_vs_hic`  
 **Source probe:** `data/t0_accession_probe.json`  
-**Scope:** Metadata freeze only — **no** multi-GB downloads in this step  
+**Scope:** Metadata freeze + T1 download checksums + T2 CTCF gate  
 **Assembly freeze:** **GRCh38**
 
 ---
@@ -72,10 +72,32 @@
 - Usable processed bedpe Hi-C: **yes**
 - Large `.hic` / FASTQ: **not downloaded** (forbidden this step)
 
-## Still pending (not freeze)
+## CTCF positive-control freeze (T2)
 
-- Local download + on-disk md5 verification → `data_manifest.md`
-- RMSK + mappability + CTCF peak accessions for controls
-- Any enrichment OR (must not be invented)
+| Field | Value |
+|-------|-------|
+| Experiment | `ENCSR000AKO` (CTCF TF ChIP-seq, K562) |
+| **Peaks file** | **`ENCFF769AUF`** |
+| Output type | conservative IDR thresholded peaks |
+| Assembly | GRCh38 |
+| ENCODE flag | **`preferred_default: true`** |
+| md5sum (portal = on-disk) | `7d086cac19c5311a77b7e21e3d931435` |
+| href | https://www.encodeproject.org/files/ENCFF769AUF/@@download/ENCFF769AUF.bed.gz |
 
-**Frozen IDs for claim language:** primary Pol II = `ENCFF511QFN`; primary Hi-C = `ENCFF693XIL`.
+**Alternate (not used):** `ENCFF519CXF` optimal IDR on same experiment.
+
+## RMSK (annotation; not an ENCODE accession)
+
+| Field | Value |
+|-------|-------|
+| Source | UCSC hg38 `rmsk.txt.gz` |
+| URL | https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/rmsk.txt.gz |
+| On-disk md5 | `b2e108b535550ba9e3cf83c77417380f` |
+
+## Download status (T1)
+
+- Local download + on-disk md5: **DONE** → `data_manifest.md` / `data/download_checksums.json`
+- Mappability / ATAC: still optional pending matched-null
+- Primary TE enrichment OR: **must not be invented** until controls checklist
+
+**Frozen IDs for claim language:** primary Pol II = `ENCFF511QFN`; primary Hi-C = `ENCFF693XIL`; CTCF gate = `ENCFF769AUF`.
