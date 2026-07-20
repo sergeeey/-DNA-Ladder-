@@ -1,0 +1,208 @@
+{
+  "experiment": "exp_sva_f_ccre_state_switching",
+  "candidate_id": "C-A2",
+  "probed_at_utc": "2026-07-20T12:47:15.530241+00:00",
+  "registry_v3": {
+    "ok": true,
+    "status": 200,
+    "url": "https://downloads.wenglab.org/Registry-V3/GRCh38-cCREs.bed",
+    "content_length": "63732631",
+    "content_type": "application/octet-stream",
+    "last_modified": "Fri, 07 Oct 2022 18:54:07 GMT"
+  },
+  "registry_v3_ok": true,
+  "screen_single_matrix_urls": [
+    {
+      "ok": false,
+      "status": 404,
+      "url": "https://downloads.wenglab.org/Registry-V3/GRCh38-cCREs.CTS",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "ok": false,
+      "status": 404,
+      "url": "https://downloads.wenglab.org/Registry-V3/GRCh38-cCREs.Signal",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "screen_single_matrix_available": false,
+  "note_matrix": "No single SCREEN multi-cell CTS/Signal file; using ENCODE v3 Full-classification per-biosample beds as processed substitute.",
+  "switching_panel": [
+    {
+      "biosample": "GM12878",
+      "accession": "ENCFF733BFV",
+      "head": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.encodeproject.org/files/ENCFF733BFV/@@download/ENCFF733BFV.bed.gz",
+        "content_length": "15101043",
+        "content_type": "binary/octet-stream",
+        "last_modified": "Tue, 15 Feb 2022 08:40:41 GMT"
+      },
+      "ok": true
+    },
+    {
+      "biosample": "H1",
+      "accession": "ENCFF803RKE",
+      "head": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.encodeproject.org/files/ENCFF803RKE/@@download/ENCFF803RKE.bed.gz",
+        "content_length": "15100483",
+        "content_type": "binary/octet-stream",
+        "last_modified": "Tue, 15 Feb 2022 09:50:46 GMT"
+      },
+      "ok": true
+    },
+    {
+      "biosample": "HCT116",
+      "accession": "ENCFF127CMS",
+      "head": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.encodeproject.org/files/ENCFF127CMS/@@download/ENCFF127CMS.bed.gz",
+        "content_length": "15125253",
+        "content_type": "binary/octet-stream",
+        "last_modified": "Tue, 15 Feb 2022 07:34:21 GMT"
+      },
+      "ok": true
+    },
+    {
+      "biosample": "HeLa-S3",
+      "accession": "ENCFF830EEV",
+      "head": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.encodeproject.org/files/ENCFF830EEV/@@download/ENCFF830EEV.bed.gz",
+        "content_length": "15179149",
+        "content_type": "binary/octet-stream",
+        "last_modified": "Tue, 15 Feb 2022 11:50:00 GMT"
+      },
+      "ok": true
+    },
+    {
+      "biosample": "HepG2",
+      "accession": "ENCFF287MQD",
+      "head": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.encodeproject.org/files/ENCFF287MQD/@@download/ENCFF287MQD.bed.gz",
+        "content_length": "15111943",
+        "content_type": "binary/octet-stream",
+        "last_modified": "Tue, 15 Feb 2022 07:38:52 GMT"
+      },
+      "ok": true
+    },
+    {
+      "biosample": "IMR-90",
+      "accession": "ENCFF799ZNT",
+      "head": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.encodeproject.org/files/ENCFF799ZNT/@@download/ENCFF799ZNT.bed.gz",
+        "content_length": "15212633",
+        "content_type": "binary/octet-stream",
+        "last_modified": "Tue, 15 Feb 2022 11:42:24 GMT"
+      },
+      "ok": true
+    },
+    {
+      "biosample": "K562",
+      "accession": "ENCFF210CAN",
+      "head": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.encodeproject.org/files/ENCFF210CAN/@@download/ENCFF210CAN.bed.gz",
+        "content_length": "15160841",
+        "content_type": "binary/octet-stream",
+        "last_modified": "Tue, 15 Feb 2022 10:48:10 GMT"
+      },
+      "ok": true
+    },
+    {
+      "biosample": "MCF-7",
+      "accession": "ENCFF837CPX",
+      "head": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.encodeproject.org/files/ENCFF837CPX/@@download/ENCFF837CPX.bed.gz",
+        "content_length": "15093719",
+        "content_type": "binary/octet-stream",
+        "last_modified": "Tue, 15 Feb 2022 07:38:30 GMT"
+      },
+      "ok": true
+    },
+    {
+      "biosample": "Panc1",
+      "accession": "ENCFF812GKZ",
+      "head": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.encodeproject.org/files/ENCFF812GKZ/@@download/ENCFF812GKZ.bed.gz",
+        "content_length": "15096412",
+        "content_type": "binary/octet-stream",
+        "last_modified": "Tue, 15 Feb 2022 07:36:31 GMT"
+      },
+      "ok": true
+    },
+    {
+      "biosample": "PC-3",
+      "accession": "ENCFF664YMN",
+      "head": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.encodeproject.org/files/ENCFF664YMN/@@download/ENCFF664YMN.bed.gz",
+        "content_length": "15214748",
+        "content_type": "binary/octet-stream",
+        "last_modified": "Tue, 15 Feb 2022 09:47:18 GMT"
+      },
+      "ok": true
+    }
+  ],
+  "n_switching_beds_ok": 10,
+  "baseline": {
+    "biosample": "SK-N-SH",
+    "accession": "ENCFF948UCK",
+    "head": {
+      "ok": true,
+      "status": 200,
+      "url": "https://www.encodeproject.org/files/ENCFF948UCK/@@download/ENCFF948UCK.bed.gz",
+      "content_length": "15099778",
+      "content_type": "binary/octet-stream",
+      "last_modified": "Tue, 15 Feb 2022 08:45:25 GMT"
+    },
+    "ok": true
+  },
+  "baseline_bed_ok": true,
+  "rmsk": {
+    "ok": true,
+    "status": 200,
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/rmsk.txt.gz",
+    "content_length": "155633856",
+    "content_type": "application/x-gzip",
+    "last_modified": "Wed, 19 Oct 2022 06:39:32 GMT"
+  },
+  "rmsk_ok": true,
+  "hg38_2bit": {
+    "ok": true,
+    "status": 200,
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.2bit",
+    "content_length": "835393456",
+    "content_type": null,
+    "last_modified": "Thu, 30 Apr 2015 23:16:38 GMT"
+  },
+  "hg38_2bit_ok": true,
+  "gencode": {
+    "ok": true,
+    "status": 200,
+    "url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_47/gencode.v47.basic.annotation.gtf.gz",
+    "content_length": "33706193",
+    "content_type": "application/x-gzip",
+    "last_modified": "Thu, 17 Oct 2024 13:01:00 GMT"
+  },
+  "gencode_ok": true,
+  "min_switching_beds_required": 8,
+  "N_switching": 10,
+  "not_chia_pet": true,
+  "t0_verdict": "PASS_FREEZE_CANDIDATE"
+}
