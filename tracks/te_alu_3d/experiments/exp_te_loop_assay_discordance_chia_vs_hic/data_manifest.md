@@ -1,16 +1,16 @@
 # Data manifest — exp_te_loop_assay_discordance_chia_vs_hic (C-A1)
 
-**Status:** Primary bedpe + CTCF + RMSK **downloaded**; on-disk checksums recorded.  
+**Status:** Primary bedpe + CTCF + RMSK **downloaded**; T3 primary OR computed.  
 **Probe JSON:** `data/t0_accession_probe.json`  
 **Checksum JSON:** `data/download_checksums.json`  
 **Assembly:** GRCh38  
-**Operator:** cloud agent 2026-07-20 (T0→T2)
+**Operator:** cloud agent 2026-07-20 (T0→T3)
 
 ## Rules
 
 - Real public ENCODE / UCSC files only
 - Large binaries in `data/input/` (gitignored); commit manifests + checksums only
-- Do not invent primary TE enrichment ORs before CTCF gate PASS + controls checklist
+- T3 primary AluSz OR finalized at desk (`FAIL_DESK_PRIMARY`); MAPQ/umap still pending
 
 ## Rejected placeholders
 

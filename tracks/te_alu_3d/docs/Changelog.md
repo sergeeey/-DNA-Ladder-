@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-07-20 — C-A1 T3 primary AluSz OR → FAIL_DESK_PRIMARY
+
+- Script: `scripts/t3_primary_alusz_or.py` — merged ≥1 kb anchors; primary TE overlap on fixed 1 kb midpoint windows; Fisher OR + Woolf CI + chrom block-bootstrap; matched-null n_perm=200 (chr+width; GC PENDING)
+- Primary AluSz: OR **0.908** (95% CI 0.851–0.967); n anchors Pol II **572808** / Hi-C **17183** → **FAIL_DESK_PRIMARY** (OR < 1.1)
+- Arts: `results/primary_result_OR_CI.{tsv,json,md}`, `permutation_null_summary.json`, `exploratory_secondary_TE.tsv` (AluJo≈0.99, SVA_F exploratory)
+- MAPQ: `PENDING_MAPPABILITY` (processed bedpe lack MAPQ; umap absent); `null_results/` not filed (claim REJECT needs MAPQ+replication)
+- decision/claim/controls + unit tests updated; holdout/C1/wet untouched
+
 ## 2026-07-20 — C-A1 T0→T2 download + CTCF gate PASS
 
 - Download scripts: `t1_download_primary_inputs.py` → bedpe `ENCFF511QFN` / `ENCFF693XIL`, CTCF `ENCFF769AUF`, UCSC `rmsk.txt.gz`; checksums in `data/download_checksums.json` + `data_manifest.md`

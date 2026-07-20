@@ -12,7 +12,8 @@
 
 ## Next (ordered)
 
-- [ ] T3 primary TE OR (discordant vs matched-null) after controls checklist — **no wet / no holdout / no C1 E/P**; do not promote EXPLORATORY_PARTIAL tallies
+- [ ] C-A1 MAPQ/umap sensitivity + replication cell type / biorep before claim-level REJECT; `null_results/` deferred — **no wet / no holdout / no C1 E/P**
+- [x] T3 primary AluSz OR (1 kb midpoint windows; Fisher OR **0.908**, CI 0.851–0.967) → **FAIL_DESK_PRIMARY**; matched-null n_perm=200; exploratory AluJo/SVA_F labeled; PENDING_MAPPABILITY — **no wet / no holdout / no C1 E/P**
 - [x] T0→T2 C-A1 desk: download `ENCFF511QFN` + `ENCFF693XIL` + CTCF `ENCFF769AUF` + rmsk; md5 in `data_manifest.md`; CTCF gate **PASS** (OR 5.12) → `PENDING_PRIMARY`; T1 annotation skeleton `EXPLORATORY_PARTIAL` — **no wet / no holdout / no C1 E/P / no primary TE OR**
 - [x] Build benchmark pos/neg controls → run `scorer_benchmark` gate (**PASS** v1.1)
 - [x] Fill `holdout_manifest.yaml` (non-HBB erythroid; labels sealed)

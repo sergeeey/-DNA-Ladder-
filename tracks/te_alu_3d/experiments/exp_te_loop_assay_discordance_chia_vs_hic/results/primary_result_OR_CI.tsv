@@ -1,0 +1,2 @@
+te	role	n_pol2	n_hic	pol2_te_pos	hic_te_pos	pol2_rate	hic_rate	fisher_or	fisher_p	woolf_or	woolf_ci95_lo	woolf_ci95_hi	boot_ci95_lo	boot_ci95_hi	desk_verdict	mapq_status
+AluSz	PRIMARY	572808	17183	31531	1036	0.055046	0.060292	0.907529	3.356195e-03	0.907529	0.851419	0.967337	0.865937	0.958061	FAIL_DESK_PRIMARY	PENDING_MAPPABILITY

@@ -1,0 +1,20 @@
+{
+  "script": "t3_primary_alusz_or",
+  "te": "AluSz",
+  "computed_at_utc": "2026-07-20T07:03:22.039182+00:00",
+  "n_perm": 200,
+  "seed": 42,
+  "matching": "chromosome + width quartile (pooled arms); GC PENDING (no FASTA)",
+  "width_bin_edges_bp": [
+    1000
+  ],
+  "n_strata": 23,
+  "observed_fisher_or": 0.9075292752410831,
+  "null_or_mean": 0.9852378905744809,
+  "null_or_median": 0.9819925902901232,
+  "null_or_p025": 0.9301638959588493,
+  "null_or_p975": 1.0493387216385366,
+  "emp_p_two_sided": 0.014925373134328358,
+  "frac_null_ge_obs": 0.995,
+  "frac_null_le_obs": 0.005
+}

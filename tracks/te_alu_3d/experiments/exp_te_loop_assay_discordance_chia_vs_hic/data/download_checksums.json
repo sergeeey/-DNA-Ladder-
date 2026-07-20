@@ -2,7 +2,7 @@
   "script": "t1_download_primary_inputs",
   "experiment": "exp_te_loop_assay_discordance_chia_vs_hic",
   "candidate_id": "C-A1",
-  "downloaded_at_utc": "2026-07-20T06:54:51.820791+00:00",
+  "downloaded_at_utc": "2026-07-20T06:58:50.870454+00:00",
   "assembly": "GRCh38",
   "files": {
     "ENCFF511QFN": {
@@ -27,7 +27,7 @@
       },
       "download": {
         "status": "downloaded",
-        "path": "data/input/ENCFF511QFN.bedpe.gz",
+        "path": "/workspace/tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/data/input/ENCFF511QFN.bedpe.gz",
         "size_bytes": 11964739,
         "md5": "ec8482f0227730d178169776b209c10f",
         "sha256": "145af802bd55daa585f47be071f82d19a73e2b841e1becc20221827e34fe34a1",
@@ -57,7 +57,7 @@
       },
       "download": {
         "status": "downloaded",
-        "path": "data/input/ENCFF693XIL.bedpe.gz",
+        "path": "/workspace/tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/data/input/ENCFF693XIL.bedpe.gz",
         "size_bytes": 900362,
         "md5": "ae663464bdbe60998e422254ea0dac2c",
         "sha256": "db7fd5f97064899130838b943379ac5d527bf94bb19b6a7073fcea57136e2f2a",
@@ -88,7 +88,7 @@
       },
       "download": {
         "status": "downloaded",
-        "path": "data/input/ENCFF769AUF.bed.gz",
+        "path": "/workspace/tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/data/input/ENCFF769AUF.bed.gz",
         "size_bytes": 919491,
         "md5": "7d086cac19c5311a77b7e21e3d931435",
         "sha256": "d269cd9b06ec5d9986d331a5623283f396977cdf2e94c83ab9a409171470f28e",
@@ -106,7 +106,7 @@
       "notes": "UCSC RepeatMasker table dump; large \u2014 gitignored",
       "download": {
         "status": "downloaded",
-        "path": "data/input/rmsk.txt.gz",
+        "path": "/workspace/tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/data/input/rmsk.txt.gz",
         "size_bytes": 155633856,
         "md5": "b2e108b535550ba9e3cf83c77417380f",
         "sha256": "db60e6aa7ac175f8f5465cd01b48b550e67e1fb0fd828608d8343481867bb276",

@@ -3,7 +3,7 @@ experiment: exp_te_loop_assay_discordance_chia_vs_hic
 date: 2026-07-20
 ladder_tier: Standard
 question_type: Descriptive
-status: PENDING_PRIMARY
+status: FAIL_DESK_PRIMARY
 source_report: tracks/te_alu_3d/09_outputs/prospective/DEEP_RESEARCH_REPORT_C_A1_v1.md
 candidate_id: C-A1
 candidate_final_score: 7.06
@@ -15,8 +15,10 @@ accession_freeze: ACCESSION_FREEZE_v1.md
 
 ## Status
 
-**PENDING_PRIMARY** — Standard tier. T2 CTCF gate **PASS** (Fisher OR ≈ 5.12).  
-No primary TE enrichment OR finalized. T1 annotation skeleton = `EXPLORATORY_PARTIAL` only.  
+**FAIL_DESK_PRIMARY** — Standard tier. T2 CTCF gate **PASS** (Fisher OR ≈ 5.12).  
+T3 primary AluSz Fisher OR ≈ **0.908** (Woolf 95% CI 0.851–0.967) < 1.1 at single-cell-type
+(K562) desk stage. Matched-null run (n_perm=200). MAPQ/`umap` = `PENDING_MAPPABILITY`.  
+Full claim **REJECT** still requires MAPQ≥30 + replication — `null_results/` not filed yet.  
 **Accessions:** FROZEN in `ACCESSION_FREEZE_v1.md` (downloads + on-disk md5 in `data_manifest.md`).  
 Holdout remains SEALED. Wet-lab / oligo order forbidden. C1 E/P locks and GO signature packs
 are out of scope for this experiment.
@@ -122,9 +124,11 @@ See `controls.md`:
 3. NOT authorization to unseal holdout or order oligos.
 4. NOT a license to edit C1 E/P locks or GO packs.
 5. NOT a re-opening of SE vs typical-enhancer closed tests.
-6. NOT a primary TE enrichment OR result (CTCF gate only; TE tallies EXPLORATORY_PARTIAL).
+6. NOT a multi-cell-type / MAPQ-gated REJECT (desk FAIL_DESK_PRIMARY only).
+7. NOT enrichment support for AluSz (OR < 1.1 at desk primary).
 
 ## Next step
 
-T3 primary TE OR under frozen claim after `controls.md` checklist (matched-null covariates).
-Do **not** promote `EXPLORATORY_PARTIAL` first-hit tallies to claim language.
+MAPQ/umap sensitivity + independent replication cell type / biorep before claim-level
+REJECT or upgrade. Do **not** change primary subfamily post-hoc; do **not** promote
+exploratory AluJo / SVA_F.

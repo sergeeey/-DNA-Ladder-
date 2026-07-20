@@ -1,0 +1,151 @@
+{
+  "script": "t3_primary_alusz_or",
+  "experiment": "exp_te_loop_assay_discordance_chia_vs_hic",
+  "candidate_id": "C-A1",
+  "computed_at_utc": "2026-07-20T07:03:22.039182+00:00",
+  "assembly": "GRCh38",
+  "primary_te": "AluSz",
+  "unit_definition": {
+    "description": "non-redundant merged anchors \u22651 kb; primary TE overlap scored on fixed 1 kb midpoint windows to equalize span across assays",
+    "min_anchor_bp": 1000,
+    "merge": "overlap or book-ended within assay",
+    "scoring_window_bp": 1000,
+    "scoring_window": "midpoint \u00b1 500 bp (1 kb)"
+  },
+  "inputs": {
+    "pol2_bedpe": "/workspace/tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/data/input/ENCFF511QFN.bedpe.gz",
+    "pol2_accession": "ENCFF511QFN",
+    "hic_bedpe": "/workspace/tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/data/input/ENCFF693XIL.bedpe.gz",
+    "hic_accession": "ENCFF693XIL",
+    "rmsk": "/workspace/tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/data/input/rmsk.txt.gz",
+    "te_source": "UCSC hg38 RepeatMasker rmsk.txt.gz"
+  },
+  "anchor_counts": {
+    "pol2_raw_unique": 1463166,
+    "hic_raw_unique": 24049,
+    "pol2_merged_ge1kb": 572808,
+    "hic_merged_ge1kb": 17183,
+    "pol2_scoring_windows_1kb": 572808,
+    "hic_scoring_windows_1kb": 17183
+  },
+  "mapq_mappability": {
+    "status": "PENDING_MAPPABILITY",
+    "note": "Processed ENCODE bedpe (ENCFF511QFN / ENCFF693XIL) lack per-anchor MAPQ fields usable for MAPQ\u226530 filtering; umap track not available in this worktree. Primary OR reported with PENDING_MAPPABILITY caveat; MAPQ/umap sensitivity deferred."
+  },
+  "primary_result": {
+    "a_pol2_te_pos": 31531,
+    "b_pol2_te_neg": 541277,
+    "c_hic_te_pos": 1036,
+    "d_hic_te_neg": 16147,
+    "n_pol2": 572808,
+    "n_hic": 17183,
+    "pol2_rate": 0.05504636806748509,
+    "hic_rate": 0.06029214921724961,
+    "fisher_or": 0.9075292752410831,
+    "fisher_p_two_sided": 0.0033561948742340058,
+    "woolf_or": 0.9075292752410831,
+    "woolf_ci95_lo": 0.8514191403226319,
+    "woolf_ci95_hi": 0.9673371743880596,
+    "te": "AluSz",
+    "estimand": "Fisher OR for AluSz overlap in 1 kb midpoint windows of merged anchors: Pol II ChIA-PET vs Hi-C (K562, GRCh38)",
+    "block_bootstrap": {
+      "n_boot": 500,
+      "seed": 49,
+      "method": "chromosome block bootstrap (resample chroms w/ replacement)",
+      "or_mean": 0.9107753765790741,
+      "ci95_lo": 0.8659369098154998,
+      "ci95_hi": 0.9580607708942518,
+      "n_successful": 500
+    },
+    "desk_verdict": {
+      "verdict": "FAIL_DESK_PRIMARY",
+      "mcid_support": 1.3,
+      "mcid_fail": 1.1,
+      "or": 0.9075292752410831,
+      "woolf_ci95": [
+        0.8514191403226319,
+        0.9673371743880596
+      ],
+      "note": "OR=0.9075 < falsify threshold 1.1 at desk primary stage. Full claim REJECT per claim.md still requires MAPQ\u226530 (or equivalent) + replication \u2014 not filed as null_results REJECT yet."
+    },
+    "full_span_sensitivity": {
+      "a_pol2_te_pos": 43027,
+      "b_pol2_te_neg": 529781,
+      "c_hic_te_pos": 6431,
+      "d_hic_te_neg": 10752,
+      "n_pol2": 572808,
+      "n_hic": 17183,
+      "pol2_rate": 0.07511592016871273,
+      "hic_rate": 0.3742652621777338,
+      "fisher_or": 0.135783344576699,
+      "fisher_p_two_sided": 0.0,
+      "woolf_or": 0.135783344576699,
+      "woolf_ci95_lo": 0.13145171489717775,
+      "woolf_ci95_hi": 0.14025771119727262,
+      "role": "SENSITIVITY_FULL_SPAN",
+      "note": "Full merged-interval overlap; confounded by non-overlapping width distributions across assays. Not the primary estimand."
+    }
+  },
+  "permutation_null": {
+    "n_perm": 200,
+    "seed": 42,
+    "matching": "chromosome + width quartile (pooled arms); GC PENDING (no FASTA)",
+    "width_bin_edges_bp": [
+      1000
+    ],
+    "n_strata": 23,
+    "observed_fisher_or": 0.9075292752410831,
+    "null_or_mean": 0.9852378905744809,
+    "null_or_median": 0.9819925902901232,
+    "null_or_p025": 0.9301638959588493,
+    "null_or_p975": 1.0493387216385366,
+    "emp_p_two_sided": 0.014925373134328358,
+    "frac_null_ge_obs": 0.995,
+    "frac_null_le_obs": 0.005
+  },
+  "exploratory_secondary": [
+    {
+      "a_pol2_te_pos": 180,
+      "b_pol2_te_neg": 572628,
+      "c_hic_te_pos": 5,
+      "d_hic_te_neg": 17178,
+      "n_pol2": 572808,
+      "n_hic": 17183,
+      "pol2_rate": 0.00031424142120920097,
+      "hic_rate": 0.00029098527614502704,
+      "fisher_or": 0.9845251089731586,
+      "fisher_p_two_sided": 1.0,
+      "woolf_or": 0.9845251089731586,
+      "woolf_ci95_lo": 0.4214239844739021,
+      "woolf_ci95_hi": 2.3000344686329446,
+      "te": "SVA_F",
+      "role": "EXPLORATORY_SECONDARY",
+      "note": "Exploratory only \u2014 not primary claim."
+    },
+    {
+      "a_pol2_te_pos": 24956,
+      "b_pol2_te_neg": 547852,
+      "c_hic_te_pos": 757,
+      "d_hic_te_neg": 16426,
+      "n_pol2": 572808,
+      "n_hic": 17183,
+      "pol2_rate": 0.04356782726498233,
+      "hic_rate": 0.044055170808357094,
+      "fisher_or": 0.9878304998350671,
+      "fisher_p_two_sided": 0.7472134176865546,
+      "woolf_or": 0.9878304998350671,
+      "woolf_ci95_lo": 0.9174308169688186,
+      "woolf_ci95_hi": 1.0636323506424836,
+      "te": "AluJo",
+      "role": "EXPLORATORY_SECONDARY",
+      "note": "Exploratory only \u2014 not primary claim. AluJo is negative/contrast control (expectation ~OR\u22481 under young-TE narrative)."
+    }
+  ],
+  "explicit_non_claims": [
+    "No causal TE \u2192 loop mechanism",
+    "Holdout untouched",
+    "No C1 E/P or wet-lab GO",
+    "AluJo / SVA_F are exploratory only",
+    "Primary subfamily frozen as AluSz (not changed post-hoc)"
+  ]
+}
