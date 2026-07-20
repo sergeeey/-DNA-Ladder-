@@ -2,7 +2,7 @@
 
 ## Done
 
-- [x] Deep Research Report v1.0 → **C-A1 `VALIDATE_DESK`** (`DEEP_RESEARCH_REPORT_C_A1_v1.md` + candidate registry); Standard-tier prereg `exp_te_loop_assay_discordance_chia_vs_hic/` (claim/controls/notes/decision); T0 ENCODE accession probe script + JSON
+- [x] Deep Research Report v1.0 → **C-A1 `VALIDATE_DESK`** (`DEEP_RESEARCH_REPORT_C_A1_v1.md` + candidate registry); Standard-tier prereg `exp_te_loop_assay_discordance_chia_vs_hic/` (claim/controls/notes/decision); T0 ENCODE accession probe script + JSON; **accession freeze** Pol II `ENCFF511QFN` / Hi-C `ENCFF693XIL`
 - [x] Pilot scaffold + dual estimand T/C + block permutation
 - [x] Dual-track gnomAD HBB + HUDEP-2 CTCF (KC0 PASS)
 - [x] Exploratory PWM scorer + EXPLORATORY_FROZEN
@@ -12,7 +12,7 @@
 
 ## Next (ordered)
 
-- [ ] T0 download after accession verify (Pol II ChIA-PET + Hi-C K562 processed bedpe; md5 in `data_manifest.md`) — **no wet / no holdout / no C1 E/P**
+- [ ] T0 download after accession verify — primary bedpe only: `ENCFF511QFN` + `ENCFF693XIL`; md5 in `data_manifest.md` — **no wet / no holdout / no C1 E/P / no OR invention**
 - [x] Build benchmark pos/neg controls → run `scorer_benchmark` gate (**PASS** v1.1)
 - [x] Fill `holdout_manifest.yaml` (non-HBB erythroid; labels sealed)
 - [x] Re-score HBB development set with v1.1 (diagnostics only) — T/C both NOT SUPPORTED
