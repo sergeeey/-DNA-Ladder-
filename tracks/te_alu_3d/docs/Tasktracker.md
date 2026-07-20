@@ -12,7 +12,8 @@
 
 ## Next (ordered)
 
-- [ ] C-A1 optional HCT116 second replication (same AluSz freeze) **or** stop at `INCONCLUSIVE_REPLICATION`; `null_results/` still deferred (GM12878 OR 1.25 not < 1.15) — **no wet / no holdout / no C1 E/P / no post-hoc TE switch**
+- [ ] C-A1 honest stop at `INCONCLUSIVE_REPLICATION` (or human-directed follow-up only); `null_results/` still deferred (GM12878 1.25 + HCT116 1.28 not < 1.15) — **no wet / no holdout / no C1 E/P / no post-hoc TE switch**
+- [x] C-A1 T5b HCT116: freeze `ENCFF322FOT`/`ENCFF060QTI`/`ENCFF463FGL`; AluSz OR **1.280** (CI 1.162–1.410) mid-zone; CTCF gate PASS (OR≈8.35); umap≥0.3 OR **1.281**; three-cell synthesis still not REJECT; null_results not filed — **no wet / no holdout / no C1 E/P**
 - [x] C-A1 T4/T5: Umap k100 MAPQ-proxy (MAPQ=N/A); umap≥0.3 OR **0.898** strengthens FAIL; GM12878 freeze `ENCFF913VWM`/`ENCFF781ASD` OR **1.252** → **INCONCLUSIVE_REPLICATION**; CTCF gate PASS (OR≈10.7); null_results not filed — **no wet / no holdout / no C1 E/P**
 - [x] T3 primary AluSz OR (1 kb midpoint windows; Fisher OR **0.908**, CI 0.851–0.967) → **FAIL_DESK_PRIMARY**; matched-null n_perm=200; exploratory AluJo/SVA_F labeled — **no wet / no holdout / no C1 E/P**
 - [x] T0→T2 C-A1 desk: download `ENCFF511QFN` + `ENCFF693XIL` + CTCF `ENCFF769AUF` + rmsk; md5 in `data_manifest.md`; CTCF gate **PASS** (OR 5.12) → `PENDING_PRIMARY`; T1 annotation skeleton `EXPLORATORY_PARTIAL` — **no wet / no holdout / no C1 E/P / no primary TE OR**

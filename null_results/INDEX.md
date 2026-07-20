@@ -4,6 +4,10 @@ Shared across monorepo tracks. Historical filings below belong to **`tracks/se_l
 (experiment folders: `tracks/se_llps/experiments/exp_<slug>/`). New TE/Alu nulls go here too,
 with track tag in the slug or body.
 
+**Deferred (not filed):** C-A1 `exp_te_loop_assay_discordance_chia_vs_hic` (2026-07-20) —
+K562 AluSz OR < 1.1 after umap, but GM12878 OR ≈ 1.25 and HCT116 OR ≈ 1.28 are mid-zone
+(≥ 1.15); claim falsification needs both arms → keep `INCONCLUSIVE_REPLICATION`, do not file.
+
 | ID | Date | Slug | Verdict | Why (10 words) |
 |---|---|---|---|---|
 | 20260708-heritability-vus-se-frequency | 2026-07-08 | ClinVar VUS rarer inside super-enhancers? | REJECT | Cliff's delta -0.01/-0.03, neither significant nor meaningful |

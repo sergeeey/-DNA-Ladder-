@@ -15,8 +15,9 @@ an independent processed loop file / cell type before claim-level REJECT. GM1287
 ENCODE-processed Pol II (POLR2A) ChIA-PET bedpe loops and in situ Hi-C HiCCUPS
 `merged_loops_30` on GRCh38 — matching the K562 primary product class.
 
-HCT116 also has Pol II ChIA-PET + Hi-C loop bedpe on GRCh38; not used as primary
-replication freeze (kept as alternate if GM12878 pipeline fails).
+HCT116 second replication freeze is recorded separately in
+`ACCESSION_FREEZE_replication_HCT116_v1.md` (Pol II `ENCFF322FOT`, Hi-C
+`ENCFF060QTI`, CTCF `ENCFF463FGL`) — does not replace this GM12878 freeze.
 
 ---
 
@@ -72,14 +73,12 @@ merged_loops_30, preferred_default). Alternates on same experiment (not frozen):
 
 ---
 
-## Alternate cell type (not frozen primary replication)
+## Second replication cell type
 
-| Role | Cell | Notes |
-|------|------|-------|
-| Pol II ChIA-PET | HCT116 | Multiple POLR2A bedpe (e.g. `ENCFF586MYT` / `ENCSR180DXE`) |
-| Hi-C | HCT116 | e.g. `ENCFF522WVV` preferred on `ENCSR176BRX` |
-
-Not downloaded for v1; GM12878 pair preferred.
+HCT116 freeze + results: see `ACCESSION_FREEZE_replication_HCT116_v1.md` and
+`results/replication_hct116_OR_CI.*`. Note: earlier alternate candidates
+`ENCFF586MYT` / `ENCFF522WVV` were **rejected** for primary HCT116 freeze
+(degron/auxin-treated); plain POLR2A + untreated HiCCUPS used instead.
 
 ---
 

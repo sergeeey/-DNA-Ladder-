@@ -1,0 +1,110 @@
+{
+  "script": "t5_replication_celltype",
+  "experiment": "exp_te_loop_assay_discordance_chia_vs_hic",
+  "candidate_id": "C-A1",
+  "computed_at_utc": "2026-07-20T12:09:14.340572+00:00",
+  "assembly": "GRCh38",
+  "celltype": "HCT116",
+  "status": "DONE",
+  "primary_te": "AluSz",
+  "unit_definition": {
+    "description": "Same as T3: non-redundant merged anchors \u22651 kb; AluSz on fixed 1 kb midpoint windows",
+    "min_anchor_bp": 1000,
+    "scoring_window_bp": 1000
+  },
+  "inputs": {
+    "pol2_bedpe": "/workspace/tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/data/input/ENCFF322FOT.bedpe.gz",
+    "pol2_accession": "ENCFF322FOT",
+    "pol2_experiment": "ENCSR035PVZ",
+    "hic_bedpe": "/workspace/tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/data/input/ENCFF060QTI.bedpe.gz",
+    "hic_accession": "ENCFF060QTI",
+    "hic_experiment": "ENCSR123UVP",
+    "ctcf_accession": "ENCFF463FGL",
+    "ctcf_experiment": "ENCSR240PRQ",
+    "rmsk": "/workspace/tracks/te_alu_3d/experiments/exp_te_loop_assay_discordance_chia_vs_hic/data/input/rmsk.txt.gz",
+    "te_source": "UCSC hg38 RepeatMasker rmsk.txt.gz",
+    "freeze": "ACCESSION_FREEZE_replication_HCT116_v1.md"
+  },
+  "anchor_counts": {
+    "pol2_raw_unique": 223948,
+    "hic_raw_unique": 9160,
+    "pol2_merged_ge1kb": 118680,
+    "hic_merged_ge1kb": 7721,
+    "pol2_scoring_windows_1kb": 118680,
+    "hic_scoring_windows_1kb": 7721
+  },
+  "ctcf_gate": {
+    "celltype": "HCT116",
+    "hic_accession": "ENCFF060QTI",
+    "ctcf_accession": "ENCFF463FGL",
+    "n_anchors": 9160,
+    "obs_ctcf_hits": 6337,
+    "obs_rate": 0.6918122270742358,
+    "null_rate_mean": 0.2118056768558952,
+    "n_shuffles": 50,
+    "fisher_or": 8.351871533897576,
+    "fisher_p_two_sided": 0.0,
+    "woolf_or": 8.351871533897576,
+    "woolf_ci95_lo": 7.811243340709701,
+    "woolf_ci95_hi": 8.929917437752117,
+    "rate_ratio": 3.2662591359386437,
+    "gate_threshold": 2.0,
+    "verdict": "PASS"
+  },
+  "primary_result": {
+    "a_pol2_te_pos": 8873,
+    "b_pol2_te_neg": 109807,
+    "c_hic_te_pos": 458,
+    "d_hic_te_neg": 7263,
+    "n_pol2": 118680,
+    "n_hic": 7721,
+    "pol2_rate": 0.07476407145264577,
+    "hic_rate": 0.05931874109571299,
+    "fisher_or": 1.280175615148459,
+    "fisher_p_two_sided": 2.635728405846044e-07,
+    "woolf_or": 1.280175615148459,
+    "woolf_ci95_lo": 1.162032302067404,
+    "woolf_ci95_hi": 1.4103305069101886,
+    "te": "AluSz",
+    "estimand": "Fisher OR for AluSz overlap in 1 kb midpoint windows: Pol II ChIA-PET vs Hi-C (HCT116, GRCh38)",
+    "block_bootstrap": {
+      "n_boot": 500,
+      "seed": 49,
+      "method": "chromosome block bootstrap (resample chroms w/ replacement)",
+      "or_mean": 1.2859390840600486,
+      "ci95_lo": 1.1781592924588753,
+      "ci95_hi": 1.3930226404521004,
+      "n_successful": 500
+    },
+    "replication_verdict": {
+      "verdict": "INCONCLUSIVE_REPLICATION",
+      "or": 1.280175615148459,
+      "mcid_support": 1.3,
+      "replication_fail_lt": 1.15,
+      "note": "OR=1.2802 between 1.15 and 1.3; replication inconclusive for falsification rule."
+    }
+  },
+  "permutation_null": {
+    "n_perm": 200,
+    "seed": 42,
+    "matching": "chromosome + width quartile (pooled arms); GC PENDING (no FASTA)",
+    "width_bin_edges_bp": [
+      1000
+    ],
+    "n_strata": 23,
+    "observed_fisher_or": 1.280175615148459,
+    "null_or_mean": 1.0051371063457548,
+    "null_or_median": 1.0032261903311628,
+    "null_or_p025": 0.9221644159643843,
+    "null_or_p975": 1.1144843292105229,
+    "emp_p_two_sided": 0.004975124378109453,
+    "frac_null_ge_obs": 0.0,
+    "frac_null_le_obs": 1.0
+  },
+  "supports_enrichment": true,
+  "explicit_non_claims": [
+    "Replication descriptive only \u2014 not causal",
+    "Primary TE remains AluSz (no post-hoc switch)",
+    "Holdout / C1 / wet untouched"
+  ]
+}
