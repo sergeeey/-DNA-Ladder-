@@ -2,7 +2,8 @@
 # Source: DEEP_RESEARCH_REPORT_C_A1_v1.md
 # Decision: C-A1 desk CLOSED as INCONCLUSIVE_CLOSED (2026-07-20)
 # Note: post-C-A1 standing order started C-B1 as topology/CRISPR (se_llps); TE AluY+AG parked
-# 2026-07-20: C-K1 desk filled with PLAC vs Hi-C Alu → BLOCKED_DATA; next_fruit C-A2
+# 2026-07-20: C-K1 desk filled with PLAC vs Hi-C Alu → BLOCKED_DATA
+# 2026-07-20: TRUE C-A2 = SVA_F dELS switching (NOT ChIA-PET) → REJECT FAIL_KILL
 
 schema_version: 1
 date: "2026-07-20"
@@ -10,7 +11,7 @@ report: DEEP_RESEARCH_REPORT_C_A1_v1.md
 inspection_commit: c048650
 decision: INCONCLUSIVE_CLOSED
 recommended_id: C-A1
-next_fruit_recommend: C-A2
+next_fruit_recommend: C-H1
 scoring_formula: "0.15*N + 0.15*F + 0.25*I + 0.20*K + 0.15*D + 0.10*T"
 
 candidates:
@@ -66,7 +67,9 @@ candidates:
   - id: C-H1
     title: "Micro-C vs Hi-C TE recovery differential (needs Micro-C processed loops)"
     final_score: 7.12
-    recommended: false
+    recommended: true
+    status: QUEUED
+    note: Recommended next fruit after C-A2 SVA_F dELS switching REJECT; Standard-tier prereg when started.
   - id: C-I1
     title: "AluJo negative-control calibration of loop-call false-positive rate"
     final_score: 6.30
@@ -86,22 +89,30 @@ candidates:
     note: >
       Standing order 2026-07-20 filled C-K1 desk with PLAC vs Hi-C AluSz estimand.
       T0 ENCODE+4DN probe found no processed PLAC loop bedpe for GM12878/K562.
-      Deep Research original CTCF ChIA-PET fallback parked as C-K1-CTCF-chia-fallback / C-A2.
+      Deep Research original CTCF ChIA-PET fallback parked as C-K1-CTCF-chia-fallback (not C-A2).
   - id: C-K1-CTCF-chia-fallback
     title: "CTCF ChIA-PET K562 TE-subfamily discordance vs Hi-C (original Deep Research C-K1)"
     final_score: 6.93
-    recommended: true
-    status: PARKED_AS_C-A2
-    desk_slot: C-A2
-    note: Recommended next fruit after C-K1 PLAC BLOCKED_DATA.
+    recommended: false
+    status: PARKED
+    note: >
+      Previously mis-queued as C-A2. Remains PARKED after true C-A2 (SVA_F dELS switching)
+      REJECT. Not auto-started.
   - id: C-A2
-    title: "CTCF ChIA-PET vs Hi-C AluSz discordance (queued; was Deep Research C-K1)"
-    final_score: 6.93
-    recommended: true
-    status: QUEUED
-    alias: C-K1-CTCF-chia-fallback
-    note: Do not auto-start without human queue; Standard-tier prereg when started.
+    title: "SVA_F-derived dELS active↔inactive switching rate vs matched non-TE dELS (SCREEN/ENCODE panel)"
+    final_score: null
+    recommended: false
+    status: REJECT_CLOSED
+    desk_verdict: FAIL_KILL
+    alias: C-A2-sva-f-dels-switching
+    path: tracks/te_alu_3d/experiments/exp_sva_f_ccre_state_switching/
+    null_results: null_results/20260720-sva-f-dels-state-switching.md
+    note: >
+      TRUE C-A2 (not ChIA-PET). Primary OR 0.489; odd+even OR<1.1 → FAIL_KILL / REJECT.
+      Matching locked before outcomes. Next fruit C-H1 (else C-L1).
   - id: C-L1
     title: "Cross-cell-line transfer: K562 discordant-TE pattern vs GM12878"
     final_score: 6.04
     recommended: false
+    status: QUEUED_FALLBACK
+    note: Fallback next fruit if C-H1 Micro-C processed loops unavailable.

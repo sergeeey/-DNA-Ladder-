@@ -1,0 +1,60 @@
+{
+  "phase": "B_MATCH_LOCK",
+  "seed": 20260720,
+  "k": 5,
+  "n_registry_dels": 788426,
+  "n_sva_f": 68,
+  "n_non_te_pool": 391547,
+  "n_matched_full_k": 68,
+  "n_undermatched": 0,
+  "n_unmatched": 0,
+  "covariates": [
+    "chrom",
+    "length_quartile",
+    "gc_decile",
+    "tss_dist_bin",
+    "baseline_SK-N-SH_active"
+  ],
+  "baseline_biosample": {
+    "biosample": "SK-N-SH",
+    "accession": "ENCFF948UCK"
+  },
+  "switching_panel_not_used": true,
+  "matched_preview_first_5": {
+    "EH38E1339041": [
+      "EH38E2780334",
+      "EH38E2778386",
+      "EH38E2871525",
+      "EH38E2807545",
+      "EH38E2859891"
+    ],
+    "EH38E1360655": [
+      "EH38E2858424",
+      "EH38E2807722",
+      "EH38E2797955",
+      "EH38E2841022",
+      "EH38E1387076"
+    ],
+    "EH38E1491691": [
+      "EH38E1495361",
+      "EH38E1471716",
+      "EH38E2903311",
+      "EH38E1478681",
+      "EH38E2904958"
+    ],
+    "EH38E1628117": [
+      "EH38E3003478",
+      "EH38E1629657",
+      "EH38E3051074",
+      "EH38E3009658",
+      "EH38E3051396"
+    ],
+    "EH38E1805627": [
+      "EH38E1800194",
+      "EH38E3196566",
+      "EH38E3172312",
+      "EH38E1823867",
+      "EH38E1806397"
+    ]
+  }
+}

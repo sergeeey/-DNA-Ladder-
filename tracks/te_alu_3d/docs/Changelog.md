@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-07-20 — C-A2 SVA_F dELS switching → REJECT (FAIL_KILL)
+
+- True **C-A2** (NOT ChIA-PET): `experiments/exp_sva_f_ccre_state_switching/`
+- Claim: OR(switcher|SVA_F dELS) ≥ 1.4 vs matched non-TE; kill OR&lt;1.1 on ≥2 panels
+- Match-before-outcomes: chrom/length/GC/TSS + held-out SK-N-SH baseline; k=5; seed 20260720
+- Data: SCREEN Registry-V3 + 10 ENCODE v3 Full-class beds (single CTS matrix 404 → panel OK)
+- Primary Fisher OR **0.489** (CI 0.243–0.985); odd 0.655 / even 0.411 — both kill
+- null_results REJECT filed; registry C-A2 → `REJECT_CLOSED`; next fruit **C-H1** (else C-L1)
+- ChIA-PET alias remains PARKED as `C-K1-CTCF-chia-fallback`; holdout/C1/wet untouched
+
 ## 2026-07-20 — C-K1 PLAC vs Hi-C Alu anchors → BLOCKED_DATA
 
 - Standard-tier prereg: `experiments/exp_plac_vs_hic_alu_anchors/` (claim/controls/notes)
@@ -8,9 +18,9 @@
 - T0 probe ENCODE+4DN (`scripts/t0_probe_plac_vs_hic.py` → `data/t0_accession_probe.json`):
   ENCODE PLAC-seq assay **404**; K562/GM12878 4DN PLAC = pairs/hic/mcool only; near-miss
   H3K4me3 ChIA-PET `ENCSR000FDF` hg19 TSV + multi-assay union bedpe **rejected**
-- Decision **`BLOCKED_DATA`** (OR not computed); next fruit **C-A2** (CTCF ChIA-PET vs Hi-C
-  AluSz; original Deep Research C-K1 estimand)
-- Registry C-K1 → `BLOCKED_DATA`; C-A2 queued; holdout/C1/wet untouched
+- Decision **`BLOCKED_DATA`** (OR not computed); next fruit was queued as C-A2 (later filled
+  as true SVA_F dELS switching, not ChIA-PET)
+- Registry C-K1 → `BLOCKED_DATA`; holdout/C1/wet untouched
 
 ## 2026-07-20 — Next fruit C-B1 started (topology/CRISPR under se_llps; TE AluY+AG still parked)
 

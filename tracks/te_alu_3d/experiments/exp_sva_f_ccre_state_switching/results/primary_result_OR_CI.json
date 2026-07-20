@@ -1,0 +1,46 @@
+{
+  "candidate_id": "C-A2",
+  "experiment": "exp_sva_f_ccre_state_switching",
+  "not_chia_pet": true,
+  "N_switching": 10,
+  "panel_order": [
+    "GM12878",
+    "H1",
+    "HCT116",
+    "HeLa-S3",
+    "HepG2",
+    "IMR-90",
+    "K562",
+    "MCF-7",
+    "Panc1",
+    "PC-3"
+  ],
+  "baseline_held_out": {
+    "biosample": "SK-N-SH",
+    "accession": "ENCFF948UCK"
+  },
+  "k": 5,
+  "seed": 20260720,
+  "table": {
+    "a_sva_switch": 10,
+    "b_sva_nonswitch": 58,
+    "c_ctrl_switch": 91,
+    "d_ctrl_nonswitch": 249
+  },
+  "n_undermatched_indices": 0,
+  "OR": 0.48942132548689926,
+  "CI95": [
+    0.24322763381209825,
+    0.9848109365171931
+  ],
+  "p_fisher": 0.04446912479740947,
+  "switcher_rate_sva": 0.14705882352941177,
+  "switcher_rate_ctrl": 0.2676470588235294,
+  "MCID": 1.4,
+  "kill_rule": "OR<1.1 in \u22652 independent panels",
+  "panel_split_kill_hits": 2,
+  "verdict": "REJECT",
+  "decision_gate": "FAIL_KILL",
+  "matching_lock_path": "results/matching_lock.json",
+  "elapsed_sec": 70.2
+}

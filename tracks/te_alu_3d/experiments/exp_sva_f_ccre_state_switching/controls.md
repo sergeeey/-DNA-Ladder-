@@ -84,8 +84,8 @@ Kill if OR < 1.1 on **both** odd and even (i.e. ≥2 independent panels).
 | claim.md L0 Descriptive | DONE |
 | Switcher definition frozen | DONE |
 | Matching covariates frozen (incl. held-out baseline) | DONE |
-| ACCESSION_FREEZE panel (≥8 Full-class beds) | PENDING T0 |
-| Match before outcomes | PENDING T2 |
-| Primary Fisher OR | PENDING T3 |
-| Odd/even kill panels | PENDING T3 |
-| null_results if REJECT/INCONCLUSIVE | PENDING |
+| ACCESSION_FREEZE panel (≥8 Full-class beds) | DONE (10 + baseline) |
+| Match before outcomes | DONE (`results/matching_lock.json`) |
+| Primary Fisher OR | DONE — OR 0.489 |
+| Odd/even kill panels | DONE — 2/2 OR&lt;1.1 → FAIL_KILL |
+| null_results if REJECT/INCONCLUSIVE | DONE — REJECT filed |

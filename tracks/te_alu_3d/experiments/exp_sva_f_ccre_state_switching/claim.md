@@ -3,21 +3,23 @@ experiment: exp_sva_f_ccre_state_switching
 date: 2026-07-20
 ladder_tier: Standard
 question_type: Descriptive
-status: PREREGISTERED
+status: REJECT
 candidate_id: C-A2
 candidate_alias: C-A2-sva-f-dels-switching
 source: Deep Research standing order — TRUE C-A2 (NOT ChIA-PET / NOT C-K1-CTCF-chia-fallback)
-decision_gate: PENDING
+decision_gate: FAIL_KILL
+null_results: null_results/20260720-sva-f-dels-state-switching.md
 ---
 
 # Claim: SVA_F-derived dELS active↔inactive switching vs matched non-TE dELS
 
 ## Status
 
-**PREREGISTERED** — Standard tier; L0 **Descriptive**.  
-Matching covariates and switcher definition are frozen **before** any switching-outcome
-analysis (no leakage). ChIA-PET AluSz discordance is **out of scope** (parked elsewhere as
-`C-K1-CTCF-chia-fallback`).
+**REJECT** (`FAIL_KILL`) — Standard tier; desk **CLOSED**.  
+Primary Fisher OR ≈ **0.489** (CI 0.243–0.985) ≪ MCID 1.4; odd+even panels both OR &lt; 1.1.
+Matching covariates and switcher definition were frozen **before** switching-outcome
+analysis (see `results/matching_lock.json`). ChIA-PET AluSz discordance remains **out of
+scope** (parked as `C-K1-CTCF-chia-fallback`).
 
 ## EstimandOps L0
 

@@ -166,41 +166,51 @@ def load_active_ids(bed_gz: Path) -> set[str]:
 
 
 def gc_for_dels(dels: dict[str, tuple[str, int, int]], twobit_path: Path) -> dict[str, float]:
-    """Compute GC% per cCRE; load each chrom packed DNA once."""
-    # group ids by chrom
+    """Compute GC% per cCRE via per-chrom prefix sums (O(L + n) per chrom)."""
     by_chrom: dict[str, list[tuple[str, int, int]]] = defaultdict(list)
     for eid, (chrom, s, e) in dels.items():
         by_chrom[chrom].append((eid, s, e))
 
     out: dict[str, float] = {}
+    # 2bit packed: 0=T, 1=C, 2=A, 3=G  → GC if base in {1,3}
     with TwoBitFile(twobit_path) as tb:
         for chrom, rows in by_chrom.items():
             tb._load_meta(chrom)
             dna_size, n_regions, _m, packed_off = tb._seq_meta[chrom]
             byte_len = (dna_size + 3) // 4
             tb.fh.seek(packed_off)
-            blob = tb.fh.read(byte_len)
-            # build N mask bitset via bytearray
-            is_n = bytearray(dna_size)
+            blob = np.frombuffer(tb.fh.read(byte_len), dtype=np.uint8)
+            # expand to base codes 0..3
+            # each byte: b7b6, b5b4, b3b2, b1b0
+            shifts = np.array([6, 4, 2, 0], dtype=np.uint8)
+            # pad blob so reshape works
+            n_bases_packed = byte_len * 4
+            codes = np.empty(n_bases_packed, dtype=np.uint8)
+            for i, sh in enumerate(shifts):
+                codes[i::4] = (blob >> sh) & np.uint8(3)
+            codes = codes[:dna_size]
+            is_gc = ((codes == 1) | (codes == 3)).astype(np.int32)
+            is_atgc = np.ones(dna_size, dtype=np.int32)
             for ns, nsz in n_regions:
-                is_n[ns : ns + nsz] = b"\x01" * nsz
-            decode_gc = (0, 1, 0, 1)  # T=0 C=1 A=0 G=1
-            decode_atgc = (1, 1, 1, 1)
+                is_gc[ns : ns + nsz] = 0
+                is_atgc[ns : ns + nsz] = 0
+            # prefix sums with sentinel 0 at index 0 → query [s,e) = ps[e]-ps[s]
+            ps_gc = np.zeros(dna_size + 1, dtype=np.int64)
+            ps_at = np.zeros(dna_size + 1, dtype=np.int64)
+            np.cumsum(is_gc, out=ps_gc[1:])
+            np.cumsum(is_atgc, out=ps_at[1:])
             for eid, s, e in rows:
-                gc = 0
-                atgc = 0
-                for pos in range(s, e):
-                    if pos >= dna_size or is_n[pos]:
-                        continue
-                    bi = pos // 4
-                    shift = 6 - 2 * (pos % 4)
-                    base = (blob[bi] >> shift) & 0x3
-                    atgc += decode_atgc[base]
-                    gc += decode_gc[base]
+                e2 = min(e, dna_size)
+                s2 = max(s, 0)
+                if e2 <= s2:
+                    out[eid] = float("nan")
+                    continue
+                gc = int(ps_gc[e2] - ps_gc[s2])
+                atgc = int(ps_at[e2] - ps_at[s2])
                 out[eid] = (gc / atgc) if atgc else float("nan")
             print(f"  GC done {chrom} n={len(rows)}", flush=True)
+            del codes, is_gc, is_atgc, ps_gc, ps_at, blob
     return out
-
 
 def contingency_from_labels(
     exposed: list[str],
