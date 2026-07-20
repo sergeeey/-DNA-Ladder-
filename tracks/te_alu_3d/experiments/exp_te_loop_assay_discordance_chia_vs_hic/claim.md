@@ -3,30 +3,32 @@ experiment: exp_te_loop_assay_discordance_chia_vs_hic
 date: 2026-07-20
 ladder_tier: Standard
 question_type: Descriptive
-status: INCONCLUSIVE_REPLICATION
+status: INCONCLUSIVE_CROSS_CELL
 source_report: tracks/te_alu_3d/09_outputs/prospective/DEEP_RESEARCH_REPORT_C_A1_v1.md
 candidate_id: C-A1
 candidate_final_score: 7.06
-decision_gate: VALIDATE_DESK
+decision_gate: INCONCLUSIVE_CLOSED
 accession_freeze: ACCESSION_FREEZE_v1.md
 replication_freeze: ACCESSION_FREEZE_replication_v1.md
 replication_freeze_hct116: ACCESSION_FREEZE_replication_HCT116_v1.md
+null_results: null_results/20260720-te-chia-vs-hic-alusz-anchor-discordance.md
 ---
 
 # Claim: TE-subfamily enrichment among Pol II ChIA-PET vs Hi-C discordant loop anchors in K562 (mappability-matched)
 
 ## Status
 
-**INCONCLUSIVE_REPLICATION** — Standard tier. Three-cell synthesis
-(`FAIL_INCONSISTENT` sign across cells; not claim REJECT).  
+**INCONCLUSIVE_CROSS_CELL** — Standard tier; desk **CLOSED**.  
+Three-cell synthesis (`FAIL_INCONSISTENT` sign; not claim REJECT).  
 T2 CTCF gate **PASS** (Fisher OR ≈ 5.12).  
 T3 primary AluSz Fisher OR ≈ **0.908** (Woolf 95% CI 0.851–0.967) < 1.1 at K562 desk.  
 T4 umap≥0.3 (MAPQ=N/A proxy) OR ≈ **0.898** — strengthens FAIL.  
 T5 GM12878 replication AluSz OR ≈ **1.252** (CI 1.172–1.339) → mid-zone.  
 T5b HCT116 replication AluSz OR ≈ **1.280** (CI 1.162–1.410) → mid-zone;
 CTCF gate PASS (OR ≈ 8.35); optional umap≥0.3 OR ≈ **1.281**.  
-**null_results/ not filed** — falsification needs umap-gated OR < 1.1 **and** replication
-OR < 1.15 or opposite; both GM12878 and HCT116 ≥ 1.15.  
+T6 caller-swap DELTA (`ENCFF657QKE`) OR ≈ **0.913** — FAIL robust; Mustache N/A.  
+**null_results filed INCONCLUSIVE:**
+`null_results/20260720-te-chia-vs-hic-alusz-anchor-discordance.md`.  
 **Accessions:** K562 `ACCESSION_FREEZE_v1.md`; GM12878
 `ACCESSION_FREEZE_replication_v1.md`; HCT116
 `ACCESSION_FREEZE_replication_HCT116_v1.md`. Holdout SEALED. Wet/oligo forbidden.
@@ -139,13 +141,11 @@ See `controls.md`:
 4. NOT a license to edit C1 E/P locks or GO packs.
 5. NOT a re-opening of SE vs typical-enhancer closed tests.
 6. NOT a finalized claim-level REJECT (GM12878 **and** HCT116 replication OR mid-zone,
-   not < 1.15).
+   not < 1.15) — filed as **INCONCLUSIVE** instead.
 7. NOT enrichment support for AluSz at MCID (K562 OR < 1.1; GM12878/HCT116 OR < 1.3).
 8. NOT a license to switch primary TE because replication cells ≠ K562 sign.
 
 ## Next step
 
-Honest stop: leave as `INCONCLUSIVE_REPLICATION` with documented cross-cell inconsistency
-(K562 depletion vs GM12878/HCT116 mid-zone elevation). Do **not** change primary
-subfamily post-hoc; do **not** promote exploratory AluJo / SVA_F; do **not** file
-`null_results/` until both falsification arms are met; do **not** wet/holdout/C1.
+Desk **CLOSED** as `INCONCLUSIVE_CROSS_CELL`. See `NEXT_FRUIT_NOTE.md` (recommend C-B1;
+do not auto-start). Do **not** wet/holdout/C1; do **not** promote exploratory TE.
