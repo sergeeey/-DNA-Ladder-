@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-07-20 — C-A1 VALIDATE_DESK (loop-assay discordance prereg)
+
+- Persist Deep Research Report v1.0 recommending C-A1: `09_outputs/prospective/DEEP_RESEARCH_REPORT_C_A1_v1.md`
+- Candidate registry C-A1…C-L1: `09_outputs/prospective/candidate_registry_deep_research_v1.yaml`
+- Standard-tier desk experiment: `experiments/exp_te_loop_assay_discordance_chia_vs_hic/` (claim/controls/notes/decision PENDING_T0)
+- T0 ENCODE metadata probe (no large downloads): `scripts/t0_probe_encode_accessions.py` → `data/t0_accession_probe.json`
+- Explicit: not wet-lab; holdout SEALED; no C1 E/P or GO edits; no oligo order; no SE/HBB claim overlap
+
 ## 2026-07-20 — Historical brief v1.1 (publication-ready auditability)
 
 - `PROJECT_HISTORICAL_BRIEF_v1.md` → report_version 1.1: YAML snapshot header + commit pin, claim-status table, status glossary, careful C1 framing (desk retain ≠ wet/biology proof)
