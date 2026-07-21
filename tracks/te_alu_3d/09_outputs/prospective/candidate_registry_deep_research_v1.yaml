@@ -55,6 +55,10 @@ candidates:
     title: "SVA vs Alu differential occupancy of Hi-C loop anchors (K562), length-matched"
     final_score: 6.93
     recommended: false
+    status: PARKED
+    note: >
+      Unscored Deep Research card. Explicitly NOT a standing-order primary after
+      2026-07-21 wave close (PAUSE_NONE). Do not auto-start; human queue only.
   - id: C-D1
     title: "TE divergence/age bin vs cross-assay loop-call reproducibility"
     final_score: 6.55

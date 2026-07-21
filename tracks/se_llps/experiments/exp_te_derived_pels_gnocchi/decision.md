@@ -48,6 +48,19 @@ Artifact: `results/sensitivity_result.json`.
 4. Germline metric only — not cell-type selection; not causal TE → constraint.
 5. Does **not** claim wet-lab, pathogenicity, Micro-C recovery, or SE heritability reopen.
 
+## What this means / does not mean
+
+**Means (desk, germline constraint only):**
+- Matched TE-derived pELS windows show a mean Gnocchi Z shift |\Δ|≈0.21 vs non-TE pELS (primary SUPPORT threshold cleared).
+- The shift is robust to alternate matching seeds, GC binning, blacklist, and chromosome holdouts.
+- Class-split: SINE- and LTR-derived pELS carry the signal; LINE-derived pELS do not.
+
+**Does NOT mean:**
+- TE insertion *causes* constraint (associative / descriptive desk result only).
+- Uniform TE-class biology — LINE-only fails the kill gate.
+- Pathogenicity, clinical actionability, or cell-type enhancer selection.
+- Micro-C / Hi-C loop recovery, SE heritability reopen, wet-lab GO, holdout unblind, or C1 E/P.
+
 ## Artifacts
 
 - `results/matching_lock.json`, `results/primary_result.json`
@@ -57,4 +70,4 @@ Artifact: `results/sensitivity_result.json`.
 
 ## Next fruit
 
-**C-F1** Mustache vs HiCCUPS TE-anchor concordance (standing order). Holdout / C1 / wet untouched.
+**PAUSE_NONE** — Deep Research primary fruits exhausted (2026-07-21). Holdout / C1 / wet untouched.

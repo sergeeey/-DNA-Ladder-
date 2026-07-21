@@ -1,5 +1,11 @@
 # Changelog — se_llps
 
+## 2026-07-21 — C-H1 clarity addendum (means / does not mean)
+
+- `exp_te_derived_pels_gnocchi/decision.md`: short **What this means / does not mean**
+  block for SUPPORT_WITH_CAVEATS; Next fruit → **PAUSE_NONE**
+- No recompute; primary |\Δ|=0.211 and LINE-only caveats unchanged
+
 ## 2026-07-21 — C-H1 robustness → SUPPORT_WITH_CAVEATS
 
 - Sensitivity battery: `scripts/run_c_h1_sensitivity.py` → `results/sensitivity_result.json`

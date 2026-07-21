@@ -33,6 +33,15 @@ C1 E/P / wet:                  FORBIDDEN / untouched
 - C-B1-TE-AluY-AG (PARKED — credentials)
 - C-K1-CTCF-chia-fallback / AluJo NC (PARKED / control)
 
+## Human / wet blockers only (not desk fruits)
+
+| Item | Status |
+|------|--------|
+| **GO B0 wet signature** | `READY_FOR_SIGNATURE` / still **NO-GO** until human fills signature (`GO_B0_READY_PACK_v1.md`) — **do not forge** |
+| Holdout | **SEALED** |
+| C1 E/P | forbidden / untouched |
+| C-C1 / AluY+AG / CTCF-chia fallback | PARKED — human queue only |
+
 ## Human resume
 
 Resume only on explicit human queue. Do **not** invent remaps after primary-fruit exhaustion.

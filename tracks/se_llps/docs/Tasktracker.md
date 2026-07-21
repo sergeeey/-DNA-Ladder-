@@ -11,6 +11,7 @@
 - [x] Null filed: `null_results/20260720-topology-community-crispr-eg-delta-auc.md`
 - [x] **C-H1** TE-derived pELS vs matched non-TE Gnocchi → **SUPPORT** (|\Delta|=0.211)
 - [x] **C-H1 robustness** → **SUPPORT_WITH_CAVEATS** (LINE-only |\Delta|=0.025 kill; core/LOCO ≥0.15)
+- [x] **C-H1 clarity addendum** (means / does not mean) on `decision.md` (2026-07-21)
 
 ## Next (ordered)
 
@@ -18,6 +19,7 @@
 - [ ] Do **not** auto-start parked `C-B1-TE-AluY-AG` without credentials / human queue
 - [x] TE queue **PAUSE/NONE** after C-J1 REJECT — all primary fruits scored
       (`PAUSE_PIN_PRIMARY_FRUITS_2026-07-21.md`; `next_fruit_recommend: PAUSE_NONE`)
+
 
 ## Blocked / out of scope
 

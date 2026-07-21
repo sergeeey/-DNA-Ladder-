@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-21 — PAUSE_NONE confirm + C-C1 explicit PARK + C-H1 clarity
+
+- Registry: C-C1 status **PARKED** (not auto-primary); `next_fruit_recommend: PAUSE_NONE` confirmed
+- Pause pin: human/wet blockers table (B0 signature NO-GO; holdout SEALED)
+- C-H1 decision addendum (means/does-not-mean) on se_llps track — no fruit recompute
+
 ## 2026-07-21 — Final primary-fruits PAUSE pin
 
 - Wrote `09_outputs/prospective/PAUSE_PIN_PRIMARY_FRUITS_2026-07-21.md`
