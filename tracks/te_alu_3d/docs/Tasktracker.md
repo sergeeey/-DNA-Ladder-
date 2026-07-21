@@ -24,7 +24,11 @@
 - [x] **C-F1 desk CLOSED** as `BLOCKED_DATA` (2026-07-21): Mustache vs HiCCUPS TE concordance T0 — no Mustache K562 GRCh38 bedpe — **no wet / no holdout / no C1 E/P**
 - [x] **C-G1 desk CLOSED** as `BLOCKED_DATA` (2026-07-21): RAD21 vs CTCF ChIA TE odds T0 — RAD21 no GRCh38 loop bedpe; CTCF ENCFF118PBQ ok — **no wet / no holdout / no C1 E/P**
 - [x] **C-H1 robustness** → `SUPPORT_WITH_CAVEATS` (2026-07-21): LINE-only |Δ|=0.025; core/LOCO ≥0.15
-- [ ] **Next fruit: C-D1** T0 (TE age vs loop reproducibility) — or human pause
+- [x] **C-D1 desk CLOSED** as `REJECT` / `FAIL_KILL` (2026-07-21): TE milliDiv tertile vs
+  Pol II↔Hi-C repro Δ **−0.0037** (Alu −0.0043); null_results REJECT — **no wet / no holdout / no C1 E/P**
+- [x] **C-E1 T0** `T0_PASS_FREEZE` / `PENDING_FETCH` (2026-07-21): claim frozen; genome-wide
+  non-HBB rare-SNV panel absent on disk — primary δ deferred — **no wet / no holdout / no C1 E/P**
+- [ ] **Next: C-E1 fetch** (non-HBB rare SNV + umap) then primary — or human pause
 - [x] **C-K1 desk CLOSED** as `BLOCKED_DATA` (2026-07-20): H3K4me3 PLAC vs Hi-C AluSz prereg + T0 ENCODE/4DN probe — no processed PLAC loop bedpe (GM12878/K562); OR not run — **no wet / no holdout / no C1 E/P**
 - [x] **C-A1 desk CLOSED** as `INCONCLUSIVE_CROSS_CELL` (2026-07-20): caller-swap DELTA OR≈0.913 FAIL-robust; figures; null_results **INCONCLUSIVE** filed; recommend C-B1 next (do not auto-start) — **no wet / no holdout / no C1 E/P / no post-hoc TE switch**
 - [x] C-A1 T5b HCT116: freeze `ENCFF322FOT`/`ENCFF060QTI`/`ENCFF463FGL`; AluSz OR **1.280** (CI 1.162–1.410) mid-zone; CTCF gate PASS (OR≈8.35); umap≥0.3 OR **1.281**; three-cell synthesis still not REJECT; null_results not filed — **no wet / no holdout / no C1 E/P**

@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-07-21 — C-D1 TE age vs loop reproducibility REJECT
+
+- **C-D1** (`exp_te_age_loop_reproducibility/`): milliDiv tertile vs Pol II↔Hi-C
+  repro; primary Δ **−0.0037**; Alu-only **−0.0043** → **REJECT** / FAIL_KILL
+- null_results `20260721-te-age-vs-loop-reproducibility.md`; registry → REJECT_CLOSED
+- **C-E1** T0 (`exp_te_vs_nonte_rare_snv_pwm/`): claim freeze; **PENDING_FETCH**
+  (no genome-wide non-HBB rare-SNV panel on disk; holdout SEALED)
+- Wave doc amended; `next_fruit_recommend: C-E1`; holdout/C1/wet untouched
+
 ## 2026-07-21 — C-H1 robustness + C-F1/C-G1 BLOCKED_DATA
 
 - **C-H1** sensitivity (`exp_te_derived_pels_gnocchi`): core/LOCO |\Δ|≥0.20; LINE-only
