@@ -1,0 +1,35 @@
+{
+  "candidate_id": "C-E1",
+  "ts_utc": "2026-07-21T06:39:13.448025+00:00",
+  "scorer": {
+    "path": "/workspace/tracks/te_alu_3d/pilot_scaffold/ctcf_pwm_scorer.py",
+    "exists": true,
+    "size": 6673
+  },
+  "hbb_gnomad_dev_only": {
+    "path": "/workspace/tracks/te_alu_3d/pilot_scaffold/data/gnomad_hbb_window.tsv",
+    "exists": true,
+    "size": 2841600
+  },
+  "holdout_manifest": {
+    "path": "/workspace/tracks/te_alu_3d/07_methods/holdout_manifest.yaml",
+    "exists": true,
+    "size": 2431
+  },
+  "holdout_status": "SEALED",
+  "stage1_te_panel": {
+    "path": "/workspace/tracks/te_alu_3d/09_outputs/prospective/stage1_desk_screen_v1.tsv",
+    "exists": true,
+    "size": 5724
+  },
+  "umap_local_hits": [],
+  "genomewide_non_hbb_rare_snv_panel_on_disk": false,
+  "verdict": "T0_PASS_FREEZE",
+  "blockers": [
+    "No genome-wide non-HBB gnomAD rare-SNV TE\u222anon-TE panel on disk",
+    "Umap k100 bigWig not in this experiment data/input",
+    "Holdout remains SEALED \u2014 cannot use HO windows for enrichment",
+    "HBB gnomAD present but excluded from primary (development set)"
+  ],
+  "next": "Fetch non-HBB rare SNV panel + umap; then match-before-PWM primary"
+}

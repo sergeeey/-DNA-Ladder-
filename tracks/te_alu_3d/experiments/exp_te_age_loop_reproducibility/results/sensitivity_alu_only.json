@@ -1,0 +1,92 @@
+{
+  "label": "sensitivity_Alu_only",
+  "alu_only": true,
+  "ts_utc": "2026-07-21T06:37:11.082097+00:00",
+  "n_pol2_windows": 572808,
+  "n_hic_windows": 17183,
+  "n_union_windows": 589985,
+  "n_te_hit": 248940,
+  "n_non_te": 341045,
+  "non_te_repro_rate": 0.025885147121347624,
+  "tertile_cuts_milliDiv": {
+    "q33": 96.0,
+    "q66": 125.0
+  },
+  "young": {
+    "n": 84423,
+    "n_shared": 2769,
+    "n_exclusive": 81654,
+    "repro_rate": 0.03279911872357059,
+    "milliDiv_min": 0,
+    "milliDiv_max": 96,
+    "milliDiv_mean": 75.52730890870971
+  },
+  "mid": {
+    "n": 82038,
+    "n_shared": 2495,
+    "n_exclusive": 79543,
+    "repro_rate": 0.03041273556156903,
+    "milliDiv_min": 97,
+    "milliDiv_max": 125,
+    "milliDiv_mean": 110.01623637826373
+  },
+  "old": {
+    "n": 82479,
+    "n_shared": 2353,
+    "n_exclusive": 80126,
+    "repro_rate": 0.028528473914572194,
+    "milliDiv_min": 126,
+    "milliDiv_max": 338,
+    "milliDiv_mean": 156.57757732271244
+  },
+  "delta_repro_old_minus_young": -0.004270644808998393,
+  "bootstrap_95ci_delta": {
+    "lo": -0.006789606487787994,
+    "hi": -0.001894863009959842,
+    "n_boot": 500,
+    "seed": 20260721
+  },
+  "companion_OR_exclusive_young_vs_old": {
+    "OR": 0.865997790974967,
+    "CI95": [
+      0.8189930597739935,
+      0.9157002797807307
+    ],
+    "p": null,
+    "table": {
+      "young_excl": 81654,
+      "young_shared": 2769,
+      "old_excl": 80126,
+      "old_shared": 2353
+    }
+  },
+  "class_stratified_exploratory": {
+    "LINE": {
+      "status": "SKIP",
+      "n": 0
+    },
+    "LTR": {
+      "status": "SKIP",
+      "n": 0
+    },
+    "SINE": {
+      "status": "OK",
+      "n": 248940,
+      "repro_young": 0.03279911872357059,
+      "repro_old": 0.028528473914572194,
+      "delta": -0.004270644808998393,
+      "verdict": "REJECT"
+    }
+  },
+  "mcid": {
+    "SUPPORT": 0.1,
+    "KILL": 0.05
+  },
+  "verdict": "REJECT",
+  "unit": "1000bp midpoint windows; merge+pad\u22651kb",
+  "accessions": {
+    "pol2": "ENCFF511QFN",
+    "hic": "ENCFF693XIL",
+    "rmsk": "UCSC hg38 rmsk.txt.gz"
+  }
+}

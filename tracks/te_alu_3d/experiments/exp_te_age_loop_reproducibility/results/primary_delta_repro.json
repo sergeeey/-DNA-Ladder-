@@ -1,0 +1,100 @@
+{
+  "label": "primary_SINE_LINE_LTR",
+  "alu_only": false,
+  "ts_utc": "2026-07-21T06:36:57.723404+00:00",
+  "n_pol2_windows": 572808,
+  "n_hic_windows": 17183,
+  "n_union_windows": 589985,
+  "n_te_hit": 493522,
+  "n_non_te": 96463,
+  "non_te_repro_rate": 0.030726807169588338,
+  "tertile_cuts_milliDiv": {
+    "q33": 111.0,
+    "q66": 194.0
+  },
+  "young": {
+    "n": 166508,
+    "n_shared": 4864,
+    "n_exclusive": 161644,
+    "repro_rate": 0.029211809642779925,
+    "milliDiv_min": 0,
+    "milliDiv_max": 111,
+    "milliDiv_mean": 83.3788526677397
+  },
+  "mid": {
+    "n": 162942,
+    "n_shared": 4438,
+    "n_exclusive": 158504,
+    "repro_rate": 0.027236685446355144,
+    "milliDiv_min": 112,
+    "milliDiv_max": 194,
+    "milliDiv_mean": 145.60557744473493
+  },
+  "old": {
+    "n": 164072,
+    "n_shared": 4179,
+    "n_exclusive": 159893,
+    "repro_rate": 0.02547052513530645,
+    "milliDiv_min": 195,
+    "milliDiv_max": 460,
+    "milliDiv_mean": 269.61064654541906
+  },
+  "delta_repro_old_minus_young": -0.003741284507473474,
+  "bootstrap_95ci_delta": {
+    "lo": -0.00619114986769111,
+    "hi": -0.0014000159875455324,
+    "n_boot": 500,
+    "seed": 20260721
+  },
+  "companion_OR_exclusive_young_vs_old": {
+    "OR": 0.8685928396944905,
+    "CI95": [
+      0.8329402199437683,
+      0.9057715104926402
+    ],
+    "p": null,
+    "table": {
+      "young_excl": 161644,
+      "young_shared": 4864,
+      "old_excl": 159893,
+      "old_shared": 4179
+    }
+  },
+  "class_stratified_exploratory": {
+    "LINE": {
+      "status": "OK",
+      "n": 123845,
+      "repro_young": 0.01866910455660877,
+      "repro_old": 0.02448206348820829,
+      "delta": 0.005812958931599523,
+      "verdict": "REJECT"
+    },
+    "LTR": {
+      "status": "OK",
+      "n": 79075,
+      "repro_young": 0.022531702898550724,
+      "repro_old": 0.0233555402404472,
+      "delta": 0.0008238373418964773,
+      "verdict": "REJECT"
+    },
+    "SINE": {
+      "status": "OK",
+      "n": 290602,
+      "repro_young": 0.03276347464196826,
+      "repro_old": 0.028750464549696493,
+      "delta": -0.004013010092271764,
+      "verdict": "REJECT"
+    }
+  },
+  "mcid": {
+    "SUPPORT": 0.1,
+    "KILL": 0.05
+  },
+  "verdict": "REJECT",
+  "unit": "1000bp midpoint windows; merge+pad\u22651kb",
+  "accessions": {
+    "pol2": "ENCFF511QFN",
+    "hic": "ENCFF693XIL",
+    "rmsk": "UCSC hg38 rmsk.txt.gz"
+  }
+}

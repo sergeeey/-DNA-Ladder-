@@ -8,6 +8,7 @@
 # 2026-07-20: TRUE C-I1 = Micro-C vs Hi-C Alu anchors (Deep Research original C-H1) → BLOCKED_DATA
 # 2026-07-20: TRUE C-L1 = L1HS 5′UTR @ CTCF∩Hi-C anchors → REJECT FAIL_KILL; autonomous wave STOP
 # 2026-07-21: C-H1 robustness → SUPPORT_WITH_CAVEATS (LINE-only kill); TRUE C-F1 Mustache↔HiCCUPS → BLOCKED_DATA
+# 2026-07-21: C-D1 TE age vs loop reproducibility → REJECT FAIL_KILL (Δ −0.004)
 
 schema_version: 1
 date: "2026-07-21"
@@ -15,7 +16,7 @@ report: DEEP_RESEARCH_REPORT_C_A1_v1.md
 inspection_commit: c048650
 decision: INCONCLUSIVE_CLOSED
 recommended_id: C-A1
-next_fruit_recommend: C-D1
+next_fruit_recommend: C-E1
 scoring_formula: "0.15*N + 0.15*F + 0.25*I + 0.20*K + 0.15*D + 0.10*T"
 
 candidates:
@@ -55,13 +56,27 @@ candidates:
   - id: C-D1
     title: "TE divergence/age bin vs cross-assay loop-call reproducibility"
     final_score: 6.55
-    recommended: true
-    status: NOT_STARTED
-    note: Recommended next fruit after C-F1/C-G1 BLOCKED_DATA (2026-07-21).
+    recommended: false
+    status: REJECT_CLOSED
+    desk_verdict: FAIL_KILL
+    alias: C-D1-te-age-loop-reproducibility
+    path: tracks/te_alu_3d/experiments/exp_te_age_loop_reproducibility/
+    null_results: null_results/20260721-te-age-vs-loop-reproducibility.md
+    note: >
+      Primary Δ_repro (old−young milliDiv tertile) −0.0037; Alu-only −0.0043;
+      both <0.05 FAIL_KILL. Pol II ENCFF511QFN vs Hi-C ENCFF693XIL K562.
   - id: C-E1
     title: "Mappability-matched TE vs non-TE rare-SNV PWM delta (genome-wide desk; non-HBB)"
     final_score: 6.35
-    recommended: false
+    recommended: true
+    status: T0_PASS_FREEZE
+    desk_verdict: PENDING_FETCH
+    alias: C-E1-te-vs-nonte-rare-snv-pwm
+    path: tracks/te_alu_3d/experiments/exp_te_vs_nonte_rare_snv_pwm/
+    note: >
+      T0 2026-07-21 after C-D1 REJECT: claim frozen; PWM scorer present; no on-disk
+      genome-wide non-HBB rare-SNV TE∪non-TE panel; holdout SEALED; HBB excluded.
+      Primary Cliff's δ deferred (PENDING_FETCH). Not BLOCKED_DATA (gnomAD fetchable).
   - id: C-F1
     title: "Mustache vs HiCCUPS TE-anchor loop concordance (ΔJaccard; K562)"
     final_score: 6.75
