@@ -31,6 +31,8 @@
 - [x] **C-J1 desk CLOSED** as `REJECT` / `FAIL_KILL` (2026-07-21): TE orientation vs
   loop-anchor asymmetry \|Δ\| **0.0064** (Alu 0.0196); null_results REJECT —
   **PAUSE/NONE** — all primary fruits scored — **no wet / no holdout / no C1 E/P**
+- [x] **Final PAUSE pin** `PAUSE_PIN_PRIMARY_FRUITS_2026-07-21.md`; registry
+  `next_fruit_recommend: PAUSE_NONE` — no remaps / no new candidates
 - [x] **C-K1 desk CLOSED** as `BLOCKED_DATA` (2026-07-20): H3K4me3 PLAC vs Hi-C AluSz prereg + T0 ENCODE/4DN probe — no processed PLAC loop bedpe (GM12878/K562); OR not run — **no wet / no holdout / no C1 E/P**
 - [x] **C-A1 desk CLOSED** as `INCONCLUSIVE_CROSS_CELL` (2026-07-20): caller-swap DELTA OR≈0.913 FAIL-robust; figures; null_results **INCONCLUSIVE** filed; recommend C-B1 next (do not auto-start) — **no wet / no holdout / no C1 E/P / no post-hoc TE switch**
 - [x] C-A1 T5b HCT116: freeze `ENCFF322FOT`/`ENCFF060QTI`/`ENCFF463FGL`; AluSz OR **1.280** (CI 1.162–1.410) mid-zone; CTCF gate PASS (OR≈8.35); umap≥0.3 OR **1.281**; three-cell synthesis still not REJECT; null_results not filed — **no wet / no holdout / no C1 E/P**

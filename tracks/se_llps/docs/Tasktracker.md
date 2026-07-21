@@ -16,7 +16,8 @@
 
 - [ ] Do **not** reopen closed SE enrichment claims / SE-vs-typical Gnocchi REJECT
 - [ ] Do **not** auto-start parked `C-B1-TE-AluY-AG` without credentials / human queue
-- [ ] TE queue **PAUSE/NONE** after C-J1 REJECT — all primary fruits scored
+- [x] TE queue **PAUSE/NONE** after C-J1 REJECT — all primary fruits scored
+      (`PAUSE_PIN_PRIMARY_FRUITS_2026-07-21.md`; `next_fruit_recommend: PAUSE_NONE`)
 
 ## Blocked / out of scope
 

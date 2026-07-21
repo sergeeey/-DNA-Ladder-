@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-21 — Final primary-fruits PAUSE pin
+
+- Wrote `09_outputs/prospective/PAUSE_PIN_PRIMARY_FRUITS_2026-07-21.md`
+- Confirmed registry `next_fruit_recommend: PAUSE_NONE`; no remaps; holdout/C1/wet untouched
+
 ## 2026-07-21 — C-J1 TE orientation vs loop-anchor asymmetry REJECT + PAUSE/NONE
 
 - **C-J1** (`exp_te_orientation_loop_asymmetry/`): Hi-C `ENCFF693XIL` left/right

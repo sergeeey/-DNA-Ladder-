@@ -47,3 +47,5 @@ See `AUTONOMOUS_DESK_WAVE_2026-07-20.md` for C-A1…C-L1 closes.
 ## Recommendation
 
 Merge this wave. **`next_fruit_recommend: PAUSE_NONE`**. Do not spawn remaps.
+
+Final pin: `PAUSE_PIN_PRIMARY_FRUITS_2026-07-21.md`.
