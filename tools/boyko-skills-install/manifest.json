@@ -1,0 +1,70 @@
+{
+  "source_repo": "https://github.com/sergeeey/Claude-cod-top-2026.git",
+  "pin_commit": "1e1807809983b786b67a0a1e4f0cd24df273319d",
+  "inventory_date": "2026-07-21",
+  "release_assets": [],
+  "skills": [
+    {
+      "name": "boyko-goal-expansion-100",
+      "source": "skills/extensions/boyko-goal-expansion-100",
+      "version": "1.0.0",
+      "file_count": 14
+    },
+    {
+      "name": "boyko-knowledge-audit",
+      "source": "skills/extensions/boyko-knowledge-audit",
+      "version": "3.1.1",
+      "file_count": 6
+    },
+    {
+      "name": "boyko-method",
+      "source": "skills/extensions/boyko-method",
+      "version": "1.3.0",
+      "file_count": 2
+    },
+    {
+      "name": "boyko-specialist",
+      "source": "skills/extensions/boyko-specialist",
+      "version": "1.2.0",
+      "file_count": 2
+    },
+    {
+      "name": "boyko-triangle-audit",
+      "source": "skills/extensions/boyko-triangle-audit",
+      "version": "1.0.0",
+      "file_count": 2
+    },
+    {
+      "name": "boyko-why-ladder",
+      "source": "skills/extensions/boyko-why-ladder",
+      "version": "1.0.1",
+      "file_count": 2
+    }
+  ],
+  "agents": [
+    {
+      "display_name": "Boyko Agent",
+      "invocation_name": "boyko-agent",
+      "source": "agents/navigator.md",
+      "install_as": ["navigator.md", "boyko-agent.md"]
+    }
+  ],
+  "optional": [
+    {
+      "name": "boyko_protocol_guard.py",
+      "source": "hooks/boyko_protocol_guard.py",
+      "flag": "-IncludeHook"
+    }
+  ],
+  "destinations": {
+    "skills_primary": "C:\\Users\\sboi\\.claude\\skills\\<skill-name>\\",
+    "agents_primary": "C:\\Users\\sboi\\.claude\\agents\\",
+    "mirrors": [
+      "C:\\Users\\sboi\\.claude\\skills\\extensions\\<skill-name>\\",
+      "C:\\Users\\sboi\\.cursor\\skills\\<skill-name>\\",
+      "C:\\Users\\sboi\\.agents\\skills\\<skill-name>\\",
+      "C:\\Users\\sboi\\.cursor\\agents\\"
+    ],
+    "overwrite": "backup then copy under C:\\Users\\sboi\\.claude\\backups\\boyko-skills-<timestamp>\\"
+  }
+}
