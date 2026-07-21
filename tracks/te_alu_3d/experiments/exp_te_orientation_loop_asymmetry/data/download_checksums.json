@@ -1,0 +1,35 @@
+{
+  "experiment": "exp_te_orientation_loop_asymmetry",
+  "candidate_id": "C-J1",
+  "ts_utc": "2026-07-21T07:10:54.204365+00:00",
+  "files": {
+    "ENCFF693XIL": {
+      "role": "hic_hiccups_loops",
+      "url": "https://www.encodeproject.org/files/ENCFF693XIL/@@download/ENCFF693XIL.bedpe.gz",
+      "filename": "ENCFF693XIL.bedpe.gz",
+      "portal_md5": "ae663464bdbe60998e422254ea0dac2c",
+      "download": {
+        "status": "downloaded",
+        "path": "/workspace/tracks/te_alu_3d/experiments/exp_te_orientation_loop_asymmetry/data/input/ENCFF693XIL.bedpe.gz",
+        "size_bytes": 900362,
+        "md5": "ae663464bdbe60998e422254ea0dac2c",
+        "sha256": "db7fd5f97064899130838b943379ac5d527bf94bb19b6a7073fcea57136e2f2a",
+        "url": "https://www.encodeproject.org/files/ENCFF693XIL/@@download/ENCFF693XIL.bedpe.gz"
+      }
+    },
+    "rmsk_hg38": {
+      "role": "repeatmasker_hg38",
+      "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/rmsk.txt.gz",
+      "filename": "rmsk.txt.gz",
+      "portal_md5": null,
+      "download": {
+        "status": "downloaded",
+        "path": "/workspace/tracks/te_alu_3d/experiments/exp_te_orientation_loop_asymmetry/data/input/rmsk.txt.gz",
+        "size_bytes": 155633856,
+        "md5": "b2e108b535550ba9e3cf83c77417380f",
+        "sha256": "db60e6aa7ac175f8f5465cd01b48b550e67e1fb0fd828608d8343481867bb276",
+        "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/rmsk.txt.gz"
+      }
+    }
+  }
+}

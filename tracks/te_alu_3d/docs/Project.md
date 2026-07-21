@@ -20,7 +20,8 @@ C-F1 desk (`exp_te_loop_caller_concordance`): **CLOSED** `BLOCKED_DATA` — no M
 C-G1 desk (`exp_rad21_vs_ctcf_chia_te_odds`): **CLOSED** `BLOCKED_DATA` — no RAD21 GRCh38 loop bedpe  
 C-D1 desk (`exp_te_age_loop_reproducibility`): **CLOSED** `REJECT` — TE age Δ_repro **−0.0037** (FAIL_KILL)  
 C-E1 desk (`exp_te_vs_nonte_rare_snv_pwm`): **CLOSED** `REJECT` — Cliff's δ **0.033** FAIL_KILL  
-Wave 2026-07-21: `AUTONOMOUS_DESK_WAVE_2026-07-21.md`; **PAUSE** — remaining fruit **C-J1** only
+C-J1 desk (`exp_te_orientation_loop_asymmetry`): **CLOSED** `REJECT` — \|Δ_orient\| **0.0064** FAIL_KILL  
+Wave 2026-07-21: `AUTONOMOUS_DESK_WAVE_2026-07-21.md`; **PAUSE/NONE** — all primary fruits scored
 
 ## Operational snapshot
 

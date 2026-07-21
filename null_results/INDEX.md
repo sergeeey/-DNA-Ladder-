@@ -6,6 +6,7 @@ with track tag in the slug or body.
 
 | ID | Date | Slug | Verdict | Why (10 words) | Track |
 |---|---|---|---|---|---|
+| 20260721-te-orientation-loop-asymmetry | 2026-07-21 | TE insertion strand vs left/right Hi-C loop-anchor asymmetry? | REJECT | \|Δ\| 0.006; ~50/50 strands; FAIL_KILL | te_alu_3d |
 | 20260721-te-vs-nonte-rare-snv-pwm | 2026-07-21 | TE vs non-TE rare-SNV PWM Δ after umap match (non-HBB)? | REJECT | δ 0.033; scorer mass ≈4.09; FAIL_KILL | te_alu_3d |
 | 20260721-te-age-vs-loop-reproducibility | 2026-07-21 | TE age (milliDiv) vs Pol II↔Hi-C loop reproducibility? | REJECT | Δ −0.004; flat tertiles; FAIL_KILL | te_alu_3d |
 | 20260720-l1hs-ctcf-loop-anchor-enrichment | 2026-07-20 | L1HS 5′UTR enriched at CTCF∩Hi-C anchors vs matched CTCF? | REJECT | K562 OR 0.14; umap kill; sparse events | te_alu_3d |

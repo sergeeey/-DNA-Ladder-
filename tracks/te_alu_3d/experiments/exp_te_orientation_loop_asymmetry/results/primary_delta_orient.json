@@ -1,0 +1,38 @@
+{
+  "label": "primary",
+  "n_left_te_hit": 11008,
+  "n_right_te_hit": 11027,
+  "n_plus_left": 5477,
+  "n_plus_right": 5557,
+  "p_plus_left": 0.497547238372093,
+  "p_plus_right": 0.5039448626099574,
+  "delta_orient": -0.0063976242378643855,
+  "abs_delta_orient": 0.0063976242378643855,
+  "bootstrap_ci_95": [
+    -0.019288580479836226,
+    0.00839440746068465
+  ],
+  "fisher_or_plus_left_vs_right": {
+    "or": 0.9747360321202955,
+    "ci95": [
+      0.9245920954665866,
+      1.0275994538263422
+    ],
+    "p": null
+  },
+  "mcid_support": 0.1,
+  "mcid_kill": 0.05,
+  "verdict": "REJECT",
+  "both_te_exploratory": {
+    "n_both_te_loops": 9113,
+    "n_both_same_strand": 4514,
+    "n_both_opposite_strand": 4599,
+    "f_opposite": 0.504663667288489,
+    "abs_f_opp_minus_half": 0.004663667288488993
+  },
+  "seed": 20260721,
+  "n_loops": 13618,
+  "alu_only": false,
+  "ts_utc": "2026-07-21T07:11:10.055527+00:00",
+  "candidate_id": "C-J1"
+}

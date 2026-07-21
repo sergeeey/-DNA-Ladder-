@@ -48,6 +48,7 @@ tracks/te_alu_3d/experiments/exp_te_loop_caller_concordance/data/input/
 tracks/te_alu_3d/experiments/exp_rad21_vs_ctcf_chia_te_odds/data/input/
 tracks/te_alu_3d/experiments/exp_te_age_loop_reproducibility/data/input/
 tracks/te_alu_3d/experiments/exp_te_vs_nonte_rare_snv_pwm/data/input/
+tracks/te_alu_3d/experiments/exp_te_orientation_loop_asymmetry/data/input/
 *.2bit
 k100.Umap*.bw
 

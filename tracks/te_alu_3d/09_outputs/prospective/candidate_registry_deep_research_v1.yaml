@@ -10,6 +10,7 @@
 # 2026-07-21: C-H1 robustness → SUPPORT_WITH_CAVEATS (LINE-only kill); TRUE C-F1 Mustache↔HiCCUPS → BLOCKED_DATA
 # 2026-07-21: C-D1 TE age vs loop reproducibility → REJECT FAIL_KILL (Δ −0.004)
 # 2026-07-21: C-E1 TE vs non-TE rare-SNV PWM → REJECT FAIL_KILL (δ 0.033); PAUSE (C-J1 only)
+# 2026-07-21: C-J1 TE orientation vs loop-anchor asymmetry → REJECT FAIL_KILL (|Δ| 0.006); PAUSE/NONE
 
 schema_version: 1
 date: "2026-07-21"
@@ -17,7 +18,7 @@ report: DEEP_RESEARCH_REPORT_C_A1_v1.md
 inspection_commit: c048650
 decision: INCONCLUSIVE_CLOSED
 recommended_id: C-A1
-next_fruit_recommend: PAUSE_HUMAN
+next_fruit_recommend: PAUSE_NONE
 scoring_formula: "0.15*N + 0.15*F + 0.25*I + 0.20*K + 0.15*D + 0.10*T"
 
 candidates:
@@ -78,7 +79,7 @@ candidates:
     note: >
       Primary Cliff's δ 0.033 (n=2961 umap-q matched pairs; chr11 CTCF±250bp
       gnomAD GraphQL desk; HBB+HO excluded). |δ|<0.05 FAIL_KILL. Scorer |Δ|
-      mass ≈4.087 under ctcf_pwm_delta_v1.1. PAUSE — C-J1 only remaining fruit.
+      mass ≈4.087 under ctcf_pwm_delta_v1.1. Then C-J1 scored → PAUSE/NONE.
   - id: C-F1
     title: "Mustache vs HiCCUPS TE-anchor loop concordance (ΔJaccard; K562)"
     final_score: 6.75
@@ -149,10 +150,15 @@ candidates:
     title: "TE insertion orientation vs loop-anchor asymmetry"
     final_score: 6.20
     recommended: false
-    status: OPEN_PARKED
+    status: REJECT_CLOSED
+    desk_verdict: FAIL_KILL
+    alias: C-J1-te-orientation-loop-asymmetry
+    path: tracks/te_alu_3d/experiments/exp_te_orientation_loop_asymmetry/
+    null_results: null_results/20260721-te-orientation-loop-asymmetry.md
     note: >
-      Only remaining unscored Deep Research primary fruit after C-E1 REJECT.
-      Not auto-started (PAUSE_HUMAN 2026-07-21).
+      Primary |Δ_orient| 0.0064 (n_left=11008 / n_right=11027 TE-hit 1kb windows;
+      ENCFF693XIL); Alu-only 0.0196; both <0.05 FAIL_KILL. Last primary fruit —
+      next_fruit = PAUSE/NONE. Holdout/C1/wet untouched.
   - id: C-K1
     title: "H3K4me3 PLAC-seq AluSz-anchor enrichment vs matched Hi-C (GM12878 preferred / K562 fallback)"
     final_score: 6.93
