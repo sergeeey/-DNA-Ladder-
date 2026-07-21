@@ -19,8 +19,8 @@ C-L1 desk (`exp_l1hs_ctcf_loop_anchors`): **CLOSED** `REJECT` — L1HS 5′UTR @
 C-F1 desk (`exp_te_loop_caller_concordance`): **CLOSED** `BLOCKED_DATA` — no Mustache K562 GRCh38 bedpe  
 C-G1 desk (`exp_rad21_vs_ctcf_chia_te_odds`): **CLOSED** `BLOCKED_DATA` — no RAD21 GRCh38 loop bedpe  
 C-D1 desk (`exp_te_age_loop_reproducibility`): **CLOSED** `REJECT` — TE age Δ_repro **−0.0037** (FAIL_KILL)  
-C-E1 desk (`exp_te_vs_nonte_rare_snv_pwm`): **T0_PASS_FREEZE** / `PENDING_FETCH` — non-HBB panel absent on disk  
-Wave 2026-07-21: `AUTONOMOUS_DESK_WAVE_2026-07-21.md`; next **C-E1 fetch** or pause
+C-E1 desk (`exp_te_vs_nonte_rare_snv_pwm`): **CLOSED** `REJECT` — Cliff's δ **0.033** FAIL_KILL  
+Wave 2026-07-21: `AUTONOMOUS_DESK_WAVE_2026-07-21.md`; **PAUSE** — remaining fruit **C-J1** only
 
 ## Operational snapshot
 

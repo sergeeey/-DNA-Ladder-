@@ -1,0 +1,14 @@
+{
+  "seed": 20260721,
+  "covariates": [
+    "chrom",
+    "umap_q4"
+  ],
+  "n_te": 2961,
+  "n_non_te_pool": 52888,
+  "n_matched_pairs": 2961,
+  "n_unmatched_te": 0,
+  "umap_flank_bp": 50,
+  "locked_before_pwm": true,
+  "ts_utc": "2026-07-21T07:01:55.535836+00:00"
+}

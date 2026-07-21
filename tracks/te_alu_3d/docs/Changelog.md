@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-07-21 — C-E1 TE vs non-TE rare-SNV PWM REJECT + PAUSE
+
+- **C-E1** (`exp_te_vs_nonte_rare_snv_pwm/`): fetch gnomAD GraphQL r4 + Hoffman umap;
+  match-before-PWM; primary Cliff's δ **0.033** → **REJECT** / FAIL_KILL
+- null_results `20260721-te-vs-nonte-rare-snv-pwm.md`; registry → REJECT_CLOSED
+- Wave PAUSE: `next_fruit_recommend: PAUSE_HUMAN`; remaining open fruit **C-J1** only
+- Holdout/C1/wet untouched
+
 ## 2026-07-21 — C-D1 TE age vs loop reproducibility REJECT
 
 - **C-D1** (`exp_te_age_loop_reproducibility/`): milliDiv tertile vs Pol II↔Hi-C

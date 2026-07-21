@@ -3,20 +3,21 @@ experiment: exp_te_vs_nonte_rare_snv_pwm
 date: 2026-07-21
 ladder_tier: Standard
 question_type: Descriptive
-status: T0_PASS_FREEZE
+status: REJECT_CLOSED
 candidate_id: C-E1
 candidate_alias: C-E1-te-vs-nonte-rare-snv-pwm
 source: Deep Research registry — mappability-matched TE vs non-TE rare-SNV PWM Δ (non-HBB)
-decision_gate: PENDING_FETCH
+decision_gate: FAIL_KILL
 ---
 
 # Claim: Mappability-matched TE vs non-TE rare-SNV PWM Δ (non-HBB desk)
 
 ## Status
 
-**T0_PASS_FREEZE** — Standard tier; claim frozen **before** PWM Δ.  
-Primary analysis **not run** this wave: genome-wide non-HBB rare-SNV panel not on disk
-(see `decision.md` / `data/t0_accession_probe.json`).
+**REJECT** (`FAIL_KILL`) — 2026-07-21. Primary Cliff's δ = **0.033** (< 0.05 kill)
+after umap-quartile matching on chr11 CTCF-neighborhood rare SNVs (non-HBB, non-HO).
+
+T0 freeze held: claim written before PWM Δ; fetch + match-before-PWM then primary.
 
 ## EstimandOps L0
 
@@ -55,16 +56,22 @@ Gray 0.05 ≤ |δ| < 0.20 → **INCONCLUSIVE**.
 | SUPPORT | Cliff's δ ≥ 0.20 |
 | Kill | \|δ\| < 0.05 |
 
-## Datasets — T0
+## Desk scope note
 
-| Role | Source | T0 status |
-|------|--------|-----------|
-| Scorer | `pilot_scaffold/ctcf_pwm_scorer.py` v1.1 | PRESENT |
-| HBB gnomAD (dev only) | `data/gnomad_hbb_window.*` | PRESENT — **excluded from primary** |
-| Holdout gnomAD | HO_A/B/C | SEALED — **forbidden** |
-| Non-HBB genome-wide rare SNV panel | gnomAD fetch | **ABSENT on disk** |
-| Umap k100 | Hoffman bigWig | **ABSENT in this exp data/input** |
-| TE | UCSC rmsk Alu/SVA | fetchable |
+Project forbids bulk gnomAD. Primary desk universe = **chr11 CTCF±250 bp**
+neighborhoods (HUDEP-2 peaks), GraphQL window slices — not full-genome VCF.
+Same exclusion and matching rules as frozen claim.
+
+## Datasets — final
+
+| Role | Source | Status |
+|------|--------|--------|
+| Scorer | `pilot_scaffold/ctcf_pwm_scorer.py` v1.1 | USED |
+| Non-HBB rare SNV panel | gnomAD GraphQL r4 | FETCHED (55 849 SNVs) |
+| Umap k100 | Hoffman bigWig | FETCHED (gitignored) |
+| TE | UCSC rmsk Alu/SVA chr11 | USED |
+| Holdout | HO_A/B/C | SEALED — excluded |
+| HBB gnomAD | development | excluded from primary |
 
 ## Forbidden
 
@@ -72,3 +79,4 @@ Gray 0.05 ≤ |δ| < 0.20 → **INCONCLUSIVE**.
 - Using HBB window as primary universe
 - Wet / C1 / pathogenicity language
 - Promoting PWM to confirmatory
+- Post-hoc scorer swap after seeing δ

@@ -16,7 +16,7 @@
 
 - [ ] Do **not** reopen closed SE enrichment claims / SE-vs-typical Gnocchi REJECT
 - [ ] Do **not** auto-start parked `C-B1-TE-AluY-AG` without credentials / human queue
-- [ ] TE queue next: **C-E1 fetch** (after C-D1 REJECT + C-E1 T0 freeze)
+- [ ] TE queue **PAUSE** after C-E1 REJECT — remaining fruit **C-J1** only (not auto-started)
 
 ## Blocked / out of scope
 

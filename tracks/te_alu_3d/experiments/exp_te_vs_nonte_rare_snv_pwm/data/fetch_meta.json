@@ -1,0 +1,17 @@
+{
+  "ts_utc": "2026-07-21T06:45:49.584009+00:00",
+  "source": "gnomAD GraphQL r4",
+  "scope": "chr11 CTCF\u00b1250bp neighborhoods; exclude HBB+HO geography",
+  "max_af": 0.001,
+  "max_peaks": 250,
+  "n_peaks_sampled": 250,
+  "n_merged_windows": 250,
+  "n_rare_snv": 55849,
+  "n_te_alu_sva": 2961,
+  "n_non_te": 52888,
+  "panel_path": "data/input/rare_snv_panel_chr11_nonhbb.jsonl",
+  "umap_path": "k100.Umap.MultiTrackMappability.bw",
+  "seed": 20260721,
+  "holdout": "SEALED_excluded",
+  "hbb": "excluded"
+}

@@ -1,0 +1,20 @@
+{
+  "candidate_id": "C-E1",
+  "estimand": "Cliffs_delta_TE_minus_nonTE_on_abs_ctcf_pwm_delta_v1.1",
+  "scorer": "ctcf_pwm_delta_v1.1",
+  "n_scored_pairs": 2961,
+  "mean_abs_pwm_te": 4.087462841250341,
+  "mean_abs_pwm_non": 4.087462841250341,
+  "median_abs_pwm_te": 4.087462841250341,
+  "median_abs_pwm_non": 4.08746284125034,
+  "cliffs_delta": 0.032691795092364195,
+  "cliffs_delta_boot_ci95": [
+    0.0052783306706650655,
+    0.06097307893531138
+  ],
+  "mcid_support": 0.2,
+  "mcid_kill": 0.05,
+  "verdict": "REJECT",
+  "scope": "chr11 CTCF-neighborhood rare SNVs; HBB+HO excluded; umap-q matched",
+  "ts_utc": "2026-07-21T07:02:47.229343+00:00"
+}

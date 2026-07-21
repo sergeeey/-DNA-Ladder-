@@ -31,5 +31,8 @@
     "Holdout remains SEALED \u2014 cannot use HO windows for enrichment",
     "HBB gnomAD present but excluded from primary (development set)"
   ],
-  "next": "Fetch non-HBB rare SNV panel + umap; then match-before-PWM primary"
+  "next": "Fetch non-HBB rare SNV panel + umap; then match-before-PWM primary",
+  "post_fetch_verdict": "REJECT",
+  "primary_cliffs_delta": 0.033,
+  "note": "Fetch+primary completed 2026-07-21; see results/primary_result_cliffs_delta.json"
 }
