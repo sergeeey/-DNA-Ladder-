@@ -1,0 +1,714 @@
+{
+  "experiment": "exp_te_derived_pels_gnocchi",
+  "candidate_id": "C-H1",
+  "analysis": "sensitivity_robustness",
+  "date": "2026-07-21",
+  "support_threshold_abs_delta": 0.15,
+  "kill_threshold_abs_delta": 0.05,
+  "second_gnocchi_build": {
+    "status": "UNAVAILABLE",
+    "note": "Public gnomAD-nc-constraint-v31-paper bucket returns 404 for non-QC alternate 1kb builds at probe; only QC download used (constraint_z_genome_1kb.qc.download.txt.gz)."
+  },
+  "blacklist": {
+    "path": "encode_blacklist_hg38.bed",
+    "n_pels_overlapping": 940
+  },
+  "scenarios": [
+    {
+      "scenario": "primary_recompute_seed_20260720",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 53846,
+      "n_pairs_with_gnocchi": 30962,
+      "n_pairs_dropped_no_coverage": 22884,
+      "mean_z_te": 0.8171262903564458,
+      "mean_z_non_te": 1.0281058750722092,
+      "mean_delta_te_minus_nonte": -0.21097958471576347,
+      "abs_mean_delta": 0.21097958471576347,
+      "bootstrap_ci95_mean_delta": [
+        -0.23922246288795698,
+        -0.18312569674683674
+      ],
+      "cliffs_delta": -0.06354549054738945,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "alt_match_seed_20260721",
+      "seed": 20260721,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 53846,
+      "n_pairs_with_gnocchi": 30896,
+      "n_pairs_dropped_no_coverage": 22950,
+      "mean_z_te": 0.8130272511717198,
+      "mean_z_non_te": 1.0360839927977314,
+      "mean_delta_te_minus_nonte": -0.2230567416260118,
+      "abs_mean_delta": 0.2230567416260118,
+      "bootstrap_ci95_mean_delta": [
+        -0.2513590191135288,
+        -0.19406144711704712
+      ],
+      "cliffs_delta": -0.06723438931859671,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "alt_match_no_tss",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 56006,
+      "n_matched_pairs_scored": 56006,
+      "n_pairs_with_gnocchi": 32143,
+      "n_pairs_dropped_no_coverage": 23863,
+      "mean_z_te": 0.8179339444364727,
+      "mean_z_non_te": 1.0207040932098017,
+      "mean_delta_te_minus_nonte": -0.202770148773329,
+      "abs_mean_delta": 0.202770148773329,
+      "bootstrap_ci95_mean_delta": [
+        -0.23071860345427236,
+        -0.17405771216867744
+      ],
+      "cliffs_delta": -0.0615142332352302,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "alt_match_gc_bins_q5",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 55165,
+      "n_matched_pairs_scored": 55165,
+      "n_pairs_with_gnocchi": 31619,
+      "n_pairs_dropped_no_coverage": 23546,
+      "mean_z_te": 0.8073810508540615,
+      "mean_z_non_te": 1.0352035270717048,
+      "mean_delta_te_minus_nonte": -0.2278224762176434,
+      "abs_mean_delta": 0.2278224762176434,
+      "bootstrap_ci95_mean_delta": [
+        -0.256576216628063,
+        -0.20102884338903443
+      ],
+      "cliffs_delta": -0.06881890063740936,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "exclude_encode_blacklist",
+      "seed": 20260720,
+      "n_te_exposed": 62154,
+      "n_non_te_pool": 108800,
+      "n_matched_pairs_lock": 53541,
+      "n_matched_pairs_scored": 53541,
+      "n_pairs_with_gnocchi": 30875,
+      "n_pairs_dropped_no_coverage": 22666,
+      "mean_z_te": 0.8152247032393014,
+      "mean_z_non_te": 1.0410553202037605,
+      "mean_delta_te_minus_nonte": -0.22583061696445908,
+      "abs_mean_delta": 0.22583061696445908,
+      "bootstrap_ci95_mean_delta": [
+        -0.253480894799835,
+        -0.19782773578583712
+      ],
+      "cliffs_delta": -0.06918235407890638,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "te_class_SINE",
+      "seed": 20260720,
+      "n_te_exposed": 34353,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 32722,
+      "n_matched_pairs_scored": 32722,
+      "n_pairs_with_gnocchi": 17711,
+      "n_pairs_dropped_no_coverage": 15011,
+      "mean_z_te": 0.843542714272711,
+      "mean_z_non_te": 1.094063595800188,
+      "mean_delta_te_minus_nonte": -0.250520881527477,
+      "abs_mean_delta": 0.250520881527477,
+      "bootstrap_ci95_mean_delta": [
+        -0.28827912391649674,
+        -0.21106065185723202
+      ],
+      "cliffs_delta": -0.07854307135338934,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "te_class_LINE",
+      "seed": 20260720,
+      "n_te_exposed": 19069,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 18881,
+      "n_matched_pairs_scored": 18881,
+      "n_pairs_with_gnocchi": 11427,
+      "n_pairs_dropped_no_coverage": 7454,
+      "mean_z_te": 0.9090135687064944,
+      "mean_z_non_te": 0.9336949015350902,
+      "mean_delta_te_minus_nonte": -0.024681332828595755,
+      "abs_mean_delta": 0.024681332828595755,
+      "bootstrap_ci95_mean_delta": [
+        -0.06965235669743967,
+        0.02138344735552649
+      ],
+      "cliffs_delta": -0.011063490688270172,
+      "verdict": "REJECT"
+    },
+    {
+      "scenario": "te_class_LTR",
+      "seed": 20260720,
+      "n_te_exposed": 11342,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 11230,
+      "n_matched_pairs_scored": 11230,
+      "n_pairs_with_gnocchi": 6947,
+      "n_pairs_dropped_no_coverage": 4283,
+      "mean_z_te": 0.6276747465125506,
+      "mean_z_non_te": 0.9856961994981565,
+      "mean_delta_te_minus_nonte": -0.35802145298560617,
+      "abs_mean_delta": 0.35802145298560617,
+      "bootstrap_ci95_mean_delta": [
+        -0.41849800488331473,
+        -0.2985092068009836
+      ],
+      "cliffs_delta": -0.10690386479016545,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "chrom_parity_odd",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 28653,
+      "n_pairs_with_gnocchi": 16784,
+      "n_pairs_dropped_no_coverage": 11869,
+      "mean_z_te": 0.8962140222901124,
+      "mean_z_non_te": 1.1100370136834132,
+      "mean_delta_te_minus_nonte": -0.21382299139330077,
+      "abs_mean_delta": 0.21382299139330077,
+      "bootstrap_ci95_mean_delta": [
+        -0.250386486542505,
+        -0.175466080032256
+      ],
+      "cliffs_delta": -0.06629715269706227,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "chrom_parity_even",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 25193,
+      "n_pairs_with_gnocchi": 14178,
+      "n_pairs_dropped_no_coverage": 11015,
+      "mean_z_te": 0.7235017669557785,
+      "mean_z_non_te": 0.9311153100806416,
+      "mean_delta_te_minus_nonte": -0.20761354312486305,
+      "abs_mean_delta": 0.20761354312486305,
+      "bootstrap_ci95_mean_delta": [
+        -0.25227562764263073,
+        -0.1640598664167433
+      ],
+      "cliffs_delta": -0.060954910364108716,
+      "verdict": "SUPPORT"
+    }
+  ],
+  "chromosome_loco_rows": [
+    {
+      "scenario": "loco_holdout_chr1",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 48225,
+      "n_pairs_with_gnocchi": 27552,
+      "n_pairs_dropped_no_coverage": 20673,
+      "mean_z_te": 0.7783533144813807,
+      "mean_z_non_te": 1.0016994927943503,
+      "mean_delta_te_minus_nonte": -0.22334617831296952,
+      "abs_mean_delta": 0.22334617831296952,
+      "bootstrap_ci95_mean_delta": [
+        -0.25285562539976686,
+        -0.19224350961017178
+      ],
+      "cliffs_delta": -0.06757610790821389,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr10",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 51771,
+      "n_pairs_with_gnocchi": 29787,
+      "n_pairs_dropped_no_coverage": 21984,
+      "mean_z_te": 0.8191964979670221,
+      "mean_z_non_te": 1.0262788162399628,
+      "mean_delta_te_minus_nonte": -0.20708231827294066,
+      "abs_mean_delta": 0.20708231827294066,
+      "bootstrap_ci95_mean_delta": [
+        -0.23665568625862587,
+        -0.17900587894309886
+      ],
+      "cliffs_delta": -0.06157157250662404,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr11",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 50681,
+      "n_pairs_with_gnocchi": 29074,
+      "n_pairs_dropped_no_coverage": 21607,
+      "mean_z_te": 0.8247243950095449,
+      "mean_z_non_te": 1.0303156765523396,
+      "mean_delta_te_minus_nonte": -0.2055912815427947,
+      "abs_mean_delta": 0.2055912815427947,
+      "bootstrap_ci95_mean_delta": [
+        -0.2348787935439453,
+        -0.17674927956158826
+      ],
+      "cliffs_delta": -0.06174830693567579,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr12",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 50809,
+      "n_pairs_with_gnocchi": 29098,
+      "n_pairs_dropped_no_coverage": 21711,
+      "mean_z_te": 0.8033958584160115,
+      "mean_z_non_te": 1.0219938653290195,
+      "mean_delta_te_minus_nonte": -0.21859800691300801,
+      "abs_mean_delta": 0.21859800691300801,
+      "bootstrap_ci95_mean_delta": [
+        -0.24758522084568185,
+        -0.18831536030695764
+      ],
+      "cliffs_delta": -0.06690366353588284,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr13",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 52862,
+      "n_pairs_with_gnocchi": 30304,
+      "n_pairs_dropped_no_coverage": 22558,
+      "mean_z_te": 0.8196052041975932,
+      "mean_z_non_te": 1.0307236344905786,
+      "mean_delta_te_minus_nonte": -0.21111843029298555,
+      "abs_mean_delta": 0.21111843029298555,
+      "bootstrap_ci95_mean_delta": [
+        -0.2395967318420741,
+        -0.18225889353241592
+      ],
+      "cliffs_delta": -0.0635144104506924,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr14",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 51912,
+      "n_pairs_with_gnocchi": 29880,
+      "n_pairs_dropped_no_coverage": 22032,
+      "mean_z_te": 0.8193187361128625,
+      "mean_z_non_te": 1.0268569117775856,
+      "mean_delta_te_minus_nonte": -0.20753817566472313,
+      "abs_mean_delta": 0.20753817566472313,
+      "bootstrap_ci95_mean_delta": [
+        -0.23715661192659485,
+        -0.17973166268554452
+      ],
+      "cliffs_delta": -0.06263038096159734,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr15",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 51903,
+      "n_pairs_with_gnocchi": 29809,
+      "n_pairs_dropped_no_coverage": 22094,
+      "mean_z_te": 0.8265496014656064,
+      "mean_z_non_te": 1.039698174240076,
+      "mean_delta_te_minus_nonte": -0.21314857277446955,
+      "abs_mean_delta": 0.21314857277446955,
+      "bootstrap_ci95_mean_delta": [
+        -0.2418072087047889,
+        -0.18514948351059954
+      ],
+      "cliffs_delta": -0.06399690315458617,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr16",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 51729,
+      "n_pairs_with_gnocchi": 29884,
+      "n_pairs_dropped_no_coverage": 21845,
+      "mean_z_te": 0.8377709443261588,
+      "mean_z_non_te": 1.0400829336996937,
+      "mean_delta_te_minus_nonte": -0.2023119893735349,
+      "abs_mean_delta": 0.2023119893735349,
+      "bootstrap_ci95_mean_delta": [
+        -0.2318089339101059,
+        -0.17464637664445992
+      ],
+      "cliffs_delta": -0.061475686176617805,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr17",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 50718,
+      "n_pairs_with_gnocchi": 29269,
+      "n_pairs_dropped_no_coverage": 21449,
+      "mean_z_te": 0.7932200765639341,
+      "mean_z_non_te": 1.0012277718164666,
+      "mean_delta_te_minus_nonte": -0.20800769525253243,
+      "abs_mean_delta": 0.20800769525253243,
+      "bootstrap_ci95_mean_delta": [
+        -0.23626387241629532,
+        -0.17896256924931245
+      ],
+      "cliffs_delta": -0.06174413570432513,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr18",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 52902,
+      "n_pairs_with_gnocchi": 30416,
+      "n_pairs_dropped_no_coverage": 22486,
+      "mean_z_te": 0.8179735103618231,
+      "mean_z_non_te": 1.0276280943778675,
+      "mean_delta_te_minus_nonte": -0.20965458401604434,
+      "abs_mean_delta": 0.20965458401604434,
+      "bootstrap_ci95_mean_delta": [
+        -0.23758243498119336,
+        -0.18171160866487937
+      ],
+      "cliffs_delta": -0.0631291603096712,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr19",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 51263,
+      "n_pairs_with_gnocchi": 29771,
+      "n_pairs_dropped_no_coverage": 21492,
+      "mean_z_te": 0.7976864747107033,
+      "mean_z_non_te": 1.0062764052310538,
+      "mean_delta_te_minus_nonte": -0.20858993052035044,
+      "abs_mean_delta": 0.20858993052035044,
+      "bootstrap_ci95_mean_delta": [
+        -0.2370285211519952,
+        -0.17913520156408977
+      ],
+      "cliffs_delta": -0.06292201871506842,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr2",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 49904,
+      "n_pairs_with_gnocchi": 28478,
+      "n_pairs_dropped_no_coverage": 21426,
+      "mean_z_te": 0.8294681581624426,
+      "mean_z_non_te": 1.0457115175519074,
+      "mean_delta_te_minus_nonte": -0.21624335938946487,
+      "abs_mean_delta": 0.21624335938946487,
+      "bootstrap_ci95_mean_delta": [
+        -0.24528971352518675,
+        -0.18664910817359306
+      ],
+      "cliffs_delta": -0.06573782260688565,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr20",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 52335,
+      "n_pairs_with_gnocchi": 30136,
+      "n_pairs_dropped_no_coverage": 22199,
+      "mean_z_te": 0.8082726224217311,
+      "mean_z_non_te": 1.0219587050480556,
+      "mean_delta_te_minus_nonte": -0.21368608262632452,
+      "abs_mean_delta": 0.21368608262632452,
+      "bootstrap_ci95_mean_delta": [
+        -0.2418416329235884,
+        -0.18275034535121581
+      ],
+      "cliffs_delta": -0.06427108245469837,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr21",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 53237,
+      "n_pairs_with_gnocchi": 30659,
+      "n_pairs_dropped_no_coverage": 22578,
+      "mean_z_te": 0.8163919500875138,
+      "mean_z_non_te": 1.025897773483565,
+      "mean_delta_te_minus_nonte": -0.20950582339605114,
+      "abs_mean_delta": 0.20950582339605114,
+      "bootstrap_ci95_mean_delta": [
+        -0.23646126400634276,
+        -0.18142066394736137
+      ],
+      "cliffs_delta": -0.06295284796201783,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr22",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 52516,
+      "n_pairs_with_gnocchi": 30321,
+      "n_pairs_dropped_no_coverage": 22195,
+      "mean_z_te": 0.8150381423624264,
+      "mean_z_non_te": 1.027644317010573,
+      "mean_delta_te_minus_nonte": -0.21260617464814646,
+      "abs_mean_delta": 0.21260617464814646,
+      "bootstrap_ci95_mean_delta": [
+        -0.24183126636655874,
+        -0.18292317247124035
+      ],
+      "cliffs_delta": -0.06357262843242795,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr3",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 50610,
+      "n_pairs_with_gnocchi": 28868,
+      "n_pairs_dropped_no_coverage": 21742,
+      "mean_z_te": 0.8204337153838862,
+      "mean_z_non_te": 1.0322947294088642,
+      "mean_delta_te_minus_nonte": -0.21186101402497823,
+      "abs_mean_delta": 0.21186101402497823,
+      "bootstrap_ci95_mean_delta": [
+        -0.24187049295177457,
+        -0.18185924828272082
+      ],
+      "cliffs_delta": -0.063932966496419,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr4",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 51677,
+      "n_pairs_with_gnocchi": 29642,
+      "n_pairs_dropped_no_coverage": 22035,
+      "mean_z_te": 0.8343654752713219,
+      "mean_z_non_te": 1.044257736499777,
+      "mean_delta_te_minus_nonte": -0.2098922612284551,
+      "abs_mean_delta": 0.2098922612284551,
+      "bootstrap_ci95_mean_delta": [
+        -0.23922968525609906,
+        -0.18048739943633724
+      ],
+      "cliffs_delta": -0.06287847088701137,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr5",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 51260,
+      "n_pairs_with_gnocchi": 29301,
+      "n_pairs_dropped_no_coverage": 21959,
+      "mean_z_te": 0.8268667413861485,
+      "mean_z_non_te": 1.0429669571528204,
+      "mean_delta_te_minus_nonte": -0.21610021576667174,
+      "abs_mean_delta": 0.21610021576667174,
+      "bootstrap_ci95_mean_delta": [
+        -0.2447841509561803,
+        -0.18668553117955097
+      ],
+      "cliffs_delta": -0.06560088495211469,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr6",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 50937,
+      "n_pairs_with_gnocchi": 29175,
+      "n_pairs_dropped_no_coverage": 21762,
+      "mean_z_te": 0.8024759483197048,
+      "mean_z_non_te": 1.0225887882917668,
+      "mean_delta_te_minus_nonte": -0.220112839972062,
+      "abs_mean_delta": 0.220112839972062,
+      "bootstrap_ci95_mean_delta": [
+        -0.24904988406192435,
+        -0.19159669722444703
+      ],
+      "cliffs_delta": -0.06587189998597531,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr7",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 51232,
+      "n_pairs_with_gnocchi": 29522,
+      "n_pairs_dropped_no_coverage": 21710,
+      "mean_z_te": 0.8222389702920098,
+      "mean_z_non_te": 1.024780706541956,
+      "mean_delta_te_minus_nonte": -0.20254173624994626,
+      "abs_mean_delta": 0.20254173624994626,
+      "bootstrap_ci95_mean_delta": [
+        -0.23136240684402395,
+        -0.17328090579855848
+      ],
+      "cliffs_delta": -0.060368476299248575,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr8",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 51653,
+      "n_pairs_with_gnocchi": 29587,
+      "n_pairs_dropped_no_coverage": 22066,
+      "mean_z_te": 0.8459269168365957,
+      "mean_z_non_te": 1.051135953616637,
+      "mean_delta_te_minus_nonte": -0.20520903678004143,
+      "abs_mean_delta": 0.20520903678004143,
+      "bootstrap_ci95_mean_delta": [
+        -0.233524828954489,
+        -0.17664557066994122
+      ],
+      "cliffs_delta": -0.06260597262614553,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chr9",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 51662,
+      "n_pairs_with_gnocchi": 29669,
+      "n_pairs_dropped_no_coverage": 21993,
+      "mean_z_te": 0.8148708850840151,
+      "mean_z_non_te": 1.0250508670935725,
+      "mean_delta_te_minus_nonte": -0.21017998200955737,
+      "abs_mean_delta": 0.21017998200955737,
+      "bootstrap_ci95_mean_delta": [
+        -0.23970169761288382,
+        -0.18195976227876
+      ],
+      "cliffs_delta": -0.06350679225161238,
+      "verdict": "SUPPORT"
+    },
+    {
+      "scenario": "loco_holdout_chrX",
+      "seed": 20260720,
+      "n_te_exposed": 62471,
+      "n_non_te_pool": 109423,
+      "n_matched_pairs_lock": 53846,
+      "n_matched_pairs_scored": 52814,
+      "n_pairs_with_gnocchi": 30962,
+      "n_pairs_dropped_no_coverage": 21852,
+      "mean_z_te": 0.8171262903564458,
+      "mean_z_non_te": 1.0281058750722092,
+      "mean_delta_te_minus_nonte": -0.21097958471576347,
+      "abs_mean_delta": 0.21097958471576347,
+      "bootstrap_ci95_mean_delta": [
+        -0.23922246288795698,
+        -0.18312569674683674
+      ],
+      "cliffs_delta": -0.06354549054738945,
+      "verdict": "SUPPORT"
+    }
+  ],
+  "chromosome_loco_summary": {
+    "scenario": "chromosome_loco_summary",
+    "n_chroms": 23,
+    "abs_delta_mean_across_loco": 0.211039359727992,
+    "abs_delta_min_across_loco": 0.2023119893735349,
+    "abs_delta_max_across_loco": 0.22334617831296952,
+    "n_loco_below_support_0_15": 0,
+    "n_loco_below_kill_0_05": 0,
+    "verdict_min_abs": "SUPPORT"
+  },
+  "robust_verdict": "SUPPORT_WITH_CAVEATS",
+  "robust_rule": {
+    "core_scenarios": [
+      "alt_match_gc_bins_q5",
+      "alt_match_no_tss",
+      "alt_match_seed_20260721",
+      "chrom_parity_even",
+      "chrom_parity_odd",
+      "exclude_encode_blacklist",
+      "primary_recompute_seed_20260720"
+    ],
+    "class_split_report": [
+      "te_class_LINE",
+      "te_class_LTR",
+      "te_class_SINE"
+    ],
+    "ROBUST_SUPPORT": "all core + LOCO-min + class splits |\u0394|\u22650.15; no class direction flip",
+    "SUPPORT_WITH_CAVEATS": "primary/core hold \u22650.15 but class split or LOCO gray/caveat",
+    "FRAGILE": "any core/LOCO-min |\u0394|<0.05"
+  },
+  "core_all_support": true,
+  "class_all_support": false,
+  "class_direction_flip_vs_primary": false,
+  "elapsed_sec": 428.7
+}

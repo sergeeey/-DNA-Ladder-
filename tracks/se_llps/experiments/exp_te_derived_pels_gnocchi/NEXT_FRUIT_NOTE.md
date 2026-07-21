@@ -1,5 +1,5 @@
-# NEXT_FRUIT_NOTE — after C-H1 SUPPORT
+# NEXT_FRUIT_NOTE — after C-H1 SUPPORT_WITH_CAVEATS
 
-1. **C-I1** — Micro-C vs Hi-C Alu-anchor recovery (started same session) → **BLOCKED_DATA** at T0.
-2. Next after C-I1: **C-L1** (see `tracks/te_alu_3d/experiments/exp_microc_vs_hic_alu_anchors/NEXT_FRUIT_NOTE.md`).
-3. Do **not** reopen SE-vs-typical Gnocchi REJECT; this SUPPORT is TE-pELS vs non-TE pELS only.
+1. Robustness 2026-07-21: core |\Δ|≥0.15; LINE-only kill → caveats.
+2. **C-F1** Mustache vs HiCCUPS → **BLOCKED_DATA** (no Mustache bedpe).
+3. Next: **C-G1** or **C-D1** T0 (human pick). No wet / holdout / C1.

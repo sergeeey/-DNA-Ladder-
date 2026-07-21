@@ -21,6 +21,7 @@ from c_h1_lib import (  # noqa: E402
     tss_dist_bin,
     verdict_from_abs_delta,
 )
+from run_c_h1_sensitivity import chrom_parity  # noqa: E402
 
 
 def test_is_registry_pels():
@@ -84,6 +85,32 @@ def test_verdict_gates():
     assert KILL_ABS_DELTA == 0.05
 
 
+def test_chrom_parity():
+    assert chrom_parity("chr1") == "odd"
+    assert chrom_parity("chr2") == "even"
+    assert chrom_parity("chrX") == "even"
+
+
+def test_sensitivity_json_schema_if_present():
+    path = ROOT / "results" / "sensitivity_result.json"
+    if not path.exists():
+        return
+    import json
+
+    data = json.loads(path.read_text())
+    assert data["candidate_id"] == "C-H1"
+    assert data["robust_verdict"] in {
+        "ROBUST_SUPPORT",
+        "SUPPORT_WITH_CAVEATS",
+        "FRAGILE",
+    }
+    assert data["second_gnocchi_build"]["status"] == "UNAVAILABLE"
+    by_name = {s["scenario"]: s for s in data["scenarios"]}
+    assert by_name["primary_recompute_seed_20260720"]["abs_mean_delta"] >= 0.15
+    assert by_name["te_class_LINE"]["abs_mean_delta"] < 0.05
+    assert data["chromosome_loco_summary"]["abs_delta_min_across_loco"] >= 0.15
+
+
 if __name__ == "__main__":
     test_is_registry_pels()
     test_tss_dist_bin_edges()
@@ -93,4 +120,6 @@ if __name__ == "__main__":
     test_cliffs_delta_identical()
     test_cliffs_delta_separated()
     test_verdict_gates()
+    test_chrom_parity()
+    test_sensitivity_json_schema_if_present()
     print("OK")

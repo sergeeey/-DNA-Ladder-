@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-07-21 — C-H1 robustness + C-F1/C-G1 BLOCKED_DATA
+
+- **C-H1** sensitivity (`exp_te_derived_pels_gnocchi`): core/LOCO |\Δ|≥0.20; LINE-only
+  |\Δ|=0.025 kill → desk **SUPPORT_WITH_CAVEATS** (primary 0.211 unchanged)
+- **C-F1** TRUE Mustache↔HiCCUPS TE concordance: `exp_te_loop_caller_concordance/`
+  T0 → **BLOCKED_DATA** (no Mustache K562 GRCh38 bedpe; HiCCUPS ENCFF693XIL ok)
+- **C-G1** T0 RAD21 vs CTCF ChIA TE odds: `exp_rad21_vs_ctcf_chia_te_odds/` →
+  **BLOCKED_DATA** (CTCF `ENCFF118PBQ` ok; RAD21 no GRCh38 loop bedpe)
+- Wave: `09_outputs/prospective/AUTONOMOUS_DESK_WAVE_2026-07-21.md`
+- Registry: C-F1/C-G1/C-H1 updated; `next_fruit_recommend: C-D1`
+- Holdout/C1/wet untouched
+
 ## 2026-07-20 — C-L1 L1HS@CTCF REJECT + autonomous wave STOP
 
 - True **C-L1** (NOT cross-cell): `exp_l1hs_ctcf_loop_anchors/`

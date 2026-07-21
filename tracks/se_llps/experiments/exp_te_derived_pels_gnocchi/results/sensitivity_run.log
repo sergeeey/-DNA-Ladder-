@@ -1,0 +1,60 @@
+=== Load universe ===
+pELS=171894
+TE∩pELS=62471 non-TE=109423
+GC…
+  GC done chr1 n=16868
+  GC done chr10 n=6705
+  GC done chr11 n=9872
+  GC done chr12 n=9198
+  GC done chr13 n=3354
+  GC done chr14 n=6107
+  GC done chr15 n=5828
+  GC done chr16 n=7412
+  GC done chr17 n=10539
+  GC done chr18 n=3272
+  GC done chr19 n=9798
+  GC done chr2 n=12046
+  GC done chr20 n=4905
+  GC done chr21 n=2158
+  GC done chr22 n=4642
+  GC done chr3 n=9625
+  GC done chr4 n=6597
+  GC done chr5 n=7906
+  GC done chr6 n=9096
+  GC done chr7 n=8228
+  GC done chr8 n=6989
+  GC done chr9 n=6832
+  GC done chrX n=3917
+finite GC=171894
+Gnocchi…
+blacklist∩pELS=940
+{
+  "robust_verdict": "SUPPORT_WITH_CAVEATS",
+  "core_all_support": true,
+  "class_all_support": false,
+  "class_direction_flip_vs_primary": false,
+  "chromosome_loco_summary": {
+    "scenario": "chromosome_loco_summary",
+    "n_chroms": 23,
+    "abs_delta_mean_across_loco": 0.211039359727992,
+    "abs_delta_min_across_loco": 0.2023119893735349,
+    "abs_delta_max_across_loco": 0.22334617831296952,
+    "n_loco_below_support_0_15": 0,
+    "n_loco_below_kill_0_05": 0,
+    "verdict_min_abs": "SUPPORT"
+  },
+  "elapsed_sec": 428.7
+}
+Scenarios |Δ|:
+  primary_recompute_seed_20260720: abs=0.21097958471576347 n=30962 verdict=SUPPORT
+  alt_match_seed_20260721: abs=0.2230567416260118 n=30896 verdict=SUPPORT
+  alt_match_no_tss: abs=0.202770148773329 n=32143 verdict=SUPPORT
+  alt_match_gc_bins_q5: abs=0.2278224762176434 n=31619 verdict=SUPPORT
+  exclude_encode_blacklist: abs=0.22583061696445908 n=30875 verdict=SUPPORT
+  te_class_SINE: abs=0.250520881527477 n=17711 verdict=SUPPORT
+  te_class_LINE: abs=0.024681332828595755 n=11427 verdict=REJECT
+  te_class_LTR: abs=0.35802145298560617 n=6947 verdict=SUPPORT
+  chrom_parity_odd: abs=0.21382299139330077 n=16784 verdict=SUPPORT
+  chrom_parity_even: abs=0.20761354312486305 n=14178 verdict=SUPPORT
+LOCO min|Δ|=0.2023119893735349 mean=0.211039359727992
+Saved /workspace/tracks/se_llps/experiments/exp_te_derived_pels_gnocchi/results/sensitivity_result.json

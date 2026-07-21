@@ -1,6 +1,6 @@
 # Controls — exp_te_derived_pels_gnocchi (C-H1 true)
 
-**Status:** PREREGISTERED (2026-07-20) — matching frozen **before** Gnocchi attach  
+**Status:** PREREGISTERED (2026-07-20) + sensitivity executed (2026-07-21)  
 **Parent claim:** `claim.md`
 
 ## No leakage
@@ -35,15 +35,21 @@ Undermatched TE indices (empty pool for key) are dropped and counted.
 - Region-level length-weighted mean Z (SE Gnocchi script convention).
 - Pair dropped if either side has no overlapping QC-passed Gnocchi window (report count).
 
-## Sensitivity (pre-registered; non-primary)
+## Sensitivity (executed 2026-07-21; non-primary)
 
-1. Autosomes only  
-2. Cliff's \|\δ\| ≥ 0.2 as alternate practical threshold (report only; does not override \|\Delta\| gates)  
-3. Restrict TE exposure to SINE-only (exploratory)
+1. Alternate matching: seed `20260721`; drop TSS; GC bins q5
+2. Exclude ENCODE hg38 blacklist v2 overlaps
+3. Chromosome holdout: leave-one-chrom-out |\Δ|; odd/even parity
+4. TE class split: SINE / LINE / LTR vs same non-TE pool
+5. Cliff's \|\δ\| ≥ 0.2 as alternate practical threshold (report only; does not override \|\Δ\| gates)
+6. Second Gnocchi build — UNAVAILABLE (SKIP)
+
+See `results/sensitivity_result.json` → desk label **SUPPORT_WITH_CAVEATS**.
 
 ## Checklist
 
 - [x] claim.md written before results
 - [x] matching covariates frozen
 - [x] SUPPORT / kill thresholds frozen
-- [ ] outcomes attached after match lock
+- [x] outcomes attached after match lock
+- [x] sensitivity battery filed

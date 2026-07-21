@@ -1,0 +1,243 @@
+{
+  "experiment": "exp_te_loop_caller_concordance",
+  "candidate_id": "C-F1",
+  "probed_at_utc": "2026-07-21T06:20:08.926488+00:00",
+  "hiccups_target": "ENCFF693XIL",
+  "hiccups_files": [
+    {
+      "accession": "ENCFF693XIL",
+      "output_type": "loops",
+      "file_format": "bedpe",
+      "assembly": "GRCh38",
+      "dataset": "/experiments/ENCSR545YBD/",
+      "preferred_default": true,
+      "aliases": [
+        "encode-processing-pipeline:0253015d-3c0d-426b-9cff-6b8f2ba2c44c-encode-processing-hic-5tb-010322-caper_out-hic-0253015d-3c0d-426b-9cff-6b8f2ba2c44c-call-hiccups-shard-1-merged_loops_30.bedpe.gz"
+      ],
+      "caller_inferred_from_alias": "HiCCUPS",
+      "href": "/files/ENCFF693XIL/@@download/ENCFF693XIL.bedpe.gz",
+      "md5sum": "ae663464bdbe60998e422254ea0dac2c"
+    }
+  ],
+  "k562_grch38_loop_bedpe_n": 15,
+  "k562_grch38_loop_bedpe": [
+    {
+      "accession": "ENCFF598CLH",
+      "output_type": "loops",
+      "file_format": "bedpe",
+      "assembly": "GRCh38",
+      "dataset": "/experiments/ENCSR479XDG/",
+      "preferred_default": null,
+      "aliases": [
+        "encode-processing-pipeline:4847c21c-8a84-4cd1-9821-8f8327b47a18-encode-processing-hic-5tb-010322-caper_out-hic-5ea7c9e4-3431-4ed3-a0a0-fca8cd04e019-call-localizer_intact-shard-0-localized_loops_1.bedpe.gz"
+      ],
+      "caller_inferred_from_alias": "localizer",
+      "href": "/files/ENCFF598CLH/@@download/ENCFF598CLH.bedpe.gz",
+      "md5sum": "8795e2e90f554bff5e83db09ae3b1eea"
+    },
+    {
+      "accession": "ENCFF256ZMD",
+      "output_type": "loops",
+      "file_format": "bedpe",
+      "assembly": "GRCh38",
+      "dataset": "/experiments/ENCSR479XDG/",
+      "preferred_default": true,
+      "aliases": [
+        "encode-processing-pipeline:4847c21c-8a84-4cd1-9821-8f8327b47a18-encode-processing-hic-5tb-010322-caper_out-hic-5ea7c9e4-3431-4ed3-a0a0-fca8cd04e019-call-localizer_intact-shard-1-localized_loops_30.bedpe.gz"
+      ],
+      "caller_inferred_from_alias": "localizer",
+      "href": "/files/ENCFF256ZMD/@@download/ENCFF256ZMD.bedpe.gz",
+      "md5sum": "47a1aa77c97c340234a1da38a21b8c62"
+    },
+    {
+      "accession": "ENCFF693XIL",
+      "output_type": "loops",
+      "file_format": "bedpe",
+      "assembly": "GRCh38",
+      "dataset": "/experiments/ENCSR545YBD/",
+      "preferred_default": true,
+      "aliases": [
+        "encode-processing-pipeline:0253015d-3c0d-426b-9cff-6b8f2ba2c44c-encode-processing-hic-5tb-010322-caper_out-hic-0253015d-3c0d-426b-9cff-6b8f2ba2c44c-call-hiccups-shard-1-merged_loops_30.bedpe.gz"
+      ],
+      "caller_inferred_from_alias": "HiCCUPS",
+      "href": "/files/ENCFF693XIL/@@download/ENCFF693XIL.bedpe.gz",
+      "md5sum": "ae663464bdbe60998e422254ea0dac2c"
+    },
+    {
+      "accession": "ENCFF657QKE",
+      "output_type": "loops",
+      "file_format": "bedpe",
+      "assembly": "GRCh38",
+      "dataset": "/experiments/ENCSR545YBD/",
+      "preferred_default": null,
+      "aliases": [
+        "encode-processing-pipeline:0253015d-3c0d-426b-9cff-6b8f2ba2c44c-encode-processing-hic-5tb-010322-caper_out-hic-0253015d-3c0d-426b-9cff-6b8f2ba2c44c-call-delta-predicted_loops_merged.bedpe.gz"
+      ],
+      "caller_inferred_from_alias": "DELTA",
+      "href": "/files/ENCFF657QKE/@@download/ENCFF657QKE.bedpe.gz",
+      "md5sum": "0a3751e380c7b18e8565addaa23595ff"
+    },
+    {
+      "accession": "ENCFF953LXY",
+      "output_type": "loops",
+      "file_format": "bedpe",
+      "assembly": "GRCh38",
+      "dataset": "/aggregate-series/ENCSR549VZO/",
+      "preferred_default": null,
+      "aliases": [
+        "encode-processing-pipeline:c390120b-c1e4-4947-b4d8-321e74de5a76-aidenlab-caper-out-megamap-c390120b-c1e4-4947-b4d8-321e74de5a76-call-localizer_intact-localized_loops_30.bedpe.gz"
+      ],
+      "caller_inferred_from_alias": "localizer",
+      "href": "/files/ENCFF953LXY/@@download/ENCFF953LXY.bedpe.gz",
+      "md5sum": "013c543d713f45bb5b3edf0b56a5f331"
+    },
+    {
+      "accession": "ENCFF030PMM",
+      "output_type": "loops",
+      "file_format": "bedpe",
+      "assembly": "GRCh38",
+      "dataset": "/experiments/ENCSR880DSH/",
+      "preferred_default": null,
+      "aliases": [
+        "yijun-ruan:K562_RNAPII_rep3_novaseq_long_range_chromatin_interactions"
+      ],
+      "caller_inferred_from_alias": "unknown",
+      "href": "/files/ENCFF030PMM/@@download/ENCFF030PMM.bedpe.gz",
+      "md5sum": "66ee96602bb7762314b7fd6f5e990621"
+    },
+    {
+      "accession": "ENCFF134HIZ",
+      "output_type": "loops",
+      "file_format": "bedpe",
+      "assembly": "GRCh38",
+      "dataset": "/experiments/ENCSR545YBD/",
+      "preferred_default": true,
+      "aliases": [
+        "encode-processing-pipeline:a9f15cf6-f901-4155-baad-9b8bb3baa45a-encode-processing-caper_out_v04_05-hic-a9f15cf6-f901-4155-baad-9b8bb3baa45a-call-hiccups-shard-1-merged_loops_30.bedpe.gz"
+      ],
+      "caller_inferred_from_alias": "HiCCUPS",
+      "href": "/files/ENCFF134HIZ/@@download/ENCFF134HIZ.bedpe.gz",
+      "md5sum": "608ce57b0552eab6171240adae331bb3"
+    },
+    {
+      "accession": "ENCFF118PBQ",
+      "output_type": "loops",
+      "file_format": "bedpe",
+      "assembly": "GRCh38",
+      "dataset": "/experiments/ENCSR597AKG/",
+      "preferred_default": true,
+      "aliases": [
+        "yijun-ruan:K562_CTCF_rep2_nextseq_long_range_chromatin_interactions"
+      ],
+      "caller_inferred_from_alias": "unknown",
+      "href": "/files/ENCFF118PBQ/@@download/ENCFF118PBQ.bedpe.gz",
+      "md5sum": "1c1706176e91e0847f5f07022da80915"
+    },
+    {
+      "accession": "ENCFF287ZOF",
+      "output_type": "loops",
+      "file_format": "bedpe",
+      "assembly": "GRCh38",
+      "dataset": "/aggregate-series/ENCSR666ZGW/",
+      "preferred_default": null,
+      "aliases": [
+        "encode-processing-pipeline:13d6541b-8f6a-478c-ad3f-4f337811d158-aidenlab-caper-out-megamap-13d6541b-8f6a-478c-ad3f-4f337811d158-call-localizer_intact-localized_loops_30.bedpe.gz"
+      ],
+      "caller_inferred_from_alias": "localizer",
+      "href": "/files/ENCFF287ZOF/@@download/ENCFF287ZOF.bedpe.gz",
+      "md5sum": "b4de0aacb9501ddd5ad80aa0034907da"
+    },
+    {
+      "accession": "ENCFF759YBZ",
+      "output_type": "loops",
+      "file_format": "bedpe",
+      "assembly": "GRCh38",
+      "dataset": "/experiments/ENCSR880DSH/",
+      "preferred_default": null,
+      "aliases": [
+        "yijun-ruan:K562_RNAPII_rep2_novaseq_long_range_chromatin_interactions"
+      ],
+      "caller_inferred_from_alias": "unknown",
+      "href": "/files/ENCFF759YBZ/@@download/ENCFF759YBZ.bedpe.gz",
+      "md5sum": "c4bcd92733e0861184966acbe346d11c"
+    },
+    {
+      "accession": "ENCFF845GJG",
+      "output_type": "loops",
+      "file_format": "bedpe",
+      "assembly": "GRCh38",
+      "dataset": "/experiments/ENCSR545YBD/",
+      "preferred_default": null,
+      "aliases": [
+        "encode-processing-pipeline:0253015d-3c0d-426b-9cff-6b8f2ba2c44c-encode-processing-hic-5tb-010322-caper_out-hic-0253015d-3c0d-426b-9cff-6b8f2ba2c44c-call-delta-predicted_loop_domains_merged.bedpe.gz"
+      ],
+      "caller_inferred_from_alias": "DELTA",
+      "href": "/files/ENCFF845GJG/@@download/ENCFF845GJG.bedpe.gz",
+      "md5sum": "e30d290b5a1856b72a9e26b03cf7b304"
+    },
+    {
+      "accession": "ENCFF757IIX",
+      "output_type": "loops",
+      "file_format": "bedpe",
+      "assembly": "GRCh38",
+      "dataset": "/experiments/ENCSR545YBD/",
+      "preferred_default": null,
+      "aliases": [
+        "encode-processing-pipeline:0253015d-3c0d-426b-9cff-6b8f2ba2c44c-encode-processing-hic-5tb-010322-caper_out-hic-0253015d-3c0d-426b-9cff-6b8f2ba2c44c-call-hiccups-shard-0-merged_loops_1.bedpe.gz"
+      ],
+      "caller_inferred_from_alias": "HiCCUPS",
+      "href": "/files/ENCFF757IIX/@@download/ENCFF757IIX.bedpe.gz",
+      "md5sum": "286346d97ce623752331a63ae5d5a15d"
+    },
+    {
+      "accession": "ENCFF511QFN",
+      "output_type": "loops",
+      "file_format": "bedpe",
+      "assembly": "GRCh38",
+      "dataset": "/experiments/ENCSR880DSH/",
+      "preferred_default": true,
+      "aliases": [
+        "yijun-ruan:K562_RNAPII_rep1_hiseq_long_range_chromatin_interactions"
+      ],
+      "caller_inferred_from_alias": "unknown",
+      "href": "/files/ENCFF511QFN/@@download/ENCFF511QFN.bedpe.gz",
+      "md5sum": "ec8482f0227730d178169776b209c10f"
+    },
+    {
+      "accession": "ENCFF440HUR",
+      "output_type": "loops",
+      "file_format": "bedpe",
+      "assembly": "GRCh38",
+      "dataset": "/experiments/ENCSR545YBD/",
+      "preferred_default": null,
+      "aliases": [
+        "encode-processing-pipeline:a9f15cf6-f901-4155-baad-9b8bb3baa45a-encode-processing-caper_out_v04_05-hic-a9f15cf6-f901-4155-baad-9b8bb3baa45a-call-hiccups-shard-0-merged_loops_1.bedpe.gz"
+      ],
+      "caller_inferred_from_alias": "HiCCUPS",
+      "href": "/files/ENCFF440HUR/@@download/ENCFF440HUR.bedpe.gz",
+      "md5sum": "cb13a6d97025a193bb058bad47f8e0cf"
+    },
+    {
+      "accession": "ENCFF607PZX",
+      "output_type": "loops",
+      "file_format": "bedpe",
+      "assembly": "GRCh38",
+      "dataset": "/experiments/ENCSR597AKG/",
+      "preferred_default": null,
+      "aliases": [
+        "yijun-ruan:K562_CTCF_rep1_nextseq_long_range_chromatin_interactions"
+      ],
+      "caller_inferred_from_alias": "unknown",
+      "href": "/files/ENCFF607PZX/@@download/ENCFF607PZX.bedpe.gz",
+      "md5sum": "ce33be6facf36462987aea5faeb4174d"
+    }
+  ],
+  "mustache_hits": [],
+  "software_probe": {
+    "ok": true,
+    "n_mustache_software": 0,
+    "hits": []
+  },
+  "verdict": "BLOCKED_DATA",
+  "note": "No K562 GRCh38 Mustache processed loop bedpe on ENCODE; HiCCUPS ENCFF693XIL present. Do not substitute DELTA as Mustache."
+}

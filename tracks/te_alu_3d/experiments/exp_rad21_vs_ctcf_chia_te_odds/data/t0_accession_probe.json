@@ -1,0 +1,719 @@
+{
+  "experiment": "exp_rad21_vs_ctcf_chia_te_odds",
+  "candidate_id": "C-G1",
+  "probed_at_utc": "2026-07-21T06:21:53.389831+00:00",
+  "rad21_experiments": [
+    {
+      "experiment": "ENCSR338WUS",
+      "assay_title": "ChIA-PET",
+      "target": "RAD21",
+      "status": "released",
+      "n_files": 30,
+      "files": [
+        {
+          "accession": "ENCFF457YKO",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF457YKO/@@download/ENCFF457YKO.fastq.gz"
+        },
+        {
+          "accession": "ENCFF233WYF",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF233WYF/@@download/ENCFF233WYF.fastq.gz"
+        },
+        {
+          "accession": "ENCFF437TDL",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF437TDL/@@download/ENCFF437TDL.fastq.gz"
+        },
+        {
+          "accession": "ENCFF985LAL",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF985LAL/@@download/ENCFF985LAL.fastq.gz"
+        },
+        {
+          "accession": "ENCFF728UYK",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF728UYK/@@download/ENCFF728UYK.fastq.gz"
+        },
+        {
+          "accession": "ENCFF548WXJ",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF548WXJ/@@download/ENCFF548WXJ.fastq.gz"
+        },
+        {
+          "accession": "ENCFF724ITH",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF724ITH/@@download/ENCFF724ITH.fastq.gz"
+        },
+        {
+          "accession": "ENCFF467VFF",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF467VFF/@@download/ENCFF467VFF.fastq.gz"
+        },
+        {
+          "accession": "ENCFF950EYS",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF950EYS/@@download/ENCFF950EYS.fastq.gz"
+        },
+        {
+          "accession": "ENCFF654CTO",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF654CTO/@@download/ENCFF654CTO.fastq.gz"
+        },
+        {
+          "accession": "ENCFF519IER",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF519IER/@@download/ENCFF519IER.fastq.gz"
+        },
+        {
+          "accession": "ENCFF733SFL",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF733SFL/@@download/ENCFF733SFL.fastq.gz"
+        },
+        {
+          "accession": "ENCFF017NES",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF017NES/@@download/ENCFF017NES.fastq.gz"
+        },
+        {
+          "accession": "ENCFF125ARC",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF125ARC/@@download/ENCFF125ARC.fastq.gz"
+        },
+        {
+          "accession": "ENCFF178DWD",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF178DWD/@@download/ENCFF178DWD.fastq.gz"
+        },
+        {
+          "accession": "ENCFF003FGJ",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF003FGJ/@@download/ENCFF003FGJ.fastq.gz"
+        },
+        {
+          "accession": "ENCFF950CJH",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF950CJH/@@download/ENCFF950CJH.fastq.gz"
+        },
+        {
+          "accession": "ENCFF601PEG",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF601PEG/@@download/ENCFF601PEG.fastq.gz"
+        },
+        {
+          "accession": "ENCFF440OZW",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF440OZW/@@download/ENCFF440OZW.fastq.gz"
+        },
+        {
+          "accession": "ENCFF595BUW",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF595BUW/@@download/ENCFF595BUW.fastq.gz"
+        },
+        {
+          "accession": "ENCFF744NVY",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF744NVY/@@download/ENCFF744NVY.fastq.gz"
+        },
+        {
+          "accession": "ENCFF726MIK",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF726MIK/@@download/ENCFF726MIK.fastq.gz"
+        },
+        {
+          "accession": "ENCFF645XCZ",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF645XCZ/@@download/ENCFF645XCZ.fastq.gz"
+        },
+        {
+          "accession": "ENCFF297FSE",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF297FSE/@@download/ENCFF297FSE.fastq.gz"
+        },
+        {
+          "accession": "ENCFF125HTV",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF125HTV/@@download/ENCFF125HTV.fastq.gz"
+        },
+        {
+          "accession": "ENCFF742MKX",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF742MKX/@@download/ENCFF742MKX.fastq.gz"
+        },
+        {
+          "accession": "ENCFF793TPW",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF793TPW/@@download/ENCFF793TPW.fastq.gz"
+        },
+        {
+          "accession": "ENCFF064OBV",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF064OBV/@@download/ENCFF064OBV.fastq.gz"
+        },
+        {
+          "accession": "ENCFF021HVG",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF021HVG/@@download/ENCFF021HVG.fastq.gz"
+        },
+        {
+          "accession": "ENCFF966QIF",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF966QIF/@@download/ENCFF966QIF.fastq.gz"
+        }
+      ],
+      "grch38_released_loop_bedpe": []
+    },
+    {
+      "experiment": "ENCSR000FDB",
+      "assay_title": "ChIA-PET",
+      "target": "RAD21",
+      "status": "released",
+      "n_files": 15,
+      "files": [
+        {
+          "accession": "ENCFF002ABR",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF002ABR/@@download/ENCFF002ABR.fastq.gz"
+        },
+        {
+          "accession": "ENCFF002ABS",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF002ABS/@@download/ENCFF002ABS.fastq.gz"
+        },
+        {
+          "accession": "ENCFF002ABT",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF002ABT/@@download/ENCFF002ABT.fastq.gz"
+        },
+        {
+          "accession": "ENCFF002ABU",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF002ABU/@@download/ENCFF002ABU.fastq.gz"
+        },
+        {
+          "accession": "ENCFF002ENO",
+          "file_format": "tsv",
+          "output_type": "loops",
+          "assembly": "hg19",
+          "status": "archived",
+          "preferred_default": null,
+          "href": "/files/ENCFF002ENO/@@download/ENCFF002ENO.tsv"
+        },
+        {
+          "accession": "ENCFF002ENP",
+          "file_format": "bed",
+          "output_type": "peaks",
+          "assembly": "hg19",
+          "status": "archived",
+          "preferred_default": null,
+          "href": "/files/ENCFF002ENP/@@download/ENCFF002ENP.bed.gz"
+        },
+        {
+          "accession": "ENCFF002ENQ",
+          "file_format": "tsv",
+          "output_type": "loops",
+          "assembly": "hg19",
+          "status": "archived",
+          "preferred_default": null,
+          "href": "/files/ENCFF002ENQ/@@download/ENCFF002ENQ.tsv"
+        },
+        {
+          "accession": "ENCFF002ENR",
+          "file_format": "bed",
+          "output_type": "peaks",
+          "assembly": "hg19",
+          "status": "archived",
+          "preferred_default": null,
+          "href": "/files/ENCFF002ENR/@@download/ENCFF002ENR.bed.gz"
+        },
+        {
+          "accession": "ENCFF002ENS",
+          "file_format": "tsv",
+          "output_type": "loops",
+          "assembly": "hg19",
+          "status": "archived",
+          "preferred_default": null,
+          "href": "/files/ENCFF002ENS/@@download/ENCFF002ENS.tsv"
+        },
+        {
+          "accession": "ENCFF002ENT",
+          "file_format": "bed",
+          "output_type": "peaks",
+          "assembly": "hg19",
+          "status": "archived",
+          "preferred_default": true,
+          "href": "/files/ENCFF002ENT/@@download/ENCFF002ENT.bed.gz"
+        },
+        {
+          "accession": "ENCFF002ENW",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF002ENW/@@download/ENCFF002ENW.fastq.gz"
+        },
+        {
+          "accession": "ENCFF002ENX",
+          "file_format": "fastq",
+          "output_type": "reads",
+          "assembly": null,
+          "status": "released",
+          "preferred_default": null,
+          "href": "/files/ENCFF002ENX/@@download/ENCFF002ENX.fastq.gz"
+        },
+        {
+          "accession": "ENCFF520XQM",
+          "file_format": "bigBed",
+          "output_type": "peaks",
+          "assembly": "hg19",
+          "status": "archived",
+          "preferred_default": null,
+          "href": "/files/ENCFF520XQM/@@download/ENCFF520XQM.bigBed"
+        },
+        {
+          "accession": "ENCFF377IAK",
+          "file_format": "bigBed",
+          "output_type": "peaks",
+          "assembly": "hg19",
+          "status": "archived",
+          "preferred_default": null,
+          "href": "/files/ENCFF377IAK/@@download/ENCFF377IAK.bigBed"
+        },
+        {
+          "accession": "ENCFF499KFX",
+          "file_format": "bigBed",
+          "output_type": "peaks",
+          "assembly": "hg19",
+          "status": "archived",
+          "preferred_default": true,
+          "href": "/files/ENCFF499KFX/@@download/ENCFF499KFX.bigBed"
+        }
+      ],
+      "grch38_released_loop_bedpe": []
+    }
+  ],
+  "ctcf_experiment": {
+    "experiment": "ENCSR597AKG",
+    "assay_title": "ChIA-PET",
+    "target": "CTCF",
+    "status": "released",
+    "n_files": 26,
+    "files": [
+      {
+        "accession": "ENCFF314WXO",
+        "file_format": "bigWig",
+        "output_type": "signal of unique reads",
+        "assembly": "GRCh38",
+        "status": "released",
+        "preferred_default": null,
+        "href": "/files/ENCFF314WXO/@@download/ENCFF314WXO.bigWig"
+      },
+      {
+        "accession": "ENCFF485GHA",
+        "file_format": "fastq",
+        "output_type": "reads",
+        "assembly": null,
+        "status": "released",
+        "preferred_default": null,
+        "href": "/files/ENCFF485GHA/@@download/ENCFF485GHA.fastq.gz"
+      },
+      {
+        "accession": "ENCFF116MYA",
+        "file_format": "fastq",
+        "output_type": "reads",
+        "assembly": null,
+        "status": "released",
+        "preferred_default": null,
+        "href": "/files/ENCFF116MYA/@@download/ENCFF116MYA.fastq.gz"
+      },
+      {
+        "accession": "ENCFF868HRW",
+        "file_format": "fastq",
+        "output_type": "reads",
+        "assembly": null,
+        "status": "archived",
+        "preferred_default": null,
+        "href": "/files/ENCFF868HRW/@@download/ENCFF868HRW.fastq.gz"
+      },
+      {
+        "accession": "ENCFF915YCD",
+        "file_format": "fastq",
+        "output_type": "reads",
+        "assembly": null,
+        "status": "released",
+        "preferred_default": null,
+        "href": "/files/ENCFF915YCD/@@download/ENCFF915YCD.fastq.gz"
+      },
+      {
+        "accession": "ENCFF245TLN",
+        "file_format": "fastq",
+        "output_type": "reads",
+        "assembly": null,
+        "status": "released",
+        "preferred_default": null,
+        "href": "/files/ENCFF245TLN/@@download/ENCFF245TLN.fastq.gz"
+      },
+      {
+        "accession": "ENCFF223QDL",
+        "file_format": "fastq",
+        "output_type": "reads",
+        "assembly": null,
+        "status": "archived",
+        "preferred_default": null,
+        "href": "/files/ENCFF223QDL/@@download/ENCFF223QDL.fastq.gz"
+      },
+      {
+        "accession": "ENCFF049DYF",
+        "file_format": "fastq",
+        "output_type": "reads",
+        "assembly": null,
+        "status": "archived",
+        "preferred_default": null,
+        "href": "/files/ENCFF049DYF/@@download/ENCFF049DYF.fastq.gz"
+      },
+      {
+        "accession": "ENCFF206DAR",
+        "file_format": "fastq",
+        "output_type": "reads",
+        "assembly": null,
+        "status": "archived",
+        "preferred_default": null,
+        "href": "/files/ENCFF206DAR/@@download/ENCFF206DAR.fastq.gz"
+      },
+      {
+        "accession": "ENCFF860BVR",
+        "file_format": "bam",
+        "output_type": "alignments",
+        "assembly": "GRCh38",
+        "status": "released",
+        "preferred_default": null,
+        "href": "/files/ENCFF860BVR/@@download/ENCFF860BVR.bam"
+      },
+      {
+        "accession": "ENCFF859FWK",
+        "file_format": "bed",
+        "output_type": "peaks",
+        "assembly": "GRCh38",
+        "status": "released",
+        "preferred_default": null,
+        "href": "/files/ENCFF859FWK/@@download/ENCFF859FWK.bed.gz"
+      },
+      {
+        "accession": "ENCFF162SWZ",
+        "file_format": "bam",
+        "output_type": "alignments",
+        "assembly": "GRCh38",
+        "status": "released",
+        "preferred_default": null,
+        "href": "/files/ENCFF162SWZ/@@download/ENCFF162SWZ.bam"
+      },
+      {
+        "accession": "ENCFF995WHC",
+        "file_format": "bed",
+        "output_type": "peaks",
+        "assembly": "GRCh38",
+        "status": "released",
+        "preferred_default": null,
+        "href": "/files/ENCFF995WHC/@@download/ENCFF995WHC.bed.gz"
+      },
+      {
+        "accession": "ENCFF803SOP",
+        "file_format": "bed",
+        "output_type": "signal of unique reads",
+        "assembly": "GRCh38",
+        "status": "released",
+        "preferred_default": null,
+        "href": "/files/ENCFF803SOP/@@download/ENCFF803SOP.bed.gz"
+      },
+      {
+        "accession": "ENCFF749YAU",
+        "file_format": "bam",
+        "output_type": "unfiltered alignments",
+        "assembly": "GRCh38",
+        "status": "released",
+        "preferred_default": null,
+        "href": "/files/ENCFF749YAU/@@download/ENCFF749YAU.bam"
+      },
+      {
+        "accession": "ENCFF846UFS",
+        "file_format": "bam",
+        "output_type": "unfiltered alignments",
+        "assembly": "GRCh38",
+        "status": "released",
+        "preferred_default": null,
+        "href": "/files/ENCFF846UFS/@@download/ENCFF846UFS.bam"
+      },
+      {
+        "accession": "ENCFF607PZX",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "preferred_default": null,
+        "href": "/files/ENCFF607PZX/@@download/ENCFF607PZX.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF118PBQ",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "preferred_default": true,
+        "href": "/files/ENCFF118PBQ/@@download/ENCFF118PBQ.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF639ALH",
+        "file_format": "bed",
+        "output_type": "signal of unique reads",
+        "assembly": "GRCh38",
+        "status": "released",
+        "preferred_default": null,
+        "href": "/files/ENCFF639ALH/@@download/ENCFF639ALH.bed.gz"
+      },
+      {
+        "accession": "ENCFF914SWR",
+        "file_format": "hic",
+        "output_type": "contact matrix",
+        "assembly": "GRCh38",
+        "status": "released",
+        "preferred_default": true,
+        "href": "/files/ENCFF914SWR/@@download/ENCFF914SWR.hic"
+      },
+      {
+        "accession": "ENCFF436ONK",
+        "file_format": "hic",
+        "output_type": "contact matrix",
+        "assembly": "GRCh38",
+        "status": "released",
+        "preferred_default": null,
+        "href": "/files/ENCFF436ONK/@@download/ENCFF436ONK.hic"
+      },
+      {
+        "accession": "ENCFF894BJB",
+        "file_format": "bigInteract",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "preferred_default": null,
+        "href": "/files/ENCFF894BJB/@@download/ENCFF894BJB.bigInteract"
+      },
+      {
+        "accession": "ENCFF337GXQ",
+        "file_format": "bigBed",
+        "output_type": "peaks",
+        "assembly": "GRCh38",
+        "status": "released",
+        "preferred_default": null,
+        "href": "/files/ENCFF337GXQ/@@download/ENCFF337GXQ.bigBed"
+      },
+      {
+        "accession": "ENCFF459PYK",
+        "file_format": "bigInteract",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "preferred_default": null,
+        "href": "/files/ENCFF459PYK/@@download/ENCFF459PYK.bigInteract"
+      },
+      {
+        "accession": "ENCFF429EAN",
+        "file_format": "bigBed",
+        "output_type": "peaks",
+        "assembly": "GRCh38",
+        "status": "released",
+        "preferred_default": true,
+        "href": "/files/ENCFF429EAN/@@download/ENCFF429EAN.bigBed"
+      },
+      {
+        "accession": "ENCFF852MHO",
+        "file_format": "bigWig",
+        "output_type": "signal of unique reads",
+        "assembly": "GRCh38",
+        "status": "released",
+        "preferred_default": true,
+        "href": "/files/ENCFF852MHO/@@download/ENCFF852MHO.bigWig"
+      }
+    ],
+    "grch38_released_loop_bedpe": [
+      {
+        "accession": "ENCFF607PZX",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "preferred_default": null,
+        "href": "/files/ENCFF607PZX/@@download/ENCFF607PZX.bedpe.gz"
+      },
+      {
+        "accession": "ENCFF118PBQ",
+        "file_format": "bedpe",
+        "output_type": "loops",
+        "assembly": "GRCh38",
+        "status": "released",
+        "preferred_default": true,
+        "href": "/files/ENCFF118PBQ/@@download/ENCFF118PBQ.bedpe.gz"
+      }
+    ]
+  },
+  "rad21_grch38_loop_bedpe": [],
+  "ctcf_grch38_loop_bedpe": [
+    {
+      "accession": "ENCFF607PZX",
+      "file_format": "bedpe",
+      "output_type": "loops",
+      "assembly": "GRCh38",
+      "status": "released",
+      "preferred_default": null,
+      "href": "/files/ENCFF607PZX/@@download/ENCFF607PZX.bedpe.gz"
+    },
+    {
+      "accession": "ENCFF118PBQ",
+      "file_format": "bedpe",
+      "output_type": "loops",
+      "assembly": "GRCh38",
+      "status": "released",
+      "preferred_default": true,
+      "href": "/files/ENCFF118PBQ/@@download/ENCFF118PBQ.bedpe.gz"
+    }
+  ],
+  "ctcf_preferred_target": "ENCFF118PBQ",
+  "verdict": "BLOCKED_DATA",
+  "note": "RAD21 K562 ChIA-PET lacks released GRCh38 loop bedpe (ENCSR338WUS=fastq only; ENCSR000FDB=hg19 archived TSV/bed). CTCF ENCSR597AKG has ENCFF118PBQ. OR not run."
+}

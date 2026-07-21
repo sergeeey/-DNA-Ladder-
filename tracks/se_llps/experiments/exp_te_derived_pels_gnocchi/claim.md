@@ -3,7 +3,7 @@ experiment: exp_te_derived_pels_gnocchi
 date: 2026-07-20
 ladder_tier: Standard
 question_type: Descriptive
-status: SUPPORT
+status: SUPPORT_WITH_CAVEATS
 candidate_id: C-H1
 candidate_alias: C-H1-te-derived-pels-gnocchi
 source: Standing order — TRUE C-H1 (NOT Micro-C; Micro-C queued as C-I1)
@@ -14,10 +14,11 @@ decision_gate: SUPPORT_ABS_DELTA
 
 ## Status
 
-**SUPPORT** — Standard tier; desk **CLOSED**.  
+**SUPPORT_WITH_CAVEATS** — Standard tier; desk **CLOSED** (robustness 2026-07-21).  
 Primary |\Delta mean Gnocchi Z| = **0.211** ≥ 0.15 (kill was |\Delta| < 0.05).  
-TE-derived pELS mean Z lower than matched non-TE (Δ = −0.211; CI [−0.239, −0.183]).  
-See `decision.md`.
+Core sensitivities (alt match / blacklist / chr-holdout) keep |\Δ| ≥ 0.15; **LINE-only**
+split |\Δ|=0.025 → kill (SINE/LTR carry the TE-union signal).  
+See `decision.md` + `results/sensitivity_result.json`.
 
 ## EstimandOps L0
 

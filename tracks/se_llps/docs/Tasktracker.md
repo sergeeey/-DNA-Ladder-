@@ -10,12 +10,13 @@
 - [x] C-B1 chromosome-holdout kill-test → **FAIL_KILL** (ΔAUC −0.0073) → **REJECT**
 - [x] Null filed: `null_results/20260720-topology-community-crispr-eg-delta-auc.md`
 - [x] **C-H1** TE-derived pELS vs matched non-TE Gnocchi → **SUPPORT** (|\Delta|=0.211)
+- [x] **C-H1 robustness** → **SUPPORT_WITH_CAVEATS** (LINE-only |\Delta|=0.025 kill; core/LOCO ≥0.15)
 
 ## Next (ordered)
 
 - [ ] Do **not** reopen closed SE enrichment claims / SE-vs-typical Gnocchi REJECT
 - [ ] Do **not** auto-start parked `C-B1-TE-AluY-AG` without credentials / human queue
-- [ ] TE queue next: **C-L1** (after C-I1 Micro-C BLOCKED_DATA)
+- [ ] TE queue next: **C-D1** (after C-F1/C-G1 BLOCKED_DATA)
 
 ## Blocked / out of scope
 

@@ -1,5 +1,13 @@
 # Changelog — se_llps
 
+## 2026-07-21 — C-H1 robustness → SUPPORT_WITH_CAVEATS
+
+- Sensitivity battery: `scripts/run_c_h1_sensitivity.py` → `results/sensitivity_result.json`
+- Core (alt seed / no-TSS / GC-q5 / blacklist / odd-even / LOCO-min \|\Δ\|=0.202) all ≥0.15
+- TE class split: SINE 0.251 / LTR 0.358 SUPPORT; **LINE 0.025** kill → **SUPPORT_WITH_CAVEATS**
+- Second Gnocchi build UNAVAILABLE (404); no wet/pathogenicity language
+- Primary SUPPORT \|\Δ\|=0.211 unchanged
+
 ## 2026-07-20 — C-H1 TE-derived pELS Gnocchi → SUPPORT
 
 - True **C-H1** (NOT Micro-C): `experiments/exp_te_derived_pels_gnocchi/`
