@@ -1,0 +1,22 @@
+{
+  "manifest_version": "stage3_wt_dumps_manifest_v1",
+  "created_at": "2026-07-21T12:18:02.148197+00:00",
+  "purpose": "Content-hash manifest created BEFORE bg_tol_bins=0 sensitivity run. Sensitivity runner must verify all hashes before proceeding.",
+  "freeze_json": "stage3_architecture_anchor_freeze_v1.json",
+  "freeze_sha256": "fed26bb76b5c21274986b2e25ca71e630d38280170b89a641e7d2e07f8549a23",
+  "baseline_result_json": "stage3_architecture_wt_contact_v1.json",
+  "baseline_result_sha256": "9909542b4843c2132e4105ae6f5b3020f170e4952f1c916be958dbf324cae0e9",
+  "sensitivity_claim": "G4a_stage3_architecture_wt_contact_bgtol0_sensitivity_CLAIM_v1.md",
+  "sensitivity_claim_sha256": "08c2b45a096bd1f99681705b55e440f9aa3283fad6d7176ebe254da6c900d39b",
+  "dump_dir": "g4a_stage3_architecture_wt_dumps",
+  "dump_sha256": {
+    "ARCH_01_A754_obs_KR_10kb.txt": "b3b3fc57f7a3dbee1c3888c1702fe86eb76fa299c3d40a7291e83ad9a537ca85",
+    "ARCH_01_A754_oe_KR_10kb.txt": "683d05b60a588ac6281432342c24103ef54b8374eac08bbb9e64c06c4eb126aa",
+    "ARCH_01_A754_obs_KR_25kb.txt": "53fbfec9ccb25115eef61ee0f51ef4859210070998a64055f0ba3b7f3b86797e",
+    "ARCH_01_A754_oe_KR_25kb.txt": "9fe1cd76308238213190159fe09fa0a7e7c2f68dfdfb1165d80deafa0151caa3",
+    "ARCH_02_A518_obs_KR_10kb.txt": "8a1dcf2eceaa0076d467b14e6f9477af8e8563fd1f04fa905e9441678d0c13a3",
+    "ARCH_02_A518_oe_KR_10kb.txt": "7198c860168e64d7f9bd8d64cb7ce1f78b53975e87b91ad0a3bb34c2c19260ed",
+    "ARCH_02_A518_obs_KR_25kb.txt": "1a098216124a522bbb0669410920c166a5df1622ce616f61feb179225490dc32",
+    "ARCH_02_A518_oe_KR_25kb.txt": "d92035138f06d51365b14e8662751a928efe275a81c63817023de184df6eb651"
+  }
+}

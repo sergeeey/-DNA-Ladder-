@@ -1,5 +1,120 @@
 # Changelog
 
+## 2026-07-24 — G12b within-CTCF Alu vs non-Alu × DNase (INCONCLUSIVE)
+
+- Residual after G12 PASS: same cases vs AF-matched CTCF∩non-Alu controls
+- DHS rates 0.250 vs 0.345; risk_diff=−0.095; fisher_p=0.049 → **INCONCLUSIVE**
+- Read: G12 enrichment is CTCF-driven, not Alu-specific residual
+- Filed `null_results/20260724-te-alu-g12b-ctcf-alu-dnase-residual.md`
+
+## 2026-07-24 — G12 common Alu∩CTCF × HUDEP-2 DNase (PASS, replicated)
+
+- New readout after eQTL/Hi-C closed: ENCODE HUDEP-2 DNase `ENCSR978CYN`/`ENCFF626FHU`
+- Same G9c freeze: case DHS 50/200 vs ctrl 1/200; risk_diff=+0.245; p≈1.6e-15 → **PASS**
+- Replication `ENCFF895OQX`: 40/200 vs 0/200 → **PASS**
+- Interpretation bound: largely CTCF∩open-chromatin; does not revive eQTL/Hi-C
+- G12b CLAIM locked (within-CTCF Alu vs non-Alu residual test)
+
+## 2026-07-24 — G10 common Alu∩CTCF × GSE201820 indep Hi-C (REJECT)
+
+- CLAIM locked before freeze: 4 new chr11 slots (not A754/A518); bg_tol=0; noIAAdiff primary
+- Freeze: 4/4 OK; sha256 `8daa61b2…`
+- Outcomes: G10_01/02 same-bin INCONCLUSIVE; G10_03/04 UNSUPPORTED → panel **REJECT**
+- noIAAundiff skipped (informational; no local mirror)
+- Filed `null_results/20260724-te-alu-g10-indep-hic.md`; tests `test_g10_indep_hic.py` pass
+
+## 2026-07-24 — G11 common Alu∩CTCF × GTEx LCL eQTL (REJECT)
+
+- New tissue (not blood rescue): primary `QTD000221` GTEx LCL; same G9c freeze
+- case 1/200 vs ctrl 2/200; risk_diff=−0.005; fisher_p≈1 → **REJECT** (`negligible_diff`)
+- Liver replication not run; filed `null_results/20260724-te-alu-g11-lcl-eqtl.md`
+- B0 remains UNSIGNED; note `B0_UNSIGNED_STATUS_2026-07-24.md`
+
+## 2026-07-23 — G9c multi-chrom Alu∩CTCF × GTEx blood eQTL (REJECT)
+
+- Claim locked: chr1/2/6/11; AF [0.01,0.50]; HTTP400=MISS; seed 20260723c
+- TE: UCSC hg38 rmsk → local `repeatmasker_g9c_alu_sva.bed` (bulk gz not committed)
+- Freeze: 200 CASE / 200 CTRL (706 CTCF×Alu overlaps); sha256 on disk
+- Primary QTD000356: case 11/200, ctrl 4/200; error_rate=0
+- risk_diff=+0.035; fisher_p=0.112 → **REJECT** (`negligible_diff`)
+- Filed `null_results/20260723-te-alu-g9c-multi-chr-blood-eqtl.md`
+
+## 2026-07-23 — G9b common Alu∩CTCF × GTEx blood eQTL (INCONCLUSIVE)
+
+- New claim (not a rewrite of G9): AF [0.01,0.50]; HTTP 400 → MISS; seed 20260723
+- Freeze: 46 CASE / 46 CTRL; sha256 on disk; progress log written
+- Primary QTD000356: case hit 1/46, ctrl hit 9/46; error_rate=0
+- Fisher p=0.0152; risk_diff=-0.174 (wrong direction vs enrichment hypothesis)
+- Verdict: **INCONCLUSIVE** (`effect_uncertain`); replication not run
+- Tests: **20/20 pass**; filed `null_results/20260723-te-alu-g9b-common-alu-ctcf-blood-eqtl.md`
+
+## 2026-07-23 — G9 common Alu∩CTCF × GTEx blood eQTL (INCONCLUSIVE)
+
+- Reformulation unlocked by G8 DATA_GAP_STOP: common SNPs AF 0.05–0.50 on chr11
+- CLAIM locked before freeze/eQTL: `G9_common_alu_ctcf_blood_eqtl_CLAIM_v1.md`
+- Lib + tests: `g9_eqtl_lib.py`, `test_g9_eqtl_lib.py` — **16/16 pass**
+- Freeze: 23 CASE_CTCF_ALU / 23 CTRL_ALU_NONCTCF (118 CTCF×Alu overlaps; sha256 on disk)
+- Primary QTD000356: case hit 1/miss 17/err 5; ctrl hit 8/miss 10/err 5
+- Verdict: **INCONCLUSIVE** (`api_error_rate` 21.7% > 10%); also n<30 power floor
+- Replication not run; filed `null_results/20260723-te-alu-common-alu-ctcf-blood-eqtl.md`
+- Holdout SEALED; wet-lab NO-GO; Stage-3 contact remains CLOSED
+
+## 2026-07-22 — G8 activity public-readout data gate (DATA_GAP_STOP)
+
+- Next track after Stage-3 contact closure: rare Alu/SVA CTCF panel × public
+  MPRA / caQTL / eQTL / CRISPR readout (computational only)
+- Pre-reg: `G8_activity_public_readout_CLAIM_v1.md` (locked before effect lookup)
+- Gate: `G8_activity_public_readout_data_gate_v1.md`
+- Novelty: no matching null filing; Research Library has no Alu×eQTL corpus;
+  literature shows open blood eQTL but no HUDEP-2 Alu rare-SNV MPRA
+- Panel AF check: r4_panel 12/12 AF < 0.01 → common-variant maps POWER_FAIL
+- Ideal erythroid resources: FAIL / BLUEPRINT erythroblast BLOCKED (EGA)
+- Decision: **DATA_GAP_STOP** — no intersection, no p-value peek
+- Filed: `null_results/20260722-te-alu-activity-public-readout-gap.md`
+- Holdout SEALED; wet-lab NO-GO; Stage-3 contact remains CLOSED
+
+## 2026-07-21 — G4c independent-source replication (GSE201820)
+
+- Pre-registered before remote matrix access; frozen G4a anchors reused unchanged
+- Two GSE201820 CTCF-AID HUDEP-2 noIAA controls: differentiated and undifferentiated
+- Primary method: exact-distance background (`bg_tol_bins=0`); tol=1 excluded from verdict
+- **A754:** `REPLICATION_UNSUPPORTED` (FAIL at 10/25 kb in both controls)
+- **A518:** `REPLICATION_INCONCLUSIVE` (10 kb FAIL; 25 kb same-bin)
+- Panel: **REPLICATION_INCONCLUSIVE**; G4a verdict remains INCONCLUSIVE
+- Background-direction wording corrected in
+  `G4_stage3_background_direction_ERRATUM_v1.md`
+- Branch filed and closed in
+  `null_results/20260721-te-alu-stage3-architecture-contact.md`
+- Tests: **120/120 pass**; holdout SEALED; wet-lab NO-GO
+
+## 2026-07-21 — Stage-3 bg_tol_bins=0 Sensitivity (post-analysis advisory side-car)
+
+- Pre-registration: `G4a_stage3_architecture_wt_contact_bgtol0_sensitivity_CLAIM_v1.md` (written before manifest/runner)
+- Manifest: `freeze_stage3_wt_dumps_manifest.py` → `stage3_wt_dumps_manifest_v1.json` (freeze hash + 8 dump hashes + baseline JSON pin)
+- Runner: `run_stage3_architecture_wt_contact_bgtol0.py` (no Java, no network; reads existing dumps only)
+- Tests: `test_bgtol0_sensitivity.py` — 41 new tests; **78/78 total pass** (cumulative with test_hic_contact_lib)
+- **A754** (ARCH_01): 10 kb DOWNGRADED (PASS→FAIL); 25 kb STABLE (FAIL→FAIL)
+- **A518** (ARCH_02): 10 kb STABLE (FAIL→FAIL); 25 kb SAME_BIN_BLOCKED_HARD_FAIL (guard raised, computation blocked)
+- Advisory panel verdict (tol=0): **INCONCLUSIVE** — main panel verdict **INCONCLUSIVE unchanged**
+- Key finding: A754 10 kb PASS at tol=1 was sensitive to heterogeneous near-diagonal background;
+  under exact-distance background (tol=0) it does not pass. Supports §8 caveat in parent claim.
+- Outputs: `stage3_architecture_wt_contact_bgtol0_sensitivity_v1.json` + `..._decision_v1.md`
+- Holdout: SEALED (not accessed); wet-lab: NO-GO; Stage-3 slot assignments: LOCKED (unchanged)
+
+## 2026-07-21 — Stage-3 G4a Architecture WT Contact (desk-only)
+
+- User confirmed desk-only; wet-lab/B0 purchase declined; B0 remains UNSIGNED/NO-GO
+- Pre-registration: `G4a_stage3_architecture_wt_contact_CLAIM_v1.md` (L0 Descriptive; locked before analysis)
+- Library: `hic_contact_lib.py` (pure functions; 37/37 unit tests pass)
+- Freeze script: `freeze_stage3_architecture_anchors.py` (Ensembl 116; GRCh38→GRCh37; both slots OK)
+- Analysis: `run_stage3_architecture_wt_contact.py` (GSM4873113 WT HUDEP-2; KR 10/25 kb)
+- **A754** (ARCH_01 chr11:75445532:G:A): PARTIAL — PASS at 10 kb, FAIL at 25 kb (enrich/pct below threshold)
+- **A518** (ARCH_02 chr11:518575:C:A): INCONCLUSIVE — FAIL at 10 kb;
+  25 kb is `UNRESOLVED_SAME_BIN` (post-analysis integrity correction)
+- **Panel verdict: INCONCLUSIVE** — neither slot meets full PASS; no architecture language permitted
+- Stage-3 slot assignments unchanged (LOCKED per registry)
+- Holdout: SEALED (not accessed)
+
 ## 2026-07-21 — PAUSE_NONE confirm + C-C1 explicit PARK + C-H1 clarity
 
 - Registry: C-C1 status **PARKED** (not auto-primary); `next_fruit_recommend: PAUSE_NONE` confirmed

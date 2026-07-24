@@ -1,0 +1,22 @@
+{
+  "mappings": [
+    {
+      "mapped": {
+        "seq_region_name": "11",
+        "start": 75156315,
+        "strand": 1,
+        "coord_system": "chromosome",
+        "end": 75156841,
+        "assembly": "GRCh37"
+      },
+      "original": {
+        "strand": 1,
+        "start": 75445270,
+        "seq_region_name": "11",
+        "end": 75445796,
+        "assembly": "GRCh38",
+        "coord_system": "chromosome"
+      }
+    }
+  ]
+}

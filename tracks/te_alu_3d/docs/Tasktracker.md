@@ -109,6 +109,18 @@
 - [x] Prepare **GO_B0_READY_PACK_v1.md** (awaiting human signature)
 - [x] B0 desk closure: backbone nominate · insert-verify/Sanger primers · PO draft · transfection card · B-min hash spotcheck
 - [x] A1 ready pack UNSIGNED + A2 Capture HELD + holdout SEALED reminder + HUDEP-2 RNA ABSENT note
+- [x] Stage-3 G4a architecture WT contact pre-reg + freeze + Hi-C desk (2026-07-21) → **INCONCLUSIVE** (A754 PARTIAL / A518 INCONCLUSIVE; 25 kb same-bin correction)
+- [x] Stage-3 bg_tol_bins=0 sensitivity side-car (2026-07-21) → advisory INCONCLUSIVE; A754 10 kb DOWNGRADED (tol=1 PASS was background-sensitive); 78/78 tests pass
+- [x] G4c GSE201820 independent-source replication (2026-07-21) → **REPLICATION_INCONCLUSIVE**; A754 unsupported in both noIAA controls; 120/120 tests pass
+- [x] File Stage-3 contact branch in `null_results/` and close same-data rescue path
+- [x] G8 activity public-readout gate + novelty + CLAIM (2026-07-22) → **DATA_GAP_STOP** (no open erythroid MPRA/eQTL for rare panel; blood eQTL POWER_FAIL); intersection cancelled
+- [x] G9 common Alu∩CTCF × GTEx blood eQTL (2026-07-23) → **INCONCLUSIVE** (API error_rate 22%; n=23 < min_n=30); 16/16 tests; null_results filed
+- [x] G9b AF≥1% + HTTP400=MISS retry (2026-07-23) → **INCONCLUSIVE** (p=0.015 wrong-direction lean; n=46; error_rate=0); 20/20 tests
+- [x] G9c multi-chr (chr1/2/6/11) blood eQTL (2026-07-23) → **REJECT** (risk_diff +0.035 negligible; n=200/200; p=0.11)
+- [x] G11 GTEx LCL eQTL same panel (2026-07-24) → **REJECT** (risk_diff −0.005; case 1/200 vs ctrl 2/200)
+- [x] G10 indep Hi-C GSE201820 × new Alu∩CTCF slots (2026-07-24) → **REJECT** (0 PASS; 2 UNSUPPORTED)
+- [x] G12 HUDEP-2 DNase Alu∩CTCF vs Alu-nonCTCF (2026-07-24) → **PASS** (replicated); CTCF∩DHS bound
+- [x] G12b within-CTCF Alu vs non-Alu DNase residual (2026-07-24) → **INCONCLUSIVE** (wrong-dir lean)
 - [ ] Sign wet-lab GO B0 (human) — paste one-line fields; still **UNSIGNED**
 - [ ] Submit B0 PO (lab) — **BLOCKED** until signature
 - [ ] Unblind holdout — **BLOCKED**

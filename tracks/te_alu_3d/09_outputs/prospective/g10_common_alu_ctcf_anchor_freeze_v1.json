@@ -1,0 +1,204 @@
+{
+  "freeze_version": "g10_common_alu_ctcf_anchor_freeze_v1",
+  "frozen_at": "2026-07-24T08:33:47.453648+00:00",
+  "ensembl_release": "116",
+  "claim": "G10_common_alu_ctcf_indep_hic_CLAIM_v1.md",
+  "g9c_freeze_sha256": "42505a328866309206929c0654b784a3a61ec6f1a507a684e00c5118afac2983",
+  "ctcf_bed_source": "D:\\DNK - 2\\_DNA_Ladder_clone\\tracks\\te_alu_3d\\pilot_scaffold\\data\\ctcf_HUDEP2_peaks.bed",
+  "holdout": "SEALED",
+  "stage3_excluded_pos": [
+    518575,
+    75445532
+  ],
+  "n_slots": 4,
+  "source_sha256": {
+    "g9c_freeze": "42505a328866309206929c0654b784a3a61ec6f1a507a684e00c5118afac2983",
+    "ctcf_bed": "ba56c1279e0c70234058c976487ee2479f1aa91f49cd86dc2c3a96483fe9d965",
+    "claim": "eac01ce422235956a140e67a86b3214be742824bf6ac7f3bfddbb1f0ea4c920a"
+  },
+  "cache_sha256": {
+    "https___rest.ensembl.org_info_data_content-type=application_json.json": "13ff408bcb268b0ebde26a8b156ae256223619d969f33db2bbc0ce19cfb53315",
+    "https___rest.ensembl.org_map_human_GRCh38_11_301155..306155_GRCh37_content-type=application_json.json": "5172d45d679eceb5d08a3eb873a552e7014cac62e203240df236833cac7a8d9b",
+    "https___rest.ensembl.org_map_human_GRCh38_11_304950..305296_GRCh37_content-type=application_json.json": "0376ab88e459556cbc7afd197b4301f39995246cc5e82781138928531b41623b",
+    "https___rest.ensembl.org_map_human_GRCh38_11_3564440..3564727_GRCh37_content-type=application_json.json": "fe55bae936fb004dc05ae4e306b6b2c7122fd6e41d992a051033c9a73915cd17",
+    "https___rest.ensembl.org_map_human_GRCh38_11_3640687..3645687_GRCh37_content-type=application_json.json": "6e30dedbf80f27db5ceecd8f5ae151b35dffa3078a005405d842feba49ef5d39",
+    "https___rest.ensembl.org_map_human_GRCh38_11_692511..697511_GRCh37_content-type=application_json.json": "a5564fc44096458144f5db5071d0706eef3455b004ed936f1ccdce06c7ffbc19",
+    "https___rest.ensembl.org_map_human_GRCh38_11_696432..696693_GRCh37_content-type=application_json.json": "4747e4bbf4475b912100d3b5e6d5c4b9dfe858c34818fb63970acf9539416813",
+    "https___rest.ensembl.org_map_human_GRCh38_11_765277..765672_GRCh37_content-type=application_json.json": "07043cebb256874f445a40fc03831801b824a243944715dcaef3e47190decd11",
+    "https___rest.ensembl.org_map_human_GRCh38_11_775007..780007_GRCh37_content-type=application_json.json": "d46e7e75cb55ab09bf44ff273fb505d31bad37f7c3f315a33f0851b0ad8903b3",
+    "https___rest.ensembl.org_overlap_region_human_11_1-1304951_feature=gene_biotype=protein_coding_content-type=application_json.json": "bac916947930bda45d86c8930bb95eb030f1a7090dcda7797fda364c694a74ec",
+    "https___rest.ensembl.org_overlap_region_human_11_1-1696612_feature=gene_biotype=protein_coding_content-type=application_json.json": "e558ae5f524144821613eaeedfad6b4359b8aa257c4533cee9232493f274fa08",
+    "https___rest.ensembl.org_overlap_region_human_11_1-1765550_feature=gene_biotype=protein_coding_content-type=application_json.json": "ef5c129680a1d159f534977435651f9d4c8980c4a1ed855ac32eadf1206de1b7",
+    "https___rest.ensembl.org_overlap_region_human_11_2564660-4564660_feature=gene_biotype=protein_coding_content-type=application_json.json": "c84ee62459bf55f54fc19415303e59b8b97bd785f85dd9d8c3c88e412864b32b"
+  },
+  "slots": [
+    {
+      "slot_id": "G10_01",
+      "candidate_id": "C304951",
+      "variant": "chr11:304951:C:T",
+      "pos_1based_grch38": 304951,
+      "status": "OK",
+      "allele_effect": "NOT_TESTED",
+      "g4b": "NOT_TESTED",
+      "wet": "NO_GO",
+      "E_grch38": {
+        "chrom": "chr11",
+        "start": 304949,
+        "end": 305296,
+        "peak_id": "HUDEP2_CTCF"
+      },
+      "T_gene": {
+        "ensg_id": "ENSG00000185201",
+        "display_name": "IFITM2",
+        "strand": 1,
+        "tss_1based_grch38": 303655,
+        "distance_to_variant_bp": 1296
+      },
+      "P_grch38": {
+        "chrom": "chr11",
+        "start": 301155,
+        "end": 306155
+      },
+      "E_grch37": {
+        "chrom": "11",
+        "start": 304950,
+        "end": 305296
+      },
+      "P_grch37": {
+        "chrom": "11",
+        "start": 301155,
+        "end": 306155
+      },
+      "tss_1based_grch37": 303655,
+      "af": 0.26403946971152525,
+      "g9c_peak_start": 304949,
+      "g9c_peak_end": 305296
+    },
+    {
+      "slot_id": "G10_02",
+      "candidate_id": "C696612",
+      "variant": "chr11:696612:G:C",
+      "pos_1based_grch38": 696612,
+      "status": "OK",
+      "allele_effect": "NOT_TESTED",
+      "g4b": "NOT_TESTED",
+      "wet": "NO_GO",
+      "E_grch38": {
+        "chrom": "chr11",
+        "start": 696431,
+        "end": 696693,
+        "peak_id": "HUDEP2_CTCF"
+      },
+      "T_gene": {
+        "ensg_id": "ENSG00000177042",
+        "display_name": "TMEM80",
+        "strand": 1,
+        "tss_1based_grch38": 695011,
+        "distance_to_variant_bp": 1601
+      },
+      "P_grch38": {
+        "chrom": "chr11",
+        "start": 692511,
+        "end": 697511
+      },
+      "E_grch37": {
+        "chrom": "11",
+        "start": 696432,
+        "end": 696693
+      },
+      "P_grch37": {
+        "chrom": "11",
+        "start": 692511,
+        "end": 697511
+      },
+      "tss_1based_grch37": 695011,
+      "af": 0.0326815959986359,
+      "g9c_peak_start": 696431,
+      "g9c_peak_end": 696693
+    },
+    {
+      "slot_id": "G10_03",
+      "candidate_id": "C765550",
+      "variant": "chr11:765550:G:A",
+      "pos_1based_grch38": 765550,
+      "status": "OK",
+      "allele_effect": "NOT_TESTED",
+      "g4b": "NOT_TESTED",
+      "wet": "NO_GO",
+      "E_grch38": {
+        "chrom": "chr11",
+        "start": 765276,
+        "end": 765672,
+        "peak_id": "HUDEP2_CTCF"
+      },
+      "T_gene": {
+        "ensg_id": "ENSG00000177225",
+        "display_name": "GATD1",
+        "strand": -1,
+        "tss_1based_grch38": 777507,
+        "distance_to_variant_bp": 11957
+      },
+      "P_grch38": {
+        "chrom": "chr11",
+        "start": 775007,
+        "end": 780007
+      },
+      "E_grch37": {
+        "chrom": "11",
+        "start": 765277,
+        "end": 765672
+      },
+      "P_grch37": {
+        "chrom": "11",
+        "start": 775007,
+        "end": 780007
+      },
+      "tss_1based_grch37": 777507,
+      "af": 0.26911439696905914,
+      "g9c_peak_start": 765276,
+      "g9c_peak_end": 765672
+    },
+    {
+      "slot_id": "G10_04",
+      "candidate_id": "C3564660",
+      "variant": "chr11:3564660:C:T",
+      "pos_1based_grch38": 3564660,
+      "status": "OK",
+      "allele_effect": "NOT_TESTED",
+      "g4b": "NOT_TESTED",
+      "wet": "NO_GO",
+      "E_grch38": {
+        "chrom": "chr11",
+        "start": 3564439,
+        "end": 3564727,
+        "peak_id": "HUDEP2_CTCF"
+      },
+      "T_gene": {
+        "ensg_id": "ENSG00000167311",
+        "display_name": "ART5",
+        "strand": -1,
+        "tss_1based_grch38": 3643187,
+        "distance_to_variant_bp": 78527
+      },
+      "P_grch38": {
+        "chrom": "chr11",
+        "start": 3640687,
+        "end": 3645687
+      },
+      "E_grch37": {
+        "chrom": "11",
+        "start": 3585670,
+        "end": 3585957
+      },
+      "P_grch37": {
+        "chrom": "11",
+        "start": 3661917,
+        "end": 3666917
+      },
+      "tss_1based_grch37": 3664417,
+      "af": 0.19684884293451502,
+      "g9c_peak_start": 3564439,
+      "g9c_peak_end": 3564727
+    }
+  ]
+}

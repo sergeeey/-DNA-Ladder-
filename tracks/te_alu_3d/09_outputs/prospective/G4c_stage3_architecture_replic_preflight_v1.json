@@ -1,0 +1,64 @@
+{
+  "preflight_version": "G4c_stage3_architecture_replic_preflight_v1",
+  "run_at": "2026-07-21T12:51:47.721732+00:00",
+  "claim_md": "G4c_stage3_architecture_replic_CLAIM_v1.md",
+  "claim_sha256": "1f9ec4579482a22915fd091dbec5e1da653838bfe5fa40ca80a87fc83c9f7ff1",
+  "eligibility_freeze_json": "G4c_stage3_architecture_replic_eligibility_v1.json",
+  "eligibility_freeze_sha256": "c3e187d533d5621fb59cc17ca75e8c3fd61002c3123f5e6bde33b2de25e26edb",
+  "samples": {
+    "noIAAdiff": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE201nnn/GSE201820/suppl/GSE201820_hic_merge_cloneC16_C3noIAAdiff.inter_30.hic",
+      "head": {
+        "status": 200,
+        "content_length": "6348514246",
+        "accept_ranges": "bytes",
+        "error": null,
+        "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE201nnn/GSE201820/suppl/GSE201820_hic_merge_cloneC16_C3noIAAdiff.inter_30.hic",
+        "check": "head",
+        "ok_status": true,
+        "ok_length": true,
+        "ok_ranges": true,
+        "eligible": true
+      },
+      "range_magic": {
+        "status": 206,
+        "error": null,
+        "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE201nnn/GSE201820/suppl/GSE201820_hic_merge_cloneC16_C3noIAAdiff.inter_30.hic",
+        "check": "range_magic",
+        "ok_206": true,
+        "ok_magic": true,
+        "magic_bytes_hex": "484943",
+        "eligible": true
+      },
+      "status": "OK"
+    },
+    "noIAAundiff": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE201nnn/GSE201820/suppl/GSE201820_hic_merge_cloneC16_C3noIAAundiff.inter_30.hic",
+      "head": {
+        "status": 200,
+        "content_length": "5529740833",
+        "accept_ranges": "bytes",
+        "error": null,
+        "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE201nnn/GSE201820/suppl/GSE201820_hic_merge_cloneC16_C3noIAAundiff.inter_30.hic",
+        "check": "head",
+        "ok_status": true,
+        "ok_length": true,
+        "ok_ranges": true,
+        "eligible": true
+      },
+      "range_magic": {
+        "status": 206,
+        "error": null,
+        "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE201nnn/GSE201820/suppl/GSE201820_hic_merge_cloneC16_C3noIAAundiff.inter_30.hic",
+        "check": "range_magic",
+        "ok_206": true,
+        "ok_magic": true,
+        "magic_bytes_hex": "484943",
+        "eligible": true
+      },
+      "status": "OK"
+    }
+  },
+  "overall_status": "OK",
+  "block_reasons": []
+}

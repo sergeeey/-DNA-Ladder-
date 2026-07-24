@@ -1,0 +1,315 @@
+{
+  "claim": "G9_common_alu_ctcf_blood_eqtl_CLAIM_v1.md",
+  "created_utc": "2026-07-23T06:00:26.555356+00:00",
+  "freeze_sha256": "315b67e6010771de1b15534c48f9083def03f2a29da7581c411be7c8f93c43c8",
+  "primary": {
+    "case": {
+      "error_rate": 0.21739130434782608,
+      "n_error": 5,
+      "n_hit": 1,
+      "n_miss": 17,
+      "n_queried": 23,
+      "n_tested": 18
+    },
+    "ctrl": {
+      "error_rate": 0.21739130434782608,
+      "n_error": 5,
+      "n_hit": 8,
+      "n_miss": 10,
+      "n_queried": 23,
+      "n_tested": 18
+    },
+    "decision": {
+      "fisher_p": NaN,
+      "n_hit_case": 1,
+      "n_hit_ctrl": 8,
+      "n_miss_case": 17,
+      "n_miss_ctrl": 10,
+      "p_case": NaN,
+      "p_ctrl": NaN,
+      "reason": "api_error_rate",
+      "risk_diff": NaN,
+      "verdict": "INCONCLUSIVE"
+    },
+    "rows": [
+      {
+        "n_assoc_returned": 28,
+        "role": "CASE_CTCF_ALU",
+        "status": "HIT",
+        "variant_id": "chr11:304951:C:T"
+      },
+      {
+        "n_assoc_returned": 29,
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:765550:G:A"
+      },
+      {
+        "n_assoc_returned": 29,
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:765605:G:A"
+      },
+      {
+        "error": "eQTL fetch failed for chr11_3564660_C_T: HTTP Error 400: Bad Request",
+        "role": "CASE_CTCF_ALU",
+        "status": "ERROR",
+        "variant_id": "chr11:3564660:C:T"
+      },
+      {
+        "error": "eQTL fetch failed for chr11_3564662_G_T: HTTP Error 400: Bad Request",
+        "role": "CASE_CTCF_ALU",
+        "status": "ERROR",
+        "variant_id": "chr11:3564662:G:T"
+      },
+      {
+        "n_assoc_returned": 3,
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:7892816:C:T"
+      },
+      {
+        "n_assoc_returned": 5,
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:7986939:C:T"
+      },
+      {
+        "n_assoc_returned": 6,
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:9166139:T:C"
+      },
+      {
+        "n_assoc_returned": 6,
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:9166141:T:C"
+      },
+      {
+        "n_assoc_returned": 1,
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:16191417:C:T"
+      },
+      {
+        "n_assoc_returned": 4,
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:43890587:T:C"
+      },
+      {
+        "n_assoc_returned": 3,
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:44556676:G:A"
+      },
+      {
+        "error": "eQTL fetch failed for chr11_45293865_C_T: HTTP Error 400: Bad Request",
+        "role": "CASE_CTCF_ALU",
+        "status": "ERROR",
+        "variant_id": "chr11:45293865:C:T"
+      },
+      {
+        "n_assoc_returned": 1,
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:45293941:C:A"
+      },
+      {
+        "n_assoc_returned": 1,
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:59753988:C:G"
+      },
+      {
+        "n_assoc_returned": 9,
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:62171257:C:T"
+      },
+      {
+        "n_assoc_returned": 8,
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:75723193:C:T"
+      },
+      {
+        "error": "eQTL fetch failed for chr11_76734262_T_C: HTTP Error 400: Bad Request",
+        "role": "CASE_CTCF_ALU",
+        "status": "ERROR",
+        "variant_id": "chr11:76734262:T:C"
+      },
+      {
+        "n_assoc_returned": 1,
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:82867793:G:C"
+      },
+      {
+        "n_assoc_returned": 3,
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:86202684:C:G"
+      },
+      {
+        "n_assoc_returned": 3,
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:107799613:C:T"
+      },
+      {
+        "error": "eQTL fetch failed for chr11_117138927_G_T: HTTP Error 400: Bad Request",
+        "role": "CASE_CTCF_ALU",
+        "status": "ERROR",
+        "variant_id": "chr11:117138927:G:T"
+      },
+      {
+        "n_assoc_returned": 11,
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:119065699:G:A"
+      },
+      {
+        "error": "eQTL fetch failed for chr11_170509_G_A: HTTP Error 400: Bad Request",
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "ERROR",
+        "variant_id": "chr11:170509:G:A"
+      },
+      {
+        "n_assoc_returned": 29,
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:571098:C:T"
+      },
+      {
+        "n_assoc_returned": 29,
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:521832:G:C"
+      },
+      {
+        "n_assoc_returned": 29,
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:623224:G:A"
+      },
+      {
+        "n_assoc_returned": 29,
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:547502:G:A"
+      },
+      {
+        "n_assoc_returned": 29,
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "HIT",
+        "variant_id": "chr11:543376:G:A"
+      },
+      {
+        "n_assoc_returned": 29,
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:343564:G:A"
+      },
+      {
+        "error": "eQTL fetch failed for chr11_187771_C_A: HTTP Error 400: Bad Request",
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "ERROR",
+        "variant_id": "chr11:187771:C:A"
+      },
+      {
+        "n_assoc_returned": 28,
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:220223:G:A"
+      },
+      {
+        "n_assoc_returned": 28,
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:230887:G:A"
+      },
+      {
+        "n_assoc_returned": 29,
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "HIT",
+        "variant_id": "chr11:662202:C:G"
+      },
+      {
+        "error": "eQTL fetch failed for chr11_539377_A_G: HTTP Error 400: Bad Request",
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "ERROR",
+        "variant_id": "chr11:539377:A:G"
+      },
+      {
+        "n_assoc_returned": 29,
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "HIT",
+        "variant_id": "chr11:478401:G:A"
+      },
+      {
+        "n_assoc_returned": 29,
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "HIT",
+        "variant_id": "chr11:463288:T:C"
+      },
+      {
+        "error": "eQTL fetch failed for chr11_132427_G_A: HTTP Error 400: Bad Request",
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "ERROR",
+        "variant_id": "chr11:132427:G:A"
+      },
+      {
+        "n_assoc_returned": 29,
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "HIT",
+        "variant_id": "chr11:649579:G:T"
+      },
+      {
+        "error": "eQTL fetch failed for chr11_321235_G_A: HTTP Error 400: Bad Request",
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "ERROR",
+        "variant_id": "chr11:321235:G:A"
+      },
+      {
+        "n_assoc_returned": 28,
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:301202:G:A"
+      },
+      {
+        "n_assoc_returned": 29,
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "HIT",
+        "variant_id": "chr11:592023:G:C"
+      },
+      {
+        "n_assoc_returned": 29,
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "HIT",
+        "variant_id": "chr11:590999:G:A"
+      },
+      {
+        "n_assoc_returned": 29,
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:517216:T:C"
+      },
+      {
+        "n_assoc_returned": 29,
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "HIT",
+        "variant_id": "chr11:645057:G:C"
+      },
+      {
+        "n_assoc_returned": 29,
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:565454:T:C"
+      }
+    ]
+  },
+  "primary_dataset": "QTD000356",
+  "result_id": "g9_common_alu_ctcf_blood_eqtl_v1"
+}

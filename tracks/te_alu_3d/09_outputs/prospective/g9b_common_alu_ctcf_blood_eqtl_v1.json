@@ -1,0 +1,499 @@
+{
+  "claim": "G9b_common_alu_ctcf_blood_eqtl_CLAIM_v1.md",
+  "created_utc": "2026-07-23T06:23:23.834555+00:00",
+  "freeze_sha256": "4432586208c3cf51713a66587ec0b9bc5e688bac7fcd2702c4db13c2f2d087da",
+  "primary": {
+    "case": {
+      "error_rate": 0.0,
+      "n_error": 0,
+      "n_hit": 1,
+      "n_miss": 45,
+      "n_queried": 46,
+      "n_tested": 46
+    },
+    "ctrl": {
+      "error_rate": 0.0,
+      "n_error": 0,
+      "n_hit": 9,
+      "n_miss": 37,
+      "n_queried": 46,
+      "n_tested": 46
+    },
+    "decision": {
+      "fisher_p": 0.01518730756377837,
+      "n_hit_case": 1,
+      "n_hit_ctrl": 9,
+      "n_miss_case": 45,
+      "n_miss_ctrl": 37,
+      "p_case": 0.021739130434782608,
+      "p_ctrl": 0.1956521739130435,
+      "reason": "effect_uncertain",
+      "risk_diff": -0.17391304347826086,
+      "verdict": "INCONCLUSIVE"
+    },
+    "rows": [
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "HIT",
+        "variant_id": "chr11:304951:C:T"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:304995:C:A"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:696612:G:C"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:765550:G:A"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:765599:G:A"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:765605:G:A"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:3564660:C:T"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:3564662:G:T"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:7892816:C:T"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:7986939:C:T"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:9166139:T:C"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:9166141:T:C"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:16191417:C:T"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:26284884:G:A"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:43890587:T:C"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:44556676:G:A"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:45293865:C:T"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:45293880:C:T"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:45293904:T:C"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:45293941:C:A"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:48110235:C:T"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:59537522:G:C"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:59753988:C:G"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:62171257:C:T"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:62171273:C:T"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:62208009:C:T"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:70177602:T:C"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:75723193:C:T"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:76734262:T:C"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:76734299:A:G"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:76734302:C:T"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:78432367:T:C"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:78432378:G:T"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:82867793:G:C"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:86202684:C:G"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:107799613:C:T"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:111932050:G:T"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:114261338:T:C"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:117138927:G:T"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:117138937:C:T"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:117226553:G:A"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:119065687:C:G"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:119065699:G:A"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:119065745:C:T"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:125355277:G:A"
+      },
+      {
+        "role": "CASE_CTCF_ALU",
+        "status": "MISS",
+        "variant_id": "chr11:134207742:C:A"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "HIT",
+        "variant_id": "chr11:456234:G:A"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:139365:A:C"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:301825:T:C"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:527862:G:A"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:132517:C:T"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:343865:C:T"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:344592:G:T"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:341989:G:C"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:564674:G:A"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:146568:G:T"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:634406:C:T"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:508748:C:T"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:658244:C:T"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:583145:T:C"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:270195:G:A"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:478267:A:G"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:599471:G:A"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:594650:C:T"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "HIT",
+        "variant_id": "chr11:565410:G:A"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:344115:G:A"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:443372:A:G"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:247800:C:T"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:241432:C:A"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:113708:G:A"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:496541:C:T"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:187685:C:A"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:571098:C:T"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:307742:A:G"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:339314:C:G"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:247160:A:G"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:229616:G:A"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:263225:A:G"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:229216:A:G"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:365918:A:G"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:566936:C:A"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:547544:A:G"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "HIT",
+        "variant_id": "chr11:547415:G:A"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "HIT",
+        "variant_id": "chr11:482246:G:A"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "HIT",
+        "variant_id": "chr11:527759:T:G"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "HIT",
+        "variant_id": "chr11:454746:G:A"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "HIT",
+        "variant_id": "chr11:648304:C:G"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:647395:C:T"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "HIT",
+        "variant_id": "chr11:266315:T:C"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:570280:T:C"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "MISS",
+        "variant_id": "chr11:565454:T:C"
+      },
+      {
+        "role": "CTRL_ALU_NONCTCF",
+        "status": "HIT",
+        "variant_id": "chr11:578759:A:G"
+      }
+    ]
+  },
+  "primary_dataset": "QTD000356",
+  "result_id": "g9b_common_alu_ctcf_blood_eqtl_v1"
+}

@@ -1,0 +1,45 @@
+{
+  "eligibility_version": "G4c_stage3_architecture_replic_eligibility_v1",
+  "created_at": "2026-07-21",
+  "purpose": "GEO eligibility freeze for G4c independent-source replication. Created BEFORE any preflight or matrix access. Pins CLAIM SHA256.",
+  "claim_md": "G4c_stage3_architecture_replic_CLAIM_v1.md",
+  "claim_sha256": "1f9ec4579482a22915fd091dbec5e1da653838bfe5fa40ca80a87fc83c9f7ff1",
+  "geo_series": "GSE201820",
+  "title": "Hi-C analysis of CTCF-AID HUDEP2 cells",
+  "organism": "Homo sapiens",
+  "genome_build": "hg19",
+  "cell_line": "HUDEP-2",
+  "cell_type_detail": "Human umbilical cord blood-derived erythroid progenitor cells",
+  "modification": "CTCF-AID (auxin-inducible degron tag on endogenous CTCF)",
+  "condition_noIAA": "No IAA treatment — CTCF fully active; AID tag present but not degraded",
+  "clones": "C16 and C3 — two independent HUDEP-2 clones, merged replicates",
+  "file_suffix_inter_30": "MAPQ >= 30 filter applied; includes both intra- and inter-chromosomal contacts",
+  "eligible_samples": [
+    {
+      "sample_label": "noIAAdiff",
+      "description": "CTCF-AID HUDEP-2 differentiated (erythroid) state, noIAA, merged clones C16+C3",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE201nnn/GSE201820/suppl/GSE201820_hic_merge_cloneC16_C3noIAAdiff.inter_30.hic",
+      "genome": "hg19",
+      "state": "differentiated",
+      "ctcf_status": "active"
+    },
+    {
+      "sample_label": "noIAAundiff",
+      "description": "CTCF-AID HUDEP-2 undifferentiated (progenitor) state, noIAA, merged clones C16+C3",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE201nnn/GSE201820/suppl/GSE201820_hic_merge_cloneC16_C3noIAAundiff.inter_30.hic",
+      "genome": "hg19",
+      "state": "undifferentiated",
+      "ctcf_status": "active"
+    }
+  ],
+  "ineligible_excluded": [
+    "GSM4873113 — FORBIDDEN: excluded by user specification; do not use",
+    "IAA-treated samples — CTCF degraded; not eligible for this replication (active-CTCF condition only)"
+  ],
+  "anchor_freeze": "stage3_architecture_anchor_freeze_v1.json",
+  "anchor_freeze_sha256": "fed26bb76b5c21274986b2e25ca71e630d38280170b89a641e7d2e07f8549a23",
+  "analysis_bg_tol_bins_primary": 0,
+  "analysis_bg_tol_bins_informational": 1,
+  "no_upgrade_invariant": "G4c REPLICATION_PASS does not upgrade G4a panel verdict (INCONCLUSIVE). Stage-3 slot assignments remain LOCKED.",
+  "holdout_status": "SEALED — not accessed"
+}

@@ -1,0 +1,182 @@
+{
+  "analysis": "stage3_architecture_wt_contact_bgtol0_sensitivity_v1",
+  "role": "post_analysis_advisory_sidecar",
+  "run_at": "2026-07-21T14:28:18.231217+00:00",
+  "bg_tol_bins": 0,
+  "freeze_json": "stage3_architecture_anchor_freeze_v1.json",
+  "freeze_sha256": "fed26bb76b5c21274986b2e25ca71e630d38280170b89a641e7d2e07f8549a23",
+  "manifest_json": "stage3_wt_dumps_manifest_v1.json",
+  "manifest_sha256": "ac5037bc080893ef6da5bf9cdf827206f509f7350991bfb701c7c53d123c4a15",
+  "baseline_result_json": "stage3_architecture_wt_contact_v1.json",
+  "baseline_result_sha256": "9909542b4843c2132e4105ae6f5b3020f170e4952f1c916be958dbf324cae0e9",
+  "sample": "GSM4873113",
+  "biosource": "HUDEP-2 WT",
+  "norm": "KR",
+  "main_panel_verdict": "INCONCLUSIVE",
+  "advisory_panel_verdict_tol0": "INCONCLUSIVE",
+  "allele_effect": "NOT_TESTED",
+  "g4b": "NOT_TESTED",
+  "wet": "NO_GO",
+  "slots": [
+    {
+      "slot_id": "ARCH_01",
+      "candidate_id": "A754",
+      "variant": "chr11:75445532:G:A",
+      "bg_tol_bins": 0,
+      "E_hg19": {
+        "chrom": "11",
+        "start": 75156315,
+        "end": 75156841
+      },
+      "P_hg19": {
+        "chrom": "11",
+        "start": 75141748,
+        "end": 75146748
+      },
+      "T_gene": {
+        "ensg_id": "ENSG00000149243",
+        "display_name": "KLHL35",
+        "strand": -1,
+        "tss_1based_grch38": 75433203,
+        "distance_to_variant_bp": 12329
+      },
+      "metrics_10kb": {
+        "binsize": 10000,
+        "bg_tol_bins": 0,
+        "e_bins": [
+          75150000
+        ],
+        "p_bins": [
+          75140000
+        ],
+        "primary_pair": [
+          75150000,
+          75140000
+        ],
+        "primary_obs": 73.85924,
+        "primary_oe": 1.6989803,
+        "same_distance_bg_n": 99,
+        "bg_mean_obs": 53.15970493939394,
+        "bg_median_obs": 52.814854,
+        "enrich_mean": 1.3893839343955179,
+        "obs_percentile": 0.9595959595959596,
+        "oe_percentile": 0.9595959595959596,
+        "focal_row_nonzero": 90,
+        "n_obs_pixels": 4612
+      },
+      "metrics_25kb": {
+        "binsize": 25000,
+        "bg_tol_bins": 0,
+        "e_bins": [
+          75150000
+        ],
+        "p_bins": [
+          75125000
+        ],
+        "primary_pair": [
+          75150000,
+          75125000
+        ],
+        "primary_obs": 191.03401,
+        "primary_oe": 1.5165274,
+        "same_distance_bg_n": 39,
+        "bg_mean_obs": 161.47432087179487,
+        "bg_median_obs": 157.62332,
+        "enrich_mean": 1.1830612382737593,
+        "obs_percentile": 0.8717948717948718,
+        "oe_percentile": 0.8717948717948718,
+        "focal_row_nonzero": 41,
+        "n_obs_pixels": 861
+      },
+      "score_10kb": "FAIL",
+      "score_25kb": "FAIL",
+      "transition_10kb": {
+        "old_score": "PASS",
+        "new_score": "FAIL",
+        "transition": "DOWNGRADED",
+        "delta_same_distance_bg_n": -200.0,
+        "delta_enrich_mean": -0.277272,
+        "delta_obs_percentile": -0.003615,
+        "delta_primary_oe": 0.0
+      },
+      "transition_25kb": {
+        "old_score": "FAIL",
+        "new_score": "FAIL",
+        "transition": "STABLE",
+        "delta_same_distance_bg_n": -80.0,
+        "delta_enrich_mean": -0.040906,
+        "delta_obs_percentile": 0.207929,
+        "delta_primary_oe": 0.0
+      },
+      "outcome": "UNSUPPORTED"
+    },
+    {
+      "slot_id": "ARCH_02",
+      "candidate_id": "A518",
+      "variant": "chr11:518575:C:A",
+      "bg_tol_bins": 0,
+      "E_hg19": {
+        "chrom": "11",
+        "start": 518575,
+        "end": 519098
+      },
+      "P_hg19": {
+        "chrom": "11",
+        "start": 504895,
+        "end": 509895
+      },
+      "T_gene": {
+        "ensg_id": "ENSG00000023191",
+        "display_name": "RNH1",
+        "strand": -1,
+        "tss_1based_grch38": 507395,
+        "distance_to_variant_bp": 11180
+      },
+      "metrics_10kb": {
+        "binsize": 10000,
+        "bg_tol_bins": 0,
+        "e_bins": [
+          510000
+        ],
+        "p_bins": [
+          500000
+        ],
+        "primary_pair": [
+          510000,
+          500000
+        ],
+        "primary_obs": 88.683716,
+        "primary_oe": 2.039987,
+        "same_distance_bg_n": 82,
+        "bg_mean_obs": 74.97408624390243,
+        "bg_median_obs": 71.605932,
+        "enrich_mean": 1.1828582440004403,
+        "obs_percentile": 0.8658536585365854,
+        "oe_percentile": 0.8658536585365854,
+        "focal_row_nonzero": 78,
+        "n_obs_pixels": 3176
+      },
+      "metrics_25kb": {
+        "error": "same_bin_guard_violation",
+        "message": "HARD-FAIL: E_mid_bin == P_mid_bin == 500000 at binsize=25000. bg_tol_bins=0 on a same-bin pair produces a diagonal-only background; computation blocked."
+      },
+      "score_10kb": "FAIL",
+      "score_25kb": "SAME_BIN_GUARD_VIOLATION",
+      "transition_10kb": {
+        "old_score": "FAIL",
+        "new_score": "FAIL",
+        "transition": "STABLE",
+        "delta_same_distance_bg_n": -166.0,
+        "delta_enrich_mean": -0.207375,
+        "delta_obs_percentile": -0.025275,
+        "delta_primary_oe": 0.0
+      },
+      "transition_25kb": {
+        "old_score": "UNRESOLVED_SAME_BIN",
+        "new_score": "SAME_BIN_GUARD_VIOLATION",
+        "transition": "SAME_BIN_BLOCKED_HARD_FAIL"
+      },
+      "outcome": "INCONCLUSIVE"
+    }
+  ]
+}

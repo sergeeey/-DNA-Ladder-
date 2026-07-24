@@ -6,6 +6,14 @@ with track tag in the slug or body.
 
 | ID | Date | Slug | Verdict | Why (10 words) | Track |
 |---|---|---|---|---|---|
+| 20260724-te-alu-g12b-ctcf-alu-dnase-residual | 2026-07-24 | Within CTCF, Alu vs non-Alu enriched for HUDEP-2 DHS? | INCONCLUSIVE | wrong-dir lean (−0.095); Fisher p=0.049>α | te_alu_3d |
+| 20260724-te-alu-g10-indep-hic | 2026-07-24 | New Alu∩CTCF anchors elevated contact on GSE201820? | REJECT | 0 PASS / 2 UNSUPPORTED / 2 same-bin; panel REJECT | te_alu_3d |
+| 20260724-te-alu-g11-lcl-eqtl | 2026-07-24 | Same G9c panel enriched for GTEx LCL eQTL? | REJECT | risk_diff −0.005; Fisher p≈1; case 1/200 vs ctrl 2/200 | te_alu_3d |
+| 20260723-te-alu-g9c-multi-chr-blood-eqtl | 2026-07-23 | Multi-chr common Alu∩CTCF enriched for GTEx blood eQTL? | REJECT | risk_diff +0.035 <0.05; Fisher p=0.11; n=200/200 | te_alu_3d |
+| 20260723-te-alu-g9b-common-alu-ctcf-blood-eqtl | 2026-07-23 | G9b: AF≥1% + HTTP400=MISS blood eQTL enrichment? | CLOSED | INCONCLUSIVE: wrong-direction lean, Fisher p=0.015>α=0.01 | te_alu_3d |
+| 20260723-te-alu-common-alu-ctcf-blood-eqtl | 2026-07-23 | Are common Alu∩CTCF SNVs enriched for GTEx blood eQTL? | CLOSED | INCONCLUSIVE: API error_rate 22%; panel n=23 under min_n=30 | te_alu_3d |
+| 20260722-te-alu-activity-public-readout-gap | 2026-07-22 | Can rare Alu/SVA CTCF panel be tested in open erythroid MPRA/eQTL? | CLOSED | DATA_GAP_STOP: no open erythroid map; blood eQTL underpowered for AF<1% | te_alu_3d |
+| 20260721-te-alu-stage3-architecture-contact | 2026-07-21 | Do frozen Stage-3 candidates show reproducible elevated HUDEP-2 contact? | CLOSED | A754 fails exact-distance and replication; A518 remains same-bin inconclusive | te_alu_3d |
 | 20260721-te-orientation-loop-asymmetry | 2026-07-21 | TE insertion strand vs left/right Hi-C loop-anchor asymmetry? | REJECT | \|Δ\| 0.006; ~50/50 strands; FAIL_KILL | te_alu_3d |
 | 20260721-te-vs-nonte-rare-snv-pwm | 2026-07-21 | TE vs non-TE rare-SNV PWM Δ after umap match (non-HBB)? | REJECT | δ 0.033; scorer mass ≈4.09; FAIL_KILL | te_alu_3d |
 | 20260721-te-age-vs-loop-reproducibility | 2026-07-21 | TE age (milliDiv) vs Pol II↔Hi-C loop reproducibility? | REJECT | Δ −0.004; flat tertiles; FAIL_KILL | te_alu_3d |

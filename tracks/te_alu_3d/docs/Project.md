@@ -27,24 +27,37 @@ Pause pin: `09_outputs/prospective/PAUSE_PIN_PRIMARY_FRUITS_2026-07-21.md` (`nex
 ## Operational snapshot
 
 ```text
-T (total):        NOT SUPPORTED (HBB/HUDEP-2, v1.1)
-C (conditional):  NOT SUPPORTED (HBB/HUDEP-2, v1.1)
-Cluster (TE):     NOT SUPPORTED (perm_p≈0.48; N_eff≈17 copies)
-Scorer bench:     PASS (ctcf_pwm_delta_v1.1 exploratory only)
-ARCHCODE admit:   TECHNICAL_PARTIAL / EXPLORATORY (repo local; not scientific validation)
-2nd scorer admit: AVAILABLE (AlphaGenome smoke PASS; not CONFIRMATORY_FROZEN)
-R4 shortlist:     C1–C3; C1/C2 = shared M3 program
-G5 desk:          SpCas9 BE FAIL → PE if ever; wet-lab STOPPED
-G6 desk:          N3 KEEP; N1/N2 DROP after GC+ATAC match
-Claim freeze:     C1_claim_freeze_pack_v1 (E/P locked; architecture language FORBIDDEN)
-G4a candidate:    GSE160422 GSM4873113 → **PASS_DESK**
-P1 candidate:     3′HS1 WT/del/inv → **PASS_DESK** (OE HS1–HS5 DEL/WT≈0.34)
-Status:           G4b PROTOCOL_DESK_FROZEN; PE CONDITIONAL_PASS; wet-lab NO-GO
-Scale:            SCALE_PROTOCOL_prospective_panel_v1 — scale process, not C1 claim
-C1 role:          TEMPLATE_DEV (desk template); panel registry SLOTS_OPEN
-Holdout:          SEALED — unscored
-RDR Router:       next = Stage-1 desk-screen 20–30 via GATE_CARDs (non-holdout)
-MWPM:             not tested
+T (total):          NOT SUPPORTED (HBB/HUDEP-2, v1.1)
+C (conditional):    NOT SUPPORTED (HBB/HUDEP-2, v1.1)
+Cluster (TE):       NOT SUPPORTED (perm_p≈0.48; N_eff≈17 copies)
+Scorer bench:       PASS (ctcf_pwm_delta_v1.1 exploratory only)
+ARCHCODE admit:     TECHNICAL_PARTIAL / EXPLORATORY (repo local; not scientific validation)
+2nd scorer admit:   AVAILABLE (AlphaGenome smoke PASS; not CONFIRMATORY_FROZEN)
+R4 shortlist:       C1–C3; C1/C2 = shared M3 program
+G5 desk:            SpCas9 BE FAIL → PE if ever; wet-lab STOPPED
+G6 desk:            N3 KEEP; N1/N2 DROP after GC+ATAC match
+Claim freeze:       C1_claim_freeze_pack_v1 (E/P locked; architecture language FORBIDDEN)
+G4a candidate:      GSE160422 GSM4873113 → PASS_DESK (C1 template)
+G4a Stage-3 desk:   A754=PARTIAL / A518=INCONCLUSIVE → panel INCONCLUSIVE (2026-07-21)
+G4a bg_tol_bins=0:  advisory INCONCLUSIVE; A754 10kb DOWNGRADED (tol=1 PASS bg-sensitive)
+G4c independent:    GSE201820 A754=UNSUPPORTED / A518=INCONCLUSIVE → panel INCONCLUSIVE
+Stage-3 contact:     CLOSED in null_results; no same-data rescue analysis
+G8 activity gate:    DATA_GAP_STOP (2026-07-22) — no open erythroid MPRA/eQTL for rare panel
+G9 common blood eQTL: INCONCLUSIVE (2026-07-23) — API error_rate 22%; n=23 underpowered
+G9b blood eQTL retry: INCONCLUSIVE (2026-07-23) — n=46, error_rate=0; p=0.015 wrong-dir lean
+G9c multi-chr eQTL:  REJECT (2026-07-23) — n=200/200; risk_diff +0.035 negligible
+G10 indep Hi-C:      REJECT (2026-07-24) — 4 new Alu∩CTCF slots on GSE201820; 0 PASS
+G11 LCL eQTL:        REJECT (2026-07-24) — same G9c panel × QTD000221; risk_diff −0.005
+G12 HUDEP-2 DNase:   PASS (2026-07-24) — case 50/200 vs ctrl 1/200; replicated ENCFF895OQX
+G12b CTCF residual:  INCONCLUSIVE (2026-07-24) — Alu vs non-Alu inside CTCF; wrong-dir lean
+P1 candidate:       3′HS1 WT/del/inv → PASS_DESK (OE HS1–HS5 DEL/WT≈0.34)
+Status:             G4b PROTOCOL_DESK_FROZEN; PE CONDITIONAL_PASS; wet-lab NO-GO
+Scale:              SCALE_PROTOCOL_prospective_panel_v1 — scale process, not C1 claim
+C1 role:            TEMPLATE_DEV (desk template); panel registry SLOTS_OPEN
+Holdout:            SEALED — unscored
+B0:                 UNSIGNED — user declined wet purchase 2026-07-21; pack ready
+RDR Router:         next = human GO signature for wet-lab OR EGA erythroblast unlock
+MWPM:               not tested
 ```
 
 ## Governing docs
@@ -64,7 +77,15 @@ MWPM:             not tested
 | G5 editability desk | `09_outputs/prospective/G5_editability_desk_pass_v1.md` |
 | G6 control panel desk | `09_outputs/prospective/G6_control_panel_desk_pass_v1.md` |
 | G6 matching amendment | `09_outputs/prospective/g6_matching_amendment.md` |
-| Pause pin | `09_outputs/prospective/PAUSE_PIN_2026-07-14.md` |
+| Stage-3 WT contact claim | `09_outputs/prospective/G4a_stage3_architecture_wt_contact_CLAIM_v1.md` |
+| Stage-3 anchor freeze | `09_outputs/prospective/stage3_architecture_anchor_freeze_v1.json` |
+| Stage-3 WT contact decision | `09_outputs/prospective/G4a_stage3_architecture_wt_contact_decision_v1.md` |
+| G4c replication decision | `09_outputs/prospective/G4c_stage3_architecture_replic_decision_v1.md` |
+| Stage-3 background erratum | `09_outputs/prospective/G4_stage3_background_direction_ERRATUM_v1.md` |
+| G8 activity readout claim | `09_outputs/prospective/G8_activity_public_readout_CLAIM_v1.md` |
+| G8 activity data gate | `09_outputs/prospective/G8_activity_public_readout_data_gate_v1.md` |
+| G8 activity decision | `09_outputs/prospective/G8_activity_public_readout_decision_v1.md` |
+| Pause pin | `09_outputs/prospective/PAUSE_PIN_2026-07-21.md` |
 | C1 claim freeze | `09_outputs/prospective/C1_claim_freeze_pack_v1.md` |
 | Unlock search log | `09_outputs/prospective/unlock_search_log_2026-07-14.md` |
 | GSE160422 manifest | `09_outputs/prospective/GSE160422_download_manifest.md` |

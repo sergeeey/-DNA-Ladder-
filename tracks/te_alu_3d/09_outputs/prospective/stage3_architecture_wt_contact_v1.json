@@ -1,0 +1,166 @@
+{
+  "analysis": "stage3_architecture_wt_contact_v1",
+  "run_at": "2026-07-21T11:58:16.170750+00:00",
+  "freeze_json": "stage3_architecture_anchor_freeze_v1.json",
+  "freeze_sha256": "fed26bb76b5c21274986b2e25ca71e630d38280170b89a641e7d2e07f8549a23",
+  "hic_file": "D:\\DNK - 2\\data\\HUDEP2_GSE160422\\GSM4873113_WT-HUDEP2-HiC_allValidPairs.hic",
+  "sample": "GSM4873113",
+  "biosource": "HUDEP-2 WT",
+  "norm": "KR",
+  "panel_verdict": "INCONCLUSIVE",
+  "allele_effect": "NOT_TESTED",
+  "g4b": "NOT_TESTED",
+  "wet": "NO_GO",
+  "slots": [
+    {
+      "slot_id": "ARCH_01",
+      "candidate_id": "A754",
+      "variant": "chr11:75445532:G:A",
+      "dump_region_hg19": "chr11:74641748-75656841",
+      "E_hg19": {
+        "chrom": "11",
+        "start": 75156315,
+        "end": 75156841
+      },
+      "P_hg19": {
+        "chrom": "11",
+        "start": 75141748,
+        "end": 75146748
+      },
+      "T_gene": {
+        "ensg_id": "ENSG00000149243",
+        "display_name": "KLHL35",
+        "strand": -1,
+        "tss_1based_grch38": 75433203,
+        "distance_to_variant_bp": 12329
+      },
+      "metrics_10kb": {
+        "binsize": 10000,
+        "bg_tol_bins": 1,
+        "e_bins": [
+          75150000
+        ],
+        "p_bins": [
+          75140000
+        ],
+        "primary_pair": [
+          75150000,
+          75140000
+        ],
+        "primary_obs": 73.85924,
+        "primary_oe": 1.6989803,
+        "same_distance_bg_n": 299,
+        "bg_mean_obs": 44.31582530100334,
+        "bg_median_obs": 46.829422,
+        "enrich_mean": 1.6666560872629799,
+        "obs_percentile": 0.9632107023411371,
+        "oe_percentile": 0.9331103678929766,
+        "focal_row_nonzero": 90,
+        "n_obs_pixels": 4612
+      },
+      "metrics_25kb": {
+        "binsize": 25000,
+        "bg_tol_bins": 1,
+        "e_bins": [
+          75150000
+        ],
+        "p_bins": [
+          75125000
+        ],
+        "primary_pair": [
+          75150000,
+          75125000
+        ],
+        "primary_obs": 191.03401,
+        "primary_oe": 1.5165274,
+        "same_distance_bg_n": 119,
+        "bg_mean_obs": 156.07774321008404,
+        "bg_median_obs": 162.26993,
+        "enrich_mean": 1.2239670184291687,
+        "obs_percentile": 0.6638655462184874,
+        "oe_percentile": 0.8067226890756303,
+        "focal_row_nonzero": 41,
+        "n_obs_pixels": 861
+      },
+      "score_10kb": "PASS",
+      "score_25kb": "FAIL",
+      "outcome": "PARTIAL",
+      "dump_ok": true
+    },
+    {
+      "slot_id": "ARCH_02",
+      "candidate_id": "A518",
+      "variant": "chr11:518575:C:A",
+      "dump_region_hg19": "chr11:4895-1019098",
+      "E_hg19": {
+        "chrom": "11",
+        "start": 518575,
+        "end": 519098
+      },
+      "P_hg19": {
+        "chrom": "11",
+        "start": 504895,
+        "end": 509895
+      },
+      "T_gene": {
+        "ensg_id": "ENSG00000023191",
+        "display_name": "RNH1",
+        "strand": -1,
+        "tss_1based_grch38": 507395,
+        "distance_to_variant_bp": 11180
+      },
+      "metrics_10kb": {
+        "binsize": 10000,
+        "bg_tol_bins": 1,
+        "e_bins": [
+          510000
+        ],
+        "p_bins": [
+          500000
+        ],
+        "primary_pair": [
+          510000,
+          500000
+        ],
+        "primary_obs": 88.683716,
+        "primary_oe": 2.039987,
+        "same_distance_bg_n": 248,
+        "bg_mean_obs": 63.79052246774194,
+        "bg_median_obs": 67.061037,
+        "enrich_mean": 1.390233416646591,
+        "obs_percentile": 0.8911290322580645,
+        "oe_percentile": 0.8024193548387096,
+        "focal_row_nonzero": 78,
+        "n_obs_pixels": 3176
+      },
+      "metrics_25kb": {
+        "binsize": 25000,
+        "bg_tol_bins": 1,
+        "e_bins": [
+          500000
+        ],
+        "p_bins": [
+          500000
+        ],
+        "primary_pair": [
+          500000,
+          500000
+        ],
+        "primary_obs": 325.06668,
+        "primary_oe": 1.7750962,
+        "same_distance_bg_n": 66,
+        "bg_mean_obs": 285.85598045454543,
+        "bg_median_obs": 269.16229,
+        "enrich_mean": 1.1371694217595338,
+        "obs_percentile": 0.7272727272727273,
+        "oe_percentile": 0.45454545454545453,
+        "focal_row_nonzero": 34,
+        "n_obs_pixels": 592
+      },
+      "score_10kb": "FAIL",
+      "score_25kb": "UNRESOLVED_SAME_BIN",
+      "outcome": "INCONCLUSIVE",
+      "dump_ok": true
+    }
+  ]
+}
